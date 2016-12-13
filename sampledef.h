@@ -4,6 +4,8 @@
 #include <tuple>
 #include <QtCore>
 #include <teamspeak/public_definitions.h>
+#include "convert.h"
+#include "speechrec.h"
 
 class sampledef : public QObject
 {
@@ -33,6 +35,8 @@ private:
     QDateTime lastUpdated;
     QThread checker;
     QTimer timer;
+    convert conv;
+    speechrec rec;
     bool spoonTooBig;
 };
 

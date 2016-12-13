@@ -1,8 +1,9 @@
 #include "sampledef.h"
+#include "kynnaugh.h"
 
 sampledef::sampledef(QObject *parent, quint64 s, anyID c, qint32 chan)
     : QObject(parent), schid(s), clientID(c), channels(chan), key(s, c, chan), lock(QReadWriteLock::Recursive),
-      lastUpdated(), checker(this), timer(0), spoonTooBig(false)
+      lastUpdated(), checker(this), timer(0), spoonTooBig(false), conv(this)
 {
     this->timer.setInterval(500);
     this->timer.setSingleShot(false);
@@ -77,7 +78,25 @@ void sampledef::check()
     {
         printf("Expired: %d\n", this->clientID);
 
-        //Encode and transcribe
+        //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
+        QBuffer *buf = new QBuffer(&this->samples, this);
+        conv.convertRawToFlac(buf, this->channels);
+        QByteArray flac = conv.retval;
+
+        QString chatline = rec.recognize(flac.data(), flac.size());
+        char *nickname = nullptr;
+        struct TS3Functions *ff = ts3func::funcs;
+        ff->getClientVariableAsString(this->schid, this->clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
+        if(nickname != nullptr && qstrlen(nickname) > 0)
+        {
+            chatline = QString("Speech Recognition! [") + QString(nickname) + QString("]: ") + chatline;
+        }
+        else
+        {
+            chatline = QString("Speech Recognition! [UNKNOWN USER]: ") + chatline;
+        }
+        ff->printMessageToCurrentTab(chatline.toStdString().c_str());
+        ff->freeMemory(nickname);
 
         this->samples.clear();
         this->spoonTooBig = false;

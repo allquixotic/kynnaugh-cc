@@ -12,15 +12,6 @@
 using namespace QGst;
 using namespace QGst::Utils;
 
-class initonce
-{
-public:
-    initonce()
-    {
-        QGst::init();
-    }
-};
-
 class convert : public QObject
 {
     Q_OBJECT
@@ -45,7 +36,6 @@ private:
     ApplicationSource *appsrc;
     ElementPtr audioconvert;
     ApplicationSink *appsink;
-    static initonce ionce;
 };
 
 #endif // CONVERT_H

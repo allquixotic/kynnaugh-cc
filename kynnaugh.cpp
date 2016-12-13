@@ -18,6 +18,7 @@
 #define CHANNELINFO_BUFSIZE 512
 #define RETURNCODE_BUFSIZE 128
 
+struct TS3Functions *ts3func::funcs = nullptr;
 static struct TS3Functions ts3Functions;
 static QString *pluginID = NULL;
 static QHash<std::tuple<quint64, anyID, qint32>, sampledef*> sampledefs = QHash<std::tuple<quint64, anyID, qint32>, sampledef*>();
@@ -57,6 +58,7 @@ const char* ts3plugin_description() {
 /* Set TeamSpeak 3 callback functions */
 void ts3plugin_setFunctionPointers(const struct TS3Functions funcs) {
     ts3Functions = funcs;
+    ts3func::funcs = &ts3Functions;
 }
 
 /*
