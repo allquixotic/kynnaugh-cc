@@ -5,7 +5,6 @@
 #-------------------------------------------------
 
 QT       -= gui
-QT       += av
 
 TARGET = kynnaugh
 TEMPLATE = lib
@@ -14,19 +13,44 @@ CONFIG += warn_off
 
 DEFINES += KYNNAUGH_LIBRARY
 
-INCLUDEPATH += $$PWD/generated
-#INCLUDEPATH += /usr/include/Qt5GStreamer
+win32 {
+    DEFINES += "_WIN32_WINNT=0x0600"
+    DEFINES += "WINVER=0x0600"
+}
 
-LIBS += -lgrpc++
-#LIBS += `PKG_CONFIG_PATH=/home/sean/dev/qt/5.6/gcc_64/lib/pkgconfig pkg-config --libs Qt5GStreamer-1.0`
-#LIBS += `PKG_CONFIG_PATH=/home/sean/dev/qt/5.6/gcc_64/lib/pkgconfig pkg-config --libs Qt5GStreamerUtils-1.0`
+INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\Qt5GStreamer
+INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\gstreamer-1.0
+INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\glib-2.0
+INCLUDEPATH += C:\gstreamer\1.0\x86_64\include
+INCLUDEPATH += $$PWD
 
-#DEFINES += QT_NO_KEYWORDS
+LIBS += -lgrpc++ -lgrpc -lgpr -lz
+LIBS += -LC:\gstreamer\1.0\x86_64\lib -LC:\gstreamer\1.0\x86_64\bin -lQt5GStreamer-1.0 -lQt5GStreamerUtils-1.0 -lQt5GLib-2.0 -lgstreamer-1.0 -lglib-2.0
+LIBS += -llibprotobuf
+LIBS += -llibeay32 -lssleay32 -lws2_32
+
+# DEFINES += QT_NO_KEYWORDS
 
 SOURCES += kynnaugh.cpp \
     sampledef.cpp \
     convert.cpp \
-    speechrec.cpp
+    speechrec.cpp \
+    google/cloud/speech/v1beta1/cloud_speech.grpc.pb.cc \
+    google/cloud/speech/v1beta1/cloud_speech.pb.cc \
+    google/longrunning/operations.grpc.pb.cc \
+    google/longrunning/operations.pb.cc \
+    google/rpc/code.grpc.pb.cc \
+    google/rpc/code.pb.cc \
+    google/rpc/error_details.grpc.pb.cc \
+    google/rpc/error_details.pb.cc \
+    google/rpc/status.grpc.pb.cc \
+    google/rpc/status.pb.cc \
+    google/api/annotations.grpc.pb.cc \
+    google/api/annotations.pb.cc \
+    google/api/http.grpc.pb.cc \
+    google/api/http.pb.cc \
+    google/api/httpbody.grpc.pb.cc \
+    google/api/httpbody.pb.cc
 
 HEADERS += kynnaugh.h\
         kynnaugh_global.h \
@@ -40,101 +64,7 @@ HEADERS += kynnaugh.h\
     teamlog/logtypes.h \
     sampledef.h \
     convert.h \
-    speechrec.h \
-    generated/google/api/servicecontrol/v1/check_error.grpc.pb.h \
-    generated/google/api/servicecontrol/v1/check_error.pb.h \
-    generated/google/api/servicecontrol/v1/distribution.grpc.pb.h \
-    generated/google/api/servicecontrol/v1/distribution.pb.h \
-    generated/google/api/servicecontrol/v1/log_entry.grpc.pb.h \
-    generated/google/api/servicecontrol/v1/log_entry.pb.h \
-    generated/google/api/servicecontrol/v1/metric_value.grpc.pb.h \
-    generated/google/api/servicecontrol/v1/metric_value.pb.h \
-    generated/google/api/servicecontrol/v1/operation.grpc.pb.h \
-    generated/google/api/servicecontrol/v1/operation.pb.h \
-    generated/google/api/servicecontrol/v1/service_controller.grpc.pb.h \
-    generated/google/api/servicecontrol/v1/service_controller.pb.h \
-    generated/google/api/servicemanagement/v1/resources.grpc.pb.h \
-    generated/google/api/servicemanagement/v1/resources.pb.h \
-    generated/google/api/servicemanagement/v1/servicemanager.grpc.pb.h \
-    generated/google/api/servicemanagement/v1/servicemanager.pb.h \
-    generated/google/api/annotations.grpc.pb.h \
-    generated/google/api/annotations.pb.h \
-    generated/google/api/auth.grpc.pb.h \
-    generated/google/api/auth.pb.h \
-    generated/google/api/backend.grpc.pb.h \
-    generated/google/api/backend.pb.h \
-    generated/google/api/billing.grpc.pb.h \
-    generated/google/api/billing.pb.h \
-    generated/google/api/config_change.grpc.pb.h \
-    generated/google/api/config_change.pb.h \
-    generated/google/api/consumer.grpc.pb.h \
-    generated/google/api/consumer.pb.h \
-    generated/google/api/context.grpc.pb.h \
-    generated/google/api/context.pb.h \
-    generated/google/api/control.grpc.pb.h \
-    generated/google/api/control.pb.h \
-    generated/google/api/distribution.grpc.pb.h \
-    generated/google/api/distribution.pb.h \
-    generated/google/api/documentation.grpc.pb.h \
-    generated/google/api/documentation.pb.h \
-    generated/google/api/endpoint.grpc.pb.h \
-    generated/google/api/endpoint.pb.h \
-    generated/google/api/http.grpc.pb.h \
-    generated/google/api/http.pb.h \
-    generated/google/api/httpbody.grpc.pb.h \
-    generated/google/api/httpbody.pb.h \
-    generated/google/api/label.grpc.pb.h \
-    generated/google/api/label.pb.h \
-    generated/google/api/log.grpc.pb.h \
-    generated/google/api/log.pb.h \
-    generated/google/api/logging.grpc.pb.h \
-    generated/google/api/logging.pb.h \
-    generated/google/api/metric.grpc.pb.h \
-    generated/google/api/metric.pb.h \
-    generated/google/api/monitored_resource.grpc.pb.h \
-    generated/google/api/monitored_resource.pb.h \
-    generated/google/api/monitoring.grpc.pb.h \
-    generated/google/api/monitoring.pb.h \
-    generated/google/api/service.grpc.pb.h \
-    generated/google/api/service.pb.h \
-    generated/google/api/system_parameter.grpc.pb.h \
-    generated/google/api/system_parameter.pb.h \
-    generated/google/api/usage.grpc.pb.h \
-    generated/google/api/usage.pb.h \
-    generated/google/logging/type/http_request.grpc.pb.h \
-    generated/google/logging/type/http_request.pb.h \
-    generated/google/logging/type/log_severity.grpc.pb.h \
-    generated/google/logging/type/log_severity.pb.h \
-    generated/google/logging/v2/log_entry.grpc.pb.h \
-    generated/google/logging/v2/log_entry.pb.h \
-    generated/google/logging/v2/logging.grpc.pb.h \
-    generated/google/logging/v2/logging.pb.h \
-    generated/google/logging/v2/logging_config.grpc.pb.h \
-    generated/google/logging/v2/logging_config.pb.h \
-    generated/google/logging/v2/logging_metrics.grpc.pb.h \
-    generated/google/logging/v2/logging_metrics.pb.h \
-    generated/google/longrunning/operations.grpc.pb.h \
-    generated/google/longrunning/operations.pb.h \
-    generated/google/rpc/code.grpc.pb.h \
-    generated/google/rpc/code.pb.h \
-    generated/google/rpc/error_details.grpc.pb.h \
-    generated/google/rpc/error_details.pb.h \
-    generated/google/rpc/status.grpc.pb.h \
-    generated/google/rpc/status.pb.h \
-    generated/google/cloud/speech/v1beta1/cloud_speech.grpc.pb.h \
-    generated/google/cloud/speech/v1beta1/cloud_speech.pb.h \
-    generated/google/type/color.grpc.pb.h \
-    generated/google/type/color.pb.h \
-    generated/google/type/date.grpc.pb.h \
-    generated/google/type/date.pb.h \
-    generated/google/type/dayofweek.grpc.pb.h \
-    generated/google/type/dayofweek.pb.h \
-    generated/google/type/latlng.grpc.pb.h \
-    generated/google/type/latlng.pb.h \
-    generated/google/type/money.grpc.pb.h \
-    generated/google/type/money.pb.h \
-    generated/google/type/timeofday.grpc.pb.h \
-    generated/google/type/timeofday.pb.h
+    speechrec.h
 
 unix {
     target.path = /usr/lib

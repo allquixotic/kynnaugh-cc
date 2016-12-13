@@ -2,10 +2,7 @@
 #define TEST_CONVERT_H
 
 #include <QtTest>
-#include <QtAV>
 #include <../convert.h>
-
-using namespace QtAV;
 
 class TestConvert : public QObject
 {
@@ -13,19 +10,15 @@ class TestConvert : public QObject
 
 public:
     TestConvert();
-    void testConvertMono();
-    void testConvertStereo();
-
-public slots:
-    void stopped();
-
-//private slots:
-
 
 private:
     void testConvertGeneric(bool ster);
     convert conv;
     bool stereo;
+
+private slots:
+    void testConvertMono();
+    void testConvertStereo();
 };
 
 

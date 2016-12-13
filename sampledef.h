@@ -18,7 +18,7 @@ public:
     void clear();
     static std::tuple<quint64, anyID, qint32> getKey(quint64 schid, anyID clientID, qint32 channels);
 
-public slots:
+public Q_SLOTS:
     void check();
     void threadStarted();
     void threadFinished();
