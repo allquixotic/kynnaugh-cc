@@ -1,18 +1,11 @@
 /*
-This file is part of kynnaugh-cc.
+/*TeamSpeak 3 plugin development kit
+Copyright (c) 2008-2016 TeamSpeak Systems GmbH
+Copyright (c) 2016 Sean McNamara <smcnam@gmail.com>
 
-Kynnaugh-cc is free software: you can redistribute it and/or modify
-it under the terms of the Apache License, version 2.0 as published by
-the Apache Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-Foobar is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-Apache License, version 2.0 for more details.
-
-You should have received a copy of the Apache License, version 2.0
-along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.0>.
+Available to the general public at https://www.teamspeak.com/downloads with no specified license.
+The author of kynnaugh-cc does not claim to license this file under the Apache License, version 2.0.
+This file is a derivative work of the example in the Plugin SDK.
 */
 
 #include <iostream>

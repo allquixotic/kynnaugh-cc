@@ -1,3 +1,10 @@
+/*TeamSpeak 3 plugin development kit
+Copyright (c) 2008-2016 TeamSpeak Systems GmbH
+
+Available to the general public at https://www.teamspeak.com/downloads with no specified license.
+The author of kynnaugh-cc does not claim to license this file under the Apache License, version 2.0.
+*/
+
 #ifndef TS3_FUNCTIONS_H
 #define TS3_FUNCTIONS_H
 
