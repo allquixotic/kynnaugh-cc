@@ -103,14 +103,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   ServiceAccount_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ServiceAccount_descriptor_,
-      ServiceAccount::default_instance_,
+      ServiceAccount::internal_default_instance(),
       ServiceAccount_offsets_,
       -1,
       -1,
       -1,
       sizeof(ServiceAccount),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceAccount, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceAccount, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceAccount, _internal_metadata_));
   CreateServiceAccountRequest_descriptor_ = file->message_type(1);
   static const int CreateServiceAccountRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountRequest, name_),
@@ -120,14 +119,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   CreateServiceAccountRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateServiceAccountRequest_descriptor_,
-      CreateServiceAccountRequest::default_instance_,
+      CreateServiceAccountRequest::internal_default_instance(),
       CreateServiceAccountRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateServiceAccountRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountRequest, _internal_metadata_));
   ListServiceAccountsRequest_descriptor_ = file->message_type(2);
   static const int ListServiceAccountsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsRequest, name_),
@@ -137,14 +135,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   ListServiceAccountsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceAccountsRequest_descriptor_,
-      ListServiceAccountsRequest::default_instance_,
+      ListServiceAccountsRequest::internal_default_instance(),
       ListServiceAccountsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceAccountsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsRequest, _internal_metadata_));
   ListServiceAccountsResponse_descriptor_ = file->message_type(3);
   static const int ListServiceAccountsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsResponse, accounts_),
@@ -153,14 +150,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   ListServiceAccountsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceAccountsResponse_descriptor_,
-      ListServiceAccountsResponse::default_instance_,
+      ListServiceAccountsResponse::internal_default_instance(),
       ListServiceAccountsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceAccountsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountsResponse, _internal_metadata_));
   GetServiceAccountRequest_descriptor_ = file->message_type(4);
   static const int GetServiceAccountRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountRequest, name_),
@@ -168,14 +164,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   GetServiceAccountRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetServiceAccountRequest_descriptor_,
-      GetServiceAccountRequest::default_instance_,
+      GetServiceAccountRequest::internal_default_instance(),
       GetServiceAccountRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetServiceAccountRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountRequest, _internal_metadata_));
   DeleteServiceAccountRequest_descriptor_ = file->message_type(5);
   static const int DeleteServiceAccountRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountRequest, name_),
@@ -183,14 +178,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   DeleteServiceAccountRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteServiceAccountRequest_descriptor_,
-      DeleteServiceAccountRequest::default_instance_,
+      DeleteServiceAccountRequest::internal_default_instance(),
       DeleteServiceAccountRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteServiceAccountRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountRequest, _internal_metadata_));
   ListServiceAccountKeysRequest_descriptor_ = file->message_type(6);
   static const int ListServiceAccountKeysRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountKeysRequest, name_),
@@ -199,14 +193,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   ListServiceAccountKeysRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceAccountKeysRequest_descriptor_,
-      ListServiceAccountKeysRequest::default_instance_,
+      ListServiceAccountKeysRequest::internal_default_instance(),
       ListServiceAccountKeysRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceAccountKeysRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountKeysRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountKeysRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountKeysRequest, _internal_metadata_));
   ListServiceAccountKeysRequest_KeyType_descriptor_ = ListServiceAccountKeysRequest_descriptor_->enum_type(0);
   ListServiceAccountKeysResponse_descriptor_ = file->message_type(7);
   static const int ListServiceAccountKeysResponse_offsets_[1] = {
@@ -215,14 +208,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   ListServiceAccountKeysResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceAccountKeysResponse_descriptor_,
-      ListServiceAccountKeysResponse::default_instance_,
+      ListServiceAccountKeysResponse::internal_default_instance(),
       ListServiceAccountKeysResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceAccountKeysResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountKeysResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountKeysResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceAccountKeysResponse, _internal_metadata_));
   GetServiceAccountKeyRequest_descriptor_ = file->message_type(8);
   static const int GetServiceAccountKeyRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountKeyRequest, name_),
@@ -231,14 +223,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   GetServiceAccountKeyRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetServiceAccountKeyRequest_descriptor_,
-      GetServiceAccountKeyRequest::default_instance_,
+      GetServiceAccountKeyRequest::internal_default_instance(),
       GetServiceAccountKeyRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetServiceAccountKeyRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountKeyRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountKeyRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceAccountKeyRequest, _internal_metadata_));
   ServiceAccountKey_descriptor_ = file->message_type(9);
   static const int ServiceAccountKey_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceAccountKey, name_),
@@ -252,14 +243,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   ServiceAccountKey_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ServiceAccountKey_descriptor_,
-      ServiceAccountKey::default_instance_,
+      ServiceAccountKey::internal_default_instance(),
       ServiceAccountKey_offsets_,
       -1,
       -1,
       -1,
       sizeof(ServiceAccountKey),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceAccountKey, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceAccountKey, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceAccountKey, _internal_metadata_));
   CreateServiceAccountKeyRequest_descriptor_ = file->message_type(10);
   static const int CreateServiceAccountKeyRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountKeyRequest, name_),
@@ -269,14 +259,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   CreateServiceAccountKeyRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateServiceAccountKeyRequest_descriptor_,
-      CreateServiceAccountKeyRequest::default_instance_,
+      CreateServiceAccountKeyRequest::internal_default_instance(),
       CreateServiceAccountKeyRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateServiceAccountKeyRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountKeyRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountKeyRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceAccountKeyRequest, _internal_metadata_));
   DeleteServiceAccountKeyRequest_descriptor_ = file->message_type(11);
   static const int DeleteServiceAccountKeyRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountKeyRequest, name_),
@@ -284,14 +273,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   DeleteServiceAccountKeyRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteServiceAccountKeyRequest_descriptor_,
-      DeleteServiceAccountKeyRequest::default_instance_,
+      DeleteServiceAccountKeyRequest::internal_default_instance(),
       DeleteServiceAccountKeyRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteServiceAccountKeyRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountKeyRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountKeyRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceAccountKeyRequest, _internal_metadata_));
   SignBlobRequest_descriptor_ = file->message_type(12);
   static const int SignBlobRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobRequest, name_),
@@ -300,14 +288,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   SignBlobRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SignBlobRequest_descriptor_,
-      SignBlobRequest::default_instance_,
+      SignBlobRequest::internal_default_instance(),
       SignBlobRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(SignBlobRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobRequest, _internal_metadata_));
   SignBlobResponse_descriptor_ = file->message_type(13);
   static const int SignBlobResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobResponse, key_id_),
@@ -316,14 +303,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   SignBlobResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SignBlobResponse_descriptor_,
-      SignBlobResponse::default_instance_,
+      SignBlobResponse::internal_default_instance(),
       SignBlobResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(SignBlobResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SignBlobResponse, _internal_metadata_));
   Role_descriptor_ = file->message_type(14);
   static const int Role_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Role, name_),
@@ -333,14 +319,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   Role_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Role_descriptor_,
-      Role::default_instance_,
+      Role::internal_default_instance(),
       Role_offsets_,
       -1,
       -1,
       -1,
       sizeof(Role),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Role, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Role, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Role, _internal_metadata_));
   QueryGrantableRolesRequest_descriptor_ = file->message_type(15);
   static const int QueryGrantableRolesRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesRequest, full_resource_name_),
@@ -348,14 +333,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   QueryGrantableRolesRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       QueryGrantableRolesRequest_descriptor_,
-      QueryGrantableRolesRequest::default_instance_,
+      QueryGrantableRolesRequest::internal_default_instance(),
       QueryGrantableRolesRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(QueryGrantableRolesRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesRequest, _internal_metadata_));
   QueryGrantableRolesResponse_descriptor_ = file->message_type(16);
   static const int QueryGrantableRolesResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesResponse, roles_),
@@ -363,14 +347,13 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
   QueryGrantableRolesResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       QueryGrantableRolesResponse_descriptor_,
-      QueryGrantableRolesResponse::default_instance_,
+      QueryGrantableRolesResponse::internal_default_instance(),
       QueryGrantableRolesResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(QueryGrantableRolesResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryGrantableRolesResponse, _internal_metadata_));
   ServiceAccountKeyAlgorithm_descriptor_ = file->enum_type(0);
   ServiceAccountPrivateKeyType_descriptor_ = file->enum_type(1);
   ServiceAccountPublicKeyType_descriptor_ = file->enum_type(2);
@@ -379,7 +362,7 @@ void protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto);
 }
@@ -388,93 +371,149 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ServiceAccount_descriptor_, &ServiceAccount::default_instance());
+      ServiceAccount_descriptor_, ServiceAccount::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateServiceAccountRequest_descriptor_, &CreateServiceAccountRequest::default_instance());
+      CreateServiceAccountRequest_descriptor_, CreateServiceAccountRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceAccountsRequest_descriptor_, &ListServiceAccountsRequest::default_instance());
+      ListServiceAccountsRequest_descriptor_, ListServiceAccountsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceAccountsResponse_descriptor_, &ListServiceAccountsResponse::default_instance());
+      ListServiceAccountsResponse_descriptor_, ListServiceAccountsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetServiceAccountRequest_descriptor_, &GetServiceAccountRequest::default_instance());
+      GetServiceAccountRequest_descriptor_, GetServiceAccountRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteServiceAccountRequest_descriptor_, &DeleteServiceAccountRequest::default_instance());
+      DeleteServiceAccountRequest_descriptor_, DeleteServiceAccountRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceAccountKeysRequest_descriptor_, &ListServiceAccountKeysRequest::default_instance());
+      ListServiceAccountKeysRequest_descriptor_, ListServiceAccountKeysRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceAccountKeysResponse_descriptor_, &ListServiceAccountKeysResponse::default_instance());
+      ListServiceAccountKeysResponse_descriptor_, ListServiceAccountKeysResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetServiceAccountKeyRequest_descriptor_, &GetServiceAccountKeyRequest::default_instance());
+      GetServiceAccountKeyRequest_descriptor_, GetServiceAccountKeyRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ServiceAccountKey_descriptor_, &ServiceAccountKey::default_instance());
+      ServiceAccountKey_descriptor_, ServiceAccountKey::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateServiceAccountKeyRequest_descriptor_, &CreateServiceAccountKeyRequest::default_instance());
+      CreateServiceAccountKeyRequest_descriptor_, CreateServiceAccountKeyRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteServiceAccountKeyRequest_descriptor_, &DeleteServiceAccountKeyRequest::default_instance());
+      DeleteServiceAccountKeyRequest_descriptor_, DeleteServiceAccountKeyRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SignBlobRequest_descriptor_, &SignBlobRequest::default_instance());
+      SignBlobRequest_descriptor_, SignBlobRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SignBlobResponse_descriptor_, &SignBlobResponse::default_instance());
+      SignBlobResponse_descriptor_, SignBlobResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Role_descriptor_, &Role::default_instance());
+      Role_descriptor_, Role::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      QueryGrantableRolesRequest_descriptor_, &QueryGrantableRolesRequest::default_instance());
+      QueryGrantableRolesRequest_descriptor_, QueryGrantableRolesRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      QueryGrantableRolesResponse_descriptor_, &QueryGrantableRolesResponse::default_instance());
+      QueryGrantableRolesResponse_descriptor_, QueryGrantableRolesResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
-  delete ServiceAccount::default_instance_;
+  ServiceAccount_default_instance_.Shutdown();
   delete ServiceAccount_reflection_;
-  delete CreateServiceAccountRequest::default_instance_;
+  CreateServiceAccountRequest_default_instance_.Shutdown();
   delete CreateServiceAccountRequest_reflection_;
-  delete ListServiceAccountsRequest::default_instance_;
+  ListServiceAccountsRequest_default_instance_.Shutdown();
   delete ListServiceAccountsRequest_reflection_;
-  delete ListServiceAccountsResponse::default_instance_;
+  ListServiceAccountsResponse_default_instance_.Shutdown();
   delete ListServiceAccountsResponse_reflection_;
-  delete GetServiceAccountRequest::default_instance_;
+  GetServiceAccountRequest_default_instance_.Shutdown();
   delete GetServiceAccountRequest_reflection_;
-  delete DeleteServiceAccountRequest::default_instance_;
+  DeleteServiceAccountRequest_default_instance_.Shutdown();
   delete DeleteServiceAccountRequest_reflection_;
-  delete ListServiceAccountKeysRequest::default_instance_;
+  ListServiceAccountKeysRequest_default_instance_.Shutdown();
   delete ListServiceAccountKeysRequest_reflection_;
-  delete ListServiceAccountKeysResponse::default_instance_;
+  ListServiceAccountKeysResponse_default_instance_.Shutdown();
   delete ListServiceAccountKeysResponse_reflection_;
-  delete GetServiceAccountKeyRequest::default_instance_;
+  GetServiceAccountKeyRequest_default_instance_.Shutdown();
   delete GetServiceAccountKeyRequest_reflection_;
-  delete ServiceAccountKey::default_instance_;
+  ServiceAccountKey_default_instance_.Shutdown();
   delete ServiceAccountKey_reflection_;
-  delete CreateServiceAccountKeyRequest::default_instance_;
+  CreateServiceAccountKeyRequest_default_instance_.Shutdown();
   delete CreateServiceAccountKeyRequest_reflection_;
-  delete DeleteServiceAccountKeyRequest::default_instance_;
+  DeleteServiceAccountKeyRequest_default_instance_.Shutdown();
   delete DeleteServiceAccountKeyRequest_reflection_;
-  delete SignBlobRequest::default_instance_;
+  SignBlobRequest_default_instance_.Shutdown();
   delete SignBlobRequest_reflection_;
-  delete SignBlobResponse::default_instance_;
+  SignBlobResponse_default_instance_.Shutdown();
   delete SignBlobResponse_reflection_;
-  delete Role::default_instance_;
+  Role_default_instance_.Shutdown();
   delete Role_reflection_;
-  delete QueryGrantableRolesRequest::default_instance_;
+  QueryGrantableRolesRequest_default_instance_.Shutdown();
   delete QueryGrantableRolesRequest_reflection_;
-  delete QueryGrantableRolesResponse::default_instance_;
+  QueryGrantableRolesResponse_default_instance_.Shutdown();
   delete QueryGrantableRolesResponse_reflection_;
 }
 
-void protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::iam::v1::protobuf_AddDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
-  ::google::iam::v1::protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ffield_5fmask_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::iam::v1::protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
+  ::google::iam::v1::protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ffield_5fmask_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  ServiceAccount_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateServiceAccountRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServiceAccountsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServiceAccountsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetServiceAccountRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteServiceAccountRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServiceAccountKeysRequest_default_instance_.DefaultConstruct();
+  ListServiceAccountKeysResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetServiceAccountKeyRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ServiceAccountKey_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateServiceAccountKeyRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteServiceAccountKeyRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SignBlobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SignBlobResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Role_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  QueryGrantableRolesRequest_default_instance_.DefaultConstruct();
+  QueryGrantableRolesResponse_default_instance_.DefaultConstruct();
+  ServiceAccount_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateServiceAccountRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceAccountsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceAccountsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetServiceAccountRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteServiceAccountRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceAccountKeysRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceAccountKeysResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetServiceAccountKeyRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ServiceAccountKey_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateServiceAccountKeyRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteServiceAccountKeyRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SignBlobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SignBlobResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Role_default_instance_.get_mutable()->InitAsDefaultInstance();
+  QueryGrantableRolesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  QueryGrantableRolesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto_once_);
+void protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\035google/iam/admin/v1/iam.proto\022\023google."
     "iam.admin.v1\032\034google/api/annotations.pro"
@@ -592,48 +631,26 @@ void protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
     "yGrantableRoles\022/.google.iam.admin.v1.Qu"
     "eryGrantableRolesRequest\0320.google.iam.ad"
     "min.v1.QueryGrantableRolesResponse\"(\202\323\344\223"
-    "\002\"\"\035/v1/roles:queryGrantableRoles:\001*B(\n\027"
-    "com.google.iam.admin.v1B\010IamProtoP\001\370\001\001b\006"
-    "proto3", 4726);
+    "\002\"\"\035/v1/roles:queryGrantableRoles:\001*Bb\n\027"
+    "com.google.iam.admin.v1B\010IamProtoP\001Z8goo"
+    "gle.golang.org/genproto/googleapis/iam/a"
+    "dmin/v1;admin\370\001\001b\006proto3", 4784);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/iam/admin/v1/iam.proto", &protobuf_RegisterTypes);
-  ServiceAccount::default_instance_ = new ServiceAccount();
-  CreateServiceAccountRequest::default_instance_ = new CreateServiceAccountRequest();
-  ListServiceAccountsRequest::default_instance_ = new ListServiceAccountsRequest();
-  ListServiceAccountsResponse::default_instance_ = new ListServiceAccountsResponse();
-  GetServiceAccountRequest::default_instance_ = new GetServiceAccountRequest();
-  DeleteServiceAccountRequest::default_instance_ = new DeleteServiceAccountRequest();
-  ListServiceAccountKeysRequest::default_instance_ = new ListServiceAccountKeysRequest();
-  ListServiceAccountKeysResponse::default_instance_ = new ListServiceAccountKeysResponse();
-  GetServiceAccountKeyRequest::default_instance_ = new GetServiceAccountKeyRequest();
-  ServiceAccountKey::default_instance_ = new ServiceAccountKey();
-  CreateServiceAccountKeyRequest::default_instance_ = new CreateServiceAccountKeyRequest();
-  DeleteServiceAccountKeyRequest::default_instance_ = new DeleteServiceAccountKeyRequest();
-  SignBlobRequest::default_instance_ = new SignBlobRequest();
-  SignBlobResponse::default_instance_ = new SignBlobResponse();
-  Role::default_instance_ = new Role();
-  QueryGrantableRolesRequest::default_instance_ = new QueryGrantableRolesRequest();
-  QueryGrantableRolesResponse::default_instance_ = new QueryGrantableRolesResponse();
-  ServiceAccount::default_instance_->InitAsDefaultInstance();
-  CreateServiceAccountRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceAccountsRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceAccountsResponse::default_instance_->InitAsDefaultInstance();
-  GetServiceAccountRequest::default_instance_->InitAsDefaultInstance();
-  DeleteServiceAccountRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceAccountKeysRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceAccountKeysResponse::default_instance_->InitAsDefaultInstance();
-  GetServiceAccountKeyRequest::default_instance_->InitAsDefaultInstance();
-  ServiceAccountKey::default_instance_->InitAsDefaultInstance();
-  CreateServiceAccountKeyRequest::default_instance_->InitAsDefaultInstance();
-  DeleteServiceAccountKeyRequest::default_instance_->InitAsDefaultInstance();
-  SignBlobRequest::default_instance_->InitAsDefaultInstance();
-  SignBlobResponse::default_instance_->InitAsDefaultInstance();
-  Role::default_instance_->InitAsDefaultInstance();
-  QueryGrantableRolesRequest::default_instance_->InitAsDefaultInstance();
-  QueryGrantableRolesResponse::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::iam::v1::protobuf_AddDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
+  ::google::iam::v1::protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ffield_5fmask_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fiam_2fadmin_2fv1_2fiam_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto_once_);
+void protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto_once_,
+                 &protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fiam_2fadmin_2fv1_2fiam_2eproto {
   StaticDescriptorInitializer_google_2fiam_2fadmin_2fv1_2fiam_2eproto() {
@@ -645,7 +662,7 @@ const ::google::protobuf::EnumDescriptor* ServiceAccountKeyAlgorithm_descriptor(
   return ServiceAccountKeyAlgorithm_descriptor_;
 }
 bool ServiceAccountKeyAlgorithm_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -660,7 +677,7 @@ const ::google::protobuf::EnumDescriptor* ServiceAccountPrivateKeyType_descripto
   return ServiceAccountPrivateKeyType_descriptor_;
 }
 bool ServiceAccountPrivateKeyType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -675,7 +692,7 @@ const ::google::protobuf::EnumDescriptor* ServiceAccountPublicKeyType_descriptor
   return ServiceAccountPublicKeyType_descriptor_;
 }
 bool ServiceAccountPublicKeyType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -684,6 +701,16 @@ bool ServiceAccountPublicKeyType_IsValid(int value) {
       return false;
   }
 }
+
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
 
 
 // ===================================================================
@@ -700,34 +727,33 @@ const int ServiceAccount::kOauth2ClientIdFieldNumber;
 
 ServiceAccount::ServiceAccount()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.ServiceAccount)
 }
-
 ServiceAccount::ServiceAccount(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.ServiceAccount)
 }
 
 void ServiceAccount::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ServiceAccount::ServiceAccount(const ServiceAccount& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.ServiceAccount)
 }
 
 void ServiceAccount::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   unique_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -735,6 +761,7 @@ void ServiceAccount::SharedCtor() {
   display_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   etag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   oauth2_client_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ServiceAccount::~ServiceAccount() {
@@ -743,19 +770,18 @@ ServiceAccount::~ServiceAccount() {
 }
 
 void ServiceAccount::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  project_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  unique_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  email_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  display_name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  etag_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  oauth2_client_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  project_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  unique_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  email_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  display_name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  etag_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  oauth2_client_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ServiceAccount::ArenaDtor(void* object) {
@@ -775,11 +801,11 @@ const ::google::protobuf::Descriptor* ServiceAccount::descriptor() {
 }
 
 const ServiceAccount& ServiceAccount::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-ServiceAccount* ServiceAccount::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ServiceAccount> ServiceAccount_default_instance_;
 
 ServiceAccount* ServiceAccount::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ServiceAccount>(arena);
@@ -1015,6 +1041,7 @@ void ServiceAccount::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ServiceAccount::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.ServiceAccount)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1093,9 +1120,9 @@ void ServiceAccount::SerializeWithCachedSizes(
   return target;
 }
 
-int ServiceAccount::ByteSize() const {
+size_t ServiceAccount::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.ServiceAccount)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1146,18 +1173,17 @@ int ServiceAccount::ByteSize() const {
         this->oauth2_client_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ServiceAccount::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.ServiceAccount)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ServiceAccount* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ServiceAccount* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ServiceAccount>(
           &from);
   if (source == NULL) {
@@ -1165,15 +1191,21 @@ void ServiceAccount::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.ServiceAccount)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ServiceAccount::MergeFrom(const ServiceAccount& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.ServiceAccount)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ServiceAccount::UnsafeMergeFrom(const ServiceAccount& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -1208,7 +1240,7 @@ void ServiceAccount::CopyFrom(const ServiceAccount& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.ServiceAccount)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ServiceAccount::IsInitialized() const {
@@ -1222,7 +1254,7 @@ void ServiceAccount::Swap(ServiceAccount* other) {
     InternalSwap(other);
   } else {
     ServiceAccount temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1259,46 +1291,46 @@ void ServiceAccount::InternalSwap(ServiceAccount* other) {
 void ServiceAccount::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccount::name() const {
+const ::std::string& ServiceAccount::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccount.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccount::set_name(const ::std::string& value) {
+void ServiceAccount::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccount.name)
 }
- void ServiceAccount::set_name(const char* value) {
+void ServiceAccount::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccount.name)
 }
- void ServiceAccount::set_name(const char* value,
+void ServiceAccount::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccount.name)
 }
- ::std::string* ServiceAccount::mutable_name() {
+::std::string* ServiceAccount::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccount.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::release_name() {
+::std::string* ServiceAccount::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccount.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::unsafe_arena_release_name() {
+::std::string* ServiceAccount::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccount.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccount::set_allocated_name(::std::string* name) {
+void ServiceAccount::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1308,7 +1340,7 @@ void ServiceAccount::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccount.name)
 }
- void ServiceAccount::unsafe_arena_set_allocated_name(
+void ServiceAccount::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -1325,46 +1357,46 @@ void ServiceAccount::clear_name() {
 void ServiceAccount::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccount::project_id() const {
+const ::std::string& ServiceAccount::project_id() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccount.project_id)
   return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccount::set_project_id(const ::std::string& value) {
+void ServiceAccount::set_project_id(const ::std::string& value) {
   
   project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccount.project_id)
 }
- void ServiceAccount::set_project_id(const char* value) {
+void ServiceAccount::set_project_id(const char* value) {
   
   project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccount.project_id)
 }
- void ServiceAccount::set_project_id(const char* value,
+void ServiceAccount::set_project_id(const char* value,
     size_t size) {
   
   project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccount.project_id)
 }
- ::std::string* ServiceAccount::mutable_project_id() {
+::std::string* ServiceAccount::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccount.project_id)
   return project_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::release_project_id() {
+::std::string* ServiceAccount::release_project_id() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccount.project_id)
   
   return project_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::unsafe_arena_release_project_id() {
+::std::string* ServiceAccount::unsafe_arena_release_project_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccount.project_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return project_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccount::set_allocated_project_id(::std::string* project_id) {
+void ServiceAccount::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -1374,7 +1406,7 @@ void ServiceAccount::clear_project_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccount.project_id)
 }
- void ServiceAccount::unsafe_arena_set_allocated_project_id(
+void ServiceAccount::unsafe_arena_set_allocated_project_id(
     ::std::string* project_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (project_id != NULL) {
@@ -1391,46 +1423,46 @@ void ServiceAccount::clear_project_id() {
 void ServiceAccount::clear_unique_id() {
   unique_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccount::unique_id() const {
+const ::std::string& ServiceAccount::unique_id() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccount.unique_id)
   return unique_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccount::set_unique_id(const ::std::string& value) {
+void ServiceAccount::set_unique_id(const ::std::string& value) {
   
   unique_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccount.unique_id)
 }
- void ServiceAccount::set_unique_id(const char* value) {
+void ServiceAccount::set_unique_id(const char* value) {
   
   unique_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccount.unique_id)
 }
- void ServiceAccount::set_unique_id(const char* value,
+void ServiceAccount::set_unique_id(const char* value,
     size_t size) {
   
   unique_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccount.unique_id)
 }
- ::std::string* ServiceAccount::mutable_unique_id() {
+::std::string* ServiceAccount::mutable_unique_id() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccount.unique_id)
   return unique_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::release_unique_id() {
+::std::string* ServiceAccount::release_unique_id() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccount.unique_id)
   
   return unique_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::unsafe_arena_release_unique_id() {
+::std::string* ServiceAccount::unsafe_arena_release_unique_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccount.unique_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return unique_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccount::set_allocated_unique_id(::std::string* unique_id) {
+void ServiceAccount::set_allocated_unique_id(::std::string* unique_id) {
   if (unique_id != NULL) {
     
   } else {
@@ -1440,7 +1472,7 @@ void ServiceAccount::clear_unique_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccount.unique_id)
 }
- void ServiceAccount::unsafe_arena_set_allocated_unique_id(
+void ServiceAccount::unsafe_arena_set_allocated_unique_id(
     ::std::string* unique_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (unique_id != NULL) {
@@ -1457,46 +1489,46 @@ void ServiceAccount::clear_unique_id() {
 void ServiceAccount::clear_email() {
   email_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccount::email() const {
+const ::std::string& ServiceAccount::email() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccount.email)
   return email_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccount::set_email(const ::std::string& value) {
+void ServiceAccount::set_email(const ::std::string& value) {
   
   email_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccount.email)
 }
- void ServiceAccount::set_email(const char* value) {
+void ServiceAccount::set_email(const char* value) {
   
   email_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccount.email)
 }
- void ServiceAccount::set_email(const char* value,
+void ServiceAccount::set_email(const char* value,
     size_t size) {
   
   email_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccount.email)
 }
- ::std::string* ServiceAccount::mutable_email() {
+::std::string* ServiceAccount::mutable_email() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccount.email)
   return email_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::release_email() {
+::std::string* ServiceAccount::release_email() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccount.email)
   
   return email_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::unsafe_arena_release_email() {
+::std::string* ServiceAccount::unsafe_arena_release_email() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccount.email)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return email_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccount::set_allocated_email(::std::string* email) {
+void ServiceAccount::set_allocated_email(::std::string* email) {
   if (email != NULL) {
     
   } else {
@@ -1506,7 +1538,7 @@ void ServiceAccount::clear_email() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccount.email)
 }
- void ServiceAccount::unsafe_arena_set_allocated_email(
+void ServiceAccount::unsafe_arena_set_allocated_email(
     ::std::string* email) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (email != NULL) {
@@ -1523,46 +1555,46 @@ void ServiceAccount::clear_email() {
 void ServiceAccount::clear_display_name() {
   display_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccount::display_name() const {
+const ::std::string& ServiceAccount::display_name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccount.display_name)
   return display_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccount::set_display_name(const ::std::string& value) {
+void ServiceAccount::set_display_name(const ::std::string& value) {
   
   display_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccount.display_name)
 }
- void ServiceAccount::set_display_name(const char* value) {
+void ServiceAccount::set_display_name(const char* value) {
   
   display_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccount.display_name)
 }
- void ServiceAccount::set_display_name(const char* value,
+void ServiceAccount::set_display_name(const char* value,
     size_t size) {
   
   display_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccount.display_name)
 }
- ::std::string* ServiceAccount::mutable_display_name() {
+::std::string* ServiceAccount::mutable_display_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccount.display_name)
   return display_name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::release_display_name() {
+::std::string* ServiceAccount::release_display_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccount.display_name)
   
   return display_name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::unsafe_arena_release_display_name() {
+::std::string* ServiceAccount::unsafe_arena_release_display_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccount.display_name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return display_name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccount::set_allocated_display_name(::std::string* display_name) {
+void ServiceAccount::set_allocated_display_name(::std::string* display_name) {
   if (display_name != NULL) {
     
   } else {
@@ -1572,7 +1604,7 @@ void ServiceAccount::clear_display_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccount.display_name)
 }
- void ServiceAccount::unsafe_arena_set_allocated_display_name(
+void ServiceAccount::unsafe_arena_set_allocated_display_name(
     ::std::string* display_name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (display_name != NULL) {
@@ -1589,46 +1621,46 @@ void ServiceAccount::clear_display_name() {
 void ServiceAccount::clear_etag() {
   etag_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccount::etag() const {
+const ::std::string& ServiceAccount::etag() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccount.etag)
   return etag_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccount::set_etag(const ::std::string& value) {
+void ServiceAccount::set_etag(const ::std::string& value) {
   
   etag_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccount.etag)
 }
- void ServiceAccount::set_etag(const char* value) {
+void ServiceAccount::set_etag(const char* value) {
   
   etag_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccount.etag)
 }
- void ServiceAccount::set_etag(const void* value,
+void ServiceAccount::set_etag(const void* value,
     size_t size) {
   
   etag_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccount.etag)
 }
- ::std::string* ServiceAccount::mutable_etag() {
+::std::string* ServiceAccount::mutable_etag() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccount.etag)
   return etag_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::release_etag() {
+::std::string* ServiceAccount::release_etag() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccount.etag)
   
   return etag_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::unsafe_arena_release_etag() {
+::std::string* ServiceAccount::unsafe_arena_release_etag() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccount.etag)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return etag_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccount::set_allocated_etag(::std::string* etag) {
+void ServiceAccount::set_allocated_etag(::std::string* etag) {
   if (etag != NULL) {
     
   } else {
@@ -1638,7 +1670,7 @@ void ServiceAccount::clear_etag() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccount.etag)
 }
- void ServiceAccount::unsafe_arena_set_allocated_etag(
+void ServiceAccount::unsafe_arena_set_allocated_etag(
     ::std::string* etag) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (etag != NULL) {
@@ -1655,46 +1687,46 @@ void ServiceAccount::clear_etag() {
 void ServiceAccount::clear_oauth2_client_id() {
   oauth2_client_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccount::oauth2_client_id() const {
+const ::std::string& ServiceAccount::oauth2_client_id() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
   return oauth2_client_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccount::set_oauth2_client_id(const ::std::string& value) {
+void ServiceAccount::set_oauth2_client_id(const ::std::string& value) {
   
   oauth2_client_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
 }
- void ServiceAccount::set_oauth2_client_id(const char* value) {
+void ServiceAccount::set_oauth2_client_id(const char* value) {
   
   oauth2_client_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
 }
- void ServiceAccount::set_oauth2_client_id(const char* value,
+void ServiceAccount::set_oauth2_client_id(const char* value,
     size_t size) {
   
   oauth2_client_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
 }
- ::std::string* ServiceAccount::mutable_oauth2_client_id() {
+::std::string* ServiceAccount::mutable_oauth2_client_id() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
   return oauth2_client_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::release_oauth2_client_id() {
+::std::string* ServiceAccount::release_oauth2_client_id() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
   
   return oauth2_client_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccount::unsafe_arena_release_oauth2_client_id() {
+::std::string* ServiceAccount::unsafe_arena_release_oauth2_client_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return oauth2_client_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccount::set_allocated_oauth2_client_id(::std::string* oauth2_client_id) {
+void ServiceAccount::set_allocated_oauth2_client_id(::std::string* oauth2_client_id) {
   if (oauth2_client_id != NULL) {
     
   } else {
@@ -1704,7 +1736,7 @@ void ServiceAccount::clear_oauth2_client_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
 }
- void ServiceAccount::unsafe_arena_set_allocated_oauth2_client_id(
+void ServiceAccount::unsafe_arena_set_allocated_oauth2_client_id(
     ::std::string* oauth2_client_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (oauth2_client_id != NULL) {
@@ -1717,6 +1749,9 @@ void ServiceAccount::clear_oauth2_client_id() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.ServiceAccount.oauth2_client_id)
 }
 
+inline const ServiceAccount* ServiceAccount::internal_default_instance() {
+  return &ServiceAccount_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1729,8 +1764,7 @@ void CreateServiceAccountRequest::_slow_mutable_service_account() {
   if (service_account_ == NULL) {
     return NULL;
   } else {
-    ::google::iam::admin::v1::ServiceAccount* temp = new ::google::iam::admin::v1::ServiceAccount;
-    temp->MergeFrom(*service_account_);
+    ::google::iam::admin::v1::ServiceAccount* temp = new ::google::iam::admin::v1::ServiceAccount(*service_account_);
     service_account_ = NULL;
     return temp;
   }
@@ -1777,38 +1811,39 @@ const int CreateServiceAccountRequest::kServiceAccountFieldNumber;
 
 CreateServiceAccountRequest::CreateServiceAccountRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.CreateServiceAccountRequest)
 }
-
 CreateServiceAccountRequest::CreateServiceAccountRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.CreateServiceAccountRequest)
 }
 
 void CreateServiceAccountRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  service_account_ = const_cast< ::google::iam::admin::v1::ServiceAccount*>(&::google::iam::admin::v1::ServiceAccount::default_instance());
+  service_account_ = const_cast< ::google::iam::admin::v1::ServiceAccount*>(
+      ::google::iam::admin::v1::ServiceAccount::internal_default_instance());
 }
 
 CreateServiceAccountRequest::CreateServiceAccountRequest(const CreateServiceAccountRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.CreateServiceAccountRequest)
 }
 
 void CreateServiceAccountRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   account_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   service_account_ = NULL;
+  _cached_size_ = 0;
 }
 
 CreateServiceAccountRequest::~CreateServiceAccountRequest() {
@@ -1817,13 +1852,14 @@ CreateServiceAccountRequest::~CreateServiceAccountRequest() {
 }
 
 void CreateServiceAccountRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  account_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  account_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &CreateServiceAccountRequest_default_instance_.get()) {
     delete service_account_;
   }
 }
@@ -1845,11 +1881,11 @@ const ::google::protobuf::Descriptor* CreateServiceAccountRequest::descriptor() 
 }
 
 const CreateServiceAccountRequest& CreateServiceAccountRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-CreateServiceAccountRequest* CreateServiceAccountRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateServiceAccountRequest> CreateServiceAccountRequest_default_instance_;
 
 CreateServiceAccountRequest* CreateServiceAccountRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<CreateServiceAccountRequest>(arena);
@@ -1974,6 +2010,7 @@ void CreateServiceAccountRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateServiceAccountRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.CreateServiceAccountRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -2008,9 +2045,9 @@ void CreateServiceAccountRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateServiceAccountRequest::ByteSize() const {
+size_t CreateServiceAccountRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.CreateServiceAccountRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -2033,18 +2070,17 @@ int CreateServiceAccountRequest::ByteSize() const {
         *this->service_account_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateServiceAccountRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.CreateServiceAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateServiceAccountRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateServiceAccountRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateServiceAccountRequest>(
           &from);
   if (source == NULL) {
@@ -2052,15 +2088,21 @@ void CreateServiceAccountRequest::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.CreateServiceAccountRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateServiceAccountRequest::MergeFrom(const CreateServiceAccountRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.CreateServiceAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateServiceAccountRequest::UnsafeMergeFrom(const CreateServiceAccountRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -2083,7 +2125,7 @@ void CreateServiceAccountRequest::CopyFrom(const CreateServiceAccountRequest& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.CreateServiceAccountRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateServiceAccountRequest::IsInitialized() const {
@@ -2097,7 +2139,7 @@ void CreateServiceAccountRequest::Swap(CreateServiceAccountRequest* other) {
     InternalSwap(other);
   } else {
     CreateServiceAccountRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -2130,46 +2172,46 @@ void CreateServiceAccountRequest::InternalSwap(CreateServiceAccountRequest* othe
 void CreateServiceAccountRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& CreateServiceAccountRequest::name() const {
+const ::std::string& CreateServiceAccountRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.CreateServiceAccountRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateServiceAccountRequest::set_name(const ::std::string& value) {
+void CreateServiceAccountRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.CreateServiceAccountRequest.name)
 }
- void CreateServiceAccountRequest::set_name(const char* value) {
+void CreateServiceAccountRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.CreateServiceAccountRequest.name)
 }
- void CreateServiceAccountRequest::set_name(const char* value,
+void CreateServiceAccountRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.CreateServiceAccountRequest.name)
 }
- ::std::string* CreateServiceAccountRequest::mutable_name() {
+::std::string* CreateServiceAccountRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.CreateServiceAccountRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CreateServiceAccountRequest::release_name() {
+::std::string* CreateServiceAccountRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.CreateServiceAccountRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CreateServiceAccountRequest::unsafe_arena_release_name() {
+::std::string* CreateServiceAccountRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.CreateServiceAccountRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void CreateServiceAccountRequest::set_allocated_name(::std::string* name) {
+void CreateServiceAccountRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -2179,7 +2221,7 @@ void CreateServiceAccountRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.CreateServiceAccountRequest.name)
 }
- void CreateServiceAccountRequest::unsafe_arena_set_allocated_name(
+void CreateServiceAccountRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -2196,46 +2238,46 @@ void CreateServiceAccountRequest::clear_name() {
 void CreateServiceAccountRequest::clear_account_id() {
   account_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& CreateServiceAccountRequest::account_id() const {
+const ::std::string& CreateServiceAccountRequest::account_id() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
   return account_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateServiceAccountRequest::set_account_id(const ::std::string& value) {
+void CreateServiceAccountRequest::set_account_id(const ::std::string& value) {
   
   account_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
 }
- void CreateServiceAccountRequest::set_account_id(const char* value) {
+void CreateServiceAccountRequest::set_account_id(const char* value) {
   
   account_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
 }
- void CreateServiceAccountRequest::set_account_id(const char* value,
+void CreateServiceAccountRequest::set_account_id(const char* value,
     size_t size) {
   
   account_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
 }
- ::std::string* CreateServiceAccountRequest::mutable_account_id() {
+::std::string* CreateServiceAccountRequest::mutable_account_id() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
   return account_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CreateServiceAccountRequest::release_account_id() {
+::std::string* CreateServiceAccountRequest::release_account_id() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
   
   return account_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CreateServiceAccountRequest::unsafe_arena_release_account_id() {
+::std::string* CreateServiceAccountRequest::unsafe_arena_release_account_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return account_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void CreateServiceAccountRequest::set_allocated_account_id(::std::string* account_id) {
+void CreateServiceAccountRequest::set_allocated_account_id(::std::string* account_id) {
   if (account_id != NULL) {
     
   } else {
@@ -2245,7 +2287,7 @@ void CreateServiceAccountRequest::clear_account_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.CreateServiceAccountRequest.account_id)
 }
- void CreateServiceAccountRequest::unsafe_arena_set_allocated_account_id(
+void CreateServiceAccountRequest::unsafe_arena_set_allocated_account_id(
     ::std::string* account_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (account_id != NULL) {
@@ -2260,7 +2302,7 @@ void CreateServiceAccountRequest::clear_account_id() {
 
 // optional .google.iam.admin.v1.ServiceAccount service_account = 3;
 bool CreateServiceAccountRequest::has_service_account() const {
-  return !_is_default_instance_ && service_account_ != NULL;
+  return this != internal_default_instance() && service_account_ != NULL;
 }
 void CreateServiceAccountRequest::clear_service_account() {
   if (GetArenaNoVirtual() == NULL && service_account_ != NULL) delete service_account_;
@@ -2268,7 +2310,8 @@ void CreateServiceAccountRequest::clear_service_account() {
 }
 const ::google::iam::admin::v1::ServiceAccount& CreateServiceAccountRequest::service_account() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.CreateServiceAccountRequest.service_account)
-  return service_account_ != NULL ? *service_account_ : *default_instance_->service_account_;
+  return service_account_ != NULL ? *service_account_
+                         : *::google::iam::admin::v1::ServiceAccount::internal_default_instance();
 }
 ::google::iam::admin::v1::ServiceAccount* CreateServiceAccountRequest::mutable_service_account() {
   
@@ -2306,6 +2349,9 @@ const ::google::iam::admin::v1::ServiceAccount& CreateServiceAccountRequest::ser
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.CreateServiceAccountRequest.service_account)
 }
 
+inline const CreateServiceAccountRequest* CreateServiceAccountRequest::internal_default_instance() {
+  return &CreateServiceAccountRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2318,37 +2364,37 @@ const int ListServiceAccountsRequest::kPageTokenFieldNumber;
 
 ListServiceAccountsRequest::ListServiceAccountsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.ListServiceAccountsRequest)
 }
-
 ListServiceAccountsRequest::ListServiceAccountsRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.ListServiceAccountsRequest)
 }
 
 void ListServiceAccountsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceAccountsRequest::ListServiceAccountsRequest(const ListServiceAccountsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.ListServiceAccountsRequest)
 }
 
 void ListServiceAccountsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListServiceAccountsRequest::~ListServiceAccountsRequest() {
@@ -2357,14 +2403,13 @@ ListServiceAccountsRequest::~ListServiceAccountsRequest() {
 }
 
 void ListServiceAccountsRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListServiceAccountsRequest::ArenaDtor(void* object) {
@@ -2384,11 +2429,11 @@ const ::google::protobuf::Descriptor* ListServiceAccountsRequest::descriptor() {
 }
 
 const ListServiceAccountsRequest& ListServiceAccountsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceAccountsRequest* ListServiceAccountsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceAccountsRequest> ListServiceAccountsRequest_default_instance_;
 
 ListServiceAccountsRequest* ListServiceAccountsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListServiceAccountsRequest>(arena);
@@ -2431,10 +2476,10 @@ bool ListServiceAccountsRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2513,6 +2558,7 @@ void ListServiceAccountsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceAccountsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.ListServiceAccountsRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -2545,9 +2591,9 @@ void ListServiceAccountsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceAccountsRequest::ByteSize() const {
+size_t ListServiceAccountsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.ListServiceAccountsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -2570,18 +2616,17 @@ int ListServiceAccountsRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceAccountsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.ListServiceAccountsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceAccountsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceAccountsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceAccountsRequest>(
           &from);
   if (source == NULL) {
@@ -2589,15 +2634,21 @@ void ListServiceAccountsRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.ListServiceAccountsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceAccountsRequest::MergeFrom(const ListServiceAccountsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.ListServiceAccountsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServiceAccountsRequest::UnsafeMergeFrom(const ListServiceAccountsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -2620,7 +2671,7 @@ void ListServiceAccountsRequest::CopyFrom(const ListServiceAccountsRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.ListServiceAccountsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceAccountsRequest::IsInitialized() const {
@@ -2634,7 +2685,7 @@ void ListServiceAccountsRequest::Swap(ListServiceAccountsRequest* other) {
     InternalSwap(other);
   } else {
     ListServiceAccountsRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -2667,46 +2718,46 @@ void ListServiceAccountsRequest::InternalSwap(ListServiceAccountsRequest* other)
 void ListServiceAccountsRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListServiceAccountsRequest::name() const {
+const ::std::string& ListServiceAccountsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ListServiceAccountsRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceAccountsRequest::set_name(const ::std::string& value) {
+void ListServiceAccountsRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ListServiceAccountsRequest.name)
 }
- void ListServiceAccountsRequest::set_name(const char* value) {
+void ListServiceAccountsRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ListServiceAccountsRequest.name)
 }
- void ListServiceAccountsRequest::set_name(const char* value,
+void ListServiceAccountsRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ListServiceAccountsRequest.name)
 }
- ::std::string* ListServiceAccountsRequest::mutable_name() {
+::std::string* ListServiceAccountsRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ListServiceAccountsRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountsRequest::release_name() {
+::std::string* ListServiceAccountsRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ListServiceAccountsRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountsRequest::unsafe_arena_release_name() {
+::std::string* ListServiceAccountsRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ListServiceAccountsRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListServiceAccountsRequest::set_allocated_name(::std::string* name) {
+void ListServiceAccountsRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -2716,7 +2767,7 @@ void ListServiceAccountsRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ListServiceAccountsRequest.name)
 }
- void ListServiceAccountsRequest::unsafe_arena_set_allocated_name(
+void ListServiceAccountsRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -2733,11 +2784,11 @@ void ListServiceAccountsRequest::clear_name() {
 void ListServiceAccountsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListServiceAccountsRequest::page_size() const {
+::google::protobuf::int32 ListServiceAccountsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ListServiceAccountsRequest.page_size)
   return page_size_;
 }
- void ListServiceAccountsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListServiceAccountsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ListServiceAccountsRequest.page_size)
@@ -2747,46 +2798,46 @@ void ListServiceAccountsRequest::clear_page_size() {
 void ListServiceAccountsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListServiceAccountsRequest::page_token() const {
+const ::std::string& ListServiceAccountsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
   return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceAccountsRequest::set_page_token(const ::std::string& value) {
+void ListServiceAccountsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
 }
- void ListServiceAccountsRequest::set_page_token(const char* value) {
+void ListServiceAccountsRequest::set_page_token(const char* value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
 }
- void ListServiceAccountsRequest::set_page_token(const char* value,
+void ListServiceAccountsRequest::set_page_token(const char* value,
     size_t size) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
 }
- ::std::string* ListServiceAccountsRequest::mutable_page_token() {
+::std::string* ListServiceAccountsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
   return page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountsRequest::release_page_token() {
+::std::string* ListServiceAccountsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
   
   return page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountsRequest::unsafe_arena_release_page_token() {
+::std::string* ListServiceAccountsRequest::unsafe_arena_release_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListServiceAccountsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListServiceAccountsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -2796,7 +2847,7 @@ void ListServiceAccountsRequest::clear_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
 }
- void ListServiceAccountsRequest::unsafe_arena_set_allocated_page_token(
+void ListServiceAccountsRequest::unsafe_arena_set_allocated_page_token(
     ::std::string* page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (page_token != NULL) {
@@ -2809,6 +2860,9 @@ void ListServiceAccountsRequest::clear_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.ListServiceAccountsRequest.page_token)
 }
 
+inline const ListServiceAccountsRequest* ListServiceAccountsRequest::internal_default_instance() {
+  return &ListServiceAccountsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2820,36 +2874,36 @@ const int ListServiceAccountsResponse::kNextPageTokenFieldNumber;
 
 ListServiceAccountsResponse::ListServiceAccountsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.ListServiceAccountsResponse)
 }
-
 ListServiceAccountsResponse::ListServiceAccountsResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   accounts_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.ListServiceAccountsResponse)
 }
 
 void ListServiceAccountsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceAccountsResponse::ListServiceAccountsResponse(const ListServiceAccountsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.ListServiceAccountsResponse)
 }
 
 void ListServiceAccountsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListServiceAccountsResponse::~ListServiceAccountsResponse() {
@@ -2858,13 +2912,12 @@ ListServiceAccountsResponse::~ListServiceAccountsResponse() {
 }
 
 void ListServiceAccountsResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListServiceAccountsResponse::ArenaDtor(void* object) {
@@ -2884,11 +2937,11 @@ const ::google::protobuf::Descriptor* ListServiceAccountsResponse::descriptor() 
 }
 
 const ListServiceAccountsResponse& ListServiceAccountsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceAccountsResponse* ListServiceAccountsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceAccountsResponse> ListServiceAccountsResponse_default_instance_;
 
 ListServiceAccountsResponse* ListServiceAccountsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListServiceAccountsResponse>(arena);
@@ -2988,6 +3041,7 @@ void ListServiceAccountsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceAccountsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.ListServiceAccountsResponse)
   // repeated .google.iam.admin.v1.ServiceAccount accounts = 1;
   for (unsigned int i = 0, n = this->accounts_size(); i < n; i++) {
@@ -3011,9 +3065,9 @@ void ListServiceAccountsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceAccountsResponse::ByteSize() const {
+size_t ListServiceAccountsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.ListServiceAccountsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -3023,25 +3077,27 @@ int ListServiceAccountsResponse::ByteSize() const {
   }
 
   // repeated .google.iam.admin.v1.ServiceAccount accounts = 1;
-  total_size += 1 * this->accounts_size();
-  for (int i = 0; i < this->accounts_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->accounts(i));
+  {
+    unsigned int count = this->accounts_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->accounts(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceAccountsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.ListServiceAccountsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceAccountsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceAccountsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceAccountsResponse>(
           &from);
   if (source == NULL) {
@@ -3049,15 +3105,21 @@ void ListServiceAccountsResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.ListServiceAccountsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceAccountsResponse::MergeFrom(const ListServiceAccountsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.ListServiceAccountsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServiceAccountsResponse::UnsafeMergeFrom(const ListServiceAccountsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   accounts_.MergeFrom(from.accounts_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -3075,7 +3137,7 @@ void ListServiceAccountsResponse::CopyFrom(const ListServiceAccountsResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.ListServiceAccountsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceAccountsResponse::IsInitialized() const {
@@ -3089,7 +3151,7 @@ void ListServiceAccountsResponse::Swap(ListServiceAccountsResponse* other) {
     InternalSwap(other);
   } else {
     ListServiceAccountsResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3151,46 +3213,46 @@ ListServiceAccountsResponse::accounts() const {
 void ListServiceAccountsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListServiceAccountsResponse::next_page_token() const {
+const ::std::string& ListServiceAccountsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
   return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceAccountsResponse::set_next_page_token(const ::std::string& value) {
+void ListServiceAccountsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
 }
- void ListServiceAccountsResponse::set_next_page_token(const char* value) {
+void ListServiceAccountsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
 }
- void ListServiceAccountsResponse::set_next_page_token(const char* value,
+void ListServiceAccountsResponse::set_next_page_token(const char* value,
     size_t size) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
 }
- ::std::string* ListServiceAccountsResponse::mutable_next_page_token() {
+::std::string* ListServiceAccountsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
   return next_page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountsResponse::release_next_page_token() {
+::std::string* ListServiceAccountsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
   
   return next_page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountsResponse::unsafe_arena_release_next_page_token() {
+::std::string* ListServiceAccountsResponse::unsafe_arena_release_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return next_page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListServiceAccountsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListServiceAccountsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -3200,7 +3262,7 @@ void ListServiceAccountsResponse::clear_next_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
 }
- void ListServiceAccountsResponse::unsafe_arena_set_allocated_next_page_token(
+void ListServiceAccountsResponse::unsafe_arena_set_allocated_next_page_token(
     ::std::string* next_page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (next_page_token != NULL) {
@@ -3213,6 +3275,9 @@ void ListServiceAccountsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.ListServiceAccountsResponse.next_page_token)
 }
 
+inline const ListServiceAccountsResponse* ListServiceAccountsResponse::internal_default_instance() {
+  return &ListServiceAccountsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3223,35 +3288,35 @@ const int GetServiceAccountRequest::kNameFieldNumber;
 
 GetServiceAccountRequest::GetServiceAccountRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.GetServiceAccountRequest)
 }
-
 GetServiceAccountRequest::GetServiceAccountRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.GetServiceAccountRequest)
 }
 
 void GetServiceAccountRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetServiceAccountRequest::GetServiceAccountRequest(const GetServiceAccountRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.GetServiceAccountRequest)
 }
 
 void GetServiceAccountRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetServiceAccountRequest::~GetServiceAccountRequest() {
@@ -3260,13 +3325,12 @@ GetServiceAccountRequest::~GetServiceAccountRequest() {
 }
 
 void GetServiceAccountRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void GetServiceAccountRequest::ArenaDtor(void* object) {
@@ -3286,11 +3350,11 @@ const ::google::protobuf::Descriptor* GetServiceAccountRequest::descriptor() {
 }
 
 const GetServiceAccountRequest& GetServiceAccountRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-GetServiceAccountRequest* GetServiceAccountRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetServiceAccountRequest> GetServiceAccountRequest_default_instance_;
 
 GetServiceAccountRequest* GetServiceAccountRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetServiceAccountRequest>(arena);
@@ -3366,6 +3430,7 @@ void GetServiceAccountRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetServiceAccountRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.GetServiceAccountRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3382,9 +3447,9 @@ void GetServiceAccountRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetServiceAccountRequest::ByteSize() const {
+size_t GetServiceAccountRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.GetServiceAccountRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3393,18 +3458,17 @@ int GetServiceAccountRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetServiceAccountRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.GetServiceAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetServiceAccountRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetServiceAccountRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetServiceAccountRequest>(
           &from);
   if (source == NULL) {
@@ -3412,15 +3476,21 @@ void GetServiceAccountRequest::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.GetServiceAccountRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetServiceAccountRequest::MergeFrom(const GetServiceAccountRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.GetServiceAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetServiceAccountRequest::UnsafeMergeFrom(const GetServiceAccountRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -3437,7 +3507,7 @@ void GetServiceAccountRequest::CopyFrom(const GetServiceAccountRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.GetServiceAccountRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetServiceAccountRequest::IsInitialized() const {
@@ -3451,7 +3521,7 @@ void GetServiceAccountRequest::Swap(GetServiceAccountRequest* other) {
     InternalSwap(other);
   } else {
     GetServiceAccountRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3482,46 +3552,46 @@ void GetServiceAccountRequest::InternalSwap(GetServiceAccountRequest* other) {
 void GetServiceAccountRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& GetServiceAccountRequest::name() const {
+const ::std::string& GetServiceAccountRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.GetServiceAccountRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceAccountRequest::set_name(const ::std::string& value) {
+void GetServiceAccountRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.GetServiceAccountRequest.name)
 }
- void GetServiceAccountRequest::set_name(const char* value) {
+void GetServiceAccountRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.GetServiceAccountRequest.name)
 }
- void GetServiceAccountRequest::set_name(const char* value,
+void GetServiceAccountRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.GetServiceAccountRequest.name)
 }
- ::std::string* GetServiceAccountRequest::mutable_name() {
+::std::string* GetServiceAccountRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.GetServiceAccountRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetServiceAccountRequest::release_name() {
+::std::string* GetServiceAccountRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.GetServiceAccountRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetServiceAccountRequest::unsafe_arena_release_name() {
+::std::string* GetServiceAccountRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.GetServiceAccountRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void GetServiceAccountRequest::set_allocated_name(::std::string* name) {
+void GetServiceAccountRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -3531,7 +3601,7 @@ void GetServiceAccountRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.GetServiceAccountRequest.name)
 }
- void GetServiceAccountRequest::unsafe_arena_set_allocated_name(
+void GetServiceAccountRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -3544,6 +3614,9 @@ void GetServiceAccountRequest::clear_name() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.GetServiceAccountRequest.name)
 }
 
+inline const GetServiceAccountRequest* GetServiceAccountRequest::internal_default_instance() {
+  return &GetServiceAccountRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3554,35 +3627,35 @@ const int DeleteServiceAccountRequest::kNameFieldNumber;
 
 DeleteServiceAccountRequest::DeleteServiceAccountRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.DeleteServiceAccountRequest)
 }
-
 DeleteServiceAccountRequest::DeleteServiceAccountRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.DeleteServiceAccountRequest)
 }
 
 void DeleteServiceAccountRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteServiceAccountRequest::DeleteServiceAccountRequest(const DeleteServiceAccountRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.DeleteServiceAccountRequest)
 }
 
 void DeleteServiceAccountRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteServiceAccountRequest::~DeleteServiceAccountRequest() {
@@ -3591,13 +3664,12 @@ DeleteServiceAccountRequest::~DeleteServiceAccountRequest() {
 }
 
 void DeleteServiceAccountRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void DeleteServiceAccountRequest::ArenaDtor(void* object) {
@@ -3617,11 +3689,11 @@ const ::google::protobuf::Descriptor* DeleteServiceAccountRequest::descriptor() 
 }
 
 const DeleteServiceAccountRequest& DeleteServiceAccountRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteServiceAccountRequest* DeleteServiceAccountRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteServiceAccountRequest> DeleteServiceAccountRequest_default_instance_;
 
 DeleteServiceAccountRequest* DeleteServiceAccountRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<DeleteServiceAccountRequest>(arena);
@@ -3697,6 +3769,7 @@ void DeleteServiceAccountRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteServiceAccountRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.DeleteServiceAccountRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3713,9 +3786,9 @@ void DeleteServiceAccountRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteServiceAccountRequest::ByteSize() const {
+size_t DeleteServiceAccountRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.DeleteServiceAccountRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3724,18 +3797,17 @@ int DeleteServiceAccountRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteServiceAccountRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.DeleteServiceAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteServiceAccountRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteServiceAccountRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteServiceAccountRequest>(
           &from);
   if (source == NULL) {
@@ -3743,15 +3815,21 @@ void DeleteServiceAccountRequest::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.DeleteServiceAccountRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteServiceAccountRequest::MergeFrom(const DeleteServiceAccountRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.DeleteServiceAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteServiceAccountRequest::UnsafeMergeFrom(const DeleteServiceAccountRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -3768,7 +3846,7 @@ void DeleteServiceAccountRequest::CopyFrom(const DeleteServiceAccountRequest& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.DeleteServiceAccountRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteServiceAccountRequest::IsInitialized() const {
@@ -3782,7 +3860,7 @@ void DeleteServiceAccountRequest::Swap(DeleteServiceAccountRequest* other) {
     InternalSwap(other);
   } else {
     DeleteServiceAccountRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3813,46 +3891,46 @@ void DeleteServiceAccountRequest::InternalSwap(DeleteServiceAccountRequest* othe
 void DeleteServiceAccountRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& DeleteServiceAccountRequest::name() const {
+const ::std::string& DeleteServiceAccountRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.DeleteServiceAccountRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteServiceAccountRequest::set_name(const ::std::string& value) {
+void DeleteServiceAccountRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.DeleteServiceAccountRequest.name)
 }
- void DeleteServiceAccountRequest::set_name(const char* value) {
+void DeleteServiceAccountRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.DeleteServiceAccountRequest.name)
 }
- void DeleteServiceAccountRequest::set_name(const char* value,
+void DeleteServiceAccountRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.DeleteServiceAccountRequest.name)
 }
- ::std::string* DeleteServiceAccountRequest::mutable_name() {
+::std::string* DeleteServiceAccountRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.DeleteServiceAccountRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteServiceAccountRequest::release_name() {
+::std::string* DeleteServiceAccountRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.DeleteServiceAccountRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteServiceAccountRequest::unsafe_arena_release_name() {
+::std::string* DeleteServiceAccountRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.DeleteServiceAccountRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void DeleteServiceAccountRequest::set_allocated_name(::std::string* name) {
+void DeleteServiceAccountRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -3862,7 +3940,7 @@ void DeleteServiceAccountRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.DeleteServiceAccountRequest.name)
 }
- void DeleteServiceAccountRequest::unsafe_arena_set_allocated_name(
+void DeleteServiceAccountRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -3875,6 +3953,9 @@ void DeleteServiceAccountRequest::clear_name() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.DeleteServiceAccountRequest.name)
 }
 
+inline const DeleteServiceAccountRequest* DeleteServiceAccountRequest::internal_default_instance() {
+  return &DeleteServiceAccountRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3884,7 +3965,7 @@ const ::google::protobuf::EnumDescriptor* ListServiceAccountKeysRequest_KeyType_
   return ListServiceAccountKeysRequest_KeyType_descriptor_;
 }
 bool ListServiceAccountKeysRequest_KeyType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -3909,36 +3990,36 @@ const int ListServiceAccountKeysRequest::kKeyTypesFieldNumber;
 
 ListServiceAccountKeysRequest::ListServiceAccountKeysRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.ListServiceAccountKeysRequest)
 }
-
 ListServiceAccountKeysRequest::ListServiceAccountKeysRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   key_types_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.ListServiceAccountKeysRequest)
 }
 
 void ListServiceAccountKeysRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceAccountKeysRequest::ListServiceAccountKeysRequest(const ListServiceAccountKeysRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.ListServiceAccountKeysRequest)
 }
 
 void ListServiceAccountKeysRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListServiceAccountKeysRequest::~ListServiceAccountKeysRequest() {
@@ -3947,13 +4028,12 @@ ListServiceAccountKeysRequest::~ListServiceAccountKeysRequest() {
 }
 
 void ListServiceAccountKeysRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListServiceAccountKeysRequest::ArenaDtor(void* object) {
@@ -3973,11 +4053,11 @@ const ::google::protobuf::Descriptor* ListServiceAccountKeysRequest::descriptor(
 }
 
 const ListServiceAccountKeysRequest& ListServiceAccountKeysRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceAccountKeysRequest* ListServiceAccountKeysRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceAccountKeysRequest> ListServiceAccountKeysRequest_default_instance_;
 
 ListServiceAccountKeysRequest* ListServiceAccountKeysRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListServiceAccountKeysRequest>(arena);
@@ -4095,6 +4175,7 @@ void ListServiceAccountKeysRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceAccountKeysRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.ListServiceAccountKeysRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4124,9 +4205,9 @@ void ListServiceAccountKeysRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceAccountKeysRequest::ByteSize() const {
+size_t ListServiceAccountKeysRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.ListServiceAccountKeysRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4137,8 +4218,8 @@ int ListServiceAccountKeysRequest::ByteSize() const {
 
   // repeated .google.iam.admin.v1.ListServiceAccountKeysRequest.KeyType key_types = 2;
   {
-    int data_size = 0;
-    for (int i = 0; i < this->key_types_size(); i++) {
+    size_t data_size = 0;
+    unsigned int count = this->key_types_size();for (unsigned int i = 0; i < count; i++) {
       data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
         this->key_types(i));
     }
@@ -4146,24 +4227,24 @@ int ListServiceAccountKeysRequest::ByteSize() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _key_types_cached_byte_size_ = data_size;
+    _key_types_cached_byte_size_ = cached_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceAccountKeysRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.ListServiceAccountKeysRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceAccountKeysRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceAccountKeysRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceAccountKeysRequest>(
           &from);
   if (source == NULL) {
@@ -4171,16 +4252,22 @@ void ListServiceAccountKeysRequest::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.ListServiceAccountKeysRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceAccountKeysRequest::MergeFrom(const ListServiceAccountKeysRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.ListServiceAccountKeysRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  key_types_.MergeFrom(from.key_types_);
+}
+
+void ListServiceAccountKeysRequest::UnsafeMergeFrom(const ListServiceAccountKeysRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  key_types_.UnsafeMergeFrom(from.key_types_);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -4197,7 +4284,7 @@ void ListServiceAccountKeysRequest::CopyFrom(const ListServiceAccountKeysRequest
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.ListServiceAccountKeysRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceAccountKeysRequest::IsInitialized() const {
@@ -4211,7 +4298,7 @@ void ListServiceAccountKeysRequest::Swap(ListServiceAccountKeysRequest* other) {
     InternalSwap(other);
   } else {
     ListServiceAccountKeysRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4243,46 +4330,46 @@ void ListServiceAccountKeysRequest::InternalSwap(ListServiceAccountKeysRequest* 
 void ListServiceAccountKeysRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListServiceAccountKeysRequest::name() const {
+const ::std::string& ListServiceAccountKeysRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceAccountKeysRequest::set_name(const ::std::string& value) {
+void ListServiceAccountKeysRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
 }
- void ListServiceAccountKeysRequest::set_name(const char* value) {
+void ListServiceAccountKeysRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
 }
- void ListServiceAccountKeysRequest::set_name(const char* value,
+void ListServiceAccountKeysRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
 }
- ::std::string* ListServiceAccountKeysRequest::mutable_name() {
+::std::string* ListServiceAccountKeysRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountKeysRequest::release_name() {
+::std::string* ListServiceAccountKeysRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListServiceAccountKeysRequest::unsafe_arena_release_name() {
+::std::string* ListServiceAccountKeysRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListServiceAccountKeysRequest::set_allocated_name(::std::string* name) {
+void ListServiceAccountKeysRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -4292,7 +4379,7 @@ void ListServiceAccountKeysRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ListServiceAccountKeysRequest.name)
 }
- void ListServiceAccountKeysRequest::unsafe_arena_set_allocated_name(
+void ListServiceAccountKeysRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -4312,29 +4399,32 @@ int ListServiceAccountKeysRequest::key_types_size() const {
 void ListServiceAccountKeysRequest::clear_key_types() {
   key_types_.Clear();
 }
- ::google::iam::admin::v1::ListServiceAccountKeysRequest_KeyType ListServiceAccountKeysRequest::key_types(int index) const {
+::google::iam::admin::v1::ListServiceAccountKeysRequest_KeyType ListServiceAccountKeysRequest::key_types(int index) const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ListServiceAccountKeysRequest.key_types)
   return static_cast< ::google::iam::admin::v1::ListServiceAccountKeysRequest_KeyType >(key_types_.Get(index));
 }
- void ListServiceAccountKeysRequest::set_key_types(int index, ::google::iam::admin::v1::ListServiceAccountKeysRequest_KeyType value) {
+void ListServiceAccountKeysRequest::set_key_types(int index, ::google::iam::admin::v1::ListServiceAccountKeysRequest_KeyType value) {
   key_types_.Set(index, value);
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ListServiceAccountKeysRequest.key_types)
 }
- void ListServiceAccountKeysRequest::add_key_types(::google::iam::admin::v1::ListServiceAccountKeysRequest_KeyType value) {
+void ListServiceAccountKeysRequest::add_key_types(::google::iam::admin::v1::ListServiceAccountKeysRequest_KeyType value) {
   key_types_.Add(value);
   // @@protoc_insertion_point(field_add:google.iam.admin.v1.ListServiceAccountKeysRequest.key_types)
 }
- const ::google::protobuf::RepeatedField<int>&
+const ::google::protobuf::RepeatedField<int>&
 ListServiceAccountKeysRequest::key_types() const {
   // @@protoc_insertion_point(field_list:google.iam.admin.v1.ListServiceAccountKeysRequest.key_types)
   return key_types_;
 }
- ::google::protobuf::RepeatedField<int>*
+::google::protobuf::RepeatedField<int>*
 ListServiceAccountKeysRequest::mutable_key_types() {
   // @@protoc_insertion_point(field_mutable_list:google.iam.admin.v1.ListServiceAccountKeysRequest.key_types)
   return &key_types_;
 }
 
+inline const ListServiceAccountKeysRequest* ListServiceAccountKeysRequest::internal_default_instance() {
+  return &ListServiceAccountKeysRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4345,33 +4435,34 @@ const int ListServiceAccountKeysResponse::kKeysFieldNumber;
 
 ListServiceAccountKeysResponse::ListServiceAccountKeysResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.ListServiceAccountKeysResponse)
 }
-
 ListServiceAccountKeysResponse::ListServiceAccountKeysResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   keys_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.ListServiceAccountKeysResponse)
 }
 
 void ListServiceAccountKeysResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceAccountKeysResponse::ListServiceAccountKeysResponse(const ListServiceAccountKeysResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.ListServiceAccountKeysResponse)
 }
 
 void ListServiceAccountKeysResponse::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -4381,12 +4472,11 @@ ListServiceAccountKeysResponse::~ListServiceAccountKeysResponse() {
 }
 
 void ListServiceAccountKeysResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void ListServiceAccountKeysResponse::ArenaDtor(void* object) {
@@ -4406,11 +4496,11 @@ const ::google::protobuf::Descriptor* ListServiceAccountKeysResponse::descriptor
 }
 
 const ListServiceAccountKeysResponse& ListServiceAccountKeysResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceAccountKeysResponse* ListServiceAccountKeysResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceAccountKeysResponse> ListServiceAccountKeysResponse_default_instance_;
 
 ListServiceAccountKeysResponse* ListServiceAccountKeysResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListServiceAccountKeysResponse>(arena);
@@ -4482,6 +4572,7 @@ void ListServiceAccountKeysResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceAccountKeysResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.ListServiceAccountKeysResponse)
   // repeated .google.iam.admin.v1.ServiceAccountKey keys = 1;
   for (unsigned int i = 0, n = this->keys_size(); i < n; i++) {
@@ -4494,30 +4585,32 @@ void ListServiceAccountKeysResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceAccountKeysResponse::ByteSize() const {
+size_t ListServiceAccountKeysResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.ListServiceAccountKeysResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.iam.admin.v1.ServiceAccountKey keys = 1;
-  total_size += 1 * this->keys_size();
-  for (int i = 0; i < this->keys_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->keys(i));
+  {
+    unsigned int count = this->keys_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->keys(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceAccountKeysResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.ListServiceAccountKeysResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceAccountKeysResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceAccountKeysResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceAccountKeysResponse>(
           &from);
   if (source == NULL) {
@@ -4525,15 +4618,21 @@ void ListServiceAccountKeysResponse::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.ListServiceAccountKeysResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceAccountKeysResponse::MergeFrom(const ListServiceAccountKeysResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.ListServiceAccountKeysResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServiceAccountKeysResponse::UnsafeMergeFrom(const ListServiceAccountKeysResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   keys_.MergeFrom(from.keys_);
 }
 
@@ -4548,7 +4647,7 @@ void ListServiceAccountKeysResponse::CopyFrom(const ListServiceAccountKeysRespon
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.ListServiceAccountKeysResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceAccountKeysResponse::IsInitialized() const {
@@ -4562,7 +4661,7 @@ void ListServiceAccountKeysResponse::Swap(ListServiceAccountKeysResponse* other)
     InternalSwap(other);
   } else {
     ListServiceAccountKeysResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4619,6 +4718,9 @@ ListServiceAccountKeysResponse::keys() const {
   return keys_;
 }
 
+inline const ListServiceAccountKeysResponse* ListServiceAccountKeysResponse::internal_default_instance() {
+  return &ListServiceAccountKeysResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4630,36 +4732,36 @@ const int GetServiceAccountKeyRequest::kPublicKeyTypeFieldNumber;
 
 GetServiceAccountKeyRequest::GetServiceAccountKeyRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.GetServiceAccountKeyRequest)
 }
-
 GetServiceAccountKeyRequest::GetServiceAccountKeyRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.GetServiceAccountKeyRequest)
 }
 
 void GetServiceAccountKeyRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetServiceAccountKeyRequest::GetServiceAccountKeyRequest(const GetServiceAccountKeyRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.GetServiceAccountKeyRequest)
 }
 
 void GetServiceAccountKeyRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_type_ = 0;
+  _cached_size_ = 0;
 }
 
 GetServiceAccountKeyRequest::~GetServiceAccountKeyRequest() {
@@ -4668,13 +4770,12 @@ GetServiceAccountKeyRequest::~GetServiceAccountKeyRequest() {
 }
 
 void GetServiceAccountKeyRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void GetServiceAccountKeyRequest::ArenaDtor(void* object) {
@@ -4694,11 +4795,11 @@ const ::google::protobuf::Descriptor* GetServiceAccountKeyRequest::descriptor() 
 }
 
 const GetServiceAccountKeyRequest& GetServiceAccountKeyRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-GetServiceAccountKeyRequest* GetServiceAccountKeyRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetServiceAccountKeyRequest> GetServiceAccountKeyRequest_default_instance_;
 
 GetServiceAccountKeyRequest* GetServiceAccountKeyRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetServiceAccountKeyRequest>(arena);
@@ -4797,6 +4898,7 @@ void GetServiceAccountKeyRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetServiceAccountKeyRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.GetServiceAccountKeyRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4819,9 +4921,9 @@ void GetServiceAccountKeyRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetServiceAccountKeyRequest::ByteSize() const {
+size_t GetServiceAccountKeyRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.GetServiceAccountKeyRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4836,18 +4938,17 @@ int GetServiceAccountKeyRequest::ByteSize() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->public_key_type());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetServiceAccountKeyRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.GetServiceAccountKeyRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetServiceAccountKeyRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetServiceAccountKeyRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetServiceAccountKeyRequest>(
           &from);
   if (source == NULL) {
@@ -4855,15 +4956,21 @@ void GetServiceAccountKeyRequest::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.GetServiceAccountKeyRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetServiceAccountKeyRequest::MergeFrom(const GetServiceAccountKeyRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.GetServiceAccountKeyRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetServiceAccountKeyRequest::UnsafeMergeFrom(const GetServiceAccountKeyRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -4883,7 +4990,7 @@ void GetServiceAccountKeyRequest::CopyFrom(const GetServiceAccountKeyRequest& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.GetServiceAccountKeyRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetServiceAccountKeyRequest::IsInitialized() const {
@@ -4897,7 +5004,7 @@ void GetServiceAccountKeyRequest::Swap(GetServiceAccountKeyRequest* other) {
     InternalSwap(other);
   } else {
     GetServiceAccountKeyRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4929,46 +5036,46 @@ void GetServiceAccountKeyRequest::InternalSwap(GetServiceAccountKeyRequest* othe
 void GetServiceAccountKeyRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& GetServiceAccountKeyRequest::name() const {
+const ::std::string& GetServiceAccountKeyRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceAccountKeyRequest::set_name(const ::std::string& value) {
+void GetServiceAccountKeyRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
 }
- void GetServiceAccountKeyRequest::set_name(const char* value) {
+void GetServiceAccountKeyRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
 }
- void GetServiceAccountKeyRequest::set_name(const char* value,
+void GetServiceAccountKeyRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
 }
- ::std::string* GetServiceAccountKeyRequest::mutable_name() {
+::std::string* GetServiceAccountKeyRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetServiceAccountKeyRequest::release_name() {
+::std::string* GetServiceAccountKeyRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetServiceAccountKeyRequest::unsafe_arena_release_name() {
+::std::string* GetServiceAccountKeyRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void GetServiceAccountKeyRequest::set_allocated_name(::std::string* name) {
+void GetServiceAccountKeyRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -4978,7 +5085,7 @@ void GetServiceAccountKeyRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.GetServiceAccountKeyRequest.name)
 }
- void GetServiceAccountKeyRequest::unsafe_arena_set_allocated_name(
+void GetServiceAccountKeyRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -4995,16 +5102,19 @@ void GetServiceAccountKeyRequest::clear_name() {
 void GetServiceAccountKeyRequest::clear_public_key_type() {
   public_key_type_ = 0;
 }
- ::google::iam::admin::v1::ServiceAccountPublicKeyType GetServiceAccountKeyRequest::public_key_type() const {
+::google::iam::admin::v1::ServiceAccountPublicKeyType GetServiceAccountKeyRequest::public_key_type() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.GetServiceAccountKeyRequest.public_key_type)
   return static_cast< ::google::iam::admin::v1::ServiceAccountPublicKeyType >(public_key_type_);
 }
- void GetServiceAccountKeyRequest::set_public_key_type(::google::iam::admin::v1::ServiceAccountPublicKeyType value) {
+void GetServiceAccountKeyRequest::set_public_key_type(::google::iam::admin::v1::ServiceAccountPublicKeyType value) {
   
   public_key_type_ = value;
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.GetServiceAccountKeyRequest.public_key_type)
 }
 
+inline const GetServiceAccountKeyRequest* GetServiceAccountKeyRequest::internal_default_instance() {
+  return &GetServiceAccountKeyRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5017,8 +5127,7 @@ void ServiceAccountKey::_slow_mutable_valid_after_time() {
   if (valid_after_time_ == NULL) {
     return NULL;
   } else {
-    ::google::protobuf::Timestamp* temp = new ::google::protobuf::Timestamp;
-    temp->MergeFrom(*valid_after_time_);
+    ::google::protobuf::Timestamp* temp = new ::google::protobuf::Timestamp(*valid_after_time_);
     valid_after_time_ = NULL;
     return temp;
   }
@@ -5065,8 +5174,7 @@ void ServiceAccountKey::_slow_mutable_valid_before_time() {
   if (valid_before_time_ == NULL) {
     return NULL;
   } else {
-    ::google::protobuf::Timestamp* temp = new ::google::protobuf::Timestamp;
-    temp->MergeFrom(*valid_before_time_);
+    ::google::protobuf::Timestamp* temp = new ::google::protobuf::Timestamp(*valid_before_time_);
     valid_before_time_ = NULL;
     return temp;
   }
@@ -5117,43 +5225,45 @@ const int ServiceAccountKey::kValidBeforeTimeFieldNumber;
 
 ServiceAccountKey::ServiceAccountKey()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.ServiceAccountKey)
 }
-
 ServiceAccountKey::ServiceAccountKey(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.ServiceAccountKey)
 }
 
 void ServiceAccountKey::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  valid_after_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  valid_before_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  valid_after_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  valid_before_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 ServiceAccountKey::ServiceAccountKey(const ServiceAccountKey& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.ServiceAccountKey)
 }
 
 void ServiceAccountKey::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  private_key_type_ = 0;
-  key_algorithm_ = 0;
   private_key_data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   valid_after_time_ = NULL;
   valid_before_time_ = NULL;
+  ::memset(&private_key_type_, 0, reinterpret_cast<char*>(&key_algorithm_) -
+    reinterpret_cast<char*>(&private_key_type_) + sizeof(key_algorithm_));
+  _cached_size_ = 0;
 }
 
 ServiceAccountKey::~ServiceAccountKey() {
@@ -5162,14 +5272,15 @@ ServiceAccountKey::~ServiceAccountKey() {
 }
 
 void ServiceAccountKey::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  private_key_data_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  public_key_data_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  private_key_data_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  public_key_data_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &ServiceAccountKey_default_instance_.get()) {
     delete valid_after_time_;
     delete valid_before_time_;
   }
@@ -5192,11 +5303,11 @@ const ::google::protobuf::Descriptor* ServiceAccountKey::descriptor() {
 }
 
 const ServiceAccountKey& ServiceAccountKey::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-ServiceAccountKey* ServiceAccountKey::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ServiceAccountKey> ServiceAccountKey_default_instance_;
 
 ServiceAccountKey* ServiceAccountKey::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ServiceAccountKey>(arena);
@@ -5216,7 +5327,7 @@ void ServiceAccountKey::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -5419,6 +5530,7 @@ void ServiceAccountKey::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ServiceAccountKey::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.ServiceAccountKey)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -5475,9 +5587,9 @@ void ServiceAccountKey::SerializeWithCachedSizes(
   return target;
 }
 
-int ServiceAccountKey::ByteSize() const {
+size_t ServiceAccountKey::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.ServiceAccountKey)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -5526,18 +5638,17 @@ int ServiceAccountKey::ByteSize() const {
         *this->valid_before_time_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ServiceAccountKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.ServiceAccountKey)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ServiceAccountKey* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ServiceAccountKey* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ServiceAccountKey>(
           &from);
   if (source == NULL) {
@@ -5545,15 +5656,21 @@ void ServiceAccountKey::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.ServiceAccountKey)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ServiceAccountKey::MergeFrom(const ServiceAccountKey& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.ServiceAccountKey)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ServiceAccountKey::UnsafeMergeFrom(const ServiceAccountKey& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -5588,7 +5705,7 @@ void ServiceAccountKey::CopyFrom(const ServiceAccountKey& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.ServiceAccountKey)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ServiceAccountKey::IsInitialized() const {
@@ -5602,7 +5719,7 @@ void ServiceAccountKey::Swap(ServiceAccountKey* other) {
     InternalSwap(other);
   } else {
     ServiceAccountKey temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -5639,46 +5756,46 @@ void ServiceAccountKey::InternalSwap(ServiceAccountKey* other) {
 void ServiceAccountKey::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccountKey::name() const {
+const ::std::string& ServiceAccountKey::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccountKey.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccountKey::set_name(const ::std::string& value) {
+void ServiceAccountKey::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccountKey.name)
 }
- void ServiceAccountKey::set_name(const char* value) {
+void ServiceAccountKey::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccountKey.name)
 }
- void ServiceAccountKey::set_name(const char* value,
+void ServiceAccountKey::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccountKey.name)
 }
- ::std::string* ServiceAccountKey::mutable_name() {
+::std::string* ServiceAccountKey::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccountKey.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccountKey::release_name() {
+::std::string* ServiceAccountKey::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccountKey.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccountKey::unsafe_arena_release_name() {
+::std::string* ServiceAccountKey::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccountKey.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccountKey::set_allocated_name(::std::string* name) {
+void ServiceAccountKey::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -5688,7 +5805,7 @@ void ServiceAccountKey::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccountKey.name)
 }
- void ServiceAccountKey::unsafe_arena_set_allocated_name(
+void ServiceAccountKey::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -5705,11 +5822,11 @@ void ServiceAccountKey::clear_name() {
 void ServiceAccountKey::clear_private_key_type() {
   private_key_type_ = 0;
 }
- ::google::iam::admin::v1::ServiceAccountPrivateKeyType ServiceAccountKey::private_key_type() const {
+::google::iam::admin::v1::ServiceAccountPrivateKeyType ServiceAccountKey::private_key_type() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccountKey.private_key_type)
   return static_cast< ::google::iam::admin::v1::ServiceAccountPrivateKeyType >(private_key_type_);
 }
- void ServiceAccountKey::set_private_key_type(::google::iam::admin::v1::ServiceAccountPrivateKeyType value) {
+void ServiceAccountKey::set_private_key_type(::google::iam::admin::v1::ServiceAccountPrivateKeyType value) {
   
   private_key_type_ = value;
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccountKey.private_key_type)
@@ -5719,11 +5836,11 @@ void ServiceAccountKey::clear_private_key_type() {
 void ServiceAccountKey::clear_key_algorithm() {
   key_algorithm_ = 0;
 }
- ::google::iam::admin::v1::ServiceAccountKeyAlgorithm ServiceAccountKey::key_algorithm() const {
+::google::iam::admin::v1::ServiceAccountKeyAlgorithm ServiceAccountKey::key_algorithm() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccountKey.key_algorithm)
   return static_cast< ::google::iam::admin::v1::ServiceAccountKeyAlgorithm >(key_algorithm_);
 }
- void ServiceAccountKey::set_key_algorithm(::google::iam::admin::v1::ServiceAccountKeyAlgorithm value) {
+void ServiceAccountKey::set_key_algorithm(::google::iam::admin::v1::ServiceAccountKeyAlgorithm value) {
   
   key_algorithm_ = value;
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccountKey.key_algorithm)
@@ -5733,46 +5850,46 @@ void ServiceAccountKey::clear_key_algorithm() {
 void ServiceAccountKey::clear_private_key_data() {
   private_key_data_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccountKey::private_key_data() const {
+const ::std::string& ServiceAccountKey::private_key_data() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccountKey.private_key_data)
   return private_key_data_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccountKey::set_private_key_data(const ::std::string& value) {
+void ServiceAccountKey::set_private_key_data(const ::std::string& value) {
   
   private_key_data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccountKey.private_key_data)
 }
- void ServiceAccountKey::set_private_key_data(const char* value) {
+void ServiceAccountKey::set_private_key_data(const char* value) {
   
   private_key_data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccountKey.private_key_data)
 }
- void ServiceAccountKey::set_private_key_data(const void* value,
+void ServiceAccountKey::set_private_key_data(const void* value,
     size_t size) {
   
   private_key_data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccountKey.private_key_data)
 }
- ::std::string* ServiceAccountKey::mutable_private_key_data() {
+::std::string* ServiceAccountKey::mutable_private_key_data() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccountKey.private_key_data)
   return private_key_data_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccountKey::release_private_key_data() {
+::std::string* ServiceAccountKey::release_private_key_data() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccountKey.private_key_data)
   
   return private_key_data_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccountKey::unsafe_arena_release_private_key_data() {
+::std::string* ServiceAccountKey::unsafe_arena_release_private_key_data() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccountKey.private_key_data)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return private_key_data_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccountKey::set_allocated_private_key_data(::std::string* private_key_data) {
+void ServiceAccountKey::set_allocated_private_key_data(::std::string* private_key_data) {
   if (private_key_data != NULL) {
     
   } else {
@@ -5782,7 +5899,7 @@ void ServiceAccountKey::clear_private_key_data() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccountKey.private_key_data)
 }
- void ServiceAccountKey::unsafe_arena_set_allocated_private_key_data(
+void ServiceAccountKey::unsafe_arena_set_allocated_private_key_data(
     ::std::string* private_key_data) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (private_key_data != NULL) {
@@ -5799,46 +5916,46 @@ void ServiceAccountKey::clear_private_key_data() {
 void ServiceAccountKey::clear_public_key_data() {
   public_key_data_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ServiceAccountKey::public_key_data() const {
+const ::std::string& ServiceAccountKey::public_key_data() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccountKey.public_key_data)
   return public_key_data_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ServiceAccountKey::set_public_key_data(const ::std::string& value) {
+void ServiceAccountKey::set_public_key_data(const ::std::string& value) {
   
   public_key_data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.ServiceAccountKey.public_key_data)
 }
- void ServiceAccountKey::set_public_key_data(const char* value) {
+void ServiceAccountKey::set_public_key_data(const char* value) {
   
   public_key_data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.ServiceAccountKey.public_key_data)
 }
- void ServiceAccountKey::set_public_key_data(const void* value,
+void ServiceAccountKey::set_public_key_data(const void* value,
     size_t size) {
   
   public_key_data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.ServiceAccountKey.public_key_data)
 }
- ::std::string* ServiceAccountKey::mutable_public_key_data() {
+::std::string* ServiceAccountKey::mutable_public_key_data() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.ServiceAccountKey.public_key_data)
   return public_key_data_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccountKey::release_public_key_data() {
+::std::string* ServiceAccountKey::release_public_key_data() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.ServiceAccountKey.public_key_data)
   
   return public_key_data_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ServiceAccountKey::unsafe_arena_release_public_key_data() {
+::std::string* ServiceAccountKey::unsafe_arena_release_public_key_data() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.ServiceAccountKey.public_key_data)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return public_key_data_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ServiceAccountKey::set_allocated_public_key_data(::std::string* public_key_data) {
+void ServiceAccountKey::set_allocated_public_key_data(::std::string* public_key_data) {
   if (public_key_data != NULL) {
     
   } else {
@@ -5848,7 +5965,7 @@ void ServiceAccountKey::clear_public_key_data() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccountKey.public_key_data)
 }
- void ServiceAccountKey::unsafe_arena_set_allocated_public_key_data(
+void ServiceAccountKey::unsafe_arena_set_allocated_public_key_data(
     ::std::string* public_key_data) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (public_key_data != NULL) {
@@ -5863,7 +5980,7 @@ void ServiceAccountKey::clear_public_key_data() {
 
 // optional .google.protobuf.Timestamp valid_after_time = 4;
 bool ServiceAccountKey::has_valid_after_time() const {
-  return !_is_default_instance_ && valid_after_time_ != NULL;
+  return this != internal_default_instance() && valid_after_time_ != NULL;
 }
 void ServiceAccountKey::clear_valid_after_time() {
   if (GetArenaNoVirtual() == NULL && valid_after_time_ != NULL) delete valid_after_time_;
@@ -5871,7 +5988,8 @@ void ServiceAccountKey::clear_valid_after_time() {
 }
 const ::google::protobuf::Timestamp& ServiceAccountKey::valid_after_time() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccountKey.valid_after_time)
-  return valid_after_time_ != NULL ? *valid_after_time_ : *default_instance_->valid_after_time_;
+  return valid_after_time_ != NULL ? *valid_after_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* ServiceAccountKey::mutable_valid_after_time() {
   
@@ -5911,7 +6029,7 @@ const ::google::protobuf::Timestamp& ServiceAccountKey::valid_after_time() const
 
 // optional .google.protobuf.Timestamp valid_before_time = 5;
 bool ServiceAccountKey::has_valid_before_time() const {
-  return !_is_default_instance_ && valid_before_time_ != NULL;
+  return this != internal_default_instance() && valid_before_time_ != NULL;
 }
 void ServiceAccountKey::clear_valid_before_time() {
   if (GetArenaNoVirtual() == NULL && valid_before_time_ != NULL) delete valid_before_time_;
@@ -5919,7 +6037,8 @@ void ServiceAccountKey::clear_valid_before_time() {
 }
 const ::google::protobuf::Timestamp& ServiceAccountKey::valid_before_time() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.ServiceAccountKey.valid_before_time)
-  return valid_before_time_ != NULL ? *valid_before_time_ : *default_instance_->valid_before_time_;
+  return valid_before_time_ != NULL ? *valid_before_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* ServiceAccountKey::mutable_valid_before_time() {
   
@@ -5957,6 +6076,9 @@ const ::google::protobuf::Timestamp& ServiceAccountKey::valid_before_time() cons
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.ServiceAccountKey.valid_before_time)
 }
 
+inline const ServiceAccountKey* ServiceAccountKey::internal_default_instance() {
+  return &ServiceAccountKey_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5969,37 +6091,37 @@ const int CreateServiceAccountKeyRequest::kKeyAlgorithmFieldNumber;
 
 CreateServiceAccountKeyRequest::CreateServiceAccountKeyRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.CreateServiceAccountKeyRequest)
 }
-
 CreateServiceAccountKeyRequest::CreateServiceAccountKeyRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.CreateServiceAccountKeyRequest)
 }
 
 void CreateServiceAccountKeyRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 CreateServiceAccountKeyRequest::CreateServiceAccountKeyRequest(const CreateServiceAccountKeyRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.CreateServiceAccountKeyRequest)
 }
 
 void CreateServiceAccountKeyRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  private_key_type_ = 0;
-  key_algorithm_ = 0;
+  ::memset(&private_key_type_, 0, reinterpret_cast<char*>(&key_algorithm_) -
+    reinterpret_cast<char*>(&private_key_type_) + sizeof(key_algorithm_));
+  _cached_size_ = 0;
 }
 
 CreateServiceAccountKeyRequest::~CreateServiceAccountKeyRequest() {
@@ -6008,13 +6130,12 @@ CreateServiceAccountKeyRequest::~CreateServiceAccountKeyRequest() {
 }
 
 void CreateServiceAccountKeyRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void CreateServiceAccountKeyRequest::ArenaDtor(void* object) {
@@ -6034,11 +6155,11 @@ const ::google::protobuf::Descriptor* CreateServiceAccountKeyRequest::descriptor
 }
 
 const CreateServiceAccountKeyRequest& CreateServiceAccountKeyRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-CreateServiceAccountKeyRequest* CreateServiceAccountKeyRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateServiceAccountKeyRequest> CreateServiceAccountKeyRequest_default_instance_;
 
 CreateServiceAccountKeyRequest* CreateServiceAccountKeyRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<CreateServiceAccountKeyRequest>(arena);
@@ -6058,7 +6179,7 @@ void CreateServiceAccountKeyRequest::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -6179,6 +6300,7 @@ void CreateServiceAccountKeyRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateServiceAccountKeyRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.CreateServiceAccountKeyRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6207,9 +6329,9 @@ void CreateServiceAccountKeyRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateServiceAccountKeyRequest::ByteSize() const {
+size_t CreateServiceAccountKeyRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.CreateServiceAccountKeyRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6230,18 +6352,17 @@ int CreateServiceAccountKeyRequest::ByteSize() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->key_algorithm());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateServiceAccountKeyRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.CreateServiceAccountKeyRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateServiceAccountKeyRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateServiceAccountKeyRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateServiceAccountKeyRequest>(
           &from);
   if (source == NULL) {
@@ -6249,15 +6370,21 @@ void CreateServiceAccountKeyRequest::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.CreateServiceAccountKeyRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateServiceAccountKeyRequest::MergeFrom(const CreateServiceAccountKeyRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.CreateServiceAccountKeyRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateServiceAccountKeyRequest::UnsafeMergeFrom(const CreateServiceAccountKeyRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -6280,7 +6407,7 @@ void CreateServiceAccountKeyRequest::CopyFrom(const CreateServiceAccountKeyReque
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.CreateServiceAccountKeyRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateServiceAccountKeyRequest::IsInitialized() const {
@@ -6294,7 +6421,7 @@ void CreateServiceAccountKeyRequest::Swap(CreateServiceAccountKeyRequest* other)
     InternalSwap(other);
   } else {
     CreateServiceAccountKeyRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -6327,46 +6454,46 @@ void CreateServiceAccountKeyRequest::InternalSwap(CreateServiceAccountKeyRequest
 void CreateServiceAccountKeyRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& CreateServiceAccountKeyRequest::name() const {
+const ::std::string& CreateServiceAccountKeyRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateServiceAccountKeyRequest::set_name(const ::std::string& value) {
+void CreateServiceAccountKeyRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
 }
- void CreateServiceAccountKeyRequest::set_name(const char* value) {
+void CreateServiceAccountKeyRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
 }
- void CreateServiceAccountKeyRequest::set_name(const char* value,
+void CreateServiceAccountKeyRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
 }
- ::std::string* CreateServiceAccountKeyRequest::mutable_name() {
+::std::string* CreateServiceAccountKeyRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CreateServiceAccountKeyRequest::release_name() {
+::std::string* CreateServiceAccountKeyRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CreateServiceAccountKeyRequest::unsafe_arena_release_name() {
+::std::string* CreateServiceAccountKeyRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void CreateServiceAccountKeyRequest::set_allocated_name(::std::string* name) {
+void CreateServiceAccountKeyRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -6376,7 +6503,7 @@ void CreateServiceAccountKeyRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.CreateServiceAccountKeyRequest.name)
 }
- void CreateServiceAccountKeyRequest::unsafe_arena_set_allocated_name(
+void CreateServiceAccountKeyRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -6393,11 +6520,11 @@ void CreateServiceAccountKeyRequest::clear_name() {
 void CreateServiceAccountKeyRequest::clear_private_key_type() {
   private_key_type_ = 0;
 }
- ::google::iam::admin::v1::ServiceAccountPrivateKeyType CreateServiceAccountKeyRequest::private_key_type() const {
+::google::iam::admin::v1::ServiceAccountPrivateKeyType CreateServiceAccountKeyRequest::private_key_type() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.CreateServiceAccountKeyRequest.private_key_type)
   return static_cast< ::google::iam::admin::v1::ServiceAccountPrivateKeyType >(private_key_type_);
 }
- void CreateServiceAccountKeyRequest::set_private_key_type(::google::iam::admin::v1::ServiceAccountPrivateKeyType value) {
+void CreateServiceAccountKeyRequest::set_private_key_type(::google::iam::admin::v1::ServiceAccountPrivateKeyType value) {
   
   private_key_type_ = value;
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.CreateServiceAccountKeyRequest.private_key_type)
@@ -6407,16 +6534,19 @@ void CreateServiceAccountKeyRequest::clear_private_key_type() {
 void CreateServiceAccountKeyRequest::clear_key_algorithm() {
   key_algorithm_ = 0;
 }
- ::google::iam::admin::v1::ServiceAccountKeyAlgorithm CreateServiceAccountKeyRequest::key_algorithm() const {
+::google::iam::admin::v1::ServiceAccountKeyAlgorithm CreateServiceAccountKeyRequest::key_algorithm() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.CreateServiceAccountKeyRequest.key_algorithm)
   return static_cast< ::google::iam::admin::v1::ServiceAccountKeyAlgorithm >(key_algorithm_);
 }
- void CreateServiceAccountKeyRequest::set_key_algorithm(::google::iam::admin::v1::ServiceAccountKeyAlgorithm value) {
+void CreateServiceAccountKeyRequest::set_key_algorithm(::google::iam::admin::v1::ServiceAccountKeyAlgorithm value) {
   
   key_algorithm_ = value;
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.CreateServiceAccountKeyRequest.key_algorithm)
 }
 
+inline const CreateServiceAccountKeyRequest* CreateServiceAccountKeyRequest::internal_default_instance() {
+  return &CreateServiceAccountKeyRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6427,35 +6557,35 @@ const int DeleteServiceAccountKeyRequest::kNameFieldNumber;
 
 DeleteServiceAccountKeyRequest::DeleteServiceAccountKeyRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
 }
-
 DeleteServiceAccountKeyRequest::DeleteServiceAccountKeyRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
 }
 
 void DeleteServiceAccountKeyRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteServiceAccountKeyRequest::DeleteServiceAccountKeyRequest(const DeleteServiceAccountKeyRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
 }
 
 void DeleteServiceAccountKeyRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteServiceAccountKeyRequest::~DeleteServiceAccountKeyRequest() {
@@ -6464,13 +6594,12 @@ DeleteServiceAccountKeyRequest::~DeleteServiceAccountKeyRequest() {
 }
 
 void DeleteServiceAccountKeyRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void DeleteServiceAccountKeyRequest::ArenaDtor(void* object) {
@@ -6490,11 +6619,11 @@ const ::google::protobuf::Descriptor* DeleteServiceAccountKeyRequest::descriptor
 }
 
 const DeleteServiceAccountKeyRequest& DeleteServiceAccountKeyRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteServiceAccountKeyRequest* DeleteServiceAccountKeyRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteServiceAccountKeyRequest> DeleteServiceAccountKeyRequest_default_instance_;
 
 DeleteServiceAccountKeyRequest* DeleteServiceAccountKeyRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<DeleteServiceAccountKeyRequest>(arena);
@@ -6570,6 +6699,7 @@ void DeleteServiceAccountKeyRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteServiceAccountKeyRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6586,9 +6716,9 @@ void DeleteServiceAccountKeyRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteServiceAccountKeyRequest::ByteSize() const {
+size_t DeleteServiceAccountKeyRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6597,18 +6727,17 @@ int DeleteServiceAccountKeyRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteServiceAccountKeyRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteServiceAccountKeyRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteServiceAccountKeyRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteServiceAccountKeyRequest>(
           &from);
   if (source == NULL) {
@@ -6616,15 +6745,21 @@ void DeleteServiceAccountKeyRequest::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteServiceAccountKeyRequest::MergeFrom(const DeleteServiceAccountKeyRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteServiceAccountKeyRequest::UnsafeMergeFrom(const DeleteServiceAccountKeyRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -6641,7 +6776,7 @@ void DeleteServiceAccountKeyRequest::CopyFrom(const DeleteServiceAccountKeyReque
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.DeleteServiceAccountKeyRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteServiceAccountKeyRequest::IsInitialized() const {
@@ -6655,7 +6790,7 @@ void DeleteServiceAccountKeyRequest::Swap(DeleteServiceAccountKeyRequest* other)
     InternalSwap(other);
   } else {
     DeleteServiceAccountKeyRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -6686,46 +6821,46 @@ void DeleteServiceAccountKeyRequest::InternalSwap(DeleteServiceAccountKeyRequest
 void DeleteServiceAccountKeyRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& DeleteServiceAccountKeyRequest::name() const {
+const ::std::string& DeleteServiceAccountKeyRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteServiceAccountKeyRequest::set_name(const ::std::string& value) {
+void DeleteServiceAccountKeyRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
 }
- void DeleteServiceAccountKeyRequest::set_name(const char* value) {
+void DeleteServiceAccountKeyRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
 }
- void DeleteServiceAccountKeyRequest::set_name(const char* value,
+void DeleteServiceAccountKeyRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
 }
- ::std::string* DeleteServiceAccountKeyRequest::mutable_name() {
+::std::string* DeleteServiceAccountKeyRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteServiceAccountKeyRequest::release_name() {
+::std::string* DeleteServiceAccountKeyRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteServiceAccountKeyRequest::unsafe_arena_release_name() {
+::std::string* DeleteServiceAccountKeyRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void DeleteServiceAccountKeyRequest::set_allocated_name(::std::string* name) {
+void DeleteServiceAccountKeyRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -6735,7 +6870,7 @@ void DeleteServiceAccountKeyRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
 }
- void DeleteServiceAccountKeyRequest::unsafe_arena_set_allocated_name(
+void DeleteServiceAccountKeyRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -6748,6 +6883,9 @@ void DeleteServiceAccountKeyRequest::clear_name() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.DeleteServiceAccountKeyRequest.name)
 }
 
+inline const DeleteServiceAccountKeyRequest* DeleteServiceAccountKeyRequest::internal_default_instance() {
+  return &DeleteServiceAccountKeyRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6759,36 +6897,36 @@ const int SignBlobRequest::kBytesToSignFieldNumber;
 
 SignBlobRequest::SignBlobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.SignBlobRequest)
 }
-
 SignBlobRequest::SignBlobRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.SignBlobRequest)
 }
 
 void SignBlobRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SignBlobRequest::SignBlobRequest(const SignBlobRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.SignBlobRequest)
 }
 
 void SignBlobRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   bytes_to_sign_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 SignBlobRequest::~SignBlobRequest() {
@@ -6797,14 +6935,13 @@ SignBlobRequest::~SignBlobRequest() {
 }
 
 void SignBlobRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  bytes_to_sign_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  bytes_to_sign_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void SignBlobRequest::ArenaDtor(void* object) {
@@ -6824,11 +6961,11 @@ const ::google::protobuf::Descriptor* SignBlobRequest::descriptor() {
 }
 
 const SignBlobRequest& SignBlobRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-SignBlobRequest* SignBlobRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SignBlobRequest> SignBlobRequest_default_instance_;
 
 SignBlobRequest* SignBlobRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SignBlobRequest>(arena);
@@ -6924,6 +7061,7 @@ void SignBlobRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SignBlobRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.SignBlobRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6947,9 +7085,9 @@ void SignBlobRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int SignBlobRequest::ByteSize() const {
+size_t SignBlobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.SignBlobRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6965,18 +7103,17 @@ int SignBlobRequest::ByteSize() const {
         this->bytes_to_sign());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SignBlobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.SignBlobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SignBlobRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SignBlobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SignBlobRequest>(
           &from);
   if (source == NULL) {
@@ -6984,15 +7121,21 @@ void SignBlobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.SignBlobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SignBlobRequest::MergeFrom(const SignBlobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.SignBlobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SignBlobRequest::UnsafeMergeFrom(const SignBlobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -7012,7 +7155,7 @@ void SignBlobRequest::CopyFrom(const SignBlobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.SignBlobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SignBlobRequest::IsInitialized() const {
@@ -7026,7 +7169,7 @@ void SignBlobRequest::Swap(SignBlobRequest* other) {
     InternalSwap(other);
   } else {
     SignBlobRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7058,46 +7201,46 @@ void SignBlobRequest::InternalSwap(SignBlobRequest* other) {
 void SignBlobRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SignBlobRequest::name() const {
+const ::std::string& SignBlobRequest::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.SignBlobRequest.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SignBlobRequest::set_name(const ::std::string& value) {
+void SignBlobRequest::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.SignBlobRequest.name)
 }
- void SignBlobRequest::set_name(const char* value) {
+void SignBlobRequest::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.SignBlobRequest.name)
 }
- void SignBlobRequest::set_name(const char* value,
+void SignBlobRequest::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.SignBlobRequest.name)
 }
- ::std::string* SignBlobRequest::mutable_name() {
+::std::string* SignBlobRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.SignBlobRequest.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobRequest::release_name() {
+::std::string* SignBlobRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.SignBlobRequest.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobRequest::unsafe_arena_release_name() {
+::std::string* SignBlobRequest::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.SignBlobRequest.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SignBlobRequest::set_allocated_name(::std::string* name) {
+void SignBlobRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -7107,7 +7250,7 @@ void SignBlobRequest::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.SignBlobRequest.name)
 }
- void SignBlobRequest::unsafe_arena_set_allocated_name(
+void SignBlobRequest::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -7124,46 +7267,46 @@ void SignBlobRequest::clear_name() {
 void SignBlobRequest::clear_bytes_to_sign() {
   bytes_to_sign_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SignBlobRequest::bytes_to_sign() const {
+const ::std::string& SignBlobRequest::bytes_to_sign() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
   return bytes_to_sign_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SignBlobRequest::set_bytes_to_sign(const ::std::string& value) {
+void SignBlobRequest::set_bytes_to_sign(const ::std::string& value) {
   
   bytes_to_sign_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
 }
- void SignBlobRequest::set_bytes_to_sign(const char* value) {
+void SignBlobRequest::set_bytes_to_sign(const char* value) {
   
   bytes_to_sign_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
 }
- void SignBlobRequest::set_bytes_to_sign(const void* value,
+void SignBlobRequest::set_bytes_to_sign(const void* value,
     size_t size) {
   
   bytes_to_sign_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
 }
- ::std::string* SignBlobRequest::mutable_bytes_to_sign() {
+::std::string* SignBlobRequest::mutable_bytes_to_sign() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
   return bytes_to_sign_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobRequest::release_bytes_to_sign() {
+::std::string* SignBlobRequest::release_bytes_to_sign() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
   
   return bytes_to_sign_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobRequest::unsafe_arena_release_bytes_to_sign() {
+::std::string* SignBlobRequest::unsafe_arena_release_bytes_to_sign() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return bytes_to_sign_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SignBlobRequest::set_allocated_bytes_to_sign(::std::string* bytes_to_sign) {
+void SignBlobRequest::set_allocated_bytes_to_sign(::std::string* bytes_to_sign) {
   if (bytes_to_sign != NULL) {
     
   } else {
@@ -7173,7 +7316,7 @@ void SignBlobRequest::clear_bytes_to_sign() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
 }
- void SignBlobRequest::unsafe_arena_set_allocated_bytes_to_sign(
+void SignBlobRequest::unsafe_arena_set_allocated_bytes_to_sign(
     ::std::string* bytes_to_sign) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (bytes_to_sign != NULL) {
@@ -7186,6 +7329,9 @@ void SignBlobRequest::clear_bytes_to_sign() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.SignBlobRequest.bytes_to_sign)
 }
 
+inline const SignBlobRequest* SignBlobRequest::internal_default_instance() {
+  return &SignBlobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7197,36 +7343,36 @@ const int SignBlobResponse::kSignatureFieldNumber;
 
 SignBlobResponse::SignBlobResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.SignBlobResponse)
 }
-
 SignBlobResponse::SignBlobResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.SignBlobResponse)
 }
 
 void SignBlobResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SignBlobResponse::SignBlobResponse(const SignBlobResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.SignBlobResponse)
 }
 
 void SignBlobResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   key_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 SignBlobResponse::~SignBlobResponse() {
@@ -7235,14 +7381,13 @@ SignBlobResponse::~SignBlobResponse() {
 }
 
 void SignBlobResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  key_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  signature_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  key_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  signature_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void SignBlobResponse::ArenaDtor(void* object) {
@@ -7262,11 +7407,11 @@ const ::google::protobuf::Descriptor* SignBlobResponse::descriptor() {
 }
 
 const SignBlobResponse& SignBlobResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-SignBlobResponse* SignBlobResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SignBlobResponse> SignBlobResponse_default_instance_;
 
 SignBlobResponse* SignBlobResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SignBlobResponse>(arena);
@@ -7362,6 +7507,7 @@ void SignBlobResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SignBlobResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.SignBlobResponse)
   // optional string key_id = 1;
   if (this->key_id().size() > 0) {
@@ -7385,9 +7531,9 @@ void SignBlobResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int SignBlobResponse::ByteSize() const {
+size_t SignBlobResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.SignBlobResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string key_id = 1;
   if (this->key_id().size() > 0) {
@@ -7403,18 +7549,17 @@ int SignBlobResponse::ByteSize() const {
         this->signature());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SignBlobResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.SignBlobResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SignBlobResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SignBlobResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SignBlobResponse>(
           &from);
   if (source == NULL) {
@@ -7422,15 +7567,21 @@ void SignBlobResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.SignBlobResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SignBlobResponse::MergeFrom(const SignBlobResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.SignBlobResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SignBlobResponse::UnsafeMergeFrom(const SignBlobResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.key_id().size() > 0) {
     set_key_id(from.key_id());
   }
@@ -7450,7 +7601,7 @@ void SignBlobResponse::CopyFrom(const SignBlobResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.SignBlobResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SignBlobResponse::IsInitialized() const {
@@ -7464,7 +7615,7 @@ void SignBlobResponse::Swap(SignBlobResponse* other) {
     InternalSwap(other);
   } else {
     SignBlobResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7496,46 +7647,46 @@ void SignBlobResponse::InternalSwap(SignBlobResponse* other) {
 void SignBlobResponse::clear_key_id() {
   key_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SignBlobResponse::key_id() const {
+const ::std::string& SignBlobResponse::key_id() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.SignBlobResponse.key_id)
   return key_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SignBlobResponse::set_key_id(const ::std::string& value) {
+void SignBlobResponse::set_key_id(const ::std::string& value) {
   
   key_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.SignBlobResponse.key_id)
 }
- void SignBlobResponse::set_key_id(const char* value) {
+void SignBlobResponse::set_key_id(const char* value) {
   
   key_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.SignBlobResponse.key_id)
 }
- void SignBlobResponse::set_key_id(const char* value,
+void SignBlobResponse::set_key_id(const char* value,
     size_t size) {
   
   key_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.SignBlobResponse.key_id)
 }
- ::std::string* SignBlobResponse::mutable_key_id() {
+::std::string* SignBlobResponse::mutable_key_id() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.SignBlobResponse.key_id)
   return key_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobResponse::release_key_id() {
+::std::string* SignBlobResponse::release_key_id() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.SignBlobResponse.key_id)
   
   return key_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobResponse::unsafe_arena_release_key_id() {
+::std::string* SignBlobResponse::unsafe_arena_release_key_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.SignBlobResponse.key_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return key_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SignBlobResponse::set_allocated_key_id(::std::string* key_id) {
+void SignBlobResponse::set_allocated_key_id(::std::string* key_id) {
   if (key_id != NULL) {
     
   } else {
@@ -7545,7 +7696,7 @@ void SignBlobResponse::clear_key_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.SignBlobResponse.key_id)
 }
- void SignBlobResponse::unsafe_arena_set_allocated_key_id(
+void SignBlobResponse::unsafe_arena_set_allocated_key_id(
     ::std::string* key_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (key_id != NULL) {
@@ -7562,46 +7713,46 @@ void SignBlobResponse::clear_key_id() {
 void SignBlobResponse::clear_signature() {
   signature_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SignBlobResponse::signature() const {
+const ::std::string& SignBlobResponse::signature() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.SignBlobResponse.signature)
   return signature_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SignBlobResponse::set_signature(const ::std::string& value) {
+void SignBlobResponse::set_signature(const ::std::string& value) {
   
   signature_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.SignBlobResponse.signature)
 }
- void SignBlobResponse::set_signature(const char* value) {
+void SignBlobResponse::set_signature(const char* value) {
   
   signature_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.SignBlobResponse.signature)
 }
- void SignBlobResponse::set_signature(const void* value,
+void SignBlobResponse::set_signature(const void* value,
     size_t size) {
   
   signature_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.SignBlobResponse.signature)
 }
- ::std::string* SignBlobResponse::mutable_signature() {
+::std::string* SignBlobResponse::mutable_signature() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.SignBlobResponse.signature)
   return signature_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobResponse::release_signature() {
+::std::string* SignBlobResponse::release_signature() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.SignBlobResponse.signature)
   
   return signature_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SignBlobResponse::unsafe_arena_release_signature() {
+::std::string* SignBlobResponse::unsafe_arena_release_signature() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.SignBlobResponse.signature)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return signature_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SignBlobResponse::set_allocated_signature(::std::string* signature) {
+void SignBlobResponse::set_allocated_signature(::std::string* signature) {
   if (signature != NULL) {
     
   } else {
@@ -7611,7 +7762,7 @@ void SignBlobResponse::clear_signature() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.SignBlobResponse.signature)
 }
- void SignBlobResponse::unsafe_arena_set_allocated_signature(
+void SignBlobResponse::unsafe_arena_set_allocated_signature(
     ::std::string* signature) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (signature != NULL) {
@@ -7624,6 +7775,9 @@ void SignBlobResponse::clear_signature() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.SignBlobResponse.signature)
 }
 
+inline const SignBlobResponse* SignBlobResponse::internal_default_instance() {
+  return &SignBlobResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7636,37 +7790,37 @@ const int Role::kDescriptionFieldNumber;
 
 Role::Role()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.Role)
 }
-
 Role::Role(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.Role)
 }
 
 void Role::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Role::Role(const Role& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.Role)
 }
 
 void Role::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   title_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Role::~Role() {
@@ -7675,15 +7829,14 @@ Role::~Role() {
 }
 
 void Role::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  title_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  description_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  title_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  description_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void Role::ArenaDtor(void* object) {
@@ -7703,11 +7856,11 @@ const ::google::protobuf::Descriptor* Role::descriptor() {
 }
 
 const Role& Role::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-Role* Role::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Role> Role_default_instance_;
 
 Role* Role::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Role>(arena);
@@ -7839,6 +7992,7 @@ void Role::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Role::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.Role)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -7877,9 +8031,9 @@ void Role::SerializeWithCachedSizes(
   return target;
 }
 
-int Role::ByteSize() const {
+size_t Role::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.Role)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -7902,18 +8056,17 @@ int Role::ByteSize() const {
         this->description());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Role::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.Role)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Role* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Role* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Role>(
           &from);
   if (source == NULL) {
@@ -7921,15 +8074,21 @@ void Role::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.Role)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Role::MergeFrom(const Role& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.Role)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Role::UnsafeMergeFrom(const Role& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -7952,7 +8111,7 @@ void Role::CopyFrom(const Role& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.Role)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Role::IsInitialized() const {
@@ -7966,7 +8125,7 @@ void Role::Swap(Role* other) {
     InternalSwap(other);
   } else {
     Role temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7999,46 +8158,46 @@ void Role::InternalSwap(Role* other) {
 void Role::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Role::name() const {
+const ::std::string& Role::name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.Role.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Role::set_name(const ::std::string& value) {
+void Role::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.Role.name)
 }
- void Role::set_name(const char* value) {
+void Role::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.Role.name)
 }
- void Role::set_name(const char* value,
+void Role::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.Role.name)
 }
- ::std::string* Role::mutable_name() {
+::std::string* Role::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.Role.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Role::release_name() {
+::std::string* Role::release_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.Role.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Role::unsafe_arena_release_name() {
+::std::string* Role::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.Role.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Role::set_allocated_name(::std::string* name) {
+void Role::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -8048,7 +8207,7 @@ void Role::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.Role.name)
 }
- void Role::unsafe_arena_set_allocated_name(
+void Role::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -8065,46 +8224,46 @@ void Role::clear_name() {
 void Role::clear_title() {
   title_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Role::title() const {
+const ::std::string& Role::title() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.Role.title)
   return title_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Role::set_title(const ::std::string& value) {
+void Role::set_title(const ::std::string& value) {
   
   title_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.Role.title)
 }
- void Role::set_title(const char* value) {
+void Role::set_title(const char* value) {
   
   title_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.Role.title)
 }
- void Role::set_title(const char* value,
+void Role::set_title(const char* value,
     size_t size) {
   
   title_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.Role.title)
 }
- ::std::string* Role::mutable_title() {
+::std::string* Role::mutable_title() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.Role.title)
   return title_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Role::release_title() {
+::std::string* Role::release_title() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.Role.title)
   
   return title_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Role::unsafe_arena_release_title() {
+::std::string* Role::unsafe_arena_release_title() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.Role.title)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return title_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Role::set_allocated_title(::std::string* title) {
+void Role::set_allocated_title(::std::string* title) {
   if (title != NULL) {
     
   } else {
@@ -8114,7 +8273,7 @@ void Role::clear_title() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.Role.title)
 }
- void Role::unsafe_arena_set_allocated_title(
+void Role::unsafe_arena_set_allocated_title(
     ::std::string* title) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (title != NULL) {
@@ -8131,46 +8290,46 @@ void Role::clear_title() {
 void Role::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Role::description() const {
+const ::std::string& Role::description() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.Role.description)
   return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Role::set_description(const ::std::string& value) {
+void Role::set_description(const ::std::string& value) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.Role.description)
 }
- void Role::set_description(const char* value) {
+void Role::set_description(const char* value) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.Role.description)
 }
- void Role::set_description(const char* value,
+void Role::set_description(const char* value,
     size_t size) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.Role.description)
 }
- ::std::string* Role::mutable_description() {
+::std::string* Role::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.Role.description)
   return description_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Role::release_description() {
+::std::string* Role::release_description() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.Role.description)
   
   return description_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Role::unsafe_arena_release_description() {
+::std::string* Role::unsafe_arena_release_description() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.Role.description)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return description_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Role::set_allocated_description(::std::string* description) {
+void Role::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -8180,7 +8339,7 @@ void Role::clear_description() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.Role.description)
 }
- void Role::unsafe_arena_set_allocated_description(
+void Role::unsafe_arena_set_allocated_description(
     ::std::string* description) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (description != NULL) {
@@ -8193,6 +8352,9 @@ void Role::clear_description() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.Role.description)
 }
 
+inline const Role* Role::internal_default_instance() {
+  return &Role_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8203,35 +8365,35 @@ const int QueryGrantableRolesRequest::kFullResourceNameFieldNumber;
 
 QueryGrantableRolesRequest::QueryGrantableRolesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.QueryGrantableRolesRequest)
 }
-
 QueryGrantableRolesRequest::QueryGrantableRolesRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.QueryGrantableRolesRequest)
 }
 
 void QueryGrantableRolesRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 QueryGrantableRolesRequest::QueryGrantableRolesRequest(const QueryGrantableRolesRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.QueryGrantableRolesRequest)
 }
 
 void QueryGrantableRolesRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   full_resource_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 QueryGrantableRolesRequest::~QueryGrantableRolesRequest() {
@@ -8240,13 +8402,12 @@ QueryGrantableRolesRequest::~QueryGrantableRolesRequest() {
 }
 
 void QueryGrantableRolesRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  full_resource_name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  full_resource_name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void QueryGrantableRolesRequest::ArenaDtor(void* object) {
@@ -8266,11 +8427,11 @@ const ::google::protobuf::Descriptor* QueryGrantableRolesRequest::descriptor() {
 }
 
 const QueryGrantableRolesRequest& QueryGrantableRolesRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-QueryGrantableRolesRequest* QueryGrantableRolesRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<QueryGrantableRolesRequest> QueryGrantableRolesRequest_default_instance_;
 
 QueryGrantableRolesRequest* QueryGrantableRolesRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<QueryGrantableRolesRequest>(arena);
@@ -8346,6 +8507,7 @@ void QueryGrantableRolesRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* QueryGrantableRolesRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.QueryGrantableRolesRequest)
   // optional string full_resource_name = 1;
   if (this->full_resource_name().size() > 0) {
@@ -8362,9 +8524,9 @@ void QueryGrantableRolesRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int QueryGrantableRolesRequest::ByteSize() const {
+size_t QueryGrantableRolesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.QueryGrantableRolesRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string full_resource_name = 1;
   if (this->full_resource_name().size() > 0) {
@@ -8373,18 +8535,17 @@ int QueryGrantableRolesRequest::ByteSize() const {
         this->full_resource_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void QueryGrantableRolesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.QueryGrantableRolesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const QueryGrantableRolesRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const QueryGrantableRolesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const QueryGrantableRolesRequest>(
           &from);
   if (source == NULL) {
@@ -8392,15 +8553,21 @@ void QueryGrantableRolesRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.QueryGrantableRolesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void QueryGrantableRolesRequest::MergeFrom(const QueryGrantableRolesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.QueryGrantableRolesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void QueryGrantableRolesRequest::UnsafeMergeFrom(const QueryGrantableRolesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.full_resource_name().size() > 0) {
     set_full_resource_name(from.full_resource_name());
   }
@@ -8417,7 +8584,7 @@ void QueryGrantableRolesRequest::CopyFrom(const QueryGrantableRolesRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.QueryGrantableRolesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool QueryGrantableRolesRequest::IsInitialized() const {
@@ -8431,7 +8598,7 @@ void QueryGrantableRolesRequest::Swap(QueryGrantableRolesRequest* other) {
     InternalSwap(other);
   } else {
     QueryGrantableRolesRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -8462,46 +8629,46 @@ void QueryGrantableRolesRequest::InternalSwap(QueryGrantableRolesRequest* other)
 void QueryGrantableRolesRequest::clear_full_resource_name() {
   full_resource_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& QueryGrantableRolesRequest::full_resource_name() const {
+const ::std::string& QueryGrantableRolesRequest::full_resource_name() const {
   // @@protoc_insertion_point(field_get:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
   return full_resource_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void QueryGrantableRolesRequest::set_full_resource_name(const ::std::string& value) {
+void QueryGrantableRolesRequest::set_full_resource_name(const ::std::string& value) {
   
   full_resource_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
 }
- void QueryGrantableRolesRequest::set_full_resource_name(const char* value) {
+void QueryGrantableRolesRequest::set_full_resource_name(const char* value) {
   
   full_resource_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
 }
- void QueryGrantableRolesRequest::set_full_resource_name(const char* value,
+void QueryGrantableRolesRequest::set_full_resource_name(const char* value,
     size_t size) {
   
   full_resource_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
 }
- ::std::string* QueryGrantableRolesRequest::mutable_full_resource_name() {
+::std::string* QueryGrantableRolesRequest::mutable_full_resource_name() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
   return full_resource_name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* QueryGrantableRolesRequest::release_full_resource_name() {
+::std::string* QueryGrantableRolesRequest::release_full_resource_name() {
   // @@protoc_insertion_point(field_release:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
   
   return full_resource_name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* QueryGrantableRolesRequest::unsafe_arena_release_full_resource_name() {
+::std::string* QueryGrantableRolesRequest::unsafe_arena_release_full_resource_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return full_resource_name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void QueryGrantableRolesRequest::set_allocated_full_resource_name(::std::string* full_resource_name) {
+void QueryGrantableRolesRequest::set_allocated_full_resource_name(::std::string* full_resource_name) {
   if (full_resource_name != NULL) {
     
   } else {
@@ -8511,7 +8678,7 @@ void QueryGrantableRolesRequest::clear_full_resource_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
 }
- void QueryGrantableRolesRequest::unsafe_arena_set_allocated_full_resource_name(
+void QueryGrantableRolesRequest::unsafe_arena_set_allocated_full_resource_name(
     ::std::string* full_resource_name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (full_resource_name != NULL) {
@@ -8524,6 +8691,9 @@ void QueryGrantableRolesRequest::clear_full_resource_name() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.admin.v1.QueryGrantableRolesRequest.full_resource_name)
 }
 
+inline const QueryGrantableRolesRequest* QueryGrantableRolesRequest::internal_default_instance() {
+  return &QueryGrantableRolesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8534,33 +8704,34 @@ const int QueryGrantableRolesResponse::kRolesFieldNumber;
 
 QueryGrantableRolesResponse::QueryGrantableRolesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.admin.v1.QueryGrantableRolesResponse)
 }
-
 QueryGrantableRolesResponse::QueryGrantableRolesResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   roles_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.admin.v1.QueryGrantableRolesResponse)
 }
 
 void QueryGrantableRolesResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 QueryGrantableRolesResponse::QueryGrantableRolesResponse(const QueryGrantableRolesResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.admin.v1.QueryGrantableRolesResponse)
 }
 
 void QueryGrantableRolesResponse::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -8570,12 +8741,11 @@ QueryGrantableRolesResponse::~QueryGrantableRolesResponse() {
 }
 
 void QueryGrantableRolesResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void QueryGrantableRolesResponse::ArenaDtor(void* object) {
@@ -8595,11 +8765,11 @@ const ::google::protobuf::Descriptor* QueryGrantableRolesResponse::descriptor() 
 }
 
 const QueryGrantableRolesResponse& QueryGrantableRolesResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fadmin_2fv1_2fiam_2eproto();
+  return *internal_default_instance();
 }
 
-QueryGrantableRolesResponse* QueryGrantableRolesResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<QueryGrantableRolesResponse> QueryGrantableRolesResponse_default_instance_;
 
 QueryGrantableRolesResponse* QueryGrantableRolesResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<QueryGrantableRolesResponse>(arena);
@@ -8671,6 +8841,7 @@ void QueryGrantableRolesResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* QueryGrantableRolesResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.admin.v1.QueryGrantableRolesResponse)
   // repeated .google.iam.admin.v1.Role roles = 1;
   for (unsigned int i = 0, n = this->roles_size(); i < n; i++) {
@@ -8683,30 +8854,32 @@ void QueryGrantableRolesResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int QueryGrantableRolesResponse::ByteSize() const {
+size_t QueryGrantableRolesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.admin.v1.QueryGrantableRolesResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.iam.admin.v1.Role roles = 1;
-  total_size += 1 * this->roles_size();
-  for (int i = 0; i < this->roles_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->roles(i));
+  {
+    unsigned int count = this->roles_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->roles(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void QueryGrantableRolesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.admin.v1.QueryGrantableRolesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const QueryGrantableRolesResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const QueryGrantableRolesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const QueryGrantableRolesResponse>(
           &from);
   if (source == NULL) {
@@ -8714,15 +8887,21 @@ void QueryGrantableRolesResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.admin.v1.QueryGrantableRolesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void QueryGrantableRolesResponse::MergeFrom(const QueryGrantableRolesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.admin.v1.QueryGrantableRolesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void QueryGrantableRolesResponse::UnsafeMergeFrom(const QueryGrantableRolesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   roles_.MergeFrom(from.roles_);
 }
 
@@ -8737,7 +8916,7 @@ void QueryGrantableRolesResponse::CopyFrom(const QueryGrantableRolesResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.admin.v1.QueryGrantableRolesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool QueryGrantableRolesResponse::IsInitialized() const {
@@ -8751,7 +8930,7 @@ void QueryGrantableRolesResponse::Swap(QueryGrantableRolesResponse* other) {
     InternalSwap(other);
   } else {
     QueryGrantableRolesResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -8808,6 +8987,9 @@ QueryGrantableRolesResponse::roles() const {
   return roles_;
 }
 
+inline const QueryGrantableRolesResponse* QueryGrantableRolesResponse::internal_default_instance() {
+  return &QueryGrantableRolesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

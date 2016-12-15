@@ -71,14 +71,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   BillingAccount_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       BillingAccount_descriptor_,
-      BillingAccount::default_instance_,
+      BillingAccount::internal_default_instance(),
       BillingAccount_offsets_,
       -1,
       -1,
       -1,
       sizeof(BillingAccount),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BillingAccount, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BillingAccount, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BillingAccount, _internal_metadata_));
   ProjectBillingInfo_descriptor_ = file->message_type(1);
   static const int ProjectBillingInfo_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectBillingInfo, name_),
@@ -89,14 +88,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   ProjectBillingInfo_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ProjectBillingInfo_descriptor_,
-      ProjectBillingInfo::default_instance_,
+      ProjectBillingInfo::internal_default_instance(),
       ProjectBillingInfo_offsets_,
       -1,
       -1,
       -1,
       sizeof(ProjectBillingInfo),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectBillingInfo, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectBillingInfo, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectBillingInfo, _internal_metadata_));
   GetBillingAccountRequest_descriptor_ = file->message_type(2);
   static const int GetBillingAccountRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetBillingAccountRequest, name_),
@@ -104,14 +102,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   GetBillingAccountRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetBillingAccountRequest_descriptor_,
-      GetBillingAccountRequest::default_instance_,
+      GetBillingAccountRequest::internal_default_instance(),
       GetBillingAccountRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetBillingAccountRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetBillingAccountRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetBillingAccountRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetBillingAccountRequest, _internal_metadata_));
   ListBillingAccountsRequest_descriptor_ = file->message_type(3);
   static const int ListBillingAccountsRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsRequest, page_size_),
@@ -120,14 +117,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   ListBillingAccountsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListBillingAccountsRequest_descriptor_,
-      ListBillingAccountsRequest::default_instance_,
+      ListBillingAccountsRequest::internal_default_instance(),
       ListBillingAccountsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListBillingAccountsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsRequest, _internal_metadata_));
   ListBillingAccountsResponse_descriptor_ = file->message_type(4);
   static const int ListBillingAccountsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsResponse, billing_accounts_),
@@ -136,14 +132,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   ListBillingAccountsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListBillingAccountsResponse_descriptor_,
-      ListBillingAccountsResponse::default_instance_,
+      ListBillingAccountsResponse::internal_default_instance(),
       ListBillingAccountsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListBillingAccountsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBillingAccountsResponse, _internal_metadata_));
   ListProjectBillingInfoRequest_descriptor_ = file->message_type(5);
   static const int ListProjectBillingInfoRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoRequest, name_),
@@ -153,14 +148,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   ListProjectBillingInfoRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListProjectBillingInfoRequest_descriptor_,
-      ListProjectBillingInfoRequest::default_instance_,
+      ListProjectBillingInfoRequest::internal_default_instance(),
       ListProjectBillingInfoRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListProjectBillingInfoRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoRequest, _internal_metadata_));
   ListProjectBillingInfoResponse_descriptor_ = file->message_type(6);
   static const int ListProjectBillingInfoResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoResponse, project_billing_info_),
@@ -169,14 +163,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   ListProjectBillingInfoResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListProjectBillingInfoResponse_descriptor_,
-      ListProjectBillingInfoResponse::default_instance_,
+      ListProjectBillingInfoResponse::internal_default_instance(),
       ListProjectBillingInfoResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListProjectBillingInfoResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListProjectBillingInfoResponse, _internal_metadata_));
   GetProjectBillingInfoRequest_descriptor_ = file->message_type(7);
   static const int GetProjectBillingInfoRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetProjectBillingInfoRequest, name_),
@@ -184,14 +177,13 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   GetProjectBillingInfoRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetProjectBillingInfoRequest_descriptor_,
-      GetProjectBillingInfoRequest::default_instance_,
+      GetProjectBillingInfoRequest::internal_default_instance(),
       GetProjectBillingInfoRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetProjectBillingInfoRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetProjectBillingInfoRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetProjectBillingInfoRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetProjectBillingInfoRequest, _internal_metadata_));
   UpdateProjectBillingInfoRequest_descriptor_ = file->message_type(8);
   static const int UpdateProjectBillingInfoRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateProjectBillingInfoRequest, name_),
@@ -200,20 +192,19 @@ void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto
   UpdateProjectBillingInfoRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UpdateProjectBillingInfoRequest_descriptor_,
-      UpdateProjectBillingInfoRequest::default_instance_,
+      UpdateProjectBillingInfoRequest::internal_default_instance(),
       UpdateProjectBillingInfoRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(UpdateProjectBillingInfoRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateProjectBillingInfoRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateProjectBillingInfoRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateProjectBillingInfoRequest, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto);
 }
@@ -222,56 +213,90 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      BillingAccount_descriptor_, &BillingAccount::default_instance());
+      BillingAccount_descriptor_, BillingAccount::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ProjectBillingInfo_descriptor_, &ProjectBillingInfo::default_instance());
+      ProjectBillingInfo_descriptor_, ProjectBillingInfo::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetBillingAccountRequest_descriptor_, &GetBillingAccountRequest::default_instance());
+      GetBillingAccountRequest_descriptor_, GetBillingAccountRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListBillingAccountsRequest_descriptor_, &ListBillingAccountsRequest::default_instance());
+      ListBillingAccountsRequest_descriptor_, ListBillingAccountsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListBillingAccountsResponse_descriptor_, &ListBillingAccountsResponse::default_instance());
+      ListBillingAccountsResponse_descriptor_, ListBillingAccountsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListProjectBillingInfoRequest_descriptor_, &ListProjectBillingInfoRequest::default_instance());
+      ListProjectBillingInfoRequest_descriptor_, ListProjectBillingInfoRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListProjectBillingInfoResponse_descriptor_, &ListProjectBillingInfoResponse::default_instance());
+      ListProjectBillingInfoResponse_descriptor_, ListProjectBillingInfoResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetProjectBillingInfoRequest_descriptor_, &GetProjectBillingInfoRequest::default_instance());
+      GetProjectBillingInfoRequest_descriptor_, GetProjectBillingInfoRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UpdateProjectBillingInfoRequest_descriptor_, &UpdateProjectBillingInfoRequest::default_instance());
+      UpdateProjectBillingInfoRequest_descriptor_, UpdateProjectBillingInfoRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto() {
-  delete BillingAccount::default_instance_;
+  BillingAccount_default_instance_.Shutdown();
   delete BillingAccount_reflection_;
-  delete ProjectBillingInfo::default_instance_;
+  ProjectBillingInfo_default_instance_.Shutdown();
   delete ProjectBillingInfo_reflection_;
-  delete GetBillingAccountRequest::default_instance_;
+  GetBillingAccountRequest_default_instance_.Shutdown();
   delete GetBillingAccountRequest_reflection_;
-  delete ListBillingAccountsRequest::default_instance_;
+  ListBillingAccountsRequest_default_instance_.Shutdown();
   delete ListBillingAccountsRequest_reflection_;
-  delete ListBillingAccountsResponse::default_instance_;
+  ListBillingAccountsResponse_default_instance_.Shutdown();
   delete ListBillingAccountsResponse_reflection_;
-  delete ListProjectBillingInfoRequest::default_instance_;
+  ListProjectBillingInfoRequest_default_instance_.Shutdown();
   delete ListProjectBillingInfoRequest_reflection_;
-  delete ListProjectBillingInfoResponse::default_instance_;
+  ListProjectBillingInfoResponse_default_instance_.Shutdown();
   delete ListProjectBillingInfoResponse_reflection_;
-  delete GetProjectBillingInfoRequest::default_instance_;
+  GetProjectBillingInfoRequest_default_instance_.Shutdown();
   delete GetProjectBillingInfoRequest_reflection_;
-  delete UpdateProjectBillingInfoRequest::default_instance_;
+  UpdateProjectBillingInfoRequest_default_instance_.Shutdown();
   delete UpdateProjectBillingInfoRequest_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  BillingAccount_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ProjectBillingInfo_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetBillingAccountRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListBillingAccountsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListBillingAccountsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListProjectBillingInfoRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListProjectBillingInfoResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetProjectBillingInfoRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateProjectBillingInfoRequest_default_instance_.DefaultConstruct();
+  BillingAccount_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ProjectBillingInfo_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetBillingAccountRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListBillingAccountsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListBillingAccountsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListProjectBillingInfoRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListProjectBillingInfoResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetProjectBillingInfoRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateProjectBillingInfoRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n+google/cloud/billing/v1/cloud_billing."
     "proto\022\027google.cloud.billing.v1\032\034google/a"
@@ -317,38 +342,37 @@ void protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto() 
     "g.v1.UpdateProjectBillingInfoRequest\032+.g"
     "oogle.cloud.billing.v1.ProjectBillingInf"
     "o\"\?\202\323\344\223\0029\032!/v1/{name=projects/*}/billing"
-    "Info:\024project_billing_infoB2\n\033com.google"
-    ".cloud.billing.v1B\021CloudBillingProtoP\001b\006"
-    "proto3", 1846);
+    "Info:\024project_billing_infoBr\n\033com.google"
+    ".cloud.billing.v1B\021CloudBillingProtoP\001Z>"
+    "google.golang.org/genproto/googleapis/cl"
+    "oud/billing/v1;billingb\006proto3", 1910);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/billing/v1/cloud_billing.proto", &protobuf_RegisterTypes);
-  BillingAccount::default_instance_ = new BillingAccount();
-  ProjectBillingInfo::default_instance_ = new ProjectBillingInfo();
-  GetBillingAccountRequest::default_instance_ = new GetBillingAccountRequest();
-  ListBillingAccountsRequest::default_instance_ = new ListBillingAccountsRequest();
-  ListBillingAccountsResponse::default_instance_ = new ListBillingAccountsResponse();
-  ListProjectBillingInfoRequest::default_instance_ = new ListProjectBillingInfoRequest();
-  ListProjectBillingInfoResponse::default_instance_ = new ListProjectBillingInfoResponse();
-  GetProjectBillingInfoRequest::default_instance_ = new GetProjectBillingInfoRequest();
-  UpdateProjectBillingInfoRequest::default_instance_ = new UpdateProjectBillingInfoRequest();
-  BillingAccount::default_instance_->InitAsDefaultInstance();
-  ProjectBillingInfo::default_instance_->InitAsDefaultInstance();
-  GetBillingAccountRequest::default_instance_->InitAsDefaultInstance();
-  ListBillingAccountsRequest::default_instance_->InitAsDefaultInstance();
-  ListBillingAccountsResponse::default_instance_->InitAsDefaultInstance();
-  ListProjectBillingInfoRequest::default_instance_->InitAsDefaultInstance();
-  ListProjectBillingInfoResponse::default_instance_->InitAsDefaultInstance();
-  GetProjectBillingInfoRequest::default_instance_->InitAsDefaultInstance();
-  UpdateProjectBillingInfoRequest::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto() {
     protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -360,29 +384,27 @@ const int BillingAccount::kDisplayNameFieldNumber;
 
 BillingAccount::BillingAccount()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.BillingAccount)
 }
 
 void BillingAccount::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 BillingAccount::BillingAccount(const BillingAccount& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.BillingAccount)
 }
 
 void BillingAccount::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  open_ = false;
   display_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  open_ = false;
+  _cached_size_ = 0;
 }
 
 BillingAccount::~BillingAccount() {
@@ -393,8 +415,6 @@ BillingAccount::~BillingAccount() {
 void BillingAccount::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   display_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void BillingAccount::SetCachedSize(int size) const {
@@ -408,11 +428,11 @@ const ::google::protobuf::Descriptor* BillingAccount::descriptor() {
 }
 
 const BillingAccount& BillingAccount::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-BillingAccount* BillingAccount::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<BillingAccount> BillingAccount_default_instance_;
 
 BillingAccount* BillingAccount::New(::google::protobuf::Arena* arena) const {
   BillingAccount* n = new BillingAccount;
@@ -459,10 +479,10 @@ bool BillingAccount::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_open:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &open_)));
-
         } else {
           goto handle_unusual;
         }
@@ -541,6 +561,7 @@ void BillingAccount::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* BillingAccount::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.BillingAccount)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -573,9 +594,9 @@ void BillingAccount::SerializeWithCachedSizes(
   return target;
 }
 
-int BillingAccount::ByteSize() const {
+size_t BillingAccount::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.BillingAccount)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -596,18 +617,17 @@ int BillingAccount::ByteSize() const {
         this->display_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void BillingAccount::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.BillingAccount)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const BillingAccount* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const BillingAccount* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BillingAccount>(
           &from);
   if (source == NULL) {
@@ -615,15 +635,21 @@ void BillingAccount::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.BillingAccount)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BillingAccount::MergeFrom(const BillingAccount& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.BillingAccount)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void BillingAccount::UnsafeMergeFrom(const BillingAccount& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -648,7 +674,7 @@ void BillingAccount::CopyFrom(const BillingAccount& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.BillingAccount)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BillingAccount::IsInitialized() const {
@@ -683,37 +709,37 @@ void BillingAccount::InternalSwap(BillingAccount* other) {
 void BillingAccount::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& BillingAccount::name() const {
+const ::std::string& BillingAccount::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.BillingAccount.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void BillingAccount::set_name(const ::std::string& value) {
+void BillingAccount::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.BillingAccount.name)
 }
- void BillingAccount::set_name(const char* value) {
+void BillingAccount::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.BillingAccount.name)
 }
- void BillingAccount::set_name(const char* value, size_t size) {
+void BillingAccount::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.BillingAccount.name)
 }
- ::std::string* BillingAccount::mutable_name() {
+::std::string* BillingAccount::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.BillingAccount.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* BillingAccount::release_name() {
+::std::string* BillingAccount::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.BillingAccount.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void BillingAccount::set_allocated_name(::std::string* name) {
+void BillingAccount::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -727,11 +753,11 @@ void BillingAccount::clear_name() {
 void BillingAccount::clear_open() {
   open_ = false;
 }
- bool BillingAccount::open() const {
+bool BillingAccount::open() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.BillingAccount.open)
   return open_;
 }
- void BillingAccount::set_open(bool value) {
+void BillingAccount::set_open(bool value) {
   
   open_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.BillingAccount.open)
@@ -741,37 +767,37 @@ void BillingAccount::clear_open() {
 void BillingAccount::clear_display_name() {
   display_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& BillingAccount::display_name() const {
+const ::std::string& BillingAccount::display_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.BillingAccount.display_name)
   return display_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void BillingAccount::set_display_name(const ::std::string& value) {
+void BillingAccount::set_display_name(const ::std::string& value) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.BillingAccount.display_name)
 }
- void BillingAccount::set_display_name(const char* value) {
+void BillingAccount::set_display_name(const char* value) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.BillingAccount.display_name)
 }
- void BillingAccount::set_display_name(const char* value, size_t size) {
+void BillingAccount::set_display_name(const char* value, size_t size) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.BillingAccount.display_name)
 }
- ::std::string* BillingAccount::mutable_display_name() {
+::std::string* BillingAccount::mutable_display_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.BillingAccount.display_name)
   return display_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* BillingAccount::release_display_name() {
+::std::string* BillingAccount::release_display_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.BillingAccount.display_name)
   
   return display_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void BillingAccount::set_allocated_display_name(::std::string* display_name) {
+void BillingAccount::set_allocated_display_name(::std::string* display_name) {
   if (display_name != NULL) {
     
   } else {
@@ -781,6 +807,9 @@ void BillingAccount::clear_display_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.BillingAccount.display_name)
 }
 
+inline const BillingAccount* BillingAccount::internal_default_instance() {
+  return &BillingAccount_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -794,30 +823,28 @@ const int ProjectBillingInfo::kBillingEnabledFieldNumber;
 
 ProjectBillingInfo::ProjectBillingInfo()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.ProjectBillingInfo)
 }
 
 void ProjectBillingInfo::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ProjectBillingInfo::ProjectBillingInfo(const ProjectBillingInfo& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.ProjectBillingInfo)
 }
 
 void ProjectBillingInfo::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   billing_account_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   billing_enabled_ = false;
+  _cached_size_ = 0;
 }
 
 ProjectBillingInfo::~ProjectBillingInfo() {
@@ -829,8 +856,6 @@ void ProjectBillingInfo::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   billing_account_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ProjectBillingInfo::SetCachedSize(int size) const {
@@ -844,11 +869,11 @@ const ::google::protobuf::Descriptor* ProjectBillingInfo::descriptor() {
 }
 
 const ProjectBillingInfo& ProjectBillingInfo::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-ProjectBillingInfo* ProjectBillingInfo::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ProjectBillingInfo> ProjectBillingInfo_default_instance_;
 
 ProjectBillingInfo* ProjectBillingInfo::New(::google::protobuf::Arena* arena) const {
   ProjectBillingInfo* n = new ProjectBillingInfo;
@@ -930,10 +955,10 @@ bool ProjectBillingInfo::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_billing_enabled:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &billing_enabled_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1005,6 +1030,7 @@ void ProjectBillingInfo::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ProjectBillingInfo::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.ProjectBillingInfo)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1048,9 +1074,9 @@ void ProjectBillingInfo::SerializeWithCachedSizes(
   return target;
 }
 
-int ProjectBillingInfo::ByteSize() const {
+size_t ProjectBillingInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.ProjectBillingInfo)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1078,18 +1104,17 @@ int ProjectBillingInfo::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ProjectBillingInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.ProjectBillingInfo)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ProjectBillingInfo* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ProjectBillingInfo* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ProjectBillingInfo>(
           &from);
   if (source == NULL) {
@@ -1097,15 +1122,21 @@ void ProjectBillingInfo::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.ProjectBillingInfo)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ProjectBillingInfo::MergeFrom(const ProjectBillingInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.ProjectBillingInfo)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ProjectBillingInfo::UnsafeMergeFrom(const ProjectBillingInfo& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1134,7 +1165,7 @@ void ProjectBillingInfo::CopyFrom(const ProjectBillingInfo& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.ProjectBillingInfo)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ProjectBillingInfo::IsInitialized() const {
@@ -1170,37 +1201,37 @@ void ProjectBillingInfo::InternalSwap(ProjectBillingInfo* other) {
 void ProjectBillingInfo::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ProjectBillingInfo::name() const {
+const ::std::string& ProjectBillingInfo::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ProjectBillingInfo.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ProjectBillingInfo::set_name(const ::std::string& value) {
+void ProjectBillingInfo::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ProjectBillingInfo.name)
 }
- void ProjectBillingInfo::set_name(const char* value) {
+void ProjectBillingInfo::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ProjectBillingInfo.name)
 }
- void ProjectBillingInfo::set_name(const char* value, size_t size) {
+void ProjectBillingInfo::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ProjectBillingInfo.name)
 }
- ::std::string* ProjectBillingInfo::mutable_name() {
+::std::string* ProjectBillingInfo::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ProjectBillingInfo.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ProjectBillingInfo::release_name() {
+::std::string* ProjectBillingInfo::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ProjectBillingInfo.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ProjectBillingInfo::set_allocated_name(::std::string* name) {
+void ProjectBillingInfo::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1214,37 +1245,37 @@ void ProjectBillingInfo::clear_name() {
 void ProjectBillingInfo::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ProjectBillingInfo::project_id() const {
+const ::std::string& ProjectBillingInfo::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ProjectBillingInfo.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ProjectBillingInfo::set_project_id(const ::std::string& value) {
+void ProjectBillingInfo::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ProjectBillingInfo.project_id)
 }
- void ProjectBillingInfo::set_project_id(const char* value) {
+void ProjectBillingInfo::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ProjectBillingInfo.project_id)
 }
- void ProjectBillingInfo::set_project_id(const char* value, size_t size) {
+void ProjectBillingInfo::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ProjectBillingInfo.project_id)
 }
- ::std::string* ProjectBillingInfo::mutable_project_id() {
+::std::string* ProjectBillingInfo::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ProjectBillingInfo.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ProjectBillingInfo::release_project_id() {
+::std::string* ProjectBillingInfo::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ProjectBillingInfo.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ProjectBillingInfo::set_allocated_project_id(::std::string* project_id) {
+void ProjectBillingInfo::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -1258,37 +1289,37 @@ void ProjectBillingInfo::clear_project_id() {
 void ProjectBillingInfo::clear_billing_account_name() {
   billing_account_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ProjectBillingInfo::billing_account_name() const {
+const ::std::string& ProjectBillingInfo::billing_account_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
   return billing_account_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ProjectBillingInfo::set_billing_account_name(const ::std::string& value) {
+void ProjectBillingInfo::set_billing_account_name(const ::std::string& value) {
   
   billing_account_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
 }
- void ProjectBillingInfo::set_billing_account_name(const char* value) {
+void ProjectBillingInfo::set_billing_account_name(const char* value) {
   
   billing_account_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
 }
- void ProjectBillingInfo::set_billing_account_name(const char* value, size_t size) {
+void ProjectBillingInfo::set_billing_account_name(const char* value, size_t size) {
   
   billing_account_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
 }
- ::std::string* ProjectBillingInfo::mutable_billing_account_name() {
+::std::string* ProjectBillingInfo::mutable_billing_account_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
   return billing_account_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ProjectBillingInfo::release_billing_account_name() {
+::std::string* ProjectBillingInfo::release_billing_account_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
   
   return billing_account_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ProjectBillingInfo::set_allocated_billing_account_name(::std::string* billing_account_name) {
+void ProjectBillingInfo::set_allocated_billing_account_name(::std::string* billing_account_name) {
   if (billing_account_name != NULL) {
     
   } else {
@@ -1302,16 +1333,19 @@ void ProjectBillingInfo::clear_billing_account_name() {
 void ProjectBillingInfo::clear_billing_enabled() {
   billing_enabled_ = false;
 }
- bool ProjectBillingInfo::billing_enabled() const {
+bool ProjectBillingInfo::billing_enabled() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ProjectBillingInfo.billing_enabled)
   return billing_enabled_;
 }
- void ProjectBillingInfo::set_billing_enabled(bool value) {
+void ProjectBillingInfo::set_billing_enabled(bool value) {
   
   billing_enabled_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ProjectBillingInfo.billing_enabled)
 }
 
+inline const ProjectBillingInfo* ProjectBillingInfo::internal_default_instance() {
+  return &ProjectBillingInfo_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1322,27 +1356,25 @@ const int GetBillingAccountRequest::kNameFieldNumber;
 
 GetBillingAccountRequest::GetBillingAccountRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.GetBillingAccountRequest)
 }
 
 void GetBillingAccountRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetBillingAccountRequest::GetBillingAccountRequest(const GetBillingAccountRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.GetBillingAccountRequest)
 }
 
 void GetBillingAccountRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetBillingAccountRequest::~GetBillingAccountRequest() {
@@ -1352,8 +1384,6 @@ GetBillingAccountRequest::~GetBillingAccountRequest() {
 
 void GetBillingAccountRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetBillingAccountRequest::SetCachedSize(int size) const {
@@ -1367,11 +1397,11 @@ const ::google::protobuf::Descriptor* GetBillingAccountRequest::descriptor() {
 }
 
 const GetBillingAccountRequest& GetBillingAccountRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-GetBillingAccountRequest* GetBillingAccountRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetBillingAccountRequest> GetBillingAccountRequest_default_instance_;
 
 GetBillingAccountRequest* GetBillingAccountRequest::New(::google::protobuf::Arena* arena) const {
   GetBillingAccountRequest* n = new GetBillingAccountRequest;
@@ -1451,6 +1481,7 @@ void GetBillingAccountRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetBillingAccountRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.GetBillingAccountRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1467,9 +1498,9 @@ void GetBillingAccountRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetBillingAccountRequest::ByteSize() const {
+size_t GetBillingAccountRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.GetBillingAccountRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1478,18 +1509,17 @@ int GetBillingAccountRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetBillingAccountRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.GetBillingAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetBillingAccountRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetBillingAccountRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetBillingAccountRequest>(
           &from);
   if (source == NULL) {
@@ -1497,15 +1527,21 @@ void GetBillingAccountRequest::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.GetBillingAccountRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetBillingAccountRequest::MergeFrom(const GetBillingAccountRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.GetBillingAccountRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetBillingAccountRequest::UnsafeMergeFrom(const GetBillingAccountRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1523,7 +1559,7 @@ void GetBillingAccountRequest::CopyFrom(const GetBillingAccountRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.GetBillingAccountRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetBillingAccountRequest::IsInitialized() const {
@@ -1556,37 +1592,37 @@ void GetBillingAccountRequest::InternalSwap(GetBillingAccountRequest* other) {
 void GetBillingAccountRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetBillingAccountRequest::name() const {
+const ::std::string& GetBillingAccountRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.GetBillingAccountRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetBillingAccountRequest::set_name(const ::std::string& value) {
+void GetBillingAccountRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.GetBillingAccountRequest.name)
 }
- void GetBillingAccountRequest::set_name(const char* value) {
+void GetBillingAccountRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.GetBillingAccountRequest.name)
 }
- void GetBillingAccountRequest::set_name(const char* value, size_t size) {
+void GetBillingAccountRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.GetBillingAccountRequest.name)
 }
- ::std::string* GetBillingAccountRequest::mutable_name() {
+::std::string* GetBillingAccountRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.GetBillingAccountRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetBillingAccountRequest::release_name() {
+::std::string* GetBillingAccountRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.GetBillingAccountRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetBillingAccountRequest::set_allocated_name(::std::string* name) {
+void GetBillingAccountRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1596,6 +1632,9 @@ void GetBillingAccountRequest::clear_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.GetBillingAccountRequest.name)
 }
 
+inline const GetBillingAccountRequest* GetBillingAccountRequest::internal_default_instance() {
+  return &GetBillingAccountRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1607,28 +1646,26 @@ const int ListBillingAccountsRequest::kPageTokenFieldNumber;
 
 ListBillingAccountsRequest::ListBillingAccountsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.ListBillingAccountsRequest)
 }
 
 void ListBillingAccountsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListBillingAccountsRequest::ListBillingAccountsRequest(const ListBillingAccountsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.ListBillingAccountsRequest)
 }
 
 void ListBillingAccountsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListBillingAccountsRequest::~ListBillingAccountsRequest() {
@@ -1638,8 +1675,6 @@ ListBillingAccountsRequest::~ListBillingAccountsRequest() {
 
 void ListBillingAccountsRequest::SharedDtor() {
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListBillingAccountsRequest::SetCachedSize(int size) const {
@@ -1653,11 +1688,11 @@ const ::google::protobuf::Descriptor* ListBillingAccountsRequest::descriptor() {
 }
 
 const ListBillingAccountsRequest& ListBillingAccountsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-ListBillingAccountsRequest* ListBillingAccountsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListBillingAccountsRequest> ListBillingAccountsRequest_default_instance_;
 
 ListBillingAccountsRequest* ListBillingAccountsRequest::New(::google::protobuf::Arena* arena) const {
   ListBillingAccountsRequest* n = new ListBillingAccountsRequest;
@@ -1686,10 +1721,10 @@ bool ListBillingAccountsRequest::MergePartialFromCodedStream(
       // optional int32 page_size = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1758,6 +1793,7 @@ void ListBillingAccountsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListBillingAccountsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.ListBillingAccountsRequest)
   // optional int32 page_size = 1;
   if (this->page_size() != 0) {
@@ -1779,9 +1815,9 @@ void ListBillingAccountsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListBillingAccountsRequest::ByteSize() const {
+size_t ListBillingAccountsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.ListBillingAccountsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 page_size = 1;
   if (this->page_size() != 0) {
@@ -1797,18 +1833,17 @@ int ListBillingAccountsRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListBillingAccountsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.ListBillingAccountsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListBillingAccountsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListBillingAccountsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListBillingAccountsRequest>(
           &from);
   if (source == NULL) {
@@ -1816,15 +1851,21 @@ void ListBillingAccountsRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.ListBillingAccountsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListBillingAccountsRequest::MergeFrom(const ListBillingAccountsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.ListBillingAccountsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListBillingAccountsRequest::UnsafeMergeFrom(const ListBillingAccountsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
   }
@@ -1845,7 +1886,7 @@ void ListBillingAccountsRequest::CopyFrom(const ListBillingAccountsRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.ListBillingAccountsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListBillingAccountsRequest::IsInitialized() const {
@@ -1879,11 +1920,11 @@ void ListBillingAccountsRequest::InternalSwap(ListBillingAccountsRequest* other)
 void ListBillingAccountsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListBillingAccountsRequest::page_size() const {
+::google::protobuf::int32 ListBillingAccountsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListBillingAccountsRequest.page_size)
   return page_size_;
 }
- void ListBillingAccountsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListBillingAccountsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListBillingAccountsRequest.page_size)
@@ -1893,37 +1934,37 @@ void ListBillingAccountsRequest::clear_page_size() {
 void ListBillingAccountsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListBillingAccountsRequest::page_token() const {
+const ::std::string& ListBillingAccountsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBillingAccountsRequest::set_page_token(const ::std::string& value) {
+void ListBillingAccountsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
 }
- void ListBillingAccountsRequest::set_page_token(const char* value) {
+void ListBillingAccountsRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
 }
- void ListBillingAccountsRequest::set_page_token(const char* value, size_t size) {
+void ListBillingAccountsRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
 }
- ::std::string* ListBillingAccountsRequest::mutable_page_token() {
+::std::string* ListBillingAccountsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListBillingAccountsRequest::release_page_token() {
+::std::string* ListBillingAccountsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBillingAccountsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListBillingAccountsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -1933,6 +1974,9 @@ void ListBillingAccountsRequest::clear_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
 }
 
+inline const ListBillingAccountsRequest* ListBillingAccountsRequest::internal_default_instance() {
+  return &ListBillingAccountsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1944,27 +1988,25 @@ const int ListBillingAccountsResponse::kNextPageTokenFieldNumber;
 
 ListBillingAccountsResponse::ListBillingAccountsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.ListBillingAccountsResponse)
 }
 
 void ListBillingAccountsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListBillingAccountsResponse::ListBillingAccountsResponse(const ListBillingAccountsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.ListBillingAccountsResponse)
 }
 
 void ListBillingAccountsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListBillingAccountsResponse::~ListBillingAccountsResponse() {
@@ -1974,8 +2016,6 @@ ListBillingAccountsResponse::~ListBillingAccountsResponse() {
 
 void ListBillingAccountsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListBillingAccountsResponse::SetCachedSize(int size) const {
@@ -1989,11 +2029,11 @@ const ::google::protobuf::Descriptor* ListBillingAccountsResponse::descriptor() 
 }
 
 const ListBillingAccountsResponse& ListBillingAccountsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-ListBillingAccountsResponse* ListBillingAccountsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListBillingAccountsResponse> ListBillingAccountsResponse_default_instance_;
 
 ListBillingAccountsResponse* ListBillingAccountsResponse::New(::google::protobuf::Arena* arena) const {
   ListBillingAccountsResponse* n = new ListBillingAccountsResponse;
@@ -2097,6 +2137,7 @@ void ListBillingAccountsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListBillingAccountsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.ListBillingAccountsResponse)
   // repeated .google.cloud.billing.v1.BillingAccount billing_accounts = 1;
   for (unsigned int i = 0, n = this->billing_accounts_size(); i < n; i++) {
@@ -2120,9 +2161,9 @@ void ListBillingAccountsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListBillingAccountsResponse::ByteSize() const {
+size_t ListBillingAccountsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.ListBillingAccountsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -2132,25 +2173,27 @@ int ListBillingAccountsResponse::ByteSize() const {
   }
 
   // repeated .google.cloud.billing.v1.BillingAccount billing_accounts = 1;
-  total_size += 1 * this->billing_accounts_size();
-  for (int i = 0; i < this->billing_accounts_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->billing_accounts(i));
+  {
+    unsigned int count = this->billing_accounts_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->billing_accounts(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListBillingAccountsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.ListBillingAccountsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListBillingAccountsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListBillingAccountsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListBillingAccountsResponse>(
           &from);
   if (source == NULL) {
@@ -2158,15 +2201,21 @@ void ListBillingAccountsResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.ListBillingAccountsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListBillingAccountsResponse::MergeFrom(const ListBillingAccountsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.ListBillingAccountsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListBillingAccountsResponse::UnsafeMergeFrom(const ListBillingAccountsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   billing_accounts_.MergeFrom(from.billing_accounts_);
   if (from.next_page_token().size() > 0) {
 
@@ -2185,7 +2234,7 @@ void ListBillingAccountsResponse::CopyFrom(const ListBillingAccountsResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.ListBillingAccountsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListBillingAccountsResponse::IsInitialized() const {
@@ -2249,37 +2298,37 @@ ListBillingAccountsResponse::billing_accounts() const {
 void ListBillingAccountsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListBillingAccountsResponse::next_page_token() const {
+const ::std::string& ListBillingAccountsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBillingAccountsResponse::set_next_page_token(const ::std::string& value) {
+void ListBillingAccountsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
 }
- void ListBillingAccountsResponse::set_next_page_token(const char* value) {
+void ListBillingAccountsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
 }
- void ListBillingAccountsResponse::set_next_page_token(const char* value, size_t size) {
+void ListBillingAccountsResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
 }
- ::std::string* ListBillingAccountsResponse::mutable_next_page_token() {
+::std::string* ListBillingAccountsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListBillingAccountsResponse::release_next_page_token() {
+::std::string* ListBillingAccountsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBillingAccountsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListBillingAccountsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -2289,6 +2338,9 @@ void ListBillingAccountsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
 }
 
+inline const ListBillingAccountsResponse* ListBillingAccountsResponse::internal_default_instance() {
+  return &ListBillingAccountsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2301,29 +2353,27 @@ const int ListProjectBillingInfoRequest::kPageTokenFieldNumber;
 
 ListProjectBillingInfoRequest::ListProjectBillingInfoRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.ListProjectBillingInfoRequest)
 }
 
 void ListProjectBillingInfoRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListProjectBillingInfoRequest::ListProjectBillingInfoRequest(const ListProjectBillingInfoRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.ListProjectBillingInfoRequest)
 }
 
 void ListProjectBillingInfoRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListProjectBillingInfoRequest::~ListProjectBillingInfoRequest() {
@@ -2334,8 +2384,6 @@ ListProjectBillingInfoRequest::~ListProjectBillingInfoRequest() {
 void ListProjectBillingInfoRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListProjectBillingInfoRequest::SetCachedSize(int size) const {
@@ -2349,11 +2397,11 @@ const ::google::protobuf::Descriptor* ListProjectBillingInfoRequest::descriptor(
 }
 
 const ListProjectBillingInfoRequest& ListProjectBillingInfoRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-ListProjectBillingInfoRequest* ListProjectBillingInfoRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListProjectBillingInfoRequest> ListProjectBillingInfoRequest_default_instance_;
 
 ListProjectBillingInfoRequest* ListProjectBillingInfoRequest::New(::google::protobuf::Arena* arena) const {
   ListProjectBillingInfoRequest* n = new ListProjectBillingInfoRequest;
@@ -2400,10 +2448,10 @@ bool ListProjectBillingInfoRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2482,6 +2530,7 @@ void ListProjectBillingInfoRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListProjectBillingInfoRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.ListProjectBillingInfoRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -2514,9 +2563,9 @@ void ListProjectBillingInfoRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListProjectBillingInfoRequest::ByteSize() const {
+size_t ListProjectBillingInfoRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.ListProjectBillingInfoRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -2539,18 +2588,17 @@ int ListProjectBillingInfoRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListProjectBillingInfoRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.ListProjectBillingInfoRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListProjectBillingInfoRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListProjectBillingInfoRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListProjectBillingInfoRequest>(
           &from);
   if (source == NULL) {
@@ -2558,15 +2606,21 @@ void ListProjectBillingInfoRequest::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.ListProjectBillingInfoRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListProjectBillingInfoRequest::MergeFrom(const ListProjectBillingInfoRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.ListProjectBillingInfoRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListProjectBillingInfoRequest::UnsafeMergeFrom(const ListProjectBillingInfoRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -2591,7 +2645,7 @@ void ListProjectBillingInfoRequest::CopyFrom(const ListProjectBillingInfoRequest
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.ListProjectBillingInfoRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListProjectBillingInfoRequest::IsInitialized() const {
@@ -2626,37 +2680,37 @@ void ListProjectBillingInfoRequest::InternalSwap(ListProjectBillingInfoRequest* 
 void ListProjectBillingInfoRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListProjectBillingInfoRequest::name() const {
+const ::std::string& ListProjectBillingInfoRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListProjectBillingInfoRequest::set_name(const ::std::string& value) {
+void ListProjectBillingInfoRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
 }
- void ListProjectBillingInfoRequest::set_name(const char* value) {
+void ListProjectBillingInfoRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
 }
- void ListProjectBillingInfoRequest::set_name(const char* value, size_t size) {
+void ListProjectBillingInfoRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
 }
- ::std::string* ListProjectBillingInfoRequest::mutable_name() {
+::std::string* ListProjectBillingInfoRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListProjectBillingInfoRequest::release_name() {
+::std::string* ListProjectBillingInfoRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListProjectBillingInfoRequest::set_allocated_name(::std::string* name) {
+void ListProjectBillingInfoRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -2670,11 +2724,11 @@ void ListProjectBillingInfoRequest::clear_name() {
 void ListProjectBillingInfoRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListProjectBillingInfoRequest::page_size() const {
+::google::protobuf::int32 ListProjectBillingInfoRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_size)
   return page_size_;
 }
- void ListProjectBillingInfoRequest::set_page_size(::google::protobuf::int32 value) {
+void ListProjectBillingInfoRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_size)
@@ -2684,37 +2738,37 @@ void ListProjectBillingInfoRequest::clear_page_size() {
 void ListProjectBillingInfoRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListProjectBillingInfoRequest::page_token() const {
+const ::std::string& ListProjectBillingInfoRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListProjectBillingInfoRequest::set_page_token(const ::std::string& value) {
+void ListProjectBillingInfoRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
 }
- void ListProjectBillingInfoRequest::set_page_token(const char* value) {
+void ListProjectBillingInfoRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
 }
- void ListProjectBillingInfoRequest::set_page_token(const char* value, size_t size) {
+void ListProjectBillingInfoRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
 }
- ::std::string* ListProjectBillingInfoRequest::mutable_page_token() {
+::std::string* ListProjectBillingInfoRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListProjectBillingInfoRequest::release_page_token() {
+::std::string* ListProjectBillingInfoRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListProjectBillingInfoRequest::set_allocated_page_token(::std::string* page_token) {
+void ListProjectBillingInfoRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -2724,6 +2778,9 @@ void ListProjectBillingInfoRequest::clear_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
 }
 
+inline const ListProjectBillingInfoRequest* ListProjectBillingInfoRequest::internal_default_instance() {
+  return &ListProjectBillingInfoRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2735,27 +2792,25 @@ const int ListProjectBillingInfoResponse::kNextPageTokenFieldNumber;
 
 ListProjectBillingInfoResponse::ListProjectBillingInfoResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.ListProjectBillingInfoResponse)
 }
 
 void ListProjectBillingInfoResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListProjectBillingInfoResponse::ListProjectBillingInfoResponse(const ListProjectBillingInfoResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.ListProjectBillingInfoResponse)
 }
 
 void ListProjectBillingInfoResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListProjectBillingInfoResponse::~ListProjectBillingInfoResponse() {
@@ -2765,8 +2820,6 @@ ListProjectBillingInfoResponse::~ListProjectBillingInfoResponse() {
 
 void ListProjectBillingInfoResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListProjectBillingInfoResponse::SetCachedSize(int size) const {
@@ -2780,11 +2833,11 @@ const ::google::protobuf::Descriptor* ListProjectBillingInfoResponse::descriptor
 }
 
 const ListProjectBillingInfoResponse& ListProjectBillingInfoResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-ListProjectBillingInfoResponse* ListProjectBillingInfoResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListProjectBillingInfoResponse> ListProjectBillingInfoResponse_default_instance_;
 
 ListProjectBillingInfoResponse* ListProjectBillingInfoResponse::New(::google::protobuf::Arena* arena) const {
   ListProjectBillingInfoResponse* n = new ListProjectBillingInfoResponse;
@@ -2888,6 +2941,7 @@ void ListProjectBillingInfoResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListProjectBillingInfoResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.ListProjectBillingInfoResponse)
   // repeated .google.cloud.billing.v1.ProjectBillingInfo project_billing_info = 1;
   for (unsigned int i = 0, n = this->project_billing_info_size(); i < n; i++) {
@@ -2911,9 +2965,9 @@ void ListProjectBillingInfoResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListProjectBillingInfoResponse::ByteSize() const {
+size_t ListProjectBillingInfoResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.ListProjectBillingInfoResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -2923,25 +2977,27 @@ int ListProjectBillingInfoResponse::ByteSize() const {
   }
 
   // repeated .google.cloud.billing.v1.ProjectBillingInfo project_billing_info = 1;
-  total_size += 1 * this->project_billing_info_size();
-  for (int i = 0; i < this->project_billing_info_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->project_billing_info(i));
+  {
+    unsigned int count = this->project_billing_info_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->project_billing_info(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListProjectBillingInfoResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.ListProjectBillingInfoResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListProjectBillingInfoResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListProjectBillingInfoResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListProjectBillingInfoResponse>(
           &from);
   if (source == NULL) {
@@ -2949,15 +3005,21 @@ void ListProjectBillingInfoResponse::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.ListProjectBillingInfoResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListProjectBillingInfoResponse::MergeFrom(const ListProjectBillingInfoResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.ListProjectBillingInfoResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListProjectBillingInfoResponse::UnsafeMergeFrom(const ListProjectBillingInfoResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   project_billing_info_.MergeFrom(from.project_billing_info_);
   if (from.next_page_token().size() > 0) {
 
@@ -2976,7 +3038,7 @@ void ListProjectBillingInfoResponse::CopyFrom(const ListProjectBillingInfoRespon
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.ListProjectBillingInfoResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListProjectBillingInfoResponse::IsInitialized() const {
@@ -3040,37 +3102,37 @@ ListProjectBillingInfoResponse::project_billing_info() const {
 void ListProjectBillingInfoResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListProjectBillingInfoResponse::next_page_token() const {
+const ::std::string& ListProjectBillingInfoResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListProjectBillingInfoResponse::set_next_page_token(const ::std::string& value) {
+void ListProjectBillingInfoResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
 }
- void ListProjectBillingInfoResponse::set_next_page_token(const char* value) {
+void ListProjectBillingInfoResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
 }
- void ListProjectBillingInfoResponse::set_next_page_token(const char* value, size_t size) {
+void ListProjectBillingInfoResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
 }
- ::std::string* ListProjectBillingInfoResponse::mutable_next_page_token() {
+::std::string* ListProjectBillingInfoResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListProjectBillingInfoResponse::release_next_page_token() {
+::std::string* ListProjectBillingInfoResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListProjectBillingInfoResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListProjectBillingInfoResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -3080,6 +3142,9 @@ void ListProjectBillingInfoResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
 }
 
+inline const ListProjectBillingInfoResponse* ListProjectBillingInfoResponse::internal_default_instance() {
+  return &ListProjectBillingInfoResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3090,27 +3155,25 @@ const int GetProjectBillingInfoRequest::kNameFieldNumber;
 
 GetProjectBillingInfoRequest::GetProjectBillingInfoRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.GetProjectBillingInfoRequest)
 }
 
 void GetProjectBillingInfoRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetProjectBillingInfoRequest::GetProjectBillingInfoRequest(const GetProjectBillingInfoRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.GetProjectBillingInfoRequest)
 }
 
 void GetProjectBillingInfoRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetProjectBillingInfoRequest::~GetProjectBillingInfoRequest() {
@@ -3120,8 +3183,6 @@ GetProjectBillingInfoRequest::~GetProjectBillingInfoRequest() {
 
 void GetProjectBillingInfoRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetProjectBillingInfoRequest::SetCachedSize(int size) const {
@@ -3135,11 +3196,11 @@ const ::google::protobuf::Descriptor* GetProjectBillingInfoRequest::descriptor()
 }
 
 const GetProjectBillingInfoRequest& GetProjectBillingInfoRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-GetProjectBillingInfoRequest* GetProjectBillingInfoRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetProjectBillingInfoRequest> GetProjectBillingInfoRequest_default_instance_;
 
 GetProjectBillingInfoRequest* GetProjectBillingInfoRequest::New(::google::protobuf::Arena* arena) const {
   GetProjectBillingInfoRequest* n = new GetProjectBillingInfoRequest;
@@ -3219,6 +3280,7 @@ void GetProjectBillingInfoRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetProjectBillingInfoRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.GetProjectBillingInfoRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3235,9 +3297,9 @@ void GetProjectBillingInfoRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetProjectBillingInfoRequest::ByteSize() const {
+size_t GetProjectBillingInfoRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.GetProjectBillingInfoRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3246,18 +3308,17 @@ int GetProjectBillingInfoRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetProjectBillingInfoRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.GetProjectBillingInfoRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetProjectBillingInfoRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetProjectBillingInfoRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetProjectBillingInfoRequest>(
           &from);
   if (source == NULL) {
@@ -3265,15 +3326,21 @@ void GetProjectBillingInfoRequest::MergeFrom(const ::google::protobuf::Message& 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.GetProjectBillingInfoRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetProjectBillingInfoRequest::MergeFrom(const GetProjectBillingInfoRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.GetProjectBillingInfoRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetProjectBillingInfoRequest::UnsafeMergeFrom(const GetProjectBillingInfoRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3291,7 +3358,7 @@ void GetProjectBillingInfoRequest::CopyFrom(const GetProjectBillingInfoRequest& 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.GetProjectBillingInfoRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetProjectBillingInfoRequest::IsInitialized() const {
@@ -3324,37 +3391,37 @@ void GetProjectBillingInfoRequest::InternalSwap(GetProjectBillingInfoRequest* ot
 void GetProjectBillingInfoRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetProjectBillingInfoRequest::name() const {
+const ::std::string& GetProjectBillingInfoRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetProjectBillingInfoRequest::set_name(const ::std::string& value) {
+void GetProjectBillingInfoRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
 }
- void GetProjectBillingInfoRequest::set_name(const char* value) {
+void GetProjectBillingInfoRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
 }
- void GetProjectBillingInfoRequest::set_name(const char* value, size_t size) {
+void GetProjectBillingInfoRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
 }
- ::std::string* GetProjectBillingInfoRequest::mutable_name() {
+::std::string* GetProjectBillingInfoRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetProjectBillingInfoRequest::release_name() {
+::std::string* GetProjectBillingInfoRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetProjectBillingInfoRequest::set_allocated_name(::std::string* name) {
+void GetProjectBillingInfoRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -3364,6 +3431,9 @@ void GetProjectBillingInfoRequest::clear_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
 }
 
+inline const GetProjectBillingInfoRequest* GetProjectBillingInfoRequest::internal_default_instance() {
+  return &GetProjectBillingInfoRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3375,29 +3445,28 @@ const int UpdateProjectBillingInfoRequest::kProjectBillingInfoFieldNumber;
 
 UpdateProjectBillingInfoRequest::UpdateProjectBillingInfoRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
 }
 
 void UpdateProjectBillingInfoRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  project_billing_info_ = const_cast< ::google::cloud::billing::v1::ProjectBillingInfo*>(&::google::cloud::billing::v1::ProjectBillingInfo::default_instance());
+  project_billing_info_ = const_cast< ::google::cloud::billing::v1::ProjectBillingInfo*>(
+      ::google::cloud::billing::v1::ProjectBillingInfo::internal_default_instance());
 }
 
 UpdateProjectBillingInfoRequest::UpdateProjectBillingInfoRequest(const UpdateProjectBillingInfoRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
 }
 
 void UpdateProjectBillingInfoRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   project_billing_info_ = NULL;
+  _cached_size_ = 0;
 }
 
 UpdateProjectBillingInfoRequest::~UpdateProjectBillingInfoRequest() {
@@ -3407,7 +3476,7 @@ UpdateProjectBillingInfoRequest::~UpdateProjectBillingInfoRequest() {
 
 void UpdateProjectBillingInfoRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &UpdateProjectBillingInfoRequest_default_instance_.get()) {
     delete project_billing_info_;
   }
 }
@@ -3423,11 +3492,11 @@ const ::google::protobuf::Descriptor* UpdateProjectBillingInfoRequest::descripto
 }
 
 const UpdateProjectBillingInfoRequest& UpdateProjectBillingInfoRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  return *internal_default_instance();
 }
 
-UpdateProjectBillingInfoRequest* UpdateProjectBillingInfoRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UpdateProjectBillingInfoRequest> UpdateProjectBillingInfoRequest_default_instance_;
 
 UpdateProjectBillingInfoRequest* UpdateProjectBillingInfoRequest::New(::google::protobuf::Arena* arena) const {
   UpdateProjectBillingInfoRequest* n = new UpdateProjectBillingInfoRequest;
@@ -3528,6 +3597,7 @@ void UpdateProjectBillingInfoRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UpdateProjectBillingInfoRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3551,9 +3621,9 @@ void UpdateProjectBillingInfoRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int UpdateProjectBillingInfoRequest::ByteSize() const {
+size_t UpdateProjectBillingInfoRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -3569,18 +3639,17 @@ int UpdateProjectBillingInfoRequest::ByteSize() const {
         *this->project_billing_info_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UpdateProjectBillingInfoRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UpdateProjectBillingInfoRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UpdateProjectBillingInfoRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateProjectBillingInfoRequest>(
           &from);
   if (source == NULL) {
@@ -3588,15 +3657,21 @@ void UpdateProjectBillingInfoRequest::MergeFrom(const ::google::protobuf::Messag
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateProjectBillingInfoRequest::MergeFrom(const UpdateProjectBillingInfoRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UpdateProjectBillingInfoRequest::UnsafeMergeFrom(const UpdateProjectBillingInfoRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3617,7 +3692,7 @@ void UpdateProjectBillingInfoRequest::CopyFrom(const UpdateProjectBillingInfoReq
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.billing.v1.UpdateProjectBillingInfoRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateProjectBillingInfoRequest::IsInitialized() const {
@@ -3651,37 +3726,37 @@ void UpdateProjectBillingInfoRequest::InternalSwap(UpdateProjectBillingInfoReque
 void UpdateProjectBillingInfoRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UpdateProjectBillingInfoRequest::name() const {
+const ::std::string& UpdateProjectBillingInfoRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateProjectBillingInfoRequest::set_name(const ::std::string& value) {
+void UpdateProjectBillingInfoRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
 }
- void UpdateProjectBillingInfoRequest::set_name(const char* value) {
+void UpdateProjectBillingInfoRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
 }
- void UpdateProjectBillingInfoRequest::set_name(const char* value, size_t size) {
+void UpdateProjectBillingInfoRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
 }
- ::std::string* UpdateProjectBillingInfoRequest::mutable_name() {
+::std::string* UpdateProjectBillingInfoRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UpdateProjectBillingInfoRequest::release_name() {
+::std::string* UpdateProjectBillingInfoRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateProjectBillingInfoRequest::set_allocated_name(::std::string* name) {
+void UpdateProjectBillingInfoRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -3693,7 +3768,7 @@ void UpdateProjectBillingInfoRequest::clear_name() {
 
 // optional .google.cloud.billing.v1.ProjectBillingInfo project_billing_info = 2;
 bool UpdateProjectBillingInfoRequest::has_project_billing_info() const {
-  return !_is_default_instance_ && project_billing_info_ != NULL;
+  return this != internal_default_instance() && project_billing_info_ != NULL;
 }
 void UpdateProjectBillingInfoRequest::clear_project_billing_info() {
   if (GetArenaNoVirtual() == NULL && project_billing_info_ != NULL) delete project_billing_info_;
@@ -3701,7 +3776,8 @@ void UpdateProjectBillingInfoRequest::clear_project_billing_info() {
 }
 const ::google::cloud::billing::v1::ProjectBillingInfo& UpdateProjectBillingInfoRequest::project_billing_info() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.project_billing_info)
-  return project_billing_info_ != NULL ? *project_billing_info_ : *default_instance_->project_billing_info_;
+  return project_billing_info_ != NULL ? *project_billing_info_
+                         : *::google::cloud::billing::v1::ProjectBillingInfo::internal_default_instance();
 }
 ::google::cloud::billing::v1::ProjectBillingInfo* UpdateProjectBillingInfoRequest::mutable_project_billing_info() {
   
@@ -3729,6 +3805,9 @@ void UpdateProjectBillingInfoRequest::set_allocated_project_billing_info(::googl
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.project_billing_info)
 }
 
+inline const UpdateProjectBillingInfoRequest* UpdateProjectBillingInfoRequest::internal_default_instance() {
+  return &UpdateProjectBillingInfoRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace v1 {
 
 // This service provides storage and positional retrieval of genomic
 // reference annotations, including variant annotations.
-class AnnotationServiceV1 GRPC_FINAL {
+class AnnotationServiceV1 final {
  public:
   class StubInterface {
    public:
@@ -177,67 +178,67 @@ class AnnotationServiceV1 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::genomics::v1::SearchAnnotationsResponse>* AsyncSearchAnnotationsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest& request, ::google::genomics::v1::AnnotationSet* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest& request, ::google::genomics::v1::AnnotationSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>> AsyncCreateAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>>(AsyncCreateAnnotationSetRaw(context, request, cq));
     }
-    ::grpc::Status GetAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationSetRequest& request, ::google::genomics::v1::AnnotationSet* response) GRPC_OVERRIDE;
+    ::grpc::Status GetAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationSetRequest& request, ::google::genomics::v1::AnnotationSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>> AsyncGetAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>>(AsyncGetAnnotationSetRaw(context, request, cq));
     }
-    ::grpc::Status UpdateAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest& request, ::google::genomics::v1::AnnotationSet* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest& request, ::google::genomics::v1::AnnotationSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>> AsyncUpdateAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>>(AsyncUpdateAnnotationSetRaw(context, request, cq));
     }
-    ::grpc::Status DeleteAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteAnnotationSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteAnnotationSetRaw(context, request, cq));
     }
-    ::grpc::Status SearchAnnotationSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest& request, ::google::genomics::v1::SearchAnnotationSetsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchAnnotationSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest& request, ::google::genomics::v1::SearchAnnotationSetsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationSetsResponse>> AsyncSearchAnnotationSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationSetsResponse>>(AsyncSearchAnnotationSetsRaw(context, request, cq));
     }
-    ::grpc::Status CreateAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationRequest& request, ::google::genomics::v1::Annotation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationRequest& request, ::google::genomics::v1::Annotation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>> AsyncCreateAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>>(AsyncCreateAnnotationRaw(context, request, cq));
     }
-    ::grpc::Status BatchCreateAnnotations(::grpc::ClientContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest& request, ::google::genomics::v1::BatchCreateAnnotationsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status BatchCreateAnnotations(::grpc::ClientContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest& request, ::google::genomics::v1::BatchCreateAnnotationsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::BatchCreateAnnotationsResponse>> AsyncBatchCreateAnnotations(::grpc::ClientContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::BatchCreateAnnotationsResponse>>(AsyncBatchCreateAnnotationsRaw(context, request, cq));
     }
-    ::grpc::Status GetAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationRequest& request, ::google::genomics::v1::Annotation* response) GRPC_OVERRIDE;
+    ::grpc::Status GetAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationRequest& request, ::google::genomics::v1::Annotation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>> AsyncGetAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>>(AsyncGetAnnotationRaw(context, request, cq));
     }
-    ::grpc::Status UpdateAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationRequest& request, ::google::genomics::v1::Annotation* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationRequest& request, ::google::genomics::v1::Annotation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>> AsyncUpdateAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>>(AsyncUpdateAnnotationRaw(context, request, cq));
     }
-    ::grpc::Status DeleteAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteAnnotation(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteAnnotationRaw(context, request, cq));
     }
-    ::grpc::Status SearchAnnotations(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationsRequest& request, ::google::genomics::v1::SearchAnnotationsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchAnnotations(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationsRequest& request, ::google::genomics::v1::SearchAnnotationsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationsResponse>> AsyncSearchAnnotations(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationsResponse>>(AsyncSearchAnnotationsRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>* AsyncCreateAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>* AsyncGetAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>* AsyncUpdateAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationSetsResponse>* AsyncSearchAnnotationSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>* AsyncCreateAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::BatchCreateAnnotationsResponse>* AsyncBatchCreateAnnotationsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>* AsyncGetAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>* AsyncUpdateAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationsResponse>* AsyncSearchAnnotationsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>* AsyncCreateAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>* AsyncGetAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::AnnotationSet>* AsyncUpdateAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteAnnotationSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationSetsResponse>* AsyncSearchAnnotationSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>* AsyncCreateAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateAnnotationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::BatchCreateAnnotationsResponse>* AsyncBatchCreateAnnotationsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>* AsyncGetAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetAnnotationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Annotation>* AsyncUpdateAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateAnnotationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteAnnotationRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteAnnotationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchAnnotationsResponse>* AsyncSearchAnnotationsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchAnnotationsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateAnnotationSet_;
     const ::grpc::RpcMethod rpcmethod_GetAnnotationSet_;
     const ::grpc::RpcMethod rpcmethod_UpdateAnnotationSet_;
@@ -347,11 +348,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_CreateAnnotationSet() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateAnnotationSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -367,11 +368,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetAnnotationSet() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetAnnotationSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -387,11 +388,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_UpdateAnnotationSet() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_UpdateAnnotationSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -407,11 +408,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_DeleteAnnotationSet() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DeleteAnnotationSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -427,11 +428,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchAnnotationSets() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_SearchAnnotationSets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchAnnotationSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchAnnotationSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest* request, ::google::genomics::v1::SearchAnnotationSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchAnnotationSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest* request, ::google::genomics::v1::SearchAnnotationSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -447,11 +448,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_CreateAnnotation() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_CreateAnnotation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -467,11 +468,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_BatchCreateAnnotations() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_BatchCreateAnnotations() GRPC_OVERRIDE {
+    ~WithAsyncMethod_BatchCreateAnnotations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BatchCreateAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest* request, ::google::genomics::v1::BatchCreateAnnotationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BatchCreateAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest* request, ::google::genomics::v1::BatchCreateAnnotationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -487,11 +488,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetAnnotation() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_GetAnnotation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationRequest* request, ::google::genomics::v1::Annotation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -507,11 +508,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_UpdateAnnotation() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_UpdateAnnotation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -527,11 +528,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_DeleteAnnotation() {
       ::grpc::Service::MarkMethodAsync(9);
     }
-    ~WithAsyncMethod_DeleteAnnotation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -547,11 +548,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchAnnotations() {
       ::grpc::Service::MarkMethodAsync(10);
     }
-    ~WithAsyncMethod_SearchAnnotations() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchAnnotations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationsRequest* request, ::google::genomics::v1::SearchAnnotationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationsRequest* request, ::google::genomics::v1::SearchAnnotationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -568,11 +569,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_CreateAnnotationSet() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateAnnotationSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -585,11 +586,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_GetAnnotationSet() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetAnnotationSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -602,11 +603,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_UpdateAnnotationSet() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_UpdateAnnotationSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -619,11 +620,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_DeleteAnnotationSet() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DeleteAnnotationSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteAnnotationSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -636,11 +637,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchAnnotationSets() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_SearchAnnotationSets() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchAnnotationSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchAnnotationSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest* request, ::google::genomics::v1::SearchAnnotationSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchAnnotationSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest* request, ::google::genomics::v1::SearchAnnotationSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -653,11 +654,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_CreateAnnotation() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_CreateAnnotation() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -670,11 +671,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_BatchCreateAnnotations() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_BatchCreateAnnotations() GRPC_OVERRIDE {
+    ~WithGenericMethod_BatchCreateAnnotations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BatchCreateAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest* request, ::google::genomics::v1::BatchCreateAnnotationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BatchCreateAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest* request, ::google::genomics::v1::BatchCreateAnnotationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -687,11 +688,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_GetAnnotation() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_GetAnnotation() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationRequest* request, ::google::genomics::v1::Annotation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -704,11 +705,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_UpdateAnnotation() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_UpdateAnnotation() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -721,11 +722,11 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_DeleteAnnotation() {
       ::grpc::Service::MarkMethodGeneric(9);
     }
-    ~WithGenericMethod_DeleteAnnotation() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteAnnotation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -738,15 +739,238 @@ class AnnotationServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchAnnotations() {
       ::grpc::Service::MarkMethodGeneric(10);
     }
-    ~WithGenericMethod_SearchAnnotations() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchAnnotations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationsRequest* request, ::google::genomics::v1::SearchAnnotationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationsRequest* request, ::google::genomics::v1::SearchAnnotationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateAnnotationSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateAnnotationSet() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::CreateAnnotationSetRequest, ::google::genomics::v1::AnnotationSet>(std::bind(&WithStreamedUnaryMethod_CreateAnnotationSet<BaseClass>::StreamedCreateAnnotationSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateAnnotationSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateAnnotationSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::CreateAnnotationSetRequest,::google::genomics::v1::AnnotationSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetAnnotationSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetAnnotationSet() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetAnnotationSetRequest, ::google::genomics::v1::AnnotationSet>(std::bind(&WithStreamedUnaryMethod_GetAnnotationSet<BaseClass>::StreamedGetAnnotationSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetAnnotationSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetAnnotationSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetAnnotationSetRequest,::google::genomics::v1::AnnotationSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateAnnotationSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateAnnotationSet() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UpdateAnnotationSetRequest, ::google::genomics::v1::AnnotationSet>(std::bind(&WithStreamedUnaryMethod_UpdateAnnotationSet<BaseClass>::StreamedUpdateAnnotationSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateAnnotationSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationSetRequest* request, ::google::genomics::v1::AnnotationSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateAnnotationSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UpdateAnnotationSetRequest,::google::genomics::v1::AnnotationSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteAnnotationSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteAnnotationSet() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::DeleteAnnotationSetRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteAnnotationSet<BaseClass>::StreamedDeleteAnnotationSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteAnnotationSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteAnnotationSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationSetRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteAnnotationSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::DeleteAnnotationSetRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchAnnotationSets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchAnnotationSets() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchAnnotationSetsRequest, ::google::genomics::v1::SearchAnnotationSetsResponse>(std::bind(&WithStreamedUnaryMethod_SearchAnnotationSets<BaseClass>::StreamedSearchAnnotationSets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchAnnotationSets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchAnnotationSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationSetsRequest* request, ::google::genomics::v1::SearchAnnotationSetsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchAnnotationSets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchAnnotationSetsRequest,::google::genomics::v1::SearchAnnotationSetsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateAnnotation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateAnnotation() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::CreateAnnotationRequest, ::google::genomics::v1::Annotation>(std::bind(&WithStreamedUnaryMethod_CreateAnnotation<BaseClass>::StreamedCreateAnnotation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateAnnotation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::CreateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateAnnotation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::CreateAnnotationRequest,::google::genomics::v1::Annotation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_BatchCreateAnnotations : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_BatchCreateAnnotations() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::BatchCreateAnnotationsRequest, ::google::genomics::v1::BatchCreateAnnotationsResponse>(std::bind(&WithStreamedUnaryMethod_BatchCreateAnnotations<BaseClass>::StreamedBatchCreateAnnotations, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_BatchCreateAnnotations() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status BatchCreateAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::BatchCreateAnnotationsRequest* request, ::google::genomics::v1::BatchCreateAnnotationsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedBatchCreateAnnotations(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::BatchCreateAnnotationsRequest,::google::genomics::v1::BatchCreateAnnotationsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetAnnotation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetAnnotation() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetAnnotationRequest, ::google::genomics::v1::Annotation>(std::bind(&WithStreamedUnaryMethod_GetAnnotation<BaseClass>::StreamedGetAnnotation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetAnnotation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::GetAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetAnnotation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetAnnotationRequest,::google::genomics::v1::Annotation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateAnnotation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateAnnotation() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UpdateAnnotationRequest, ::google::genomics::v1::Annotation>(std::bind(&WithStreamedUnaryMethod_UpdateAnnotation<BaseClass>::StreamedUpdateAnnotation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateAnnotation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateAnnotationRequest* request, ::google::genomics::v1::Annotation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateAnnotation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UpdateAnnotationRequest,::google::genomics::v1::Annotation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteAnnotation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteAnnotation() {
+      ::grpc::Service::MarkMethodStreamed(9,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::DeleteAnnotationRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteAnnotation<BaseClass>::StreamedDeleteAnnotation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteAnnotation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteAnnotation(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteAnnotationRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteAnnotation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::DeleteAnnotationRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchAnnotations : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchAnnotations() {
+      ::grpc::Service::MarkMethodStreamed(10,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchAnnotationsRequest, ::google::genomics::v1::SearchAnnotationsResponse>(std::bind(&WithStreamedUnaryMethod_SearchAnnotations<BaseClass>::StreamedSearchAnnotations, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchAnnotations() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchAnnotations(::grpc::ServerContext* context, const ::google::genomics::v1::SearchAnnotationsRequest* request, ::google::genomics::v1::SearchAnnotationsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchAnnotations(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchAnnotationsRequest,::google::genomics::v1::SearchAnnotationsResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateAnnotationSet<WithStreamedUnaryMethod_GetAnnotationSet<WithStreamedUnaryMethod_UpdateAnnotationSet<WithStreamedUnaryMethod_DeleteAnnotationSet<WithStreamedUnaryMethod_SearchAnnotationSets<WithStreamedUnaryMethod_CreateAnnotation<WithStreamedUnaryMethod_BatchCreateAnnotations<WithStreamedUnaryMethod_GetAnnotation<WithStreamedUnaryMethod_UpdateAnnotation<WithStreamedUnaryMethod_DeleteAnnotation<WithStreamedUnaryMethod_SearchAnnotations<Service > > > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateAnnotationSet<WithStreamedUnaryMethod_GetAnnotationSet<WithStreamedUnaryMethod_UpdateAnnotationSet<WithStreamedUnaryMethod_DeleteAnnotationSet<WithStreamedUnaryMethod_SearchAnnotationSets<WithStreamedUnaryMethod_CreateAnnotation<WithStreamedUnaryMethod_BatchCreateAnnotations<WithStreamedUnaryMethod_GetAnnotation<WithStreamedUnaryMethod_UpdateAnnotation<WithStreamedUnaryMethod_DeleteAnnotation<WithStreamedUnaryMethod_SearchAnnotations<Service > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

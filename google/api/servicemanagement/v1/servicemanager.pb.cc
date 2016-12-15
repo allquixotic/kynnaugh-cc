@@ -107,14 +107,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   ListServicesRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServicesRequest_descriptor_,
-      ListServicesRequest::default_instance_,
+      ListServicesRequest::internal_default_instance(),
       ListServicesRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServicesRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServicesRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServicesRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServicesRequest, _internal_metadata_));
   ListServicesResponse_descriptor_ = file->message_type(1);
   static const int ListServicesResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServicesResponse, services_),
@@ -123,14 +122,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   ListServicesResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServicesResponse_descriptor_,
-      ListServicesResponse::default_instance_,
+      ListServicesResponse::internal_default_instance(),
       ListServicesResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServicesResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServicesResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServicesResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServicesResponse, _internal_metadata_));
   GetServiceRequest_descriptor_ = file->message_type(2);
   static const int GetServiceRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRequest, service_name_),
@@ -138,14 +136,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   GetServiceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetServiceRequest_descriptor_,
-      GetServiceRequest::default_instance_,
+      GetServiceRequest::internal_default_instance(),
       GetServiceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetServiceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRequest, _internal_metadata_));
   CreateServiceRequest_descriptor_ = file->message_type(3);
   static const int CreateServiceRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRequest, service_),
@@ -153,14 +150,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   CreateServiceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateServiceRequest_descriptor_,
-      CreateServiceRequest::default_instance_,
+      CreateServiceRequest::internal_default_instance(),
       CreateServiceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateServiceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRequest, _internal_metadata_));
   DeleteServiceRequest_descriptor_ = file->message_type(4);
   static const int DeleteServiceRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceRequest, service_name_),
@@ -168,14 +164,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   DeleteServiceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteServiceRequest_descriptor_,
-      DeleteServiceRequest::default_instance_,
+      DeleteServiceRequest::internal_default_instance(),
       DeleteServiceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteServiceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteServiceRequest, _internal_metadata_));
   UndeleteServiceRequest_descriptor_ = file->message_type(5);
   static const int UndeleteServiceRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceRequest, service_name_),
@@ -183,14 +178,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   UndeleteServiceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UndeleteServiceRequest_descriptor_,
-      UndeleteServiceRequest::default_instance_,
+      UndeleteServiceRequest::internal_default_instance(),
       UndeleteServiceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(UndeleteServiceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceRequest, _internal_metadata_));
   UndeleteServiceResponse_descriptor_ = file->message_type(6);
   static const int UndeleteServiceResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceResponse, service_),
@@ -198,14 +192,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   UndeleteServiceResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UndeleteServiceResponse_descriptor_,
-      UndeleteServiceResponse::default_instance_,
+      UndeleteServiceResponse::internal_default_instance(),
       UndeleteServiceResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(UndeleteServiceResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UndeleteServiceResponse, _internal_metadata_));
   GetServiceConfigRequest_descriptor_ = file->message_type(7);
   static const int GetServiceConfigRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceConfigRequest, service_name_),
@@ -214,14 +207,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   GetServiceConfigRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetServiceConfigRequest_descriptor_,
-      GetServiceConfigRequest::default_instance_,
+      GetServiceConfigRequest::internal_default_instance(),
       GetServiceConfigRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetServiceConfigRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceConfigRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceConfigRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceConfigRequest, _internal_metadata_));
   ListServiceConfigsRequest_descriptor_ = file->message_type(8);
   static const int ListServiceConfigsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsRequest, service_name_),
@@ -231,14 +223,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   ListServiceConfigsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceConfigsRequest_descriptor_,
-      ListServiceConfigsRequest::default_instance_,
+      ListServiceConfigsRequest::internal_default_instance(),
       ListServiceConfigsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceConfigsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsRequest, _internal_metadata_));
   ListServiceConfigsResponse_descriptor_ = file->message_type(9);
   static const int ListServiceConfigsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsResponse, service_configs_),
@@ -247,14 +238,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   ListServiceConfigsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceConfigsResponse_descriptor_,
-      ListServiceConfigsResponse::default_instance_,
+      ListServiceConfigsResponse::internal_default_instance(),
       ListServiceConfigsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceConfigsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceConfigsResponse, _internal_metadata_));
   CreateServiceConfigRequest_descriptor_ = file->message_type(10);
   static const int CreateServiceConfigRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceConfigRequest, service_name_),
@@ -263,14 +253,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   CreateServiceConfigRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateServiceConfigRequest_descriptor_,
-      CreateServiceConfigRequest::default_instance_,
+      CreateServiceConfigRequest::internal_default_instance(),
       CreateServiceConfigRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateServiceConfigRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceConfigRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceConfigRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceConfigRequest, _internal_metadata_));
   SubmitConfigSourceRequest_descriptor_ = file->message_type(11);
   static const int SubmitConfigSourceRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceRequest, service_name_),
@@ -280,14 +269,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   SubmitConfigSourceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SubmitConfigSourceRequest_descriptor_,
-      SubmitConfigSourceRequest::default_instance_,
+      SubmitConfigSourceRequest::internal_default_instance(),
       SubmitConfigSourceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(SubmitConfigSourceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceRequest, _internal_metadata_));
   SubmitConfigSourceResponse_descriptor_ = file->message_type(12);
   static const int SubmitConfigSourceResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceResponse, service_config_),
@@ -295,14 +283,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   SubmitConfigSourceResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SubmitConfigSourceResponse_descriptor_,
-      SubmitConfigSourceResponse::default_instance_,
+      SubmitConfigSourceResponse::internal_default_instance(),
       SubmitConfigSourceResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(SubmitConfigSourceResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitConfigSourceResponse, _internal_metadata_));
   CreateServiceRolloutRequest_descriptor_ = file->message_type(13);
   static const int CreateServiceRolloutRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRolloutRequest, service_name_),
@@ -311,14 +298,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   CreateServiceRolloutRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateServiceRolloutRequest_descriptor_,
-      CreateServiceRolloutRequest::default_instance_,
+      CreateServiceRolloutRequest::internal_default_instance(),
       CreateServiceRolloutRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateServiceRolloutRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRolloutRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRolloutRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateServiceRolloutRequest, _internal_metadata_));
   ListServiceRolloutsRequest_descriptor_ = file->message_type(14);
   static const int ListServiceRolloutsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsRequest, service_name_),
@@ -328,14 +314,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   ListServiceRolloutsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceRolloutsRequest_descriptor_,
-      ListServiceRolloutsRequest::default_instance_,
+      ListServiceRolloutsRequest::internal_default_instance(),
       ListServiceRolloutsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceRolloutsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsRequest, _internal_metadata_));
   ListServiceRolloutsResponse_descriptor_ = file->message_type(15);
   static const int ListServiceRolloutsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsResponse, rollouts_),
@@ -344,14 +329,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   ListServiceRolloutsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListServiceRolloutsResponse_descriptor_,
-      ListServiceRolloutsResponse::default_instance_,
+      ListServiceRolloutsResponse::internal_default_instance(),
       ListServiceRolloutsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListServiceRolloutsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListServiceRolloutsResponse, _internal_metadata_));
   GetServiceRolloutRequest_descriptor_ = file->message_type(16);
   static const int GetServiceRolloutRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRolloutRequest, service_name_),
@@ -360,14 +344,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   GetServiceRolloutRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetServiceRolloutRequest_descriptor_,
-      GetServiceRolloutRequest::default_instance_,
+      GetServiceRolloutRequest::internal_default_instance(),
       GetServiceRolloutRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetServiceRolloutRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRolloutRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRolloutRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetServiceRolloutRequest, _internal_metadata_));
   EnableServiceRequest_descriptor_ = file->message_type(17);
   static const int EnableServiceRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EnableServiceRequest, service_name_),
@@ -376,14 +359,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   EnableServiceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       EnableServiceRequest_descriptor_,
-      EnableServiceRequest::default_instance_,
+      EnableServiceRequest::internal_default_instance(),
       EnableServiceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(EnableServiceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EnableServiceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EnableServiceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EnableServiceRequest, _internal_metadata_));
   DisableServiceRequest_descriptor_ = file->message_type(18);
   static const int DisableServiceRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DisableServiceRequest, service_name_),
@@ -392,14 +374,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   DisableServiceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DisableServiceRequest_descriptor_,
-      DisableServiceRequest::default_instance_,
+      DisableServiceRequest::internal_default_instance(),
       DisableServiceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DisableServiceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DisableServiceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DisableServiceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DisableServiceRequest, _internal_metadata_));
   GenerateConfigReportRequest_descriptor_ = file->message_type(19);
   static const int GenerateConfigReportRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportRequest, new_config_),
@@ -408,14 +389,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   GenerateConfigReportRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GenerateConfigReportRequest_descriptor_,
-      GenerateConfigReportRequest::default_instance_,
+      GenerateConfigReportRequest::internal_default_instance(),
       GenerateConfigReportRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GenerateConfigReportRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportRequest, _internal_metadata_));
   GenerateConfigReportResponse_descriptor_ = file->message_type(20);
   static const int GenerateConfigReportResponse_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportResponse, service_name_),
@@ -426,20 +406,19 @@ void protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_
   GenerateConfigReportResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GenerateConfigReportResponse_descriptor_,
-      GenerateConfigReportResponse::default_instance_,
+      GenerateConfigReportResponse::internal_default_instance(),
       GenerateConfigReportResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(GenerateConfigReportResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GenerateConfigReportResponse, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto);
 }
@@ -448,112 +427,178 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServicesRequest_descriptor_, &ListServicesRequest::default_instance());
+      ListServicesRequest_descriptor_, ListServicesRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServicesResponse_descriptor_, &ListServicesResponse::default_instance());
+      ListServicesResponse_descriptor_, ListServicesResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetServiceRequest_descriptor_, &GetServiceRequest::default_instance());
+      GetServiceRequest_descriptor_, GetServiceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateServiceRequest_descriptor_, &CreateServiceRequest::default_instance());
+      CreateServiceRequest_descriptor_, CreateServiceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteServiceRequest_descriptor_, &DeleteServiceRequest::default_instance());
+      DeleteServiceRequest_descriptor_, DeleteServiceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UndeleteServiceRequest_descriptor_, &UndeleteServiceRequest::default_instance());
+      UndeleteServiceRequest_descriptor_, UndeleteServiceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UndeleteServiceResponse_descriptor_, &UndeleteServiceResponse::default_instance());
+      UndeleteServiceResponse_descriptor_, UndeleteServiceResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetServiceConfigRequest_descriptor_, &GetServiceConfigRequest::default_instance());
+      GetServiceConfigRequest_descriptor_, GetServiceConfigRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceConfigsRequest_descriptor_, &ListServiceConfigsRequest::default_instance());
+      ListServiceConfigsRequest_descriptor_, ListServiceConfigsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceConfigsResponse_descriptor_, &ListServiceConfigsResponse::default_instance());
+      ListServiceConfigsResponse_descriptor_, ListServiceConfigsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateServiceConfigRequest_descriptor_, &CreateServiceConfigRequest::default_instance());
+      CreateServiceConfigRequest_descriptor_, CreateServiceConfigRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SubmitConfigSourceRequest_descriptor_, &SubmitConfigSourceRequest::default_instance());
+      SubmitConfigSourceRequest_descriptor_, SubmitConfigSourceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SubmitConfigSourceResponse_descriptor_, &SubmitConfigSourceResponse::default_instance());
+      SubmitConfigSourceResponse_descriptor_, SubmitConfigSourceResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateServiceRolloutRequest_descriptor_, &CreateServiceRolloutRequest::default_instance());
+      CreateServiceRolloutRequest_descriptor_, CreateServiceRolloutRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceRolloutsRequest_descriptor_, &ListServiceRolloutsRequest::default_instance());
+      ListServiceRolloutsRequest_descriptor_, ListServiceRolloutsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListServiceRolloutsResponse_descriptor_, &ListServiceRolloutsResponse::default_instance());
+      ListServiceRolloutsResponse_descriptor_, ListServiceRolloutsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetServiceRolloutRequest_descriptor_, &GetServiceRolloutRequest::default_instance());
+      GetServiceRolloutRequest_descriptor_, GetServiceRolloutRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      EnableServiceRequest_descriptor_, &EnableServiceRequest::default_instance());
+      EnableServiceRequest_descriptor_, EnableServiceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DisableServiceRequest_descriptor_, &DisableServiceRequest::default_instance());
+      DisableServiceRequest_descriptor_, DisableServiceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GenerateConfigReportRequest_descriptor_, &GenerateConfigReportRequest::default_instance());
+      GenerateConfigReportRequest_descriptor_, GenerateConfigReportRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GenerateConfigReportResponse_descriptor_, &GenerateConfigReportResponse::default_instance());
+      GenerateConfigReportResponse_descriptor_, GenerateConfigReportResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto() {
-  delete ListServicesRequest::default_instance_;
+  ListServicesRequest_default_instance_.Shutdown();
   delete ListServicesRequest_reflection_;
-  delete ListServicesResponse::default_instance_;
+  ListServicesResponse_default_instance_.Shutdown();
   delete ListServicesResponse_reflection_;
-  delete GetServiceRequest::default_instance_;
+  GetServiceRequest_default_instance_.Shutdown();
   delete GetServiceRequest_reflection_;
-  delete CreateServiceRequest::default_instance_;
+  CreateServiceRequest_default_instance_.Shutdown();
   delete CreateServiceRequest_reflection_;
-  delete DeleteServiceRequest::default_instance_;
+  DeleteServiceRequest_default_instance_.Shutdown();
   delete DeleteServiceRequest_reflection_;
-  delete UndeleteServiceRequest::default_instance_;
+  UndeleteServiceRequest_default_instance_.Shutdown();
   delete UndeleteServiceRequest_reflection_;
-  delete UndeleteServiceResponse::default_instance_;
+  UndeleteServiceResponse_default_instance_.Shutdown();
   delete UndeleteServiceResponse_reflection_;
-  delete GetServiceConfigRequest::default_instance_;
+  GetServiceConfigRequest_default_instance_.Shutdown();
   delete GetServiceConfigRequest_reflection_;
-  delete ListServiceConfigsRequest::default_instance_;
+  ListServiceConfigsRequest_default_instance_.Shutdown();
   delete ListServiceConfigsRequest_reflection_;
-  delete ListServiceConfigsResponse::default_instance_;
+  ListServiceConfigsResponse_default_instance_.Shutdown();
   delete ListServiceConfigsResponse_reflection_;
-  delete CreateServiceConfigRequest::default_instance_;
+  CreateServiceConfigRequest_default_instance_.Shutdown();
   delete CreateServiceConfigRequest_reflection_;
-  delete SubmitConfigSourceRequest::default_instance_;
+  SubmitConfigSourceRequest_default_instance_.Shutdown();
   delete SubmitConfigSourceRequest_reflection_;
-  delete SubmitConfigSourceResponse::default_instance_;
+  SubmitConfigSourceResponse_default_instance_.Shutdown();
   delete SubmitConfigSourceResponse_reflection_;
-  delete CreateServiceRolloutRequest::default_instance_;
+  CreateServiceRolloutRequest_default_instance_.Shutdown();
   delete CreateServiceRolloutRequest_reflection_;
-  delete ListServiceRolloutsRequest::default_instance_;
+  ListServiceRolloutsRequest_default_instance_.Shutdown();
   delete ListServiceRolloutsRequest_reflection_;
-  delete ListServiceRolloutsResponse::default_instance_;
+  ListServiceRolloutsResponse_default_instance_.Shutdown();
   delete ListServiceRolloutsResponse_reflection_;
-  delete GetServiceRolloutRequest::default_instance_;
+  GetServiceRolloutRequest_default_instance_.Shutdown();
   delete GetServiceRolloutRequest_reflection_;
-  delete EnableServiceRequest::default_instance_;
+  EnableServiceRequest_default_instance_.Shutdown();
   delete EnableServiceRequest_reflection_;
-  delete DisableServiceRequest::default_instance_;
+  DisableServiceRequest_default_instance_.Shutdown();
   delete DisableServiceRequest_reflection_;
-  delete GenerateConfigReportRequest::default_instance_;
+  GenerateConfigReportRequest_default_instance_.Shutdown();
   delete GenerateConfigReportRequest_reflection_;
-  delete GenerateConfigReportResponse::default_instance_;
+  GenerateConfigReportResponse_default_instance_.Shutdown();
   delete GenerateConfigReportResponse_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::api::protobuf_AddDesc_google_2fapi_2fservice_2eproto();
-  ::google::api::servicemanagement::v1::protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fresources_2eproto();
-  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fany_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ffield_5fmask_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fstruct_2eproto();
-  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fservice_2eproto();
+  ::google::api::servicemanagement::v1::protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fresources_2eproto();
+  ::google::longrunning::protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fany_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ffield_5fmask_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fstruct_2eproto();
+  ::google::rpc::protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServicesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServicesResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetServiceRequest_default_instance_.DefaultConstruct();
+  CreateServiceRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteServiceRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UndeleteServiceRequest_default_instance_.DefaultConstruct();
+  UndeleteServiceResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetServiceConfigRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServiceConfigsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServiceConfigsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateServiceConfigRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SubmitConfigSourceRequest_default_instance_.DefaultConstruct();
+  SubmitConfigSourceResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateServiceRolloutRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServiceRolloutsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListServiceRolloutsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetServiceRolloutRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  EnableServiceRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DisableServiceRequest_default_instance_.DefaultConstruct();
+  GenerateConfigReportRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GenerateConfigReportResponse_default_instance_.DefaultConstruct();
+  ListServicesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServicesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetServiceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateServiceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteServiceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UndeleteServiceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UndeleteServiceResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetServiceConfigRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceConfigsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceConfigsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateServiceConfigRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SubmitConfigSourceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SubmitConfigSourceResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateServiceRolloutRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceRolloutsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListServiceRolloutsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetServiceRolloutRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  EnableServiceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DisableServiceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GenerateConfigReportRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GenerateConfigReportResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n4google/api/servicemanagement/v1/servic"
     "emanager.proto\022\037google.api.servicemanage"
@@ -675,61 +720,46 @@ void protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2ep
     "servicemanagement.v1.DisableServiceReque"
     "st\032\035.google.longrunning.Operation\".\202\323\344\223\002"
     "(\"#/v1/services/{service_name}:disable:\001"
-    "*BC\n#com.google.api.servicemanagement.v1"
-    "B\023ServiceManagerProtoP\001\242\002\004GASMb\006proto3", 4878);
+    "*B\225\001\n#com.google.api.servicemanagement.v"
+    "1B\023ServiceManagerProtoP\001ZPgoogle.golang."
+    "org/genproto/googleapis/api/servicemanag"
+    "ement/v1;servicemanagement\242\002\004GASMb\006proto"
+    "3", 4961);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/servicemanagement/v1/servicemanager.proto", &protobuf_RegisterTypes);
-  ListServicesRequest::default_instance_ = new ListServicesRequest();
-  ListServicesResponse::default_instance_ = new ListServicesResponse();
-  GetServiceRequest::default_instance_ = new GetServiceRequest();
-  CreateServiceRequest::default_instance_ = new CreateServiceRequest();
-  DeleteServiceRequest::default_instance_ = new DeleteServiceRequest();
-  UndeleteServiceRequest::default_instance_ = new UndeleteServiceRequest();
-  UndeleteServiceResponse::default_instance_ = new UndeleteServiceResponse();
-  GetServiceConfigRequest::default_instance_ = new GetServiceConfigRequest();
-  ListServiceConfigsRequest::default_instance_ = new ListServiceConfigsRequest();
-  ListServiceConfigsResponse::default_instance_ = new ListServiceConfigsResponse();
-  CreateServiceConfigRequest::default_instance_ = new CreateServiceConfigRequest();
-  SubmitConfigSourceRequest::default_instance_ = new SubmitConfigSourceRequest();
-  SubmitConfigSourceResponse::default_instance_ = new SubmitConfigSourceResponse();
-  CreateServiceRolloutRequest::default_instance_ = new CreateServiceRolloutRequest();
-  ListServiceRolloutsRequest::default_instance_ = new ListServiceRolloutsRequest();
-  ListServiceRolloutsResponse::default_instance_ = new ListServiceRolloutsResponse();
-  GetServiceRolloutRequest::default_instance_ = new GetServiceRolloutRequest();
-  EnableServiceRequest::default_instance_ = new EnableServiceRequest();
-  DisableServiceRequest::default_instance_ = new DisableServiceRequest();
-  GenerateConfigReportRequest::default_instance_ = new GenerateConfigReportRequest();
-  GenerateConfigReportResponse::default_instance_ = new GenerateConfigReportResponse();
-  ListServicesRequest::default_instance_->InitAsDefaultInstance();
-  ListServicesResponse::default_instance_->InitAsDefaultInstance();
-  GetServiceRequest::default_instance_->InitAsDefaultInstance();
-  CreateServiceRequest::default_instance_->InitAsDefaultInstance();
-  DeleteServiceRequest::default_instance_->InitAsDefaultInstance();
-  UndeleteServiceRequest::default_instance_->InitAsDefaultInstance();
-  UndeleteServiceResponse::default_instance_->InitAsDefaultInstance();
-  GetServiceConfigRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceConfigsRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceConfigsResponse::default_instance_->InitAsDefaultInstance();
-  CreateServiceConfigRequest::default_instance_->InitAsDefaultInstance();
-  SubmitConfigSourceRequest::default_instance_->InitAsDefaultInstance();
-  SubmitConfigSourceResponse::default_instance_->InitAsDefaultInstance();
-  CreateServiceRolloutRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceRolloutsRequest::default_instance_->InitAsDefaultInstance();
-  ListServiceRolloutsResponse::default_instance_->InitAsDefaultInstance();
-  GetServiceRolloutRequest::default_instance_->InitAsDefaultInstance();
-  EnableServiceRequest::default_instance_->InitAsDefaultInstance();
-  DisableServiceRequest::default_instance_->InitAsDefaultInstance();
-  GenerateConfigReportRequest::default_instance_->InitAsDefaultInstance();
-  GenerateConfigReportResponse::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fservice_2eproto();
+  ::google::api::servicemanagement::v1::protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fresources_2eproto();
+  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fany_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ffield_5fmask_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fstruct_2eproto();
+  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto() {
     protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -741,29 +771,27 @@ const int ListServicesRequest::kPageTokenFieldNumber;
 
 ListServicesRequest::ListServicesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.ListServicesRequest)
 }
 
 void ListServicesRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServicesRequest::ListServicesRequest(const ListServicesRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.ListServicesRequest)
 }
 
 void ListServicesRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   producer_project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListServicesRequest::~ListServicesRequest() {
@@ -774,8 +802,6 @@ ListServicesRequest::~ListServicesRequest() {
 void ListServicesRequest::SharedDtor() {
   producer_project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListServicesRequest::SetCachedSize(int size) const {
@@ -789,11 +815,11 @@ const ::google::protobuf::Descriptor* ListServicesRequest::descriptor() {
 }
 
 const ListServicesRequest& ListServicesRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-ListServicesRequest* ListServicesRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServicesRequest> ListServicesRequest_default_instance_;
 
 ListServicesRequest* ListServicesRequest::New(::google::protobuf::Arena* arena) const {
   ListServicesRequest* n = new ListServicesRequest;
@@ -840,10 +866,10 @@ bool ListServicesRequest::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -922,6 +948,7 @@ void ListServicesRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServicesRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.ListServicesRequest)
   // optional string producer_project_id = 1;
   if (this->producer_project_id().size() > 0) {
@@ -954,9 +981,9 @@ void ListServicesRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServicesRequest::ByteSize() const {
+size_t ListServicesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.ListServicesRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string producer_project_id = 1;
   if (this->producer_project_id().size() > 0) {
@@ -979,18 +1006,17 @@ int ListServicesRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServicesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.ListServicesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServicesRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServicesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServicesRequest>(
           &from);
   if (source == NULL) {
@@ -998,15 +1024,21 @@ void ListServicesRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.ListServicesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServicesRequest::MergeFrom(const ListServicesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.ListServicesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServicesRequest::UnsafeMergeFrom(const ListServicesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.producer_project_id().size() > 0) {
 
     producer_project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.producer_project_id_);
@@ -1031,7 +1063,7 @@ void ListServicesRequest::CopyFrom(const ListServicesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.ListServicesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServicesRequest::IsInitialized() const {
@@ -1066,37 +1098,37 @@ void ListServicesRequest::InternalSwap(ListServicesRequest* other) {
 void ListServicesRequest::clear_producer_project_id() {
   producer_project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServicesRequest::producer_project_id() const {
+const ::std::string& ListServicesRequest::producer_project_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServicesRequest.producer_project_id)
   return producer_project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServicesRequest::set_producer_project_id(const ::std::string& value) {
+void ListServicesRequest::set_producer_project_id(const ::std::string& value) {
   
   producer_project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServicesRequest.producer_project_id)
 }
- void ListServicesRequest::set_producer_project_id(const char* value) {
+void ListServicesRequest::set_producer_project_id(const char* value) {
   
   producer_project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServicesRequest.producer_project_id)
 }
- void ListServicesRequest::set_producer_project_id(const char* value, size_t size) {
+void ListServicesRequest::set_producer_project_id(const char* value, size_t size) {
   
   producer_project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServicesRequest.producer_project_id)
 }
- ::std::string* ListServicesRequest::mutable_producer_project_id() {
+::std::string* ListServicesRequest::mutable_producer_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServicesRequest.producer_project_id)
   return producer_project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServicesRequest::release_producer_project_id() {
+::std::string* ListServicesRequest::release_producer_project_id() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServicesRequest.producer_project_id)
   
   return producer_project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServicesRequest::set_allocated_producer_project_id(::std::string* producer_project_id) {
+void ListServicesRequest::set_allocated_producer_project_id(::std::string* producer_project_id) {
   if (producer_project_id != NULL) {
     
   } else {
@@ -1110,11 +1142,11 @@ void ListServicesRequest::clear_producer_project_id() {
 void ListServicesRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListServicesRequest::page_size() const {
+::google::protobuf::int32 ListServicesRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServicesRequest.page_size)
   return page_size_;
 }
- void ListServicesRequest::set_page_size(::google::protobuf::int32 value) {
+void ListServicesRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServicesRequest.page_size)
@@ -1124,37 +1156,37 @@ void ListServicesRequest::clear_page_size() {
 void ListServicesRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServicesRequest::page_token() const {
+const ::std::string& ListServicesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServicesRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServicesRequest::set_page_token(const ::std::string& value) {
+void ListServicesRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServicesRequest.page_token)
 }
- void ListServicesRequest::set_page_token(const char* value) {
+void ListServicesRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServicesRequest.page_token)
 }
- void ListServicesRequest::set_page_token(const char* value, size_t size) {
+void ListServicesRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServicesRequest.page_token)
 }
- ::std::string* ListServicesRequest::mutable_page_token() {
+::std::string* ListServicesRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServicesRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServicesRequest::release_page_token() {
+::std::string* ListServicesRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServicesRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServicesRequest::set_allocated_page_token(::std::string* page_token) {
+void ListServicesRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -1164,6 +1196,9 @@ void ListServicesRequest::clear_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.ListServicesRequest.page_token)
 }
 
+inline const ListServicesRequest* ListServicesRequest::internal_default_instance() {
+  return &ListServicesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1175,27 +1210,25 @@ const int ListServicesResponse::kNextPageTokenFieldNumber;
 
 ListServicesResponse::ListServicesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.ListServicesResponse)
 }
 
 void ListServicesResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServicesResponse::ListServicesResponse(const ListServicesResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.ListServicesResponse)
 }
 
 void ListServicesResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListServicesResponse::~ListServicesResponse() {
@@ -1205,8 +1238,6 @@ ListServicesResponse::~ListServicesResponse() {
 
 void ListServicesResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListServicesResponse::SetCachedSize(int size) const {
@@ -1220,11 +1251,11 @@ const ::google::protobuf::Descriptor* ListServicesResponse::descriptor() {
 }
 
 const ListServicesResponse& ListServicesResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-ListServicesResponse* ListServicesResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServicesResponse> ListServicesResponse_default_instance_;
 
 ListServicesResponse* ListServicesResponse::New(::google::protobuf::Arena* arena) const {
   ListServicesResponse* n = new ListServicesResponse;
@@ -1328,6 +1359,7 @@ void ListServicesResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServicesResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.ListServicesResponse)
   // repeated .google.api.servicemanagement.v1.ManagedService services = 1;
   for (unsigned int i = 0, n = this->services_size(); i < n; i++) {
@@ -1351,9 +1383,9 @@ void ListServicesResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServicesResponse::ByteSize() const {
+size_t ListServicesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.ListServicesResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -1363,25 +1395,27 @@ int ListServicesResponse::ByteSize() const {
   }
 
   // repeated .google.api.servicemanagement.v1.ManagedService services = 1;
-  total_size += 1 * this->services_size();
-  for (int i = 0; i < this->services_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->services(i));
+  {
+    unsigned int count = this->services_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->services(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServicesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.ListServicesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServicesResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServicesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServicesResponse>(
           &from);
   if (source == NULL) {
@@ -1389,15 +1423,21 @@ void ListServicesResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.ListServicesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServicesResponse::MergeFrom(const ListServicesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.ListServicesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServicesResponse::UnsafeMergeFrom(const ListServicesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   services_.MergeFrom(from.services_);
   if (from.next_page_token().size() > 0) {
 
@@ -1416,7 +1456,7 @@ void ListServicesResponse::CopyFrom(const ListServicesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.ListServicesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServicesResponse::IsInitialized() const {
@@ -1480,37 +1520,37 @@ ListServicesResponse::services() const {
 void ListServicesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServicesResponse::next_page_token() const {
+const ::std::string& ListServicesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServicesResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServicesResponse::set_next_page_token(const ::std::string& value) {
+void ListServicesResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServicesResponse.next_page_token)
 }
- void ListServicesResponse::set_next_page_token(const char* value) {
+void ListServicesResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServicesResponse.next_page_token)
 }
- void ListServicesResponse::set_next_page_token(const char* value, size_t size) {
+void ListServicesResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServicesResponse.next_page_token)
 }
- ::std::string* ListServicesResponse::mutable_next_page_token() {
+::std::string* ListServicesResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServicesResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServicesResponse::release_next_page_token() {
+::std::string* ListServicesResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServicesResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServicesResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListServicesResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -1520,6 +1560,9 @@ void ListServicesResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.ListServicesResponse.next_page_token)
 }
 
+inline const ListServicesResponse* ListServicesResponse::internal_default_instance() {
+  return &ListServicesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1530,27 +1573,25 @@ const int GetServiceRequest::kServiceNameFieldNumber;
 
 GetServiceRequest::GetServiceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.GetServiceRequest)
 }
 
 void GetServiceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetServiceRequest::GetServiceRequest(const GetServiceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.GetServiceRequest)
 }
 
 void GetServiceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetServiceRequest::~GetServiceRequest() {
@@ -1560,8 +1601,6 @@ GetServiceRequest::~GetServiceRequest() {
 
 void GetServiceRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetServiceRequest::SetCachedSize(int size) const {
@@ -1575,11 +1614,11 @@ const ::google::protobuf::Descriptor* GetServiceRequest::descriptor() {
 }
 
 const GetServiceRequest& GetServiceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-GetServiceRequest* GetServiceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetServiceRequest> GetServiceRequest_default_instance_;
 
 GetServiceRequest* GetServiceRequest::New(::google::protobuf::Arena* arena) const {
   GetServiceRequest* n = new GetServiceRequest;
@@ -1659,6 +1698,7 @@ void GetServiceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetServiceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.GetServiceRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -1675,9 +1715,9 @@ void GetServiceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetServiceRequest::ByteSize() const {
+size_t GetServiceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.GetServiceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -1686,18 +1726,17 @@ int GetServiceRequest::ByteSize() const {
         this->service_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.GetServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetServiceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetServiceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetServiceRequest>(
           &from);
   if (source == NULL) {
@@ -1705,15 +1744,21 @@ void GetServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.GetServiceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetServiceRequest::MergeFrom(const GetServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.GetServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetServiceRequest::UnsafeMergeFrom(const GetServiceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -1731,7 +1776,7 @@ void GetServiceRequest::CopyFrom(const GetServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.GetServiceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetServiceRequest::IsInitialized() const {
@@ -1764,37 +1809,37 @@ void GetServiceRequest::InternalSwap(GetServiceRequest* other) {
 void GetServiceRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetServiceRequest::service_name() const {
+const ::std::string& GetServiceRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GetServiceRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceRequest::set_service_name(const ::std::string& value) {
+void GetServiceRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.GetServiceRequest.service_name)
 }
- void GetServiceRequest::set_service_name(const char* value) {
+void GetServiceRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.GetServiceRequest.service_name)
 }
- void GetServiceRequest::set_service_name(const char* value, size_t size) {
+void GetServiceRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.GetServiceRequest.service_name)
 }
- ::std::string* GetServiceRequest::mutable_service_name() {
+::std::string* GetServiceRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.GetServiceRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetServiceRequest::release_service_name() {
+::std::string* GetServiceRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.GetServiceRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceRequest::set_allocated_service_name(::std::string* service_name) {
+void GetServiceRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -1804,6 +1849,9 @@ void GetServiceRequest::clear_service_name() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.GetServiceRequest.service_name)
 }
 
+inline const GetServiceRequest* GetServiceRequest::internal_default_instance() {
+  return &GetServiceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1814,27 +1862,27 @@ const int CreateServiceRequest::kServiceFieldNumber;
 
 CreateServiceRequest::CreateServiceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.CreateServiceRequest)
 }
 
 void CreateServiceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  service_ = const_cast< ::google::api::servicemanagement::v1::ManagedService*>(&::google::api::servicemanagement::v1::ManagedService::default_instance());
+  service_ = const_cast< ::google::api::servicemanagement::v1::ManagedService*>(
+      ::google::api::servicemanagement::v1::ManagedService::internal_default_instance());
 }
 
 CreateServiceRequest::CreateServiceRequest(const CreateServiceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.CreateServiceRequest)
 }
 
 void CreateServiceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   service_ = NULL;
+  _cached_size_ = 0;
 }
 
 CreateServiceRequest::~CreateServiceRequest() {
@@ -1843,7 +1891,7 @@ CreateServiceRequest::~CreateServiceRequest() {
 }
 
 void CreateServiceRequest::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &CreateServiceRequest_default_instance_.get()) {
     delete service_;
   }
 }
@@ -1859,11 +1907,11 @@ const ::google::protobuf::Descriptor* CreateServiceRequest::descriptor() {
 }
 
 const CreateServiceRequest& CreateServiceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-CreateServiceRequest* CreateServiceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateServiceRequest> CreateServiceRequest_default_instance_;
 
 CreateServiceRequest* CreateServiceRequest::New(::google::protobuf::Arena* arena) const {
   CreateServiceRequest* n = new CreateServiceRequest;
@@ -1936,6 +1984,7 @@ void CreateServiceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateServiceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.CreateServiceRequest)
   // optional .google.api.servicemanagement.v1.ManagedService service = 1;
   if (this->has_service()) {
@@ -1948,9 +1997,9 @@ void CreateServiceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateServiceRequest::ByteSize() const {
+size_t CreateServiceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.CreateServiceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.api.servicemanagement.v1.ManagedService service = 1;
   if (this->has_service()) {
@@ -1959,18 +2008,17 @@ int CreateServiceRequest::ByteSize() const {
         *this->service_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.CreateServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateServiceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateServiceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateServiceRequest>(
           &from);
   if (source == NULL) {
@@ -1978,15 +2026,21 @@ void CreateServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.CreateServiceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateServiceRequest::MergeFrom(const CreateServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.CreateServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateServiceRequest::UnsafeMergeFrom(const CreateServiceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_service()) {
     mutable_service()->::google::api::servicemanagement::v1::ManagedService::MergeFrom(from.service());
   }
@@ -2003,7 +2057,7 @@ void CreateServiceRequest::CopyFrom(const CreateServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.CreateServiceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateServiceRequest::IsInitialized() const {
@@ -2034,7 +2088,7 @@ void CreateServiceRequest::InternalSwap(CreateServiceRequest* other) {
 
 // optional .google.api.servicemanagement.v1.ManagedService service = 1;
 bool CreateServiceRequest::has_service() const {
-  return !_is_default_instance_ && service_ != NULL;
+  return this != internal_default_instance() && service_ != NULL;
 }
 void CreateServiceRequest::clear_service() {
   if (GetArenaNoVirtual() == NULL && service_ != NULL) delete service_;
@@ -2042,7 +2096,8 @@ void CreateServiceRequest::clear_service() {
 }
 const ::google::api::servicemanagement::v1::ManagedService& CreateServiceRequest::service() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.CreateServiceRequest.service)
-  return service_ != NULL ? *service_ : *default_instance_->service_;
+  return service_ != NULL ? *service_
+                         : *::google::api::servicemanagement::v1::ManagedService::internal_default_instance();
 }
 ::google::api::servicemanagement::v1::ManagedService* CreateServiceRequest::mutable_service() {
   
@@ -2070,6 +2125,9 @@ void CreateServiceRequest::set_allocated_service(::google::api::servicemanagemen
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.CreateServiceRequest.service)
 }
 
+inline const CreateServiceRequest* CreateServiceRequest::internal_default_instance() {
+  return &CreateServiceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2080,27 +2138,25 @@ const int DeleteServiceRequest::kServiceNameFieldNumber;
 
 DeleteServiceRequest::DeleteServiceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.DeleteServiceRequest)
 }
 
 void DeleteServiceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteServiceRequest::DeleteServiceRequest(const DeleteServiceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.DeleteServiceRequest)
 }
 
 void DeleteServiceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteServiceRequest::~DeleteServiceRequest() {
@@ -2110,8 +2166,6 @@ DeleteServiceRequest::~DeleteServiceRequest() {
 
 void DeleteServiceRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DeleteServiceRequest::SetCachedSize(int size) const {
@@ -2125,11 +2179,11 @@ const ::google::protobuf::Descriptor* DeleteServiceRequest::descriptor() {
 }
 
 const DeleteServiceRequest& DeleteServiceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteServiceRequest* DeleteServiceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteServiceRequest> DeleteServiceRequest_default_instance_;
 
 DeleteServiceRequest* DeleteServiceRequest::New(::google::protobuf::Arena* arena) const {
   DeleteServiceRequest* n = new DeleteServiceRequest;
@@ -2209,6 +2263,7 @@ void DeleteServiceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteServiceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.DeleteServiceRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -2225,9 +2280,9 @@ void DeleteServiceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteServiceRequest::ByteSize() const {
+size_t DeleteServiceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.DeleteServiceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -2236,18 +2291,17 @@ int DeleteServiceRequest::ByteSize() const {
         this->service_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.DeleteServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteServiceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteServiceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteServiceRequest>(
           &from);
   if (source == NULL) {
@@ -2255,15 +2309,21 @@ void DeleteServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.DeleteServiceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteServiceRequest::MergeFrom(const DeleteServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.DeleteServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteServiceRequest::UnsafeMergeFrom(const DeleteServiceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -2281,7 +2341,7 @@ void DeleteServiceRequest::CopyFrom(const DeleteServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.DeleteServiceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteServiceRequest::IsInitialized() const {
@@ -2314,37 +2374,37 @@ void DeleteServiceRequest::InternalSwap(DeleteServiceRequest* other) {
 void DeleteServiceRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteServiceRequest::service_name() const {
+const ::std::string& DeleteServiceRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.DeleteServiceRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteServiceRequest::set_service_name(const ::std::string& value) {
+void DeleteServiceRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.DeleteServiceRequest.service_name)
 }
- void DeleteServiceRequest::set_service_name(const char* value) {
+void DeleteServiceRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.DeleteServiceRequest.service_name)
 }
- void DeleteServiceRequest::set_service_name(const char* value, size_t size) {
+void DeleteServiceRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.DeleteServiceRequest.service_name)
 }
- ::std::string* DeleteServiceRequest::mutable_service_name() {
+::std::string* DeleteServiceRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.DeleteServiceRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteServiceRequest::release_service_name() {
+::std::string* DeleteServiceRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.DeleteServiceRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteServiceRequest::set_allocated_service_name(::std::string* service_name) {
+void DeleteServiceRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -2354,6 +2414,9 @@ void DeleteServiceRequest::clear_service_name() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.DeleteServiceRequest.service_name)
 }
 
+inline const DeleteServiceRequest* DeleteServiceRequest::internal_default_instance() {
+  return &DeleteServiceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2364,27 +2427,25 @@ const int UndeleteServiceRequest::kServiceNameFieldNumber;
 
 UndeleteServiceRequest::UndeleteServiceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.UndeleteServiceRequest)
 }
 
 void UndeleteServiceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 UndeleteServiceRequest::UndeleteServiceRequest(const UndeleteServiceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.UndeleteServiceRequest)
 }
 
 void UndeleteServiceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 UndeleteServiceRequest::~UndeleteServiceRequest() {
@@ -2394,8 +2455,6 @@ UndeleteServiceRequest::~UndeleteServiceRequest() {
 
 void UndeleteServiceRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void UndeleteServiceRequest::SetCachedSize(int size) const {
@@ -2409,11 +2468,11 @@ const ::google::protobuf::Descriptor* UndeleteServiceRequest::descriptor() {
 }
 
 const UndeleteServiceRequest& UndeleteServiceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-UndeleteServiceRequest* UndeleteServiceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UndeleteServiceRequest> UndeleteServiceRequest_default_instance_;
 
 UndeleteServiceRequest* UndeleteServiceRequest::New(::google::protobuf::Arena* arena) const {
   UndeleteServiceRequest* n = new UndeleteServiceRequest;
@@ -2493,6 +2552,7 @@ void UndeleteServiceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UndeleteServiceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.UndeleteServiceRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -2509,9 +2569,9 @@ void UndeleteServiceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int UndeleteServiceRequest::ByteSize() const {
+size_t UndeleteServiceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.UndeleteServiceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -2520,18 +2580,17 @@ int UndeleteServiceRequest::ByteSize() const {
         this->service_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UndeleteServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.UndeleteServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UndeleteServiceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UndeleteServiceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UndeleteServiceRequest>(
           &from);
   if (source == NULL) {
@@ -2539,15 +2598,21 @@ void UndeleteServiceRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.UndeleteServiceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UndeleteServiceRequest::MergeFrom(const UndeleteServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.UndeleteServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UndeleteServiceRequest::UnsafeMergeFrom(const UndeleteServiceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -2565,7 +2630,7 @@ void UndeleteServiceRequest::CopyFrom(const UndeleteServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.UndeleteServiceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UndeleteServiceRequest::IsInitialized() const {
@@ -2598,37 +2663,37 @@ void UndeleteServiceRequest::InternalSwap(UndeleteServiceRequest* other) {
 void UndeleteServiceRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UndeleteServiceRequest::service_name() const {
+const ::std::string& UndeleteServiceRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.UndeleteServiceRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UndeleteServiceRequest::set_service_name(const ::std::string& value) {
+void UndeleteServiceRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.UndeleteServiceRequest.service_name)
 }
- void UndeleteServiceRequest::set_service_name(const char* value) {
+void UndeleteServiceRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.UndeleteServiceRequest.service_name)
 }
- void UndeleteServiceRequest::set_service_name(const char* value, size_t size) {
+void UndeleteServiceRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.UndeleteServiceRequest.service_name)
 }
- ::std::string* UndeleteServiceRequest::mutable_service_name() {
+::std::string* UndeleteServiceRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.UndeleteServiceRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UndeleteServiceRequest::release_service_name() {
+::std::string* UndeleteServiceRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.UndeleteServiceRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UndeleteServiceRequest::set_allocated_service_name(::std::string* service_name) {
+void UndeleteServiceRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -2638,6 +2703,9 @@ void UndeleteServiceRequest::clear_service_name() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.UndeleteServiceRequest.service_name)
 }
 
+inline const UndeleteServiceRequest* UndeleteServiceRequest::internal_default_instance() {
+  return &UndeleteServiceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2648,27 +2716,27 @@ const int UndeleteServiceResponse::kServiceFieldNumber;
 
 UndeleteServiceResponse::UndeleteServiceResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.UndeleteServiceResponse)
 }
 
 void UndeleteServiceResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  service_ = const_cast< ::google::api::servicemanagement::v1::ManagedService*>(&::google::api::servicemanagement::v1::ManagedService::default_instance());
+  service_ = const_cast< ::google::api::servicemanagement::v1::ManagedService*>(
+      ::google::api::servicemanagement::v1::ManagedService::internal_default_instance());
 }
 
 UndeleteServiceResponse::UndeleteServiceResponse(const UndeleteServiceResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.UndeleteServiceResponse)
 }
 
 void UndeleteServiceResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   service_ = NULL;
+  _cached_size_ = 0;
 }
 
 UndeleteServiceResponse::~UndeleteServiceResponse() {
@@ -2677,7 +2745,7 @@ UndeleteServiceResponse::~UndeleteServiceResponse() {
 }
 
 void UndeleteServiceResponse::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &UndeleteServiceResponse_default_instance_.get()) {
     delete service_;
   }
 }
@@ -2693,11 +2761,11 @@ const ::google::protobuf::Descriptor* UndeleteServiceResponse::descriptor() {
 }
 
 const UndeleteServiceResponse& UndeleteServiceResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-UndeleteServiceResponse* UndeleteServiceResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UndeleteServiceResponse> UndeleteServiceResponse_default_instance_;
 
 UndeleteServiceResponse* UndeleteServiceResponse::New(::google::protobuf::Arena* arena) const {
   UndeleteServiceResponse* n = new UndeleteServiceResponse;
@@ -2770,6 +2838,7 @@ void UndeleteServiceResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UndeleteServiceResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.UndeleteServiceResponse)
   // optional .google.api.servicemanagement.v1.ManagedService service = 1;
   if (this->has_service()) {
@@ -2782,9 +2851,9 @@ void UndeleteServiceResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int UndeleteServiceResponse::ByteSize() const {
+size_t UndeleteServiceResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.UndeleteServiceResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.api.servicemanagement.v1.ManagedService service = 1;
   if (this->has_service()) {
@@ -2793,18 +2862,17 @@ int UndeleteServiceResponse::ByteSize() const {
         *this->service_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UndeleteServiceResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.UndeleteServiceResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UndeleteServiceResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UndeleteServiceResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UndeleteServiceResponse>(
           &from);
   if (source == NULL) {
@@ -2812,15 +2880,21 @@ void UndeleteServiceResponse::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.UndeleteServiceResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UndeleteServiceResponse::MergeFrom(const UndeleteServiceResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.UndeleteServiceResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UndeleteServiceResponse::UnsafeMergeFrom(const UndeleteServiceResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_service()) {
     mutable_service()->::google::api::servicemanagement::v1::ManagedService::MergeFrom(from.service());
   }
@@ -2837,7 +2911,7 @@ void UndeleteServiceResponse::CopyFrom(const UndeleteServiceResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.UndeleteServiceResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UndeleteServiceResponse::IsInitialized() const {
@@ -2868,7 +2942,7 @@ void UndeleteServiceResponse::InternalSwap(UndeleteServiceResponse* other) {
 
 // optional .google.api.servicemanagement.v1.ManagedService service = 1;
 bool UndeleteServiceResponse::has_service() const {
-  return !_is_default_instance_ && service_ != NULL;
+  return this != internal_default_instance() && service_ != NULL;
 }
 void UndeleteServiceResponse::clear_service() {
   if (GetArenaNoVirtual() == NULL && service_ != NULL) delete service_;
@@ -2876,7 +2950,8 @@ void UndeleteServiceResponse::clear_service() {
 }
 const ::google::api::servicemanagement::v1::ManagedService& UndeleteServiceResponse::service() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.UndeleteServiceResponse.service)
-  return service_ != NULL ? *service_ : *default_instance_->service_;
+  return service_ != NULL ? *service_
+                         : *::google::api::servicemanagement::v1::ManagedService::internal_default_instance();
 }
 ::google::api::servicemanagement::v1::ManagedService* UndeleteServiceResponse::mutable_service() {
   
@@ -2904,6 +2979,9 @@ void UndeleteServiceResponse::set_allocated_service(::google::api::servicemanage
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.UndeleteServiceResponse.service)
 }
 
+inline const UndeleteServiceResponse* UndeleteServiceResponse::internal_default_instance() {
+  return &UndeleteServiceResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2915,28 +2993,26 @@ const int GetServiceConfigRequest::kConfigIdFieldNumber;
 
 GetServiceConfigRequest::GetServiceConfigRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.GetServiceConfigRequest)
 }
 
 void GetServiceConfigRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetServiceConfigRequest::GetServiceConfigRequest(const GetServiceConfigRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.GetServiceConfigRequest)
 }
 
 void GetServiceConfigRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   config_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetServiceConfigRequest::~GetServiceConfigRequest() {
@@ -2947,8 +3023,6 @@ GetServiceConfigRequest::~GetServiceConfigRequest() {
 void GetServiceConfigRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   config_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetServiceConfigRequest::SetCachedSize(int size) const {
@@ -2962,11 +3036,11 @@ const ::google::protobuf::Descriptor* GetServiceConfigRequest::descriptor() {
 }
 
 const GetServiceConfigRequest& GetServiceConfigRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-GetServiceConfigRequest* GetServiceConfigRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetServiceConfigRequest> GetServiceConfigRequest_default_instance_;
 
 GetServiceConfigRequest* GetServiceConfigRequest::New(::google::protobuf::Arena* arena) const {
   GetServiceConfigRequest* n = new GetServiceConfigRequest;
@@ -3074,6 +3148,7 @@ void GetServiceConfigRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetServiceConfigRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.GetServiceConfigRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -3101,9 +3176,9 @@ void GetServiceConfigRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetServiceConfigRequest::ByteSize() const {
+size_t GetServiceConfigRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.GetServiceConfigRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -3119,18 +3194,17 @@ int GetServiceConfigRequest::ByteSize() const {
         this->config_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetServiceConfigRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.GetServiceConfigRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetServiceConfigRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetServiceConfigRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetServiceConfigRequest>(
           &from);
   if (source == NULL) {
@@ -3138,15 +3212,21 @@ void GetServiceConfigRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.GetServiceConfigRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetServiceConfigRequest::MergeFrom(const GetServiceConfigRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.GetServiceConfigRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetServiceConfigRequest::UnsafeMergeFrom(const GetServiceConfigRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -3168,7 +3248,7 @@ void GetServiceConfigRequest::CopyFrom(const GetServiceConfigRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.GetServiceConfigRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetServiceConfigRequest::IsInitialized() const {
@@ -3202,37 +3282,37 @@ void GetServiceConfigRequest::InternalSwap(GetServiceConfigRequest* other) {
 void GetServiceConfigRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetServiceConfigRequest::service_name() const {
+const ::std::string& GetServiceConfigRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GetServiceConfigRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceConfigRequest::set_service_name(const ::std::string& value) {
+void GetServiceConfigRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.GetServiceConfigRequest.service_name)
 }
- void GetServiceConfigRequest::set_service_name(const char* value) {
+void GetServiceConfigRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.GetServiceConfigRequest.service_name)
 }
- void GetServiceConfigRequest::set_service_name(const char* value, size_t size) {
+void GetServiceConfigRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.GetServiceConfigRequest.service_name)
 }
- ::std::string* GetServiceConfigRequest::mutable_service_name() {
+::std::string* GetServiceConfigRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.GetServiceConfigRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetServiceConfigRequest::release_service_name() {
+::std::string* GetServiceConfigRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.GetServiceConfigRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceConfigRequest::set_allocated_service_name(::std::string* service_name) {
+void GetServiceConfigRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -3246,37 +3326,37 @@ void GetServiceConfigRequest::clear_service_name() {
 void GetServiceConfigRequest::clear_config_id() {
   config_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetServiceConfigRequest::config_id() const {
+const ::std::string& GetServiceConfigRequest::config_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GetServiceConfigRequest.config_id)
   return config_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceConfigRequest::set_config_id(const ::std::string& value) {
+void GetServiceConfigRequest::set_config_id(const ::std::string& value) {
   
   config_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.GetServiceConfigRequest.config_id)
 }
- void GetServiceConfigRequest::set_config_id(const char* value) {
+void GetServiceConfigRequest::set_config_id(const char* value) {
   
   config_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.GetServiceConfigRequest.config_id)
 }
- void GetServiceConfigRequest::set_config_id(const char* value, size_t size) {
+void GetServiceConfigRequest::set_config_id(const char* value, size_t size) {
   
   config_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.GetServiceConfigRequest.config_id)
 }
- ::std::string* GetServiceConfigRequest::mutable_config_id() {
+::std::string* GetServiceConfigRequest::mutable_config_id() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.GetServiceConfigRequest.config_id)
   return config_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetServiceConfigRequest::release_config_id() {
+::std::string* GetServiceConfigRequest::release_config_id() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.GetServiceConfigRequest.config_id)
   
   return config_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceConfigRequest::set_allocated_config_id(::std::string* config_id) {
+void GetServiceConfigRequest::set_allocated_config_id(::std::string* config_id) {
   if (config_id != NULL) {
     
   } else {
@@ -3286,6 +3366,9 @@ void GetServiceConfigRequest::clear_config_id() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.GetServiceConfigRequest.config_id)
 }
 
+inline const GetServiceConfigRequest* GetServiceConfigRequest::internal_default_instance() {
+  return &GetServiceConfigRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3298,29 +3381,27 @@ const int ListServiceConfigsRequest::kPageSizeFieldNumber;
 
 ListServiceConfigsRequest::ListServiceConfigsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.ListServiceConfigsRequest)
 }
 
 void ListServiceConfigsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceConfigsRequest::ListServiceConfigsRequest(const ListServiceConfigsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.ListServiceConfigsRequest)
 }
 
 void ListServiceConfigsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListServiceConfigsRequest::~ListServiceConfigsRequest() {
@@ -3331,8 +3412,6 @@ ListServiceConfigsRequest::~ListServiceConfigsRequest() {
 void ListServiceConfigsRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListServiceConfigsRequest::SetCachedSize(int size) const {
@@ -3346,11 +3425,11 @@ const ::google::protobuf::Descriptor* ListServiceConfigsRequest::descriptor() {
 }
 
 const ListServiceConfigsRequest& ListServiceConfigsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceConfigsRequest* ListServiceConfigsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceConfigsRequest> ListServiceConfigsRequest_default_instance_;
 
 ListServiceConfigsRequest* ListServiceConfigsRequest::New(::google::protobuf::Arena* arena) const {
   ListServiceConfigsRequest* n = new ListServiceConfigsRequest;
@@ -3414,10 +3493,10 @@ bool ListServiceConfigsRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3479,6 +3558,7 @@ void ListServiceConfigsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceConfigsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.ListServiceConfigsRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -3511,9 +3591,9 @@ void ListServiceConfigsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceConfigsRequest::ByteSize() const {
+size_t ListServiceConfigsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.ListServiceConfigsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -3536,18 +3616,17 @@ int ListServiceConfigsRequest::ByteSize() const {
         this->page_size());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceConfigsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.ListServiceConfigsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceConfigsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceConfigsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceConfigsRequest>(
           &from);
   if (source == NULL) {
@@ -3555,15 +3634,21 @@ void ListServiceConfigsRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.ListServiceConfigsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceConfigsRequest::MergeFrom(const ListServiceConfigsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.ListServiceConfigsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServiceConfigsRequest::UnsafeMergeFrom(const ListServiceConfigsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -3588,7 +3673,7 @@ void ListServiceConfigsRequest::CopyFrom(const ListServiceConfigsRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.ListServiceConfigsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceConfigsRequest::IsInitialized() const {
@@ -3623,37 +3708,37 @@ void ListServiceConfigsRequest::InternalSwap(ListServiceConfigsRequest* other) {
 void ListServiceConfigsRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServiceConfigsRequest::service_name() const {
+const ::std::string& ListServiceConfigsRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceConfigsRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceConfigsRequest::set_service_name(const ::std::string& value) {
+void ListServiceConfigsRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceConfigsRequest.service_name)
 }
- void ListServiceConfigsRequest::set_service_name(const char* value) {
+void ListServiceConfigsRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServiceConfigsRequest.service_name)
 }
- void ListServiceConfigsRequest::set_service_name(const char* value, size_t size) {
+void ListServiceConfigsRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServiceConfigsRequest.service_name)
 }
- ::std::string* ListServiceConfigsRequest::mutable_service_name() {
+::std::string* ListServiceConfigsRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServiceConfigsRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServiceConfigsRequest::release_service_name() {
+::std::string* ListServiceConfigsRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServiceConfigsRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceConfigsRequest::set_allocated_service_name(::std::string* service_name) {
+void ListServiceConfigsRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -3667,37 +3752,37 @@ void ListServiceConfigsRequest::clear_service_name() {
 void ListServiceConfigsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServiceConfigsRequest::page_token() const {
+const ::std::string& ListServiceConfigsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceConfigsRequest::set_page_token(const ::std::string& value) {
+void ListServiceConfigsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_token)
 }
- void ListServiceConfigsRequest::set_page_token(const char* value) {
+void ListServiceConfigsRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_token)
 }
- void ListServiceConfigsRequest::set_page_token(const char* value, size_t size) {
+void ListServiceConfigsRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_token)
 }
- ::std::string* ListServiceConfigsRequest::mutable_page_token() {
+::std::string* ListServiceConfigsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServiceConfigsRequest::release_page_token() {
+::std::string* ListServiceConfigsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceConfigsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListServiceConfigsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -3711,16 +3796,19 @@ void ListServiceConfigsRequest::clear_page_token() {
 void ListServiceConfigsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListServiceConfigsRequest::page_size() const {
+::google::protobuf::int32 ListServiceConfigsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_size)
   return page_size_;
 }
- void ListServiceConfigsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListServiceConfigsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceConfigsRequest.page_size)
 }
 
+inline const ListServiceConfigsRequest* ListServiceConfigsRequest::internal_default_instance() {
+  return &ListServiceConfigsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3732,27 +3820,25 @@ const int ListServiceConfigsResponse::kNextPageTokenFieldNumber;
 
 ListServiceConfigsResponse::ListServiceConfigsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.ListServiceConfigsResponse)
 }
 
 void ListServiceConfigsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceConfigsResponse::ListServiceConfigsResponse(const ListServiceConfigsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.ListServiceConfigsResponse)
 }
 
 void ListServiceConfigsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListServiceConfigsResponse::~ListServiceConfigsResponse() {
@@ -3762,8 +3848,6 @@ ListServiceConfigsResponse::~ListServiceConfigsResponse() {
 
 void ListServiceConfigsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListServiceConfigsResponse::SetCachedSize(int size) const {
@@ -3777,11 +3861,11 @@ const ::google::protobuf::Descriptor* ListServiceConfigsResponse::descriptor() {
 }
 
 const ListServiceConfigsResponse& ListServiceConfigsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceConfigsResponse* ListServiceConfigsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceConfigsResponse> ListServiceConfigsResponse_default_instance_;
 
 ListServiceConfigsResponse* ListServiceConfigsResponse::New(::google::protobuf::Arena* arena) const {
   ListServiceConfigsResponse* n = new ListServiceConfigsResponse;
@@ -3885,6 +3969,7 @@ void ListServiceConfigsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceConfigsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.ListServiceConfigsResponse)
   // repeated .google.api.Service service_configs = 1;
   for (unsigned int i = 0, n = this->service_configs_size(); i < n; i++) {
@@ -3908,9 +3993,9 @@ void ListServiceConfigsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceConfigsResponse::ByteSize() const {
+size_t ListServiceConfigsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.ListServiceConfigsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -3920,25 +4005,27 @@ int ListServiceConfigsResponse::ByteSize() const {
   }
 
   // repeated .google.api.Service service_configs = 1;
-  total_size += 1 * this->service_configs_size();
-  for (int i = 0; i < this->service_configs_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->service_configs(i));
+  {
+    unsigned int count = this->service_configs_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->service_configs(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceConfigsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.ListServiceConfigsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceConfigsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceConfigsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceConfigsResponse>(
           &from);
   if (source == NULL) {
@@ -3946,15 +4033,21 @@ void ListServiceConfigsResponse::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.ListServiceConfigsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceConfigsResponse::MergeFrom(const ListServiceConfigsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.ListServiceConfigsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServiceConfigsResponse::UnsafeMergeFrom(const ListServiceConfigsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   service_configs_.MergeFrom(from.service_configs_);
   if (from.next_page_token().size() > 0) {
 
@@ -3973,7 +4066,7 @@ void ListServiceConfigsResponse::CopyFrom(const ListServiceConfigsResponse& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.ListServiceConfigsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceConfigsResponse::IsInitialized() const {
@@ -4037,37 +4130,37 @@ ListServiceConfigsResponse::service_configs() const {
 void ListServiceConfigsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServiceConfigsResponse::next_page_token() const {
+const ::std::string& ListServiceConfigsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceConfigsResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceConfigsResponse::set_next_page_token(const ::std::string& value) {
+void ListServiceConfigsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceConfigsResponse.next_page_token)
 }
- void ListServiceConfigsResponse::set_next_page_token(const char* value) {
+void ListServiceConfigsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServiceConfigsResponse.next_page_token)
 }
- void ListServiceConfigsResponse::set_next_page_token(const char* value, size_t size) {
+void ListServiceConfigsResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServiceConfigsResponse.next_page_token)
 }
- ::std::string* ListServiceConfigsResponse::mutable_next_page_token() {
+::std::string* ListServiceConfigsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServiceConfigsResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServiceConfigsResponse::release_next_page_token() {
+::std::string* ListServiceConfigsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServiceConfigsResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceConfigsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListServiceConfigsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -4077,6 +4170,9 @@ void ListServiceConfigsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.ListServiceConfigsResponse.next_page_token)
 }
 
+inline const ListServiceConfigsResponse* ListServiceConfigsResponse::internal_default_instance() {
+  return &ListServiceConfigsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4088,29 +4184,28 @@ const int CreateServiceConfigRequest::kServiceConfigFieldNumber;
 
 CreateServiceConfigRequest::CreateServiceConfigRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.CreateServiceConfigRequest)
 }
 
 void CreateServiceConfigRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  service_config_ = const_cast< ::google::api::Service*>(&::google::api::Service::default_instance());
+  service_config_ = const_cast< ::google::api::Service*>(
+      ::google::api::Service::internal_default_instance());
 }
 
 CreateServiceConfigRequest::CreateServiceConfigRequest(const CreateServiceConfigRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.CreateServiceConfigRequest)
 }
 
 void CreateServiceConfigRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   service_config_ = NULL;
+  _cached_size_ = 0;
 }
 
 CreateServiceConfigRequest::~CreateServiceConfigRequest() {
@@ -4120,7 +4215,7 @@ CreateServiceConfigRequest::~CreateServiceConfigRequest() {
 
 void CreateServiceConfigRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &CreateServiceConfigRequest_default_instance_.get()) {
     delete service_config_;
   }
 }
@@ -4136,11 +4231,11 @@ const ::google::protobuf::Descriptor* CreateServiceConfigRequest::descriptor() {
 }
 
 const CreateServiceConfigRequest& CreateServiceConfigRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-CreateServiceConfigRequest* CreateServiceConfigRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateServiceConfigRequest> CreateServiceConfigRequest_default_instance_;
 
 CreateServiceConfigRequest* CreateServiceConfigRequest::New(::google::protobuf::Arena* arena) const {
   CreateServiceConfigRequest* n = new CreateServiceConfigRequest;
@@ -4241,6 +4336,7 @@ void CreateServiceConfigRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateServiceConfigRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.CreateServiceConfigRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -4264,9 +4360,9 @@ void CreateServiceConfigRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateServiceConfigRequest::ByteSize() const {
+size_t CreateServiceConfigRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.CreateServiceConfigRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -4282,18 +4378,17 @@ int CreateServiceConfigRequest::ByteSize() const {
         *this->service_config_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateServiceConfigRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.CreateServiceConfigRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateServiceConfigRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateServiceConfigRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateServiceConfigRequest>(
           &from);
   if (source == NULL) {
@@ -4301,15 +4396,21 @@ void CreateServiceConfigRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.CreateServiceConfigRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateServiceConfigRequest::MergeFrom(const CreateServiceConfigRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.CreateServiceConfigRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateServiceConfigRequest::UnsafeMergeFrom(const CreateServiceConfigRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -4330,7 +4431,7 @@ void CreateServiceConfigRequest::CopyFrom(const CreateServiceConfigRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.CreateServiceConfigRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateServiceConfigRequest::IsInitialized() const {
@@ -4364,37 +4465,37 @@ void CreateServiceConfigRequest::InternalSwap(CreateServiceConfigRequest* other)
 void CreateServiceConfigRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CreateServiceConfigRequest::service_name() const {
+const ::std::string& CreateServiceConfigRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateServiceConfigRequest::set_service_name(const ::std::string& value) {
+void CreateServiceConfigRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_name)
 }
- void CreateServiceConfigRequest::set_service_name(const char* value) {
+void CreateServiceConfigRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_name)
 }
- void CreateServiceConfigRequest::set_service_name(const char* value, size_t size) {
+void CreateServiceConfigRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_name)
 }
- ::std::string* CreateServiceConfigRequest::mutable_service_name() {
+::std::string* CreateServiceConfigRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CreateServiceConfigRequest::release_service_name() {
+::std::string* CreateServiceConfigRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateServiceConfigRequest::set_allocated_service_name(::std::string* service_name) {
+void CreateServiceConfigRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -4406,7 +4507,7 @@ void CreateServiceConfigRequest::clear_service_name() {
 
 // optional .google.api.Service service_config = 2;
 bool CreateServiceConfigRequest::has_service_config() const {
-  return !_is_default_instance_ && service_config_ != NULL;
+  return this != internal_default_instance() && service_config_ != NULL;
 }
 void CreateServiceConfigRequest::clear_service_config() {
   if (GetArenaNoVirtual() == NULL && service_config_ != NULL) delete service_config_;
@@ -4414,7 +4515,8 @@ void CreateServiceConfigRequest::clear_service_config() {
 }
 const ::google::api::Service& CreateServiceConfigRequest::service_config() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_config)
-  return service_config_ != NULL ? *service_config_ : *default_instance_->service_config_;
+  return service_config_ != NULL ? *service_config_
+                         : *::google::api::Service::internal_default_instance();
 }
 ::google::api::Service* CreateServiceConfigRequest::mutable_service_config() {
   
@@ -4442,6 +4544,9 @@ void CreateServiceConfigRequest::set_allocated_service_config(::google::api::Ser
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.CreateServiceConfigRequest.service_config)
 }
 
+inline const CreateServiceConfigRequest* CreateServiceConfigRequest::internal_default_instance() {
+  return &CreateServiceConfigRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4454,30 +4559,29 @@ const int SubmitConfigSourceRequest::kValidateOnlyFieldNumber;
 
 SubmitConfigSourceRequest::SubmitConfigSourceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
 }
 
 void SubmitConfigSourceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  config_source_ = const_cast< ::google::api::servicemanagement::v1::ConfigSource*>(&::google::api::servicemanagement::v1::ConfigSource::default_instance());
+  config_source_ = const_cast< ::google::api::servicemanagement::v1::ConfigSource*>(
+      ::google::api::servicemanagement::v1::ConfigSource::internal_default_instance());
 }
 
 SubmitConfigSourceRequest::SubmitConfigSourceRequest(const SubmitConfigSourceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
 }
 
 void SubmitConfigSourceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   config_source_ = NULL;
   validate_only_ = false;
+  _cached_size_ = 0;
 }
 
 SubmitConfigSourceRequest::~SubmitConfigSourceRequest() {
@@ -4487,7 +4591,7 @@ SubmitConfigSourceRequest::~SubmitConfigSourceRequest() {
 
 void SubmitConfigSourceRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &SubmitConfigSourceRequest_default_instance_.get()) {
     delete config_source_;
   }
 }
@@ -4503,11 +4607,11 @@ const ::google::protobuf::Descriptor* SubmitConfigSourceRequest::descriptor() {
 }
 
 const SubmitConfigSourceRequest& SubmitConfigSourceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-SubmitConfigSourceRequest* SubmitConfigSourceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SubmitConfigSourceRequest> SubmitConfigSourceRequest_default_instance_;
 
 SubmitConfigSourceRequest* SubmitConfigSourceRequest::New(::google::protobuf::Arena* arena) const {
   SubmitConfigSourceRequest* n = new SubmitConfigSourceRequest;
@@ -4568,10 +4672,10 @@ bool SubmitConfigSourceRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_validate_only:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &validate_only_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4629,6 +4733,7 @@ void SubmitConfigSourceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SubmitConfigSourceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -4657,9 +4762,9 @@ void SubmitConfigSourceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int SubmitConfigSourceRequest::ByteSize() const {
+size_t SubmitConfigSourceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -4680,18 +4785,17 @@ int SubmitConfigSourceRequest::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmitConfigSourceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SubmitConfigSourceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SubmitConfigSourceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SubmitConfigSourceRequest>(
           &from);
   if (source == NULL) {
@@ -4699,15 +4803,21 @@ void SubmitConfigSourceRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SubmitConfigSourceRequest::MergeFrom(const SubmitConfigSourceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SubmitConfigSourceRequest::UnsafeMergeFrom(const SubmitConfigSourceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -4731,7 +4841,7 @@ void SubmitConfigSourceRequest::CopyFrom(const SubmitConfigSourceRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.SubmitConfigSourceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SubmitConfigSourceRequest::IsInitialized() const {
@@ -4766,37 +4876,37 @@ void SubmitConfigSourceRequest::InternalSwap(SubmitConfigSourceRequest* other) {
 void SubmitConfigSourceRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SubmitConfigSourceRequest::service_name() const {
+const ::std::string& SubmitConfigSourceRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.SubmitConfigSourceRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SubmitConfigSourceRequest::set_service_name(const ::std::string& value) {
+void SubmitConfigSourceRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.SubmitConfigSourceRequest.service_name)
 }
- void SubmitConfigSourceRequest::set_service_name(const char* value) {
+void SubmitConfigSourceRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.SubmitConfigSourceRequest.service_name)
 }
- void SubmitConfigSourceRequest::set_service_name(const char* value, size_t size) {
+void SubmitConfigSourceRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.SubmitConfigSourceRequest.service_name)
 }
- ::std::string* SubmitConfigSourceRequest::mutable_service_name() {
+::std::string* SubmitConfigSourceRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.SubmitConfigSourceRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SubmitConfigSourceRequest::release_service_name() {
+::std::string* SubmitConfigSourceRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.SubmitConfigSourceRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SubmitConfigSourceRequest::set_allocated_service_name(::std::string* service_name) {
+void SubmitConfigSourceRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -4808,7 +4918,7 @@ void SubmitConfigSourceRequest::clear_service_name() {
 
 // optional .google.api.servicemanagement.v1.ConfigSource config_source = 2;
 bool SubmitConfigSourceRequest::has_config_source() const {
-  return !_is_default_instance_ && config_source_ != NULL;
+  return this != internal_default_instance() && config_source_ != NULL;
 }
 void SubmitConfigSourceRequest::clear_config_source() {
   if (GetArenaNoVirtual() == NULL && config_source_ != NULL) delete config_source_;
@@ -4816,7 +4926,8 @@ void SubmitConfigSourceRequest::clear_config_source() {
 }
 const ::google::api::servicemanagement::v1::ConfigSource& SubmitConfigSourceRequest::config_source() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.SubmitConfigSourceRequest.config_source)
-  return config_source_ != NULL ? *config_source_ : *default_instance_->config_source_;
+  return config_source_ != NULL ? *config_source_
+                         : *::google::api::servicemanagement::v1::ConfigSource::internal_default_instance();
 }
 ::google::api::servicemanagement::v1::ConfigSource* SubmitConfigSourceRequest::mutable_config_source() {
   
@@ -4848,16 +4959,19 @@ void SubmitConfigSourceRequest::set_allocated_config_source(::google::api::servi
 void SubmitConfigSourceRequest::clear_validate_only() {
   validate_only_ = false;
 }
- bool SubmitConfigSourceRequest::validate_only() const {
+bool SubmitConfigSourceRequest::validate_only() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.SubmitConfigSourceRequest.validate_only)
   return validate_only_;
 }
- void SubmitConfigSourceRequest::set_validate_only(bool value) {
+void SubmitConfigSourceRequest::set_validate_only(bool value) {
   
   validate_only_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.SubmitConfigSourceRequest.validate_only)
 }
 
+inline const SubmitConfigSourceRequest* SubmitConfigSourceRequest::internal_default_instance() {
+  return &SubmitConfigSourceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4868,27 +4982,27 @@ const int SubmitConfigSourceResponse::kServiceConfigFieldNumber;
 
 SubmitConfigSourceResponse::SubmitConfigSourceResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
 }
 
 void SubmitConfigSourceResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  service_config_ = const_cast< ::google::api::Service*>(&::google::api::Service::default_instance());
+  service_config_ = const_cast< ::google::api::Service*>(
+      ::google::api::Service::internal_default_instance());
 }
 
 SubmitConfigSourceResponse::SubmitConfigSourceResponse(const SubmitConfigSourceResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
 }
 
 void SubmitConfigSourceResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   service_config_ = NULL;
+  _cached_size_ = 0;
 }
 
 SubmitConfigSourceResponse::~SubmitConfigSourceResponse() {
@@ -4897,7 +5011,7 @@ SubmitConfigSourceResponse::~SubmitConfigSourceResponse() {
 }
 
 void SubmitConfigSourceResponse::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &SubmitConfigSourceResponse_default_instance_.get()) {
     delete service_config_;
   }
 }
@@ -4913,11 +5027,11 @@ const ::google::protobuf::Descriptor* SubmitConfigSourceResponse::descriptor() {
 }
 
 const SubmitConfigSourceResponse& SubmitConfigSourceResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-SubmitConfigSourceResponse* SubmitConfigSourceResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SubmitConfigSourceResponse> SubmitConfigSourceResponse_default_instance_;
 
 SubmitConfigSourceResponse* SubmitConfigSourceResponse::New(::google::protobuf::Arena* arena) const {
   SubmitConfigSourceResponse* n = new SubmitConfigSourceResponse;
@@ -4990,6 +5104,7 @@ void SubmitConfigSourceResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SubmitConfigSourceResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
   // optional .google.api.Service service_config = 1;
   if (this->has_service_config()) {
@@ -5002,9 +5117,9 @@ void SubmitConfigSourceResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int SubmitConfigSourceResponse::ByteSize() const {
+size_t SubmitConfigSourceResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.api.Service service_config = 1;
   if (this->has_service_config()) {
@@ -5013,18 +5128,17 @@ int SubmitConfigSourceResponse::ByteSize() const {
         *this->service_config_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmitConfigSourceResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SubmitConfigSourceResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SubmitConfigSourceResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SubmitConfigSourceResponse>(
           &from);
   if (source == NULL) {
@@ -5032,15 +5146,21 @@ void SubmitConfigSourceResponse::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SubmitConfigSourceResponse::MergeFrom(const SubmitConfigSourceResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SubmitConfigSourceResponse::UnsafeMergeFrom(const SubmitConfigSourceResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_service_config()) {
     mutable_service_config()->::google::api::Service::MergeFrom(from.service_config());
   }
@@ -5057,7 +5177,7 @@ void SubmitConfigSourceResponse::CopyFrom(const SubmitConfigSourceResponse& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.SubmitConfigSourceResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SubmitConfigSourceResponse::IsInitialized() const {
@@ -5088,7 +5208,7 @@ void SubmitConfigSourceResponse::InternalSwap(SubmitConfigSourceResponse* other)
 
 // optional .google.api.Service service_config = 1;
 bool SubmitConfigSourceResponse::has_service_config() const {
-  return !_is_default_instance_ && service_config_ != NULL;
+  return this != internal_default_instance() && service_config_ != NULL;
 }
 void SubmitConfigSourceResponse::clear_service_config() {
   if (GetArenaNoVirtual() == NULL && service_config_ != NULL) delete service_config_;
@@ -5096,7 +5216,8 @@ void SubmitConfigSourceResponse::clear_service_config() {
 }
 const ::google::api::Service& SubmitConfigSourceResponse::service_config() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.SubmitConfigSourceResponse.service_config)
-  return service_config_ != NULL ? *service_config_ : *default_instance_->service_config_;
+  return service_config_ != NULL ? *service_config_
+                         : *::google::api::Service::internal_default_instance();
 }
 ::google::api::Service* SubmitConfigSourceResponse::mutable_service_config() {
   
@@ -5124,6 +5245,9 @@ void SubmitConfigSourceResponse::set_allocated_service_config(::google::api::Ser
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.SubmitConfigSourceResponse.service_config)
 }
 
+inline const SubmitConfigSourceResponse* SubmitConfigSourceResponse::internal_default_instance() {
+  return &SubmitConfigSourceResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5135,29 +5259,28 @@ const int CreateServiceRolloutRequest::kRolloutFieldNumber;
 
 CreateServiceRolloutRequest::CreateServiceRolloutRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
 }
 
 void CreateServiceRolloutRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  rollout_ = const_cast< ::google::api::servicemanagement::v1::Rollout*>(&::google::api::servicemanagement::v1::Rollout::default_instance());
+  rollout_ = const_cast< ::google::api::servicemanagement::v1::Rollout*>(
+      ::google::api::servicemanagement::v1::Rollout::internal_default_instance());
 }
 
 CreateServiceRolloutRequest::CreateServiceRolloutRequest(const CreateServiceRolloutRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
 }
 
 void CreateServiceRolloutRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   rollout_ = NULL;
+  _cached_size_ = 0;
 }
 
 CreateServiceRolloutRequest::~CreateServiceRolloutRequest() {
@@ -5167,7 +5290,7 @@ CreateServiceRolloutRequest::~CreateServiceRolloutRequest() {
 
 void CreateServiceRolloutRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &CreateServiceRolloutRequest_default_instance_.get()) {
     delete rollout_;
   }
 }
@@ -5183,11 +5306,11 @@ const ::google::protobuf::Descriptor* CreateServiceRolloutRequest::descriptor() 
 }
 
 const CreateServiceRolloutRequest& CreateServiceRolloutRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-CreateServiceRolloutRequest* CreateServiceRolloutRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateServiceRolloutRequest> CreateServiceRolloutRequest_default_instance_;
 
 CreateServiceRolloutRequest* CreateServiceRolloutRequest::New(::google::protobuf::Arena* arena) const {
   CreateServiceRolloutRequest* n = new CreateServiceRolloutRequest;
@@ -5288,6 +5411,7 @@ void CreateServiceRolloutRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateServiceRolloutRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -5311,9 +5435,9 @@ void CreateServiceRolloutRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateServiceRolloutRequest::ByteSize() const {
+size_t CreateServiceRolloutRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -5329,18 +5453,17 @@ int CreateServiceRolloutRequest::ByteSize() const {
         *this->rollout_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateServiceRolloutRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateServiceRolloutRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateServiceRolloutRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateServiceRolloutRequest>(
           &from);
   if (source == NULL) {
@@ -5348,15 +5471,21 @@ void CreateServiceRolloutRequest::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateServiceRolloutRequest::MergeFrom(const CreateServiceRolloutRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateServiceRolloutRequest::UnsafeMergeFrom(const CreateServiceRolloutRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -5377,7 +5506,7 @@ void CreateServiceRolloutRequest::CopyFrom(const CreateServiceRolloutRequest& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.CreateServiceRolloutRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateServiceRolloutRequest::IsInitialized() const {
@@ -5411,37 +5540,37 @@ void CreateServiceRolloutRequest::InternalSwap(CreateServiceRolloutRequest* othe
 void CreateServiceRolloutRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CreateServiceRolloutRequest::service_name() const {
+const ::std::string& CreateServiceRolloutRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.CreateServiceRolloutRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateServiceRolloutRequest::set_service_name(const ::std::string& value) {
+void CreateServiceRolloutRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.CreateServiceRolloutRequest.service_name)
 }
- void CreateServiceRolloutRequest::set_service_name(const char* value) {
+void CreateServiceRolloutRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.CreateServiceRolloutRequest.service_name)
 }
- void CreateServiceRolloutRequest::set_service_name(const char* value, size_t size) {
+void CreateServiceRolloutRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.CreateServiceRolloutRequest.service_name)
 }
- ::std::string* CreateServiceRolloutRequest::mutable_service_name() {
+::std::string* CreateServiceRolloutRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.CreateServiceRolloutRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CreateServiceRolloutRequest::release_service_name() {
+::std::string* CreateServiceRolloutRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.CreateServiceRolloutRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateServiceRolloutRequest::set_allocated_service_name(::std::string* service_name) {
+void CreateServiceRolloutRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -5453,7 +5582,7 @@ void CreateServiceRolloutRequest::clear_service_name() {
 
 // optional .google.api.servicemanagement.v1.Rollout rollout = 2;
 bool CreateServiceRolloutRequest::has_rollout() const {
-  return !_is_default_instance_ && rollout_ != NULL;
+  return this != internal_default_instance() && rollout_ != NULL;
 }
 void CreateServiceRolloutRequest::clear_rollout() {
   if (GetArenaNoVirtual() == NULL && rollout_ != NULL) delete rollout_;
@@ -5461,7 +5590,8 @@ void CreateServiceRolloutRequest::clear_rollout() {
 }
 const ::google::api::servicemanagement::v1::Rollout& CreateServiceRolloutRequest::rollout() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.CreateServiceRolloutRequest.rollout)
-  return rollout_ != NULL ? *rollout_ : *default_instance_->rollout_;
+  return rollout_ != NULL ? *rollout_
+                         : *::google::api::servicemanagement::v1::Rollout::internal_default_instance();
 }
 ::google::api::servicemanagement::v1::Rollout* CreateServiceRolloutRequest::mutable_rollout() {
   
@@ -5489,6 +5619,9 @@ void CreateServiceRolloutRequest::set_allocated_rollout(::google::api::servicema
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.CreateServiceRolloutRequest.rollout)
 }
 
+inline const CreateServiceRolloutRequest* CreateServiceRolloutRequest::internal_default_instance() {
+  return &CreateServiceRolloutRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5501,29 +5634,27 @@ const int ListServiceRolloutsRequest::kPageSizeFieldNumber;
 
 ListServiceRolloutsRequest::ListServiceRolloutsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
 }
 
 void ListServiceRolloutsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceRolloutsRequest::ListServiceRolloutsRequest(const ListServiceRolloutsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
 }
 
 void ListServiceRolloutsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListServiceRolloutsRequest::~ListServiceRolloutsRequest() {
@@ -5534,8 +5665,6 @@ ListServiceRolloutsRequest::~ListServiceRolloutsRequest() {
 void ListServiceRolloutsRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListServiceRolloutsRequest::SetCachedSize(int size) const {
@@ -5549,11 +5678,11 @@ const ::google::protobuf::Descriptor* ListServiceRolloutsRequest::descriptor() {
 }
 
 const ListServiceRolloutsRequest& ListServiceRolloutsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceRolloutsRequest* ListServiceRolloutsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceRolloutsRequest> ListServiceRolloutsRequest_default_instance_;
 
 ListServiceRolloutsRequest* ListServiceRolloutsRequest::New(::google::protobuf::Arena* arena) const {
   ListServiceRolloutsRequest* n = new ListServiceRolloutsRequest;
@@ -5617,10 +5746,10 @@ bool ListServiceRolloutsRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5682,6 +5811,7 @@ void ListServiceRolloutsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceRolloutsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -5714,9 +5844,9 @@ void ListServiceRolloutsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceRolloutsRequest::ByteSize() const {
+size_t ListServiceRolloutsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -5739,18 +5869,17 @@ int ListServiceRolloutsRequest::ByteSize() const {
         this->page_size());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceRolloutsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceRolloutsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceRolloutsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceRolloutsRequest>(
           &from);
   if (source == NULL) {
@@ -5758,15 +5887,21 @@ void ListServiceRolloutsRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceRolloutsRequest::MergeFrom(const ListServiceRolloutsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServiceRolloutsRequest::UnsafeMergeFrom(const ListServiceRolloutsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -5791,7 +5926,7 @@ void ListServiceRolloutsRequest::CopyFrom(const ListServiceRolloutsRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.ListServiceRolloutsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceRolloutsRequest::IsInitialized() const {
@@ -5826,37 +5961,37 @@ void ListServiceRolloutsRequest::InternalSwap(ListServiceRolloutsRequest* other)
 void ListServiceRolloutsRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServiceRolloutsRequest::service_name() const {
+const ::std::string& ListServiceRolloutsRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceRolloutsRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceRolloutsRequest::set_service_name(const ::std::string& value) {
+void ListServiceRolloutsRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceRolloutsRequest.service_name)
 }
- void ListServiceRolloutsRequest::set_service_name(const char* value) {
+void ListServiceRolloutsRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServiceRolloutsRequest.service_name)
 }
- void ListServiceRolloutsRequest::set_service_name(const char* value, size_t size) {
+void ListServiceRolloutsRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServiceRolloutsRequest.service_name)
 }
- ::std::string* ListServiceRolloutsRequest::mutable_service_name() {
+::std::string* ListServiceRolloutsRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServiceRolloutsRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServiceRolloutsRequest::release_service_name() {
+::std::string* ListServiceRolloutsRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServiceRolloutsRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceRolloutsRequest::set_allocated_service_name(::std::string* service_name) {
+void ListServiceRolloutsRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -5870,37 +6005,37 @@ void ListServiceRolloutsRequest::clear_service_name() {
 void ListServiceRolloutsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServiceRolloutsRequest::page_token() const {
+const ::std::string& ListServiceRolloutsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceRolloutsRequest::set_page_token(const ::std::string& value) {
+void ListServiceRolloutsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_token)
 }
- void ListServiceRolloutsRequest::set_page_token(const char* value) {
+void ListServiceRolloutsRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_token)
 }
- void ListServiceRolloutsRequest::set_page_token(const char* value, size_t size) {
+void ListServiceRolloutsRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_token)
 }
- ::std::string* ListServiceRolloutsRequest::mutable_page_token() {
+::std::string* ListServiceRolloutsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServiceRolloutsRequest::release_page_token() {
+::std::string* ListServiceRolloutsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceRolloutsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListServiceRolloutsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -5914,16 +6049,19 @@ void ListServiceRolloutsRequest::clear_page_token() {
 void ListServiceRolloutsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListServiceRolloutsRequest::page_size() const {
+::google::protobuf::int32 ListServiceRolloutsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_size)
   return page_size_;
 }
- void ListServiceRolloutsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListServiceRolloutsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceRolloutsRequest.page_size)
 }
 
+inline const ListServiceRolloutsRequest* ListServiceRolloutsRequest::internal_default_instance() {
+  return &ListServiceRolloutsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5935,27 +6073,25 @@ const int ListServiceRolloutsResponse::kNextPageTokenFieldNumber;
 
 ListServiceRolloutsResponse::ListServiceRolloutsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
 }
 
 void ListServiceRolloutsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListServiceRolloutsResponse::ListServiceRolloutsResponse(const ListServiceRolloutsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
 }
 
 void ListServiceRolloutsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListServiceRolloutsResponse::~ListServiceRolloutsResponse() {
@@ -5965,8 +6101,6 @@ ListServiceRolloutsResponse::~ListServiceRolloutsResponse() {
 
 void ListServiceRolloutsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListServiceRolloutsResponse::SetCachedSize(int size) const {
@@ -5980,11 +6114,11 @@ const ::google::protobuf::Descriptor* ListServiceRolloutsResponse::descriptor() 
 }
 
 const ListServiceRolloutsResponse& ListServiceRolloutsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-ListServiceRolloutsResponse* ListServiceRolloutsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListServiceRolloutsResponse> ListServiceRolloutsResponse_default_instance_;
 
 ListServiceRolloutsResponse* ListServiceRolloutsResponse::New(::google::protobuf::Arena* arena) const {
   ListServiceRolloutsResponse* n = new ListServiceRolloutsResponse;
@@ -6088,6 +6222,7 @@ void ListServiceRolloutsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListServiceRolloutsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
   // repeated .google.api.servicemanagement.v1.Rollout rollouts = 1;
   for (unsigned int i = 0, n = this->rollouts_size(); i < n; i++) {
@@ -6111,9 +6246,9 @@ void ListServiceRolloutsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListServiceRolloutsResponse::ByteSize() const {
+size_t ListServiceRolloutsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -6123,25 +6258,27 @@ int ListServiceRolloutsResponse::ByteSize() const {
   }
 
   // repeated .google.api.servicemanagement.v1.Rollout rollouts = 1;
-  total_size += 1 * this->rollouts_size();
-  for (int i = 0; i < this->rollouts_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->rollouts(i));
+  {
+    unsigned int count = this->rollouts_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->rollouts(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListServiceRolloutsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListServiceRolloutsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListServiceRolloutsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListServiceRolloutsResponse>(
           &from);
   if (source == NULL) {
@@ -6149,15 +6286,21 @@ void ListServiceRolloutsResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListServiceRolloutsResponse::MergeFrom(const ListServiceRolloutsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListServiceRolloutsResponse::UnsafeMergeFrom(const ListServiceRolloutsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   rollouts_.MergeFrom(from.rollouts_);
   if (from.next_page_token().size() > 0) {
 
@@ -6176,7 +6319,7 @@ void ListServiceRolloutsResponse::CopyFrom(const ListServiceRolloutsResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.ListServiceRolloutsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListServiceRolloutsResponse::IsInitialized() const {
@@ -6240,37 +6383,37 @@ ListServiceRolloutsResponse::rollouts() const {
 void ListServiceRolloutsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListServiceRolloutsResponse::next_page_token() const {
+const ::std::string& ListServiceRolloutsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.ListServiceRolloutsResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceRolloutsResponse::set_next_page_token(const ::std::string& value) {
+void ListServiceRolloutsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.ListServiceRolloutsResponse.next_page_token)
 }
- void ListServiceRolloutsResponse::set_next_page_token(const char* value) {
+void ListServiceRolloutsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.ListServiceRolloutsResponse.next_page_token)
 }
- void ListServiceRolloutsResponse::set_next_page_token(const char* value, size_t size) {
+void ListServiceRolloutsResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.ListServiceRolloutsResponse.next_page_token)
 }
- ::std::string* ListServiceRolloutsResponse::mutable_next_page_token() {
+::std::string* ListServiceRolloutsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.ListServiceRolloutsResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListServiceRolloutsResponse::release_next_page_token() {
+::std::string* ListServiceRolloutsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.ListServiceRolloutsResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListServiceRolloutsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListServiceRolloutsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -6280,6 +6423,9 @@ void ListServiceRolloutsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.ListServiceRolloutsResponse.next_page_token)
 }
 
+inline const ListServiceRolloutsResponse* ListServiceRolloutsResponse::internal_default_instance() {
+  return &ListServiceRolloutsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6291,28 +6437,26 @@ const int GetServiceRolloutRequest::kRolloutIdFieldNumber;
 
 GetServiceRolloutRequest::GetServiceRolloutRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.GetServiceRolloutRequest)
 }
 
 void GetServiceRolloutRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetServiceRolloutRequest::GetServiceRolloutRequest(const GetServiceRolloutRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.GetServiceRolloutRequest)
 }
 
 void GetServiceRolloutRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   rollout_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetServiceRolloutRequest::~GetServiceRolloutRequest() {
@@ -6323,8 +6467,6 @@ GetServiceRolloutRequest::~GetServiceRolloutRequest() {
 void GetServiceRolloutRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   rollout_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetServiceRolloutRequest::SetCachedSize(int size) const {
@@ -6338,11 +6480,11 @@ const ::google::protobuf::Descriptor* GetServiceRolloutRequest::descriptor() {
 }
 
 const GetServiceRolloutRequest& GetServiceRolloutRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-GetServiceRolloutRequest* GetServiceRolloutRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetServiceRolloutRequest> GetServiceRolloutRequest_default_instance_;
 
 GetServiceRolloutRequest* GetServiceRolloutRequest::New(::google::protobuf::Arena* arena) const {
   GetServiceRolloutRequest* n = new GetServiceRolloutRequest;
@@ -6450,6 +6592,7 @@ void GetServiceRolloutRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetServiceRolloutRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.GetServiceRolloutRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -6477,9 +6620,9 @@ void GetServiceRolloutRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetServiceRolloutRequest::ByteSize() const {
+size_t GetServiceRolloutRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.GetServiceRolloutRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -6495,18 +6638,17 @@ int GetServiceRolloutRequest::ByteSize() const {
         this->rollout_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetServiceRolloutRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.GetServiceRolloutRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetServiceRolloutRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetServiceRolloutRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetServiceRolloutRequest>(
           &from);
   if (source == NULL) {
@@ -6514,15 +6656,21 @@ void GetServiceRolloutRequest::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.GetServiceRolloutRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetServiceRolloutRequest::MergeFrom(const GetServiceRolloutRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.GetServiceRolloutRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetServiceRolloutRequest::UnsafeMergeFrom(const GetServiceRolloutRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -6544,7 +6692,7 @@ void GetServiceRolloutRequest::CopyFrom(const GetServiceRolloutRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.GetServiceRolloutRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetServiceRolloutRequest::IsInitialized() const {
@@ -6578,37 +6726,37 @@ void GetServiceRolloutRequest::InternalSwap(GetServiceRolloutRequest* other) {
 void GetServiceRolloutRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetServiceRolloutRequest::service_name() const {
+const ::std::string& GetServiceRolloutRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GetServiceRolloutRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceRolloutRequest::set_service_name(const ::std::string& value) {
+void GetServiceRolloutRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.GetServiceRolloutRequest.service_name)
 }
- void GetServiceRolloutRequest::set_service_name(const char* value) {
+void GetServiceRolloutRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.GetServiceRolloutRequest.service_name)
 }
- void GetServiceRolloutRequest::set_service_name(const char* value, size_t size) {
+void GetServiceRolloutRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.GetServiceRolloutRequest.service_name)
 }
- ::std::string* GetServiceRolloutRequest::mutable_service_name() {
+::std::string* GetServiceRolloutRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.GetServiceRolloutRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetServiceRolloutRequest::release_service_name() {
+::std::string* GetServiceRolloutRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.GetServiceRolloutRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceRolloutRequest::set_allocated_service_name(::std::string* service_name) {
+void GetServiceRolloutRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -6622,37 +6770,37 @@ void GetServiceRolloutRequest::clear_service_name() {
 void GetServiceRolloutRequest::clear_rollout_id() {
   rollout_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetServiceRolloutRequest::rollout_id() const {
+const ::std::string& GetServiceRolloutRequest::rollout_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GetServiceRolloutRequest.rollout_id)
   return rollout_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceRolloutRequest::set_rollout_id(const ::std::string& value) {
+void GetServiceRolloutRequest::set_rollout_id(const ::std::string& value) {
   
   rollout_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.GetServiceRolloutRequest.rollout_id)
 }
- void GetServiceRolloutRequest::set_rollout_id(const char* value) {
+void GetServiceRolloutRequest::set_rollout_id(const char* value) {
   
   rollout_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.GetServiceRolloutRequest.rollout_id)
 }
- void GetServiceRolloutRequest::set_rollout_id(const char* value, size_t size) {
+void GetServiceRolloutRequest::set_rollout_id(const char* value, size_t size) {
   
   rollout_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.GetServiceRolloutRequest.rollout_id)
 }
- ::std::string* GetServiceRolloutRequest::mutable_rollout_id() {
+::std::string* GetServiceRolloutRequest::mutable_rollout_id() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.GetServiceRolloutRequest.rollout_id)
   return rollout_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetServiceRolloutRequest::release_rollout_id() {
+::std::string* GetServiceRolloutRequest::release_rollout_id() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.GetServiceRolloutRequest.rollout_id)
   
   return rollout_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetServiceRolloutRequest::set_allocated_rollout_id(::std::string* rollout_id) {
+void GetServiceRolloutRequest::set_allocated_rollout_id(::std::string* rollout_id) {
   if (rollout_id != NULL) {
     
   } else {
@@ -6662,6 +6810,9 @@ void GetServiceRolloutRequest::clear_rollout_id() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.GetServiceRolloutRequest.rollout_id)
 }
 
+inline const GetServiceRolloutRequest* GetServiceRolloutRequest::internal_default_instance() {
+  return &GetServiceRolloutRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6673,28 +6824,26 @@ const int EnableServiceRequest::kConsumerIdFieldNumber;
 
 EnableServiceRequest::EnableServiceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.EnableServiceRequest)
 }
 
 void EnableServiceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 EnableServiceRequest::EnableServiceRequest(const EnableServiceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.EnableServiceRequest)
 }
 
 void EnableServiceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   consumer_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 EnableServiceRequest::~EnableServiceRequest() {
@@ -6705,8 +6854,6 @@ EnableServiceRequest::~EnableServiceRequest() {
 void EnableServiceRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   consumer_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void EnableServiceRequest::SetCachedSize(int size) const {
@@ -6720,11 +6867,11 @@ const ::google::protobuf::Descriptor* EnableServiceRequest::descriptor() {
 }
 
 const EnableServiceRequest& EnableServiceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-EnableServiceRequest* EnableServiceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<EnableServiceRequest> EnableServiceRequest_default_instance_;
 
 EnableServiceRequest* EnableServiceRequest::New(::google::protobuf::Arena* arena) const {
   EnableServiceRequest* n = new EnableServiceRequest;
@@ -6832,6 +6979,7 @@ void EnableServiceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* EnableServiceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.EnableServiceRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -6859,9 +7007,9 @@ void EnableServiceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int EnableServiceRequest::ByteSize() const {
+size_t EnableServiceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.EnableServiceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -6877,18 +7025,17 @@ int EnableServiceRequest::ByteSize() const {
         this->consumer_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void EnableServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.EnableServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const EnableServiceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const EnableServiceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const EnableServiceRequest>(
           &from);
   if (source == NULL) {
@@ -6896,15 +7043,21 @@ void EnableServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.EnableServiceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void EnableServiceRequest::MergeFrom(const EnableServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.EnableServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void EnableServiceRequest::UnsafeMergeFrom(const EnableServiceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -6926,7 +7079,7 @@ void EnableServiceRequest::CopyFrom(const EnableServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.EnableServiceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool EnableServiceRequest::IsInitialized() const {
@@ -6960,37 +7113,37 @@ void EnableServiceRequest::InternalSwap(EnableServiceRequest* other) {
 void EnableServiceRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& EnableServiceRequest::service_name() const {
+const ::std::string& EnableServiceRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.EnableServiceRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EnableServiceRequest::set_service_name(const ::std::string& value) {
+void EnableServiceRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.EnableServiceRequest.service_name)
 }
- void EnableServiceRequest::set_service_name(const char* value) {
+void EnableServiceRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.EnableServiceRequest.service_name)
 }
- void EnableServiceRequest::set_service_name(const char* value, size_t size) {
+void EnableServiceRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.EnableServiceRequest.service_name)
 }
- ::std::string* EnableServiceRequest::mutable_service_name() {
+::std::string* EnableServiceRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.EnableServiceRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* EnableServiceRequest::release_service_name() {
+::std::string* EnableServiceRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.EnableServiceRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EnableServiceRequest::set_allocated_service_name(::std::string* service_name) {
+void EnableServiceRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -7004,37 +7157,37 @@ void EnableServiceRequest::clear_service_name() {
 void EnableServiceRequest::clear_consumer_id() {
   consumer_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& EnableServiceRequest::consumer_id() const {
+const ::std::string& EnableServiceRequest::consumer_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.EnableServiceRequest.consumer_id)
   return consumer_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EnableServiceRequest::set_consumer_id(const ::std::string& value) {
+void EnableServiceRequest::set_consumer_id(const ::std::string& value) {
   
   consumer_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.EnableServiceRequest.consumer_id)
 }
- void EnableServiceRequest::set_consumer_id(const char* value) {
+void EnableServiceRequest::set_consumer_id(const char* value) {
   
   consumer_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.EnableServiceRequest.consumer_id)
 }
- void EnableServiceRequest::set_consumer_id(const char* value, size_t size) {
+void EnableServiceRequest::set_consumer_id(const char* value, size_t size) {
   
   consumer_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.EnableServiceRequest.consumer_id)
 }
- ::std::string* EnableServiceRequest::mutable_consumer_id() {
+::std::string* EnableServiceRequest::mutable_consumer_id() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.EnableServiceRequest.consumer_id)
   return consumer_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* EnableServiceRequest::release_consumer_id() {
+::std::string* EnableServiceRequest::release_consumer_id() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.EnableServiceRequest.consumer_id)
   
   return consumer_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EnableServiceRequest::set_allocated_consumer_id(::std::string* consumer_id) {
+void EnableServiceRequest::set_allocated_consumer_id(::std::string* consumer_id) {
   if (consumer_id != NULL) {
     
   } else {
@@ -7044,6 +7197,9 @@ void EnableServiceRequest::clear_consumer_id() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.EnableServiceRequest.consumer_id)
 }
 
+inline const EnableServiceRequest* EnableServiceRequest::internal_default_instance() {
+  return &EnableServiceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7055,28 +7211,26 @@ const int DisableServiceRequest::kConsumerIdFieldNumber;
 
 DisableServiceRequest::DisableServiceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.DisableServiceRequest)
 }
 
 void DisableServiceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DisableServiceRequest::DisableServiceRequest(const DisableServiceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.DisableServiceRequest)
 }
 
 void DisableServiceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   consumer_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DisableServiceRequest::~DisableServiceRequest() {
@@ -7087,8 +7241,6 @@ DisableServiceRequest::~DisableServiceRequest() {
 void DisableServiceRequest::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   consumer_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DisableServiceRequest::SetCachedSize(int size) const {
@@ -7102,11 +7254,11 @@ const ::google::protobuf::Descriptor* DisableServiceRequest::descriptor() {
 }
 
 const DisableServiceRequest& DisableServiceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-DisableServiceRequest* DisableServiceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DisableServiceRequest> DisableServiceRequest_default_instance_;
 
 DisableServiceRequest* DisableServiceRequest::New(::google::protobuf::Arena* arena) const {
   DisableServiceRequest* n = new DisableServiceRequest;
@@ -7214,6 +7366,7 @@ void DisableServiceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DisableServiceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.DisableServiceRequest)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -7241,9 +7394,9 @@ void DisableServiceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DisableServiceRequest::ByteSize() const {
+size_t DisableServiceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.DisableServiceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -7259,18 +7412,17 @@ int DisableServiceRequest::ByteSize() const {
         this->consumer_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DisableServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.DisableServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DisableServiceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DisableServiceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DisableServiceRequest>(
           &from);
   if (source == NULL) {
@@ -7278,15 +7430,21 @@ void DisableServiceRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.DisableServiceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DisableServiceRequest::MergeFrom(const DisableServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.DisableServiceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DisableServiceRequest::UnsafeMergeFrom(const DisableServiceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_name().size() > 0) {
 
     service_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_name_);
@@ -7308,7 +7466,7 @@ void DisableServiceRequest::CopyFrom(const DisableServiceRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.DisableServiceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DisableServiceRequest::IsInitialized() const {
@@ -7342,37 +7500,37 @@ void DisableServiceRequest::InternalSwap(DisableServiceRequest* other) {
 void DisableServiceRequest::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DisableServiceRequest::service_name() const {
+const ::std::string& DisableServiceRequest::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.DisableServiceRequest.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DisableServiceRequest::set_service_name(const ::std::string& value) {
+void DisableServiceRequest::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.DisableServiceRequest.service_name)
 }
- void DisableServiceRequest::set_service_name(const char* value) {
+void DisableServiceRequest::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.DisableServiceRequest.service_name)
 }
- void DisableServiceRequest::set_service_name(const char* value, size_t size) {
+void DisableServiceRequest::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.DisableServiceRequest.service_name)
 }
- ::std::string* DisableServiceRequest::mutable_service_name() {
+::std::string* DisableServiceRequest::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.DisableServiceRequest.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DisableServiceRequest::release_service_name() {
+::std::string* DisableServiceRequest::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.DisableServiceRequest.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DisableServiceRequest::set_allocated_service_name(::std::string* service_name) {
+void DisableServiceRequest::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -7386,37 +7544,37 @@ void DisableServiceRequest::clear_service_name() {
 void DisableServiceRequest::clear_consumer_id() {
   consumer_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DisableServiceRequest::consumer_id() const {
+const ::std::string& DisableServiceRequest::consumer_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.DisableServiceRequest.consumer_id)
   return consumer_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DisableServiceRequest::set_consumer_id(const ::std::string& value) {
+void DisableServiceRequest::set_consumer_id(const ::std::string& value) {
   
   consumer_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.DisableServiceRequest.consumer_id)
 }
- void DisableServiceRequest::set_consumer_id(const char* value) {
+void DisableServiceRequest::set_consumer_id(const char* value) {
   
   consumer_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.DisableServiceRequest.consumer_id)
 }
- void DisableServiceRequest::set_consumer_id(const char* value, size_t size) {
+void DisableServiceRequest::set_consumer_id(const char* value, size_t size) {
   
   consumer_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.DisableServiceRequest.consumer_id)
 }
- ::std::string* DisableServiceRequest::mutable_consumer_id() {
+::std::string* DisableServiceRequest::mutable_consumer_id() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.DisableServiceRequest.consumer_id)
   return consumer_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DisableServiceRequest::release_consumer_id() {
+::std::string* DisableServiceRequest::release_consumer_id() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.DisableServiceRequest.consumer_id)
   
   return consumer_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DisableServiceRequest::set_allocated_consumer_id(::std::string* consumer_id) {
+void DisableServiceRequest::set_allocated_consumer_id(::std::string* consumer_id) {
   if (consumer_id != NULL) {
     
   } else {
@@ -7426,6 +7584,9 @@ void DisableServiceRequest::clear_consumer_id() {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.DisableServiceRequest.consumer_id)
 }
 
+inline const DisableServiceRequest* DisableServiceRequest::internal_default_instance() {
+  return &DisableServiceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7437,29 +7598,30 @@ const int GenerateConfigReportRequest::kOldConfigFieldNumber;
 
 GenerateConfigReportRequest::GenerateConfigReportRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.GenerateConfigReportRequest)
 }
 
 void GenerateConfigReportRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  new_config_ = const_cast< ::google::protobuf::Any*>(&::google::protobuf::Any::default_instance());
-  old_config_ = const_cast< ::google::protobuf::Any*>(&::google::protobuf::Any::default_instance());
+  new_config_ = const_cast< ::google::protobuf::Any*>(
+      ::google::protobuf::Any::internal_default_instance());
+  old_config_ = const_cast< ::google::protobuf::Any*>(
+      ::google::protobuf::Any::internal_default_instance());
 }
 
 GenerateConfigReportRequest::GenerateConfigReportRequest(const GenerateConfigReportRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.GenerateConfigReportRequest)
 }
 
 void GenerateConfigReportRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   new_config_ = NULL;
   old_config_ = NULL;
+  _cached_size_ = 0;
 }
 
 GenerateConfigReportRequest::~GenerateConfigReportRequest() {
@@ -7468,7 +7630,7 @@ GenerateConfigReportRequest::~GenerateConfigReportRequest() {
 }
 
 void GenerateConfigReportRequest::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &GenerateConfigReportRequest_default_instance_.get()) {
     delete new_config_;
     delete old_config_;
   }
@@ -7485,11 +7647,11 @@ const ::google::protobuf::Descriptor* GenerateConfigReportRequest::descriptor() 
 }
 
 const GenerateConfigReportRequest& GenerateConfigReportRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-GenerateConfigReportRequest* GenerateConfigReportRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GenerateConfigReportRequest> GenerateConfigReportRequest_default_instance_;
 
 GenerateConfigReportRequest* GenerateConfigReportRequest::New(::google::protobuf::Arena* arena) const {
   GenerateConfigReportRequest* n = new GenerateConfigReportRequest;
@@ -7583,6 +7745,7 @@ void GenerateConfigReportRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GenerateConfigReportRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.GenerateConfigReportRequest)
   // optional .google.protobuf.Any new_config = 1;
   if (this->has_new_config()) {
@@ -7602,9 +7765,9 @@ void GenerateConfigReportRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GenerateConfigReportRequest::ByteSize() const {
+size_t GenerateConfigReportRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.GenerateConfigReportRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Any new_config = 1;
   if (this->has_new_config()) {
@@ -7620,18 +7783,17 @@ int GenerateConfigReportRequest::ByteSize() const {
         *this->old_config_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GenerateConfigReportRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.GenerateConfigReportRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GenerateConfigReportRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GenerateConfigReportRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GenerateConfigReportRequest>(
           &from);
   if (source == NULL) {
@@ -7639,15 +7801,21 @@ void GenerateConfigReportRequest::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.GenerateConfigReportRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GenerateConfigReportRequest::MergeFrom(const GenerateConfigReportRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.GenerateConfigReportRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GenerateConfigReportRequest::UnsafeMergeFrom(const GenerateConfigReportRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_new_config()) {
     mutable_new_config()->::google::protobuf::Any::MergeFrom(from.new_config());
   }
@@ -7667,7 +7835,7 @@ void GenerateConfigReportRequest::CopyFrom(const GenerateConfigReportRequest& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.GenerateConfigReportRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GenerateConfigReportRequest::IsInitialized() const {
@@ -7699,7 +7867,7 @@ void GenerateConfigReportRequest::InternalSwap(GenerateConfigReportRequest* othe
 
 // optional .google.protobuf.Any new_config = 1;
 bool GenerateConfigReportRequest::has_new_config() const {
-  return !_is_default_instance_ && new_config_ != NULL;
+  return this != internal_default_instance() && new_config_ != NULL;
 }
 void GenerateConfigReportRequest::clear_new_config() {
   if (GetArenaNoVirtual() == NULL && new_config_ != NULL) delete new_config_;
@@ -7707,7 +7875,8 @@ void GenerateConfigReportRequest::clear_new_config() {
 }
 const ::google::protobuf::Any& GenerateConfigReportRequest::new_config() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GenerateConfigReportRequest.new_config)
-  return new_config_ != NULL ? *new_config_ : *default_instance_->new_config_;
+  return new_config_ != NULL ? *new_config_
+                         : *::google::protobuf::Any::internal_default_instance();
 }
 ::google::protobuf::Any* GenerateConfigReportRequest::mutable_new_config() {
   
@@ -7737,7 +7906,7 @@ void GenerateConfigReportRequest::set_allocated_new_config(::google::protobuf::A
 
 // optional .google.protobuf.Any old_config = 2;
 bool GenerateConfigReportRequest::has_old_config() const {
-  return !_is_default_instance_ && old_config_ != NULL;
+  return this != internal_default_instance() && old_config_ != NULL;
 }
 void GenerateConfigReportRequest::clear_old_config() {
   if (GetArenaNoVirtual() == NULL && old_config_ != NULL) delete old_config_;
@@ -7745,7 +7914,8 @@ void GenerateConfigReportRequest::clear_old_config() {
 }
 const ::google::protobuf::Any& GenerateConfigReportRequest::old_config() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GenerateConfigReportRequest.old_config)
-  return old_config_ != NULL ? *old_config_ : *default_instance_->old_config_;
+  return old_config_ != NULL ? *old_config_
+                         : *::google::protobuf::Any::internal_default_instance();
 }
 ::google::protobuf::Any* GenerateConfigReportRequest::mutable_old_config() {
   
@@ -7773,6 +7943,9 @@ void GenerateConfigReportRequest::set_allocated_old_config(::google::protobuf::A
   // @@protoc_insertion_point(field_set_allocated:google.api.servicemanagement.v1.GenerateConfigReportRequest.old_config)
 }
 
+inline const GenerateConfigReportRequest* GenerateConfigReportRequest::internal_default_instance() {
+  return &GenerateConfigReportRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7786,28 +7959,26 @@ const int GenerateConfigReportResponse::kDiagnosticsFieldNumber;
 
 GenerateConfigReportResponse::GenerateConfigReportResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicemanagement.v1.GenerateConfigReportResponse)
 }
 
 void GenerateConfigReportResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GenerateConfigReportResponse::GenerateConfigReportResponse(const GenerateConfigReportResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicemanagement.v1.GenerateConfigReportResponse)
 }
 
 void GenerateConfigReportResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   service_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GenerateConfigReportResponse::~GenerateConfigReportResponse() {
@@ -7818,8 +7989,6 @@ GenerateConfigReportResponse::~GenerateConfigReportResponse() {
 void GenerateConfigReportResponse::SharedDtor() {
   service_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GenerateConfigReportResponse::SetCachedSize(int size) const {
@@ -7833,11 +8002,11 @@ const ::google::protobuf::Descriptor* GenerateConfigReportResponse::descriptor()
 }
 
 const GenerateConfigReportResponse& GenerateConfigReportResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicemanagement_2fv1_2fservicemanager_2eproto();
+  return *internal_default_instance();
 }
 
-GenerateConfigReportResponse* GenerateConfigReportResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GenerateConfigReportResponse> GenerateConfigReportResponse_default_instance_;
 
 GenerateConfigReportResponse* GenerateConfigReportResponse::New(::google::protobuf::Arena* arena) const {
   GenerateConfigReportResponse* n = new GenerateConfigReportResponse;
@@ -7992,6 +8161,7 @@ void GenerateConfigReportResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GenerateConfigReportResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicemanagement.v1.GenerateConfigReportResponse)
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -8033,9 +8203,9 @@ void GenerateConfigReportResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int GenerateConfigReportResponse::ByteSize() const {
+size_t GenerateConfigReportResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicemanagement.v1.GenerateConfigReportResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string service_name = 1;
   if (this->service_name().size() > 0) {
@@ -8052,33 +8222,38 @@ int GenerateConfigReportResponse::ByteSize() const {
   }
 
   // repeated .google.api.servicemanagement.v1.ChangeReport change_reports = 3;
-  total_size += 1 * this->change_reports_size();
-  for (int i = 0; i < this->change_reports_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->change_reports(i));
+  {
+    unsigned int count = this->change_reports_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->change_reports(i));
+    }
   }
 
   // repeated .google.api.servicemanagement.v1.Diagnostic diagnostics = 4;
-  total_size += 1 * this->diagnostics_size();
-  for (int i = 0; i < this->diagnostics_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->diagnostics(i));
+  {
+    unsigned int count = this->diagnostics_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->diagnostics(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GenerateConfigReportResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicemanagement.v1.GenerateConfigReportResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GenerateConfigReportResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GenerateConfigReportResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GenerateConfigReportResponse>(
           &from);
   if (source == NULL) {
@@ -8086,15 +8261,21 @@ void GenerateConfigReportResponse::MergeFrom(const ::google::protobuf::Message& 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicemanagement.v1.GenerateConfigReportResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GenerateConfigReportResponse::MergeFrom(const GenerateConfigReportResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicemanagement.v1.GenerateConfigReportResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GenerateConfigReportResponse::UnsafeMergeFrom(const GenerateConfigReportResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   change_reports_.MergeFrom(from.change_reports_);
   diagnostics_.MergeFrom(from.diagnostics_);
   if (from.service_name().size() > 0) {
@@ -8118,7 +8299,7 @@ void GenerateConfigReportResponse::CopyFrom(const GenerateConfigReportResponse& 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicemanagement.v1.GenerateConfigReportResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GenerateConfigReportResponse::IsInitialized() const {
@@ -8154,37 +8335,37 @@ void GenerateConfigReportResponse::InternalSwap(GenerateConfigReportResponse* ot
 void GenerateConfigReportResponse::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GenerateConfigReportResponse::service_name() const {
+const ::std::string& GenerateConfigReportResponse::service_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GenerateConfigReportResponse.service_name)
   return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GenerateConfigReportResponse::set_service_name(const ::std::string& value) {
+void GenerateConfigReportResponse::set_service_name(const ::std::string& value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.GenerateConfigReportResponse.service_name)
 }
- void GenerateConfigReportResponse::set_service_name(const char* value) {
+void GenerateConfigReportResponse::set_service_name(const char* value) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.GenerateConfigReportResponse.service_name)
 }
- void GenerateConfigReportResponse::set_service_name(const char* value, size_t size) {
+void GenerateConfigReportResponse::set_service_name(const char* value, size_t size) {
   
   service_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.GenerateConfigReportResponse.service_name)
 }
- ::std::string* GenerateConfigReportResponse::mutable_service_name() {
+::std::string* GenerateConfigReportResponse::mutable_service_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.GenerateConfigReportResponse.service_name)
   return service_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GenerateConfigReportResponse::release_service_name() {
+::std::string* GenerateConfigReportResponse::release_service_name() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.GenerateConfigReportResponse.service_name)
   
   return service_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GenerateConfigReportResponse::set_allocated_service_name(::std::string* service_name) {
+void GenerateConfigReportResponse::set_allocated_service_name(::std::string* service_name) {
   if (service_name != NULL) {
     
   } else {
@@ -8198,37 +8379,37 @@ void GenerateConfigReportResponse::clear_service_name() {
 void GenerateConfigReportResponse::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GenerateConfigReportResponse::id() const {
+const ::std::string& GenerateConfigReportResponse::id() const {
   // @@protoc_insertion_point(field_get:google.api.servicemanagement.v1.GenerateConfigReportResponse.id)
   return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GenerateConfigReportResponse::set_id(const ::std::string& value) {
+void GenerateConfigReportResponse::set_id(const ::std::string& value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.servicemanagement.v1.GenerateConfigReportResponse.id)
 }
- void GenerateConfigReportResponse::set_id(const char* value) {
+void GenerateConfigReportResponse::set_id(const char* value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.servicemanagement.v1.GenerateConfigReportResponse.id)
 }
- void GenerateConfigReportResponse::set_id(const char* value, size_t size) {
+void GenerateConfigReportResponse::set_id(const char* value, size_t size) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.servicemanagement.v1.GenerateConfigReportResponse.id)
 }
- ::std::string* GenerateConfigReportResponse::mutable_id() {
+::std::string* GenerateConfigReportResponse::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicemanagement.v1.GenerateConfigReportResponse.id)
   return id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GenerateConfigReportResponse::release_id() {
+::std::string* GenerateConfigReportResponse::release_id() {
   // @@protoc_insertion_point(field_release:google.api.servicemanagement.v1.GenerateConfigReportResponse.id)
   
   return id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GenerateConfigReportResponse::set_allocated_id(::std::string* id) {
+void GenerateConfigReportResponse::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -8298,6 +8479,9 @@ GenerateConfigReportResponse::diagnostics() const {
   return diagnostics_;
 }
 
+inline const GenerateConfigReportResponse* GenerateConfigReportResponse::internal_default_instance() {
+  return &GenerateConfigReportResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

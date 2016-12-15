@@ -101,14 +101,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   Cluster_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Cluster_descriptor_,
-      Cluster::default_instance_,
+      Cluster::internal_default_instance(),
       Cluster_offsets_,
       -1,
       -1,
       -1,
       sizeof(Cluster),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, _internal_metadata_));
   ClusterConfig_descriptor_ = file->message_type(1);
   static const int ClusterConfig_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, config_bucket_),
@@ -122,14 +121,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   ClusterConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ClusterConfig_descriptor_,
-      ClusterConfig::default_instance_,
+      ClusterConfig::internal_default_instance(),
       ClusterConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(ClusterConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, _internal_metadata_));
   GceClusterConfig_descriptor_ = file->message_type(2);
   static const int GceClusterConfig_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, zone_uri_),
@@ -143,14 +141,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   GceClusterConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GceClusterConfig_descriptor_,
-      GceClusterConfig::default_instance_,
+      GceClusterConfig::internal_default_instance(),
       GceClusterConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(GceClusterConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, _internal_metadata_));
   GceClusterConfig_MetadataEntry_descriptor_ = GceClusterConfig_descriptor_->nested_type(0);
   InstanceGroupConfig_descriptor_ = file->message_type(3);
   static const int InstanceGroupConfig_offsets_[7] = {
@@ -165,14 +162,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   InstanceGroupConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       InstanceGroupConfig_descriptor_,
-      InstanceGroupConfig::default_instance_,
+      InstanceGroupConfig::internal_default_instance(),
       InstanceGroupConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(InstanceGroupConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, _internal_metadata_));
   ManagedGroupConfig_descriptor_ = file->message_type(4);
   static const int ManagedGroupConfig_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, instance_template_name_),
@@ -181,14 +177,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   ManagedGroupConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ManagedGroupConfig_descriptor_,
-      ManagedGroupConfig::default_instance_,
+      ManagedGroupConfig::internal_default_instance(),
       ManagedGroupConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(ManagedGroupConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, _internal_metadata_));
   DiskConfig_descriptor_ = file->message_type(5);
   static const int DiskConfig_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, boot_disk_size_gb_),
@@ -197,14 +192,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   DiskConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DiskConfig_descriptor_,
-      DiskConfig::default_instance_,
+      DiskConfig::internal_default_instance(),
       DiskConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(DiskConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, _internal_metadata_));
   NodeInitializationAction_descriptor_ = file->message_type(6);
   static const int NodeInitializationAction_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, executable_file_),
@@ -213,14 +207,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   NodeInitializationAction_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       NodeInitializationAction_descriptor_,
-      NodeInitializationAction::default_instance_,
+      NodeInitializationAction::internal_default_instance(),
       NodeInitializationAction_offsets_,
       -1,
       -1,
       -1,
       sizeof(NodeInitializationAction),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, _internal_metadata_));
   ClusterStatus_descriptor_ = file->message_type(7);
   static const int ClusterStatus_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, state_),
@@ -230,14 +223,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   ClusterStatus_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ClusterStatus_descriptor_,
-      ClusterStatus::default_instance_,
+      ClusterStatus::internal_default_instance(),
       ClusterStatus_offsets_,
       -1,
       -1,
       -1,
       sizeof(ClusterStatus),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, _internal_metadata_));
   ClusterStatus_State_descriptor_ = ClusterStatus_descriptor_->enum_type(0);
   SoftwareConfig_descriptor_ = file->message_type(8);
   static const int SoftwareConfig_offsets_[2] = {
@@ -247,14 +239,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   SoftwareConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SoftwareConfig_descriptor_,
-      SoftwareConfig::default_instance_,
+      SoftwareConfig::internal_default_instance(),
       SoftwareConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(SoftwareConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftwareConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftwareConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftwareConfig, _internal_metadata_));
   SoftwareConfig_PropertiesEntry_descriptor_ = SoftwareConfig_descriptor_->nested_type(0);
   CreateClusterRequest_descriptor_ = file->message_type(9);
   static const int CreateClusterRequest_offsets_[3] = {
@@ -265,14 +256,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   CreateClusterRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateClusterRequest_descriptor_,
-      CreateClusterRequest::default_instance_,
+      CreateClusterRequest::internal_default_instance(),
       CreateClusterRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateClusterRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, _internal_metadata_));
   UpdateClusterRequest_descriptor_ = file->message_type(10);
   static const int UpdateClusterRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, project_id_),
@@ -284,14 +274,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   UpdateClusterRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UpdateClusterRequest_descriptor_,
-      UpdateClusterRequest::default_instance_,
+      UpdateClusterRequest::internal_default_instance(),
       UpdateClusterRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(UpdateClusterRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, _internal_metadata_));
   DeleteClusterRequest_descriptor_ = file->message_type(11);
   static const int DeleteClusterRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, project_id_),
@@ -301,14 +290,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   DeleteClusterRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteClusterRequest_descriptor_,
-      DeleteClusterRequest::default_instance_,
+      DeleteClusterRequest::internal_default_instance(),
       DeleteClusterRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteClusterRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, _internal_metadata_));
   GetClusterRequest_descriptor_ = file->message_type(12);
   static const int GetClusterRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, project_id_),
@@ -318,14 +306,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   GetClusterRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetClusterRequest_descriptor_,
-      GetClusterRequest::default_instance_,
+      GetClusterRequest::internal_default_instance(),
       GetClusterRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetClusterRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, _internal_metadata_));
   ListClustersRequest_descriptor_ = file->message_type(13);
   static const int ListClustersRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, project_id_),
@@ -336,14 +323,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   ListClustersRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListClustersRequest_descriptor_,
-      ListClustersRequest::default_instance_,
+      ListClustersRequest::internal_default_instance(),
       ListClustersRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListClustersRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, _internal_metadata_));
   ListClustersResponse_descriptor_ = file->message_type(14);
   static const int ListClustersResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, clusters_),
@@ -352,14 +338,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   ListClustersResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListClustersResponse_descriptor_,
-      ListClustersResponse::default_instance_,
+      ListClustersResponse::internal_default_instance(),
       ListClustersResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListClustersResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, _internal_metadata_));
   DiagnoseClusterRequest_descriptor_ = file->message_type(15);
   static const int DiagnoseClusterRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, project_id_),
@@ -369,14 +354,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   DiagnoseClusterRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DiagnoseClusterRequest_descriptor_,
-      DiagnoseClusterRequest::default_instance_,
+      DiagnoseClusterRequest::internal_default_instance(),
       DiagnoseClusterRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DiagnoseClusterRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, _internal_metadata_));
   DiagnoseClusterResults_descriptor_ = file->message_type(16);
   static const int DiagnoseClusterResults_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterResults, output_uri_),
@@ -384,20 +368,19 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
   DiagnoseClusterResults_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DiagnoseClusterResults_descriptor_,
-      DiagnoseClusterResults::default_instance_,
+      DiagnoseClusterResults::internal_default_instance(),
       DiagnoseClusterResults_offsets_,
       -1,
       -1,
       -1,
       sizeof(DiagnoseClusterResults),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterResults, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterResults, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterResults, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto);
 }
@@ -406,11 +389,11 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Cluster_descriptor_, &Cluster::default_instance());
+      Cluster_descriptor_, Cluster::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ClusterConfig_descriptor_, &ClusterConfig::default_instance());
+      ClusterConfig_descriptor_, ClusterConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GceClusterConfig_descriptor_, &GceClusterConfig::default_instance());
+      GceClusterConfig_descriptor_, GceClusterConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         GceClusterConfig_MetadataEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -421,17 +404,17 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 GceClusterConfig_MetadataEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      InstanceGroupConfig_descriptor_, &InstanceGroupConfig::default_instance());
+      InstanceGroupConfig_descriptor_, InstanceGroupConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ManagedGroupConfig_descriptor_, &ManagedGroupConfig::default_instance());
+      ManagedGroupConfig_descriptor_, ManagedGroupConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DiskConfig_descriptor_, &DiskConfig::default_instance());
+      DiskConfig_descriptor_, DiskConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      NodeInitializationAction_descriptor_, &NodeInitializationAction::default_instance());
+      NodeInitializationAction_descriptor_, NodeInitializationAction::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ClusterStatus_descriptor_, &ClusterStatus::default_instance());
+      ClusterStatus_descriptor_, ClusterStatus::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SoftwareConfig_descriptor_, &SoftwareConfig::default_instance());
+      SoftwareConfig_descriptor_, SoftwareConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         SoftwareConfig_PropertiesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -442,75 +425,132 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 SoftwareConfig_PropertiesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateClusterRequest_descriptor_, &CreateClusterRequest::default_instance());
+      CreateClusterRequest_descriptor_, CreateClusterRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UpdateClusterRequest_descriptor_, &UpdateClusterRequest::default_instance());
+      UpdateClusterRequest_descriptor_, UpdateClusterRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteClusterRequest_descriptor_, &DeleteClusterRequest::default_instance());
+      DeleteClusterRequest_descriptor_, DeleteClusterRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetClusterRequest_descriptor_, &GetClusterRequest::default_instance());
+      GetClusterRequest_descriptor_, GetClusterRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListClustersRequest_descriptor_, &ListClustersRequest::default_instance());
+      ListClustersRequest_descriptor_, ListClustersRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListClustersResponse_descriptor_, &ListClustersResponse::default_instance());
+      ListClustersResponse_descriptor_, ListClustersResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DiagnoseClusterRequest_descriptor_, &DiagnoseClusterRequest::default_instance());
+      DiagnoseClusterRequest_descriptor_, DiagnoseClusterRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DiagnoseClusterResults_descriptor_, &DiagnoseClusterResults::default_instance());
+      DiagnoseClusterResults_descriptor_, DiagnoseClusterResults::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
-  delete Cluster::default_instance_;
+  Cluster_default_instance_.Shutdown();
   delete Cluster_reflection_;
-  delete ClusterConfig::default_instance_;
+  ClusterConfig_default_instance_.Shutdown();
   delete ClusterConfig_reflection_;
-  delete GceClusterConfig::default_instance_;
+  GceClusterConfig_default_instance_.Shutdown();
   delete GceClusterConfig_reflection_;
-  delete InstanceGroupConfig::default_instance_;
+  InstanceGroupConfig_default_instance_.Shutdown();
   delete InstanceGroupConfig_reflection_;
-  delete ManagedGroupConfig::default_instance_;
+  ManagedGroupConfig_default_instance_.Shutdown();
   delete ManagedGroupConfig_reflection_;
-  delete DiskConfig::default_instance_;
+  DiskConfig_default_instance_.Shutdown();
   delete DiskConfig_reflection_;
-  delete NodeInitializationAction::default_instance_;
+  NodeInitializationAction_default_instance_.Shutdown();
   delete NodeInitializationAction_reflection_;
-  delete ClusterStatus::default_instance_;
+  ClusterStatus_default_instance_.Shutdown();
   delete ClusterStatus_reflection_;
-  delete SoftwareConfig::default_instance_;
+  SoftwareConfig_default_instance_.Shutdown();
   delete SoftwareConfig_reflection_;
-  delete CreateClusterRequest::default_instance_;
+  CreateClusterRequest_default_instance_.Shutdown();
   delete CreateClusterRequest_reflection_;
-  delete UpdateClusterRequest::default_instance_;
+  UpdateClusterRequest_default_instance_.Shutdown();
   delete UpdateClusterRequest_reflection_;
-  delete DeleteClusterRequest::default_instance_;
+  DeleteClusterRequest_default_instance_.Shutdown();
   delete DeleteClusterRequest_reflection_;
-  delete GetClusterRequest::default_instance_;
+  GetClusterRequest_default_instance_.Shutdown();
   delete GetClusterRequest_reflection_;
-  delete ListClustersRequest::default_instance_;
+  ListClustersRequest_default_instance_.Shutdown();
   delete ListClustersRequest_reflection_;
-  delete ListClustersResponse::default_instance_;
+  ListClustersResponse_default_instance_.Shutdown();
   delete ListClustersResponse_reflection_;
-  delete DiagnoseClusterRequest::default_instance_;
+  DiagnoseClusterRequest_default_instance_.Shutdown();
   delete DiagnoseClusterRequest_reflection_;
-  delete DiagnoseClusterResults::default_instance_;
+  DiagnoseClusterResults_default_instance_.Shutdown();
   delete DiagnoseClusterResults_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::cloud::dataproc::v1::protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2foperations_2eproto();
-  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ffield_5fmask_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::cloud::dataproc::v1::protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2foperations_2eproto();
+  ::google::longrunning::protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ffield_5fmask_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Cluster_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ClusterConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GceClusterConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  InstanceGroupConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ManagedGroupConfig_default_instance_.DefaultConstruct();
+  DiskConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  NodeInitializationAction_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ClusterStatus_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SoftwareConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListClustersRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListClustersResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DiagnoseClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DiagnoseClusterResults_default_instance_.DefaultConstruct();
+  Cluster_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ClusterConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GceClusterConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  InstanceGroupConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ManagedGroupConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DiskConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  NodeInitializationAction_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ClusterStatus_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SoftwareConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListClustersRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListClustersResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DiagnoseClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DiagnoseClusterResults_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\'google/cloud/dataproc/v1/clusters.prot"
     "o\022\030google.cloud.dataproc.v1\032\034google/api/"
@@ -614,54 +654,42 @@ void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
     "oc.v1.DiagnoseClusterRequest\032\035.google.lo"
     "ngrunning.Operation\"V\202\323\344\223\002P\"K/v1/project"
     "s/{project_id}/regions/{region}/clusters"
-    "/{cluster_name}:diagnose:\001*B/\n\034com.googl"
-    "e.cloud.dataproc.v1B\rClustersProtoP\001b\006pr"
-    "oto3", 4164);
+    "/{cluster_name}:diagnose:\001*Bq\n\034com.googl"
+    "e.cloud.dataproc.v1B\rClustersProtoP\001Z@go"
+    "ogle.golang.org/genproto/googleapis/clou"
+    "d/dataproc/v1;dataprocb\006proto3", 4230);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/dataproc/v1/clusters.proto", &protobuf_RegisterTypes);
-  Cluster::default_instance_ = new Cluster();
-  ClusterConfig::default_instance_ = new ClusterConfig();
-  GceClusterConfig::default_instance_ = new GceClusterConfig();
-  InstanceGroupConfig::default_instance_ = new InstanceGroupConfig();
-  ManagedGroupConfig::default_instance_ = new ManagedGroupConfig();
-  DiskConfig::default_instance_ = new DiskConfig();
-  NodeInitializationAction::default_instance_ = new NodeInitializationAction();
-  ClusterStatus::default_instance_ = new ClusterStatus();
-  SoftwareConfig::default_instance_ = new SoftwareConfig();
-  CreateClusterRequest::default_instance_ = new CreateClusterRequest();
-  UpdateClusterRequest::default_instance_ = new UpdateClusterRequest();
-  DeleteClusterRequest::default_instance_ = new DeleteClusterRequest();
-  GetClusterRequest::default_instance_ = new GetClusterRequest();
-  ListClustersRequest::default_instance_ = new ListClustersRequest();
-  ListClustersResponse::default_instance_ = new ListClustersResponse();
-  DiagnoseClusterRequest::default_instance_ = new DiagnoseClusterRequest();
-  DiagnoseClusterResults::default_instance_ = new DiagnoseClusterResults();
-  Cluster::default_instance_->InitAsDefaultInstance();
-  ClusterConfig::default_instance_->InitAsDefaultInstance();
-  GceClusterConfig::default_instance_->InitAsDefaultInstance();
-  InstanceGroupConfig::default_instance_->InitAsDefaultInstance();
-  ManagedGroupConfig::default_instance_->InitAsDefaultInstance();
-  DiskConfig::default_instance_->InitAsDefaultInstance();
-  NodeInitializationAction::default_instance_->InitAsDefaultInstance();
-  ClusterStatus::default_instance_->InitAsDefaultInstance();
-  SoftwareConfig::default_instance_->InitAsDefaultInstance();
-  CreateClusterRequest::default_instance_->InitAsDefaultInstance();
-  UpdateClusterRequest::default_instance_->InitAsDefaultInstance();
-  DeleteClusterRequest::default_instance_->InitAsDefaultInstance();
-  GetClusterRequest::default_instance_->InitAsDefaultInstance();
-  ListClustersRequest::default_instance_->InitAsDefaultInstance();
-  ListClustersResponse::default_instance_->InitAsDefaultInstance();
-  DiagnoseClusterRequest::default_instance_->InitAsDefaultInstance();
-  DiagnoseClusterResults::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::cloud::dataproc::v1::protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2foperations_2eproto();
+  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ffield_5fmask_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
     protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -676,33 +704,33 @@ const int Cluster::kClusterUuidFieldNumber;
 
 Cluster::Cluster()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.Cluster)
 }
 
 void Cluster::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  config_ = const_cast< ::google::cloud::dataproc::v1::ClusterConfig*>(&::google::cloud::dataproc::v1::ClusterConfig::default_instance());
-  status_ = const_cast< ::google::cloud::dataproc::v1::ClusterStatus*>(&::google::cloud::dataproc::v1::ClusterStatus::default_instance());
+  config_ = const_cast< ::google::cloud::dataproc::v1::ClusterConfig*>(
+      ::google::cloud::dataproc::v1::ClusterConfig::internal_default_instance());
+  status_ = const_cast< ::google::cloud::dataproc::v1::ClusterStatus*>(
+      ::google::cloud::dataproc::v1::ClusterStatus::internal_default_instance());
 }
 
 Cluster::Cluster(const Cluster& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.Cluster)
 }
 
 void Cluster::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  cluster_uuid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   config_ = NULL;
   status_ = NULL;
-  cluster_uuid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Cluster::~Cluster() {
@@ -714,7 +742,7 @@ void Cluster::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_uuid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &Cluster_default_instance_.get()) {
     delete config_;
     delete status_;
   }
@@ -731,11 +759,11 @@ const ::google::protobuf::Descriptor* Cluster::descriptor() {
 }
 
 const Cluster& Cluster::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-Cluster* Cluster::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Cluster> Cluster_default_instance_;
 
 Cluster* Cluster::New(::google::protobuf::Arena* arena) const {
   Cluster* n = new Cluster;
@@ -937,6 +965,7 @@ void Cluster::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Cluster::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.Cluster)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -996,9 +1025,9 @@ void Cluster::SerializeWithCachedSizes(
   return target;
 }
 
-int Cluster::ByteSize() const {
+size_t Cluster::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.Cluster)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -1036,25 +1065,27 @@ int Cluster::ByteSize() const {
   }
 
   // repeated .google.cloud.dataproc.v1.ClusterStatus status_history = 7;
-  total_size += 1 * this->status_history_size();
-  for (int i = 0; i < this->status_history_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->status_history(i));
+  {
+    unsigned int count = this->status_history_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->status_history(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Cluster::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.Cluster)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Cluster* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Cluster* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Cluster>(
           &from);
   if (source == NULL) {
@@ -1062,15 +1093,21 @@ void Cluster::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.Cluster)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Cluster::MergeFrom(const Cluster& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.Cluster)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Cluster::UnsafeMergeFrom(const Cluster& from) {
+  GOOGLE_DCHECK(&from != this);
   status_history_.MergeFrom(from.status_history_);
   if (from.project_id().size() > 0) {
 
@@ -1103,7 +1140,7 @@ void Cluster::CopyFrom(const Cluster& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.Cluster)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Cluster::IsInitialized() const {
@@ -1141,37 +1178,37 @@ void Cluster::InternalSwap(Cluster* other) {
 void Cluster::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Cluster::project_id() const {
+const ::std::string& Cluster::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Cluster::set_project_id(const ::std::string& value) {
+void Cluster::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.Cluster.project_id)
 }
- void Cluster::set_project_id(const char* value) {
+void Cluster::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.Cluster.project_id)
 }
- void Cluster::set_project_id(const char* value, size_t size) {
+void Cluster::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.Cluster.project_id)
 }
- ::std::string* Cluster::mutable_project_id() {
+::std::string* Cluster::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.Cluster.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Cluster::release_project_id() {
+::std::string* Cluster::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.Cluster.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Cluster::set_allocated_project_id(::std::string* project_id) {
+void Cluster::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -1185,37 +1222,37 @@ void Cluster::clear_project_id() {
 void Cluster::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Cluster::cluster_name() const {
+const ::std::string& Cluster::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.cluster_name)
   return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Cluster::set_cluster_name(const ::std::string& value) {
+void Cluster::set_cluster_name(const ::std::string& value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.Cluster.cluster_name)
 }
- void Cluster::set_cluster_name(const char* value) {
+void Cluster::set_cluster_name(const char* value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.Cluster.cluster_name)
 }
- void Cluster::set_cluster_name(const char* value, size_t size) {
+void Cluster::set_cluster_name(const char* value, size_t size) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.Cluster.cluster_name)
 }
- ::std::string* Cluster::mutable_cluster_name() {
+::std::string* Cluster::mutable_cluster_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.Cluster.cluster_name)
   return cluster_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Cluster::release_cluster_name() {
+::std::string* Cluster::release_cluster_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.Cluster.cluster_name)
   
   return cluster_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Cluster::set_allocated_cluster_name(::std::string* cluster_name) {
+void Cluster::set_allocated_cluster_name(::std::string* cluster_name) {
   if (cluster_name != NULL) {
     
   } else {
@@ -1227,7 +1264,7 @@ void Cluster::clear_cluster_name() {
 
 // optional .google.cloud.dataproc.v1.ClusterConfig config = 3;
 bool Cluster::has_config() const {
-  return !_is_default_instance_ && config_ != NULL;
+  return this != internal_default_instance() && config_ != NULL;
 }
 void Cluster::clear_config() {
   if (GetArenaNoVirtual() == NULL && config_ != NULL) delete config_;
@@ -1235,7 +1272,8 @@ void Cluster::clear_config() {
 }
 const ::google::cloud::dataproc::v1::ClusterConfig& Cluster::config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.config)
-  return config_ != NULL ? *config_ : *default_instance_->config_;
+  return config_ != NULL ? *config_
+                         : *::google::cloud::dataproc::v1::ClusterConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::ClusterConfig* Cluster::mutable_config() {
   
@@ -1265,7 +1303,7 @@ void Cluster::set_allocated_config(::google::cloud::dataproc::v1::ClusterConfig*
 
 // optional .google.cloud.dataproc.v1.ClusterStatus status = 4;
 bool Cluster::has_status() const {
-  return !_is_default_instance_ && status_ != NULL;
+  return this != internal_default_instance() && status_ != NULL;
 }
 void Cluster::clear_status() {
   if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
@@ -1273,7 +1311,8 @@ void Cluster::clear_status() {
 }
 const ::google::cloud::dataproc::v1::ClusterStatus& Cluster::status() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.status)
-  return status_ != NULL ? *status_ : *default_instance_->status_;
+  return status_ != NULL ? *status_
+                         : *::google::cloud::dataproc::v1::ClusterStatus::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::ClusterStatus* Cluster::mutable_status() {
   
@@ -1335,37 +1374,37 @@ Cluster::status_history() const {
 void Cluster::clear_cluster_uuid() {
   cluster_uuid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Cluster::cluster_uuid() const {
+const ::std::string& Cluster::cluster_uuid() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.cluster_uuid)
   return cluster_uuid_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Cluster::set_cluster_uuid(const ::std::string& value) {
+void Cluster::set_cluster_uuid(const ::std::string& value) {
   
   cluster_uuid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.Cluster.cluster_uuid)
 }
- void Cluster::set_cluster_uuid(const char* value) {
+void Cluster::set_cluster_uuid(const char* value) {
   
   cluster_uuid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.Cluster.cluster_uuid)
 }
- void Cluster::set_cluster_uuid(const char* value, size_t size) {
+void Cluster::set_cluster_uuid(const char* value, size_t size) {
   
   cluster_uuid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.Cluster.cluster_uuid)
 }
- ::std::string* Cluster::mutable_cluster_uuid() {
+::std::string* Cluster::mutable_cluster_uuid() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.Cluster.cluster_uuid)
   return cluster_uuid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Cluster::release_cluster_uuid() {
+::std::string* Cluster::release_cluster_uuid() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.Cluster.cluster_uuid)
   
   return cluster_uuid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Cluster::set_allocated_cluster_uuid(::std::string* cluster_uuid) {
+void Cluster::set_allocated_cluster_uuid(::std::string* cluster_uuid) {
   if (cluster_uuid != NULL) {
     
   } else {
@@ -1375,6 +1414,9 @@ void Cluster::clear_cluster_uuid() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.Cluster.cluster_uuid)
 }
 
+inline const Cluster* Cluster::internal_default_instance() {
+  return &Cluster_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1391,37 +1433,40 @@ const int ClusterConfig::kInitializationActionsFieldNumber;
 
 ClusterConfig::ClusterConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ClusterConfig)
 }
 
 void ClusterConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  gce_cluster_config_ = const_cast< ::google::cloud::dataproc::v1::GceClusterConfig*>(&::google::cloud::dataproc::v1::GceClusterConfig::default_instance());
-  master_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(&::google::cloud::dataproc::v1::InstanceGroupConfig::default_instance());
-  worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(&::google::cloud::dataproc::v1::InstanceGroupConfig::default_instance());
-  secondary_worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(&::google::cloud::dataproc::v1::InstanceGroupConfig::default_instance());
-  software_config_ = const_cast< ::google::cloud::dataproc::v1::SoftwareConfig*>(&::google::cloud::dataproc::v1::SoftwareConfig::default_instance());
+  gce_cluster_config_ = const_cast< ::google::cloud::dataproc::v1::GceClusterConfig*>(
+      ::google::cloud::dataproc::v1::GceClusterConfig::internal_default_instance());
+  master_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
+      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
+  worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
+      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
+  secondary_worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
+      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
+  software_config_ = const_cast< ::google::cloud::dataproc::v1::SoftwareConfig*>(
+      ::google::cloud::dataproc::v1::SoftwareConfig::internal_default_instance());
 }
 
 ClusterConfig::ClusterConfig(const ClusterConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ClusterConfig)
 }
 
 void ClusterConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   config_bucket_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   gce_cluster_config_ = NULL;
   master_config_ = NULL;
   worker_config_ = NULL;
   secondary_worker_config_ = NULL;
   software_config_ = NULL;
+  _cached_size_ = 0;
 }
 
 ClusterConfig::~ClusterConfig() {
@@ -1431,7 +1476,7 @@ ClusterConfig::~ClusterConfig() {
 
 void ClusterConfig::SharedDtor() {
   config_bucket_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &ClusterConfig_default_instance_.get()) {
     delete gce_cluster_config_;
     delete master_config_;
     delete worker_config_;
@@ -1451,11 +1496,11 @@ const ::google::protobuf::Descriptor* ClusterConfig::descriptor() {
 }
 
 const ClusterConfig& ClusterConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-ClusterConfig* ClusterConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ClusterConfig> ClusterConfig_default_instance_;
 
 ClusterConfig* ClusterConfig::New(::google::protobuf::Arena* arena) const {
   ClusterConfig* n = new ClusterConfig;
@@ -1664,6 +1709,7 @@ void ClusterConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ClusterConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ClusterConfig)
   // optional string config_bucket = 1;
   if (this->config_bucket().size() > 0) {
@@ -1722,9 +1768,9 @@ void ClusterConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int ClusterConfig::ByteSize() const {
+size_t ClusterConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ClusterConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string config_bucket = 1;
   if (this->config_bucket().size() > 0) {
@@ -1769,25 +1815,27 @@ int ClusterConfig::ByteSize() const {
   }
 
   // repeated .google.cloud.dataproc.v1.NodeInitializationAction initialization_actions = 11;
-  total_size += 1 * this->initialization_actions_size();
-  for (int i = 0; i < this->initialization_actions_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->initialization_actions(i));
+  {
+    unsigned int count = this->initialization_actions_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->initialization_actions(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ClusterConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ClusterConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ClusterConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ClusterConfig>(
           &from);
   if (source == NULL) {
@@ -1795,15 +1843,21 @@ void ClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ClusterConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ClusterConfig::MergeFrom(const ClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ClusterConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ClusterConfig::UnsafeMergeFrom(const ClusterConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   initialization_actions_.MergeFrom(from.initialization_actions_);
   if (from.config_bucket().size() > 0) {
 
@@ -1837,7 +1891,7 @@ void ClusterConfig::CopyFrom(const ClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ClusterConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ClusterConfig::IsInitialized() const {
@@ -1876,37 +1930,37 @@ void ClusterConfig::InternalSwap(ClusterConfig* other) {
 void ClusterConfig::clear_config_bucket() {
   config_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ClusterConfig::config_bucket() const {
+const ::std::string& ClusterConfig::config_bucket() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
   return config_bucket_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ClusterConfig::set_config_bucket(const ::std::string& value) {
+void ClusterConfig::set_config_bucket(const ::std::string& value) {
   
   config_bucket_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
 }
- void ClusterConfig::set_config_bucket(const char* value) {
+void ClusterConfig::set_config_bucket(const char* value) {
   
   config_bucket_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
 }
- void ClusterConfig::set_config_bucket(const char* value, size_t size) {
+void ClusterConfig::set_config_bucket(const char* value, size_t size) {
   
   config_bucket_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
 }
- ::std::string* ClusterConfig::mutable_config_bucket() {
+::std::string* ClusterConfig::mutable_config_bucket() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
   return config_bucket_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ClusterConfig::release_config_bucket() {
+::std::string* ClusterConfig::release_config_bucket() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
   
   return config_bucket_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ClusterConfig::set_allocated_config_bucket(::std::string* config_bucket) {
+void ClusterConfig::set_allocated_config_bucket(::std::string* config_bucket) {
   if (config_bucket != NULL) {
     
   } else {
@@ -1918,7 +1972,7 @@ void ClusterConfig::clear_config_bucket() {
 
 // optional .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
 bool ClusterConfig::has_gce_cluster_config() const {
-  return !_is_default_instance_ && gce_cluster_config_ != NULL;
+  return this != internal_default_instance() && gce_cluster_config_ != NULL;
 }
 void ClusterConfig::clear_gce_cluster_config() {
   if (GetArenaNoVirtual() == NULL && gce_cluster_config_ != NULL) delete gce_cluster_config_;
@@ -1926,7 +1980,8 @@ void ClusterConfig::clear_gce_cluster_config() {
 }
 const ::google::cloud::dataproc::v1::GceClusterConfig& ClusterConfig::gce_cluster_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterConfig.gce_cluster_config)
-  return gce_cluster_config_ != NULL ? *gce_cluster_config_ : *default_instance_->gce_cluster_config_;
+  return gce_cluster_config_ != NULL ? *gce_cluster_config_
+                         : *::google::cloud::dataproc::v1::GceClusterConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::GceClusterConfig* ClusterConfig::mutable_gce_cluster_config() {
   
@@ -1956,7 +2011,7 @@ void ClusterConfig::set_allocated_gce_cluster_config(::google::cloud::dataproc::
 
 // optional .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
 bool ClusterConfig::has_master_config() const {
-  return !_is_default_instance_ && master_config_ != NULL;
+  return this != internal_default_instance() && master_config_ != NULL;
 }
 void ClusterConfig::clear_master_config() {
   if (GetArenaNoVirtual() == NULL && master_config_ != NULL) delete master_config_;
@@ -1964,7 +2019,8 @@ void ClusterConfig::clear_master_config() {
 }
 const ::google::cloud::dataproc::v1::InstanceGroupConfig& ClusterConfig::master_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterConfig.master_config)
-  return master_config_ != NULL ? *master_config_ : *default_instance_->master_config_;
+  return master_config_ != NULL ? *master_config_
+                         : *::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::InstanceGroupConfig* ClusterConfig::mutable_master_config() {
   
@@ -1994,7 +2050,7 @@ void ClusterConfig::set_allocated_master_config(::google::cloud::dataproc::v1::I
 
 // optional .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
 bool ClusterConfig::has_worker_config() const {
-  return !_is_default_instance_ && worker_config_ != NULL;
+  return this != internal_default_instance() && worker_config_ != NULL;
 }
 void ClusterConfig::clear_worker_config() {
   if (GetArenaNoVirtual() == NULL && worker_config_ != NULL) delete worker_config_;
@@ -2002,7 +2058,8 @@ void ClusterConfig::clear_worker_config() {
 }
 const ::google::cloud::dataproc::v1::InstanceGroupConfig& ClusterConfig::worker_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterConfig.worker_config)
-  return worker_config_ != NULL ? *worker_config_ : *default_instance_->worker_config_;
+  return worker_config_ != NULL ? *worker_config_
+                         : *::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::InstanceGroupConfig* ClusterConfig::mutable_worker_config() {
   
@@ -2032,7 +2089,7 @@ void ClusterConfig::set_allocated_worker_config(::google::cloud::dataproc::v1::I
 
 // optional .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
 bool ClusterConfig::has_secondary_worker_config() const {
-  return !_is_default_instance_ && secondary_worker_config_ != NULL;
+  return this != internal_default_instance() && secondary_worker_config_ != NULL;
 }
 void ClusterConfig::clear_secondary_worker_config() {
   if (GetArenaNoVirtual() == NULL && secondary_worker_config_ != NULL) delete secondary_worker_config_;
@@ -2040,7 +2097,8 @@ void ClusterConfig::clear_secondary_worker_config() {
 }
 const ::google::cloud::dataproc::v1::InstanceGroupConfig& ClusterConfig::secondary_worker_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterConfig.secondary_worker_config)
-  return secondary_worker_config_ != NULL ? *secondary_worker_config_ : *default_instance_->secondary_worker_config_;
+  return secondary_worker_config_ != NULL ? *secondary_worker_config_
+                         : *::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::InstanceGroupConfig* ClusterConfig::mutable_secondary_worker_config() {
   
@@ -2070,7 +2128,7 @@ void ClusterConfig::set_allocated_secondary_worker_config(::google::cloud::datap
 
 // optional .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
 bool ClusterConfig::has_software_config() const {
-  return !_is_default_instance_ && software_config_ != NULL;
+  return this != internal_default_instance() && software_config_ != NULL;
 }
 void ClusterConfig::clear_software_config() {
   if (GetArenaNoVirtual() == NULL && software_config_ != NULL) delete software_config_;
@@ -2078,7 +2136,8 @@ void ClusterConfig::clear_software_config() {
 }
 const ::google::cloud::dataproc::v1::SoftwareConfig& ClusterConfig::software_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterConfig.software_config)
-  return software_config_ != NULL ? *software_config_ : *default_instance_->software_config_;
+  return software_config_ != NULL ? *software_config_
+                         : *::google::cloud::dataproc::v1::SoftwareConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::SoftwareConfig* ClusterConfig::mutable_software_config() {
   
@@ -2136,6 +2195,9 @@ ClusterConfig::initialization_actions() const {
   return initialization_actions_;
 }
 
+inline const ClusterConfig* ClusterConfig::internal_default_instance() {
+  return &ClusterConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2152,34 +2214,32 @@ const int GceClusterConfig::kMetadataFieldNumber;
 
 GceClusterConfig::GceClusterConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.GceClusterConfig)
 }
 
 void GceClusterConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GceClusterConfig::GceClusterConfig(const GceClusterConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.GceClusterConfig)
 }
 
 void GceClusterConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  zone_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  network_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  subnetwork_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  internal_ip_only_ = false;
   metadata_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   metadata_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::GceClusterConfig_MetadataEntry_descriptor_);
+  zone_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  network_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  subnetwork_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  internal_ip_only_ = false;
+  _cached_size_ = 0;
 }
 
 GceClusterConfig::~GceClusterConfig() {
@@ -2191,8 +2251,6 @@ void GceClusterConfig::SharedDtor() {
   zone_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   network_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   subnetwork_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GceClusterConfig::SetCachedSize(int size) const {
@@ -2206,11 +2264,11 @@ const ::google::protobuf::Descriptor* GceClusterConfig::descriptor() {
 }
 
 const GceClusterConfig& GceClusterConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-GceClusterConfig* GceClusterConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GceClusterConfig> GceClusterConfig_default_instance_;
 
 GceClusterConfig* GceClusterConfig::New(::google::protobuf::Arena* arena) const {
   GceClusterConfig* n = new GceClusterConfig;
@@ -2364,10 +2422,10 @@ bool GceClusterConfig::MergePartialFromCodedStream(
       case 7: {
         if (tag == 56) {
          parse_internal_ip_only:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &internal_ip_only_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2512,6 +2570,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GceClusterConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.GceClusterConfig)
   // optional string zone_uri = 1;
   if (this->zone_uri().size() > 0) {
@@ -2632,9 +2691,9 @@ void GceClusterConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int GceClusterConfig::ByteSize() const {
+size_t GceClusterConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.GceClusterConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string zone_uri = 1;
   if (this->zone_uri().size() > 0) {
@@ -2663,21 +2722,24 @@ int GceClusterConfig::ByteSize() const {
   }
 
   // repeated string service_account_scopes = 3;
-  total_size += 1 * this->service_account_scopes_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->service_account_scopes_size());
   for (int i = 0; i < this->service_account_scopes_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->service_account_scopes(i));
   }
 
   // repeated string tags = 4;
-  total_size += 1 * this->tags_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->tags_size());
   for (int i = 0; i < this->tags_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->tags(i));
   }
 
   // map<string, string> metadata = 5;
-  total_size += 1 * this->metadata_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->metadata_size());
   {
     ::google::protobuf::scoped_ptr<GceClusterConfig_MetadataEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -2689,18 +2751,17 @@ int GceClusterConfig::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GceClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.GceClusterConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GceClusterConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GceClusterConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GceClusterConfig>(
           &from);
   if (source == NULL) {
@@ -2708,17 +2769,23 @@ void GceClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.GceClusterConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GceClusterConfig::MergeFrom(const GceClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.GceClusterConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  service_account_scopes_.MergeFrom(from.service_account_scopes_);
-  tags_.MergeFrom(from.tags_);
+}
+
+void GceClusterConfig::UnsafeMergeFrom(const GceClusterConfig& from) {
+  GOOGLE_DCHECK(&from != this);
+  service_account_scopes_.UnsafeMergeFrom(from.service_account_scopes_);
+  tags_.UnsafeMergeFrom(from.tags_);
   metadata_.MergeFrom(from.metadata_);
   if (from.zone_uri().size() > 0) {
 
@@ -2748,7 +2815,7 @@ void GceClusterConfig::CopyFrom(const GceClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.GceClusterConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GceClusterConfig::IsInitialized() const {
@@ -2787,37 +2854,37 @@ void GceClusterConfig::InternalSwap(GceClusterConfig* other) {
 void GceClusterConfig::clear_zone_uri() {
   zone_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GceClusterConfig::zone_uri() const {
+const ::std::string& GceClusterConfig::zone_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
   return zone_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GceClusterConfig::set_zone_uri(const ::std::string& value) {
+void GceClusterConfig::set_zone_uri(const ::std::string& value) {
   
   zone_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
 }
- void GceClusterConfig::set_zone_uri(const char* value) {
+void GceClusterConfig::set_zone_uri(const char* value) {
   
   zone_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
 }
- void GceClusterConfig::set_zone_uri(const char* value, size_t size) {
+void GceClusterConfig::set_zone_uri(const char* value, size_t size) {
   
   zone_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
 }
- ::std::string* GceClusterConfig::mutable_zone_uri() {
+::std::string* GceClusterConfig::mutable_zone_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
   return zone_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GceClusterConfig::release_zone_uri() {
+::std::string* GceClusterConfig::release_zone_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
   
   return zone_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GceClusterConfig::set_allocated_zone_uri(::std::string* zone_uri) {
+void GceClusterConfig::set_allocated_zone_uri(::std::string* zone_uri) {
   if (zone_uri != NULL) {
     
   } else {
@@ -2831,37 +2898,37 @@ void GceClusterConfig::clear_zone_uri() {
 void GceClusterConfig::clear_network_uri() {
   network_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GceClusterConfig::network_uri() const {
+const ::std::string& GceClusterConfig::network_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
   return network_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GceClusterConfig::set_network_uri(const ::std::string& value) {
+void GceClusterConfig::set_network_uri(const ::std::string& value) {
   
   network_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
 }
- void GceClusterConfig::set_network_uri(const char* value) {
+void GceClusterConfig::set_network_uri(const char* value) {
   
   network_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
 }
- void GceClusterConfig::set_network_uri(const char* value, size_t size) {
+void GceClusterConfig::set_network_uri(const char* value, size_t size) {
   
   network_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
 }
- ::std::string* GceClusterConfig::mutable_network_uri() {
+::std::string* GceClusterConfig::mutable_network_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
   return network_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GceClusterConfig::release_network_uri() {
+::std::string* GceClusterConfig::release_network_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
   
   return network_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GceClusterConfig::set_allocated_network_uri(::std::string* network_uri) {
+void GceClusterConfig::set_allocated_network_uri(::std::string* network_uri) {
   if (network_uri != NULL) {
     
   } else {
@@ -2875,37 +2942,37 @@ void GceClusterConfig::clear_network_uri() {
 void GceClusterConfig::clear_subnetwork_uri() {
   subnetwork_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GceClusterConfig::subnetwork_uri() const {
+const ::std::string& GceClusterConfig::subnetwork_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
   return subnetwork_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GceClusterConfig::set_subnetwork_uri(const ::std::string& value) {
+void GceClusterConfig::set_subnetwork_uri(const ::std::string& value) {
   
   subnetwork_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
 }
- void GceClusterConfig::set_subnetwork_uri(const char* value) {
+void GceClusterConfig::set_subnetwork_uri(const char* value) {
   
   subnetwork_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
 }
- void GceClusterConfig::set_subnetwork_uri(const char* value, size_t size) {
+void GceClusterConfig::set_subnetwork_uri(const char* value, size_t size) {
   
   subnetwork_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
 }
- ::std::string* GceClusterConfig::mutable_subnetwork_uri() {
+::std::string* GceClusterConfig::mutable_subnetwork_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
   return subnetwork_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GceClusterConfig::release_subnetwork_uri() {
+::std::string* GceClusterConfig::release_subnetwork_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
   
   return subnetwork_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GceClusterConfig::set_allocated_subnetwork_uri(::std::string* subnetwork_uri) {
+void GceClusterConfig::set_allocated_subnetwork_uri(::std::string* subnetwork_uri) {
   if (subnetwork_uri != NULL) {
     
   } else {
@@ -2919,11 +2986,11 @@ void GceClusterConfig::clear_subnetwork_uri() {
 void GceClusterConfig::clear_internal_ip_only() {
   internal_ip_only_ = false;
 }
- bool GceClusterConfig::internal_ip_only() const {
+bool GceClusterConfig::internal_ip_only() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.internal_ip_only)
   return internal_ip_only_;
 }
- void GceClusterConfig::set_internal_ip_only(bool value) {
+void GceClusterConfig::set_internal_ip_only(bool value) {
   
   internal_ip_only_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GceClusterConfig.internal_ip_only)
@@ -2936,49 +3003,49 @@ int GceClusterConfig::service_account_scopes_size() const {
 void GceClusterConfig::clear_service_account_scopes() {
   service_account_scopes_.Clear();
 }
- const ::std::string& GceClusterConfig::service_account_scopes(int index) const {
+const ::std::string& GceClusterConfig::service_account_scopes(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
   return service_account_scopes_.Get(index);
 }
- ::std::string* GceClusterConfig::mutable_service_account_scopes(int index) {
+::std::string* GceClusterConfig::mutable_service_account_scopes(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
   return service_account_scopes_.Mutable(index);
 }
- void GceClusterConfig::set_service_account_scopes(int index, const ::std::string& value) {
+void GceClusterConfig::set_service_account_scopes(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
   service_account_scopes_.Mutable(index)->assign(value);
 }
- void GceClusterConfig::set_service_account_scopes(int index, const char* value) {
+void GceClusterConfig::set_service_account_scopes(int index, const char* value) {
   service_account_scopes_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
 }
- void GceClusterConfig::set_service_account_scopes(int index, const char* value, size_t size) {
+void GceClusterConfig::set_service_account_scopes(int index, const char* value, size_t size) {
   service_account_scopes_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
 }
- ::std::string* GceClusterConfig::add_service_account_scopes() {
+::std::string* GceClusterConfig::add_service_account_scopes() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
   return service_account_scopes_.Add();
 }
- void GceClusterConfig::add_service_account_scopes(const ::std::string& value) {
+void GceClusterConfig::add_service_account_scopes(const ::std::string& value) {
   service_account_scopes_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
 }
- void GceClusterConfig::add_service_account_scopes(const char* value) {
+void GceClusterConfig::add_service_account_scopes(const char* value) {
   service_account_scopes_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
 }
- void GceClusterConfig::add_service_account_scopes(const char* value, size_t size) {
+void GceClusterConfig::add_service_account_scopes(const char* value, size_t size) {
   service_account_scopes_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 GceClusterConfig::service_account_scopes() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
   return service_account_scopes_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 GceClusterConfig::mutable_service_account_scopes() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.GceClusterConfig.service_account_scopes)
   return &service_account_scopes_;
@@ -2991,49 +3058,49 @@ int GceClusterConfig::tags_size() const {
 void GceClusterConfig::clear_tags() {
   tags_.Clear();
 }
- const ::std::string& GceClusterConfig::tags(int index) const {
+const ::std::string& GceClusterConfig::tags(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.tags)
   return tags_.Get(index);
 }
- ::std::string* GceClusterConfig::mutable_tags(int index) {
+::std::string* GceClusterConfig::mutable_tags(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GceClusterConfig.tags)
   return tags_.Mutable(index);
 }
- void GceClusterConfig::set_tags(int index, const ::std::string& value) {
+void GceClusterConfig::set_tags(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GceClusterConfig.tags)
   tags_.Mutable(index)->assign(value);
 }
- void GceClusterConfig::set_tags(int index, const char* value) {
+void GceClusterConfig::set_tags(int index, const char* value) {
   tags_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GceClusterConfig.tags)
 }
- void GceClusterConfig::set_tags(int index, const char* value, size_t size) {
+void GceClusterConfig::set_tags(int index, const char* value, size_t size) {
   tags_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GceClusterConfig.tags)
 }
- ::std::string* GceClusterConfig::add_tags() {
+::std::string* GceClusterConfig::add_tags() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.GceClusterConfig.tags)
   return tags_.Add();
 }
- void GceClusterConfig::add_tags(const ::std::string& value) {
+void GceClusterConfig::add_tags(const ::std::string& value) {
   tags_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.GceClusterConfig.tags)
 }
- void GceClusterConfig::add_tags(const char* value) {
+void GceClusterConfig::add_tags(const char* value) {
   tags_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.GceClusterConfig.tags)
 }
- void GceClusterConfig::add_tags(const char* value, size_t size) {
+void GceClusterConfig::add_tags(const char* value, size_t size) {
   tags_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.GceClusterConfig.tags)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 GceClusterConfig::tags() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.GceClusterConfig.tags)
   return tags_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 GceClusterConfig::mutable_tags() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.GceClusterConfig.tags)
   return &tags_;
@@ -3057,6 +3124,9 @@ GceClusterConfig::mutable_metadata() {
   return metadata_.MutableMap();
 }
 
+inline const GceClusterConfig* GceClusterConfig::internal_default_instance() {
+  return &GceClusterConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3073,34 +3143,34 @@ const int InstanceGroupConfig::kManagedGroupConfigFieldNumber;
 
 InstanceGroupConfig::InstanceGroupConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.InstanceGroupConfig)
 }
 
 void InstanceGroupConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  disk_config_ = const_cast< ::google::cloud::dataproc::v1::DiskConfig*>(&::google::cloud::dataproc::v1::DiskConfig::default_instance());
-  managed_group_config_ = const_cast< ::google::cloud::dataproc::v1::ManagedGroupConfig*>(&::google::cloud::dataproc::v1::ManagedGroupConfig::default_instance());
+  disk_config_ = const_cast< ::google::cloud::dataproc::v1::DiskConfig*>(
+      ::google::cloud::dataproc::v1::DiskConfig::internal_default_instance());
+  managed_group_config_ = const_cast< ::google::cloud::dataproc::v1::ManagedGroupConfig*>(
+      ::google::cloud::dataproc::v1::ManagedGroupConfig::internal_default_instance());
 }
 
 InstanceGroupConfig::InstanceGroupConfig(const InstanceGroupConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.InstanceGroupConfig)
 }
 
 void InstanceGroupConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  num_instances_ = 0;
   image_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   machine_type_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   disk_config_ = NULL;
-  is_preemptible_ = false;
   managed_group_config_ = NULL;
+  ::memset(&num_instances_, 0, reinterpret_cast<char*>(&is_preemptible_) -
+    reinterpret_cast<char*>(&num_instances_) + sizeof(is_preemptible_));
+  _cached_size_ = 0;
 }
 
 InstanceGroupConfig::~InstanceGroupConfig() {
@@ -3111,7 +3181,7 @@ InstanceGroupConfig::~InstanceGroupConfig() {
 void InstanceGroupConfig::SharedDtor() {
   image_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   machine_type_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &InstanceGroupConfig_default_instance_.get()) {
     delete disk_config_;
     delete managed_group_config_;
   }
@@ -3128,11 +3198,11 @@ const ::google::protobuf::Descriptor* InstanceGroupConfig::descriptor() {
 }
 
 const InstanceGroupConfig& InstanceGroupConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-InstanceGroupConfig* InstanceGroupConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<InstanceGroupConfig> InstanceGroupConfig_default_instance_;
 
 InstanceGroupConfig* InstanceGroupConfig::New(::google::protobuf::Arena* arena) const {
   InstanceGroupConfig* n = new InstanceGroupConfig;
@@ -3156,7 +3226,7 @@ void InstanceGroupConfig::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -3187,10 +3257,10 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
       // optional int32 num_instances = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_instances_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3268,10 +3338,10 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
       case 6: {
         if (tag == 48) {
          parse_is_preemptible:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_preemptible_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3373,6 +3443,7 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* InstanceGroupConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.InstanceGroupConfig)
   // optional int32 num_instances = 1;
   if (this->num_instances() != 0) {
@@ -3434,9 +3505,9 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int InstanceGroupConfig::ByteSize() const {
+size_t InstanceGroupConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 num_instances = 1;
   if (this->num_instances() != 0) {
@@ -3479,24 +3550,24 @@ int InstanceGroupConfig::ByteSize() const {
   }
 
   // repeated string instance_names = 2;
-  total_size += 1 * this->instance_names_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->instance_names_size());
   for (int i = 0; i < this->instance_names_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->instance_names(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void InstanceGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const InstanceGroupConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const InstanceGroupConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const InstanceGroupConfig>(
           &from);
   if (source == NULL) {
@@ -3504,16 +3575,22 @@ void InstanceGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.InstanceGroupConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void InstanceGroupConfig::MergeFrom(const InstanceGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  instance_names_.MergeFrom(from.instance_names_);
+}
+
+void InstanceGroupConfig::UnsafeMergeFrom(const InstanceGroupConfig& from) {
+  GOOGLE_DCHECK(&from != this);
+  instance_names_.UnsafeMergeFrom(from.instance_names_);
   if (from.num_instances() != 0) {
     set_num_instances(from.num_instances());
   }
@@ -3547,7 +3624,7 @@ void InstanceGroupConfig::CopyFrom(const InstanceGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.InstanceGroupConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool InstanceGroupConfig::IsInitialized() const {
@@ -3586,11 +3663,11 @@ void InstanceGroupConfig::InternalSwap(InstanceGroupConfig* other) {
 void InstanceGroupConfig::clear_num_instances() {
   num_instances_ = 0;
 }
- ::google::protobuf::int32 InstanceGroupConfig::num_instances() const {
+::google::protobuf::int32 InstanceGroupConfig::num_instances() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.num_instances)
   return num_instances_;
 }
- void InstanceGroupConfig::set_num_instances(::google::protobuf::int32 value) {
+void InstanceGroupConfig::set_num_instances(::google::protobuf::int32 value) {
   
   num_instances_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.InstanceGroupConfig.num_instances)
@@ -3603,49 +3680,49 @@ int InstanceGroupConfig::instance_names_size() const {
 void InstanceGroupConfig::clear_instance_names() {
   instance_names_.Clear();
 }
- const ::std::string& InstanceGroupConfig::instance_names(int index) const {
+const ::std::string& InstanceGroupConfig::instance_names(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
   return instance_names_.Get(index);
 }
- ::std::string* InstanceGroupConfig::mutable_instance_names(int index) {
+::std::string* InstanceGroupConfig::mutable_instance_names(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
   return instance_names_.Mutable(index);
 }
- void InstanceGroupConfig::set_instance_names(int index, const ::std::string& value) {
+void InstanceGroupConfig::set_instance_names(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
   instance_names_.Mutable(index)->assign(value);
 }
- void InstanceGroupConfig::set_instance_names(int index, const char* value) {
+void InstanceGroupConfig::set_instance_names(int index, const char* value) {
   instance_names_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
 }
- void InstanceGroupConfig::set_instance_names(int index, const char* value, size_t size) {
+void InstanceGroupConfig::set_instance_names(int index, const char* value, size_t size) {
   instance_names_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
 }
- ::std::string* InstanceGroupConfig::add_instance_names() {
+::std::string* InstanceGroupConfig::add_instance_names() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
   return instance_names_.Add();
 }
- void InstanceGroupConfig::add_instance_names(const ::std::string& value) {
+void InstanceGroupConfig::add_instance_names(const ::std::string& value) {
   instance_names_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
 }
- void InstanceGroupConfig::add_instance_names(const char* value) {
+void InstanceGroupConfig::add_instance_names(const char* value) {
   instance_names_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
 }
- void InstanceGroupConfig::add_instance_names(const char* value, size_t size) {
+void InstanceGroupConfig::add_instance_names(const char* value, size_t size) {
   instance_names_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 InstanceGroupConfig::instance_names() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
   return instance_names_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 InstanceGroupConfig::mutable_instance_names() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.InstanceGroupConfig.instance_names)
   return &instance_names_;
@@ -3655,37 +3732,37 @@ InstanceGroupConfig::mutable_instance_names() {
 void InstanceGroupConfig::clear_image_uri() {
   image_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& InstanceGroupConfig::image_uri() const {
+const ::std::string& InstanceGroupConfig::image_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
   return image_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void InstanceGroupConfig::set_image_uri(const ::std::string& value) {
+void InstanceGroupConfig::set_image_uri(const ::std::string& value) {
   
   image_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
 }
- void InstanceGroupConfig::set_image_uri(const char* value) {
+void InstanceGroupConfig::set_image_uri(const char* value) {
   
   image_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
 }
- void InstanceGroupConfig::set_image_uri(const char* value, size_t size) {
+void InstanceGroupConfig::set_image_uri(const char* value, size_t size) {
   
   image_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
 }
- ::std::string* InstanceGroupConfig::mutable_image_uri() {
+::std::string* InstanceGroupConfig::mutable_image_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
   return image_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* InstanceGroupConfig::release_image_uri() {
+::std::string* InstanceGroupConfig::release_image_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
   
   return image_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void InstanceGroupConfig::set_allocated_image_uri(::std::string* image_uri) {
+void InstanceGroupConfig::set_allocated_image_uri(::std::string* image_uri) {
   if (image_uri != NULL) {
     
   } else {
@@ -3699,37 +3776,37 @@ void InstanceGroupConfig::clear_image_uri() {
 void InstanceGroupConfig::clear_machine_type_uri() {
   machine_type_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& InstanceGroupConfig::machine_type_uri() const {
+const ::std::string& InstanceGroupConfig::machine_type_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
   return machine_type_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void InstanceGroupConfig::set_machine_type_uri(const ::std::string& value) {
+void InstanceGroupConfig::set_machine_type_uri(const ::std::string& value) {
   
   machine_type_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
 }
- void InstanceGroupConfig::set_machine_type_uri(const char* value) {
+void InstanceGroupConfig::set_machine_type_uri(const char* value) {
   
   machine_type_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
 }
- void InstanceGroupConfig::set_machine_type_uri(const char* value, size_t size) {
+void InstanceGroupConfig::set_machine_type_uri(const char* value, size_t size) {
   
   machine_type_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
 }
- ::std::string* InstanceGroupConfig::mutable_machine_type_uri() {
+::std::string* InstanceGroupConfig::mutable_machine_type_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
   return machine_type_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* InstanceGroupConfig::release_machine_type_uri() {
+::std::string* InstanceGroupConfig::release_machine_type_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
   
   return machine_type_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void InstanceGroupConfig::set_allocated_machine_type_uri(::std::string* machine_type_uri) {
+void InstanceGroupConfig::set_allocated_machine_type_uri(::std::string* machine_type_uri) {
   if (machine_type_uri != NULL) {
     
   } else {
@@ -3741,7 +3818,7 @@ void InstanceGroupConfig::clear_machine_type_uri() {
 
 // optional .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
 bool InstanceGroupConfig::has_disk_config() const {
-  return !_is_default_instance_ && disk_config_ != NULL;
+  return this != internal_default_instance() && disk_config_ != NULL;
 }
 void InstanceGroupConfig::clear_disk_config() {
   if (GetArenaNoVirtual() == NULL && disk_config_ != NULL) delete disk_config_;
@@ -3749,7 +3826,8 @@ void InstanceGroupConfig::clear_disk_config() {
 }
 const ::google::cloud::dataproc::v1::DiskConfig& InstanceGroupConfig::disk_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.disk_config)
-  return disk_config_ != NULL ? *disk_config_ : *default_instance_->disk_config_;
+  return disk_config_ != NULL ? *disk_config_
+                         : *::google::cloud::dataproc::v1::DiskConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::DiskConfig* InstanceGroupConfig::mutable_disk_config() {
   
@@ -3781,11 +3859,11 @@ void InstanceGroupConfig::set_allocated_disk_config(::google::cloud::dataproc::v
 void InstanceGroupConfig::clear_is_preemptible() {
   is_preemptible_ = false;
 }
- bool InstanceGroupConfig::is_preemptible() const {
+bool InstanceGroupConfig::is_preemptible() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.is_preemptible)
   return is_preemptible_;
 }
- void InstanceGroupConfig::set_is_preemptible(bool value) {
+void InstanceGroupConfig::set_is_preemptible(bool value) {
   
   is_preemptible_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.InstanceGroupConfig.is_preemptible)
@@ -3793,7 +3871,7 @@ void InstanceGroupConfig::clear_is_preemptible() {
 
 // optional .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
 bool InstanceGroupConfig::has_managed_group_config() const {
-  return !_is_default_instance_ && managed_group_config_ != NULL;
+  return this != internal_default_instance() && managed_group_config_ != NULL;
 }
 void InstanceGroupConfig::clear_managed_group_config() {
   if (GetArenaNoVirtual() == NULL && managed_group_config_ != NULL) delete managed_group_config_;
@@ -3801,7 +3879,8 @@ void InstanceGroupConfig::clear_managed_group_config() {
 }
 const ::google::cloud::dataproc::v1::ManagedGroupConfig& InstanceGroupConfig::managed_group_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.managed_group_config)
-  return managed_group_config_ != NULL ? *managed_group_config_ : *default_instance_->managed_group_config_;
+  return managed_group_config_ != NULL ? *managed_group_config_
+                         : *::google::cloud::dataproc::v1::ManagedGroupConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::ManagedGroupConfig* InstanceGroupConfig::mutable_managed_group_config() {
   
@@ -3829,6 +3908,9 @@ void InstanceGroupConfig::set_allocated_managed_group_config(::google::cloud::da
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.InstanceGroupConfig.managed_group_config)
 }
 
+inline const InstanceGroupConfig* InstanceGroupConfig::internal_default_instance() {
+  return &InstanceGroupConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3840,28 +3922,26 @@ const int ManagedGroupConfig::kInstanceGroupManagerNameFieldNumber;
 
 ManagedGroupConfig::ManagedGroupConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ManagedGroupConfig)
 }
 
 void ManagedGroupConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ManagedGroupConfig::ManagedGroupConfig(const ManagedGroupConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ManagedGroupConfig)
 }
 
 void ManagedGroupConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   instance_template_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   instance_group_manager_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ManagedGroupConfig::~ManagedGroupConfig() {
@@ -3872,8 +3952,6 @@ ManagedGroupConfig::~ManagedGroupConfig() {
 void ManagedGroupConfig::SharedDtor() {
   instance_template_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   instance_group_manager_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ManagedGroupConfig::SetCachedSize(int size) const {
@@ -3887,11 +3965,11 @@ const ::google::protobuf::Descriptor* ManagedGroupConfig::descriptor() {
 }
 
 const ManagedGroupConfig& ManagedGroupConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-ManagedGroupConfig* ManagedGroupConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ManagedGroupConfig> ManagedGroupConfig_default_instance_;
 
 ManagedGroupConfig* ManagedGroupConfig::New(::google::protobuf::Arena* arena) const {
   ManagedGroupConfig* n = new ManagedGroupConfig;
@@ -3999,6 +4077,7 @@ void ManagedGroupConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ManagedGroupConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ManagedGroupConfig)
   // optional string instance_template_name = 1;
   if (this->instance_template_name().size() > 0) {
@@ -4026,9 +4105,9 @@ void ManagedGroupConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int ManagedGroupConfig::ByteSize() const {
+size_t ManagedGroupConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ManagedGroupConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string instance_template_name = 1;
   if (this->instance_template_name().size() > 0) {
@@ -4044,18 +4123,17 @@ int ManagedGroupConfig::ByteSize() const {
         this->instance_group_manager_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ManagedGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ManagedGroupConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ManagedGroupConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ManagedGroupConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ManagedGroupConfig>(
           &from);
   if (source == NULL) {
@@ -4063,15 +4141,21 @@ void ManagedGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ManagedGroupConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ManagedGroupConfig::MergeFrom(const ManagedGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ManagedGroupConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ManagedGroupConfig::UnsafeMergeFrom(const ManagedGroupConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.instance_template_name().size() > 0) {
 
     instance_template_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.instance_template_name_);
@@ -4093,7 +4177,7 @@ void ManagedGroupConfig::CopyFrom(const ManagedGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ManagedGroupConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ManagedGroupConfig::IsInitialized() const {
@@ -4127,37 +4211,37 @@ void ManagedGroupConfig::InternalSwap(ManagedGroupConfig* other) {
 void ManagedGroupConfig::clear_instance_template_name() {
   instance_template_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ManagedGroupConfig::instance_template_name() const {
+const ::std::string& ManagedGroupConfig::instance_template_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
   return instance_template_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ManagedGroupConfig::set_instance_template_name(const ::std::string& value) {
+void ManagedGroupConfig::set_instance_template_name(const ::std::string& value) {
   
   instance_template_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
 }
- void ManagedGroupConfig::set_instance_template_name(const char* value) {
+void ManagedGroupConfig::set_instance_template_name(const char* value) {
   
   instance_template_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
 }
- void ManagedGroupConfig::set_instance_template_name(const char* value, size_t size) {
+void ManagedGroupConfig::set_instance_template_name(const char* value, size_t size) {
   
   instance_template_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
 }
- ::std::string* ManagedGroupConfig::mutable_instance_template_name() {
+::std::string* ManagedGroupConfig::mutable_instance_template_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
   return instance_template_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ManagedGroupConfig::release_instance_template_name() {
+::std::string* ManagedGroupConfig::release_instance_template_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
   
   return instance_template_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ManagedGroupConfig::set_allocated_instance_template_name(::std::string* instance_template_name) {
+void ManagedGroupConfig::set_allocated_instance_template_name(::std::string* instance_template_name) {
   if (instance_template_name != NULL) {
     
   } else {
@@ -4171,37 +4255,37 @@ void ManagedGroupConfig::clear_instance_template_name() {
 void ManagedGroupConfig::clear_instance_group_manager_name() {
   instance_group_manager_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ManagedGroupConfig::instance_group_manager_name() const {
+const ::std::string& ManagedGroupConfig::instance_group_manager_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
   return instance_group_manager_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ManagedGroupConfig::set_instance_group_manager_name(const ::std::string& value) {
+void ManagedGroupConfig::set_instance_group_manager_name(const ::std::string& value) {
   
   instance_group_manager_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
 }
- void ManagedGroupConfig::set_instance_group_manager_name(const char* value) {
+void ManagedGroupConfig::set_instance_group_manager_name(const char* value) {
   
   instance_group_manager_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
 }
- void ManagedGroupConfig::set_instance_group_manager_name(const char* value, size_t size) {
+void ManagedGroupConfig::set_instance_group_manager_name(const char* value, size_t size) {
   
   instance_group_manager_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
 }
- ::std::string* ManagedGroupConfig::mutable_instance_group_manager_name() {
+::std::string* ManagedGroupConfig::mutable_instance_group_manager_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
   return instance_group_manager_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ManagedGroupConfig::release_instance_group_manager_name() {
+::std::string* ManagedGroupConfig::release_instance_group_manager_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
   
   return instance_group_manager_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ManagedGroupConfig::set_allocated_instance_group_manager_name(::std::string* instance_group_manager_name) {
+void ManagedGroupConfig::set_allocated_instance_group_manager_name(::std::string* instance_group_manager_name) {
   if (instance_group_manager_name != NULL) {
     
   } else {
@@ -4211,6 +4295,9 @@ void ManagedGroupConfig::clear_instance_group_manager_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
 }
 
+inline const ManagedGroupConfig* ManagedGroupConfig::internal_default_instance() {
+  return &ManagedGroupConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4222,27 +4309,26 @@ const int DiskConfig::kNumLocalSsdsFieldNumber;
 
 DiskConfig::DiskConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DiskConfig)
 }
 
 void DiskConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DiskConfig::DiskConfig(const DiskConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DiskConfig)
 }
 
 void DiskConfig::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&boot_disk_size_gb_, 0, reinterpret_cast<char*>(&num_local_ssds_) -
+    reinterpret_cast<char*>(&boot_disk_size_gb_) + sizeof(num_local_ssds_));
   _cached_size_ = 0;
-  boot_disk_size_gb_ = 0;
-  num_local_ssds_ = 0;
 }
 
 DiskConfig::~DiskConfig() {
@@ -4251,8 +4337,6 @@ DiskConfig::~DiskConfig() {
 }
 
 void DiskConfig::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void DiskConfig::SetCachedSize(int size) const {
@@ -4266,11 +4350,11 @@ const ::google::protobuf::Descriptor* DiskConfig::descriptor() {
 }
 
 const DiskConfig& DiskConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-DiskConfig* DiskConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DiskConfig> DiskConfig_default_instance_;
 
 DiskConfig* DiskConfig::New(::google::protobuf::Arena* arena) const {
   DiskConfig* n = new DiskConfig;
@@ -4294,7 +4378,7 @@ void DiskConfig::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -4318,10 +4402,10 @@ bool DiskConfig::MergePartialFromCodedStream(
       // optional int32 boot_disk_size_gb = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &boot_disk_size_gb_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4333,10 +4417,10 @@ bool DiskConfig::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_num_local_ssds:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_local_ssds_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4383,6 +4467,7 @@ void DiskConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DiskConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DiskConfig)
   // optional int32 boot_disk_size_gb = 1;
   if (this->boot_disk_size_gb() != 0) {
@@ -4398,9 +4483,9 @@ void DiskConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int DiskConfig::ByteSize() const {
+size_t DiskConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DiskConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 boot_disk_size_gb = 1;
   if (this->boot_disk_size_gb() != 0) {
@@ -4416,18 +4501,17 @@ int DiskConfig::ByteSize() const {
         this->num_local_ssds());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DiskConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DiskConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DiskConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DiskConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DiskConfig>(
           &from);
   if (source == NULL) {
@@ -4435,15 +4519,21 @@ void DiskConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DiskConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DiskConfig::MergeFrom(const DiskConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DiskConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DiskConfig::UnsafeMergeFrom(const DiskConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.boot_disk_size_gb() != 0) {
     set_boot_disk_size_gb(from.boot_disk_size_gb());
   }
@@ -4463,7 +4553,7 @@ void DiskConfig::CopyFrom(const DiskConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DiskConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DiskConfig::IsInitialized() const {
@@ -4497,11 +4587,11 @@ void DiskConfig::InternalSwap(DiskConfig* other) {
 void DiskConfig::clear_boot_disk_size_gb() {
   boot_disk_size_gb_ = 0;
 }
- ::google::protobuf::int32 DiskConfig::boot_disk_size_gb() const {
+::google::protobuf::int32 DiskConfig::boot_disk_size_gb() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiskConfig.boot_disk_size_gb)
   return boot_disk_size_gb_;
 }
- void DiskConfig::set_boot_disk_size_gb(::google::protobuf::int32 value) {
+void DiskConfig::set_boot_disk_size_gb(::google::protobuf::int32 value) {
   
   boot_disk_size_gb_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiskConfig.boot_disk_size_gb)
@@ -4511,16 +4601,19 @@ void DiskConfig::clear_boot_disk_size_gb() {
 void DiskConfig::clear_num_local_ssds() {
   num_local_ssds_ = 0;
 }
- ::google::protobuf::int32 DiskConfig::num_local_ssds() const {
+::google::protobuf::int32 DiskConfig::num_local_ssds() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiskConfig.num_local_ssds)
   return num_local_ssds_;
 }
- void DiskConfig::set_num_local_ssds(::google::protobuf::int32 value) {
+void DiskConfig::set_num_local_ssds(::google::protobuf::int32 value) {
   
   num_local_ssds_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiskConfig.num_local_ssds)
 }
 
+inline const DiskConfig* DiskConfig::internal_default_instance() {
+  return &DiskConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4532,29 +4625,28 @@ const int NodeInitializationAction::kExecutionTimeoutFieldNumber;
 
 NodeInitializationAction::NodeInitializationAction()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.NodeInitializationAction)
 }
 
 void NodeInitializationAction::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  execution_timeout_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
+  execution_timeout_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
 }
 
 NodeInitializationAction::NodeInitializationAction(const NodeInitializationAction& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.NodeInitializationAction)
 }
 
 void NodeInitializationAction::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   executable_file_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   execution_timeout_ = NULL;
+  _cached_size_ = 0;
 }
 
 NodeInitializationAction::~NodeInitializationAction() {
@@ -4564,7 +4656,7 @@ NodeInitializationAction::~NodeInitializationAction() {
 
 void NodeInitializationAction::SharedDtor() {
   executable_file_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &NodeInitializationAction_default_instance_.get()) {
     delete execution_timeout_;
   }
 }
@@ -4580,11 +4672,11 @@ const ::google::protobuf::Descriptor* NodeInitializationAction::descriptor() {
 }
 
 const NodeInitializationAction& NodeInitializationAction::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-NodeInitializationAction* NodeInitializationAction::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<NodeInitializationAction> NodeInitializationAction_default_instance_;
 
 NodeInitializationAction* NodeInitializationAction::New(::google::protobuf::Arena* arena) const {
   NodeInitializationAction* n = new NodeInitializationAction;
@@ -4685,6 +4777,7 @@ void NodeInitializationAction::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* NodeInitializationAction::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.NodeInitializationAction)
   // optional string executable_file = 1;
   if (this->executable_file().size() > 0) {
@@ -4708,9 +4801,9 @@ void NodeInitializationAction::SerializeWithCachedSizes(
   return target;
 }
 
-int NodeInitializationAction::ByteSize() const {
+size_t NodeInitializationAction::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.NodeInitializationAction)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string executable_file = 1;
   if (this->executable_file().size() > 0) {
@@ -4726,18 +4819,17 @@ int NodeInitializationAction::ByteSize() const {
         *this->execution_timeout_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void NodeInitializationAction::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.NodeInitializationAction)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const NodeInitializationAction* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const NodeInitializationAction* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const NodeInitializationAction>(
           &from);
   if (source == NULL) {
@@ -4745,15 +4837,21 @@ void NodeInitializationAction::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.NodeInitializationAction)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void NodeInitializationAction::MergeFrom(const NodeInitializationAction& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.NodeInitializationAction)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void NodeInitializationAction::UnsafeMergeFrom(const NodeInitializationAction& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.executable_file().size() > 0) {
 
     executable_file_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.executable_file_);
@@ -4774,7 +4872,7 @@ void NodeInitializationAction::CopyFrom(const NodeInitializationAction& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.NodeInitializationAction)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool NodeInitializationAction::IsInitialized() const {
@@ -4808,37 +4906,37 @@ void NodeInitializationAction::InternalSwap(NodeInitializationAction* other) {
 void NodeInitializationAction::clear_executable_file() {
   executable_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& NodeInitializationAction::executable_file() const {
+const ::std::string& NodeInitializationAction::executable_file() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
   return executable_file_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void NodeInitializationAction::set_executable_file(const ::std::string& value) {
+void NodeInitializationAction::set_executable_file(const ::std::string& value) {
   
   executable_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
 }
- void NodeInitializationAction::set_executable_file(const char* value) {
+void NodeInitializationAction::set_executable_file(const char* value) {
   
   executable_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
 }
- void NodeInitializationAction::set_executable_file(const char* value, size_t size) {
+void NodeInitializationAction::set_executable_file(const char* value, size_t size) {
   
   executable_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
 }
- ::std::string* NodeInitializationAction::mutable_executable_file() {
+::std::string* NodeInitializationAction::mutable_executable_file() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
   return executable_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* NodeInitializationAction::release_executable_file() {
+::std::string* NodeInitializationAction::release_executable_file() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
   
   return executable_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void NodeInitializationAction::set_allocated_executable_file(::std::string* executable_file) {
+void NodeInitializationAction::set_allocated_executable_file(::std::string* executable_file) {
   if (executable_file != NULL) {
     
   } else {
@@ -4850,7 +4948,7 @@ void NodeInitializationAction::clear_executable_file() {
 
 // optional .google.protobuf.Duration execution_timeout = 2;
 bool NodeInitializationAction::has_execution_timeout() const {
-  return !_is_default_instance_ && execution_timeout_ != NULL;
+  return this != internal_default_instance() && execution_timeout_ != NULL;
 }
 void NodeInitializationAction::clear_execution_timeout() {
   if (GetArenaNoVirtual() == NULL && execution_timeout_ != NULL) delete execution_timeout_;
@@ -4858,7 +4956,8 @@ void NodeInitializationAction::clear_execution_timeout() {
 }
 const ::google::protobuf::Duration& NodeInitializationAction::execution_timeout() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.NodeInitializationAction.execution_timeout)
-  return execution_timeout_ != NULL ? *execution_timeout_ : *default_instance_->execution_timeout_;
+  return execution_timeout_ != NULL ? *execution_timeout_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* NodeInitializationAction::mutable_execution_timeout() {
   
@@ -4877,6 +4976,11 @@ const ::google::protobuf::Duration& NodeInitializationAction::execution_timeout(
 }
 void NodeInitializationAction::set_allocated_execution_timeout(::google::protobuf::Duration* execution_timeout) {
   delete execution_timeout_;
+  if (execution_timeout != NULL && execution_timeout->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_execution_timeout = new ::google::protobuf::Duration;
+    new_execution_timeout->CopyFrom(*execution_timeout);
+    execution_timeout = new_execution_timeout;
+  }
   execution_timeout_ = execution_timeout;
   if (execution_timeout) {
     
@@ -4886,6 +4990,9 @@ void NodeInitializationAction::set_allocated_execution_timeout(::google::protobu
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.NodeInitializationAction.execution_timeout)
 }
 
+inline const NodeInitializationAction* NodeInitializationAction::internal_default_instance() {
+  return &NodeInitializationAction_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4895,7 +5002,7 @@ const ::google::protobuf::EnumDescriptor* ClusterStatus_State_descriptor() {
   return ClusterStatus_State_descriptor_;
 }
 bool ClusterStatus_State_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -4927,30 +5034,29 @@ const int ClusterStatus::kStateStartTimeFieldNumber;
 
 ClusterStatus::ClusterStatus()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ClusterStatus)
 }
 
 void ClusterStatus::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  state_start_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  state_start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 ClusterStatus::ClusterStatus(const ClusterStatus& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ClusterStatus)
 }
 
 void ClusterStatus::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  state_ = 0;
   detail_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   state_start_time_ = NULL;
+  state_ = 0;
+  _cached_size_ = 0;
 }
 
 ClusterStatus::~ClusterStatus() {
@@ -4960,7 +5066,7 @@ ClusterStatus::~ClusterStatus() {
 
 void ClusterStatus::SharedDtor() {
   detail_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &ClusterStatus_default_instance_.get()) {
     delete state_start_time_;
   }
 }
@@ -4976,11 +5082,11 @@ const ::google::protobuf::Descriptor* ClusterStatus::descriptor() {
 }
 
 const ClusterStatus& ClusterStatus::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-ClusterStatus* ClusterStatus::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ClusterStatus> ClusterStatus_default_instance_;
 
 ClusterStatus* ClusterStatus::New(::google::protobuf::Arena* arena) const {
   ClusterStatus* n = new ClusterStatus;
@@ -5104,6 +5210,7 @@ void ClusterStatus::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ClusterStatus::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ClusterStatus)
   // optional .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
   if (this->state() != 0) {
@@ -5133,9 +5240,9 @@ void ClusterStatus::SerializeWithCachedSizes(
   return target;
 }
 
-int ClusterStatus::ByteSize() const {
+size_t ClusterStatus::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ClusterStatus)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
   if (this->state() != 0) {
@@ -5157,18 +5264,17 @@ int ClusterStatus::ByteSize() const {
         *this->state_start_time_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ClusterStatus::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ClusterStatus)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ClusterStatus* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ClusterStatus* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ClusterStatus>(
           &from);
   if (source == NULL) {
@@ -5176,15 +5282,21 @@ void ClusterStatus::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ClusterStatus)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ClusterStatus::MergeFrom(const ClusterStatus& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ClusterStatus)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ClusterStatus::UnsafeMergeFrom(const ClusterStatus& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.state() != 0) {
     set_state(from.state());
   }
@@ -5208,7 +5320,7 @@ void ClusterStatus::CopyFrom(const ClusterStatus& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ClusterStatus)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ClusterStatus::IsInitialized() const {
@@ -5243,11 +5355,11 @@ void ClusterStatus::InternalSwap(ClusterStatus* other) {
 void ClusterStatus::clear_state() {
   state_ = 0;
 }
- ::google::cloud::dataproc::v1::ClusterStatus_State ClusterStatus::state() const {
+::google::cloud::dataproc::v1::ClusterStatus_State ClusterStatus::state() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterStatus.state)
   return static_cast< ::google::cloud::dataproc::v1::ClusterStatus_State >(state_);
 }
- void ClusterStatus::set_state(::google::cloud::dataproc::v1::ClusterStatus_State value) {
+void ClusterStatus::set_state(::google::cloud::dataproc::v1::ClusterStatus_State value) {
   
   state_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ClusterStatus.state)
@@ -5257,37 +5369,37 @@ void ClusterStatus::clear_state() {
 void ClusterStatus::clear_detail() {
   detail_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ClusterStatus::detail() const {
+const ::std::string& ClusterStatus::detail() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterStatus.detail)
   return detail_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ClusterStatus::set_detail(const ::std::string& value) {
+void ClusterStatus::set_detail(const ::std::string& value) {
   
   detail_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ClusterStatus.detail)
 }
- void ClusterStatus::set_detail(const char* value) {
+void ClusterStatus::set_detail(const char* value) {
   
   detail_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ClusterStatus.detail)
 }
- void ClusterStatus::set_detail(const char* value, size_t size) {
+void ClusterStatus::set_detail(const char* value, size_t size) {
   
   detail_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ClusterStatus.detail)
 }
- ::std::string* ClusterStatus::mutable_detail() {
+::std::string* ClusterStatus::mutable_detail() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ClusterStatus.detail)
   return detail_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ClusterStatus::release_detail() {
+::std::string* ClusterStatus::release_detail() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ClusterStatus.detail)
   
   return detail_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ClusterStatus::set_allocated_detail(::std::string* detail) {
+void ClusterStatus::set_allocated_detail(::std::string* detail) {
   if (detail != NULL) {
     
   } else {
@@ -5299,7 +5411,7 @@ void ClusterStatus::clear_detail() {
 
 // optional .google.protobuf.Timestamp state_start_time = 3;
 bool ClusterStatus::has_state_start_time() const {
-  return !_is_default_instance_ && state_start_time_ != NULL;
+  return this != internal_default_instance() && state_start_time_ != NULL;
 }
 void ClusterStatus::clear_state_start_time() {
   if (GetArenaNoVirtual() == NULL && state_start_time_ != NULL) delete state_start_time_;
@@ -5307,7 +5419,8 @@ void ClusterStatus::clear_state_start_time() {
 }
 const ::google::protobuf::Timestamp& ClusterStatus::state_start_time() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterStatus.state_start_time)
-  return state_start_time_ != NULL ? *state_start_time_ : *default_instance_->state_start_time_;
+  return state_start_time_ != NULL ? *state_start_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* ClusterStatus::mutable_state_start_time() {
   
@@ -5340,6 +5453,9 @@ void ClusterStatus::set_allocated_state_start_time(::google::protobuf::Timestamp
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterStatus.state_start_time)
 }
 
+inline const ClusterStatus* ClusterStatus::internal_default_instance() {
+  return &ClusterStatus_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5351,31 +5467,29 @@ const int SoftwareConfig::kPropertiesFieldNumber;
 
 SoftwareConfig::SoftwareConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.SoftwareConfig)
 }
 
 void SoftwareConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SoftwareConfig::SoftwareConfig(const SoftwareConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.SoftwareConfig)
 }
 
 void SoftwareConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  image_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   properties_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   properties_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::SoftwareConfig_PropertiesEntry_descriptor_);
+  image_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 SoftwareConfig::~SoftwareConfig() {
@@ -5385,8 +5499,6 @@ SoftwareConfig::~SoftwareConfig() {
 
 void SoftwareConfig::SharedDtor() {
   image_version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void SoftwareConfig::SetCachedSize(int size) const {
@@ -5400,11 +5512,11 @@ const ::google::protobuf::Descriptor* SoftwareConfig::descriptor() {
 }
 
 const SoftwareConfig& SoftwareConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-SoftwareConfig* SoftwareConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SoftwareConfig> SoftwareConfig_default_instance_;
 
 SoftwareConfig* SoftwareConfig::New(::google::protobuf::Arena* arena) const {
   SoftwareConfig* n = new SoftwareConfig;
@@ -5569,6 +5681,7 @@ void SoftwareConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SoftwareConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.SoftwareConfig)
   // optional string image_version = 1;
   if (this->image_version().size() > 0) {
@@ -5642,9 +5755,9 @@ void SoftwareConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int SoftwareConfig::ByteSize() const {
+size_t SoftwareConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.SoftwareConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string image_version = 1;
   if (this->image_version().size() > 0) {
@@ -5654,7 +5767,8 @@ int SoftwareConfig::ByteSize() const {
   }
 
   // map<string, string> properties = 2;
-  total_size += 1 * this->properties_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->properties_size());
   {
     ::google::protobuf::scoped_ptr<SoftwareConfig_PropertiesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -5666,18 +5780,17 @@ int SoftwareConfig::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SoftwareConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.SoftwareConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SoftwareConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SoftwareConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SoftwareConfig>(
           &from);
   if (source == NULL) {
@@ -5685,15 +5798,21 @@ void SoftwareConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.SoftwareConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SoftwareConfig::MergeFrom(const SoftwareConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.SoftwareConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SoftwareConfig::UnsafeMergeFrom(const SoftwareConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   properties_.MergeFrom(from.properties_);
   if (from.image_version().size() > 0) {
 
@@ -5712,7 +5831,7 @@ void SoftwareConfig::CopyFrom(const SoftwareConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.SoftwareConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SoftwareConfig::IsInitialized() const {
@@ -5746,37 +5865,37 @@ void SoftwareConfig::InternalSwap(SoftwareConfig* other) {
 void SoftwareConfig::clear_image_version() {
   image_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SoftwareConfig::image_version() const {
+const ::std::string& SoftwareConfig::image_version() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SoftwareConfig.image_version)
   return image_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SoftwareConfig::set_image_version(const ::std::string& value) {
+void SoftwareConfig::set_image_version(const ::std::string& value) {
   
   image_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SoftwareConfig.image_version)
 }
- void SoftwareConfig::set_image_version(const char* value) {
+void SoftwareConfig::set_image_version(const char* value) {
   
   image_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SoftwareConfig.image_version)
 }
- void SoftwareConfig::set_image_version(const char* value, size_t size) {
+void SoftwareConfig::set_image_version(const char* value, size_t size) {
   
   image_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SoftwareConfig.image_version)
 }
- ::std::string* SoftwareConfig::mutable_image_version() {
+::std::string* SoftwareConfig::mutable_image_version() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SoftwareConfig.image_version)
   return image_version_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SoftwareConfig::release_image_version() {
+::std::string* SoftwareConfig::release_image_version() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.SoftwareConfig.image_version)
   
   return image_version_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SoftwareConfig::set_allocated_image_version(::std::string* image_version) {
+void SoftwareConfig::set_allocated_image_version(::std::string* image_version) {
   if (image_version != NULL) {
     
   } else {
@@ -5804,6 +5923,9 @@ SoftwareConfig::mutable_properties() {
   return properties_.MutableMap();
 }
 
+inline const SoftwareConfig* SoftwareConfig::internal_default_instance() {
+  return &SoftwareConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5816,30 +5938,29 @@ const int CreateClusterRequest::kClusterFieldNumber;
 
 CreateClusterRequest::CreateClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.CreateClusterRequest)
 }
 
 void CreateClusterRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(&::google::cloud::dataproc::v1::Cluster::default_instance());
+  cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(
+      ::google::cloud::dataproc::v1::Cluster::internal_default_instance());
 }
 
 CreateClusterRequest::CreateClusterRequest(const CreateClusterRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.CreateClusterRequest)
 }
 
 void CreateClusterRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_ = NULL;
+  _cached_size_ = 0;
 }
 
 CreateClusterRequest::~CreateClusterRequest() {
@@ -5850,7 +5971,7 @@ CreateClusterRequest::~CreateClusterRequest() {
 void CreateClusterRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &CreateClusterRequest_default_instance_.get()) {
     delete cluster_;
   }
 }
@@ -5866,11 +5987,11 @@ const ::google::protobuf::Descriptor* CreateClusterRequest::descriptor() {
 }
 
 const CreateClusterRequest& CreateClusterRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-CreateClusterRequest* CreateClusterRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateClusterRequest> CreateClusterRequest_default_instance_;
 
 CreateClusterRequest* CreateClusterRequest::New(::google::protobuf::Arena* arena) const {
   CreateClusterRequest* n = new CreateClusterRequest;
@@ -5999,6 +6120,7 @@ void CreateClusterRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateClusterRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.CreateClusterRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -6033,9 +6155,9 @@ void CreateClusterRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateClusterRequest::ByteSize() const {
+size_t CreateClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.CreateClusterRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -6058,18 +6180,17 @@ int CreateClusterRequest::ByteSize() const {
         *this->cluster_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.CreateClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateClusterRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateClusterRequest>(
           &from);
   if (source == NULL) {
@@ -6077,15 +6198,21 @@ void CreateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.CreateClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateClusterRequest::MergeFrom(const CreateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.CreateClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateClusterRequest::UnsafeMergeFrom(const CreateClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -6110,7 +6237,7 @@ void CreateClusterRequest::CopyFrom(const CreateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.CreateClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateClusterRequest::IsInitialized() const {
@@ -6145,37 +6272,37 @@ void CreateClusterRequest::InternalSwap(CreateClusterRequest* other) {
 void CreateClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CreateClusterRequest::project_id() const {
+const ::std::string& CreateClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateClusterRequest::set_project_id(const ::std::string& value) {
+void CreateClusterRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
 }
- void CreateClusterRequest::set_project_id(const char* value) {
+void CreateClusterRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
 }
- void CreateClusterRequest::set_project_id(const char* value, size_t size) {
+void CreateClusterRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
 }
- ::std::string* CreateClusterRequest::mutable_project_id() {
+::std::string* CreateClusterRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CreateClusterRequest::release_project_id() {
+::std::string* CreateClusterRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateClusterRequest::set_allocated_project_id(::std::string* project_id) {
+void CreateClusterRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -6189,37 +6316,37 @@ void CreateClusterRequest::clear_project_id() {
 void CreateClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CreateClusterRequest::region() const {
+const ::std::string& CreateClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CreateClusterRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateClusterRequest::set_region(const ::std::string& value) {
+void CreateClusterRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.CreateClusterRequest.region)
 }
- void CreateClusterRequest::set_region(const char* value) {
+void CreateClusterRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.CreateClusterRequest.region)
 }
- void CreateClusterRequest::set_region(const char* value, size_t size) {
+void CreateClusterRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.CreateClusterRequest.region)
 }
- ::std::string* CreateClusterRequest::mutable_region() {
+::std::string* CreateClusterRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.CreateClusterRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CreateClusterRequest::release_region() {
+::std::string* CreateClusterRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.CreateClusterRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateClusterRequest::set_allocated_region(::std::string* region) {
+void CreateClusterRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -6231,7 +6358,7 @@ void CreateClusterRequest::clear_region() {
 
 // optional .google.cloud.dataproc.v1.Cluster cluster = 2;
 bool CreateClusterRequest::has_cluster() const {
-  return !_is_default_instance_ && cluster_ != NULL;
+  return this != internal_default_instance() && cluster_ != NULL;
 }
 void CreateClusterRequest::clear_cluster() {
   if (GetArenaNoVirtual() == NULL && cluster_ != NULL) delete cluster_;
@@ -6239,7 +6366,8 @@ void CreateClusterRequest::clear_cluster() {
 }
 const ::google::cloud::dataproc::v1::Cluster& CreateClusterRequest::cluster() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CreateClusterRequest.cluster)
-  return cluster_ != NULL ? *cluster_ : *default_instance_->cluster_;
+  return cluster_ != NULL ? *cluster_
+                         : *::google::cloud::dataproc::v1::Cluster::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::Cluster* CreateClusterRequest::mutable_cluster() {
   
@@ -6267,6 +6395,9 @@ void CreateClusterRequest::set_allocated_cluster(::google::cloud::dataproc::v1::
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.CreateClusterRequest.cluster)
 }
 
+inline const CreateClusterRequest* CreateClusterRequest::internal_default_instance() {
+  return &CreateClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6281,33 +6412,33 @@ const int UpdateClusterRequest::kUpdateMaskFieldNumber;
 
 UpdateClusterRequest::UpdateClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.UpdateClusterRequest)
 }
 
 void UpdateClusterRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(&::google::cloud::dataproc::v1::Cluster::default_instance());
-  update_mask_ = const_cast< ::google::protobuf::FieldMask*>(&::google::protobuf::FieldMask::default_instance());
+  cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(
+      ::google::cloud::dataproc::v1::Cluster::internal_default_instance());
+  update_mask_ = const_cast< ::google::protobuf::FieldMask*>(
+      ::google::protobuf::FieldMask::internal_default_instance());
 }
 
 UpdateClusterRequest::UpdateClusterRequest(const UpdateClusterRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.UpdateClusterRequest)
 }
 
 void UpdateClusterRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_ = NULL;
   update_mask_ = NULL;
+  _cached_size_ = 0;
 }
 
 UpdateClusterRequest::~UpdateClusterRequest() {
@@ -6319,7 +6450,7 @@ void UpdateClusterRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &UpdateClusterRequest_default_instance_.get()) {
     delete cluster_;
     delete update_mask_;
   }
@@ -6336,11 +6467,11 @@ const ::google::protobuf::Descriptor* UpdateClusterRequest::descriptor() {
 }
 
 const UpdateClusterRequest& UpdateClusterRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-UpdateClusterRequest* UpdateClusterRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UpdateClusterRequest> UpdateClusterRequest_default_instance_;
 
 UpdateClusterRequest* UpdateClusterRequest::New(::google::protobuf::Arena* arena) const {
   UpdateClusterRequest* n = new UpdateClusterRequest;
@@ -6518,6 +6649,7 @@ void UpdateClusterRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UpdateClusterRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.UpdateClusterRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -6570,9 +6702,9 @@ void UpdateClusterRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int UpdateClusterRequest::ByteSize() const {
+size_t UpdateClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.UpdateClusterRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -6609,18 +6741,17 @@ int UpdateClusterRequest::ByteSize() const {
         *this->update_mask_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UpdateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.UpdateClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UpdateClusterRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UpdateClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateClusterRequest>(
           &from);
   if (source == NULL) {
@@ -6628,15 +6759,21 @@ void UpdateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.UpdateClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateClusterRequest::MergeFrom(const UpdateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.UpdateClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UpdateClusterRequest::UnsafeMergeFrom(const UpdateClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -6668,7 +6805,7 @@ void UpdateClusterRequest::CopyFrom(const UpdateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.UpdateClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateClusterRequest::IsInitialized() const {
@@ -6705,37 +6842,37 @@ void UpdateClusterRequest::InternalSwap(UpdateClusterRequest* other) {
 void UpdateClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UpdateClusterRequest::project_id() const {
+const ::std::string& UpdateClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateClusterRequest::set_project_id(const ::std::string& value) {
+void UpdateClusterRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
 }
- void UpdateClusterRequest::set_project_id(const char* value) {
+void UpdateClusterRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
 }
- void UpdateClusterRequest::set_project_id(const char* value, size_t size) {
+void UpdateClusterRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
 }
- ::std::string* UpdateClusterRequest::mutable_project_id() {
+::std::string* UpdateClusterRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UpdateClusterRequest::release_project_id() {
+::std::string* UpdateClusterRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateClusterRequest::set_allocated_project_id(::std::string* project_id) {
+void UpdateClusterRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -6749,37 +6886,37 @@ void UpdateClusterRequest::clear_project_id() {
 void UpdateClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UpdateClusterRequest::region() const {
+const ::std::string& UpdateClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateClusterRequest::set_region(const ::std::string& value) {
+void UpdateClusterRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.UpdateClusterRequest.region)
 }
- void UpdateClusterRequest::set_region(const char* value) {
+void UpdateClusterRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.UpdateClusterRequest.region)
 }
- void UpdateClusterRequest::set_region(const char* value, size_t size) {
+void UpdateClusterRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.UpdateClusterRequest.region)
 }
- ::std::string* UpdateClusterRequest::mutable_region() {
+::std::string* UpdateClusterRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.UpdateClusterRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UpdateClusterRequest::release_region() {
+::std::string* UpdateClusterRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.UpdateClusterRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateClusterRequest::set_allocated_region(::std::string* region) {
+void UpdateClusterRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -6793,37 +6930,37 @@ void UpdateClusterRequest::clear_region() {
 void UpdateClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UpdateClusterRequest::cluster_name() const {
+const ::std::string& UpdateClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
   return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateClusterRequest::set_cluster_name(const ::std::string& value) {
+void UpdateClusterRequest::set_cluster_name(const ::std::string& value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
 }
- void UpdateClusterRequest::set_cluster_name(const char* value) {
+void UpdateClusterRequest::set_cluster_name(const char* value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
 }
- void UpdateClusterRequest::set_cluster_name(const char* value, size_t size) {
+void UpdateClusterRequest::set_cluster_name(const char* value, size_t size) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
 }
- ::std::string* UpdateClusterRequest::mutable_cluster_name() {
+::std::string* UpdateClusterRequest::mutable_cluster_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
   return cluster_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UpdateClusterRequest::release_cluster_name() {
+::std::string* UpdateClusterRequest::release_cluster_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
   
   return cluster_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
+void UpdateClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
   if (cluster_name != NULL) {
     
   } else {
@@ -6835,7 +6972,7 @@ void UpdateClusterRequest::clear_cluster_name() {
 
 // optional .google.cloud.dataproc.v1.Cluster cluster = 3;
 bool UpdateClusterRequest::has_cluster() const {
-  return !_is_default_instance_ && cluster_ != NULL;
+  return this != internal_default_instance() && cluster_ != NULL;
 }
 void UpdateClusterRequest::clear_cluster() {
   if (GetArenaNoVirtual() == NULL && cluster_ != NULL) delete cluster_;
@@ -6843,7 +6980,8 @@ void UpdateClusterRequest::clear_cluster() {
 }
 const ::google::cloud::dataproc::v1::Cluster& UpdateClusterRequest::cluster() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.cluster)
-  return cluster_ != NULL ? *cluster_ : *default_instance_->cluster_;
+  return cluster_ != NULL ? *cluster_
+                         : *::google::cloud::dataproc::v1::Cluster::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::Cluster* UpdateClusterRequest::mutable_cluster() {
   
@@ -6873,7 +7011,7 @@ void UpdateClusterRequest::set_allocated_cluster(::google::cloud::dataproc::v1::
 
 // optional .google.protobuf.FieldMask update_mask = 4;
 bool UpdateClusterRequest::has_update_mask() const {
-  return !_is_default_instance_ && update_mask_ != NULL;
+  return this != internal_default_instance() && update_mask_ != NULL;
 }
 void UpdateClusterRequest::clear_update_mask() {
   if (GetArenaNoVirtual() == NULL && update_mask_ != NULL) delete update_mask_;
@@ -6881,7 +7019,8 @@ void UpdateClusterRequest::clear_update_mask() {
 }
 const ::google::protobuf::FieldMask& UpdateClusterRequest::update_mask() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.update_mask)
-  return update_mask_ != NULL ? *update_mask_ : *default_instance_->update_mask_;
+  return update_mask_ != NULL ? *update_mask_
+                         : *::google::protobuf::FieldMask::internal_default_instance();
 }
 ::google::protobuf::FieldMask* UpdateClusterRequest::mutable_update_mask() {
   
@@ -6909,6 +7048,9 @@ void UpdateClusterRequest::set_allocated_update_mask(::google::protobuf::FieldMa
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.UpdateClusterRequest.update_mask)
 }
 
+inline const UpdateClusterRequest* UpdateClusterRequest::internal_default_instance() {
+  return &UpdateClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6921,29 +7063,27 @@ const int DeleteClusterRequest::kClusterNameFieldNumber;
 
 DeleteClusterRequest::DeleteClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DeleteClusterRequest)
 }
 
 void DeleteClusterRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteClusterRequest::DeleteClusterRequest(const DeleteClusterRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DeleteClusterRequest)
 }
 
 void DeleteClusterRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteClusterRequest::~DeleteClusterRequest() {
@@ -6955,8 +7095,6 @@ void DeleteClusterRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DeleteClusterRequest::SetCachedSize(int size) const {
@@ -6970,11 +7108,11 @@ const ::google::protobuf::Descriptor* DeleteClusterRequest::descriptor() {
 }
 
 const DeleteClusterRequest& DeleteClusterRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteClusterRequest* DeleteClusterRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteClusterRequest> DeleteClusterRequest_default_instance_;
 
 DeleteClusterRequest* DeleteClusterRequest::New(::google::protobuf::Arena* arena) const {
   DeleteClusterRequest* n = new DeleteClusterRequest;
@@ -7110,6 +7248,7 @@ void DeleteClusterRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteClusterRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DeleteClusterRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -7148,9 +7287,9 @@ void DeleteClusterRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteClusterRequest::ByteSize() const {
+size_t DeleteClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DeleteClusterRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -7173,18 +7312,17 @@ int DeleteClusterRequest::ByteSize() const {
         this->cluster_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DeleteClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteClusterRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteClusterRequest>(
           &from);
   if (source == NULL) {
@@ -7192,15 +7330,21 @@ void DeleteClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DeleteClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteClusterRequest::MergeFrom(const DeleteClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DeleteClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteClusterRequest::UnsafeMergeFrom(const DeleteClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -7226,7 +7370,7 @@ void DeleteClusterRequest::CopyFrom(const DeleteClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DeleteClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteClusterRequest::IsInitialized() const {
@@ -7261,37 +7405,37 @@ void DeleteClusterRequest::InternalSwap(DeleteClusterRequest* other) {
 void DeleteClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteClusterRequest::project_id() const {
+const ::std::string& DeleteClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteClusterRequest::set_project_id(const ::std::string& value) {
+void DeleteClusterRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
 }
- void DeleteClusterRequest::set_project_id(const char* value) {
+void DeleteClusterRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
 }
- void DeleteClusterRequest::set_project_id(const char* value, size_t size) {
+void DeleteClusterRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
 }
- ::std::string* DeleteClusterRequest::mutable_project_id() {
+::std::string* DeleteClusterRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteClusterRequest::release_project_id() {
+::std::string* DeleteClusterRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteClusterRequest::set_allocated_project_id(::std::string* project_id) {
+void DeleteClusterRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -7305,37 +7449,37 @@ void DeleteClusterRequest::clear_project_id() {
 void DeleteClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteClusterRequest::region() const {
+const ::std::string& DeleteClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteClusterRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteClusterRequest::set_region(const ::std::string& value) {
+void DeleteClusterRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DeleteClusterRequest.region)
 }
- void DeleteClusterRequest::set_region(const char* value) {
+void DeleteClusterRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DeleteClusterRequest.region)
 }
- void DeleteClusterRequest::set_region(const char* value, size_t size) {
+void DeleteClusterRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DeleteClusterRequest.region)
 }
- ::std::string* DeleteClusterRequest::mutable_region() {
+::std::string* DeleteClusterRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DeleteClusterRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteClusterRequest::release_region() {
+::std::string* DeleteClusterRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DeleteClusterRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteClusterRequest::set_allocated_region(::std::string* region) {
+void DeleteClusterRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -7349,37 +7493,37 @@ void DeleteClusterRequest::clear_region() {
 void DeleteClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteClusterRequest::cluster_name() const {
+const ::std::string& DeleteClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
   return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteClusterRequest::set_cluster_name(const ::std::string& value) {
+void DeleteClusterRequest::set_cluster_name(const ::std::string& value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
 }
- void DeleteClusterRequest::set_cluster_name(const char* value) {
+void DeleteClusterRequest::set_cluster_name(const char* value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
 }
- void DeleteClusterRequest::set_cluster_name(const char* value, size_t size) {
+void DeleteClusterRequest::set_cluster_name(const char* value, size_t size) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
 }
- ::std::string* DeleteClusterRequest::mutable_cluster_name() {
+::std::string* DeleteClusterRequest::mutable_cluster_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
   return cluster_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteClusterRequest::release_cluster_name() {
+::std::string* DeleteClusterRequest::release_cluster_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
   
   return cluster_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
+void DeleteClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
   if (cluster_name != NULL) {
     
   } else {
@@ -7389,6 +7533,9 @@ void DeleteClusterRequest::clear_cluster_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
 }
 
+inline const DeleteClusterRequest* DeleteClusterRequest::internal_default_instance() {
+  return &DeleteClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7401,29 +7548,27 @@ const int GetClusterRequest::kClusterNameFieldNumber;
 
 GetClusterRequest::GetClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.GetClusterRequest)
 }
 
 void GetClusterRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetClusterRequest::GetClusterRequest(const GetClusterRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.GetClusterRequest)
 }
 
 void GetClusterRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetClusterRequest::~GetClusterRequest() {
@@ -7435,8 +7580,6 @@ void GetClusterRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetClusterRequest::SetCachedSize(int size) const {
@@ -7450,11 +7593,11 @@ const ::google::protobuf::Descriptor* GetClusterRequest::descriptor() {
 }
 
 const GetClusterRequest& GetClusterRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-GetClusterRequest* GetClusterRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetClusterRequest> GetClusterRequest_default_instance_;
 
 GetClusterRequest* GetClusterRequest::New(::google::protobuf::Arena* arena) const {
   GetClusterRequest* n = new GetClusterRequest;
@@ -7590,6 +7733,7 @@ void GetClusterRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetClusterRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.GetClusterRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -7628,9 +7772,9 @@ void GetClusterRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetClusterRequest::ByteSize() const {
+size_t GetClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.GetClusterRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -7653,18 +7797,17 @@ int GetClusterRequest::ByteSize() const {
         this->cluster_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.GetClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetClusterRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetClusterRequest>(
           &from);
   if (source == NULL) {
@@ -7672,15 +7815,21 @@ void GetClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.GetClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetClusterRequest::MergeFrom(const GetClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.GetClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetClusterRequest::UnsafeMergeFrom(const GetClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -7706,7 +7855,7 @@ void GetClusterRequest::CopyFrom(const GetClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.GetClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetClusterRequest::IsInitialized() const {
@@ -7741,37 +7890,37 @@ void GetClusterRequest::InternalSwap(GetClusterRequest* other) {
 void GetClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetClusterRequest::project_id() const {
+const ::std::string& GetClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetClusterRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetClusterRequest::set_project_id(const ::std::string& value) {
+void GetClusterRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GetClusterRequest.project_id)
 }
- void GetClusterRequest::set_project_id(const char* value) {
+void GetClusterRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GetClusterRequest.project_id)
 }
- void GetClusterRequest::set_project_id(const char* value, size_t size) {
+void GetClusterRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GetClusterRequest.project_id)
 }
- ::std::string* GetClusterRequest::mutable_project_id() {
+::std::string* GetClusterRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GetClusterRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetClusterRequest::release_project_id() {
+::std::string* GetClusterRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GetClusterRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetClusterRequest::set_allocated_project_id(::std::string* project_id) {
+void GetClusterRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -7785,37 +7934,37 @@ void GetClusterRequest::clear_project_id() {
 void GetClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetClusterRequest::region() const {
+const ::std::string& GetClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetClusterRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetClusterRequest::set_region(const ::std::string& value) {
+void GetClusterRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GetClusterRequest.region)
 }
- void GetClusterRequest::set_region(const char* value) {
+void GetClusterRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GetClusterRequest.region)
 }
- void GetClusterRequest::set_region(const char* value, size_t size) {
+void GetClusterRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GetClusterRequest.region)
 }
- ::std::string* GetClusterRequest::mutable_region() {
+::std::string* GetClusterRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GetClusterRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetClusterRequest::release_region() {
+::std::string* GetClusterRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GetClusterRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetClusterRequest::set_allocated_region(::std::string* region) {
+void GetClusterRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -7829,37 +7978,37 @@ void GetClusterRequest::clear_region() {
 void GetClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetClusterRequest::cluster_name() const {
+const ::std::string& GetClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
   return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetClusterRequest::set_cluster_name(const ::std::string& value) {
+void GetClusterRequest::set_cluster_name(const ::std::string& value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
 }
- void GetClusterRequest::set_cluster_name(const char* value) {
+void GetClusterRequest::set_cluster_name(const char* value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
 }
- void GetClusterRequest::set_cluster_name(const char* value, size_t size) {
+void GetClusterRequest::set_cluster_name(const char* value, size_t size) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
 }
- ::std::string* GetClusterRequest::mutable_cluster_name() {
+::std::string* GetClusterRequest::mutable_cluster_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
   return cluster_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetClusterRequest::release_cluster_name() {
+::std::string* GetClusterRequest::release_cluster_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
   
   return cluster_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
+void GetClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
   if (cluster_name != NULL) {
     
   } else {
@@ -7869,6 +8018,9 @@ void GetClusterRequest::clear_cluster_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
 }
 
+inline const GetClusterRequest* GetClusterRequest::internal_default_instance() {
+  return &GetClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7882,30 +8034,28 @@ const int ListClustersRequest::kPageTokenFieldNumber;
 
 ListClustersRequest::ListClustersRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ListClustersRequest)
 }
 
 void ListClustersRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListClustersRequest::ListClustersRequest(const ListClustersRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ListClustersRequest)
 }
 
 void ListClustersRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListClustersRequest::~ListClustersRequest() {
@@ -7917,8 +8067,6 @@ void ListClustersRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListClustersRequest::SetCachedSize(int size) const {
@@ -7932,11 +8080,11 @@ const ::google::protobuf::Descriptor* ListClustersRequest::descriptor() {
 }
 
 const ListClustersRequest& ListClustersRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-ListClustersRequest* ListClustersRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListClustersRequest> ListClustersRequest_default_instance_;
 
 ListClustersRequest* ListClustersRequest::New(::google::protobuf::Arena* arena) const {
   ListClustersRequest* n = new ListClustersRequest;
@@ -7984,10 +8132,10 @@ bool ListClustersRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -8093,6 +8241,7 @@ void ListClustersRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListClustersRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ListClustersRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -8136,9 +8285,9 @@ void ListClustersRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListClustersRequest::ByteSize() const {
+size_t ListClustersRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ListClustersRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -8168,18 +8317,17 @@ int ListClustersRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListClustersRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ListClustersRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListClustersRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListClustersRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListClustersRequest>(
           &from);
   if (source == NULL) {
@@ -8187,15 +8335,21 @@ void ListClustersRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ListClustersRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListClustersRequest::MergeFrom(const ListClustersRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ListClustersRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListClustersRequest::UnsafeMergeFrom(const ListClustersRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -8224,7 +8378,7 @@ void ListClustersRequest::CopyFrom(const ListClustersRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ListClustersRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListClustersRequest::IsInitialized() const {
@@ -8260,37 +8414,37 @@ void ListClustersRequest::InternalSwap(ListClustersRequest* other) {
 void ListClustersRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListClustersRequest::project_id() const {
+const ::std::string& ListClustersRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersRequest::set_project_id(const ::std::string& value) {
+void ListClustersRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListClustersRequest.project_id)
 }
- void ListClustersRequest::set_project_id(const char* value) {
+void ListClustersRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListClustersRequest.project_id)
 }
- void ListClustersRequest::set_project_id(const char* value, size_t size) {
+void ListClustersRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListClustersRequest.project_id)
 }
- ::std::string* ListClustersRequest::mutable_project_id() {
+::std::string* ListClustersRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListClustersRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListClustersRequest::release_project_id() {
+::std::string* ListClustersRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListClustersRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersRequest::set_allocated_project_id(::std::string* project_id) {
+void ListClustersRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -8304,37 +8458,37 @@ void ListClustersRequest::clear_project_id() {
 void ListClustersRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListClustersRequest::region() const {
+const ::std::string& ListClustersRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersRequest::set_region(const ::std::string& value) {
+void ListClustersRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListClustersRequest.region)
 }
- void ListClustersRequest::set_region(const char* value) {
+void ListClustersRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListClustersRequest.region)
 }
- void ListClustersRequest::set_region(const char* value, size_t size) {
+void ListClustersRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListClustersRequest.region)
 }
- ::std::string* ListClustersRequest::mutable_region() {
+::std::string* ListClustersRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListClustersRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListClustersRequest::release_region() {
+::std::string* ListClustersRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListClustersRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersRequest::set_allocated_region(::std::string* region) {
+void ListClustersRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -8348,11 +8502,11 @@ void ListClustersRequest::clear_region() {
 void ListClustersRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListClustersRequest::page_size() const {
+::google::protobuf::int32 ListClustersRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersRequest.page_size)
   return page_size_;
 }
- void ListClustersRequest::set_page_size(::google::protobuf::int32 value) {
+void ListClustersRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListClustersRequest.page_size)
@@ -8362,37 +8516,37 @@ void ListClustersRequest::clear_page_size() {
 void ListClustersRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListClustersRequest::page_token() const {
+const ::std::string& ListClustersRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersRequest::set_page_token(const ::std::string& value) {
+void ListClustersRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListClustersRequest.page_token)
 }
- void ListClustersRequest::set_page_token(const char* value) {
+void ListClustersRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListClustersRequest.page_token)
 }
- void ListClustersRequest::set_page_token(const char* value, size_t size) {
+void ListClustersRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListClustersRequest.page_token)
 }
- ::std::string* ListClustersRequest::mutable_page_token() {
+::std::string* ListClustersRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListClustersRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListClustersRequest::release_page_token() {
+::std::string* ListClustersRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListClustersRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersRequest::set_allocated_page_token(::std::string* page_token) {
+void ListClustersRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -8402,6 +8556,9 @@ void ListClustersRequest::clear_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ListClustersRequest.page_token)
 }
 
+inline const ListClustersRequest* ListClustersRequest::internal_default_instance() {
+  return &ListClustersRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8413,27 +8570,25 @@ const int ListClustersResponse::kNextPageTokenFieldNumber;
 
 ListClustersResponse::ListClustersResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ListClustersResponse)
 }
 
 void ListClustersResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListClustersResponse::ListClustersResponse(const ListClustersResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ListClustersResponse)
 }
 
 void ListClustersResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListClustersResponse::~ListClustersResponse() {
@@ -8443,8 +8598,6 @@ ListClustersResponse::~ListClustersResponse() {
 
 void ListClustersResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListClustersResponse::SetCachedSize(int size) const {
@@ -8458,11 +8611,11 @@ const ::google::protobuf::Descriptor* ListClustersResponse::descriptor() {
 }
 
 const ListClustersResponse& ListClustersResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-ListClustersResponse* ListClustersResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListClustersResponse> ListClustersResponse_default_instance_;
 
 ListClustersResponse* ListClustersResponse::New(::google::protobuf::Arena* arena) const {
   ListClustersResponse* n = new ListClustersResponse;
@@ -8566,6 +8719,7 @@ void ListClustersResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListClustersResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ListClustersResponse)
   // repeated .google.cloud.dataproc.v1.Cluster clusters = 1;
   for (unsigned int i = 0, n = this->clusters_size(); i < n; i++) {
@@ -8589,9 +8743,9 @@ void ListClustersResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListClustersResponse::ByteSize() const {
+size_t ListClustersResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ListClustersResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -8601,25 +8755,27 @@ int ListClustersResponse::ByteSize() const {
   }
 
   // repeated .google.cloud.dataproc.v1.Cluster clusters = 1;
-  total_size += 1 * this->clusters_size();
-  for (int i = 0; i < this->clusters_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->clusters(i));
+  {
+    unsigned int count = this->clusters_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->clusters(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListClustersResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ListClustersResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListClustersResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListClustersResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListClustersResponse>(
           &from);
   if (source == NULL) {
@@ -8627,15 +8783,21 @@ void ListClustersResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ListClustersResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListClustersResponse::MergeFrom(const ListClustersResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ListClustersResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListClustersResponse::UnsafeMergeFrom(const ListClustersResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   clusters_.MergeFrom(from.clusters_);
   if (from.next_page_token().size() > 0) {
 
@@ -8654,7 +8816,7 @@ void ListClustersResponse::CopyFrom(const ListClustersResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ListClustersResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListClustersResponse::IsInitialized() const {
@@ -8718,37 +8880,37 @@ ListClustersResponse::clusters() const {
 void ListClustersResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListClustersResponse::next_page_token() const {
+const ::std::string& ListClustersResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersResponse::set_next_page_token(const ::std::string& value) {
+void ListClustersResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
 }
- void ListClustersResponse::set_next_page_token(const char* value) {
+void ListClustersResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
 }
- void ListClustersResponse::set_next_page_token(const char* value, size_t size) {
+void ListClustersResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
 }
- ::std::string* ListClustersResponse::mutable_next_page_token() {
+::std::string* ListClustersResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListClustersResponse::release_next_page_token() {
+::std::string* ListClustersResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListClustersResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListClustersResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -8758,6 +8920,9 @@ void ListClustersResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
 }
 
+inline const ListClustersResponse* ListClustersResponse::internal_default_instance() {
+  return &ListClustersResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8770,29 +8935,27 @@ const int DiagnoseClusterRequest::kClusterNameFieldNumber;
 
 DiagnoseClusterRequest::DiagnoseClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DiagnoseClusterRequest)
 }
 
 void DiagnoseClusterRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DiagnoseClusterRequest::DiagnoseClusterRequest(const DiagnoseClusterRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DiagnoseClusterRequest)
 }
 
 void DiagnoseClusterRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DiagnoseClusterRequest::~DiagnoseClusterRequest() {
@@ -8804,8 +8967,6 @@ void DiagnoseClusterRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DiagnoseClusterRequest::SetCachedSize(int size) const {
@@ -8819,11 +8980,11 @@ const ::google::protobuf::Descriptor* DiagnoseClusterRequest::descriptor() {
 }
 
 const DiagnoseClusterRequest& DiagnoseClusterRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-DiagnoseClusterRequest* DiagnoseClusterRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DiagnoseClusterRequest> DiagnoseClusterRequest_default_instance_;
 
 DiagnoseClusterRequest* DiagnoseClusterRequest::New(::google::protobuf::Arena* arena) const {
   DiagnoseClusterRequest* n = new DiagnoseClusterRequest;
@@ -8959,6 +9120,7 @@ void DiagnoseClusterRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DiagnoseClusterRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -8997,9 +9159,9 @@ void DiagnoseClusterRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DiagnoseClusterRequest::ByteSize() const {
+size_t DiagnoseClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -9022,18 +9184,17 @@ int DiagnoseClusterRequest::ByteSize() const {
         this->cluster_name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DiagnoseClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DiagnoseClusterRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DiagnoseClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DiagnoseClusterRequest>(
           &from);
   if (source == NULL) {
@@ -9041,15 +9202,21 @@ void DiagnoseClusterRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DiagnoseClusterRequest::MergeFrom(const DiagnoseClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DiagnoseClusterRequest::UnsafeMergeFrom(const DiagnoseClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -9075,7 +9242,7 @@ void DiagnoseClusterRequest::CopyFrom(const DiagnoseClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DiagnoseClusterRequest::IsInitialized() const {
@@ -9110,37 +9277,37 @@ void DiagnoseClusterRequest::InternalSwap(DiagnoseClusterRequest* other) {
 void DiagnoseClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DiagnoseClusterRequest::project_id() const {
+const ::std::string& DiagnoseClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterRequest::set_project_id(const ::std::string& value) {
+void DiagnoseClusterRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
 }
- void DiagnoseClusterRequest::set_project_id(const char* value) {
+void DiagnoseClusterRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
 }
- void DiagnoseClusterRequest::set_project_id(const char* value, size_t size) {
+void DiagnoseClusterRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
 }
- ::std::string* DiagnoseClusterRequest::mutable_project_id() {
+::std::string* DiagnoseClusterRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DiagnoseClusterRequest::release_project_id() {
+::std::string* DiagnoseClusterRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterRequest::set_allocated_project_id(::std::string* project_id) {
+void DiagnoseClusterRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -9154,37 +9321,37 @@ void DiagnoseClusterRequest::clear_project_id() {
 void DiagnoseClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DiagnoseClusterRequest::region() const {
+const ::std::string& DiagnoseClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterRequest::set_region(const ::std::string& value) {
+void DiagnoseClusterRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
 }
- void DiagnoseClusterRequest::set_region(const char* value) {
+void DiagnoseClusterRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
 }
- void DiagnoseClusterRequest::set_region(const char* value, size_t size) {
+void DiagnoseClusterRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
 }
- ::std::string* DiagnoseClusterRequest::mutable_region() {
+::std::string* DiagnoseClusterRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DiagnoseClusterRequest::release_region() {
+::std::string* DiagnoseClusterRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterRequest::set_allocated_region(::std::string* region) {
+void DiagnoseClusterRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -9198,37 +9365,37 @@ void DiagnoseClusterRequest::clear_region() {
 void DiagnoseClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DiagnoseClusterRequest::cluster_name() const {
+const ::std::string& DiagnoseClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
   return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterRequest::set_cluster_name(const ::std::string& value) {
+void DiagnoseClusterRequest::set_cluster_name(const ::std::string& value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
 }
- void DiagnoseClusterRequest::set_cluster_name(const char* value) {
+void DiagnoseClusterRequest::set_cluster_name(const char* value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
 }
- void DiagnoseClusterRequest::set_cluster_name(const char* value, size_t size) {
+void DiagnoseClusterRequest::set_cluster_name(const char* value, size_t size) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
 }
- ::std::string* DiagnoseClusterRequest::mutable_cluster_name() {
+::std::string* DiagnoseClusterRequest::mutable_cluster_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
   return cluster_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DiagnoseClusterRequest::release_cluster_name() {
+::std::string* DiagnoseClusterRequest::release_cluster_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
   
   return cluster_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
+void DiagnoseClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) {
   if (cluster_name != NULL) {
     
   } else {
@@ -9238,6 +9405,9 @@ void DiagnoseClusterRequest::clear_cluster_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
 }
 
+inline const DiagnoseClusterRequest* DiagnoseClusterRequest::internal_default_instance() {
+  return &DiagnoseClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9248,27 +9418,25 @@ const int DiagnoseClusterResults::kOutputUriFieldNumber;
 
 DiagnoseClusterResults::DiagnoseClusterResults()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DiagnoseClusterResults)
 }
 
 void DiagnoseClusterResults::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DiagnoseClusterResults::DiagnoseClusterResults(const DiagnoseClusterResults& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DiagnoseClusterResults)
 }
 
 void DiagnoseClusterResults::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   output_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DiagnoseClusterResults::~DiagnoseClusterResults() {
@@ -9278,8 +9446,6 @@ DiagnoseClusterResults::~DiagnoseClusterResults() {
 
 void DiagnoseClusterResults::SharedDtor() {
   output_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DiagnoseClusterResults::SetCachedSize(int size) const {
@@ -9293,11 +9459,11 @@ const ::google::protobuf::Descriptor* DiagnoseClusterResults::descriptor() {
 }
 
 const DiagnoseClusterResults& DiagnoseClusterResults::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  return *internal_default_instance();
 }
 
-DiagnoseClusterResults* DiagnoseClusterResults::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DiagnoseClusterResults> DiagnoseClusterResults_default_instance_;
 
 DiagnoseClusterResults* DiagnoseClusterResults::New(::google::protobuf::Arena* arena) const {
   DiagnoseClusterResults* n = new DiagnoseClusterResults;
@@ -9377,6 +9543,7 @@ void DiagnoseClusterResults::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DiagnoseClusterResults::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
   // optional string output_uri = 1;
   if (this->output_uri().size() > 0) {
@@ -9393,9 +9560,9 @@ void DiagnoseClusterResults::SerializeWithCachedSizes(
   return target;
 }
 
-int DiagnoseClusterResults::ByteSize() const {
+size_t DiagnoseClusterResults::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string output_uri = 1;
   if (this->output_uri().size() > 0) {
@@ -9404,18 +9571,17 @@ int DiagnoseClusterResults::ByteSize() const {
         this->output_uri());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DiagnoseClusterResults::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DiagnoseClusterResults* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DiagnoseClusterResults* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DiagnoseClusterResults>(
           &from);
   if (source == NULL) {
@@ -9423,15 +9589,21 @@ void DiagnoseClusterResults::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DiagnoseClusterResults)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DiagnoseClusterResults::MergeFrom(const DiagnoseClusterResults& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DiagnoseClusterResults::UnsafeMergeFrom(const DiagnoseClusterResults& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.output_uri().size() > 0) {
 
     output_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_uri_);
@@ -9449,7 +9621,7 @@ void DiagnoseClusterResults::CopyFrom(const DiagnoseClusterResults& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DiagnoseClusterResults::IsInitialized() const {
@@ -9482,37 +9654,37 @@ void DiagnoseClusterResults::InternalSwap(DiagnoseClusterResults* other) {
 void DiagnoseClusterResults::clear_output_uri() {
   output_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DiagnoseClusterResults::output_uri() const {
+const ::std::string& DiagnoseClusterResults::output_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
   return output_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterResults::set_output_uri(const ::std::string& value) {
+void DiagnoseClusterResults::set_output_uri(const ::std::string& value) {
   
   output_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
 }
- void DiagnoseClusterResults::set_output_uri(const char* value) {
+void DiagnoseClusterResults::set_output_uri(const char* value) {
   
   output_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
 }
- void DiagnoseClusterResults::set_output_uri(const char* value, size_t size) {
+void DiagnoseClusterResults::set_output_uri(const char* value, size_t size) {
   
   output_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
 }
- ::std::string* DiagnoseClusterResults::mutable_output_uri() {
+::std::string* DiagnoseClusterResults::mutable_output_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
   return output_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DiagnoseClusterResults::release_output_uri() {
+::std::string* DiagnoseClusterResults::release_output_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
   
   return output_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DiagnoseClusterResults::set_allocated_output_uri(::std::string* output_uri) {
+void DiagnoseClusterResults::set_allocated_output_uri(::std::string* output_uri) {
   if (output_uri != NULL) {
     
   } else {
@@ -9522,6 +9694,9 @@ void DiagnoseClusterResults::clear_output_uri() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
 }
 
+inline const DiagnoseClusterResults* DiagnoseClusterResults::internal_default_instance() {
+  return &DiagnoseClusterResults_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

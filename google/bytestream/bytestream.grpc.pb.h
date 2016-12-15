@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -64,7 +65,7 @@ namespace bytestream {
 // #### Errors
 //
 // The errors returned by the service are in the Google canonical error space.
-class ByteStream GRPC_FINAL {
+class ByteStream final {
  public:
   class StubInterface {
    public:
@@ -131,7 +132,7 @@ class ByteStream GRPC_FINAL {
     virtual ::grpc::ClientAsyncWriterInterface< ::google::bytestream::WriteRequest>* AsyncWriteRaw(::grpc::ClientContext* context, ::google::bytestream::WriteResponse* response, ::grpc::CompletionQueue* cq, void* tag) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::bytestream::QueryWriteStatusResponse>* AsyncQueryWriteStatusRaw(::grpc::ClientContext* context, const ::google::bytestream::QueryWriteStatusRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
     std::unique_ptr< ::grpc::ClientReader< ::google::bytestream::ReadResponse>> Read(::grpc::ClientContext* context, const ::google::bytestream::ReadRequest& request) {
@@ -146,18 +147,18 @@ class ByteStream GRPC_FINAL {
     std::unique_ptr< ::grpc::ClientAsyncWriter< ::google::bytestream::WriteRequest>> AsyncWrite(::grpc::ClientContext* context, ::google::bytestream::WriteResponse* response, ::grpc::CompletionQueue* cq, void* tag) {
       return std::unique_ptr< ::grpc::ClientAsyncWriter< ::google::bytestream::WriteRequest>>(AsyncWriteRaw(context, response, cq, tag));
     }
-    ::grpc::Status QueryWriteStatus(::grpc::ClientContext* context, const ::google::bytestream::QueryWriteStatusRequest& request, ::google::bytestream::QueryWriteStatusResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status QueryWriteStatus(::grpc::ClientContext* context, const ::google::bytestream::QueryWriteStatusRequest& request, ::google::bytestream::QueryWriteStatusResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bytestream::QueryWriteStatusResponse>> AsyncQueryWriteStatus(::grpc::ClientContext* context, const ::google::bytestream::QueryWriteStatusRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bytestream::QueryWriteStatusResponse>>(AsyncQueryWriteStatusRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientReader< ::google::bytestream::ReadResponse>* ReadRaw(::grpc::ClientContext* context, const ::google::bytestream::ReadRequest& request) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReader< ::google::bytestream::ReadResponse>* AsyncReadRaw(::grpc::ClientContext* context, const ::google::bytestream::ReadRequest& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
-    ::grpc::ClientWriter< ::google::bytestream::WriteRequest>* WriteRaw(::grpc::ClientContext* context, ::google::bytestream::WriteResponse* response) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncWriter< ::google::bytestream::WriteRequest>* AsyncWriteRaw(::grpc::ClientContext* context, ::google::bytestream::WriteResponse* response, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bytestream::QueryWriteStatusResponse>* AsyncQueryWriteStatusRaw(::grpc::ClientContext* context, const ::google::bytestream::QueryWriteStatusRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientReader< ::google::bytestream::ReadResponse>* ReadRaw(::grpc::ClientContext* context, const ::google::bytestream::ReadRequest& request) override;
+    ::grpc::ClientAsyncReader< ::google::bytestream::ReadResponse>* AsyncReadRaw(::grpc::ClientContext* context, const ::google::bytestream::ReadRequest& request, ::grpc::CompletionQueue* cq, void* tag) override;
+    ::grpc::ClientWriter< ::google::bytestream::WriteRequest>* WriteRaw(::grpc::ClientContext* context, ::google::bytestream::WriteResponse* response) override;
+    ::grpc::ClientAsyncWriter< ::google::bytestream::WriteRequest>* AsyncWriteRaw(::grpc::ClientContext* context, ::google::bytestream::WriteResponse* response, ::grpc::CompletionQueue* cq, void* tag) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bytestream::QueryWriteStatusResponse>* AsyncQueryWriteStatusRaw(::grpc::ClientContext* context, const ::google::bytestream::QueryWriteStatusRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_Read_;
     const ::grpc::RpcMethod rpcmethod_Write_;
     const ::grpc::RpcMethod rpcmethod_QueryWriteStatus_;
@@ -219,11 +220,11 @@ class ByteStream GRPC_FINAL {
     WithAsyncMethod_Read() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_Read() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Read() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Read(::grpc::ServerContext* context, const ::google::bytestream::ReadRequest* request, ::grpc::ServerWriter< ::google::bytestream::ReadResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Read(::grpc::ServerContext* context, const ::google::bytestream::ReadRequest* request, ::grpc::ServerWriter< ::google::bytestream::ReadResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -239,11 +240,11 @@ class ByteStream GRPC_FINAL {
     WithAsyncMethod_Write() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_Write() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Write() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Write(::grpc::ServerContext* context, ::grpc::ServerReader< ::google::bytestream::WriteRequest>* reader, ::google::bytestream::WriteResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Write(::grpc::ServerContext* context, ::grpc::ServerReader< ::google::bytestream::WriteRequest>* reader, ::google::bytestream::WriteResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -259,11 +260,11 @@ class ByteStream GRPC_FINAL {
     WithAsyncMethod_QueryWriteStatus() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_QueryWriteStatus() GRPC_OVERRIDE {
+    ~WithAsyncMethod_QueryWriteStatus() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status QueryWriteStatus(::grpc::ServerContext* context, const ::google::bytestream::QueryWriteStatusRequest* request, ::google::bytestream::QueryWriteStatusResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status QueryWriteStatus(::grpc::ServerContext* context, const ::google::bytestream::QueryWriteStatusRequest* request, ::google::bytestream::QueryWriteStatusResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -280,11 +281,11 @@ class ByteStream GRPC_FINAL {
     WithGenericMethod_Read() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_Read() GRPC_OVERRIDE {
+    ~WithGenericMethod_Read() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Read(::grpc::ServerContext* context, const ::google::bytestream::ReadRequest* request, ::grpc::ServerWriter< ::google::bytestream::ReadResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Read(::grpc::ServerContext* context, const ::google::bytestream::ReadRequest* request, ::grpc::ServerWriter< ::google::bytestream::ReadResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -297,11 +298,11 @@ class ByteStream GRPC_FINAL {
     WithGenericMethod_Write() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_Write() GRPC_OVERRIDE {
+    ~WithGenericMethod_Write() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Write(::grpc::ServerContext* context, ::grpc::ServerReader< ::google::bytestream::WriteRequest>* reader, ::google::bytestream::WriteResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Write(::grpc::ServerContext* context, ::grpc::ServerReader< ::google::bytestream::WriteRequest>* reader, ::google::bytestream::WriteResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -314,15 +315,58 @@ class ByteStream GRPC_FINAL {
     WithGenericMethod_QueryWriteStatus() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_QueryWriteStatus() GRPC_OVERRIDE {
+    ~WithGenericMethod_QueryWriteStatus() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status QueryWriteStatus(::grpc::ServerContext* context, const ::google::bytestream::QueryWriteStatusRequest* request, ::google::bytestream::QueryWriteStatusResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status QueryWriteStatus(::grpc::ServerContext* context, const ::google::bytestream::QueryWriteStatusRequest* request, ::google::bytestream::QueryWriteStatusResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_QueryWriteStatus : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_QueryWriteStatus() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::bytestream::QueryWriteStatusRequest, ::google::bytestream::QueryWriteStatusResponse>(std::bind(&WithStreamedUnaryMethod_QueryWriteStatus<BaseClass>::StreamedQueryWriteStatus, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_QueryWriteStatus() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status QueryWriteStatus(::grpc::ServerContext* context, const ::google::bytestream::QueryWriteStatusRequest* request, ::google::bytestream::QueryWriteStatusResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedQueryWriteStatus(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bytestream::QueryWriteStatusRequest,::google::bytestream::QueryWriteStatusResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_QueryWriteStatus<Service > StreamedUnaryService;
+  template <class BaseClass>
+  class WithSplitStreamingMethod_Read : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithSplitStreamingMethod_Read() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::SplitServerStreamingHandler< ::google::bytestream::ReadRequest, ::google::bytestream::ReadResponse>(std::bind(&WithSplitStreamingMethod_Read<BaseClass>::StreamedRead, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithSplitStreamingMethod_Read() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Read(::grpc::ServerContext* context, const ::google::bytestream::ReadRequest* request, ::grpc::ServerWriter< ::google::bytestream::ReadResponse>* writer) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with split streamed
+    virtual ::grpc::Status StreamedRead(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::google::bytestream::ReadRequest,::google::bytestream::ReadResponse>* server_split_streamer) = 0;
+  };
+  typedef WithSplitStreamingMethod_Read<Service > SplitStreamedService;
+  typedef WithSplitStreamingMethod_Read<WithStreamedUnaryMethod_QueryWriteStatus<Service > > StreamedService;
 };
 
 }  // namespace bytestream

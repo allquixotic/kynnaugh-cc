@@ -87,14 +87,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   TraceId_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       TraceId_descriptor_,
-      TraceId::default_instance_,
+      TraceId::internal_default_instance(),
       TraceId_offsets_,
       -1,
       -1,
       -1,
       sizeof(TraceId),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TraceId, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TraceId, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TraceId, _internal_metadata_));
   Module_descriptor_ = file->message_type(1);
   static const int Module_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Module, module_),
@@ -103,14 +102,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   Module_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Module_descriptor_,
-      Module::default_instance_,
+      Module::internal_default_instance(),
       Module_offsets_,
       -1,
       -1,
       -1,
       sizeof(Module),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Module, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Module, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Module, _internal_metadata_));
   StackTrace_descriptor_ = file->message_type(2);
   static const int StackTrace_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace, stack_frame_),
@@ -119,14 +117,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   StackTrace_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StackTrace_descriptor_,
-      StackTrace::default_instance_,
+      StackTrace::internal_default_instance(),
       StackTrace_offsets_,
       -1,
       -1,
       -1,
       sizeof(StackTrace),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace, _internal_metadata_));
   StackTrace_StackFrame_descriptor_ = StackTrace_descriptor_->nested_type(0);
   static const int StackTrace_StackFrame_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace_StackFrame, function_name_),
@@ -140,14 +137,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   StackTrace_StackFrame_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StackTrace_StackFrame_descriptor_,
-      StackTrace_StackFrame::default_instance_,
+      StackTrace_StackFrame::internal_default_instance(),
       StackTrace_StackFrame_offsets_,
       -1,
       -1,
       -1,
       sizeof(StackTrace_StackFrame),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace_StackFrame, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace_StackFrame, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackTrace_StackFrame, _internal_metadata_));
   LabelValue_descriptor_ = file->message_type(3);
   static const int LabelValue_offsets_[4] = {
     PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(LabelValue_default_oneof_instance_, string_value_),
@@ -158,7 +154,7 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   LabelValue_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       LabelValue_descriptor_,
-      LabelValue::default_instance_,
+      LabelValue::internal_default_instance(),
       LabelValue_offsets_,
       -1,
       -1,
@@ -166,8 +162,7 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
       LabelValue_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelValue, _oneof_case_[0]),
       sizeof(LabelValue),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelValue, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelValue, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelValue, _internal_metadata_));
   Span_descriptor_ = file->message_type(4);
   static const int Span_offsets_[11] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span, id_),
@@ -185,14 +180,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   Span_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Span_descriptor_,
-      Span::default_instance_,
+      Span::internal_default_instance(),
       Span_offsets_,
       -1,
       -1,
       -1,
       sizeof(Span),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span, _internal_metadata_));
   Span_TimeEvent_descriptor_ = Span_descriptor_->nested_type(0);
   static const int Span_TimeEvent_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent, local_time_),
@@ -203,7 +197,7 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   Span_TimeEvent_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Span_TimeEvent_descriptor_,
-      Span_TimeEvent::default_instance_,
+      Span_TimeEvent::internal_default_instance(),
       Span_TimeEvent_offsets_,
       -1,
       -1,
@@ -211,8 +205,7 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
       Span_TimeEvent_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent, _oneof_case_[0]),
       sizeof(Span_TimeEvent),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent, _internal_metadata_));
   Span_TimeEvent_Annotation_descriptor_ = Span_TimeEvent_descriptor_->nested_type(0);
   static const int Span_TimeEvent_Annotation_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent_Annotation, description_),
@@ -221,14 +214,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   Span_TimeEvent_Annotation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Span_TimeEvent_Annotation_descriptor_,
-      Span_TimeEvent_Annotation::default_instance_,
+      Span_TimeEvent_Annotation::internal_default_instance(),
       Span_TimeEvent_Annotation_offsets_,
       -1,
       -1,
       -1,
       sizeof(Span_TimeEvent_Annotation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent_Annotation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent_Annotation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent_Annotation, _internal_metadata_));
   Span_TimeEvent_Annotation_LabelsEntry_descriptor_ = Span_TimeEvent_Annotation_descriptor_->nested_type(0);
   Span_TimeEvent_NetworkEvent_descriptor_ = Span_TimeEvent_descriptor_->nested_type(1);
   static const int Span_TimeEvent_NetworkEvent_offsets_[4] = {
@@ -240,14 +232,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   Span_TimeEvent_NetworkEvent_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Span_TimeEvent_NetworkEvent_descriptor_,
-      Span_TimeEvent_NetworkEvent::default_instance_,
+      Span_TimeEvent_NetworkEvent::internal_default_instance(),
       Span_TimeEvent_NetworkEvent_offsets_,
       -1,
       -1,
       -1,
       sizeof(Span_TimeEvent_NetworkEvent),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent_NetworkEvent, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent_NetworkEvent, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_TimeEvent_NetworkEvent, _internal_metadata_));
   Span_TimeEvent_NetworkEvent_Type_descriptor_ = Span_TimeEvent_NetworkEvent_descriptor_->enum_type(0);
   Span_Link_descriptor_ = Span_descriptor_->nested_type(1);
   static const int Span_Link_offsets_[3] = {
@@ -258,14 +249,13 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   Span_Link_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Span_Link_descriptor_,
-      Span_Link::default_instance_,
+      Span_Link::internal_default_instance(),
       Span_Link_offsets_,
       -1,
       -1,
       -1,
       sizeof(Span_Link),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_Link, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_Link, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Span_Link, _internal_metadata_));
   Span_Link_Type_descriptor_ = Span_Link_descriptor_->enum_type(0);
   Span_LabelsEntry_descriptor_ = Span_descriptor_->nested_type(2);
   Trace_descriptor_ = file->message_type(5);
@@ -276,20 +266,19 @@ void protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto() {
   Trace_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Trace_descriptor_,
-      Trace::default_instance_,
+      Trace::internal_default_instance(),
       Trace_offsets_,
       -1,
       -1,
       -1,
       sizeof(Trace),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Trace, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Trace, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Trace, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2ftracing_2ftrace_2eproto);
 }
@@ -298,21 +287,21 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      TraceId_descriptor_, &TraceId::default_instance());
+      TraceId_descriptor_, TraceId::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Module_descriptor_, &Module::default_instance());
+      Module_descriptor_, Module::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StackTrace_descriptor_, &StackTrace::default_instance());
+      StackTrace_descriptor_, StackTrace::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StackTrace_StackFrame_descriptor_, &StackTrace_StackFrame::default_instance());
+      StackTrace_StackFrame_descriptor_, StackTrace_StackFrame::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      LabelValue_descriptor_, &LabelValue::default_instance());
+      LabelValue_descriptor_, LabelValue::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Span_descriptor_, &Span::default_instance());
+      Span_descriptor_, Span::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Span_TimeEvent_descriptor_, &Span_TimeEvent::default_instance());
+      Span_TimeEvent_descriptor_, Span_TimeEvent::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Span_TimeEvent_Annotation_descriptor_, &Span_TimeEvent_Annotation::default_instance());
+      Span_TimeEvent_Annotation_descriptor_, Span_TimeEvent_Annotation::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         Span_TimeEvent_Annotation_LabelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -323,9 +312,9 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 Span_TimeEvent_Annotation_LabelsEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Span_TimeEvent_NetworkEvent_descriptor_, &Span_TimeEvent_NetworkEvent::default_instance());
+      Span_TimeEvent_NetworkEvent_descriptor_, Span_TimeEvent_NetworkEvent::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Span_Link_descriptor_, &Span_Link::default_instance());
+      Span_Link_descriptor_, Span_Link::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         Span_LabelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -336,48 +325,86 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 Span_LabelsEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Trace_descriptor_, &Trace::default_instance());
+      Trace_descriptor_, Trace::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2ftracing_2ftrace_2eproto() {
-  delete TraceId::default_instance_;
+  TraceId_default_instance_.Shutdown();
   delete TraceId_reflection_;
-  delete Module::default_instance_;
+  Module_default_instance_.Shutdown();
   delete Module_reflection_;
-  delete StackTrace::default_instance_;
+  StackTrace_default_instance_.Shutdown();
   delete StackTrace_reflection_;
-  delete StackTrace_StackFrame::default_instance_;
+  StackTrace_StackFrame_default_instance_.Shutdown();
   delete StackTrace_StackFrame_reflection_;
-  delete LabelValue::default_instance_;
+  LabelValue_default_instance_.Shutdown();
   delete LabelValue_default_oneof_instance_;
   delete LabelValue_reflection_;
-  delete Span::default_instance_;
+  Span_default_instance_.Shutdown();
   delete Span_reflection_;
-  delete Span_TimeEvent::default_instance_;
+  Span_TimeEvent_default_instance_.Shutdown();
   delete Span_TimeEvent_default_oneof_instance_;
   delete Span_TimeEvent_reflection_;
-  delete Span_TimeEvent_Annotation::default_instance_;
+  Span_TimeEvent_Annotation_default_instance_.Shutdown();
   delete Span_TimeEvent_Annotation_reflection_;
-  delete Span_TimeEvent_NetworkEvent::default_instance_;
+  Span_TimeEvent_NetworkEvent_default_instance_.Shutdown();
   delete Span_TimeEvent_NetworkEvent_reflection_;
-  delete Span_Link::default_instance_;
+  Span_Link_default_instance_.Shutdown();
   delete Span_Link_reflection_;
-  delete Trace::default_instance_;
+  Trace_default_instance_.Shutdown();
   delete Trace_reflection_;
 }
 
-void protobuf_AddDesc_google_2ftracing_2ftrace_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2ftracing_2ftrace_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::rpc::protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  TraceId_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Module_default_instance_.DefaultConstruct();
+  StackTrace_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  StackTrace_StackFrame_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  LabelValue_default_instance_.DefaultConstruct();
+  LabelValue_default_oneof_instance_ = new LabelValueOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  Span_default_instance_.DefaultConstruct();
+  Span_TimeEvent_default_instance_.DefaultConstruct();
+  Span_TimeEvent_default_oneof_instance_ = new Span_TimeEventOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  Span_TimeEvent_Annotation_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Span_TimeEvent_NetworkEvent_default_instance_.DefaultConstruct();
+  Span_Link_default_instance_.DefaultConstruct();
+  Trace_default_instance_.DefaultConstruct();
+  TraceId_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Module_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StackTrace_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StackTrace_StackFrame_default_instance_.get_mutable()->InitAsDefaultInstance();
+  LabelValue_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Span_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Span_TimeEvent_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Span_TimeEvent_Annotation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Span_TimeEvent_NetworkEvent_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Span_Link_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Trace_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto_once_);
+void protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto_once_,
+                 &protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto_impl);
+}
+void protobuf_AddDesc_google_2ftracing_2ftrace_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\032google/tracing/trace.proto\022\021google.tra"
     "cing.v1\032\034google/api/annotations.proto\032\037g"
@@ -429,43 +456,38 @@ void protobuf_AddDesc_google_2ftracing_2ftrace_2eproto() {
     "tracing.v1.LabelValue:\0028\001\"]\n\005Trace\022,\n\010tr"
     "ace_id\030\001 \001(\0132\032.google.tracing.v1.TraceId"
     "\022&\n\005spans\030\002 \003(\0132\027.google.tracing.v1.Span"
-    "B%\n\025com.google.tracing.v1B\nTraceProtoP\001b"
-    "\006proto3", 2047);
+    "B_\n\025com.google.tracing.v1B\nTraceProtoP\001Z"
+    "8google.golang.org/genproto/googleapis/t"
+    "racing/v1;tracingb\006proto3", 2105);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/tracing/trace.proto", &protobuf_RegisterTypes);
-  TraceId::default_instance_ = new TraceId();
-  Module::default_instance_ = new Module();
-  StackTrace::default_instance_ = new StackTrace();
-  StackTrace_StackFrame::default_instance_ = new StackTrace_StackFrame();
-  LabelValue::default_instance_ = new LabelValue();
-  LabelValue_default_oneof_instance_ = new LabelValueOneofInstance();
-  Span::default_instance_ = new Span();
-  Span_TimeEvent::default_instance_ = new Span_TimeEvent();
-  Span_TimeEvent_default_oneof_instance_ = new Span_TimeEventOneofInstance();
-  Span_TimeEvent_Annotation::default_instance_ = new Span_TimeEvent_Annotation();
-  Span_TimeEvent_NetworkEvent::default_instance_ = new Span_TimeEvent_NetworkEvent();
-  Span_Link::default_instance_ = new Span_Link();
-  Trace::default_instance_ = new Trace();
-  TraceId::default_instance_->InitAsDefaultInstance();
-  Module::default_instance_->InitAsDefaultInstance();
-  StackTrace::default_instance_->InitAsDefaultInstance();
-  StackTrace_StackFrame::default_instance_->InitAsDefaultInstance();
-  LabelValue::default_instance_->InitAsDefaultInstance();
-  Span::default_instance_->InitAsDefaultInstance();
-  Span_TimeEvent::default_instance_->InitAsDefaultInstance();
-  Span_TimeEvent_Annotation::default_instance_->InitAsDefaultInstance();
-  Span_TimeEvent_NetworkEvent::default_instance_->InitAsDefaultInstance();
-  Span_Link::default_instance_->InitAsDefaultInstance();
-  Trace::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2ftracing_2ftrace_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2ftracing_2ftrace_2eproto_once_);
+void protobuf_AddDesc_google_2ftracing_2ftrace_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2ftracing_2ftrace_2eproto_once_,
+                 &protobuf_AddDesc_google_2ftracing_2ftrace_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2ftracing_2ftrace_2eproto {
   StaticDescriptorInitializer_google_2ftracing_2ftrace_2eproto() {
     protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
   }
 } static_descriptor_initializer_google_2ftracing_2ftrace_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -475,27 +497,25 @@ const int TraceId::kHexEncodedFieldNumber;
 
 TraceId::TraceId()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.TraceId)
 }
 
 void TraceId::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 TraceId::TraceId(const TraceId& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.TraceId)
 }
 
 void TraceId::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   hex_encoded_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 TraceId::~TraceId() {
@@ -505,8 +525,6 @@ TraceId::~TraceId() {
 
 void TraceId::SharedDtor() {
   hex_encoded_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void TraceId::SetCachedSize(int size) const {
@@ -520,11 +538,11 @@ const ::google::protobuf::Descriptor* TraceId::descriptor() {
 }
 
 const TraceId& TraceId::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-TraceId* TraceId::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<TraceId> TraceId_default_instance_;
 
 TraceId* TraceId::New(::google::protobuf::Arena* arena) const {
   TraceId* n = new TraceId;
@@ -604,6 +622,7 @@ void TraceId::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* TraceId::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.TraceId)
   // optional string hex_encoded = 1;
   if (this->hex_encoded().size() > 0) {
@@ -620,9 +639,9 @@ void TraceId::SerializeWithCachedSizes(
   return target;
 }
 
-int TraceId::ByteSize() const {
+size_t TraceId::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.TraceId)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string hex_encoded = 1;
   if (this->hex_encoded().size() > 0) {
@@ -631,18 +650,17 @@ int TraceId::ByteSize() const {
         this->hex_encoded());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void TraceId::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.TraceId)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const TraceId* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const TraceId* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TraceId>(
           &from);
   if (source == NULL) {
@@ -650,15 +668,21 @@ void TraceId::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.TraceId)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TraceId::MergeFrom(const TraceId& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.TraceId)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void TraceId::UnsafeMergeFrom(const TraceId& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.hex_encoded().size() > 0) {
 
     hex_encoded_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hex_encoded_);
@@ -676,7 +700,7 @@ void TraceId::CopyFrom(const TraceId& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.TraceId)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TraceId::IsInitialized() const {
@@ -709,37 +733,37 @@ void TraceId::InternalSwap(TraceId* other) {
 void TraceId::clear_hex_encoded() {
   hex_encoded_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& TraceId::hex_encoded() const {
+const ::std::string& TraceId::hex_encoded() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.TraceId.hex_encoded)
   return hex_encoded_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void TraceId::set_hex_encoded(const ::std::string& value) {
+void TraceId::set_hex_encoded(const ::std::string& value) {
   
   hex_encoded_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.TraceId.hex_encoded)
 }
- void TraceId::set_hex_encoded(const char* value) {
+void TraceId::set_hex_encoded(const char* value) {
   
   hex_encoded_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.TraceId.hex_encoded)
 }
- void TraceId::set_hex_encoded(const char* value, size_t size) {
+void TraceId::set_hex_encoded(const char* value, size_t size) {
   
   hex_encoded_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.TraceId.hex_encoded)
 }
- ::std::string* TraceId::mutable_hex_encoded() {
+::std::string* TraceId::mutable_hex_encoded() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.TraceId.hex_encoded)
   return hex_encoded_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* TraceId::release_hex_encoded() {
+::std::string* TraceId::release_hex_encoded() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.TraceId.hex_encoded)
   
   return hex_encoded_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void TraceId::set_allocated_hex_encoded(::std::string* hex_encoded) {
+void TraceId::set_allocated_hex_encoded(::std::string* hex_encoded) {
   if (hex_encoded != NULL) {
     
   } else {
@@ -749,6 +773,9 @@ void TraceId::clear_hex_encoded() {
   // @@protoc_insertion_point(field_set_allocated:google.tracing.v1.TraceId.hex_encoded)
 }
 
+inline const TraceId* TraceId::internal_default_instance() {
+  return &TraceId_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -760,28 +787,26 @@ const int Module::kBuildIdFieldNumber;
 
 Module::Module()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.Module)
 }
 
 void Module::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Module::Module(const Module& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.Module)
 }
 
 void Module::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   module_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   build_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Module::~Module() {
@@ -792,8 +817,6 @@ Module::~Module() {
 void Module::SharedDtor() {
   module_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   build_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Module::SetCachedSize(int size) const {
@@ -807,11 +830,11 @@ const ::google::protobuf::Descriptor* Module::descriptor() {
 }
 
 const Module& Module::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-Module* Module::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Module> Module_default_instance_;
 
 Module* Module::New(::google::protobuf::Arena* arena) const {
   Module* n = new Module;
@@ -919,6 +942,7 @@ void Module::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Module::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.Module)
   // optional string module = 1;
   if (this->module().size() > 0) {
@@ -946,9 +970,9 @@ void Module::SerializeWithCachedSizes(
   return target;
 }
 
-int Module::ByteSize() const {
+size_t Module::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.Module)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string module = 1;
   if (this->module().size() > 0) {
@@ -964,18 +988,17 @@ int Module::ByteSize() const {
         this->build_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Module::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.Module)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Module* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Module* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Module>(
           &from);
   if (source == NULL) {
@@ -983,15 +1006,21 @@ void Module::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.Module)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Module::MergeFrom(const Module& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.Module)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Module::UnsafeMergeFrom(const Module& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.module().size() > 0) {
 
     module_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.module_);
@@ -1013,7 +1042,7 @@ void Module::CopyFrom(const Module& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.Module)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Module::IsInitialized() const {
@@ -1047,37 +1076,37 @@ void Module::InternalSwap(Module* other) {
 void Module::clear_module() {
   module_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Module::module() const {
+const ::std::string& Module::module() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Module.module)
   return module_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Module::set_module(const ::std::string& value) {
+void Module::set_module(const ::std::string& value) {
   
   module_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.Module.module)
 }
- void Module::set_module(const char* value) {
+void Module::set_module(const char* value) {
   
   module_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.Module.module)
 }
- void Module::set_module(const char* value, size_t size) {
+void Module::set_module(const char* value, size_t size) {
   
   module_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.Module.module)
 }
- ::std::string* Module::mutable_module() {
+::std::string* Module::mutable_module() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.Module.module)
   return module_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Module::release_module() {
+::std::string* Module::release_module() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.Module.module)
   
   return module_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Module::set_allocated_module(::std::string* module) {
+void Module::set_allocated_module(::std::string* module) {
   if (module != NULL) {
     
   } else {
@@ -1091,37 +1120,37 @@ void Module::clear_module() {
 void Module::clear_build_id() {
   build_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Module::build_id() const {
+const ::std::string& Module::build_id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Module.build_id)
   return build_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Module::set_build_id(const ::std::string& value) {
+void Module::set_build_id(const ::std::string& value) {
   
   build_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.Module.build_id)
 }
- void Module::set_build_id(const char* value) {
+void Module::set_build_id(const char* value) {
   
   build_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.Module.build_id)
 }
- void Module::set_build_id(const char* value, size_t size) {
+void Module::set_build_id(const char* value, size_t size) {
   
   build_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.Module.build_id)
 }
- ::std::string* Module::mutable_build_id() {
+::std::string* Module::mutable_build_id() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.Module.build_id)
   return build_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Module::release_build_id() {
+::std::string* Module::release_build_id() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.Module.build_id)
   
   return build_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Module::set_allocated_build_id(::std::string* build_id) {
+void Module::set_allocated_build_id(::std::string* build_id) {
   if (build_id != NULL) {
     
   } else {
@@ -1131,6 +1160,9 @@ void Module::clear_build_id() {
   // @@protoc_insertion_point(field_set_allocated:google.tracing.v1.Module.build_id)
 }
 
+inline const Module* Module::internal_default_instance() {
+  return &Module_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1147,34 +1179,33 @@ const int StackTrace_StackFrame::kSourceVersionFieldNumber;
 
 StackTrace_StackFrame::StackTrace_StackFrame()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.StackTrace.StackFrame)
 }
 
 void StackTrace_StackFrame::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  load_module_ = const_cast< ::google::tracing::v1::Module*>(&::google::tracing::v1::Module::default_instance());
+  load_module_ = const_cast< ::google::tracing::v1::Module*>(
+      ::google::tracing::v1::Module::internal_default_instance());
 }
 
 StackTrace_StackFrame::StackTrace_StackFrame(const StackTrace_StackFrame& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.StackTrace.StackFrame)
 }
 
 void StackTrace_StackFrame::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   function_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   orig_function_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   file_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  line_number_ = GOOGLE_LONGLONG(0);
-  column_number_ = GOOGLE_LONGLONG(0);
-  load_module_ = NULL;
   source_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  load_module_ = NULL;
+  ::memset(&line_number_, 0, reinterpret_cast<char*>(&column_number_) -
+    reinterpret_cast<char*>(&line_number_) + sizeof(column_number_));
+  _cached_size_ = 0;
 }
 
 StackTrace_StackFrame::~StackTrace_StackFrame() {
@@ -1187,7 +1218,7 @@ void StackTrace_StackFrame::SharedDtor() {
   orig_function_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   file_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   source_version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &StackTrace_StackFrame_default_instance_.get()) {
     delete load_module_;
   }
 }
@@ -1203,11 +1234,11 @@ const ::google::protobuf::Descriptor* StackTrace_StackFrame::descriptor() {
 }
 
 const StackTrace_StackFrame& StackTrace_StackFrame::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-StackTrace_StackFrame* StackTrace_StackFrame::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StackTrace_StackFrame> StackTrace_StackFrame_default_instance_;
 
 StackTrace_StackFrame* StackTrace_StackFrame::New(::google::protobuf::Arena* arena) const {
   StackTrace_StackFrame* n = new StackTrace_StackFrame;
@@ -1231,7 +1262,7 @@ void StackTrace_StackFrame::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -1312,10 +1343,10 @@ bool StackTrace_StackFrame::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_line_number:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &line_number_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1327,10 +1358,10 @@ bool StackTrace_StackFrame::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_column_number:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &column_number_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1453,6 +1484,7 @@ void StackTrace_StackFrame::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StackTrace_StackFrame::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.StackTrace.StackFrame)
   // optional string function_name = 1;
   if (this->function_name().size() > 0) {
@@ -1519,9 +1551,9 @@ void StackTrace_StackFrame::SerializeWithCachedSizes(
   return target;
 }
 
-int StackTrace_StackFrame::ByteSize() const {
+size_t StackTrace_StackFrame::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.StackTrace.StackFrame)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string function_name = 1;
   if (this->function_name().size() > 0) {
@@ -1572,18 +1604,17 @@ int StackTrace_StackFrame::ByteSize() const {
         this->source_version());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StackTrace_StackFrame::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.StackTrace.StackFrame)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StackTrace_StackFrame* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StackTrace_StackFrame* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StackTrace_StackFrame>(
           &from);
   if (source == NULL) {
@@ -1591,15 +1622,21 @@ void StackTrace_StackFrame::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.StackTrace.StackFrame)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StackTrace_StackFrame::MergeFrom(const StackTrace_StackFrame& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.StackTrace.StackFrame)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StackTrace_StackFrame::UnsafeMergeFrom(const StackTrace_StackFrame& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.function_name().size() > 0) {
 
     function_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.function_name_);
@@ -1638,7 +1675,7 @@ void StackTrace_StackFrame::CopyFrom(const StackTrace_StackFrame& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.StackTrace.StackFrame)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StackTrace_StackFrame::IsInitialized() const {
@@ -1680,26 +1717,25 @@ const int StackTrace::kStackTraceHashIdFieldNumber;
 
 StackTrace::StackTrace()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.StackTrace)
 }
 
 void StackTrace::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 StackTrace::StackTrace(const StackTrace& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.StackTrace)
 }
 
 void StackTrace::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   stack_trace_hash_id_ = GOOGLE_ULONGLONG(0);
+  _cached_size_ = 0;
 }
 
 StackTrace::~StackTrace() {
@@ -1708,8 +1744,6 @@ StackTrace::~StackTrace() {
 }
 
 void StackTrace::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void StackTrace::SetCachedSize(int size) const {
@@ -1723,11 +1757,11 @@ const ::google::protobuf::Descriptor* StackTrace::descriptor() {
 }
 
 const StackTrace& StackTrace::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-StackTrace* StackTrace::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StackTrace> StackTrace_default_instance_;
 
 StackTrace* StackTrace::New(::google::protobuf::Arena* arena) const {
   StackTrace* n = new StackTrace;
@@ -1773,10 +1807,10 @@ bool StackTrace::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_stack_trace_hash_id:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &stack_trace_hash_id_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1824,6 +1858,7 @@ void StackTrace::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StackTrace::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.StackTrace)
   // repeated .google.tracing.v1.StackTrace.StackFrame stack_frame = 1;
   for (unsigned int i = 0, n = this->stack_frame_size(); i < n; i++) {
@@ -1841,9 +1876,9 @@ void StackTrace::SerializeWithCachedSizes(
   return target;
 }
 
-int StackTrace::ByteSize() const {
+size_t StackTrace::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.StackTrace)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional uint64 stack_trace_hash_id = 2;
   if (this->stack_trace_hash_id() != 0) {
@@ -1853,25 +1888,27 @@ int StackTrace::ByteSize() const {
   }
 
   // repeated .google.tracing.v1.StackTrace.StackFrame stack_frame = 1;
-  total_size += 1 * this->stack_frame_size();
-  for (int i = 0; i < this->stack_frame_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->stack_frame(i));
+  {
+    unsigned int count = this->stack_frame_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->stack_frame(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StackTrace::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.StackTrace)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StackTrace* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StackTrace* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StackTrace>(
           &from);
   if (source == NULL) {
@@ -1879,15 +1916,21 @@ void StackTrace::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.StackTrace)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StackTrace::MergeFrom(const StackTrace& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.StackTrace)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StackTrace::UnsafeMergeFrom(const StackTrace& from) {
+  GOOGLE_DCHECK(&from != this);
   stack_frame_.MergeFrom(from.stack_frame_);
   if (from.stack_trace_hash_id() != 0) {
     set_stack_trace_hash_id(from.stack_trace_hash_id());
@@ -1905,7 +1948,7 @@ void StackTrace::CopyFrom(const StackTrace& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.StackTrace)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StackTrace::IsInitialized() const {
@@ -1939,37 +1982,37 @@ void StackTrace::InternalSwap(StackTrace* other) {
 void StackTrace_StackFrame::clear_function_name() {
   function_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StackTrace_StackFrame::function_name() const {
+const ::std::string& StackTrace_StackFrame::function_name() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.StackFrame.function_name)
   return function_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_function_name(const ::std::string& value) {
+void StackTrace_StackFrame::set_function_name(const ::std::string& value) {
   
   function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.StackTrace.StackFrame.function_name)
 }
- void StackTrace_StackFrame::set_function_name(const char* value) {
+void StackTrace_StackFrame::set_function_name(const char* value) {
   
   function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.StackTrace.StackFrame.function_name)
 }
- void StackTrace_StackFrame::set_function_name(const char* value, size_t size) {
+void StackTrace_StackFrame::set_function_name(const char* value, size_t size) {
   
   function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.StackTrace.StackFrame.function_name)
 }
- ::std::string* StackTrace_StackFrame::mutable_function_name() {
+::std::string* StackTrace_StackFrame::mutable_function_name() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.StackTrace.StackFrame.function_name)
   return function_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StackTrace_StackFrame::release_function_name() {
+::std::string* StackTrace_StackFrame::release_function_name() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.StackTrace.StackFrame.function_name)
   
   return function_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_allocated_function_name(::std::string* function_name) {
+void StackTrace_StackFrame::set_allocated_function_name(::std::string* function_name) {
   if (function_name != NULL) {
     
   } else {
@@ -1983,37 +2026,37 @@ void StackTrace_StackFrame::clear_function_name() {
 void StackTrace_StackFrame::clear_orig_function_name() {
   orig_function_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StackTrace_StackFrame::orig_function_name() const {
+const ::std::string& StackTrace_StackFrame::orig_function_name() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.StackFrame.orig_function_name)
   return orig_function_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_orig_function_name(const ::std::string& value) {
+void StackTrace_StackFrame::set_orig_function_name(const ::std::string& value) {
   
   orig_function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.StackTrace.StackFrame.orig_function_name)
 }
- void StackTrace_StackFrame::set_orig_function_name(const char* value) {
+void StackTrace_StackFrame::set_orig_function_name(const char* value) {
   
   orig_function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.StackTrace.StackFrame.orig_function_name)
 }
- void StackTrace_StackFrame::set_orig_function_name(const char* value, size_t size) {
+void StackTrace_StackFrame::set_orig_function_name(const char* value, size_t size) {
   
   orig_function_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.StackTrace.StackFrame.orig_function_name)
 }
- ::std::string* StackTrace_StackFrame::mutable_orig_function_name() {
+::std::string* StackTrace_StackFrame::mutable_orig_function_name() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.StackTrace.StackFrame.orig_function_name)
   return orig_function_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StackTrace_StackFrame::release_orig_function_name() {
+::std::string* StackTrace_StackFrame::release_orig_function_name() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.StackTrace.StackFrame.orig_function_name)
   
   return orig_function_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_allocated_orig_function_name(::std::string* orig_function_name) {
+void StackTrace_StackFrame::set_allocated_orig_function_name(::std::string* orig_function_name) {
   if (orig_function_name != NULL) {
     
   } else {
@@ -2027,37 +2070,37 @@ void StackTrace_StackFrame::clear_orig_function_name() {
 void StackTrace_StackFrame::clear_file_name() {
   file_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StackTrace_StackFrame::file_name() const {
+const ::std::string& StackTrace_StackFrame::file_name() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.StackFrame.file_name)
   return file_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_file_name(const ::std::string& value) {
+void StackTrace_StackFrame::set_file_name(const ::std::string& value) {
   
   file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.StackTrace.StackFrame.file_name)
 }
- void StackTrace_StackFrame::set_file_name(const char* value) {
+void StackTrace_StackFrame::set_file_name(const char* value) {
   
   file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.StackTrace.StackFrame.file_name)
 }
- void StackTrace_StackFrame::set_file_name(const char* value, size_t size) {
+void StackTrace_StackFrame::set_file_name(const char* value, size_t size) {
   
   file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.StackTrace.StackFrame.file_name)
 }
- ::std::string* StackTrace_StackFrame::mutable_file_name() {
+::std::string* StackTrace_StackFrame::mutable_file_name() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.StackTrace.StackFrame.file_name)
   return file_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StackTrace_StackFrame::release_file_name() {
+::std::string* StackTrace_StackFrame::release_file_name() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.StackTrace.StackFrame.file_name)
   
   return file_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_allocated_file_name(::std::string* file_name) {
+void StackTrace_StackFrame::set_allocated_file_name(::std::string* file_name) {
   if (file_name != NULL) {
     
   } else {
@@ -2071,11 +2114,11 @@ void StackTrace_StackFrame::clear_file_name() {
 void StackTrace_StackFrame::clear_line_number() {
   line_number_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 StackTrace_StackFrame::line_number() const {
+::google::protobuf::int64 StackTrace_StackFrame::line_number() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.StackFrame.line_number)
   return line_number_;
 }
- void StackTrace_StackFrame::set_line_number(::google::protobuf::int64 value) {
+void StackTrace_StackFrame::set_line_number(::google::protobuf::int64 value) {
   
   line_number_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.StackTrace.StackFrame.line_number)
@@ -2085,11 +2128,11 @@ void StackTrace_StackFrame::clear_line_number() {
 void StackTrace_StackFrame::clear_column_number() {
   column_number_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 StackTrace_StackFrame::column_number() const {
+::google::protobuf::int64 StackTrace_StackFrame::column_number() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.StackFrame.column_number)
   return column_number_;
 }
- void StackTrace_StackFrame::set_column_number(::google::protobuf::int64 value) {
+void StackTrace_StackFrame::set_column_number(::google::protobuf::int64 value) {
   
   column_number_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.StackTrace.StackFrame.column_number)
@@ -2097,7 +2140,7 @@ void StackTrace_StackFrame::clear_column_number() {
 
 // optional .google.tracing.v1.Module load_module = 6;
 bool StackTrace_StackFrame::has_load_module() const {
-  return !_is_default_instance_ && load_module_ != NULL;
+  return this != internal_default_instance() && load_module_ != NULL;
 }
 void StackTrace_StackFrame::clear_load_module() {
   if (GetArenaNoVirtual() == NULL && load_module_ != NULL) delete load_module_;
@@ -2105,7 +2148,8 @@ void StackTrace_StackFrame::clear_load_module() {
 }
 const ::google::tracing::v1::Module& StackTrace_StackFrame::load_module() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.StackFrame.load_module)
-  return load_module_ != NULL ? *load_module_ : *default_instance_->load_module_;
+  return load_module_ != NULL ? *load_module_
+                         : *::google::tracing::v1::Module::internal_default_instance();
 }
 ::google::tracing::v1::Module* StackTrace_StackFrame::mutable_load_module() {
   
@@ -2137,37 +2181,37 @@ void StackTrace_StackFrame::set_allocated_load_module(::google::tracing::v1::Mod
 void StackTrace_StackFrame::clear_source_version() {
   source_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StackTrace_StackFrame::source_version() const {
+const ::std::string& StackTrace_StackFrame::source_version() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.StackFrame.source_version)
   return source_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_source_version(const ::std::string& value) {
+void StackTrace_StackFrame::set_source_version(const ::std::string& value) {
   
   source_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.StackTrace.StackFrame.source_version)
 }
- void StackTrace_StackFrame::set_source_version(const char* value) {
+void StackTrace_StackFrame::set_source_version(const char* value) {
   
   source_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.StackTrace.StackFrame.source_version)
 }
- void StackTrace_StackFrame::set_source_version(const char* value, size_t size) {
+void StackTrace_StackFrame::set_source_version(const char* value, size_t size) {
   
   source_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.StackTrace.StackFrame.source_version)
 }
- ::std::string* StackTrace_StackFrame::mutable_source_version() {
+::std::string* StackTrace_StackFrame::mutable_source_version() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.StackTrace.StackFrame.source_version)
   return source_version_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StackTrace_StackFrame::release_source_version() {
+::std::string* StackTrace_StackFrame::release_source_version() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.StackTrace.StackFrame.source_version)
   
   return source_version_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackTrace_StackFrame::set_allocated_source_version(::std::string* source_version) {
+void StackTrace_StackFrame::set_allocated_source_version(::std::string* source_version) {
   if (source_version != NULL) {
     
   } else {
@@ -2177,6 +2221,9 @@ void StackTrace_StackFrame::clear_source_version() {
   // @@protoc_insertion_point(field_set_allocated:google.tracing.v1.StackTrace.StackFrame.source_version)
 }
 
+inline const StackTrace_StackFrame* StackTrace_StackFrame::internal_default_instance() {
+  return &StackTrace_StackFrame_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // StackTrace
@@ -2215,16 +2262,19 @@ StackTrace::stack_frame() const {
 void StackTrace::clear_stack_trace_hash_id() {
   stack_trace_hash_id_ = GOOGLE_ULONGLONG(0);
 }
- ::google::protobuf::uint64 StackTrace::stack_trace_hash_id() const {
+::google::protobuf::uint64 StackTrace::stack_trace_hash_id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.StackTrace.stack_trace_hash_id)
   return stack_trace_hash_id_;
 }
- void StackTrace::set_stack_trace_hash_id(::google::protobuf::uint64 value) {
+void StackTrace::set_stack_trace_hash_id(::google::protobuf::uint64 value) {
   
   stack_trace_hash_id_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.StackTrace.stack_trace_hash_id)
 }
 
+inline const StackTrace* StackTrace::internal_default_instance() {
+  return &StackTrace_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2237,12 +2287,12 @@ const int LabelValue::kBoolValueFieldNumber;
 
 LabelValue::LabelValue()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.LabelValue)
 }
 
 void LabelValue::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   LabelValue_default_oneof_instance_->string_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   LabelValue_default_oneof_instance_->int_value_ = GOOGLE_LONGLONG(0);
   LabelValue_default_oneof_instance_->bool_value_ = false;
@@ -2252,15 +2302,13 @@ LabelValue::LabelValue(const LabelValue& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.LabelValue)
 }
 
 void LabelValue::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   clear_has_value();
+  _cached_size_ = 0;
 }
 
 LabelValue::~LabelValue() {
@@ -2271,8 +2319,6 @@ LabelValue::~LabelValue() {
 void LabelValue::SharedDtor() {
   if (has_value()) {
     clear_value();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -2287,11 +2333,11 @@ const ::google::protobuf::Descriptor* LabelValue::descriptor() {
 }
 
 const LabelValue& LabelValue::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-LabelValue* LabelValue::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<LabelValue> LabelValue_default_instance_;
 
 LabelValue* LabelValue::New(::google::protobuf::Arena* arena) const {
   LabelValue* n = new LabelValue;
@@ -2303,7 +2349,7 @@ LabelValue* LabelValue::New(::google::protobuf::Arena* arena) const {
 
 void LabelValue::clear_value() {
 // @@protoc_insertion_point(one_of_clear_start:google.tracing.v1.LabelValue)
-  switch(value_case()) {
+  switch (value_case()) {
     case kStringValue: {
       value_.string_value_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -2351,14 +2397,13 @@ bool LabelValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(16)) goto parse_int_value;
+        goto after_bool_value;
         break;
       }
 
       // optional int64 int_value = 2;
       case 2: {
         if (tag == 16) {
-         parse_int_value:
           clear_value();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -2383,6 +2428,7 @@ bool LabelValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_bool_value:
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -2436,6 +2482,7 @@ void LabelValue::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* LabelValue::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.LabelValue)
   // optional string string_value = 1;
   if (has_string_value()) {
@@ -2462,9 +2509,9 @@ void LabelValue::SerializeWithCachedSizes(
   return target;
 }
 
-int LabelValue::ByteSize() const {
+size_t LabelValue::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.LabelValue)
-  int total_size = 0;
+  size_t total_size = 0;
 
   switch (value_case()) {
     // optional string string_value = 1;
@@ -2490,18 +2537,17 @@ int LabelValue::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LabelValue::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.LabelValue)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const LabelValue* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const LabelValue* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LabelValue>(
           &from);
   if (source == NULL) {
@@ -2509,15 +2555,21 @@ void LabelValue::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.LabelValue)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LabelValue::MergeFrom(const LabelValue& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.LabelValue)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void LabelValue::UnsafeMergeFrom(const LabelValue& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.value_case()) {
     case kStringValue: {
       set_string_value(from.string_value());
@@ -2548,7 +2600,7 @@ void LabelValue::CopyFrom(const LabelValue& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.LabelValue)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LabelValue::IsInitialized() const {
@@ -2591,14 +2643,14 @@ void LabelValue::clear_string_value() {
     clear_has_value();
   }
 }
- const ::std::string& LabelValue::string_value() const {
+const ::std::string& LabelValue::string_value() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.LabelValue.string_value)
   if (has_string_value()) {
     return value_.string_value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void LabelValue::set_string_value(const ::std::string& value) {
+void LabelValue::set_string_value(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.tracing.v1.LabelValue.string_value)
   if (!has_string_value()) {
     clear_value();
@@ -2608,7 +2660,7 @@ void LabelValue::clear_string_value() {
   value_.string_value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.LabelValue.string_value)
 }
- void LabelValue::set_string_value(const char* value) {
+void LabelValue::set_string_value(const char* value) {
   if (!has_string_value()) {
     clear_value();
     set_has_string_value();
@@ -2618,7 +2670,7 @@ void LabelValue::clear_string_value() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.LabelValue.string_value)
 }
- void LabelValue::set_string_value(const char* value, size_t size) {
+void LabelValue::set_string_value(const char* value, size_t size) {
   if (!has_string_value()) {
     clear_value();
     set_has_string_value();
@@ -2628,7 +2680,7 @@ void LabelValue::clear_string_value() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.LabelValue.string_value)
 }
- ::std::string* LabelValue::mutable_string_value() {
+::std::string* LabelValue::mutable_string_value() {
   if (!has_string_value()) {
     clear_value();
     set_has_string_value();
@@ -2637,7 +2689,7 @@ void LabelValue::clear_string_value() {
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.LabelValue.string_value)
   return value_.string_value_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* LabelValue::release_string_value() {
+::std::string* LabelValue::release_string_value() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.LabelValue.string_value)
   if (has_string_value()) {
     clear_has_value();
@@ -2646,7 +2698,7 @@ void LabelValue::clear_string_value() {
     return NULL;
   }
 }
- void LabelValue::set_allocated_string_value(::std::string* string_value) {
+void LabelValue::set_allocated_string_value(::std::string* string_value) {
   if (!has_string_value()) {
     value_.string_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -2672,14 +2724,14 @@ void LabelValue::clear_int_value() {
     clear_has_value();
   }
 }
- ::google::protobuf::int64 LabelValue::int_value() const {
+::google::protobuf::int64 LabelValue::int_value() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.LabelValue.int_value)
   if (has_int_value()) {
     return value_.int_value_;
   }
   return GOOGLE_LONGLONG(0);
 }
- void LabelValue::set_int_value(::google::protobuf::int64 value) {
+void LabelValue::set_int_value(::google::protobuf::int64 value) {
   if (!has_int_value()) {
     clear_value();
     set_has_int_value();
@@ -2701,14 +2753,14 @@ void LabelValue::clear_bool_value() {
     clear_has_value();
   }
 }
- bool LabelValue::bool_value() const {
+bool LabelValue::bool_value() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.LabelValue.bool_value)
   if (has_bool_value()) {
     return value_.bool_value_;
   }
   return false;
 }
- void LabelValue::set_bool_value(bool value) {
+void LabelValue::set_bool_value(bool value) {
   if (!has_bool_value()) {
     clear_value();
     set_has_bool_value();
@@ -2726,6 +2778,9 @@ void LabelValue::clear_has_value() {
 LabelValue::ValueCase LabelValue::value_case() const {
   return LabelValue::ValueCase(_oneof_case_[0]);
 }
+inline const LabelValue* LabelValue::internal_default_instance() {
+  return &LabelValue_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2737,31 +2792,29 @@ const int Span_TimeEvent_Annotation::kLabelsFieldNumber;
 
 Span_TimeEvent_Annotation::Span_TimeEvent_Annotation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.Span.TimeEvent.Annotation)
 }
 
 void Span_TimeEvent_Annotation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Span_TimeEvent_Annotation::Span_TimeEvent_Annotation(const Span_TimeEvent_Annotation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.Span.TimeEvent.Annotation)
 }
 
 void Span_TimeEvent_Annotation::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   labels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   labels_.SetEntryDescriptor(
       &::google::tracing::v1::Span_TimeEvent_Annotation_LabelsEntry_descriptor_);
+  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Span_TimeEvent_Annotation::~Span_TimeEvent_Annotation() {
@@ -2771,8 +2824,6 @@ Span_TimeEvent_Annotation::~Span_TimeEvent_Annotation() {
 
 void Span_TimeEvent_Annotation::SharedDtor() {
   description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Span_TimeEvent_Annotation::SetCachedSize(int size) const {
@@ -2786,11 +2837,11 @@ const ::google::protobuf::Descriptor* Span_TimeEvent_Annotation::descriptor() {
 }
 
 const Span_TimeEvent_Annotation& Span_TimeEvent_Annotation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-Span_TimeEvent_Annotation* Span_TimeEvent_Annotation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Span_TimeEvent_Annotation> Span_TimeEvent_Annotation_default_instance_;
 
 Span_TimeEvent_Annotation* Span_TimeEvent_Annotation::New(::google::protobuf::Arena* arena) const {
   Span_TimeEvent_Annotation* n = new Span_TimeEvent_Annotation;
@@ -2947,6 +2998,7 @@ void Span_TimeEvent_Annotation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Span_TimeEvent_Annotation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.Span.TimeEvent.Annotation)
   // optional string description = 1;
   if (this->description().size() > 0) {
@@ -3016,9 +3068,9 @@ void Span_TimeEvent_Annotation::SerializeWithCachedSizes(
   return target;
 }
 
-int Span_TimeEvent_Annotation::ByteSize() const {
+size_t Span_TimeEvent_Annotation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.Span.TimeEvent.Annotation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string description = 1;
   if (this->description().size() > 0) {
@@ -3028,7 +3080,8 @@ int Span_TimeEvent_Annotation::ByteSize() const {
   }
 
   // map<string, .google.tracing.v1.LabelValue> labels = 2;
-  total_size += 1 * this->labels_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->labels_size());
   {
     ::google::protobuf::scoped_ptr<Span_TimeEvent_Annotation_LabelsEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::google::tracing::v1::LabelValue >::const_iterator
@@ -3040,18 +3093,17 @@ int Span_TimeEvent_Annotation::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Span_TimeEvent_Annotation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.Span.TimeEvent.Annotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Span_TimeEvent_Annotation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Span_TimeEvent_Annotation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Span_TimeEvent_Annotation>(
           &from);
   if (source == NULL) {
@@ -3059,15 +3111,21 @@ void Span_TimeEvent_Annotation::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.Span.TimeEvent.Annotation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Span_TimeEvent_Annotation::MergeFrom(const Span_TimeEvent_Annotation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.Span.TimeEvent.Annotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Span_TimeEvent_Annotation::UnsafeMergeFrom(const Span_TimeEvent_Annotation& from) {
+  GOOGLE_DCHECK(&from != this);
   labels_.MergeFrom(from.labels_);
   if (from.description().size() > 0) {
 
@@ -3086,7 +3144,7 @@ void Span_TimeEvent_Annotation::CopyFrom(const Span_TimeEvent_Annotation& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.Span.TimeEvent.Annotation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Span_TimeEvent_Annotation::IsInitialized() const {
@@ -3121,7 +3179,7 @@ const ::google::protobuf::EnumDescriptor* Span_TimeEvent_NetworkEvent_Type_descr
   return Span_TimeEvent_NetworkEvent_Type_descriptor_;
 }
 bool Span_TimeEvent_NetworkEvent_Type_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -3148,30 +3206,29 @@ const int Span_TimeEvent_NetworkEvent::kMessageSizeFieldNumber;
 
 Span_TimeEvent_NetworkEvent::Span_TimeEvent_NetworkEvent()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.Span.TimeEvent.NetworkEvent)
 }
 
 void Span_TimeEvent_NetworkEvent::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  kernel_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  kernel_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 Span_TimeEvent_NetworkEvent::Span_TimeEvent_NetworkEvent(const Span_TimeEvent_NetworkEvent& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.Span.TimeEvent.NetworkEvent)
 }
 
 void Span_TimeEvent_NetworkEvent::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   kernel_time_ = NULL;
-  type_ = 0;
-  message_id_ = GOOGLE_ULONGLONG(0);
-  message_size_ = GOOGLE_ULONGLONG(0);
+  ::memset(&message_id_, 0, reinterpret_cast<char*>(&type_) -
+    reinterpret_cast<char*>(&message_id_) + sizeof(type_));
+  _cached_size_ = 0;
 }
 
 Span_TimeEvent_NetworkEvent::~Span_TimeEvent_NetworkEvent() {
@@ -3180,7 +3237,7 @@ Span_TimeEvent_NetworkEvent::~Span_TimeEvent_NetworkEvent() {
 }
 
 void Span_TimeEvent_NetworkEvent::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &Span_TimeEvent_NetworkEvent_default_instance_.get()) {
     delete kernel_time_;
   }
 }
@@ -3196,11 +3253,11 @@ const ::google::protobuf::Descriptor* Span_TimeEvent_NetworkEvent::descriptor() 
 }
 
 const Span_TimeEvent_NetworkEvent& Span_TimeEvent_NetworkEvent::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-Span_TimeEvent_NetworkEvent* Span_TimeEvent_NetworkEvent::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Span_TimeEvent_NetworkEvent> Span_TimeEvent_NetworkEvent_default_instance_;
 
 Span_TimeEvent_NetworkEvent* Span_TimeEvent_NetworkEvent::New(::google::protobuf::Arena* arena) const {
   Span_TimeEvent_NetworkEvent* n = new Span_TimeEvent_NetworkEvent;
@@ -3224,7 +3281,7 @@ void Span_TimeEvent_NetworkEvent::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -3279,10 +3336,10 @@ bool Span_TimeEvent_NetworkEvent::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_message_id:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &message_id_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3294,10 +3351,10 @@ bool Span_TimeEvent_NetworkEvent::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_message_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &message_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3356,6 +3413,7 @@ void Span_TimeEvent_NetworkEvent::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Span_TimeEvent_NetworkEvent::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.Span.TimeEvent.NetworkEvent)
   // optional .google.protobuf.Timestamp kernel_time = 1;
   if (this->has_kernel_time()) {
@@ -3384,9 +3442,9 @@ void Span_TimeEvent_NetworkEvent::SerializeWithCachedSizes(
   return target;
 }
 
-int Span_TimeEvent_NetworkEvent::ByteSize() const {
+size_t Span_TimeEvent_NetworkEvent::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.Span.TimeEvent.NetworkEvent)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Timestamp kernel_time = 1;
   if (this->has_kernel_time()) {
@@ -3415,18 +3473,17 @@ int Span_TimeEvent_NetworkEvent::ByteSize() const {
         this->message_size());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Span_TimeEvent_NetworkEvent::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.Span.TimeEvent.NetworkEvent)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Span_TimeEvent_NetworkEvent* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Span_TimeEvent_NetworkEvent* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Span_TimeEvent_NetworkEvent>(
           &from);
   if (source == NULL) {
@@ -3434,15 +3491,21 @@ void Span_TimeEvent_NetworkEvent::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.Span.TimeEvent.NetworkEvent)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Span_TimeEvent_NetworkEvent::MergeFrom(const Span_TimeEvent_NetworkEvent& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.Span.TimeEvent.NetworkEvent)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Span_TimeEvent_NetworkEvent::UnsafeMergeFrom(const Span_TimeEvent_NetworkEvent& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_kernel_time()) {
     mutable_kernel_time()->::google::protobuf::Timestamp::MergeFrom(from.kernel_time());
   }
@@ -3468,7 +3531,7 @@ void Span_TimeEvent_NetworkEvent::CopyFrom(const Span_TimeEvent_NetworkEvent& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.Span.TimeEvent.NetworkEvent)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Span_TimeEvent_NetworkEvent::IsInitialized() const {
@@ -3508,30 +3571,32 @@ const int Span_TimeEvent::kNetworkEventFieldNumber;
 
 Span_TimeEvent::Span_TimeEvent()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.Span.TimeEvent)
 }
 
 void Span_TimeEvent::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  local_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  Span_TimeEvent_default_oneof_instance_->annotation_ = const_cast< ::google::tracing::v1::Span_TimeEvent_Annotation*>(&::google::tracing::v1::Span_TimeEvent_Annotation::default_instance());
-  Span_TimeEvent_default_oneof_instance_->network_event_ = const_cast< ::google::tracing::v1::Span_TimeEvent_NetworkEvent*>(&::google::tracing::v1::Span_TimeEvent_NetworkEvent::default_instance());
+  local_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  Span_TimeEvent_default_oneof_instance_->annotation_ = const_cast< ::google::tracing::v1::Span_TimeEvent_Annotation*>(
+      ::google::tracing::v1::Span_TimeEvent_Annotation::internal_default_instance());
+  Span_TimeEvent_default_oneof_instance_->network_event_ = const_cast< ::google::tracing::v1::Span_TimeEvent_NetworkEvent*>(
+      ::google::tracing::v1::Span_TimeEvent_NetworkEvent::internal_default_instance());
 }
 
 Span_TimeEvent::Span_TimeEvent(const Span_TimeEvent& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.Span.TimeEvent)
 }
 
 void Span_TimeEvent::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   local_time_ = NULL;
   clear_has_value();
+  _cached_size_ = 0;
 }
 
 Span_TimeEvent::~Span_TimeEvent() {
@@ -3543,7 +3608,7 @@ void Span_TimeEvent::SharedDtor() {
   if (has_value()) {
     clear_value();
   }
-  if (this != default_instance_) {
+  if (this != &Span_TimeEvent_default_instance_.get()) {
     delete local_time_;
   }
 }
@@ -3559,11 +3624,11 @@ const ::google::protobuf::Descriptor* Span_TimeEvent::descriptor() {
 }
 
 const Span_TimeEvent& Span_TimeEvent::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-Span_TimeEvent* Span_TimeEvent::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Span_TimeEvent> Span_TimeEvent_default_instance_;
 
 Span_TimeEvent* Span_TimeEvent::New(::google::protobuf::Arena* arena) const {
   Span_TimeEvent* n = new Span_TimeEvent;
@@ -3575,7 +3640,7 @@ Span_TimeEvent* Span_TimeEvent::New(::google::protobuf::Arena* arena) const {
 
 void Span_TimeEvent::clear_value() {
 // @@protoc_insertion_point(one_of_clear_start:google.tracing.v1.Span.TimeEvent)
-  switch(value_case()) {
+  switch (value_case()) {
     case kAnnotation: {
       delete value_.annotation_;
       break;
@@ -3630,19 +3695,19 @@ bool Span_TimeEvent::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_network_event;
+        goto after_network_event;
         break;
       }
 
       // optional .google.tracing.v1.Span.TimeEvent.NetworkEvent network_event = 3;
       case 3: {
         if (tag == 26) {
-         parse_network_event:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_network_event()));
         } else {
           goto handle_unusual;
         }
+       after_network_event:
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -3694,6 +3759,7 @@ void Span_TimeEvent::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Span_TimeEvent::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.Span.TimeEvent)
   // optional .google.protobuf.Timestamp local_time = 1;
   if (this->has_local_time()) {
@@ -3720,9 +3786,9 @@ void Span_TimeEvent::SerializeWithCachedSizes(
   return target;
 }
 
-int Span_TimeEvent::ByteSize() const {
+size_t Span_TimeEvent::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.Span.TimeEvent)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Timestamp local_time = 1;
   if (this->has_local_time()) {
@@ -3750,18 +3816,17 @@ int Span_TimeEvent::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Span_TimeEvent::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.Span.TimeEvent)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Span_TimeEvent* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Span_TimeEvent* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Span_TimeEvent>(
           &from);
   if (source == NULL) {
@@ -3769,15 +3834,21 @@ void Span_TimeEvent::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.Span.TimeEvent)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Span_TimeEvent::MergeFrom(const Span_TimeEvent& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.Span.TimeEvent)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Span_TimeEvent::UnsafeMergeFrom(const Span_TimeEvent& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.value_case()) {
     case kAnnotation: {
       mutable_annotation()->::google::tracing::v1::Span_TimeEvent_Annotation::MergeFrom(from.annotation());
@@ -3807,7 +3878,7 @@ void Span_TimeEvent::CopyFrom(const Span_TimeEvent& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.Span.TimeEvent)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Span_TimeEvent::IsInitialized() const {
@@ -3843,7 +3914,7 @@ const ::google::protobuf::EnumDescriptor* Span_Link_Type_descriptor() {
   return Span_Link_Type_descriptor_;
 }
 bool Span_Link_Type_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -3869,29 +3940,29 @@ const int Span_Link::kTypeFieldNumber;
 
 Span_Link::Span_Link()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.Span.Link)
 }
 
 void Span_Link::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  trace_id_ = const_cast< ::google::tracing::v1::TraceId*>(&::google::tracing::v1::TraceId::default_instance());
+  trace_id_ = const_cast< ::google::tracing::v1::TraceId*>(
+      ::google::tracing::v1::TraceId::internal_default_instance());
 }
 
 Span_Link::Span_Link(const Span_Link& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.Span.Link)
 }
 
 void Span_Link::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   trace_id_ = NULL;
-  span_id_ = GOOGLE_ULONGLONG(0);
-  type_ = 0;
+  ::memset(&span_id_, 0, reinterpret_cast<char*>(&type_) -
+    reinterpret_cast<char*>(&span_id_) + sizeof(type_));
+  _cached_size_ = 0;
 }
 
 Span_Link::~Span_Link() {
@@ -3900,7 +3971,7 @@ Span_Link::~Span_Link() {
 }
 
 void Span_Link::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &Span_Link_default_instance_.get()) {
     delete trace_id_;
   }
 }
@@ -3916,11 +3987,11 @@ const ::google::protobuf::Descriptor* Span_Link::descriptor() {
 }
 
 const Span_Link& Span_Link::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-Span_Link* Span_Link::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Span_Link> Span_Link_default_instance_;
 
 Span_Link* Span_Link::New(::google::protobuf::Arena* arena) const {
   Span_Link* n = new Span_Link;
@@ -3944,7 +4015,7 @@ void Span_Link::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -3983,10 +4054,10 @@ bool Span_Link::MergePartialFromCodedStream(
       case 2: {
         if (tag == 17) {
          parse_span_id:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &span_id_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4056,6 +4127,7 @@ void Span_Link::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Span_Link::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.Span.Link)
   // optional .google.tracing.v1.TraceId trace_id = 1;
   if (this->has_trace_id()) {
@@ -4079,9 +4151,9 @@ void Span_Link::SerializeWithCachedSizes(
   return target;
 }
 
-int Span_Link::ByteSize() const {
+size_t Span_Link::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.Span.Link)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.tracing.v1.TraceId trace_id = 1;
   if (this->has_trace_id()) {
@@ -4101,18 +4173,17 @@ int Span_Link::ByteSize() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Span_Link::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.Span.Link)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Span_Link* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Span_Link* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Span_Link>(
           &from);
   if (source == NULL) {
@@ -4120,15 +4191,21 @@ void Span_Link::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.Span.Link)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Span_Link::MergeFrom(const Span_Link& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.Span.Link)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Span_Link::UnsafeMergeFrom(const Span_Link& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_trace_id()) {
     mutable_trace_id()->::google::tracing::v1::TraceId::MergeFrom(from.trace_id());
   }
@@ -4151,7 +4228,7 @@ void Span_Link::CopyFrom(const Span_Link& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.Span.Link)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Span_Link::IsInitialized() const {
@@ -4198,42 +4275,43 @@ const int Span::kHasRemoteParentFieldNumber;
 
 Span::Span()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.Span)
 }
 
 void Span::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  local_start_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  local_end_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  stack_trace_ = const_cast< ::google::tracing::v1::StackTrace*>(&::google::tracing::v1::StackTrace::default_instance());
-  status_ = const_cast< ::google::rpc::Status*>(&::google::rpc::Status::default_instance());
+  local_start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  local_end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  stack_trace_ = const_cast< ::google::tracing::v1::StackTrace*>(
+      ::google::tracing::v1::StackTrace::internal_default_instance());
+  status_ = const_cast< ::google::rpc::Status*>(
+      ::google::rpc::Status::internal_default_instance());
 }
 
 Span::Span(const Span& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.Span)
 }
 
 void Span::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  id_ = GOOGLE_ULONGLONG(0);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  parent_id_ = GOOGLE_ULONGLONG(0);
-  local_start_time_ = NULL;
-  local_end_time_ = NULL;
   labels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   labels_.SetEntryDescriptor(
       &::google::tracing::v1::Span_LabelsEntry_descriptor_);
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  local_start_time_ = NULL;
+  local_end_time_ = NULL;
   stack_trace_ = NULL;
   status_ = NULL;
-  has_remote_parent_ = false;
+  ::memset(&id_, 0, reinterpret_cast<char*>(&has_remote_parent_) -
+    reinterpret_cast<char*>(&id_) + sizeof(has_remote_parent_));
+  _cached_size_ = 0;
 }
 
 Span::~Span() {
@@ -4243,7 +4321,7 @@ Span::~Span() {
 
 void Span::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &Span_default_instance_.get()) {
     delete local_start_time_;
     delete local_end_time_;
     delete stack_trace_;
@@ -4262,11 +4340,11 @@ const ::google::protobuf::Descriptor* Span::descriptor() {
 }
 
 const Span& Span::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-Span* Span::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Span> Span_default_instance_;
 
 Span* Span::New(::google::protobuf::Arena* arena) const {
   Span* n = new Span;
@@ -4278,9 +4356,24 @@ Span* Span::New(::google::protobuf::Arena* arena) const {
 
 void Span::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.tracing.v1.Span)
-  id_ = GOOGLE_ULONGLONG(0);
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Span, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Span*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(id_, parent_id_);
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  parent_id_ = GOOGLE_ULONGLONG(0);
   if (GetArenaNoVirtual() == NULL && local_start_time_ != NULL) delete local_start_time_;
   local_start_time_ = NULL;
   if (GetArenaNoVirtual() == NULL && local_end_time_ != NULL) delete local_end_time_;
@@ -4290,6 +4383,10 @@ void Span::Clear() {
   if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
   status_ = NULL;
   has_remote_parent_ = false;
+
+#undef ZR_HELPER_
+#undef ZR_
+
   labels_.Clear();
   time_events_.Clear();
   links_.Clear();
@@ -4308,10 +4405,10 @@ bool Span::MergePartialFromCodedStream(
       // optional fixed64 id = 1;
       case 1: {
         if (tag == 9) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &id_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4340,10 +4437,10 @@ bool Span::MergePartialFromCodedStream(
       case 3: {
         if (tag == 25) {
          parse_parent_id:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &parent_id_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4467,10 +4564,10 @@ bool Span::MergePartialFromCodedStream(
       case 11: {
         if (tag == 88) {
          parse_has_remote_parent:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &has_remote_parent_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4617,6 +4714,7 @@ void Span::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Span::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.Span)
   // optional fixed64 id = 1;
   if (this->id() != 0) {
@@ -4743,9 +4841,9 @@ void Span::SerializeWithCachedSizes(
   return target;
 }
 
-int Span::ByteSize() const {
+size_t Span::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.Span)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional fixed64 id = 1;
   if (this->id() != 0) {
@@ -4798,7 +4896,8 @@ int Span::ByteSize() const {
   }
 
   // map<string, .google.tracing.v1.LabelValue> labels = 6;
-  total_size += 1 * this->labels_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->labels_size());
   {
     ::google::protobuf::scoped_ptr<Span_LabelsEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::google::tracing::v1::LabelValue >::const_iterator
@@ -4811,33 +4910,38 @@ int Span::ByteSize() const {
   }
 
   // repeated .google.tracing.v1.Span.TimeEvent time_events = 8;
-  total_size += 1 * this->time_events_size();
-  for (int i = 0; i < this->time_events_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->time_events(i));
+  {
+    unsigned int count = this->time_events_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->time_events(i));
+    }
   }
 
   // repeated .google.tracing.v1.Span.Link links = 9;
-  total_size += 1 * this->links_size();
-  for (int i = 0; i < this->links_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->links(i));
+  {
+    unsigned int count = this->links_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->links(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Span::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.Span)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Span* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Span* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Span>(
           &from);
   if (source == NULL) {
@@ -4845,15 +4949,21 @@ void Span::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.Span)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Span::MergeFrom(const Span& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.Span)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Span::UnsafeMergeFrom(const Span& from) {
+  GOOGLE_DCHECK(&from != this);
   labels_.MergeFrom(from.labels_);
   time_events_.MergeFrom(from.time_events_);
   links_.MergeFrom(from.links_);
@@ -4895,7 +5005,7 @@ void Span::CopyFrom(const Span& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.Span)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Span::IsInitialized() const {
@@ -4938,37 +5048,37 @@ void Span::InternalSwap(Span* other) {
 void Span_TimeEvent_Annotation::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Span_TimeEvent_Annotation::description() const {
+const ::std::string& Span_TimeEvent_Annotation::description() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.TimeEvent.Annotation.description)
   return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Span_TimeEvent_Annotation::set_description(const ::std::string& value) {
+void Span_TimeEvent_Annotation::set_description(const ::std::string& value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.TimeEvent.Annotation.description)
 }
- void Span_TimeEvent_Annotation::set_description(const char* value) {
+void Span_TimeEvent_Annotation::set_description(const char* value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.Span.TimeEvent.Annotation.description)
 }
- void Span_TimeEvent_Annotation::set_description(const char* value, size_t size) {
+void Span_TimeEvent_Annotation::set_description(const char* value, size_t size) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.Span.TimeEvent.Annotation.description)
 }
- ::std::string* Span_TimeEvent_Annotation::mutable_description() {
+::std::string* Span_TimeEvent_Annotation::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.Span.TimeEvent.Annotation.description)
   return description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Span_TimeEvent_Annotation::release_description() {
+::std::string* Span_TimeEvent_Annotation::release_description() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.Span.TimeEvent.Annotation.description)
   
   return description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Span_TimeEvent_Annotation::set_allocated_description(::std::string* description) {
+void Span_TimeEvent_Annotation::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -4996,13 +5106,16 @@ Span_TimeEvent_Annotation::mutable_labels() {
   return labels_.MutableMap();
 }
 
+inline const Span_TimeEvent_Annotation* Span_TimeEvent_Annotation::internal_default_instance() {
+  return &Span_TimeEvent_Annotation_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Span_TimeEvent_NetworkEvent
 
 // optional .google.protobuf.Timestamp kernel_time = 1;
 bool Span_TimeEvent_NetworkEvent::has_kernel_time() const {
-  return !_is_default_instance_ && kernel_time_ != NULL;
+  return this != internal_default_instance() && kernel_time_ != NULL;
 }
 void Span_TimeEvent_NetworkEvent::clear_kernel_time() {
   if (GetArenaNoVirtual() == NULL && kernel_time_ != NULL) delete kernel_time_;
@@ -5010,7 +5123,8 @@ void Span_TimeEvent_NetworkEvent::clear_kernel_time() {
 }
 const ::google::protobuf::Timestamp& Span_TimeEvent_NetworkEvent::kernel_time() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.TimeEvent.NetworkEvent.kernel_time)
-  return kernel_time_ != NULL ? *kernel_time_ : *default_instance_->kernel_time_;
+  return kernel_time_ != NULL ? *kernel_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Span_TimeEvent_NetworkEvent::mutable_kernel_time() {
   
@@ -5047,11 +5161,11 @@ void Span_TimeEvent_NetworkEvent::set_allocated_kernel_time(::google::protobuf::
 void Span_TimeEvent_NetworkEvent::clear_type() {
   type_ = 0;
 }
- ::google::tracing::v1::Span_TimeEvent_NetworkEvent_Type Span_TimeEvent_NetworkEvent::type() const {
+::google::tracing::v1::Span_TimeEvent_NetworkEvent_Type Span_TimeEvent_NetworkEvent::type() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.TimeEvent.NetworkEvent.type)
   return static_cast< ::google::tracing::v1::Span_TimeEvent_NetworkEvent_Type >(type_);
 }
- void Span_TimeEvent_NetworkEvent::set_type(::google::tracing::v1::Span_TimeEvent_NetworkEvent_Type value) {
+void Span_TimeEvent_NetworkEvent::set_type(::google::tracing::v1::Span_TimeEvent_NetworkEvent_Type value) {
   
   type_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.TimeEvent.NetworkEvent.type)
@@ -5061,11 +5175,11 @@ void Span_TimeEvent_NetworkEvent::clear_type() {
 void Span_TimeEvent_NetworkEvent::clear_message_id() {
   message_id_ = GOOGLE_ULONGLONG(0);
 }
- ::google::protobuf::uint64 Span_TimeEvent_NetworkEvent::message_id() const {
+::google::protobuf::uint64 Span_TimeEvent_NetworkEvent::message_id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.TimeEvent.NetworkEvent.message_id)
   return message_id_;
 }
- void Span_TimeEvent_NetworkEvent::set_message_id(::google::protobuf::uint64 value) {
+void Span_TimeEvent_NetworkEvent::set_message_id(::google::protobuf::uint64 value) {
   
   message_id_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.TimeEvent.NetworkEvent.message_id)
@@ -5075,23 +5189,26 @@ void Span_TimeEvent_NetworkEvent::clear_message_id() {
 void Span_TimeEvent_NetworkEvent::clear_message_size() {
   message_size_ = GOOGLE_ULONGLONG(0);
 }
- ::google::protobuf::uint64 Span_TimeEvent_NetworkEvent::message_size() const {
+::google::protobuf::uint64 Span_TimeEvent_NetworkEvent::message_size() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.TimeEvent.NetworkEvent.message_size)
   return message_size_;
 }
- void Span_TimeEvent_NetworkEvent::set_message_size(::google::protobuf::uint64 value) {
+void Span_TimeEvent_NetworkEvent::set_message_size(::google::protobuf::uint64 value) {
   
   message_size_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.TimeEvent.NetworkEvent.message_size)
 }
 
+inline const Span_TimeEvent_NetworkEvent* Span_TimeEvent_NetworkEvent::internal_default_instance() {
+  return &Span_TimeEvent_NetworkEvent_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Span_TimeEvent
 
 // optional .google.protobuf.Timestamp local_time = 1;
 bool Span_TimeEvent::has_local_time() const {
-  return !_is_default_instance_ && local_time_ != NULL;
+  return this != internal_default_instance() && local_time_ != NULL;
 }
 void Span_TimeEvent::clear_local_time() {
   if (GetArenaNoVirtual() == NULL && local_time_ != NULL) delete local_time_;
@@ -5099,7 +5216,8 @@ void Span_TimeEvent::clear_local_time() {
 }
 const ::google::protobuf::Timestamp& Span_TimeEvent::local_time() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.TimeEvent.local_time)
-  return local_time_ != NULL ? *local_time_ : *default_instance_->local_time_;
+  return local_time_ != NULL ? *local_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Span_TimeEvent::mutable_local_time() {
   
@@ -5237,13 +5355,16 @@ void Span_TimeEvent::clear_has_value() {
 Span_TimeEvent::ValueCase Span_TimeEvent::value_case() const {
   return Span_TimeEvent::ValueCase(_oneof_case_[0]);
 }
+inline const Span_TimeEvent* Span_TimeEvent::internal_default_instance() {
+  return &Span_TimeEvent_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Span_Link
 
 // optional .google.tracing.v1.TraceId trace_id = 1;
 bool Span_Link::has_trace_id() const {
-  return !_is_default_instance_ && trace_id_ != NULL;
+  return this != internal_default_instance() && trace_id_ != NULL;
 }
 void Span_Link::clear_trace_id() {
   if (GetArenaNoVirtual() == NULL && trace_id_ != NULL) delete trace_id_;
@@ -5251,7 +5372,8 @@ void Span_Link::clear_trace_id() {
 }
 const ::google::tracing::v1::TraceId& Span_Link::trace_id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.Link.trace_id)
-  return trace_id_ != NULL ? *trace_id_ : *default_instance_->trace_id_;
+  return trace_id_ != NULL ? *trace_id_
+                         : *::google::tracing::v1::TraceId::internal_default_instance();
 }
 ::google::tracing::v1::TraceId* Span_Link::mutable_trace_id() {
   
@@ -5283,11 +5405,11 @@ void Span_Link::set_allocated_trace_id(::google::tracing::v1::TraceId* trace_id)
 void Span_Link::clear_span_id() {
   span_id_ = GOOGLE_ULONGLONG(0);
 }
- ::google::protobuf::uint64 Span_Link::span_id() const {
+::google::protobuf::uint64 Span_Link::span_id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.Link.span_id)
   return span_id_;
 }
- void Span_Link::set_span_id(::google::protobuf::uint64 value) {
+void Span_Link::set_span_id(::google::protobuf::uint64 value) {
   
   span_id_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.Link.span_id)
@@ -5297,16 +5419,19 @@ void Span_Link::clear_span_id() {
 void Span_Link::clear_type() {
   type_ = 0;
 }
- ::google::tracing::v1::Span_Link_Type Span_Link::type() const {
+::google::tracing::v1::Span_Link_Type Span_Link::type() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.Link.type)
   return static_cast< ::google::tracing::v1::Span_Link_Type >(type_);
 }
- void Span_Link::set_type(::google::tracing::v1::Span_Link_Type value) {
+void Span_Link::set_type(::google::tracing::v1::Span_Link_Type value) {
   
   type_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.Link.type)
 }
 
+inline const Span_Link* Span_Link::internal_default_instance() {
+  return &Span_Link_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Span
@@ -5315,11 +5440,11 @@ void Span_Link::clear_type() {
 void Span::clear_id() {
   id_ = GOOGLE_ULONGLONG(0);
 }
- ::google::protobuf::uint64 Span::id() const {
+::google::protobuf::uint64 Span::id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.id)
   return id_;
 }
- void Span::set_id(::google::protobuf::uint64 value) {
+void Span::set_id(::google::protobuf::uint64 value) {
   
   id_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.id)
@@ -5329,37 +5454,37 @@ void Span::clear_id() {
 void Span::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Span::name() const {
+const ::std::string& Span::name() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Span::set_name(const ::std::string& value) {
+void Span::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.name)
 }
- void Span::set_name(const char* value) {
+void Span::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.tracing.v1.Span.name)
 }
- void Span::set_name(const char* value, size_t size) {
+void Span::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.tracing.v1.Span.name)
 }
- ::std::string* Span::mutable_name() {
+::std::string* Span::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.tracing.v1.Span.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Span::release_name() {
+::std::string* Span::release_name() {
   // @@protoc_insertion_point(field_release:google.tracing.v1.Span.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Span::set_allocated_name(::std::string* name) {
+void Span::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -5373,11 +5498,11 @@ void Span::clear_name() {
 void Span::clear_parent_id() {
   parent_id_ = GOOGLE_ULONGLONG(0);
 }
- ::google::protobuf::uint64 Span::parent_id() const {
+::google::protobuf::uint64 Span::parent_id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.parent_id)
   return parent_id_;
 }
- void Span::set_parent_id(::google::protobuf::uint64 value) {
+void Span::set_parent_id(::google::protobuf::uint64 value) {
   
   parent_id_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.parent_id)
@@ -5385,7 +5510,7 @@ void Span::clear_parent_id() {
 
 // optional .google.protobuf.Timestamp local_start_time = 4;
 bool Span::has_local_start_time() const {
-  return !_is_default_instance_ && local_start_time_ != NULL;
+  return this != internal_default_instance() && local_start_time_ != NULL;
 }
 void Span::clear_local_start_time() {
   if (GetArenaNoVirtual() == NULL && local_start_time_ != NULL) delete local_start_time_;
@@ -5393,7 +5518,8 @@ void Span::clear_local_start_time() {
 }
 const ::google::protobuf::Timestamp& Span::local_start_time() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.local_start_time)
-  return local_start_time_ != NULL ? *local_start_time_ : *default_instance_->local_start_time_;
+  return local_start_time_ != NULL ? *local_start_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Span::mutable_local_start_time() {
   
@@ -5428,7 +5554,7 @@ void Span::set_allocated_local_start_time(::google::protobuf::Timestamp* local_s
 
 // optional .google.protobuf.Timestamp local_end_time = 5;
 bool Span::has_local_end_time() const {
-  return !_is_default_instance_ && local_end_time_ != NULL;
+  return this != internal_default_instance() && local_end_time_ != NULL;
 }
 void Span::clear_local_end_time() {
   if (GetArenaNoVirtual() == NULL && local_end_time_ != NULL) delete local_end_time_;
@@ -5436,7 +5562,8 @@ void Span::clear_local_end_time() {
 }
 const ::google::protobuf::Timestamp& Span::local_end_time() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.local_end_time)
-  return local_end_time_ != NULL ? *local_end_time_ : *default_instance_->local_end_time_;
+  return local_end_time_ != NULL ? *local_end_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Span::mutable_local_end_time() {
   
@@ -5489,7 +5616,7 @@ Span::mutable_labels() {
 
 // optional .google.tracing.v1.StackTrace stack_trace = 7;
 bool Span::has_stack_trace() const {
-  return !_is_default_instance_ && stack_trace_ != NULL;
+  return this != internal_default_instance() && stack_trace_ != NULL;
 }
 void Span::clear_stack_trace() {
   if (GetArenaNoVirtual() == NULL && stack_trace_ != NULL) delete stack_trace_;
@@ -5497,7 +5624,8 @@ void Span::clear_stack_trace() {
 }
 const ::google::tracing::v1::StackTrace& Span::stack_trace() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.stack_trace)
-  return stack_trace_ != NULL ? *stack_trace_ : *default_instance_->stack_trace_;
+  return stack_trace_ != NULL ? *stack_trace_
+                         : *::google::tracing::v1::StackTrace::internal_default_instance();
 }
 ::google::tracing::v1::StackTrace* Span::mutable_stack_trace() {
   
@@ -5587,7 +5715,7 @@ Span::links() const {
 
 // optional .google.rpc.Status status = 10;
 bool Span::has_status() const {
-  return !_is_default_instance_ && status_ != NULL;
+  return this != internal_default_instance() && status_ != NULL;
 }
 void Span::clear_status() {
   if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
@@ -5595,7 +5723,8 @@ void Span::clear_status() {
 }
 const ::google::rpc::Status& Span::status() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.status)
-  return status_ != NULL ? *status_ : *default_instance_->status_;
+  return status_ != NULL ? *status_
+                         : *::google::rpc::Status::internal_default_instance();
 }
 ::google::rpc::Status* Span::mutable_status() {
   
@@ -5627,16 +5756,19 @@ void Span::set_allocated_status(::google::rpc::Status* status) {
 void Span::clear_has_remote_parent() {
   has_remote_parent_ = false;
 }
- bool Span::has_remote_parent() const {
+bool Span::has_remote_parent() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Span.has_remote_parent)
   return has_remote_parent_;
 }
- void Span::set_has_remote_parent(bool value) {
+void Span::set_has_remote_parent(bool value) {
   
   has_remote_parent_ = value;
   // @@protoc_insertion_point(field_set:google.tracing.v1.Span.has_remote_parent)
 }
 
+inline const Span* Span::internal_default_instance() {
+  return &Span_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5648,27 +5780,27 @@ const int Trace::kSpansFieldNumber;
 
 Trace::Trace()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.tracing.v1.Trace)
 }
 
 void Trace::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  trace_id_ = const_cast< ::google::tracing::v1::TraceId*>(&::google::tracing::v1::TraceId::default_instance());
+  trace_id_ = const_cast< ::google::tracing::v1::TraceId*>(
+      ::google::tracing::v1::TraceId::internal_default_instance());
 }
 
 Trace::Trace(const Trace& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.tracing.v1.Trace)
 }
 
 void Trace::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   trace_id_ = NULL;
+  _cached_size_ = 0;
 }
 
 Trace::~Trace() {
@@ -5677,7 +5809,7 @@ Trace::~Trace() {
 }
 
 void Trace::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &Trace_default_instance_.get()) {
     delete trace_id_;
   }
 }
@@ -5693,11 +5825,11 @@ const ::google::protobuf::Descriptor* Trace::descriptor() {
 }
 
 const Trace& Trace::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftracing_2ftrace_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftracing_2ftrace_2eproto();
+  return *internal_default_instance();
 }
 
-Trace* Trace::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Trace> Trace_default_instance_;
 
 Trace* Trace::New(::google::protobuf::Arena* arena) const {
   Trace* n = new Trace;
@@ -5794,6 +5926,7 @@ void Trace::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Trace::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.tracing.v1.Trace)
   // optional .google.tracing.v1.TraceId trace_id = 1;
   if (this->has_trace_id()) {
@@ -5813,9 +5946,9 @@ void Trace::SerializeWithCachedSizes(
   return target;
 }
 
-int Trace::ByteSize() const {
+size_t Trace::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.tracing.v1.Trace)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.tracing.v1.TraceId trace_id = 1;
   if (this->has_trace_id()) {
@@ -5825,25 +5958,27 @@ int Trace::ByteSize() const {
   }
 
   // repeated .google.tracing.v1.Span spans = 2;
-  total_size += 1 * this->spans_size();
-  for (int i = 0; i < this->spans_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->spans(i));
+  {
+    unsigned int count = this->spans_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->spans(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Trace::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.tracing.v1.Trace)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Trace* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Trace* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Trace>(
           &from);
   if (source == NULL) {
@@ -5851,15 +5986,21 @@ void Trace::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.tracing.v1.Trace)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Trace::MergeFrom(const Trace& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.tracing.v1.Trace)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Trace::UnsafeMergeFrom(const Trace& from) {
+  GOOGLE_DCHECK(&from != this);
   spans_.MergeFrom(from.spans_);
   if (from.has_trace_id()) {
     mutable_trace_id()->::google::tracing::v1::TraceId::MergeFrom(from.trace_id());
@@ -5877,7 +6018,7 @@ void Trace::CopyFrom(const Trace& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.tracing.v1.Trace)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Trace::IsInitialized() const {
@@ -5909,7 +6050,7 @@ void Trace::InternalSwap(Trace* other) {
 
 // optional .google.tracing.v1.TraceId trace_id = 1;
 bool Trace::has_trace_id() const {
-  return !_is_default_instance_ && trace_id_ != NULL;
+  return this != internal_default_instance() && trace_id_ != NULL;
 }
 void Trace::clear_trace_id() {
   if (GetArenaNoVirtual() == NULL && trace_id_ != NULL) delete trace_id_;
@@ -5917,7 +6058,8 @@ void Trace::clear_trace_id() {
 }
 const ::google::tracing::v1::TraceId& Trace::trace_id() const {
   // @@protoc_insertion_point(field_get:google.tracing.v1.Trace.trace_id)
-  return trace_id_ != NULL ? *trace_id_ : *default_instance_->trace_id_;
+  return trace_id_ != NULL ? *trace_id_
+                         : *::google::tracing::v1::TraceId::internal_default_instance();
 }
 ::google::tracing::v1::TraceId* Trace::mutable_trace_id() {
   
@@ -5975,6 +6117,9 @@ Trace::spans() const {
   return spans_;
 }
 
+inline const Trace* Trace::internal_default_instance() {
+  return &Trace_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

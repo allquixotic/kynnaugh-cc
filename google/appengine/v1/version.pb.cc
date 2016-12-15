@@ -108,7 +108,7 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   Version_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Version_descriptor_,
-      Version::default_instance_,
+      Version::internal_default_instance(),
       Version_offsets_,
       -1,
       -1,
@@ -116,8 +116,7 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
       Version_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Version, _oneof_case_[0]),
       sizeof(Version),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Version, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Version, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Version, _internal_metadata_));
   Version_BetaSettingsEntry_descriptor_ = Version_descriptor_->nested_type(0);
   Version_EnvVariablesEntry_descriptor_ = Version_descriptor_->nested_type(1);
   AutomaticScaling_descriptor_ = file->message_type(1);
@@ -138,14 +137,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   AutomaticScaling_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       AutomaticScaling_descriptor_,
-      AutomaticScaling::default_instance_,
+      AutomaticScaling::internal_default_instance(),
       AutomaticScaling_offsets_,
       -1,
       -1,
       -1,
       sizeof(AutomaticScaling),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AutomaticScaling, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AutomaticScaling, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AutomaticScaling, _internal_metadata_));
   BasicScaling_descriptor_ = file->message_type(2);
   static const int BasicScaling_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BasicScaling, idle_timeout_),
@@ -154,14 +152,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   BasicScaling_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       BasicScaling_descriptor_,
-      BasicScaling::default_instance_,
+      BasicScaling::internal_default_instance(),
       BasicScaling_offsets_,
       -1,
       -1,
       -1,
       sizeof(BasicScaling),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BasicScaling, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BasicScaling, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BasicScaling, _internal_metadata_));
   ManualScaling_descriptor_ = file->message_type(3);
   static const int ManualScaling_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManualScaling, instances_),
@@ -169,14 +166,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   ManualScaling_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ManualScaling_descriptor_,
-      ManualScaling::default_instance_,
+      ManualScaling::internal_default_instance(),
       ManualScaling_offsets_,
       -1,
       -1,
       -1,
       sizeof(ManualScaling),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManualScaling, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManualScaling, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManualScaling, _internal_metadata_));
   CpuUtilization_descriptor_ = file->message_type(4);
   static const int CpuUtilization_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CpuUtilization, aggregation_window_length_),
@@ -185,14 +181,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   CpuUtilization_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CpuUtilization_descriptor_,
-      CpuUtilization::default_instance_,
+      CpuUtilization::internal_default_instance(),
       CpuUtilization_offsets_,
       -1,
       -1,
       -1,
       sizeof(CpuUtilization),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CpuUtilization, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CpuUtilization, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CpuUtilization, _internal_metadata_));
   RequestUtilization_descriptor_ = file->message_type(5);
   static const int RequestUtilization_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestUtilization, target_request_count_per_second_),
@@ -201,14 +196,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   RequestUtilization_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       RequestUtilization_descriptor_,
-      RequestUtilization::default_instance_,
+      RequestUtilization::internal_default_instance(),
       RequestUtilization_offsets_,
       -1,
       -1,
       -1,
       sizeof(RequestUtilization),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestUtilization, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestUtilization, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestUtilization, _internal_metadata_));
   DiskUtilization_descriptor_ = file->message_type(6);
   static const int DiskUtilization_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskUtilization, target_write_bytes_per_second_),
@@ -219,14 +213,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   DiskUtilization_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DiskUtilization_descriptor_,
-      DiskUtilization::default_instance_,
+      DiskUtilization::internal_default_instance(),
       DiskUtilization_offsets_,
       -1,
       -1,
       -1,
       sizeof(DiskUtilization),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskUtilization, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskUtilization, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskUtilization, _internal_metadata_));
   NetworkUtilization_descriptor_ = file->message_type(7);
   static const int NetworkUtilization_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NetworkUtilization, target_sent_bytes_per_second_),
@@ -237,14 +230,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   NetworkUtilization_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       NetworkUtilization_descriptor_,
-      NetworkUtilization::default_instance_,
+      NetworkUtilization::internal_default_instance(),
       NetworkUtilization_offsets_,
       -1,
       -1,
       -1,
       sizeof(NetworkUtilization),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NetworkUtilization, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NetworkUtilization, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NetworkUtilization, _internal_metadata_));
   Network_descriptor_ = file->message_type(8);
   static const int Network_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Network, forwarded_ports_),
@@ -254,14 +246,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   Network_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Network_descriptor_,
-      Network::default_instance_,
+      Network::internal_default_instance(),
       Network_offsets_,
       -1,
       -1,
       -1,
       sizeof(Network),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Network, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Network, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Network, _internal_metadata_));
   Resources_descriptor_ = file->message_type(9);
   static const int Resources_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Resources, cpu_),
@@ -271,14 +262,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
   Resources_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Resources_descriptor_,
-      Resources::default_instance_,
+      Resources::internal_default_instance(),
       Resources_offsets_,
       -1,
       -1,
       -1,
       sizeof(Resources),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Resources, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Resources, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Resources, _internal_metadata_));
   InboundServiceType_descriptor_ = file->enum_type(0);
   ServingStatus_descriptor_ = file->enum_type(1);
 }
@@ -286,7 +276,7 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fappengine_2fv1_2fversion_2eproto);
 }
@@ -295,7 +285,7 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Version_descriptor_, &Version::default_instance());
+      Version_descriptor_, Version::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         Version_BetaSettingsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -315,63 +305,93 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 Version_EnvVariablesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      AutomaticScaling_descriptor_, &AutomaticScaling::default_instance());
+      AutomaticScaling_descriptor_, AutomaticScaling::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      BasicScaling_descriptor_, &BasicScaling::default_instance());
+      BasicScaling_descriptor_, BasicScaling::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ManualScaling_descriptor_, &ManualScaling::default_instance());
+      ManualScaling_descriptor_, ManualScaling::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CpuUtilization_descriptor_, &CpuUtilization::default_instance());
+      CpuUtilization_descriptor_, CpuUtilization::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      RequestUtilization_descriptor_, &RequestUtilization::default_instance());
+      RequestUtilization_descriptor_, RequestUtilization::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DiskUtilization_descriptor_, &DiskUtilization::default_instance());
+      DiskUtilization_descriptor_, DiskUtilization::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      NetworkUtilization_descriptor_, &NetworkUtilization::default_instance());
+      NetworkUtilization_descriptor_, NetworkUtilization::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Network_descriptor_, &Network::default_instance());
+      Network_descriptor_, Network::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Resources_descriptor_, &Resources::default_instance());
+      Resources_descriptor_, Resources::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fappengine_2fv1_2fversion_2eproto() {
-  delete Version::default_instance_;
+  Version_default_instance_.Shutdown();
   delete Version_default_oneof_instance_;
   delete Version_reflection_;
-  delete AutomaticScaling::default_instance_;
+  AutomaticScaling_default_instance_.Shutdown();
   delete AutomaticScaling_reflection_;
-  delete BasicScaling::default_instance_;
+  BasicScaling_default_instance_.Shutdown();
   delete BasicScaling_reflection_;
-  delete ManualScaling::default_instance_;
+  ManualScaling_default_instance_.Shutdown();
   delete ManualScaling_reflection_;
-  delete CpuUtilization::default_instance_;
+  CpuUtilization_default_instance_.Shutdown();
   delete CpuUtilization_reflection_;
-  delete RequestUtilization::default_instance_;
+  RequestUtilization_default_instance_.Shutdown();
   delete RequestUtilization_reflection_;
-  delete DiskUtilization::default_instance_;
+  DiskUtilization_default_instance_.Shutdown();
   delete DiskUtilization_reflection_;
-  delete NetworkUtilization::default_instance_;
+  NetworkUtilization_default_instance_.Shutdown();
   delete NetworkUtilization_reflection_;
-  delete Network::default_instance_;
+  Network_default_instance_.Shutdown();
   delete Network_reflection_;
-  delete Resources::default_instance_;
+  Resources_default_instance_.Shutdown();
   delete Resources_reflection_;
 }
 
-void protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::appengine::v1::protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  ::google::appengine::v1::protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::appengine::v1::protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  ::google::appengine::v1::protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Version_default_instance_.DefaultConstruct();
+  Version_default_oneof_instance_ = new VersionOneofInstance();
+  AutomaticScaling_default_instance_.DefaultConstruct();
+  BasicScaling_default_instance_.DefaultConstruct();
+  ManualScaling_default_instance_.DefaultConstruct();
+  CpuUtilization_default_instance_.DefaultConstruct();
+  RequestUtilization_default_instance_.DefaultConstruct();
+  DiskUtilization_default_instance_.DefaultConstruct();
+  NetworkUtilization_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Network_default_instance_.DefaultConstruct();
+  Resources_default_instance_.DefaultConstruct();
+  Version_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AutomaticScaling_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BasicScaling_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ManualScaling_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CpuUtilization_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RequestUtilization_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DiskUtilization_default_instance_.get_mutable()->InitAsDefaultInstance();
+  NetworkUtilization_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Network_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Resources_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto_once_);
+void protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n!google/appengine/v1/version.proto\022\023goo"
     "gle.appengine.v1\032\034google/api/annotations"
@@ -456,35 +476,25 @@ void protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto() {
     "XMPP_PRESENCE\020\006\022$\n INBOUND_SERVICE_CHANN"
     "EL_PRESENCE\020\007\022\032\n\026INBOUND_SERVICE_WARMUP\020"
     "\t*I\n\rServingStatus\022\036\n\032SERVING_STATUS_UNS"
-    "PECIFIED\020\000\022\013\n\007SERVING\020\001\022\013\n\007STOPPED\020\002B)\n\027"
-    "com.google.appengine.v1B\014VersionProtoP\001b"
-    "\006proto3", 3407);
+    "PECIFIED\020\000\022\013\n\007SERVING\020\001\022\013\n\007STOPPED\020\002Bg\n\027"
+    "com.google.appengine.v1B\014VersionProtoP\001Z"
+    "<google.golang.org/genproto/googleapis/a"
+    "ppengine/v1;appengineb\006proto3", 3469);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/appengine/v1/version.proto", &protobuf_RegisterTypes);
-  Version::default_instance_ = new Version();
-  Version_default_oneof_instance_ = new VersionOneofInstance();
-  AutomaticScaling::default_instance_ = new AutomaticScaling();
-  BasicScaling::default_instance_ = new BasicScaling();
-  ManualScaling::default_instance_ = new ManualScaling();
-  CpuUtilization::default_instance_ = new CpuUtilization();
-  RequestUtilization::default_instance_ = new RequestUtilization();
-  DiskUtilization::default_instance_ = new DiskUtilization();
-  NetworkUtilization::default_instance_ = new NetworkUtilization();
-  Network::default_instance_ = new Network();
-  Resources::default_instance_ = new Resources();
-  Version::default_instance_->InitAsDefaultInstance();
-  AutomaticScaling::default_instance_->InitAsDefaultInstance();
-  BasicScaling::default_instance_->InitAsDefaultInstance();
-  ManualScaling::default_instance_->InitAsDefaultInstance();
-  CpuUtilization::default_instance_->InitAsDefaultInstance();
-  RequestUtilization::default_instance_->InitAsDefaultInstance();
-  DiskUtilization::default_instance_->InitAsDefaultInstance();
-  NetworkUtilization::default_instance_->InitAsDefaultInstance();
-  Network::default_instance_->InitAsDefaultInstance();
-  Resources::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::appengine::v1::protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  ::google::appengine::v1::protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fappengine_2fv1_2fversion_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto_once_);
+void protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto_once_,
+                 &protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fappengine_2fv1_2fversion_2eproto {
   StaticDescriptorInitializer_google_2fappengine_2fv1_2fversion_2eproto() {
@@ -496,7 +506,7 @@ const ::google::protobuf::EnumDescriptor* InboundServiceType_descriptor() {
   return InboundServiceType_descriptor_;
 }
 bool InboundServiceType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -517,7 +527,7 @@ const ::google::protobuf::EnumDescriptor* ServingStatus_descriptor() {
   return ServingStatus_descriptor_;
 }
 bool ServingStatus_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -526,6 +536,16 @@ bool ServingStatus_IsValid(int value) {
       return false;
   }
 }
+
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
 
 
 // ===================================================================
@@ -563,64 +583,70 @@ const int Version::kVersionUrlFieldNumber;
 
 Version::Version()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Version)
 }
 
 void Version::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  Version_default_oneof_instance_->automatic_scaling_ = const_cast< ::google::appengine::v1::AutomaticScaling*>(&::google::appengine::v1::AutomaticScaling::default_instance());
-  Version_default_oneof_instance_->basic_scaling_ = const_cast< ::google::appengine::v1::BasicScaling*>(&::google::appengine::v1::BasicScaling::default_instance());
-  Version_default_oneof_instance_->manual_scaling_ = const_cast< ::google::appengine::v1::ManualScaling*>(&::google::appengine::v1::ManualScaling::default_instance());
-  network_ = const_cast< ::google::appengine::v1::Network*>(&::google::appengine::v1::Network::default_instance());
-  resources_ = const_cast< ::google::appengine::v1::Resources*>(&::google::appengine::v1::Resources::default_instance());
-  create_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  api_config_ = const_cast< ::google::appengine::v1::ApiConfigHandler*>(&::google::appengine::v1::ApiConfigHandler::default_instance());
-  default_expiration_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
-  health_check_ = const_cast< ::google::appengine::v1::HealthCheck*>(&::google::appengine::v1::HealthCheck::default_instance());
-  deployment_ = const_cast< ::google::appengine::v1::Deployment*>(&::google::appengine::v1::Deployment::default_instance());
+  Version_default_oneof_instance_->automatic_scaling_ = const_cast< ::google::appengine::v1::AutomaticScaling*>(
+      ::google::appengine::v1::AutomaticScaling::internal_default_instance());
+  Version_default_oneof_instance_->basic_scaling_ = const_cast< ::google::appengine::v1::BasicScaling*>(
+      ::google::appengine::v1::BasicScaling::internal_default_instance());
+  Version_default_oneof_instance_->manual_scaling_ = const_cast< ::google::appengine::v1::ManualScaling*>(
+      ::google::appengine::v1::ManualScaling::internal_default_instance());
+  network_ = const_cast< ::google::appengine::v1::Network*>(
+      ::google::appengine::v1::Network::internal_default_instance());
+  resources_ = const_cast< ::google::appengine::v1::Resources*>(
+      ::google::appengine::v1::Resources::internal_default_instance());
+  create_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  api_config_ = const_cast< ::google::appengine::v1::ApiConfigHandler*>(
+      ::google::appengine::v1::ApiConfigHandler::internal_default_instance());
+  default_expiration_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+  health_check_ = const_cast< ::google::appengine::v1::HealthCheck*>(
+      ::google::appengine::v1::HealthCheck::internal_default_instance());
+  deployment_ = const_cast< ::google::appengine::v1::Deployment*>(
+      ::google::appengine::v1::Deployment::internal_default_instance());
 }
 
 Version::Version(const Version& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Version)
 }
 
 void Version::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  instance_class_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  network_ = NULL;
-  resources_ = NULL;
-  runtime_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  threadsafe_ = false;
-  vm_ = false;
   beta_settings_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   beta_settings_.SetEntryDescriptor(
       &::google::appengine::v1::Version_BetaSettingsEntry_descriptor_);
-  env_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  serving_status_ = 0;
-  created_by_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  create_time_ = NULL;
-  disk_usage_bytes_ = GOOGLE_LONGLONG(0);
-  api_config_ = NULL;
   env_variables_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   env_variables_.SetEntryDescriptor(
       &::google::appengine::v1::Version_EnvVariablesEntry_descriptor_);
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  instance_class_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  runtime_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  env_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  created_by_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  nobuild_files_regex_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  version_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  network_ = NULL;
+  resources_ = NULL;
+  create_time_ = NULL;
+  api_config_ = NULL;
   default_expiration_ = NULL;
   health_check_ = NULL;
-  nobuild_files_regex_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   deployment_ = NULL;
-  version_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&threadsafe_, 0, reinterpret_cast<char*>(&disk_usage_bytes_) -
+    reinterpret_cast<char*>(&threadsafe_) + sizeof(disk_usage_bytes_));
   clear_has_scaling();
+  _cached_size_ = 0;
 }
 
 Version::~Version() {
@@ -640,7 +666,7 @@ void Version::SharedDtor() {
   if (has_scaling()) {
     clear_scaling();
   }
-  if (this != default_instance_) {
+  if (this != &Version_default_instance_.get()) {
     delete network_;
     delete resources_;
     delete create_time_;
@@ -662,11 +688,11 @@ const ::google::protobuf::Descriptor* Version::descriptor() {
 }
 
 const Version& Version::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-Version* Version::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Version> Version_default_instance_;
 
 Version* Version::New(::google::protobuf::Arena* arena) const {
   Version* n = new Version;
@@ -678,7 +704,7 @@ Version* Version::New(::google::protobuf::Arena* arena) const {
 
 void Version::clear_scaling() {
 // @@protoc_insertion_point(one_of_clear_start:google.appengine.v1.Version)
-  switch(scaling_case()) {
+  switch (scaling_case()) {
     case kAutomaticScaling: {
       delete scaling_.automatic_scaling_;
       break;
@@ -713,7 +739,7 @@ void Version::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -806,14 +832,13 @@ bool Version::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(34)) goto parse_basic_scaling;
+        goto after_manual_scaling;
         break;
       }
 
       // optional .google.appengine.v1.BasicScaling basic_scaling = 4;
       case 4: {
         if (tag == 34) {
-         parse_basic_scaling:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_basic_scaling()));
         } else {
@@ -832,6 +857,7 @@ bool Version::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_manual_scaling:
         if (input->ExpectTag(50)) goto parse_inbound_services;
         break;
       }
@@ -928,10 +954,10 @@ bool Version::MergePartialFromCodedStream(
       case 11: {
         if (tag == 88) {
          parse_threadsafe:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &threadsafe_)));
-
         } else {
           goto handle_unusual;
         }
@@ -943,10 +969,10 @@ bool Version::MergePartialFromCodedStream(
       case 12: {
         if (tag == 96) {
          parse_vm:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &vm_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1052,10 +1078,10 @@ bool Version::MergePartialFromCodedStream(
       case 18: {
         if (tag == 144) {
          parse_disk_usage_bytes:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &disk_usage_bytes_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1556,6 +1582,7 @@ void Version::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Version::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.Version)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1888,9 +1915,9 @@ void Version::SerializeWithCachedSizes(
   return target;
 }
 
-int Version::ByteSize() const {
+size_t Version::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Version)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -2022,8 +2049,8 @@ int Version::ByteSize() const {
 
   // repeated .google.appengine.v1.InboundServiceType inbound_services = 6;
   {
-    int data_size = 0;
-    for (int i = 0; i < this->inbound_services_size(); i++) {
+    size_t data_size = 0;
+    unsigned int count = this->inbound_services_size();for (unsigned int i = 0; i < count; i++) {
       data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
         this->inbound_services(i));
     }
@@ -2031,14 +2058,16 @@ int Version::ByteSize() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _inbound_services_cached_byte_size_ = data_size;
+    _inbound_services_cached_byte_size_ = cached_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
   // map<string, string> beta_settings = 13;
-  total_size += 1 * this->beta_settings_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->beta_settings_size());
   {
     ::google::protobuf::scoped_ptr<Version_BetaSettingsEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -2051,31 +2080,41 @@ int Version::ByteSize() const {
   }
 
   // repeated .google.appengine.v1.UrlMap handlers = 100;
-  total_size += 2 * this->handlers_size();
-  for (int i = 0; i < this->handlers_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->handlers(i));
+  {
+    unsigned int count = this->handlers_size();
+    total_size += 2UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->handlers(i));
+    }
   }
 
   // repeated .google.appengine.v1.ErrorHandler error_handlers = 101;
-  total_size += 2 * this->error_handlers_size();
-  for (int i = 0; i < this->error_handlers_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->error_handlers(i));
+  {
+    unsigned int count = this->error_handlers_size();
+    total_size += 2UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->error_handlers(i));
+    }
   }
 
   // repeated .google.appengine.v1.Library libraries = 102;
-  total_size += 2 * this->libraries_size();
-  for (int i = 0; i < this->libraries_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->libraries(i));
+  {
+    unsigned int count = this->libraries_size();
+    total_size += 2UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->libraries(i));
+    }
   }
 
   // map<string, string> env_variables = 104;
-  total_size += 2 * this->env_variables_size();
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->env_variables_size());
   {
     ::google::protobuf::scoped_ptr<Version_EnvVariablesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -2113,18 +2152,17 @@ int Version::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Version::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Version)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Version* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Version* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Version>(
           &from);
   if (source == NULL) {
@@ -2132,16 +2170,22 @@ void Version::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Version)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Version::MergeFrom(const Version& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Version)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  inbound_services_.MergeFrom(from.inbound_services_);
+}
+
+void Version::UnsafeMergeFrom(const Version& from) {
+  GOOGLE_DCHECK(&from != this);
+  inbound_services_.UnsafeMergeFrom(from.inbound_services_);
   beta_settings_.MergeFrom(from.beta_settings_);
   handlers_.MergeFrom(from.handlers_);
   error_handlers_.MergeFrom(from.error_handlers_);
@@ -2242,7 +2286,7 @@ void Version::CopyFrom(const Version& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Version)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Version::IsInitialized() const {
@@ -2301,37 +2345,37 @@ void Version::InternalSwap(Version* other) {
 void Version::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::name() const {
+const ::std::string& Version::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_name(const ::std::string& value) {
+void Version::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.name)
 }
- void Version::set_name(const char* value) {
+void Version::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.name)
 }
- void Version::set_name(const char* value, size_t size) {
+void Version::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.name)
 }
- ::std::string* Version::mutable_name() {
+::std::string* Version::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_name() {
+::std::string* Version::release_name() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_name(::std::string* name) {
+void Version::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -2345,37 +2389,37 @@ void Version::clear_name() {
 void Version::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::id() const {
+const ::std::string& Version::id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.id)
   return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_id(const ::std::string& value) {
+void Version::set_id(const ::std::string& value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.id)
 }
- void Version::set_id(const char* value) {
+void Version::set_id(const char* value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.id)
 }
- void Version::set_id(const char* value, size_t size) {
+void Version::set_id(const char* value, size_t size) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.id)
 }
- ::std::string* Version::mutable_id() {
+::std::string* Version::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.id)
   return id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_id() {
+::std::string* Version::release_id() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.id)
   
   return id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_id(::std::string* id) {
+void Version::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -2536,24 +2580,24 @@ int Version::inbound_services_size() const {
 void Version::clear_inbound_services() {
   inbound_services_.Clear();
 }
- ::google::appengine::v1::InboundServiceType Version::inbound_services(int index) const {
+::google::appengine::v1::InboundServiceType Version::inbound_services(int index) const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.inbound_services)
   return static_cast< ::google::appengine::v1::InboundServiceType >(inbound_services_.Get(index));
 }
- void Version::set_inbound_services(int index, ::google::appengine::v1::InboundServiceType value) {
+void Version::set_inbound_services(int index, ::google::appengine::v1::InboundServiceType value) {
   inbound_services_.Set(index, value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.inbound_services)
 }
- void Version::add_inbound_services(::google::appengine::v1::InboundServiceType value) {
+void Version::add_inbound_services(::google::appengine::v1::InboundServiceType value) {
   inbound_services_.Add(value);
   // @@protoc_insertion_point(field_add:google.appengine.v1.Version.inbound_services)
 }
- const ::google::protobuf::RepeatedField<int>&
+const ::google::protobuf::RepeatedField<int>&
 Version::inbound_services() const {
   // @@protoc_insertion_point(field_list:google.appengine.v1.Version.inbound_services)
   return inbound_services_;
 }
- ::google::protobuf::RepeatedField<int>*
+::google::protobuf::RepeatedField<int>*
 Version::mutable_inbound_services() {
   // @@protoc_insertion_point(field_mutable_list:google.appengine.v1.Version.inbound_services)
   return &inbound_services_;
@@ -2563,37 +2607,37 @@ Version::mutable_inbound_services() {
 void Version::clear_instance_class() {
   instance_class_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::instance_class() const {
+const ::std::string& Version::instance_class() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.instance_class)
   return instance_class_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_instance_class(const ::std::string& value) {
+void Version::set_instance_class(const ::std::string& value) {
   
   instance_class_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.instance_class)
 }
- void Version::set_instance_class(const char* value) {
+void Version::set_instance_class(const char* value) {
   
   instance_class_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.instance_class)
 }
- void Version::set_instance_class(const char* value, size_t size) {
+void Version::set_instance_class(const char* value, size_t size) {
   
   instance_class_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.instance_class)
 }
- ::std::string* Version::mutable_instance_class() {
+::std::string* Version::mutable_instance_class() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.instance_class)
   return instance_class_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_instance_class() {
+::std::string* Version::release_instance_class() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.instance_class)
   
   return instance_class_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_instance_class(::std::string* instance_class) {
+void Version::set_allocated_instance_class(::std::string* instance_class) {
   if (instance_class != NULL) {
     
   } else {
@@ -2605,7 +2649,7 @@ void Version::clear_instance_class() {
 
 // optional .google.appengine.v1.Network network = 8;
 bool Version::has_network() const {
-  return !_is_default_instance_ && network_ != NULL;
+  return this != internal_default_instance() && network_ != NULL;
 }
 void Version::clear_network() {
   if (GetArenaNoVirtual() == NULL && network_ != NULL) delete network_;
@@ -2613,7 +2657,8 @@ void Version::clear_network() {
 }
 const ::google::appengine::v1::Network& Version::network() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.network)
-  return network_ != NULL ? *network_ : *default_instance_->network_;
+  return network_ != NULL ? *network_
+                         : *::google::appengine::v1::Network::internal_default_instance();
 }
 ::google::appengine::v1::Network* Version::mutable_network() {
   
@@ -2643,7 +2688,7 @@ void Version::set_allocated_network(::google::appengine::v1::Network* network) {
 
 // optional .google.appengine.v1.Resources resources = 9;
 bool Version::has_resources() const {
-  return !_is_default_instance_ && resources_ != NULL;
+  return this != internal_default_instance() && resources_ != NULL;
 }
 void Version::clear_resources() {
   if (GetArenaNoVirtual() == NULL && resources_ != NULL) delete resources_;
@@ -2651,7 +2696,8 @@ void Version::clear_resources() {
 }
 const ::google::appengine::v1::Resources& Version::resources() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.resources)
-  return resources_ != NULL ? *resources_ : *default_instance_->resources_;
+  return resources_ != NULL ? *resources_
+                         : *::google::appengine::v1::Resources::internal_default_instance();
 }
 ::google::appengine::v1::Resources* Version::mutable_resources() {
   
@@ -2683,37 +2729,37 @@ void Version::set_allocated_resources(::google::appengine::v1::Resources* resour
 void Version::clear_runtime() {
   runtime_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::runtime() const {
+const ::std::string& Version::runtime() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.runtime)
   return runtime_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_runtime(const ::std::string& value) {
+void Version::set_runtime(const ::std::string& value) {
   
   runtime_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.runtime)
 }
- void Version::set_runtime(const char* value) {
+void Version::set_runtime(const char* value) {
   
   runtime_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.runtime)
 }
- void Version::set_runtime(const char* value, size_t size) {
+void Version::set_runtime(const char* value, size_t size) {
   
   runtime_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.runtime)
 }
- ::std::string* Version::mutable_runtime() {
+::std::string* Version::mutable_runtime() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.runtime)
   return runtime_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_runtime() {
+::std::string* Version::release_runtime() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.runtime)
   
   return runtime_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_runtime(::std::string* runtime) {
+void Version::set_allocated_runtime(::std::string* runtime) {
   if (runtime != NULL) {
     
   } else {
@@ -2727,11 +2773,11 @@ void Version::clear_runtime() {
 void Version::clear_threadsafe() {
   threadsafe_ = false;
 }
- bool Version::threadsafe() const {
+bool Version::threadsafe() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.threadsafe)
   return threadsafe_;
 }
- void Version::set_threadsafe(bool value) {
+void Version::set_threadsafe(bool value) {
   
   threadsafe_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.threadsafe)
@@ -2741,11 +2787,11 @@ void Version::clear_threadsafe() {
 void Version::clear_vm() {
   vm_ = false;
 }
- bool Version::vm() const {
+bool Version::vm() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.vm)
   return vm_;
 }
- void Version::set_vm(bool value) {
+void Version::set_vm(bool value) {
   
   vm_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.vm)
@@ -2773,37 +2819,37 @@ Version::mutable_beta_settings() {
 void Version::clear_env() {
   env_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::env() const {
+const ::std::string& Version::env() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.env)
   return env_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_env(const ::std::string& value) {
+void Version::set_env(const ::std::string& value) {
   
   env_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.env)
 }
- void Version::set_env(const char* value) {
+void Version::set_env(const char* value) {
   
   env_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.env)
 }
- void Version::set_env(const char* value, size_t size) {
+void Version::set_env(const char* value, size_t size) {
   
   env_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.env)
 }
- ::std::string* Version::mutable_env() {
+::std::string* Version::mutable_env() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.env)
   return env_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_env() {
+::std::string* Version::release_env() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.env)
   
   return env_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_env(::std::string* env) {
+void Version::set_allocated_env(::std::string* env) {
   if (env != NULL) {
     
   } else {
@@ -2817,11 +2863,11 @@ void Version::clear_env() {
 void Version::clear_serving_status() {
   serving_status_ = 0;
 }
- ::google::appengine::v1::ServingStatus Version::serving_status() const {
+::google::appengine::v1::ServingStatus Version::serving_status() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.serving_status)
   return static_cast< ::google::appengine::v1::ServingStatus >(serving_status_);
 }
- void Version::set_serving_status(::google::appengine::v1::ServingStatus value) {
+void Version::set_serving_status(::google::appengine::v1::ServingStatus value) {
   
   serving_status_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.serving_status)
@@ -2831,37 +2877,37 @@ void Version::clear_serving_status() {
 void Version::clear_created_by() {
   created_by_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::created_by() const {
+const ::std::string& Version::created_by() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.created_by)
   return created_by_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_created_by(const ::std::string& value) {
+void Version::set_created_by(const ::std::string& value) {
   
   created_by_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.created_by)
 }
- void Version::set_created_by(const char* value) {
+void Version::set_created_by(const char* value) {
   
   created_by_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.created_by)
 }
- void Version::set_created_by(const char* value, size_t size) {
+void Version::set_created_by(const char* value, size_t size) {
   
   created_by_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.created_by)
 }
- ::std::string* Version::mutable_created_by() {
+::std::string* Version::mutable_created_by() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.created_by)
   return created_by_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_created_by() {
+::std::string* Version::release_created_by() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.created_by)
   
   return created_by_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_created_by(::std::string* created_by) {
+void Version::set_allocated_created_by(::std::string* created_by) {
   if (created_by != NULL) {
     
   } else {
@@ -2873,7 +2919,7 @@ void Version::clear_created_by() {
 
 // optional .google.protobuf.Timestamp create_time = 17;
 bool Version::has_create_time() const {
-  return !_is_default_instance_ && create_time_ != NULL;
+  return this != internal_default_instance() && create_time_ != NULL;
 }
 void Version::clear_create_time() {
   if (GetArenaNoVirtual() == NULL && create_time_ != NULL) delete create_time_;
@@ -2881,7 +2927,8 @@ void Version::clear_create_time() {
 }
 const ::google::protobuf::Timestamp& Version::create_time() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.create_time)
-  return create_time_ != NULL ? *create_time_ : *default_instance_->create_time_;
+  return create_time_ != NULL ? *create_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Version::mutable_create_time() {
   
@@ -2918,11 +2965,11 @@ void Version::set_allocated_create_time(::google::protobuf::Timestamp* create_ti
 void Version::clear_disk_usage_bytes() {
   disk_usage_bytes_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 Version::disk_usage_bytes() const {
+::google::protobuf::int64 Version::disk_usage_bytes() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.disk_usage_bytes)
   return disk_usage_bytes_;
 }
- void Version::set_disk_usage_bytes(::google::protobuf::int64 value) {
+void Version::set_disk_usage_bytes(::google::protobuf::int64 value) {
   
   disk_usage_bytes_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.disk_usage_bytes)
@@ -3020,7 +3067,7 @@ Version::libraries() const {
 
 // optional .google.appengine.v1.ApiConfigHandler api_config = 103;
 bool Version::has_api_config() const {
-  return !_is_default_instance_ && api_config_ != NULL;
+  return this != internal_default_instance() && api_config_ != NULL;
 }
 void Version::clear_api_config() {
   if (GetArenaNoVirtual() == NULL && api_config_ != NULL) delete api_config_;
@@ -3028,7 +3075,8 @@ void Version::clear_api_config() {
 }
 const ::google::appengine::v1::ApiConfigHandler& Version::api_config() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.api_config)
-  return api_config_ != NULL ? *api_config_ : *default_instance_->api_config_;
+  return api_config_ != NULL ? *api_config_
+                         : *::google::appengine::v1::ApiConfigHandler::internal_default_instance();
 }
 ::google::appengine::v1::ApiConfigHandler* Version::mutable_api_config() {
   
@@ -3076,7 +3124,7 @@ Version::mutable_env_variables() {
 
 // optional .google.protobuf.Duration default_expiration = 105;
 bool Version::has_default_expiration() const {
-  return !_is_default_instance_ && default_expiration_ != NULL;
+  return this != internal_default_instance() && default_expiration_ != NULL;
 }
 void Version::clear_default_expiration() {
   if (GetArenaNoVirtual() == NULL && default_expiration_ != NULL) delete default_expiration_;
@@ -3084,7 +3132,8 @@ void Version::clear_default_expiration() {
 }
 const ::google::protobuf::Duration& Version::default_expiration() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.default_expiration)
-  return default_expiration_ != NULL ? *default_expiration_ : *default_instance_->default_expiration_;
+  return default_expiration_ != NULL ? *default_expiration_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* Version::mutable_default_expiration() {
   
@@ -3103,6 +3152,11 @@ const ::google::protobuf::Duration& Version::default_expiration() const {
 }
 void Version::set_allocated_default_expiration(::google::protobuf::Duration* default_expiration) {
   delete default_expiration_;
+  if (default_expiration != NULL && default_expiration->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_default_expiration = new ::google::protobuf::Duration;
+    new_default_expiration->CopyFrom(*default_expiration);
+    default_expiration = new_default_expiration;
+  }
   default_expiration_ = default_expiration;
   if (default_expiration) {
     
@@ -3114,7 +3168,7 @@ void Version::set_allocated_default_expiration(::google::protobuf::Duration* def
 
 // optional .google.appengine.v1.HealthCheck health_check = 106;
 bool Version::has_health_check() const {
-  return !_is_default_instance_ && health_check_ != NULL;
+  return this != internal_default_instance() && health_check_ != NULL;
 }
 void Version::clear_health_check() {
   if (GetArenaNoVirtual() == NULL && health_check_ != NULL) delete health_check_;
@@ -3122,7 +3176,8 @@ void Version::clear_health_check() {
 }
 const ::google::appengine::v1::HealthCheck& Version::health_check() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.health_check)
-  return health_check_ != NULL ? *health_check_ : *default_instance_->health_check_;
+  return health_check_ != NULL ? *health_check_
+                         : *::google::appengine::v1::HealthCheck::internal_default_instance();
 }
 ::google::appengine::v1::HealthCheck* Version::mutable_health_check() {
   
@@ -3154,37 +3209,37 @@ void Version::set_allocated_health_check(::google::appengine::v1::HealthCheck* h
 void Version::clear_nobuild_files_regex() {
   nobuild_files_regex_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::nobuild_files_regex() const {
+const ::std::string& Version::nobuild_files_regex() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.nobuild_files_regex)
   return nobuild_files_regex_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_nobuild_files_regex(const ::std::string& value) {
+void Version::set_nobuild_files_regex(const ::std::string& value) {
   
   nobuild_files_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.nobuild_files_regex)
 }
- void Version::set_nobuild_files_regex(const char* value) {
+void Version::set_nobuild_files_regex(const char* value) {
   
   nobuild_files_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.nobuild_files_regex)
 }
- void Version::set_nobuild_files_regex(const char* value, size_t size) {
+void Version::set_nobuild_files_regex(const char* value, size_t size) {
   
   nobuild_files_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.nobuild_files_regex)
 }
- ::std::string* Version::mutable_nobuild_files_regex() {
+::std::string* Version::mutable_nobuild_files_regex() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.nobuild_files_regex)
   return nobuild_files_regex_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_nobuild_files_regex() {
+::std::string* Version::release_nobuild_files_regex() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.nobuild_files_regex)
   
   return nobuild_files_regex_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_nobuild_files_regex(::std::string* nobuild_files_regex) {
+void Version::set_allocated_nobuild_files_regex(::std::string* nobuild_files_regex) {
   if (nobuild_files_regex != NULL) {
     
   } else {
@@ -3196,7 +3251,7 @@ void Version::clear_nobuild_files_regex() {
 
 // optional .google.appengine.v1.Deployment deployment = 108;
 bool Version::has_deployment() const {
-  return !_is_default_instance_ && deployment_ != NULL;
+  return this != internal_default_instance() && deployment_ != NULL;
 }
 void Version::clear_deployment() {
   if (GetArenaNoVirtual() == NULL && deployment_ != NULL) delete deployment_;
@@ -3204,7 +3259,8 @@ void Version::clear_deployment() {
 }
 const ::google::appengine::v1::Deployment& Version::deployment() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.deployment)
-  return deployment_ != NULL ? *deployment_ : *default_instance_->deployment_;
+  return deployment_ != NULL ? *deployment_
+                         : *::google::appengine::v1::Deployment::internal_default_instance();
 }
 ::google::appengine::v1::Deployment* Version::mutable_deployment() {
   
@@ -3236,37 +3292,37 @@ void Version::set_allocated_deployment(::google::appengine::v1::Deployment* depl
 void Version::clear_version_url() {
   version_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Version::version_url() const {
+const ::std::string& Version::version_url() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Version.version_url)
   return version_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_version_url(const ::std::string& value) {
+void Version::set_version_url(const ::std::string& value) {
   
   version_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Version.version_url)
 }
- void Version::set_version_url(const char* value) {
+void Version::set_version_url(const char* value) {
   
   version_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Version.version_url)
 }
- void Version::set_version_url(const char* value, size_t size) {
+void Version::set_version_url(const char* value, size_t size) {
   
   version_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Version.version_url)
 }
- ::std::string* Version::mutable_version_url() {
+::std::string* Version::mutable_version_url() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Version.version_url)
   return version_url_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Version::release_version_url() {
+::std::string* Version::release_version_url() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Version.version_url)
   
   return version_url_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Version::set_allocated_version_url(::std::string* version_url) {
+void Version::set_allocated_version_url(::std::string* version_url) {
   if (version_url != NULL) {
     
   } else {
@@ -3284,6 +3340,9 @@ void Version::clear_has_scaling() {
 }
 Version::ScalingCase Version::scaling_case() const {
   return Version::ScalingCase(_oneof_case_[0]);
+}
+inline const Version* Version::internal_default_instance() {
+  return &Version_default_instance_.get();
 }
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
@@ -3306,44 +3365,47 @@ const int AutomaticScaling::kNetworkUtilizationFieldNumber;
 
 AutomaticScaling::AutomaticScaling()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.AutomaticScaling)
 }
 
 void AutomaticScaling::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  cool_down_period_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
-  cpu_utilization_ = const_cast< ::google::appengine::v1::CpuUtilization*>(&::google::appengine::v1::CpuUtilization::default_instance());
-  max_pending_latency_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
-  min_pending_latency_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
-  request_utilization_ = const_cast< ::google::appengine::v1::RequestUtilization*>(&::google::appengine::v1::RequestUtilization::default_instance());
-  disk_utilization_ = const_cast< ::google::appengine::v1::DiskUtilization*>(&::google::appengine::v1::DiskUtilization::default_instance());
-  network_utilization_ = const_cast< ::google::appengine::v1::NetworkUtilization*>(&::google::appengine::v1::NetworkUtilization::default_instance());
+  cool_down_period_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+  cpu_utilization_ = const_cast< ::google::appengine::v1::CpuUtilization*>(
+      ::google::appengine::v1::CpuUtilization::internal_default_instance());
+  max_pending_latency_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+  min_pending_latency_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+  request_utilization_ = const_cast< ::google::appengine::v1::RequestUtilization*>(
+      ::google::appengine::v1::RequestUtilization::internal_default_instance());
+  disk_utilization_ = const_cast< ::google::appengine::v1::DiskUtilization*>(
+      ::google::appengine::v1::DiskUtilization::internal_default_instance());
+  network_utilization_ = const_cast< ::google::appengine::v1::NetworkUtilization*>(
+      ::google::appengine::v1::NetworkUtilization::internal_default_instance());
 }
 
 AutomaticScaling::AutomaticScaling(const AutomaticScaling& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.AutomaticScaling)
 }
 
 void AutomaticScaling::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   cool_down_period_ = NULL;
   cpu_utilization_ = NULL;
-  max_concurrent_requests_ = 0;
-  max_idle_instances_ = 0;
-  max_total_instances_ = 0;
   max_pending_latency_ = NULL;
-  min_idle_instances_ = 0;
-  min_total_instances_ = 0;
   min_pending_latency_ = NULL;
   request_utilization_ = NULL;
   disk_utilization_ = NULL;
   network_utilization_ = NULL;
+  ::memset(&max_concurrent_requests_, 0, reinterpret_cast<char*>(&min_total_instances_) -
+    reinterpret_cast<char*>(&max_concurrent_requests_) + sizeof(min_total_instances_));
+  _cached_size_ = 0;
 }
 
 AutomaticScaling::~AutomaticScaling() {
@@ -3352,7 +3414,7 @@ AutomaticScaling::~AutomaticScaling() {
 }
 
 void AutomaticScaling::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &AutomaticScaling_default_instance_.get()) {
     delete cool_down_period_;
     delete cpu_utilization_;
     delete max_pending_latency_;
@@ -3374,11 +3436,11 @@ const ::google::protobuf::Descriptor* AutomaticScaling::descriptor() {
 }
 
 const AutomaticScaling& AutomaticScaling::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-AutomaticScaling* AutomaticScaling::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<AutomaticScaling> AutomaticScaling_default_instance_;
 
 AutomaticScaling* AutomaticScaling::New(::google::protobuf::Arena* arena) const {
   AutomaticScaling* n = new AutomaticScaling;
@@ -3402,19 +3464,17 @@ void AutomaticScaling::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
-  ZR_(max_concurrent_requests_, max_idle_instances_);
-  ZR_(max_total_instances_, min_idle_instances_);
+  ZR_(max_concurrent_requests_, min_total_instances_);
   if (GetArenaNoVirtual() == NULL && cool_down_period_ != NULL) delete cool_down_period_;
   cool_down_period_ = NULL;
   if (GetArenaNoVirtual() == NULL && cpu_utilization_ != NULL) delete cpu_utilization_;
   cpu_utilization_ = NULL;
   if (GetArenaNoVirtual() == NULL && max_pending_latency_ != NULL) delete max_pending_latency_;
   max_pending_latency_ = NULL;
-  min_total_instances_ = 0;
   if (GetArenaNoVirtual() == NULL && min_pending_latency_ != NULL) delete min_pending_latency_;
   min_pending_latency_ = NULL;
   if (GetArenaNoVirtual() == NULL && request_utilization_ != NULL) delete request_utilization_;
@@ -3468,10 +3528,10 @@ bool AutomaticScaling::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_max_concurrent_requests:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_concurrent_requests_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3483,10 +3543,10 @@ bool AutomaticScaling::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_max_idle_instances:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_idle_instances_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3498,10 +3558,10 @@ bool AutomaticScaling::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_max_total_instances:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_total_instances_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3526,10 +3586,10 @@ bool AutomaticScaling::MergePartialFromCodedStream(
       case 7: {
         if (tag == 56) {
          parse_min_idle_instances:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &min_idle_instances_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3541,10 +3601,10 @@ bool AutomaticScaling::MergePartialFromCodedStream(
       case 8: {
         if (tag == 64) {
          parse_min_total_instances:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &min_total_instances_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3700,6 +3760,7 @@ void AutomaticScaling::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* AutomaticScaling::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.AutomaticScaling)
   // optional .google.protobuf.Duration cool_down_period = 1;
   if (this->has_cool_down_period()) {
@@ -3779,9 +3840,9 @@ void AutomaticScaling::SerializeWithCachedSizes(
   return target;
 }
 
-int AutomaticScaling::ByteSize() const {
+size_t AutomaticScaling::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.AutomaticScaling)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Duration cool_down_period = 1;
   if (this->has_cool_down_period()) {
@@ -3867,18 +3928,17 @@ int AutomaticScaling::ByteSize() const {
         *this->network_utilization_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AutomaticScaling::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.AutomaticScaling)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const AutomaticScaling* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const AutomaticScaling* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AutomaticScaling>(
           &from);
   if (source == NULL) {
@@ -3886,15 +3946,21 @@ void AutomaticScaling::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.AutomaticScaling)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AutomaticScaling::MergeFrom(const AutomaticScaling& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.AutomaticScaling)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void AutomaticScaling::UnsafeMergeFrom(const AutomaticScaling& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_cool_down_period()) {
     mutable_cool_down_period()->::google::protobuf::Duration::MergeFrom(from.cool_down_period());
   }
@@ -3944,7 +4010,7 @@ void AutomaticScaling::CopyFrom(const AutomaticScaling& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.AutomaticScaling)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AutomaticScaling::IsInitialized() const {
@@ -3986,7 +4052,7 @@ void AutomaticScaling::InternalSwap(AutomaticScaling* other) {
 
 // optional .google.protobuf.Duration cool_down_period = 1;
 bool AutomaticScaling::has_cool_down_period() const {
-  return !_is_default_instance_ && cool_down_period_ != NULL;
+  return this != internal_default_instance() && cool_down_period_ != NULL;
 }
 void AutomaticScaling::clear_cool_down_period() {
   if (GetArenaNoVirtual() == NULL && cool_down_period_ != NULL) delete cool_down_period_;
@@ -3994,7 +4060,8 @@ void AutomaticScaling::clear_cool_down_period() {
 }
 const ::google::protobuf::Duration& AutomaticScaling::cool_down_period() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.cool_down_period)
-  return cool_down_period_ != NULL ? *cool_down_period_ : *default_instance_->cool_down_period_;
+  return cool_down_period_ != NULL ? *cool_down_period_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* AutomaticScaling::mutable_cool_down_period() {
   
@@ -4013,6 +4080,11 @@ const ::google::protobuf::Duration& AutomaticScaling::cool_down_period() const {
 }
 void AutomaticScaling::set_allocated_cool_down_period(::google::protobuf::Duration* cool_down_period) {
   delete cool_down_period_;
+  if (cool_down_period != NULL && cool_down_period->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_cool_down_period = new ::google::protobuf::Duration;
+    new_cool_down_period->CopyFrom(*cool_down_period);
+    cool_down_period = new_cool_down_period;
+  }
   cool_down_period_ = cool_down_period;
   if (cool_down_period) {
     
@@ -4024,7 +4096,7 @@ void AutomaticScaling::set_allocated_cool_down_period(::google::protobuf::Durati
 
 // optional .google.appengine.v1.CpuUtilization cpu_utilization = 2;
 bool AutomaticScaling::has_cpu_utilization() const {
-  return !_is_default_instance_ && cpu_utilization_ != NULL;
+  return this != internal_default_instance() && cpu_utilization_ != NULL;
 }
 void AutomaticScaling::clear_cpu_utilization() {
   if (GetArenaNoVirtual() == NULL && cpu_utilization_ != NULL) delete cpu_utilization_;
@@ -4032,7 +4104,8 @@ void AutomaticScaling::clear_cpu_utilization() {
 }
 const ::google::appengine::v1::CpuUtilization& AutomaticScaling::cpu_utilization() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.cpu_utilization)
-  return cpu_utilization_ != NULL ? *cpu_utilization_ : *default_instance_->cpu_utilization_;
+  return cpu_utilization_ != NULL ? *cpu_utilization_
+                         : *::google::appengine::v1::CpuUtilization::internal_default_instance();
 }
 ::google::appengine::v1::CpuUtilization* AutomaticScaling::mutable_cpu_utilization() {
   
@@ -4064,11 +4137,11 @@ void AutomaticScaling::set_allocated_cpu_utilization(::google::appengine::v1::Cp
 void AutomaticScaling::clear_max_concurrent_requests() {
   max_concurrent_requests_ = 0;
 }
- ::google::protobuf::int32 AutomaticScaling::max_concurrent_requests() const {
+::google::protobuf::int32 AutomaticScaling::max_concurrent_requests() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.max_concurrent_requests)
   return max_concurrent_requests_;
 }
- void AutomaticScaling::set_max_concurrent_requests(::google::protobuf::int32 value) {
+void AutomaticScaling::set_max_concurrent_requests(::google::protobuf::int32 value) {
   
   max_concurrent_requests_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.AutomaticScaling.max_concurrent_requests)
@@ -4078,11 +4151,11 @@ void AutomaticScaling::clear_max_concurrent_requests() {
 void AutomaticScaling::clear_max_idle_instances() {
   max_idle_instances_ = 0;
 }
- ::google::protobuf::int32 AutomaticScaling::max_idle_instances() const {
+::google::protobuf::int32 AutomaticScaling::max_idle_instances() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.max_idle_instances)
   return max_idle_instances_;
 }
- void AutomaticScaling::set_max_idle_instances(::google::protobuf::int32 value) {
+void AutomaticScaling::set_max_idle_instances(::google::protobuf::int32 value) {
   
   max_idle_instances_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.AutomaticScaling.max_idle_instances)
@@ -4092,11 +4165,11 @@ void AutomaticScaling::clear_max_idle_instances() {
 void AutomaticScaling::clear_max_total_instances() {
   max_total_instances_ = 0;
 }
- ::google::protobuf::int32 AutomaticScaling::max_total_instances() const {
+::google::protobuf::int32 AutomaticScaling::max_total_instances() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.max_total_instances)
   return max_total_instances_;
 }
- void AutomaticScaling::set_max_total_instances(::google::protobuf::int32 value) {
+void AutomaticScaling::set_max_total_instances(::google::protobuf::int32 value) {
   
   max_total_instances_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.AutomaticScaling.max_total_instances)
@@ -4104,7 +4177,7 @@ void AutomaticScaling::clear_max_total_instances() {
 
 // optional .google.protobuf.Duration max_pending_latency = 6;
 bool AutomaticScaling::has_max_pending_latency() const {
-  return !_is_default_instance_ && max_pending_latency_ != NULL;
+  return this != internal_default_instance() && max_pending_latency_ != NULL;
 }
 void AutomaticScaling::clear_max_pending_latency() {
   if (GetArenaNoVirtual() == NULL && max_pending_latency_ != NULL) delete max_pending_latency_;
@@ -4112,7 +4185,8 @@ void AutomaticScaling::clear_max_pending_latency() {
 }
 const ::google::protobuf::Duration& AutomaticScaling::max_pending_latency() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.max_pending_latency)
-  return max_pending_latency_ != NULL ? *max_pending_latency_ : *default_instance_->max_pending_latency_;
+  return max_pending_latency_ != NULL ? *max_pending_latency_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* AutomaticScaling::mutable_max_pending_latency() {
   
@@ -4131,6 +4205,11 @@ const ::google::protobuf::Duration& AutomaticScaling::max_pending_latency() cons
 }
 void AutomaticScaling::set_allocated_max_pending_latency(::google::protobuf::Duration* max_pending_latency) {
   delete max_pending_latency_;
+  if (max_pending_latency != NULL && max_pending_latency->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_max_pending_latency = new ::google::protobuf::Duration;
+    new_max_pending_latency->CopyFrom(*max_pending_latency);
+    max_pending_latency = new_max_pending_latency;
+  }
   max_pending_latency_ = max_pending_latency;
   if (max_pending_latency) {
     
@@ -4144,11 +4223,11 @@ void AutomaticScaling::set_allocated_max_pending_latency(::google::protobuf::Dur
 void AutomaticScaling::clear_min_idle_instances() {
   min_idle_instances_ = 0;
 }
- ::google::protobuf::int32 AutomaticScaling::min_idle_instances() const {
+::google::protobuf::int32 AutomaticScaling::min_idle_instances() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.min_idle_instances)
   return min_idle_instances_;
 }
- void AutomaticScaling::set_min_idle_instances(::google::protobuf::int32 value) {
+void AutomaticScaling::set_min_idle_instances(::google::protobuf::int32 value) {
   
   min_idle_instances_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.AutomaticScaling.min_idle_instances)
@@ -4158,11 +4237,11 @@ void AutomaticScaling::clear_min_idle_instances() {
 void AutomaticScaling::clear_min_total_instances() {
   min_total_instances_ = 0;
 }
- ::google::protobuf::int32 AutomaticScaling::min_total_instances() const {
+::google::protobuf::int32 AutomaticScaling::min_total_instances() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.min_total_instances)
   return min_total_instances_;
 }
- void AutomaticScaling::set_min_total_instances(::google::protobuf::int32 value) {
+void AutomaticScaling::set_min_total_instances(::google::protobuf::int32 value) {
   
   min_total_instances_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.AutomaticScaling.min_total_instances)
@@ -4170,7 +4249,7 @@ void AutomaticScaling::clear_min_total_instances() {
 
 // optional .google.protobuf.Duration min_pending_latency = 9;
 bool AutomaticScaling::has_min_pending_latency() const {
-  return !_is_default_instance_ && min_pending_latency_ != NULL;
+  return this != internal_default_instance() && min_pending_latency_ != NULL;
 }
 void AutomaticScaling::clear_min_pending_latency() {
   if (GetArenaNoVirtual() == NULL && min_pending_latency_ != NULL) delete min_pending_latency_;
@@ -4178,7 +4257,8 @@ void AutomaticScaling::clear_min_pending_latency() {
 }
 const ::google::protobuf::Duration& AutomaticScaling::min_pending_latency() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.min_pending_latency)
-  return min_pending_latency_ != NULL ? *min_pending_latency_ : *default_instance_->min_pending_latency_;
+  return min_pending_latency_ != NULL ? *min_pending_latency_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* AutomaticScaling::mutable_min_pending_latency() {
   
@@ -4197,6 +4277,11 @@ const ::google::protobuf::Duration& AutomaticScaling::min_pending_latency() cons
 }
 void AutomaticScaling::set_allocated_min_pending_latency(::google::protobuf::Duration* min_pending_latency) {
   delete min_pending_latency_;
+  if (min_pending_latency != NULL && min_pending_latency->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_min_pending_latency = new ::google::protobuf::Duration;
+    new_min_pending_latency->CopyFrom(*min_pending_latency);
+    min_pending_latency = new_min_pending_latency;
+  }
   min_pending_latency_ = min_pending_latency;
   if (min_pending_latency) {
     
@@ -4208,7 +4293,7 @@ void AutomaticScaling::set_allocated_min_pending_latency(::google::protobuf::Dur
 
 // optional .google.appengine.v1.RequestUtilization request_utilization = 10;
 bool AutomaticScaling::has_request_utilization() const {
-  return !_is_default_instance_ && request_utilization_ != NULL;
+  return this != internal_default_instance() && request_utilization_ != NULL;
 }
 void AutomaticScaling::clear_request_utilization() {
   if (GetArenaNoVirtual() == NULL && request_utilization_ != NULL) delete request_utilization_;
@@ -4216,7 +4301,8 @@ void AutomaticScaling::clear_request_utilization() {
 }
 const ::google::appengine::v1::RequestUtilization& AutomaticScaling::request_utilization() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.request_utilization)
-  return request_utilization_ != NULL ? *request_utilization_ : *default_instance_->request_utilization_;
+  return request_utilization_ != NULL ? *request_utilization_
+                         : *::google::appengine::v1::RequestUtilization::internal_default_instance();
 }
 ::google::appengine::v1::RequestUtilization* AutomaticScaling::mutable_request_utilization() {
   
@@ -4246,7 +4332,7 @@ void AutomaticScaling::set_allocated_request_utilization(::google::appengine::v1
 
 // optional .google.appengine.v1.DiskUtilization disk_utilization = 11;
 bool AutomaticScaling::has_disk_utilization() const {
-  return !_is_default_instance_ && disk_utilization_ != NULL;
+  return this != internal_default_instance() && disk_utilization_ != NULL;
 }
 void AutomaticScaling::clear_disk_utilization() {
   if (GetArenaNoVirtual() == NULL && disk_utilization_ != NULL) delete disk_utilization_;
@@ -4254,7 +4340,8 @@ void AutomaticScaling::clear_disk_utilization() {
 }
 const ::google::appengine::v1::DiskUtilization& AutomaticScaling::disk_utilization() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.disk_utilization)
-  return disk_utilization_ != NULL ? *disk_utilization_ : *default_instance_->disk_utilization_;
+  return disk_utilization_ != NULL ? *disk_utilization_
+                         : *::google::appengine::v1::DiskUtilization::internal_default_instance();
 }
 ::google::appengine::v1::DiskUtilization* AutomaticScaling::mutable_disk_utilization() {
   
@@ -4284,7 +4371,7 @@ void AutomaticScaling::set_allocated_disk_utilization(::google::appengine::v1::D
 
 // optional .google.appengine.v1.NetworkUtilization network_utilization = 12;
 bool AutomaticScaling::has_network_utilization() const {
-  return !_is_default_instance_ && network_utilization_ != NULL;
+  return this != internal_default_instance() && network_utilization_ != NULL;
 }
 void AutomaticScaling::clear_network_utilization() {
   if (GetArenaNoVirtual() == NULL && network_utilization_ != NULL) delete network_utilization_;
@@ -4292,7 +4379,8 @@ void AutomaticScaling::clear_network_utilization() {
 }
 const ::google::appengine::v1::NetworkUtilization& AutomaticScaling::network_utilization() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.AutomaticScaling.network_utilization)
-  return network_utilization_ != NULL ? *network_utilization_ : *default_instance_->network_utilization_;
+  return network_utilization_ != NULL ? *network_utilization_
+                         : *::google::appengine::v1::NetworkUtilization::internal_default_instance();
 }
 ::google::appengine::v1::NetworkUtilization* AutomaticScaling::mutable_network_utilization() {
   
@@ -4320,6 +4408,9 @@ void AutomaticScaling::set_allocated_network_utilization(::google::appengine::v1
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.AutomaticScaling.network_utilization)
 }
 
+inline const AutomaticScaling* AutomaticScaling::internal_default_instance() {
+  return &AutomaticScaling_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4331,28 +4422,28 @@ const int BasicScaling::kMaxInstancesFieldNumber;
 
 BasicScaling::BasicScaling()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.BasicScaling)
 }
 
 void BasicScaling::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  idle_timeout_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
+  idle_timeout_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
 }
 
 BasicScaling::BasicScaling(const BasicScaling& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.BasicScaling)
 }
 
 void BasicScaling::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   idle_timeout_ = NULL;
   max_instances_ = 0;
+  _cached_size_ = 0;
 }
 
 BasicScaling::~BasicScaling() {
@@ -4361,7 +4452,7 @@ BasicScaling::~BasicScaling() {
 }
 
 void BasicScaling::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &BasicScaling_default_instance_.get()) {
     delete idle_timeout_;
   }
 }
@@ -4377,11 +4468,11 @@ const ::google::protobuf::Descriptor* BasicScaling::descriptor() {
 }
 
 const BasicScaling& BasicScaling::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-BasicScaling* BasicScaling::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<BasicScaling> BasicScaling_default_instance_;
 
 BasicScaling* BasicScaling::New(::google::protobuf::Arena* arena) const {
   BasicScaling* n = new BasicScaling;
@@ -4424,10 +4515,10 @@ bool BasicScaling::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_max_instances:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_instances_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4475,6 +4566,7 @@ void BasicScaling::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* BasicScaling::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.BasicScaling)
   // optional .google.protobuf.Duration idle_timeout = 1;
   if (this->has_idle_timeout()) {
@@ -4492,9 +4584,9 @@ void BasicScaling::SerializeWithCachedSizes(
   return target;
 }
 
-int BasicScaling::ByteSize() const {
+size_t BasicScaling::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.BasicScaling)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Duration idle_timeout = 1;
   if (this->has_idle_timeout()) {
@@ -4510,18 +4602,17 @@ int BasicScaling::ByteSize() const {
         this->max_instances());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void BasicScaling::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.BasicScaling)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const BasicScaling* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const BasicScaling* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BasicScaling>(
           &from);
   if (source == NULL) {
@@ -4529,15 +4620,21 @@ void BasicScaling::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.BasicScaling)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BasicScaling::MergeFrom(const BasicScaling& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.BasicScaling)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void BasicScaling::UnsafeMergeFrom(const BasicScaling& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_idle_timeout()) {
     mutable_idle_timeout()->::google::protobuf::Duration::MergeFrom(from.idle_timeout());
   }
@@ -4557,7 +4654,7 @@ void BasicScaling::CopyFrom(const BasicScaling& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.BasicScaling)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BasicScaling::IsInitialized() const {
@@ -4589,7 +4686,7 @@ void BasicScaling::InternalSwap(BasicScaling* other) {
 
 // optional .google.protobuf.Duration idle_timeout = 1;
 bool BasicScaling::has_idle_timeout() const {
-  return !_is_default_instance_ && idle_timeout_ != NULL;
+  return this != internal_default_instance() && idle_timeout_ != NULL;
 }
 void BasicScaling::clear_idle_timeout() {
   if (GetArenaNoVirtual() == NULL && idle_timeout_ != NULL) delete idle_timeout_;
@@ -4597,7 +4694,8 @@ void BasicScaling::clear_idle_timeout() {
 }
 const ::google::protobuf::Duration& BasicScaling::idle_timeout() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.BasicScaling.idle_timeout)
-  return idle_timeout_ != NULL ? *idle_timeout_ : *default_instance_->idle_timeout_;
+  return idle_timeout_ != NULL ? *idle_timeout_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* BasicScaling::mutable_idle_timeout() {
   
@@ -4616,6 +4714,11 @@ const ::google::protobuf::Duration& BasicScaling::idle_timeout() const {
 }
 void BasicScaling::set_allocated_idle_timeout(::google::protobuf::Duration* idle_timeout) {
   delete idle_timeout_;
+  if (idle_timeout != NULL && idle_timeout->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_idle_timeout = new ::google::protobuf::Duration;
+    new_idle_timeout->CopyFrom(*idle_timeout);
+    idle_timeout = new_idle_timeout;
+  }
   idle_timeout_ = idle_timeout;
   if (idle_timeout) {
     
@@ -4629,16 +4732,19 @@ void BasicScaling::set_allocated_idle_timeout(::google::protobuf::Duration* idle
 void BasicScaling::clear_max_instances() {
   max_instances_ = 0;
 }
- ::google::protobuf::int32 BasicScaling::max_instances() const {
+::google::protobuf::int32 BasicScaling::max_instances() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.BasicScaling.max_instances)
   return max_instances_;
 }
- void BasicScaling::set_max_instances(::google::protobuf::int32 value) {
+void BasicScaling::set_max_instances(::google::protobuf::int32 value) {
   
   max_instances_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.BasicScaling.max_instances)
 }
 
+inline const BasicScaling* BasicScaling::internal_default_instance() {
+  return &BasicScaling_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4649,26 +4755,25 @@ const int ManualScaling::kInstancesFieldNumber;
 
 ManualScaling::ManualScaling()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.ManualScaling)
 }
 
 void ManualScaling::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ManualScaling::ManualScaling(const ManualScaling& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.ManualScaling)
 }
 
 void ManualScaling::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   instances_ = 0;
+  _cached_size_ = 0;
 }
 
 ManualScaling::~ManualScaling() {
@@ -4677,8 +4782,6 @@ ManualScaling::~ManualScaling() {
 }
 
 void ManualScaling::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void ManualScaling::SetCachedSize(int size) const {
@@ -4692,11 +4795,11 @@ const ::google::protobuf::Descriptor* ManualScaling::descriptor() {
 }
 
 const ManualScaling& ManualScaling::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-ManualScaling* ManualScaling::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ManualScaling> ManualScaling_default_instance_;
 
 ManualScaling* ManualScaling::New(::google::protobuf::Arena* arena) const {
   ManualScaling* n = new ManualScaling;
@@ -4724,10 +4827,10 @@ bool ManualScaling::MergePartialFromCodedStream(
       // optional int32 instances = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &instances_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4769,6 +4872,7 @@ void ManualScaling::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ManualScaling::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.ManualScaling)
   // optional int32 instances = 1;
   if (this->instances() != 0) {
@@ -4779,9 +4883,9 @@ void ManualScaling::SerializeWithCachedSizes(
   return target;
 }
 
-int ManualScaling::ByteSize() const {
+size_t ManualScaling::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.ManualScaling)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 instances = 1;
   if (this->instances() != 0) {
@@ -4790,18 +4894,17 @@ int ManualScaling::ByteSize() const {
         this->instances());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ManualScaling::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.ManualScaling)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ManualScaling* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ManualScaling* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ManualScaling>(
           &from);
   if (source == NULL) {
@@ -4809,15 +4912,21 @@ void ManualScaling::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.ManualScaling)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ManualScaling::MergeFrom(const ManualScaling& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.ManualScaling)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ManualScaling::UnsafeMergeFrom(const ManualScaling& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.instances() != 0) {
     set_instances(from.instances());
   }
@@ -4834,7 +4943,7 @@ void ManualScaling::CopyFrom(const ManualScaling& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.ManualScaling)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ManualScaling::IsInitialized() const {
@@ -4867,16 +4976,19 @@ void ManualScaling::InternalSwap(ManualScaling* other) {
 void ManualScaling::clear_instances() {
   instances_ = 0;
 }
- ::google::protobuf::int32 ManualScaling::instances() const {
+::google::protobuf::int32 ManualScaling::instances() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ManualScaling.instances)
   return instances_;
 }
- void ManualScaling::set_instances(::google::protobuf::int32 value) {
+void ManualScaling::set_instances(::google::protobuf::int32 value) {
   
   instances_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.ManualScaling.instances)
 }
 
+inline const ManualScaling* ManualScaling::internal_default_instance() {
+  return &ManualScaling_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4888,28 +5000,28 @@ const int CpuUtilization::kTargetUtilizationFieldNumber;
 
 CpuUtilization::CpuUtilization()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.CpuUtilization)
 }
 
 void CpuUtilization::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  aggregation_window_length_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
+  aggregation_window_length_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
 }
 
 CpuUtilization::CpuUtilization(const CpuUtilization& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.CpuUtilization)
 }
 
 void CpuUtilization::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   aggregation_window_length_ = NULL;
   target_utilization_ = 0;
+  _cached_size_ = 0;
 }
 
 CpuUtilization::~CpuUtilization() {
@@ -4918,7 +5030,7 @@ CpuUtilization::~CpuUtilization() {
 }
 
 void CpuUtilization::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &CpuUtilization_default_instance_.get()) {
     delete aggregation_window_length_;
   }
 }
@@ -4934,11 +5046,11 @@ const ::google::protobuf::Descriptor* CpuUtilization::descriptor() {
 }
 
 const CpuUtilization& CpuUtilization::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-CpuUtilization* CpuUtilization::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CpuUtilization> CpuUtilization_default_instance_;
 
 CpuUtilization* CpuUtilization::New(::google::protobuf::Arena* arena) const {
   CpuUtilization* n = new CpuUtilization;
@@ -4981,10 +5093,10 @@ bool CpuUtilization::MergePartialFromCodedStream(
       case 2: {
         if (tag == 17) {
          parse_target_utilization:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &target_utilization_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5032,6 +5144,7 @@ void CpuUtilization::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CpuUtilization::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.CpuUtilization)
   // optional .google.protobuf.Duration aggregation_window_length = 1;
   if (this->has_aggregation_window_length()) {
@@ -5049,9 +5162,9 @@ void CpuUtilization::SerializeWithCachedSizes(
   return target;
 }
 
-int CpuUtilization::ByteSize() const {
+size_t CpuUtilization::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.CpuUtilization)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Duration aggregation_window_length = 1;
   if (this->has_aggregation_window_length()) {
@@ -5065,18 +5178,17 @@ int CpuUtilization::ByteSize() const {
     total_size += 1 + 8;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CpuUtilization::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.CpuUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CpuUtilization* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CpuUtilization* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CpuUtilization>(
           &from);
   if (source == NULL) {
@@ -5084,15 +5196,21 @@ void CpuUtilization::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.CpuUtilization)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CpuUtilization::MergeFrom(const CpuUtilization& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.CpuUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CpuUtilization::UnsafeMergeFrom(const CpuUtilization& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_aggregation_window_length()) {
     mutable_aggregation_window_length()->::google::protobuf::Duration::MergeFrom(from.aggregation_window_length());
   }
@@ -5112,7 +5230,7 @@ void CpuUtilization::CopyFrom(const CpuUtilization& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.CpuUtilization)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CpuUtilization::IsInitialized() const {
@@ -5144,7 +5262,7 @@ void CpuUtilization::InternalSwap(CpuUtilization* other) {
 
 // optional .google.protobuf.Duration aggregation_window_length = 1;
 bool CpuUtilization::has_aggregation_window_length() const {
-  return !_is_default_instance_ && aggregation_window_length_ != NULL;
+  return this != internal_default_instance() && aggregation_window_length_ != NULL;
 }
 void CpuUtilization::clear_aggregation_window_length() {
   if (GetArenaNoVirtual() == NULL && aggregation_window_length_ != NULL) delete aggregation_window_length_;
@@ -5152,7 +5270,8 @@ void CpuUtilization::clear_aggregation_window_length() {
 }
 const ::google::protobuf::Duration& CpuUtilization::aggregation_window_length() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.CpuUtilization.aggregation_window_length)
-  return aggregation_window_length_ != NULL ? *aggregation_window_length_ : *default_instance_->aggregation_window_length_;
+  return aggregation_window_length_ != NULL ? *aggregation_window_length_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* CpuUtilization::mutable_aggregation_window_length() {
   
@@ -5171,6 +5290,11 @@ const ::google::protobuf::Duration& CpuUtilization::aggregation_window_length() 
 }
 void CpuUtilization::set_allocated_aggregation_window_length(::google::protobuf::Duration* aggregation_window_length) {
   delete aggregation_window_length_;
+  if (aggregation_window_length != NULL && aggregation_window_length->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_aggregation_window_length = new ::google::protobuf::Duration;
+    new_aggregation_window_length->CopyFrom(*aggregation_window_length);
+    aggregation_window_length = new_aggregation_window_length;
+  }
   aggregation_window_length_ = aggregation_window_length;
   if (aggregation_window_length) {
     
@@ -5184,16 +5308,19 @@ void CpuUtilization::set_allocated_aggregation_window_length(::google::protobuf:
 void CpuUtilization::clear_target_utilization() {
   target_utilization_ = 0;
 }
- double CpuUtilization::target_utilization() const {
+double CpuUtilization::target_utilization() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.CpuUtilization.target_utilization)
   return target_utilization_;
 }
- void CpuUtilization::set_target_utilization(double value) {
+void CpuUtilization::set_target_utilization(double value) {
   
   target_utilization_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.CpuUtilization.target_utilization)
 }
 
+inline const CpuUtilization* CpuUtilization::internal_default_instance() {
+  return &CpuUtilization_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5205,27 +5332,26 @@ const int RequestUtilization::kTargetConcurrentRequestsFieldNumber;
 
 RequestUtilization::RequestUtilization()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.RequestUtilization)
 }
 
 void RequestUtilization::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 RequestUtilization::RequestUtilization(const RequestUtilization& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.RequestUtilization)
 }
 
 void RequestUtilization::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&target_request_count_per_second_, 0, reinterpret_cast<char*>(&target_concurrent_requests_) -
+    reinterpret_cast<char*>(&target_request_count_per_second_) + sizeof(target_concurrent_requests_));
   _cached_size_ = 0;
-  target_request_count_per_second_ = 0;
-  target_concurrent_requests_ = 0;
 }
 
 RequestUtilization::~RequestUtilization() {
@@ -5234,8 +5360,6 @@ RequestUtilization::~RequestUtilization() {
 }
 
 void RequestUtilization::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void RequestUtilization::SetCachedSize(int size) const {
@@ -5249,11 +5373,11 @@ const ::google::protobuf::Descriptor* RequestUtilization::descriptor() {
 }
 
 const RequestUtilization& RequestUtilization::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-RequestUtilization* RequestUtilization::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<RequestUtilization> RequestUtilization_default_instance_;
 
 RequestUtilization* RequestUtilization::New(::google::protobuf::Arena* arena) const {
   RequestUtilization* n = new RequestUtilization;
@@ -5277,7 +5401,7 @@ void RequestUtilization::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -5301,10 +5425,10 @@ bool RequestUtilization::MergePartialFromCodedStream(
       // optional int32 target_request_count_per_second = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_request_count_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5316,10 +5440,10 @@ bool RequestUtilization::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_target_concurrent_requests:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_concurrent_requests_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5366,6 +5490,7 @@ void RequestUtilization::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* RequestUtilization::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.RequestUtilization)
   // optional int32 target_request_count_per_second = 1;
   if (this->target_request_count_per_second() != 0) {
@@ -5381,9 +5506,9 @@ void RequestUtilization::SerializeWithCachedSizes(
   return target;
 }
 
-int RequestUtilization::ByteSize() const {
+size_t RequestUtilization::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.RequestUtilization)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 target_request_count_per_second = 1;
   if (this->target_request_count_per_second() != 0) {
@@ -5399,18 +5524,17 @@ int RequestUtilization::ByteSize() const {
         this->target_concurrent_requests());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void RequestUtilization::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.RequestUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const RequestUtilization* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const RequestUtilization* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RequestUtilization>(
           &from);
   if (source == NULL) {
@@ -5418,15 +5542,21 @@ void RequestUtilization::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.RequestUtilization)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RequestUtilization::MergeFrom(const RequestUtilization& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.RequestUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void RequestUtilization::UnsafeMergeFrom(const RequestUtilization& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.target_request_count_per_second() != 0) {
     set_target_request_count_per_second(from.target_request_count_per_second());
   }
@@ -5446,7 +5576,7 @@ void RequestUtilization::CopyFrom(const RequestUtilization& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.RequestUtilization)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RequestUtilization::IsInitialized() const {
@@ -5480,11 +5610,11 @@ void RequestUtilization::InternalSwap(RequestUtilization* other) {
 void RequestUtilization::clear_target_request_count_per_second() {
   target_request_count_per_second_ = 0;
 }
- ::google::protobuf::int32 RequestUtilization::target_request_count_per_second() const {
+::google::protobuf::int32 RequestUtilization::target_request_count_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.RequestUtilization.target_request_count_per_second)
   return target_request_count_per_second_;
 }
- void RequestUtilization::set_target_request_count_per_second(::google::protobuf::int32 value) {
+void RequestUtilization::set_target_request_count_per_second(::google::protobuf::int32 value) {
   
   target_request_count_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.RequestUtilization.target_request_count_per_second)
@@ -5494,16 +5624,19 @@ void RequestUtilization::clear_target_request_count_per_second() {
 void RequestUtilization::clear_target_concurrent_requests() {
   target_concurrent_requests_ = 0;
 }
- ::google::protobuf::int32 RequestUtilization::target_concurrent_requests() const {
+::google::protobuf::int32 RequestUtilization::target_concurrent_requests() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.RequestUtilization.target_concurrent_requests)
   return target_concurrent_requests_;
 }
- void RequestUtilization::set_target_concurrent_requests(::google::protobuf::int32 value) {
+void RequestUtilization::set_target_concurrent_requests(::google::protobuf::int32 value) {
   
   target_concurrent_requests_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.RequestUtilization.target_concurrent_requests)
 }
 
+inline const RequestUtilization* RequestUtilization::internal_default_instance() {
+  return &RequestUtilization_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5517,29 +5650,26 @@ const int DiskUtilization::kTargetReadOpsPerSecondFieldNumber;
 
 DiskUtilization::DiskUtilization()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.DiskUtilization)
 }
 
 void DiskUtilization::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DiskUtilization::DiskUtilization(const DiskUtilization& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.DiskUtilization)
 }
 
 void DiskUtilization::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&target_write_bytes_per_second_, 0, reinterpret_cast<char*>(&target_read_ops_per_second_) -
+    reinterpret_cast<char*>(&target_write_bytes_per_second_) + sizeof(target_read_ops_per_second_));
   _cached_size_ = 0;
-  target_write_bytes_per_second_ = 0;
-  target_write_ops_per_second_ = 0;
-  target_read_bytes_per_second_ = 0;
-  target_read_ops_per_second_ = 0;
 }
 
 DiskUtilization::~DiskUtilization() {
@@ -5548,8 +5678,6 @@ DiskUtilization::~DiskUtilization() {
 }
 
 void DiskUtilization::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void DiskUtilization::SetCachedSize(int size) const {
@@ -5563,11 +5691,11 @@ const ::google::protobuf::Descriptor* DiskUtilization::descriptor() {
 }
 
 const DiskUtilization& DiskUtilization::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-DiskUtilization* DiskUtilization::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DiskUtilization> DiskUtilization_default_instance_;
 
 DiskUtilization* DiskUtilization::New(::google::protobuf::Arena* arena) const {
   DiskUtilization* n = new DiskUtilization;
@@ -5591,7 +5719,7 @@ void DiskUtilization::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -5615,10 +5743,10 @@ bool DiskUtilization::MergePartialFromCodedStream(
       // optional int32 target_write_bytes_per_second = 14;
       case 14: {
         if (tag == 112) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_write_bytes_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5630,10 +5758,10 @@ bool DiskUtilization::MergePartialFromCodedStream(
       case 15: {
         if (tag == 120) {
          parse_target_write_ops_per_second:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_write_ops_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5645,10 +5773,10 @@ bool DiskUtilization::MergePartialFromCodedStream(
       case 16: {
         if (tag == 128) {
          parse_target_read_bytes_per_second:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_read_bytes_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5660,10 +5788,10 @@ bool DiskUtilization::MergePartialFromCodedStream(
       case 17: {
         if (tag == 136) {
          parse_target_read_ops_per_second:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_read_ops_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5720,6 +5848,7 @@ void DiskUtilization::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DiskUtilization::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.DiskUtilization)
   // optional int32 target_write_bytes_per_second = 14;
   if (this->target_write_bytes_per_second() != 0) {
@@ -5745,9 +5874,9 @@ void DiskUtilization::SerializeWithCachedSizes(
   return target;
 }
 
-int DiskUtilization::ByteSize() const {
+size_t DiskUtilization::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.DiskUtilization)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 target_write_bytes_per_second = 14;
   if (this->target_write_bytes_per_second() != 0) {
@@ -5777,18 +5906,17 @@ int DiskUtilization::ByteSize() const {
         this->target_read_ops_per_second());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DiskUtilization::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.DiskUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DiskUtilization* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DiskUtilization* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DiskUtilization>(
           &from);
   if (source == NULL) {
@@ -5796,15 +5924,21 @@ void DiskUtilization::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.DiskUtilization)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DiskUtilization::MergeFrom(const DiskUtilization& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.DiskUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DiskUtilization::UnsafeMergeFrom(const DiskUtilization& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.target_write_bytes_per_second() != 0) {
     set_target_write_bytes_per_second(from.target_write_bytes_per_second());
   }
@@ -5830,7 +5964,7 @@ void DiskUtilization::CopyFrom(const DiskUtilization& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.DiskUtilization)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DiskUtilization::IsInitialized() const {
@@ -5866,11 +6000,11 @@ void DiskUtilization::InternalSwap(DiskUtilization* other) {
 void DiskUtilization::clear_target_write_bytes_per_second() {
   target_write_bytes_per_second_ = 0;
 }
- ::google::protobuf::int32 DiskUtilization::target_write_bytes_per_second() const {
+::google::protobuf::int32 DiskUtilization::target_write_bytes_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DiskUtilization.target_write_bytes_per_second)
   return target_write_bytes_per_second_;
 }
- void DiskUtilization::set_target_write_bytes_per_second(::google::protobuf::int32 value) {
+void DiskUtilization::set_target_write_bytes_per_second(::google::protobuf::int32 value) {
   
   target_write_bytes_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.DiskUtilization.target_write_bytes_per_second)
@@ -5880,11 +6014,11 @@ void DiskUtilization::clear_target_write_bytes_per_second() {
 void DiskUtilization::clear_target_write_ops_per_second() {
   target_write_ops_per_second_ = 0;
 }
- ::google::protobuf::int32 DiskUtilization::target_write_ops_per_second() const {
+::google::protobuf::int32 DiskUtilization::target_write_ops_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DiskUtilization.target_write_ops_per_second)
   return target_write_ops_per_second_;
 }
- void DiskUtilization::set_target_write_ops_per_second(::google::protobuf::int32 value) {
+void DiskUtilization::set_target_write_ops_per_second(::google::protobuf::int32 value) {
   
   target_write_ops_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.DiskUtilization.target_write_ops_per_second)
@@ -5894,11 +6028,11 @@ void DiskUtilization::clear_target_write_ops_per_second() {
 void DiskUtilization::clear_target_read_bytes_per_second() {
   target_read_bytes_per_second_ = 0;
 }
- ::google::protobuf::int32 DiskUtilization::target_read_bytes_per_second() const {
+::google::protobuf::int32 DiskUtilization::target_read_bytes_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DiskUtilization.target_read_bytes_per_second)
   return target_read_bytes_per_second_;
 }
- void DiskUtilization::set_target_read_bytes_per_second(::google::protobuf::int32 value) {
+void DiskUtilization::set_target_read_bytes_per_second(::google::protobuf::int32 value) {
   
   target_read_bytes_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.DiskUtilization.target_read_bytes_per_second)
@@ -5908,16 +6042,19 @@ void DiskUtilization::clear_target_read_bytes_per_second() {
 void DiskUtilization::clear_target_read_ops_per_second() {
   target_read_ops_per_second_ = 0;
 }
- ::google::protobuf::int32 DiskUtilization::target_read_ops_per_second() const {
+::google::protobuf::int32 DiskUtilization::target_read_ops_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DiskUtilization.target_read_ops_per_second)
   return target_read_ops_per_second_;
 }
- void DiskUtilization::set_target_read_ops_per_second(::google::protobuf::int32 value) {
+void DiskUtilization::set_target_read_ops_per_second(::google::protobuf::int32 value) {
   
   target_read_ops_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.DiskUtilization.target_read_ops_per_second)
 }
 
+inline const DiskUtilization* DiskUtilization::internal_default_instance() {
+  return &DiskUtilization_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5931,29 +6068,26 @@ const int NetworkUtilization::kTargetReceivedPacketsPerSecondFieldNumber;
 
 NetworkUtilization::NetworkUtilization()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.NetworkUtilization)
 }
 
 void NetworkUtilization::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 NetworkUtilization::NetworkUtilization(const NetworkUtilization& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.NetworkUtilization)
 }
 
 void NetworkUtilization::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&target_sent_bytes_per_second_, 0, reinterpret_cast<char*>(&target_received_packets_per_second_) -
+    reinterpret_cast<char*>(&target_sent_bytes_per_second_) + sizeof(target_received_packets_per_second_));
   _cached_size_ = 0;
-  target_sent_bytes_per_second_ = 0;
-  target_sent_packets_per_second_ = 0;
-  target_received_bytes_per_second_ = 0;
-  target_received_packets_per_second_ = 0;
 }
 
 NetworkUtilization::~NetworkUtilization() {
@@ -5962,8 +6096,6 @@ NetworkUtilization::~NetworkUtilization() {
 }
 
 void NetworkUtilization::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void NetworkUtilization::SetCachedSize(int size) const {
@@ -5977,11 +6109,11 @@ const ::google::protobuf::Descriptor* NetworkUtilization::descriptor() {
 }
 
 const NetworkUtilization& NetworkUtilization::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-NetworkUtilization* NetworkUtilization::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<NetworkUtilization> NetworkUtilization_default_instance_;
 
 NetworkUtilization* NetworkUtilization::New(::google::protobuf::Arena* arena) const {
   NetworkUtilization* n = new NetworkUtilization;
@@ -6005,7 +6137,7 @@ void NetworkUtilization::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -6029,10 +6161,10 @@ bool NetworkUtilization::MergePartialFromCodedStream(
       // optional int32 target_sent_bytes_per_second = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_sent_bytes_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6044,10 +6176,10 @@ bool NetworkUtilization::MergePartialFromCodedStream(
       case 11: {
         if (tag == 88) {
          parse_target_sent_packets_per_second:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_sent_packets_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6059,10 +6191,10 @@ bool NetworkUtilization::MergePartialFromCodedStream(
       case 12: {
         if (tag == 96) {
          parse_target_received_bytes_per_second:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_received_bytes_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6074,10 +6206,10 @@ bool NetworkUtilization::MergePartialFromCodedStream(
       case 13: {
         if (tag == 104) {
          parse_target_received_packets_per_second:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &target_received_packets_per_second_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6134,6 +6266,7 @@ void NetworkUtilization::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* NetworkUtilization::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.NetworkUtilization)
   // optional int32 target_sent_bytes_per_second = 1;
   if (this->target_sent_bytes_per_second() != 0) {
@@ -6159,9 +6292,9 @@ void NetworkUtilization::SerializeWithCachedSizes(
   return target;
 }
 
-int NetworkUtilization::ByteSize() const {
+size_t NetworkUtilization::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.NetworkUtilization)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 target_sent_bytes_per_second = 1;
   if (this->target_sent_bytes_per_second() != 0) {
@@ -6191,18 +6324,17 @@ int NetworkUtilization::ByteSize() const {
         this->target_received_packets_per_second());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void NetworkUtilization::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.NetworkUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const NetworkUtilization* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const NetworkUtilization* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const NetworkUtilization>(
           &from);
   if (source == NULL) {
@@ -6210,15 +6342,21 @@ void NetworkUtilization::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.NetworkUtilization)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void NetworkUtilization::MergeFrom(const NetworkUtilization& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.NetworkUtilization)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void NetworkUtilization::UnsafeMergeFrom(const NetworkUtilization& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.target_sent_bytes_per_second() != 0) {
     set_target_sent_bytes_per_second(from.target_sent_bytes_per_second());
   }
@@ -6244,7 +6382,7 @@ void NetworkUtilization::CopyFrom(const NetworkUtilization& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.NetworkUtilization)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool NetworkUtilization::IsInitialized() const {
@@ -6280,11 +6418,11 @@ void NetworkUtilization::InternalSwap(NetworkUtilization* other) {
 void NetworkUtilization::clear_target_sent_bytes_per_second() {
   target_sent_bytes_per_second_ = 0;
 }
- ::google::protobuf::int32 NetworkUtilization::target_sent_bytes_per_second() const {
+::google::protobuf::int32 NetworkUtilization::target_sent_bytes_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.NetworkUtilization.target_sent_bytes_per_second)
   return target_sent_bytes_per_second_;
 }
- void NetworkUtilization::set_target_sent_bytes_per_second(::google::protobuf::int32 value) {
+void NetworkUtilization::set_target_sent_bytes_per_second(::google::protobuf::int32 value) {
   
   target_sent_bytes_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.NetworkUtilization.target_sent_bytes_per_second)
@@ -6294,11 +6432,11 @@ void NetworkUtilization::clear_target_sent_bytes_per_second() {
 void NetworkUtilization::clear_target_sent_packets_per_second() {
   target_sent_packets_per_second_ = 0;
 }
- ::google::protobuf::int32 NetworkUtilization::target_sent_packets_per_second() const {
+::google::protobuf::int32 NetworkUtilization::target_sent_packets_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.NetworkUtilization.target_sent_packets_per_second)
   return target_sent_packets_per_second_;
 }
- void NetworkUtilization::set_target_sent_packets_per_second(::google::protobuf::int32 value) {
+void NetworkUtilization::set_target_sent_packets_per_second(::google::protobuf::int32 value) {
   
   target_sent_packets_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.NetworkUtilization.target_sent_packets_per_second)
@@ -6308,11 +6446,11 @@ void NetworkUtilization::clear_target_sent_packets_per_second() {
 void NetworkUtilization::clear_target_received_bytes_per_second() {
   target_received_bytes_per_second_ = 0;
 }
- ::google::protobuf::int32 NetworkUtilization::target_received_bytes_per_second() const {
+::google::protobuf::int32 NetworkUtilization::target_received_bytes_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.NetworkUtilization.target_received_bytes_per_second)
   return target_received_bytes_per_second_;
 }
- void NetworkUtilization::set_target_received_bytes_per_second(::google::protobuf::int32 value) {
+void NetworkUtilization::set_target_received_bytes_per_second(::google::protobuf::int32 value) {
   
   target_received_bytes_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.NetworkUtilization.target_received_bytes_per_second)
@@ -6322,16 +6460,19 @@ void NetworkUtilization::clear_target_received_bytes_per_second() {
 void NetworkUtilization::clear_target_received_packets_per_second() {
   target_received_packets_per_second_ = 0;
 }
- ::google::protobuf::int32 NetworkUtilization::target_received_packets_per_second() const {
+::google::protobuf::int32 NetworkUtilization::target_received_packets_per_second() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.NetworkUtilization.target_received_packets_per_second)
   return target_received_packets_per_second_;
 }
- void NetworkUtilization::set_target_received_packets_per_second(::google::protobuf::int32 value) {
+void NetworkUtilization::set_target_received_packets_per_second(::google::protobuf::int32 value) {
   
   target_received_packets_per_second_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.NetworkUtilization.target_received_packets_per_second)
 }
 
+inline const NetworkUtilization* NetworkUtilization::internal_default_instance() {
+  return &NetworkUtilization_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6344,28 +6485,26 @@ const int Network::kNameFieldNumber;
 
 Network::Network()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Network)
 }
 
 void Network::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Network::Network(const Network& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Network)
 }
 
 void Network::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   instance_tag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Network::~Network() {
@@ -6376,8 +6515,6 @@ Network::~Network() {
 void Network::SharedDtor() {
   instance_tag_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Network::SetCachedSize(int size) const {
@@ -6391,11 +6528,11 @@ const ::google::protobuf::Descriptor* Network::descriptor() {
 }
 
 const Network& Network::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-Network* Network::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Network> Network_default_instance_;
 
 Network* Network::New(::google::protobuf::Arena* arena) const {
   Network* n = new Network;
@@ -6534,6 +6671,7 @@ void Network::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Network::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.Network)
   // repeated string forwarded_ports = 1;
   for (int i = 0; i < this->forwarded_ports_size(); i++) {
@@ -6571,9 +6709,9 @@ void Network::SerializeWithCachedSizes(
   return target;
 }
 
-int Network::ByteSize() const {
+size_t Network::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Network)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string instance_tag = 2;
   if (this->instance_tag().size() > 0) {
@@ -6590,24 +6728,24 @@ int Network::ByteSize() const {
   }
 
   // repeated string forwarded_ports = 1;
-  total_size += 1 * this->forwarded_ports_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->forwarded_ports_size());
   for (int i = 0; i < this->forwarded_ports_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->forwarded_ports(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Network::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Network)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Network* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Network* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Network>(
           &from);
   if (source == NULL) {
@@ -6615,16 +6753,22 @@ void Network::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Network)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Network::MergeFrom(const Network& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Network)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  forwarded_ports_.MergeFrom(from.forwarded_ports_);
+}
+
+void Network::UnsafeMergeFrom(const Network& from) {
+  GOOGLE_DCHECK(&from != this);
+  forwarded_ports_.UnsafeMergeFrom(from.forwarded_ports_);
   if (from.instance_tag().size() > 0) {
 
     instance_tag_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.instance_tag_);
@@ -6646,7 +6790,7 @@ void Network::CopyFrom(const Network& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Network)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Network::IsInitialized() const {
@@ -6684,49 +6828,49 @@ int Network::forwarded_ports_size() const {
 void Network::clear_forwarded_ports() {
   forwarded_ports_.Clear();
 }
- const ::std::string& Network::forwarded_ports(int index) const {
+const ::std::string& Network::forwarded_ports(int index) const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Network.forwarded_ports)
   return forwarded_ports_.Get(index);
 }
- ::std::string* Network::mutable_forwarded_ports(int index) {
+::std::string* Network::mutable_forwarded_ports(int index) {
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Network.forwarded_ports)
   return forwarded_ports_.Mutable(index);
 }
- void Network::set_forwarded_ports(int index, const ::std::string& value) {
+void Network::set_forwarded_ports(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.Network.forwarded_ports)
   forwarded_ports_.Mutable(index)->assign(value);
 }
- void Network::set_forwarded_ports(int index, const char* value) {
+void Network::set_forwarded_ports(int index, const char* value) {
   forwarded_ports_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Network.forwarded_ports)
 }
- void Network::set_forwarded_ports(int index, const char* value, size_t size) {
+void Network::set_forwarded_ports(int index, const char* value, size_t size) {
   forwarded_ports_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Network.forwarded_ports)
 }
- ::std::string* Network::add_forwarded_ports() {
+::std::string* Network::add_forwarded_ports() {
   // @@protoc_insertion_point(field_add_mutable:google.appengine.v1.Network.forwarded_ports)
   return forwarded_ports_.Add();
 }
- void Network::add_forwarded_ports(const ::std::string& value) {
+void Network::add_forwarded_ports(const ::std::string& value) {
   forwarded_ports_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.appengine.v1.Network.forwarded_ports)
 }
- void Network::add_forwarded_ports(const char* value) {
+void Network::add_forwarded_ports(const char* value) {
   forwarded_ports_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.appengine.v1.Network.forwarded_ports)
 }
- void Network::add_forwarded_ports(const char* value, size_t size) {
+void Network::add_forwarded_ports(const char* value, size_t size) {
   forwarded_ports_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.appengine.v1.Network.forwarded_ports)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 Network::forwarded_ports() const {
   // @@protoc_insertion_point(field_list:google.appengine.v1.Network.forwarded_ports)
   return forwarded_ports_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 Network::mutable_forwarded_ports() {
   // @@protoc_insertion_point(field_mutable_list:google.appengine.v1.Network.forwarded_ports)
   return &forwarded_ports_;
@@ -6736,37 +6880,37 @@ Network::mutable_forwarded_ports() {
 void Network::clear_instance_tag() {
   instance_tag_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Network::instance_tag() const {
+const ::std::string& Network::instance_tag() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Network.instance_tag)
   return instance_tag_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Network::set_instance_tag(const ::std::string& value) {
+void Network::set_instance_tag(const ::std::string& value) {
   
   instance_tag_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Network.instance_tag)
 }
- void Network::set_instance_tag(const char* value) {
+void Network::set_instance_tag(const char* value) {
   
   instance_tag_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Network.instance_tag)
 }
- void Network::set_instance_tag(const char* value, size_t size) {
+void Network::set_instance_tag(const char* value, size_t size) {
   
   instance_tag_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Network.instance_tag)
 }
- ::std::string* Network::mutable_instance_tag() {
+::std::string* Network::mutable_instance_tag() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Network.instance_tag)
   return instance_tag_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Network::release_instance_tag() {
+::std::string* Network::release_instance_tag() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Network.instance_tag)
   
   return instance_tag_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Network::set_allocated_instance_tag(::std::string* instance_tag) {
+void Network::set_allocated_instance_tag(::std::string* instance_tag) {
   if (instance_tag != NULL) {
     
   } else {
@@ -6780,37 +6924,37 @@ void Network::clear_instance_tag() {
 void Network::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Network::name() const {
+const ::std::string& Network::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Network.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Network::set_name(const ::std::string& value) {
+void Network::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Network.name)
 }
- void Network::set_name(const char* value) {
+void Network::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Network.name)
 }
- void Network::set_name(const char* value, size_t size) {
+void Network::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Network.name)
 }
- ::std::string* Network::mutable_name() {
+::std::string* Network::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Network.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Network::release_name() {
+::std::string* Network::release_name() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Network.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Network::set_allocated_name(::std::string* name) {
+void Network::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -6820,6 +6964,9 @@ void Network::clear_name() {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Network.name)
 }
 
+inline const Network* Network::internal_default_instance() {
+  return &Network_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6832,28 +6979,26 @@ const int Resources::kMemoryGbFieldNumber;
 
 Resources::Resources()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Resources)
 }
 
 void Resources::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Resources::Resources(const Resources& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Resources)
 }
 
 void Resources::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&cpu_, 0, reinterpret_cast<char*>(&memory_gb_) -
+    reinterpret_cast<char*>(&cpu_) + sizeof(memory_gb_));
   _cached_size_ = 0;
-  cpu_ = 0;
-  disk_gb_ = 0;
-  memory_gb_ = 0;
 }
 
 Resources::~Resources() {
@@ -6862,8 +7007,6 @@ Resources::~Resources() {
 }
 
 void Resources::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Resources::SetCachedSize(int size) const {
@@ -6877,11 +7020,11 @@ const ::google::protobuf::Descriptor* Resources::descriptor() {
 }
 
 const Resources& Resources::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fversion_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fversion_2eproto();
+  return *internal_default_instance();
 }
 
-Resources* Resources::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Resources> Resources_default_instance_;
 
 Resources* Resources::New(::google::protobuf::Arena* arena) const {
   Resources* n = new Resources;
@@ -6905,7 +7048,7 @@ void Resources::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -6929,10 +7072,10 @@ bool Resources::MergePartialFromCodedStream(
       // optional double cpu = 1;
       case 1: {
         if (tag == 9) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &cpu_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6944,10 +7087,10 @@ bool Resources::MergePartialFromCodedStream(
       case 2: {
         if (tag == 17) {
          parse_disk_gb:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &disk_gb_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6959,10 +7102,10 @@ bool Resources::MergePartialFromCodedStream(
       case 3: {
         if (tag == 25) {
          parse_memory_gb:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &memory_gb_)));
-
         } else {
           goto handle_unusual;
         }
@@ -7014,6 +7157,7 @@ void Resources::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Resources::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.Resources)
   // optional double cpu = 1;
   if (this->cpu() != 0) {
@@ -7034,9 +7178,9 @@ void Resources::SerializeWithCachedSizes(
   return target;
 }
 
-int Resources::ByteSize() const {
+size_t Resources::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Resources)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional double cpu = 1;
   if (this->cpu() != 0) {
@@ -7053,18 +7197,17 @@ int Resources::ByteSize() const {
     total_size += 1 + 8;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Resources::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Resources)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Resources* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Resources* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Resources>(
           &from);
   if (source == NULL) {
@@ -7072,15 +7215,21 @@ void Resources::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Resources)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Resources::MergeFrom(const Resources& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Resources)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Resources::UnsafeMergeFrom(const Resources& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.cpu() != 0) {
     set_cpu(from.cpu());
   }
@@ -7103,7 +7252,7 @@ void Resources::CopyFrom(const Resources& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Resources)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Resources::IsInitialized() const {
@@ -7138,11 +7287,11 @@ void Resources::InternalSwap(Resources* other) {
 void Resources::clear_cpu() {
   cpu_ = 0;
 }
- double Resources::cpu() const {
+double Resources::cpu() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Resources.cpu)
   return cpu_;
 }
- void Resources::set_cpu(double value) {
+void Resources::set_cpu(double value) {
   
   cpu_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Resources.cpu)
@@ -7152,11 +7301,11 @@ void Resources::clear_cpu() {
 void Resources::clear_disk_gb() {
   disk_gb_ = 0;
 }
- double Resources::disk_gb() const {
+double Resources::disk_gb() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Resources.disk_gb)
   return disk_gb_;
 }
- void Resources::set_disk_gb(double value) {
+void Resources::set_disk_gb(double value) {
   
   disk_gb_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Resources.disk_gb)
@@ -7166,16 +7315,19 @@ void Resources::clear_disk_gb() {
 void Resources::clear_memory_gb() {
   memory_gb_ = 0;
 }
- double Resources::memory_gb() const {
+double Resources::memory_gb() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Resources.memory_gb)
   return memory_gb_;
 }
- void Resources::set_memory_gb(double value) {
+void Resources::set_memory_gb(double value) {
   
   memory_gb_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Resources.memory_gb)
 }
 
+inline const Resources* Resources::internal_default_instance() {
+  return &Resources_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

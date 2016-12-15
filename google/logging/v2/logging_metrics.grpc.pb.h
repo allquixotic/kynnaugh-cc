@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -43,7 +44,7 @@ namespace logging {
 namespace v2 {
 
 // Service for configuring logs-based metrics.
-class MetricsServiceV2 GRPC_FINAL {
+class MetricsServiceV2 final {
  public:
   class StubInterface {
    public:
@@ -80,37 +81,37 @@ class MetricsServiceV2 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogMetric>* AsyncUpdateLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::UpdateLogMetricRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::DeleteLogMetricRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListLogMetrics(::grpc::ClientContext* context, const ::google::logging::v2::ListLogMetricsRequest& request, ::google::logging::v2::ListLogMetricsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListLogMetrics(::grpc::ClientContext* context, const ::google::logging::v2::ListLogMetricsRequest& request, ::google::logging::v2::ListLogMetricsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListLogMetricsResponse>> AsyncListLogMetrics(::grpc::ClientContext* context, const ::google::logging::v2::ListLogMetricsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListLogMetricsResponse>>(AsyncListLogMetricsRaw(context, request, cq));
     }
-    ::grpc::Status GetLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::GetLogMetricRequest& request, ::google::logging::v2::LogMetric* response) GRPC_OVERRIDE;
+    ::grpc::Status GetLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::GetLogMetricRequest& request, ::google::logging::v2::LogMetric* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>> AsyncGetLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::GetLogMetricRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>>(AsyncGetLogMetricRaw(context, request, cq));
     }
-    ::grpc::Status CreateLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::CreateLogMetricRequest& request, ::google::logging::v2::LogMetric* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::CreateLogMetricRequest& request, ::google::logging::v2::LogMetric* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>> AsyncCreateLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::CreateLogMetricRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>>(AsyncCreateLogMetricRaw(context, request, cq));
     }
-    ::grpc::Status UpdateLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::UpdateLogMetricRequest& request, ::google::logging::v2::LogMetric* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::UpdateLogMetricRequest& request, ::google::logging::v2::LogMetric* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>> AsyncUpdateLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::UpdateLogMetricRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>>(AsyncUpdateLogMetricRaw(context, request, cq));
     }
-    ::grpc::Status DeleteLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::DeleteLogMetricRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::DeleteLogMetricRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteLogMetric(::grpc::ClientContext* context, const ::google::logging::v2::DeleteLogMetricRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteLogMetricRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListLogMetricsResponse>* AsyncListLogMetricsRaw(::grpc::ClientContext* context, const ::google::logging::v2::ListLogMetricsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>* AsyncGetLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::GetLogMetricRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>* AsyncCreateLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::CreateLogMetricRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>* AsyncUpdateLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::UpdateLogMetricRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::DeleteLogMetricRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListLogMetricsResponse>* AsyncListLogMetricsRaw(::grpc::ClientContext* context, const ::google::logging::v2::ListLogMetricsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>* AsyncGetLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::GetLogMetricRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>* AsyncCreateLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::CreateLogMetricRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogMetric>* AsyncUpdateLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::UpdateLogMetricRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteLogMetricRaw(::grpc::ClientContext* context, const ::google::logging::v2::DeleteLogMetricRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListLogMetrics_;
     const ::grpc::RpcMethod rpcmethod_GetLogMetric_;
     const ::grpc::RpcMethod rpcmethod_CreateLogMetric_;
@@ -142,11 +143,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithAsyncMethod_ListLogMetrics() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListLogMetrics() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListLogMetrics() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListLogMetrics(::grpc::ServerContext* context, const ::google::logging::v2::ListLogMetricsRequest* request, ::google::logging::v2::ListLogMetricsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListLogMetrics(::grpc::ServerContext* context, const ::google::logging::v2::ListLogMetricsRequest* request, ::google::logging::v2::ListLogMetricsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -162,11 +163,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithAsyncMethod_GetLogMetric() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetLogMetric() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::GetLogMetricRequest* request, ::google::logging::v2::LogMetric* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::GetLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -182,11 +183,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithAsyncMethod_CreateLogMetric() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateLogMetric() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::CreateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::CreateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -202,11 +203,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithAsyncMethod_UpdateLogMetric() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateLogMetric() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::UpdateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::UpdateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -222,11 +223,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithAsyncMethod_DeleteLogMetric() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteLogMetric() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::DeleteLogMetricRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::DeleteLogMetricRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -243,11 +244,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithGenericMethod_ListLogMetrics() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListLogMetrics() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListLogMetrics() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListLogMetrics(::grpc::ServerContext* context, const ::google::logging::v2::ListLogMetricsRequest* request, ::google::logging::v2::ListLogMetricsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListLogMetrics(::grpc::ServerContext* context, const ::google::logging::v2::ListLogMetricsRequest* request, ::google::logging::v2::ListLogMetricsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -260,11 +261,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithGenericMethod_GetLogMetric() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetLogMetric() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::GetLogMetricRequest* request, ::google::logging::v2::LogMetric* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::GetLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -277,11 +278,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithGenericMethod_CreateLogMetric() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateLogMetric() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::CreateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::CreateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -294,11 +295,11 @@ class MetricsServiceV2 GRPC_FINAL {
     WithGenericMethod_UpdateLogMetric() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateLogMetric() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::UpdateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::UpdateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -311,15 +312,118 @@ class MetricsServiceV2 GRPC_FINAL {
     WithGenericMethod_DeleteLogMetric() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteLogMetric() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteLogMetric() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::DeleteLogMetricRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::DeleteLogMetricRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListLogMetrics : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListLogMetrics() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::ListLogMetricsRequest, ::google::logging::v2::ListLogMetricsResponse>(std::bind(&WithStreamedUnaryMethod_ListLogMetrics<BaseClass>::StreamedListLogMetrics, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListLogMetrics() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListLogMetrics(::grpc::ServerContext* context, const ::google::logging::v2::ListLogMetricsRequest* request, ::google::logging::v2::ListLogMetricsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListLogMetrics(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::ListLogMetricsRequest,::google::logging::v2::ListLogMetricsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetLogMetric : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetLogMetric() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::GetLogMetricRequest, ::google::logging::v2::LogMetric>(std::bind(&WithStreamedUnaryMethod_GetLogMetric<BaseClass>::StreamedGetLogMetric, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetLogMetric() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::GetLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetLogMetric(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::GetLogMetricRequest,::google::logging::v2::LogMetric>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateLogMetric : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateLogMetric() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::CreateLogMetricRequest, ::google::logging::v2::LogMetric>(std::bind(&WithStreamedUnaryMethod_CreateLogMetric<BaseClass>::StreamedCreateLogMetric, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateLogMetric() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::CreateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateLogMetric(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::CreateLogMetricRequest,::google::logging::v2::LogMetric>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateLogMetric : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateLogMetric() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::UpdateLogMetricRequest, ::google::logging::v2::LogMetric>(std::bind(&WithStreamedUnaryMethod_UpdateLogMetric<BaseClass>::StreamedUpdateLogMetric, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateLogMetric() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::UpdateLogMetricRequest* request, ::google::logging::v2::LogMetric* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateLogMetric(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::UpdateLogMetricRequest,::google::logging::v2::LogMetric>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteLogMetric : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteLogMetric() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::DeleteLogMetricRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteLogMetric<BaseClass>::StreamedDeleteLogMetric, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteLogMetric() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteLogMetric(::grpc::ServerContext* context, const ::google::logging::v2::DeleteLogMetricRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteLogMetric(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::DeleteLogMetricRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListLogMetrics<WithStreamedUnaryMethod_GetLogMetric<WithStreamedUnaryMethod_CreateLogMetric<WithStreamedUnaryMethod_UpdateLogMetric<WithStreamedUnaryMethod_DeleteLogMetric<Service > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListLogMetrics<WithStreamedUnaryMethod_GetLogMetric<WithStreamedUnaryMethod_CreateLogMetric<WithStreamedUnaryMethod_UpdateLogMetric<WithStreamedUnaryMethod_DeleteLogMetric<Service > > > > > StreamedService;
 };
 
 }  // namespace v2

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -46,7 +47,7 @@ namespace v1 {
 
 // Service for creating, configuring, and deleting Cloud Bigtable tables.
 // Provides access to the table schemas only, not the data stored within the tables.
-class BigtableTableService GRPC_FINAL {
+class BigtableTableService final {
  public:
   class StubInterface {
    public:
@@ -110,57 +111,57 @@ class BigtableTableService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteColumnFamilyRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncBulkDeleteRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest& request, ::google::bigtable::admin::table::v1::Table* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest& request, ::google::bigtable::admin::table::v1::Table* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>> AsyncCreateTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>>(AsyncCreateTableRaw(context, request, cq));
     }
-    ::grpc::Status ListTables(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest& request, ::google::bigtable::admin::table::v1::ListTablesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListTables(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest& request, ::google::bigtable::admin::table::v1::ListTablesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ListTablesResponse>> AsyncListTables(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ListTablesResponse>>(AsyncListTablesRaw(context, request, cq));
     }
-    ::grpc::Status GetTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest& request, ::google::bigtable::admin::table::v1::Table* response) GRPC_OVERRIDE;
+    ::grpc::Status GetTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest& request, ::google::bigtable::admin::table::v1::Table* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>> AsyncGetTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>>(AsyncGetTableRaw(context, request, cq));
     }
-    ::grpc::Status DeleteTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteTableRaw(context, request, cq));
     }
-    ::grpc::Status RenameTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status RenameTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncRenameTable(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncRenameTableRaw(context, request, cq));
     }
-    ::grpc::Status CreateColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest& request, ::google::bigtable::admin::table::v1::ColumnFamily* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest& request, ::google::bigtable::admin::table::v1::ColumnFamily* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>> AsyncCreateColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>>(AsyncCreateColumnFamilyRaw(context, request, cq));
     }
-    ::grpc::Status UpdateColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily& request, ::google::bigtable::admin::table::v1::ColumnFamily* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily& request, ::google::bigtable::admin::table::v1::ColumnFamily* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>> AsyncUpdateColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>>(AsyncUpdateColumnFamilyRaw(context, request, cq));
     }
-    ::grpc::Status DeleteColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteColumnFamily(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteColumnFamilyRaw(context, request, cq));
     }
-    ::grpc::Status BulkDeleteRows(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status BulkDeleteRows(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncBulkDeleteRows(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncBulkDeleteRowsRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>* AsyncCreateTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ListTablesResponse>* AsyncListTablesRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>* AsyncGetTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncRenameTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>* AsyncCreateColumnFamilyRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>* AsyncUpdateColumnFamilyRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteColumnFamilyRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncBulkDeleteRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>* AsyncCreateTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ListTablesResponse>* AsyncListTablesRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::Table>* AsyncGetTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncRenameTableRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>* AsyncCreateColumnFamilyRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::table::v1::ColumnFamily>* AsyncUpdateColumnFamilyRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteColumnFamilyRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncBulkDeleteRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateTable_;
     const ::grpc::RpcMethod rpcmethod_ListTables_;
     const ::grpc::RpcMethod rpcmethod_GetTable_;
@@ -207,11 +208,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_CreateTable() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateTable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -227,11 +228,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_ListTables() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_ListTables() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListTables() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTables(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest* request, ::google::bigtable::admin::table::v1::ListTablesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTables(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest* request, ::google::bigtable::admin::table::v1::ListTablesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -247,11 +248,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_GetTable() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_GetTable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -267,11 +268,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_DeleteTable() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DeleteTable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -287,11 +288,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_RenameTable() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_RenameTable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_RenameTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RenameTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RenameTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -307,11 +308,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_CreateColumnFamily() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_CreateColumnFamily() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateColumnFamily() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -327,11 +328,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_UpdateColumnFamily() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_UpdateColumnFamily() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateColumnFamily() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -347,11 +348,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_DeleteColumnFamily() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_DeleteColumnFamily() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteColumnFamily() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -367,11 +368,11 @@ class BigtableTableService GRPC_FINAL {
     WithAsyncMethod_BulkDeleteRows() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_BulkDeleteRows() GRPC_OVERRIDE {
+    ~WithAsyncMethod_BulkDeleteRows() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BulkDeleteRows(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BulkDeleteRows(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -388,11 +389,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_CreateTable() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateTable() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -405,11 +406,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_ListTables() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_ListTables() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListTables() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTables(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest* request, ::google::bigtable::admin::table::v1::ListTablesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTables(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest* request, ::google::bigtable::admin::table::v1::ListTablesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -422,11 +423,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_GetTable() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_GetTable() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -439,11 +440,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_DeleteTable() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DeleteTable() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -456,11 +457,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_RenameTable() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_RenameTable() GRPC_OVERRIDE {
+    ~WithGenericMethod_RenameTable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RenameTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RenameTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -473,11 +474,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_CreateColumnFamily() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_CreateColumnFamily() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateColumnFamily() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -490,11 +491,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_UpdateColumnFamily() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_UpdateColumnFamily() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateColumnFamily() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -507,11 +508,11 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_DeleteColumnFamily() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_DeleteColumnFamily() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteColumnFamily() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -524,15 +525,198 @@ class BigtableTableService GRPC_FINAL {
     WithGenericMethod_BulkDeleteRows() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_BulkDeleteRows() GRPC_OVERRIDE {
+    ~WithGenericMethod_BulkDeleteRows() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BulkDeleteRows(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BulkDeleteRows(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateTable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateTable() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::CreateTableRequest, ::google::bigtable::admin::table::v1::Table>(std::bind(&WithStreamedUnaryMethod_CreateTable<BaseClass>::StreamedCreateTable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateTable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateTable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::CreateTableRequest,::google::bigtable::admin::table::v1::Table>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListTables : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListTables() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::ListTablesRequest, ::google::bigtable::admin::table::v1::ListTablesResponse>(std::bind(&WithStreamedUnaryMethod_ListTables<BaseClass>::StreamedListTables, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListTables() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListTables(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ListTablesRequest* request, ::google::bigtable::admin::table::v1::ListTablesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListTables(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::ListTablesRequest,::google::bigtable::admin::table::v1::ListTablesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetTable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetTable() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::GetTableRequest, ::google::bigtable::admin::table::v1::Table>(std::bind(&WithStreamedUnaryMethod_GetTable<BaseClass>::StreamedGetTable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetTable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::GetTableRequest* request, ::google::bigtable::admin::table::v1::Table* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetTable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::GetTableRequest,::google::bigtable::admin::table::v1::Table>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteTable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteTable() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::DeleteTableRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteTable<BaseClass>::StreamedDeleteTable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteTable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteTableRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteTable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::DeleteTableRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_RenameTable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_RenameTable() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::RenameTableRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_RenameTable<BaseClass>::StreamedRenameTable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_RenameTable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status RenameTable(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::RenameTableRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedRenameTable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::RenameTableRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateColumnFamily : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateColumnFamily() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest, ::google::bigtable::admin::table::v1::ColumnFamily>(std::bind(&WithStreamedUnaryMethod_CreateColumnFamily<BaseClass>::StreamedCreateColumnFamily, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateColumnFamily() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateColumnFamily(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::CreateColumnFamilyRequest,::google::bigtable::admin::table::v1::ColumnFamily>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateColumnFamily : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateColumnFamily() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::ColumnFamily, ::google::bigtable::admin::table::v1::ColumnFamily>(std::bind(&WithStreamedUnaryMethod_UpdateColumnFamily<BaseClass>::StreamedUpdateColumnFamily, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateColumnFamily() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::ColumnFamily* request, ::google::bigtable::admin::table::v1::ColumnFamily* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateColumnFamily(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::ColumnFamily,::google::bigtable::admin::table::v1::ColumnFamily>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteColumnFamily : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteColumnFamily() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteColumnFamily<BaseClass>::StreamedDeleteColumnFamily, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteColumnFamily() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteColumnFamily(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteColumnFamily(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::DeleteColumnFamilyRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_BulkDeleteRows : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_BulkDeleteRows() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_BulkDeleteRows<BaseClass>::StreamedBulkDeleteRows, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_BulkDeleteRows() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status BulkDeleteRows(::grpc::ServerContext* context, const ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedBulkDeleteRows(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::table::v1::BulkDeleteRowsRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateTable<WithStreamedUnaryMethod_ListTables<WithStreamedUnaryMethod_GetTable<WithStreamedUnaryMethod_DeleteTable<WithStreamedUnaryMethod_RenameTable<WithStreamedUnaryMethod_CreateColumnFamily<WithStreamedUnaryMethod_UpdateColumnFamily<WithStreamedUnaryMethod_DeleteColumnFamily<WithStreamedUnaryMethod_BulkDeleteRows<Service > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateTable<WithStreamedUnaryMethod_ListTables<WithStreamedUnaryMethod_GetTable<WithStreamedUnaryMethod_DeleteTable<WithStreamedUnaryMethod_RenameTable<WithStreamedUnaryMethod_CreateColumnFamily<WithStreamedUnaryMethod_UpdateColumnFamily<WithStreamedUnaryMethod_DeleteColumnFamily<WithStreamedUnaryMethod_BulkDeleteRows<Service > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

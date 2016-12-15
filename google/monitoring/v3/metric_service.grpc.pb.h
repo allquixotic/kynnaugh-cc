@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace v3 {
 
 // Manages metric descriptors, monitored resource descriptors, and
 // time series data.
-class MetricService GRPC_FINAL {
+class MetricService final {
  public:
   class StubInterface {
    public:
@@ -105,52 +106,52 @@ class MetricService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::monitoring::v3::ListTimeSeriesResponse>* AsyncListTimeSeriesRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncCreateTimeSeriesRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListMonitoredResourceDescriptors(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest& request, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListMonitoredResourceDescriptors(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest& request, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse>> AsyncListMonitoredResourceDescriptors(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse>>(AsyncListMonitoredResourceDescriptorsRaw(context, request, cq));
     }
-    ::grpc::Status GetMonitoredResourceDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest& request, ::google::api::MonitoredResourceDescriptor* response) GRPC_OVERRIDE;
+    ::grpc::Status GetMonitoredResourceDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest& request, ::google::api::MonitoredResourceDescriptor* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::MonitoredResourceDescriptor>> AsyncGetMonitoredResourceDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::MonitoredResourceDescriptor>>(AsyncGetMonitoredResourceDescriptorRaw(context, request, cq));
     }
-    ::grpc::Status ListMetricDescriptors(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest& request, ::google::monitoring::v3::ListMetricDescriptorsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListMetricDescriptors(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest& request, ::google::monitoring::v3::ListMetricDescriptorsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMetricDescriptorsResponse>> AsyncListMetricDescriptors(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMetricDescriptorsResponse>>(AsyncListMetricDescriptorsRaw(context, request, cq));
     }
-    ::grpc::Status GetMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest& request, ::google::api::MetricDescriptor* response) GRPC_OVERRIDE;
+    ::grpc::Status GetMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest& request, ::google::api::MetricDescriptor* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>> AsyncGetMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>>(AsyncGetMetricDescriptorRaw(context, request, cq));
     }
-    ::grpc::Status CreateMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest& request, ::google::api::MetricDescriptor* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest& request, ::google::api::MetricDescriptor* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>> AsyncCreateMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>>(AsyncCreateMetricDescriptorRaw(context, request, cq));
     }
-    ::grpc::Status DeleteMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteMetricDescriptor(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteMetricDescriptorRaw(context, request, cq));
     }
-    ::grpc::Status ListTimeSeries(::grpc::ClientContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest& request, ::google::monitoring::v3::ListTimeSeriesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListTimeSeries(::grpc::ClientContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest& request, ::google::monitoring::v3::ListTimeSeriesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListTimeSeriesResponse>> AsyncListTimeSeries(::grpc::ClientContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListTimeSeriesResponse>>(AsyncListTimeSeriesRaw(context, request, cq));
     }
-    ::grpc::Status CreateTimeSeries(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateTimeSeries(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncCreateTimeSeries(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncCreateTimeSeriesRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse>* AsyncListMonitoredResourceDescriptorsRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::MonitoredResourceDescriptor>* AsyncGetMonitoredResourceDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMetricDescriptorsResponse>* AsyncListMetricDescriptorsRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>* AsyncGetMetricDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>* AsyncCreateMetricDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteMetricDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListTimeSeriesResponse>* AsyncListTimeSeriesRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncCreateTimeSeriesRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse>* AsyncListMonitoredResourceDescriptorsRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::MonitoredResourceDescriptor>* AsyncGetMonitoredResourceDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListMetricDescriptorsResponse>* AsyncListMetricDescriptorsRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>* AsyncGetMetricDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::MetricDescriptor>* AsyncCreateMetricDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteMetricDescriptorRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListTimeSeriesResponse>* AsyncListTimeSeriesRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncCreateTimeSeriesRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListMonitoredResourceDescriptors_;
     const ::grpc::RpcMethod rpcmethod_GetMonitoredResourceDescriptor_;
     const ::grpc::RpcMethod rpcmethod_ListMetricDescriptors_;
@@ -197,11 +198,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_ListMonitoredResourceDescriptors() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListMonitoredResourceDescriptors() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListMonitoredResourceDescriptors() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListMonitoredResourceDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest* request, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListMonitoredResourceDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest* request, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -217,11 +218,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_GetMonitoredResourceDescriptor() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetMonitoredResourceDescriptor() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetMonitoredResourceDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetMonitoredResourceDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest* request, ::google::api::MonitoredResourceDescriptor* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetMonitoredResourceDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest* request, ::google::api::MonitoredResourceDescriptor* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -237,11 +238,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_ListMetricDescriptors() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ListMetricDescriptors() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListMetricDescriptors() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListMetricDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest* request, ::google::monitoring::v3::ListMetricDescriptorsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListMetricDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest* request, ::google::monitoring::v3::ListMetricDescriptorsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -257,11 +258,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_GetMetricDescriptor() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_GetMetricDescriptor() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetMetricDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -277,11 +278,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_CreateMetricDescriptor() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_CreateMetricDescriptor() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateMetricDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -297,11 +298,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_DeleteMetricDescriptor() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_DeleteMetricDescriptor() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteMetricDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -317,11 +318,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_ListTimeSeries() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_ListTimeSeries() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListTimeSeries() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest* request, ::google::monitoring::v3::ListTimeSeriesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest* request, ::google::monitoring::v3::ListTimeSeriesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -337,11 +338,11 @@ class MetricService GRPC_FINAL {
     WithAsyncMethod_CreateTimeSeries() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_CreateTimeSeries() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateTimeSeries() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -358,11 +359,11 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_ListMonitoredResourceDescriptors() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListMonitoredResourceDescriptors() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListMonitoredResourceDescriptors() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListMonitoredResourceDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest* request, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListMonitoredResourceDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest* request, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -375,11 +376,11 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_GetMonitoredResourceDescriptor() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetMonitoredResourceDescriptor() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetMonitoredResourceDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetMonitoredResourceDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest* request, ::google::api::MonitoredResourceDescriptor* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetMonitoredResourceDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest* request, ::google::api::MonitoredResourceDescriptor* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -392,11 +393,11 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_ListMetricDescriptors() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ListMetricDescriptors() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListMetricDescriptors() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListMetricDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest* request, ::google::monitoring::v3::ListMetricDescriptorsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListMetricDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest* request, ::google::monitoring::v3::ListMetricDescriptorsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -409,11 +410,11 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_GetMetricDescriptor() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_GetMetricDescriptor() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetMetricDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -426,11 +427,11 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_CreateMetricDescriptor() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_CreateMetricDescriptor() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateMetricDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -443,11 +444,11 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_DeleteMetricDescriptor() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_DeleteMetricDescriptor() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteMetricDescriptor() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -460,11 +461,11 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_ListTimeSeries() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_ListTimeSeries() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListTimeSeries() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest* request, ::google::monitoring::v3::ListTimeSeriesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest* request, ::google::monitoring::v3::ListTimeSeriesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -477,15 +478,178 @@ class MetricService GRPC_FINAL {
     WithGenericMethod_CreateTimeSeries() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_CreateTimeSeries() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateTimeSeries() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListMonitoredResourceDescriptors : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListMonitoredResourceDescriptors() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse>(std::bind(&WithStreamedUnaryMethod_ListMonitoredResourceDescriptors<BaseClass>::StreamedListMonitoredResourceDescriptors, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListMonitoredResourceDescriptors() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListMonitoredResourceDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest* request, ::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListMonitoredResourceDescriptors(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::ListMonitoredResourceDescriptorsRequest,::google::monitoring::v3::ListMonitoredResourceDescriptorsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetMonitoredResourceDescriptor : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetMonitoredResourceDescriptor() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest, ::google::api::MonitoredResourceDescriptor>(std::bind(&WithStreamedUnaryMethod_GetMonitoredResourceDescriptor<BaseClass>::StreamedGetMonitoredResourceDescriptor, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetMonitoredResourceDescriptor() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetMonitoredResourceDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest* request, ::google::api::MonitoredResourceDescriptor* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetMonitoredResourceDescriptor(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::GetMonitoredResourceDescriptorRequest,::google::api::MonitoredResourceDescriptor>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListMetricDescriptors : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListMetricDescriptors() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::ListMetricDescriptorsRequest, ::google::monitoring::v3::ListMetricDescriptorsResponse>(std::bind(&WithStreamedUnaryMethod_ListMetricDescriptors<BaseClass>::StreamedListMetricDescriptors, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListMetricDescriptors() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListMetricDescriptors(::grpc::ServerContext* context, const ::google::monitoring::v3::ListMetricDescriptorsRequest* request, ::google::monitoring::v3::ListMetricDescriptorsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListMetricDescriptors(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::ListMetricDescriptorsRequest,::google::monitoring::v3::ListMetricDescriptorsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetMetricDescriptor : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetMetricDescriptor() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::GetMetricDescriptorRequest, ::google::api::MetricDescriptor>(std::bind(&WithStreamedUnaryMethod_GetMetricDescriptor<BaseClass>::StreamedGetMetricDescriptor, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetMetricDescriptor() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::GetMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetMetricDescriptor(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::GetMetricDescriptorRequest,::google::api::MetricDescriptor>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateMetricDescriptor : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateMetricDescriptor() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::CreateMetricDescriptorRequest, ::google::api::MetricDescriptor>(std::bind(&WithStreamedUnaryMethod_CreateMetricDescriptor<BaseClass>::StreamedCreateMetricDescriptor, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateMetricDescriptor() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateMetricDescriptorRequest* request, ::google::api::MetricDescriptor* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateMetricDescriptor(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::CreateMetricDescriptorRequest,::google::api::MetricDescriptor>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteMetricDescriptor : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteMetricDescriptor() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::DeleteMetricDescriptorRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteMetricDescriptor<BaseClass>::StreamedDeleteMetricDescriptor, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteMetricDescriptor() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteMetricDescriptor(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteMetricDescriptorRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteMetricDescriptor(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::DeleteMetricDescriptorRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListTimeSeries : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListTimeSeries() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::ListTimeSeriesRequest, ::google::monitoring::v3::ListTimeSeriesResponse>(std::bind(&WithStreamedUnaryMethod_ListTimeSeries<BaseClass>::StreamedListTimeSeries, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListTimeSeries() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::ListTimeSeriesRequest* request, ::google::monitoring::v3::ListTimeSeriesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListTimeSeries(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::ListTimeSeriesRequest,::google::monitoring::v3::ListTimeSeriesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateTimeSeries : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateTimeSeries() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::CreateTimeSeriesRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_CreateTimeSeries<BaseClass>::StreamedCreateTimeSeries, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateTimeSeries() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateTimeSeries(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateTimeSeriesRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateTimeSeries(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::CreateTimeSeriesRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListMonitoredResourceDescriptors<WithStreamedUnaryMethod_GetMonitoredResourceDescriptor<WithStreamedUnaryMethod_ListMetricDescriptors<WithStreamedUnaryMethod_GetMetricDescriptor<WithStreamedUnaryMethod_CreateMetricDescriptor<WithStreamedUnaryMethod_DeleteMetricDescriptor<WithStreamedUnaryMethod_ListTimeSeries<WithStreamedUnaryMethod_CreateTimeSeries<Service > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListMonitoredResourceDescriptors<WithStreamedUnaryMethod_GetMonitoredResourceDescriptor<WithStreamedUnaryMethod_ListMetricDescriptors<WithStreamedUnaryMethod_GetMetricDescriptor<WithStreamedUnaryMethod_CreateMetricDescriptor<WithStreamedUnaryMethod_DeleteMetricDescriptor<WithStreamedUnaryMethod_ListTimeSeries<WithStreamedUnaryMethod_CreateTimeSeries<Service > > > > > > > > StreamedService;
 };
 
 }  // namespace v3

@@ -14,28 +14,45 @@
 #along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.0>.
 
 QT += testlib
+QT -= gui
 TEMPLATE = app
 TARGET = test
 INCLUDEPATH += .
-CONFIG += debug
+CONFIG += debug c++11
 # Input
-SOURCES += test_convert.cpp \
-    ../convert.cpp
+SOURCES += \
+    ../convert.cpp \
+    testconvert.cpp
 
 HEADERS += \
     ../convert.h \
-    test_convert.h \
-    test_convert.h
+    testconvert.h
 
 win32 {
     DEFINES += "_WIN32_WINNT=0x0600"
     DEFINES += "WINVER=0x0600"
+    #Put your zlib, GStreamer, GLib, and QtGStreamer libraries in this path
+    #Or modify the paths below to where you put them
+    LIBS += -LC:\gstreamer\1.0\x86_64\lib -LC:\gstreamer\1.0\x86_64\bin
+
+    #Put your zlib, GStreamer, GLib, and QtGStreamer include directories in these paths
+    #Or modify the paths below to where you put them
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\Qt5GStreamer
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\gstreamer-1.0
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\glib-2.0
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include
+
+    #QtGstreamer linkage
+    LIBS += -lQt5GStreamer-1.0 -lQt5GStreamerUtils-1.0 -lQt5GLib-2.0 -lgstreamer-1.0 -lglib-2.0
 }
 
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\Qt5GStreamer
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\gstreamer-1.0
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\glib-2.0
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include
 INCLUDEPATH += $$PWD
 
-LIBS += -LC:\gstreamer\1.0\x86_64\lib -LC:\gstreamer\1.0\x86_64\bin -lQt5GStreamer-1.0 -lQt5GStreamerUtils-1.0 -lQt5GLib-2.0 -lgstreamer-1.0 -lglib-2.0 -lz
+unix {
+    CONFIG += link_pkgconfig
+    PKGCONFIG += Qt5GStreamer-1.0
+    PKGCONFIG += Qt5GStreamerUtils-1.0
+    PKGCONFIG += gstreamer-1.0
+}
+
+

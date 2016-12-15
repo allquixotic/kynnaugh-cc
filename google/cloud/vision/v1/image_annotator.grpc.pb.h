@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -46,7 +47,7 @@ namespace v1 {
 // Service that performs Google Cloud Vision API detection tasks, such as face,
 // landmark, logo, label, and text detection, over client images, and returns
 // detected entities from the images.
-class ImageAnnotator GRPC_FINAL {
+class ImageAnnotator final {
  public:
   class StubInterface {
    public:
@@ -59,17 +60,17 @@ class ImageAnnotator GRPC_FINAL {
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::vision::v1::BatchAnnotateImagesResponse>* AsyncBatchAnnotateImagesRaw(::grpc::ClientContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status BatchAnnotateImages(::grpc::ClientContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest& request, ::google::cloud::vision::v1::BatchAnnotateImagesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status BatchAnnotateImages(::grpc::ClientContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest& request, ::google::cloud::vision::v1::BatchAnnotateImagesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::vision::v1::BatchAnnotateImagesResponse>> AsyncBatchAnnotateImages(::grpc::ClientContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::vision::v1::BatchAnnotateImagesResponse>>(AsyncBatchAnnotateImagesRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::vision::v1::BatchAnnotateImagesResponse>* AsyncBatchAnnotateImagesRaw(::grpc::ClientContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::vision::v1::BatchAnnotateImagesResponse>* AsyncBatchAnnotateImagesRaw(::grpc::ClientContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_BatchAnnotateImages_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -89,11 +90,11 @@ class ImageAnnotator GRPC_FINAL {
     WithAsyncMethod_BatchAnnotateImages() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_BatchAnnotateImages() GRPC_OVERRIDE {
+    ~WithAsyncMethod_BatchAnnotateImages() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BatchAnnotateImages(::grpc::ServerContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest* request, ::google::cloud::vision::v1::BatchAnnotateImagesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BatchAnnotateImages(::grpc::ServerContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest* request, ::google::cloud::vision::v1::BatchAnnotateImagesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -110,15 +111,38 @@ class ImageAnnotator GRPC_FINAL {
     WithGenericMethod_BatchAnnotateImages() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_BatchAnnotateImages() GRPC_OVERRIDE {
+    ~WithGenericMethod_BatchAnnotateImages() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BatchAnnotateImages(::grpc::ServerContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest* request, ::google::cloud::vision::v1::BatchAnnotateImagesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BatchAnnotateImages(::grpc::ServerContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest* request, ::google::cloud::vision::v1::BatchAnnotateImagesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_BatchAnnotateImages : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_BatchAnnotateImages() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::vision::v1::BatchAnnotateImagesRequest, ::google::cloud::vision::v1::BatchAnnotateImagesResponse>(std::bind(&WithStreamedUnaryMethod_BatchAnnotateImages<BaseClass>::StreamedBatchAnnotateImages, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_BatchAnnotateImages() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status BatchAnnotateImages(::grpc::ServerContext* context, const ::google::cloud::vision::v1::BatchAnnotateImagesRequest* request, ::google::cloud::vision::v1::BatchAnnotateImagesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedBatchAnnotateImages(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::vision::v1::BatchAnnotateImagesRequest,::google::cloud::vision::v1::BatchAnnotateImagesResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_BatchAnnotateImages<Service > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_BatchAnnotateImages<Service > StreamedService;
 };
 
 }  // namespace v1

@@ -76,7 +76,7 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   ListGroupsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListGroupsRequest_descriptor_,
-      ListGroupsRequest::default_instance_,
+      ListGroupsRequest::internal_default_instance(),
       ListGroupsRequest_offsets_,
       -1,
       -1,
@@ -84,8 +84,7 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
       ListGroupsRequest_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsRequest, _oneof_case_[0]),
       sizeof(ListGroupsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsRequest, _internal_metadata_));
   ListGroupsResponse_descriptor_ = file->message_type(1);
   static const int ListGroupsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsResponse, group_),
@@ -94,14 +93,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   ListGroupsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListGroupsResponse_descriptor_,
-      ListGroupsResponse::default_instance_,
+      ListGroupsResponse::internal_default_instance(),
       ListGroupsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListGroupsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupsResponse, _internal_metadata_));
   GetGroupRequest_descriptor_ = file->message_type(2);
   static const int GetGroupRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetGroupRequest, name_),
@@ -109,14 +107,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   GetGroupRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetGroupRequest_descriptor_,
-      GetGroupRequest::default_instance_,
+      GetGroupRequest::internal_default_instance(),
       GetGroupRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetGroupRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetGroupRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetGroupRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetGroupRequest, _internal_metadata_));
   CreateGroupRequest_descriptor_ = file->message_type(3);
   static const int CreateGroupRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateGroupRequest, name_),
@@ -126,14 +123,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   CreateGroupRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateGroupRequest_descriptor_,
-      CreateGroupRequest::default_instance_,
+      CreateGroupRequest::internal_default_instance(),
       CreateGroupRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateGroupRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateGroupRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateGroupRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateGroupRequest, _internal_metadata_));
   UpdateGroupRequest_descriptor_ = file->message_type(4);
   static const int UpdateGroupRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateGroupRequest, group_),
@@ -142,14 +138,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   UpdateGroupRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UpdateGroupRequest_descriptor_,
-      UpdateGroupRequest::default_instance_,
+      UpdateGroupRequest::internal_default_instance(),
       UpdateGroupRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(UpdateGroupRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateGroupRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateGroupRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateGroupRequest, _internal_metadata_));
   DeleteGroupRequest_descriptor_ = file->message_type(5);
   static const int DeleteGroupRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteGroupRequest, name_),
@@ -157,14 +152,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   DeleteGroupRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteGroupRequest_descriptor_,
-      DeleteGroupRequest::default_instance_,
+      DeleteGroupRequest::internal_default_instance(),
       DeleteGroupRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteGroupRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteGroupRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteGroupRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteGroupRequest, _internal_metadata_));
   ListGroupMembersRequest_descriptor_ = file->message_type(6);
   static const int ListGroupMembersRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersRequest, name_),
@@ -176,14 +170,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   ListGroupMembersRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListGroupMembersRequest_descriptor_,
-      ListGroupMembersRequest::default_instance_,
+      ListGroupMembersRequest::internal_default_instance(),
       ListGroupMembersRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListGroupMembersRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersRequest, _internal_metadata_));
   ListGroupMembersResponse_descriptor_ = file->message_type(7);
   static const int ListGroupMembersResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersResponse, members_),
@@ -193,20 +186,19 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
   ListGroupMembersResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListGroupMembersResponse_descriptor_,
-      ListGroupMembersResponse::default_instance_,
+      ListGroupMembersResponse::internal_default_instance(),
       ListGroupMembersResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListGroupMembersResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupMembersResponse, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto);
 }
@@ -215,57 +207,88 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListGroupsRequest_descriptor_, &ListGroupsRequest::default_instance());
+      ListGroupsRequest_descriptor_, ListGroupsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListGroupsResponse_descriptor_, &ListGroupsResponse::default_instance());
+      ListGroupsResponse_descriptor_, ListGroupsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetGroupRequest_descriptor_, &GetGroupRequest::default_instance());
+      GetGroupRequest_descriptor_, GetGroupRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateGroupRequest_descriptor_, &CreateGroupRequest::default_instance());
+      CreateGroupRequest_descriptor_, CreateGroupRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UpdateGroupRequest_descriptor_, &UpdateGroupRequest::default_instance());
+      UpdateGroupRequest_descriptor_, UpdateGroupRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteGroupRequest_descriptor_, &DeleteGroupRequest::default_instance());
+      DeleteGroupRequest_descriptor_, DeleteGroupRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListGroupMembersRequest_descriptor_, &ListGroupMembersRequest::default_instance());
+      ListGroupMembersRequest_descriptor_, ListGroupMembersRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListGroupMembersResponse_descriptor_, &ListGroupMembersResponse::default_instance());
+      ListGroupMembersResponse_descriptor_, ListGroupMembersResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
-  delete ListGroupsRequest::default_instance_;
+  ListGroupsRequest_default_instance_.Shutdown();
   delete ListGroupsRequest_default_oneof_instance_;
   delete ListGroupsRequest_reflection_;
-  delete ListGroupsResponse::default_instance_;
+  ListGroupsResponse_default_instance_.Shutdown();
   delete ListGroupsResponse_reflection_;
-  delete GetGroupRequest::default_instance_;
+  GetGroupRequest_default_instance_.Shutdown();
   delete GetGroupRequest_reflection_;
-  delete CreateGroupRequest::default_instance_;
+  CreateGroupRequest_default_instance_.Shutdown();
   delete CreateGroupRequest_reflection_;
-  delete UpdateGroupRequest::default_instance_;
+  UpdateGroupRequest_default_instance_.Shutdown();
   delete UpdateGroupRequest_reflection_;
-  delete DeleteGroupRequest::default_instance_;
+  DeleteGroupRequest_default_instance_.Shutdown();
   delete DeleteGroupRequest_reflection_;
-  delete ListGroupMembersRequest::default_instance_;
+  ListGroupMembersRequest_default_instance_.Shutdown();
   delete ListGroupMembersRequest_reflection_;
-  delete ListGroupMembersResponse::default_instance_;
+  ListGroupMembersResponse_default_instance_.Shutdown();
   delete ListGroupMembersResponse_reflection_;
 }
 
-void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::api::protobuf_AddDesc_google_2fapi_2fmonitored_5fresource_2eproto();
-  ::google::monitoring::v3::protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  ::google::monitoring::v3::protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fmonitored_5fresource_2eproto();
+  ::google::monitoring::v3::protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
+  ::google::monitoring::v3::protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  ListGroupsRequest_default_instance_.DefaultConstruct();
+  ListGroupsRequest_default_oneof_instance_ = new ListGroupsRequestOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  ListGroupsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetGroupRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateGroupRequest_default_instance_.DefaultConstruct();
+  UpdateGroupRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteGroupRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListGroupMembersRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListGroupMembersResponse_default_instance_.DefaultConstruct();
+  ListGroupsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListGroupsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetGroupRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateGroupRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateGroupRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteGroupRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListGroupMembersRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListGroupMembersResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_once_);
+void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n(google/monitoring/v3/group_service.pro"
     "to\022\024google.monitoring.v3\032\034google/api/ann"
@@ -313,37 +336,42 @@ void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
     "oogle.monitoring.v3.ListGroupMembersRequ"
     "est\032..google.monitoring.v3.ListGroupMemb"
     "ersResponse\".\202\323\344\223\002(\022&/v3/{name=projects/"
-    "*/groups/*}/membersBL\n\030com.google.monito"
-    "ring.v3B\021GroupServiceProtoP\001\252\002\032Google.Cl"
-    "oud.Monitoring.V3b\006proto3", 1945);
+    "*/groups/*}/membersB\214\001\n\030com.google.monit"
+    "oring.v3B\021GroupServiceProtoP\001Z>google.go"
+    "lang.org/genproto/googleapis/monitoring/"
+    "v3;monitoring\252\002\032Google.Cloud.Monitoring."
+    "V3b\006proto3", 2010);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/monitoring/v3/group_service.proto", &protobuf_RegisterTypes);
-  ListGroupsRequest::default_instance_ = new ListGroupsRequest();
-  ListGroupsRequest_default_oneof_instance_ = new ListGroupsRequestOneofInstance();
-  ListGroupsResponse::default_instance_ = new ListGroupsResponse();
-  GetGroupRequest::default_instance_ = new GetGroupRequest();
-  CreateGroupRequest::default_instance_ = new CreateGroupRequest();
-  UpdateGroupRequest::default_instance_ = new UpdateGroupRequest();
-  DeleteGroupRequest::default_instance_ = new DeleteGroupRequest();
-  ListGroupMembersRequest::default_instance_ = new ListGroupMembersRequest();
-  ListGroupMembersResponse::default_instance_ = new ListGroupMembersResponse();
-  ListGroupsRequest::default_instance_->InitAsDefaultInstance();
-  ListGroupsResponse::default_instance_->InitAsDefaultInstance();
-  GetGroupRequest::default_instance_->InitAsDefaultInstance();
-  CreateGroupRequest::default_instance_->InitAsDefaultInstance();
-  UpdateGroupRequest::default_instance_->InitAsDefaultInstance();
-  DeleteGroupRequest::default_instance_->InitAsDefaultInstance();
-  ListGroupMembersRequest::default_instance_->InitAsDefaultInstance();
-  ListGroupMembersResponse::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fmonitored_5fresource_2eproto();
+  ::google::monitoring::v3::protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
+  ::google::monitoring::v3::protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_once_);
+void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_once_,
+                 &protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto {
   StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto() {
     protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -358,12 +386,12 @@ const int ListGroupsRequest::kPageTokenFieldNumber;
 
 ListGroupsRequest::ListGroupsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListGroupsRequest)
 }
 
 void ListGroupsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   ListGroupsRequest_default_oneof_instance_->children_of_group_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ListGroupsRequest_default_oneof_instance_->ancestors_of_group_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ListGroupsRequest_default_oneof_instance_->descendants_of_group_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -373,18 +401,16 @@ ListGroupsRequest::ListGroupsRequest(const ListGroupsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListGroupsRequest)
 }
 
 void ListGroupsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
   clear_has_filter();
+  _cached_size_ = 0;
 }
 
 ListGroupsRequest::~ListGroupsRequest() {
@@ -397,8 +423,6 @@ void ListGroupsRequest::SharedDtor() {
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (has_filter()) {
     clear_filter();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -413,11 +437,11 @@ const ::google::protobuf::Descriptor* ListGroupsRequest::descriptor() {
 }
 
 const ListGroupsRequest& ListGroupsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-ListGroupsRequest* ListGroupsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListGroupsRequest> ListGroupsRequest_default_instance_;
 
 ListGroupsRequest* ListGroupsRequest::New(::google::protobuf::Arena* arena) const {
   ListGroupsRequest* n = new ListGroupsRequest;
@@ -429,7 +453,7 @@ ListGroupsRequest* ListGroupsRequest::New(::google::protobuf::Arena* arena) cons
 
 void ListGroupsRequest::clear_filter() {
 // @@protoc_insertion_point(one_of_clear_start:google.monitoring.v3.ListGroupsRequest)
-  switch(filter_case()) {
+  switch (filter_case()) {
     case kChildrenOfGroup: {
       filter_.children_of_group_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -480,14 +504,13 @@ bool ListGroupsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_ancestors_of_group;
+        goto after_descendants_of_group;
         break;
       }
 
       // optional string ancestors_of_group = 3;
       case 3: {
         if (tag == 26) {
-         parse_ancestors_of_group:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_ancestors_of_group()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -514,6 +537,7 @@ bool ListGroupsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_descendants_of_group:
         if (input->ExpectTag(40)) goto parse_page_size;
         break;
       }
@@ -522,10 +546,10 @@ bool ListGroupsRequest::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -651,6 +675,7 @@ void ListGroupsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListGroupsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.ListGroupsRequest)
   // optional string children_of_group = 2;
   if (has_children_of_group()) {
@@ -716,9 +741,9 @@ void ListGroupsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListGroupsRequest::ByteSize() const {
+size_t ListGroupsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListGroupsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 7;
   if (this->name().size() > 0) {
@@ -767,18 +792,17 @@ int ListGroupsRequest::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListGroupsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListGroupsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListGroupsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListGroupsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListGroupsRequest>(
           &from);
   if (source == NULL) {
@@ -786,15 +810,21 @@ void ListGroupsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListGroupsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListGroupsRequest::MergeFrom(const ListGroupsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListGroupsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListGroupsRequest::UnsafeMergeFrom(const ListGroupsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.filter_case()) {
     case kChildrenOfGroup: {
       set_children_of_group(from.children_of_group());
@@ -836,7 +866,7 @@ void ListGroupsRequest::CopyFrom(const ListGroupsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListGroupsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListGroupsRequest::IsInitialized() const {
@@ -873,37 +903,37 @@ void ListGroupsRequest::InternalSwap(ListGroupsRequest* other) {
 void ListGroupsRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListGroupsRequest::name() const {
+const ::std::string& ListGroupsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupsRequest::set_name(const ::std::string& value) {
+void ListGroupsRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.name)
 }
- void ListGroupsRequest::set_name(const char* value) {
+void ListGroupsRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupsRequest.name)
 }
- void ListGroupsRequest::set_name(const char* value, size_t size) {
+void ListGroupsRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupsRequest.name)
 }
- ::std::string* ListGroupsRequest::mutable_name() {
+::std::string* ListGroupsRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupsRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupsRequest::release_name() {
+::std::string* ListGroupsRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupsRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupsRequest::set_allocated_name(::std::string* name) {
+void ListGroupsRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -926,14 +956,14 @@ void ListGroupsRequest::clear_children_of_group() {
     clear_has_filter();
   }
 }
- const ::std::string& ListGroupsRequest::children_of_group() const {
+const ::std::string& ListGroupsRequest::children_of_group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.children_of_group)
   if (has_children_of_group()) {
     return filter_.children_of_group_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void ListGroupsRequest::set_children_of_group(const ::std::string& value) {
+void ListGroupsRequest::set_children_of_group(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.children_of_group)
   if (!has_children_of_group()) {
     clear_filter();
@@ -943,7 +973,7 @@ void ListGroupsRequest::clear_children_of_group() {
   filter_.children_of_group_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.children_of_group)
 }
- void ListGroupsRequest::set_children_of_group(const char* value) {
+void ListGroupsRequest::set_children_of_group(const char* value) {
   if (!has_children_of_group()) {
     clear_filter();
     set_has_children_of_group();
@@ -953,7 +983,7 @@ void ListGroupsRequest::clear_children_of_group() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupsRequest.children_of_group)
 }
- void ListGroupsRequest::set_children_of_group(const char* value, size_t size) {
+void ListGroupsRequest::set_children_of_group(const char* value, size_t size) {
   if (!has_children_of_group()) {
     clear_filter();
     set_has_children_of_group();
@@ -963,7 +993,7 @@ void ListGroupsRequest::clear_children_of_group() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupsRequest.children_of_group)
 }
- ::std::string* ListGroupsRequest::mutable_children_of_group() {
+::std::string* ListGroupsRequest::mutable_children_of_group() {
   if (!has_children_of_group()) {
     clear_filter();
     set_has_children_of_group();
@@ -972,7 +1002,7 @@ void ListGroupsRequest::clear_children_of_group() {
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupsRequest.children_of_group)
   return filter_.children_of_group_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupsRequest::release_children_of_group() {
+::std::string* ListGroupsRequest::release_children_of_group() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupsRequest.children_of_group)
   if (has_children_of_group()) {
     clear_has_filter();
@@ -981,7 +1011,7 @@ void ListGroupsRequest::clear_children_of_group() {
     return NULL;
   }
 }
- void ListGroupsRequest::set_allocated_children_of_group(::std::string* children_of_group) {
+void ListGroupsRequest::set_allocated_children_of_group(::std::string* children_of_group) {
   if (!has_children_of_group()) {
     filter_.children_of_group_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -1007,14 +1037,14 @@ void ListGroupsRequest::clear_ancestors_of_group() {
     clear_has_filter();
   }
 }
- const ::std::string& ListGroupsRequest::ancestors_of_group() const {
+const ::std::string& ListGroupsRequest::ancestors_of_group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
   if (has_ancestors_of_group()) {
     return filter_.ancestors_of_group_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void ListGroupsRequest::set_ancestors_of_group(const ::std::string& value) {
+void ListGroupsRequest::set_ancestors_of_group(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
   if (!has_ancestors_of_group()) {
     clear_filter();
@@ -1024,7 +1054,7 @@ void ListGroupsRequest::clear_ancestors_of_group() {
   filter_.ancestors_of_group_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
 }
- void ListGroupsRequest::set_ancestors_of_group(const char* value) {
+void ListGroupsRequest::set_ancestors_of_group(const char* value) {
   if (!has_ancestors_of_group()) {
     clear_filter();
     set_has_ancestors_of_group();
@@ -1034,7 +1064,7 @@ void ListGroupsRequest::clear_ancestors_of_group() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
 }
- void ListGroupsRequest::set_ancestors_of_group(const char* value, size_t size) {
+void ListGroupsRequest::set_ancestors_of_group(const char* value, size_t size) {
   if (!has_ancestors_of_group()) {
     clear_filter();
     set_has_ancestors_of_group();
@@ -1044,7 +1074,7 @@ void ListGroupsRequest::clear_ancestors_of_group() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
 }
- ::std::string* ListGroupsRequest::mutable_ancestors_of_group() {
+::std::string* ListGroupsRequest::mutable_ancestors_of_group() {
   if (!has_ancestors_of_group()) {
     clear_filter();
     set_has_ancestors_of_group();
@@ -1053,7 +1083,7 @@ void ListGroupsRequest::clear_ancestors_of_group() {
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
   return filter_.ancestors_of_group_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupsRequest::release_ancestors_of_group() {
+::std::string* ListGroupsRequest::release_ancestors_of_group() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
   if (has_ancestors_of_group()) {
     clear_has_filter();
@@ -1062,7 +1092,7 @@ void ListGroupsRequest::clear_ancestors_of_group() {
     return NULL;
   }
 }
- void ListGroupsRequest::set_allocated_ancestors_of_group(::std::string* ancestors_of_group) {
+void ListGroupsRequest::set_allocated_ancestors_of_group(::std::string* ancestors_of_group) {
   if (!has_ancestors_of_group()) {
     filter_.ancestors_of_group_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -1088,14 +1118,14 @@ void ListGroupsRequest::clear_descendants_of_group() {
     clear_has_filter();
   }
 }
- const ::std::string& ListGroupsRequest::descendants_of_group() const {
+const ::std::string& ListGroupsRequest::descendants_of_group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
   if (has_descendants_of_group()) {
     return filter_.descendants_of_group_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void ListGroupsRequest::set_descendants_of_group(const ::std::string& value) {
+void ListGroupsRequest::set_descendants_of_group(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
   if (!has_descendants_of_group()) {
     clear_filter();
@@ -1105,7 +1135,7 @@ void ListGroupsRequest::clear_descendants_of_group() {
   filter_.descendants_of_group_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
 }
- void ListGroupsRequest::set_descendants_of_group(const char* value) {
+void ListGroupsRequest::set_descendants_of_group(const char* value) {
   if (!has_descendants_of_group()) {
     clear_filter();
     set_has_descendants_of_group();
@@ -1115,7 +1145,7 @@ void ListGroupsRequest::clear_descendants_of_group() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
 }
- void ListGroupsRequest::set_descendants_of_group(const char* value, size_t size) {
+void ListGroupsRequest::set_descendants_of_group(const char* value, size_t size) {
   if (!has_descendants_of_group()) {
     clear_filter();
     set_has_descendants_of_group();
@@ -1125,7 +1155,7 @@ void ListGroupsRequest::clear_descendants_of_group() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
 }
- ::std::string* ListGroupsRequest::mutable_descendants_of_group() {
+::std::string* ListGroupsRequest::mutable_descendants_of_group() {
   if (!has_descendants_of_group()) {
     clear_filter();
     set_has_descendants_of_group();
@@ -1134,7 +1164,7 @@ void ListGroupsRequest::clear_descendants_of_group() {
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
   return filter_.descendants_of_group_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupsRequest::release_descendants_of_group() {
+::std::string* ListGroupsRequest::release_descendants_of_group() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
   if (has_descendants_of_group()) {
     clear_has_filter();
@@ -1143,7 +1173,7 @@ void ListGroupsRequest::clear_descendants_of_group() {
     return NULL;
   }
 }
- void ListGroupsRequest::set_allocated_descendants_of_group(::std::string* descendants_of_group) {
+void ListGroupsRequest::set_allocated_descendants_of_group(::std::string* descendants_of_group) {
   if (!has_descendants_of_group()) {
     filter_.descendants_of_group_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -1160,11 +1190,11 @@ void ListGroupsRequest::clear_descendants_of_group() {
 void ListGroupsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListGroupsRequest::page_size() const {
+::google::protobuf::int32 ListGroupsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.page_size)
   return page_size_;
 }
- void ListGroupsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListGroupsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.page_size)
@@ -1174,37 +1204,37 @@ void ListGroupsRequest::clear_page_size() {
 void ListGroupsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListGroupsRequest::page_token() const {
+const ::std::string& ListGroupsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupsRequest::set_page_token(const ::std::string& value) {
+void ListGroupsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.page_token)
 }
- void ListGroupsRequest::set_page_token(const char* value) {
+void ListGroupsRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupsRequest.page_token)
 }
- void ListGroupsRequest::set_page_token(const char* value, size_t size) {
+void ListGroupsRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupsRequest.page_token)
 }
- ::std::string* ListGroupsRequest::mutable_page_token() {
+::std::string* ListGroupsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupsRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupsRequest::release_page_token() {
+::std::string* ListGroupsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupsRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListGroupsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -1223,6 +1253,9 @@ void ListGroupsRequest::clear_has_filter() {
 ListGroupsRequest::FilterCase ListGroupsRequest::filter_case() const {
   return ListGroupsRequest::FilterCase(_oneof_case_[0]);
 }
+inline const ListGroupsRequest* ListGroupsRequest::internal_default_instance() {
+  return &ListGroupsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1234,27 +1267,25 @@ const int ListGroupsResponse::kNextPageTokenFieldNumber;
 
 ListGroupsResponse::ListGroupsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListGroupsResponse)
 }
 
 void ListGroupsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListGroupsResponse::ListGroupsResponse(const ListGroupsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListGroupsResponse)
 }
 
 void ListGroupsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListGroupsResponse::~ListGroupsResponse() {
@@ -1264,8 +1295,6 @@ ListGroupsResponse::~ListGroupsResponse() {
 
 void ListGroupsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListGroupsResponse::SetCachedSize(int size) const {
@@ -1279,11 +1308,11 @@ const ::google::protobuf::Descriptor* ListGroupsResponse::descriptor() {
 }
 
 const ListGroupsResponse& ListGroupsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-ListGroupsResponse* ListGroupsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListGroupsResponse> ListGroupsResponse_default_instance_;
 
 ListGroupsResponse* ListGroupsResponse::New(::google::protobuf::Arena* arena) const {
   ListGroupsResponse* n = new ListGroupsResponse;
@@ -1387,6 +1416,7 @@ void ListGroupsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListGroupsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.ListGroupsResponse)
   // repeated .google.monitoring.v3.Group group = 1;
   for (unsigned int i = 0, n = this->group_size(); i < n; i++) {
@@ -1410,9 +1440,9 @@ void ListGroupsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListGroupsResponse::ByteSize() const {
+size_t ListGroupsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListGroupsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -1422,25 +1452,27 @@ int ListGroupsResponse::ByteSize() const {
   }
 
   // repeated .google.monitoring.v3.Group group = 1;
-  total_size += 1 * this->group_size();
-  for (int i = 0; i < this->group_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->group(i));
+  {
+    unsigned int count = this->group_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->group(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListGroupsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListGroupsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListGroupsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListGroupsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListGroupsResponse>(
           &from);
   if (source == NULL) {
@@ -1448,15 +1480,21 @@ void ListGroupsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListGroupsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListGroupsResponse::MergeFrom(const ListGroupsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListGroupsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListGroupsResponse::UnsafeMergeFrom(const ListGroupsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   group_.MergeFrom(from.group_);
   if (from.next_page_token().size() > 0) {
 
@@ -1475,7 +1513,7 @@ void ListGroupsResponse::CopyFrom(const ListGroupsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListGroupsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListGroupsResponse::IsInitialized() const {
@@ -1539,37 +1577,37 @@ ListGroupsResponse::group() const {
 void ListGroupsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListGroupsResponse::next_page_token() const {
+const ::std::string& ListGroupsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupsResponse::set_next_page_token(const ::std::string& value) {
+void ListGroupsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsResponse.next_page_token)
 }
- void ListGroupsResponse::set_next_page_token(const char* value) {
+void ListGroupsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupsResponse.next_page_token)
 }
- void ListGroupsResponse::set_next_page_token(const char* value, size_t size) {
+void ListGroupsResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupsResponse.next_page_token)
 }
- ::std::string* ListGroupsResponse::mutable_next_page_token() {
+::std::string* ListGroupsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupsResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupsResponse::release_next_page_token() {
+::std::string* ListGroupsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupsResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListGroupsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -1579,6 +1617,9 @@ void ListGroupsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupsResponse.next_page_token)
 }
 
+inline const ListGroupsResponse* ListGroupsResponse::internal_default_instance() {
+  return &ListGroupsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1589,27 +1630,25 @@ const int GetGroupRequest::kNameFieldNumber;
 
 GetGroupRequest::GetGroupRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.GetGroupRequest)
 }
 
 void GetGroupRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetGroupRequest::GetGroupRequest(const GetGroupRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.GetGroupRequest)
 }
 
 void GetGroupRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetGroupRequest::~GetGroupRequest() {
@@ -1619,8 +1658,6 @@ GetGroupRequest::~GetGroupRequest() {
 
 void GetGroupRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetGroupRequest::SetCachedSize(int size) const {
@@ -1634,11 +1671,11 @@ const ::google::protobuf::Descriptor* GetGroupRequest::descriptor() {
 }
 
 const GetGroupRequest& GetGroupRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-GetGroupRequest* GetGroupRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetGroupRequest> GetGroupRequest_default_instance_;
 
 GetGroupRequest* GetGroupRequest::New(::google::protobuf::Arena* arena) const {
   GetGroupRequest* n = new GetGroupRequest;
@@ -1718,6 +1755,7 @@ void GetGroupRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetGroupRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.GetGroupRequest)
   // optional string name = 3;
   if (this->name().size() > 0) {
@@ -1734,9 +1772,9 @@ void GetGroupRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetGroupRequest::ByteSize() const {
+size_t GetGroupRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.GetGroupRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 3;
   if (this->name().size() > 0) {
@@ -1745,18 +1783,17 @@ int GetGroupRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.GetGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetGroupRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetGroupRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetGroupRequest>(
           &from);
   if (source == NULL) {
@@ -1764,15 +1801,21 @@ void GetGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.GetGroupRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetGroupRequest::MergeFrom(const GetGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.GetGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetGroupRequest::UnsafeMergeFrom(const GetGroupRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1790,7 +1833,7 @@ void GetGroupRequest::CopyFrom(const GetGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.GetGroupRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetGroupRequest::IsInitialized() const {
@@ -1823,37 +1866,37 @@ void GetGroupRequest::InternalSwap(GetGroupRequest* other) {
 void GetGroupRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetGroupRequest::name() const {
+const ::std::string& GetGroupRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.GetGroupRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetGroupRequest::set_name(const ::std::string& value) {
+void GetGroupRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.GetGroupRequest.name)
 }
- void GetGroupRequest::set_name(const char* value) {
+void GetGroupRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.GetGroupRequest.name)
 }
- void GetGroupRequest::set_name(const char* value, size_t size) {
+void GetGroupRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.GetGroupRequest.name)
 }
- ::std::string* GetGroupRequest::mutable_name() {
+::std::string* GetGroupRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.GetGroupRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetGroupRequest::release_name() {
+::std::string* GetGroupRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.GetGroupRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetGroupRequest::set_allocated_name(::std::string* name) {
+void GetGroupRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1863,6 +1906,9 @@ void GetGroupRequest::clear_name() {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.GetGroupRequest.name)
 }
 
+inline const GetGroupRequest* GetGroupRequest::internal_default_instance() {
+  return &GetGroupRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1875,30 +1921,29 @@ const int CreateGroupRequest::kValidateOnlyFieldNumber;
 
 CreateGroupRequest::CreateGroupRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.CreateGroupRequest)
 }
 
 void CreateGroupRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  group_ = const_cast< ::google::monitoring::v3::Group*>(&::google::monitoring::v3::Group::default_instance());
+  group_ = const_cast< ::google::monitoring::v3::Group*>(
+      ::google::monitoring::v3::Group::internal_default_instance());
 }
 
 CreateGroupRequest::CreateGroupRequest(const CreateGroupRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.CreateGroupRequest)
 }
 
 void CreateGroupRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   group_ = NULL;
   validate_only_ = false;
+  _cached_size_ = 0;
 }
 
 CreateGroupRequest::~CreateGroupRequest() {
@@ -1908,7 +1953,7 @@ CreateGroupRequest::~CreateGroupRequest() {
 
 void CreateGroupRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &CreateGroupRequest_default_instance_.get()) {
     delete group_;
   }
 }
@@ -1924,11 +1969,11 @@ const ::google::protobuf::Descriptor* CreateGroupRequest::descriptor() {
 }
 
 const CreateGroupRequest& CreateGroupRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-CreateGroupRequest* CreateGroupRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateGroupRequest> CreateGroupRequest_default_instance_;
 
 CreateGroupRequest* CreateGroupRequest::New(::google::protobuf::Arena* arena) const {
   CreateGroupRequest* n = new CreateGroupRequest;
@@ -1972,10 +2017,10 @@ bool CreateGroupRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_validate_only:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &validate_only_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2050,6 +2095,7 @@ void CreateGroupRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateGroupRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.CreateGroupRequest)
   // optional .google.monitoring.v3.Group group = 2;
   if (this->has_group()) {
@@ -2078,9 +2124,9 @@ void CreateGroupRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateGroupRequest::ByteSize() const {
+size_t CreateGroupRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.CreateGroupRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 4;
   if (this->name().size() > 0) {
@@ -2101,18 +2147,17 @@ int CreateGroupRequest::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.CreateGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateGroupRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateGroupRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateGroupRequest>(
           &from);
   if (source == NULL) {
@@ -2120,15 +2165,21 @@ void CreateGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.CreateGroupRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateGroupRequest::MergeFrom(const CreateGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.CreateGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateGroupRequest::UnsafeMergeFrom(const CreateGroupRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -2152,7 +2203,7 @@ void CreateGroupRequest::CopyFrom(const CreateGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.CreateGroupRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateGroupRequest::IsInitialized() const {
@@ -2187,37 +2238,37 @@ void CreateGroupRequest::InternalSwap(CreateGroupRequest* other) {
 void CreateGroupRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CreateGroupRequest::name() const {
+const ::std::string& CreateGroupRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.CreateGroupRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateGroupRequest::set_name(const ::std::string& value) {
+void CreateGroupRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.CreateGroupRequest.name)
 }
- void CreateGroupRequest::set_name(const char* value) {
+void CreateGroupRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.CreateGroupRequest.name)
 }
- void CreateGroupRequest::set_name(const char* value, size_t size) {
+void CreateGroupRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.CreateGroupRequest.name)
 }
- ::std::string* CreateGroupRequest::mutable_name() {
+::std::string* CreateGroupRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.CreateGroupRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CreateGroupRequest::release_name() {
+::std::string* CreateGroupRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.CreateGroupRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateGroupRequest::set_allocated_name(::std::string* name) {
+void CreateGroupRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -2229,7 +2280,7 @@ void CreateGroupRequest::clear_name() {
 
 // optional .google.monitoring.v3.Group group = 2;
 bool CreateGroupRequest::has_group() const {
-  return !_is_default_instance_ && group_ != NULL;
+  return this != internal_default_instance() && group_ != NULL;
 }
 void CreateGroupRequest::clear_group() {
   if (GetArenaNoVirtual() == NULL && group_ != NULL) delete group_;
@@ -2237,7 +2288,8 @@ void CreateGroupRequest::clear_group() {
 }
 const ::google::monitoring::v3::Group& CreateGroupRequest::group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.CreateGroupRequest.group)
-  return group_ != NULL ? *group_ : *default_instance_->group_;
+  return group_ != NULL ? *group_
+                         : *::google::monitoring::v3::Group::internal_default_instance();
 }
 ::google::monitoring::v3::Group* CreateGroupRequest::mutable_group() {
   
@@ -2269,16 +2321,19 @@ void CreateGroupRequest::set_allocated_group(::google::monitoring::v3::Group* gr
 void CreateGroupRequest::clear_validate_only() {
   validate_only_ = false;
 }
- bool CreateGroupRequest::validate_only() const {
+bool CreateGroupRequest::validate_only() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.CreateGroupRequest.validate_only)
   return validate_only_;
 }
- void CreateGroupRequest::set_validate_only(bool value) {
+void CreateGroupRequest::set_validate_only(bool value) {
   
   validate_only_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.CreateGroupRequest.validate_only)
 }
 
+inline const CreateGroupRequest* CreateGroupRequest::internal_default_instance() {
+  return &CreateGroupRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2290,28 +2345,28 @@ const int UpdateGroupRequest::kValidateOnlyFieldNumber;
 
 UpdateGroupRequest::UpdateGroupRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.UpdateGroupRequest)
 }
 
 void UpdateGroupRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  group_ = const_cast< ::google::monitoring::v3::Group*>(&::google::monitoring::v3::Group::default_instance());
+  group_ = const_cast< ::google::monitoring::v3::Group*>(
+      ::google::monitoring::v3::Group::internal_default_instance());
 }
 
 UpdateGroupRequest::UpdateGroupRequest(const UpdateGroupRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.UpdateGroupRequest)
 }
 
 void UpdateGroupRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   group_ = NULL;
   validate_only_ = false;
+  _cached_size_ = 0;
 }
 
 UpdateGroupRequest::~UpdateGroupRequest() {
@@ -2320,7 +2375,7 @@ UpdateGroupRequest::~UpdateGroupRequest() {
 }
 
 void UpdateGroupRequest::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &UpdateGroupRequest_default_instance_.get()) {
     delete group_;
   }
 }
@@ -2336,11 +2391,11 @@ const ::google::protobuf::Descriptor* UpdateGroupRequest::descriptor() {
 }
 
 const UpdateGroupRequest& UpdateGroupRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-UpdateGroupRequest* UpdateGroupRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UpdateGroupRequest> UpdateGroupRequest_default_instance_;
 
 UpdateGroupRequest* UpdateGroupRequest::New(::google::protobuf::Arena* arena) const {
   UpdateGroupRequest* n = new UpdateGroupRequest;
@@ -2383,10 +2438,10 @@ bool UpdateGroupRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_validate_only:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &validate_only_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2434,6 +2489,7 @@ void UpdateGroupRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UpdateGroupRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.UpdateGroupRequest)
   // optional .google.monitoring.v3.Group group = 2;
   if (this->has_group()) {
@@ -2451,9 +2507,9 @@ void UpdateGroupRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int UpdateGroupRequest::ByteSize() const {
+size_t UpdateGroupRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.UpdateGroupRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.monitoring.v3.Group group = 2;
   if (this->has_group()) {
@@ -2467,18 +2523,17 @@ int UpdateGroupRequest::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UpdateGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.UpdateGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UpdateGroupRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UpdateGroupRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateGroupRequest>(
           &from);
   if (source == NULL) {
@@ -2486,15 +2541,21 @@ void UpdateGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.UpdateGroupRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateGroupRequest::MergeFrom(const UpdateGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.UpdateGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UpdateGroupRequest::UnsafeMergeFrom(const UpdateGroupRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_group()) {
     mutable_group()->::google::monitoring::v3::Group::MergeFrom(from.group());
   }
@@ -2514,7 +2575,7 @@ void UpdateGroupRequest::CopyFrom(const UpdateGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.UpdateGroupRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateGroupRequest::IsInitialized() const {
@@ -2546,7 +2607,7 @@ void UpdateGroupRequest::InternalSwap(UpdateGroupRequest* other) {
 
 // optional .google.monitoring.v3.Group group = 2;
 bool UpdateGroupRequest::has_group() const {
-  return !_is_default_instance_ && group_ != NULL;
+  return this != internal_default_instance() && group_ != NULL;
 }
 void UpdateGroupRequest::clear_group() {
   if (GetArenaNoVirtual() == NULL && group_ != NULL) delete group_;
@@ -2554,7 +2615,8 @@ void UpdateGroupRequest::clear_group() {
 }
 const ::google::monitoring::v3::Group& UpdateGroupRequest::group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.UpdateGroupRequest.group)
-  return group_ != NULL ? *group_ : *default_instance_->group_;
+  return group_ != NULL ? *group_
+                         : *::google::monitoring::v3::Group::internal_default_instance();
 }
 ::google::monitoring::v3::Group* UpdateGroupRequest::mutable_group() {
   
@@ -2586,16 +2648,19 @@ void UpdateGroupRequest::set_allocated_group(::google::monitoring::v3::Group* gr
 void UpdateGroupRequest::clear_validate_only() {
   validate_only_ = false;
 }
- bool UpdateGroupRequest::validate_only() const {
+bool UpdateGroupRequest::validate_only() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.UpdateGroupRequest.validate_only)
   return validate_only_;
 }
- void UpdateGroupRequest::set_validate_only(bool value) {
+void UpdateGroupRequest::set_validate_only(bool value) {
   
   validate_only_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.UpdateGroupRequest.validate_only)
 }
 
+inline const UpdateGroupRequest* UpdateGroupRequest::internal_default_instance() {
+  return &UpdateGroupRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2606,27 +2671,25 @@ const int DeleteGroupRequest::kNameFieldNumber;
 
 DeleteGroupRequest::DeleteGroupRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.DeleteGroupRequest)
 }
 
 void DeleteGroupRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteGroupRequest::DeleteGroupRequest(const DeleteGroupRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.DeleteGroupRequest)
 }
 
 void DeleteGroupRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteGroupRequest::~DeleteGroupRequest() {
@@ -2636,8 +2699,6 @@ DeleteGroupRequest::~DeleteGroupRequest() {
 
 void DeleteGroupRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DeleteGroupRequest::SetCachedSize(int size) const {
@@ -2651,11 +2712,11 @@ const ::google::protobuf::Descriptor* DeleteGroupRequest::descriptor() {
 }
 
 const DeleteGroupRequest& DeleteGroupRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteGroupRequest* DeleteGroupRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteGroupRequest> DeleteGroupRequest_default_instance_;
 
 DeleteGroupRequest* DeleteGroupRequest::New(::google::protobuf::Arena* arena) const {
   DeleteGroupRequest* n = new DeleteGroupRequest;
@@ -2735,6 +2796,7 @@ void DeleteGroupRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteGroupRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.DeleteGroupRequest)
   // optional string name = 3;
   if (this->name().size() > 0) {
@@ -2751,9 +2813,9 @@ void DeleteGroupRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteGroupRequest::ByteSize() const {
+size_t DeleteGroupRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.DeleteGroupRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 3;
   if (this->name().size() > 0) {
@@ -2762,18 +2824,17 @@ int DeleteGroupRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.DeleteGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteGroupRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteGroupRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteGroupRequest>(
           &from);
   if (source == NULL) {
@@ -2781,15 +2842,21 @@ void DeleteGroupRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.DeleteGroupRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteGroupRequest::MergeFrom(const DeleteGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.DeleteGroupRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteGroupRequest::UnsafeMergeFrom(const DeleteGroupRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -2807,7 +2874,7 @@ void DeleteGroupRequest::CopyFrom(const DeleteGroupRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.DeleteGroupRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteGroupRequest::IsInitialized() const {
@@ -2840,37 +2907,37 @@ void DeleteGroupRequest::InternalSwap(DeleteGroupRequest* other) {
 void DeleteGroupRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteGroupRequest::name() const {
+const ::std::string& DeleteGroupRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.DeleteGroupRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteGroupRequest::set_name(const ::std::string& value) {
+void DeleteGroupRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.DeleteGroupRequest.name)
 }
- void DeleteGroupRequest::set_name(const char* value) {
+void DeleteGroupRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.DeleteGroupRequest.name)
 }
- void DeleteGroupRequest::set_name(const char* value, size_t size) {
+void DeleteGroupRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.DeleteGroupRequest.name)
 }
- ::std::string* DeleteGroupRequest::mutable_name() {
+::std::string* DeleteGroupRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.DeleteGroupRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteGroupRequest::release_name() {
+::std::string* DeleteGroupRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.DeleteGroupRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteGroupRequest::set_allocated_name(::std::string* name) {
+void DeleteGroupRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -2880,6 +2947,9 @@ void DeleteGroupRequest::clear_name() {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.DeleteGroupRequest.name)
 }
 
+inline const DeleteGroupRequest* DeleteGroupRequest::internal_default_instance() {
+  return &DeleteGroupRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2894,32 +2964,31 @@ const int ListGroupMembersRequest::kIntervalFieldNumber;
 
 ListGroupMembersRequest::ListGroupMembersRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListGroupMembersRequest)
 }
 
 void ListGroupMembersRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  interval_ = const_cast< ::google::monitoring::v3::TimeInterval*>(&::google::monitoring::v3::TimeInterval::default_instance());
+  interval_ = const_cast< ::google::monitoring::v3::TimeInterval*>(
+      ::google::monitoring::v3::TimeInterval::internal_default_instance());
 }
 
 ListGroupMembersRequest::ListGroupMembersRequest(const ListGroupMembersRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListGroupMembersRequest)
 }
 
 void ListGroupMembersRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   interval_ = NULL;
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListGroupMembersRequest::~ListGroupMembersRequest() {
@@ -2931,7 +3000,7 @@ void ListGroupMembersRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &ListGroupMembersRequest_default_instance_.get()) {
     delete interval_;
   }
 }
@@ -2947,11 +3016,11 @@ const ::google::protobuf::Descriptor* ListGroupMembersRequest::descriptor() {
 }
 
 const ListGroupMembersRequest& ListGroupMembersRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-ListGroupMembersRequest* ListGroupMembersRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListGroupMembersRequest> ListGroupMembersRequest_default_instance_;
 
 ListGroupMembersRequest* ListGroupMembersRequest::New(::google::protobuf::Arena* arena) const {
   ListGroupMembersRequest* n = new ListGroupMembersRequest;
@@ -2984,10 +3053,10 @@ bool ListGroupMembersRequest::MergePartialFromCodedStream(
       // optional int32 page_size = 3;
       case 3: {
         if (tag == 24) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3129,6 +3198,7 @@ void ListGroupMembersRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListGroupMembersRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.ListGroupMembersRequest)
   // optional int32 page_size = 3;
   if (this->page_size() != 0) {
@@ -3179,9 +3249,9 @@ void ListGroupMembersRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListGroupMembersRequest::ByteSize() const {
+size_t ListGroupMembersRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListGroupMembersRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 7;
   if (this->name().size() > 0) {
@@ -3218,18 +3288,17 @@ int ListGroupMembersRequest::ByteSize() const {
         *this->interval_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListGroupMembersRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListGroupMembersRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListGroupMembersRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListGroupMembersRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListGroupMembersRequest>(
           &from);
   if (source == NULL) {
@@ -3237,15 +3306,21 @@ void ListGroupMembersRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListGroupMembersRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListGroupMembersRequest::MergeFrom(const ListGroupMembersRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListGroupMembersRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListGroupMembersRequest::UnsafeMergeFrom(const ListGroupMembersRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3277,7 +3352,7 @@ void ListGroupMembersRequest::CopyFrom(const ListGroupMembersRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListGroupMembersRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListGroupMembersRequest::IsInitialized() const {
@@ -3314,37 +3389,37 @@ void ListGroupMembersRequest::InternalSwap(ListGroupMembersRequest* other) {
 void ListGroupMembersRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListGroupMembersRequest::name() const {
+const ::std::string& ListGroupMembersRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersRequest::set_name(const ::std::string& value) {
+void ListGroupMembersRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersRequest.name)
 }
- void ListGroupMembersRequest::set_name(const char* value) {
+void ListGroupMembersRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupMembersRequest.name)
 }
- void ListGroupMembersRequest::set_name(const char* value, size_t size) {
+void ListGroupMembersRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupMembersRequest.name)
 }
- ::std::string* ListGroupMembersRequest::mutable_name() {
+::std::string* ListGroupMembersRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupMembersRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupMembersRequest::release_name() {
+::std::string* ListGroupMembersRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupMembersRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersRequest::set_allocated_name(::std::string* name) {
+void ListGroupMembersRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -3358,11 +3433,11 @@ void ListGroupMembersRequest::clear_name() {
 void ListGroupMembersRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListGroupMembersRequest::page_size() const {
+::google::protobuf::int32 ListGroupMembersRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.page_size)
   return page_size_;
 }
- void ListGroupMembersRequest::set_page_size(::google::protobuf::int32 value) {
+void ListGroupMembersRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersRequest.page_size)
@@ -3372,37 +3447,37 @@ void ListGroupMembersRequest::clear_page_size() {
 void ListGroupMembersRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListGroupMembersRequest::page_token() const {
+const ::std::string& ListGroupMembersRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersRequest::set_page_token(const ::std::string& value) {
+void ListGroupMembersRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersRequest.page_token)
 }
- void ListGroupMembersRequest::set_page_token(const char* value) {
+void ListGroupMembersRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupMembersRequest.page_token)
 }
- void ListGroupMembersRequest::set_page_token(const char* value, size_t size) {
+void ListGroupMembersRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupMembersRequest.page_token)
 }
- ::std::string* ListGroupMembersRequest::mutable_page_token() {
+::std::string* ListGroupMembersRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupMembersRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupMembersRequest::release_page_token() {
+::std::string* ListGroupMembersRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupMembersRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersRequest::set_allocated_page_token(::std::string* page_token) {
+void ListGroupMembersRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -3416,37 +3491,37 @@ void ListGroupMembersRequest::clear_page_token() {
 void ListGroupMembersRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListGroupMembersRequest::filter() const {
+const ::std::string& ListGroupMembersRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.filter)
   return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersRequest::set_filter(const ::std::string& value) {
+void ListGroupMembersRequest::set_filter(const ::std::string& value) {
   
   filter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersRequest.filter)
 }
- void ListGroupMembersRequest::set_filter(const char* value) {
+void ListGroupMembersRequest::set_filter(const char* value) {
   
   filter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupMembersRequest.filter)
 }
- void ListGroupMembersRequest::set_filter(const char* value, size_t size) {
+void ListGroupMembersRequest::set_filter(const char* value, size_t size) {
   
   filter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupMembersRequest.filter)
 }
- ::std::string* ListGroupMembersRequest::mutable_filter() {
+::std::string* ListGroupMembersRequest::mutable_filter() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupMembersRequest.filter)
   return filter_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupMembersRequest::release_filter() {
+::std::string* ListGroupMembersRequest::release_filter() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupMembersRequest.filter)
   
   return filter_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersRequest::set_allocated_filter(::std::string* filter) {
+void ListGroupMembersRequest::set_allocated_filter(::std::string* filter) {
   if (filter != NULL) {
     
   } else {
@@ -3458,7 +3533,7 @@ void ListGroupMembersRequest::clear_filter() {
 
 // optional .google.monitoring.v3.TimeInterval interval = 6;
 bool ListGroupMembersRequest::has_interval() const {
-  return !_is_default_instance_ && interval_ != NULL;
+  return this != internal_default_instance() && interval_ != NULL;
 }
 void ListGroupMembersRequest::clear_interval() {
   if (GetArenaNoVirtual() == NULL && interval_ != NULL) delete interval_;
@@ -3466,7 +3541,8 @@ void ListGroupMembersRequest::clear_interval() {
 }
 const ::google::monitoring::v3::TimeInterval& ListGroupMembersRequest::interval() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.interval)
-  return interval_ != NULL ? *interval_ : *default_instance_->interval_;
+  return interval_ != NULL ? *interval_
+                         : *::google::monitoring::v3::TimeInterval::internal_default_instance();
 }
 ::google::monitoring::v3::TimeInterval* ListGroupMembersRequest::mutable_interval() {
   
@@ -3494,6 +3570,9 @@ void ListGroupMembersRequest::set_allocated_interval(::google::monitoring::v3::T
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupMembersRequest.interval)
 }
 
+inline const ListGroupMembersRequest* ListGroupMembersRequest::internal_default_instance() {
+  return &ListGroupMembersRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3506,28 +3585,26 @@ const int ListGroupMembersResponse::kTotalSizeFieldNumber;
 
 ListGroupMembersResponse::ListGroupMembersResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListGroupMembersResponse)
 }
 
 void ListGroupMembersResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListGroupMembersResponse::ListGroupMembersResponse(const ListGroupMembersResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListGroupMembersResponse)
 }
 
 void ListGroupMembersResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   total_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListGroupMembersResponse::~ListGroupMembersResponse() {
@@ -3537,8 +3614,6 @@ ListGroupMembersResponse::~ListGroupMembersResponse() {
 
 void ListGroupMembersResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListGroupMembersResponse::SetCachedSize(int size) const {
@@ -3552,11 +3627,11 @@ const ::google::protobuf::Descriptor* ListGroupMembersResponse::descriptor() {
 }
 
 const ListGroupMembersResponse& ListGroupMembersResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-ListGroupMembersResponse* ListGroupMembersResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListGroupMembersResponse> ListGroupMembersResponse_default_instance_;
 
 ListGroupMembersResponse* ListGroupMembersResponse::New(::google::protobuf::Arena* arena) const {
   ListGroupMembersResponse* n = new ListGroupMembersResponse;
@@ -3620,10 +3695,10 @@ bool ListGroupMembersResponse::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_total_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &total_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3681,6 +3756,7 @@ void ListGroupMembersResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListGroupMembersResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.ListGroupMembersResponse)
   // repeated .google.api.MonitoredResource members = 1;
   for (unsigned int i = 0, n = this->members_size(); i < n; i++) {
@@ -3709,9 +3785,9 @@ void ListGroupMembersResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListGroupMembersResponse::ByteSize() const {
+size_t ListGroupMembersResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListGroupMembersResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -3728,25 +3804,27 @@ int ListGroupMembersResponse::ByteSize() const {
   }
 
   // repeated .google.api.MonitoredResource members = 1;
-  total_size += 1 * this->members_size();
-  for (int i = 0; i < this->members_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->members(i));
+  {
+    unsigned int count = this->members_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->members(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListGroupMembersResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListGroupMembersResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListGroupMembersResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListGroupMembersResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListGroupMembersResponse>(
           &from);
   if (source == NULL) {
@@ -3754,15 +3832,21 @@ void ListGroupMembersResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListGroupMembersResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListGroupMembersResponse::MergeFrom(const ListGroupMembersResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListGroupMembersResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListGroupMembersResponse::UnsafeMergeFrom(const ListGroupMembersResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   members_.MergeFrom(from.members_);
   if (from.next_page_token().size() > 0) {
 
@@ -3784,7 +3868,7 @@ void ListGroupMembersResponse::CopyFrom(const ListGroupMembersResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListGroupMembersResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListGroupMembersResponse::IsInitialized() const {
@@ -3849,37 +3933,37 @@ ListGroupMembersResponse::members() const {
 void ListGroupMembersResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListGroupMembersResponse::next_page_token() const {
+const ::std::string& ListGroupMembersResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersResponse::set_next_page_token(const ::std::string& value) {
+void ListGroupMembersResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
 }
- void ListGroupMembersResponse::set_next_page_token(const char* value) {
+void ListGroupMembersResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
 }
- void ListGroupMembersResponse::set_next_page_token(const char* value, size_t size) {
+void ListGroupMembersResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
 }
- ::std::string* ListGroupMembersResponse::mutable_next_page_token() {
+::std::string* ListGroupMembersResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListGroupMembersResponse::release_next_page_token() {
+::std::string* ListGroupMembersResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListGroupMembersResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListGroupMembersResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -3893,16 +3977,19 @@ void ListGroupMembersResponse::clear_next_page_token() {
 void ListGroupMembersResponse::clear_total_size() {
   total_size_ = 0;
 }
- ::google::protobuf::int32 ListGroupMembersResponse::total_size() const {
+::google::protobuf::int32 ListGroupMembersResponse::total_size() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersResponse.total_size)
   return total_size_;
 }
- void ListGroupMembersResponse::set_total_size(::google::protobuf::int32 value) {
+void ListGroupMembersResponse::set_total_size(::google::protobuf::int32 value) {
   
   total_size_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersResponse.total_size)
 }
 
+inline const ListGroupMembersResponse* ListGroupMembersResponse::internal_default_instance() {
+  return &ListGroupMembersResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

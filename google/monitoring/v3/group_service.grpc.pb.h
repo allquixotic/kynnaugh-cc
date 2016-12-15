@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -54,7 +55,7 @@ namespace v3 {
 // for example, an alert policy, the target of that alert policy is
 // updated automatically as monitored resources are added and removed
 // from the infrastructure.
-class GroupService GRPC_FINAL {
+class GroupService final {
  public:
   class StubInterface {
    public:
@@ -98,42 +99,42 @@ class GroupService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteGroupRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::monitoring::v3::ListGroupMembersResponse>* AsyncListGroupMembersRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupMembersRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListGroups(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupsRequest& request, ::google::monitoring::v3::ListGroupsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListGroups(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupsRequest& request, ::google::monitoring::v3::ListGroupsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupsResponse>> AsyncListGroups(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupsResponse>>(AsyncListGroupsRaw(context, request, cq));
     }
-    ::grpc::Status GetGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::GetGroupRequest& request, ::google::monitoring::v3::Group* response) GRPC_OVERRIDE;
+    ::grpc::Status GetGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::GetGroupRequest& request, ::google::monitoring::v3::Group* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>> AsyncGetGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::GetGroupRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>>(AsyncGetGroupRaw(context, request, cq));
     }
-    ::grpc::Status CreateGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateGroupRequest& request, ::google::monitoring::v3::Group* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateGroupRequest& request, ::google::monitoring::v3::Group* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>> AsyncCreateGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateGroupRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>>(AsyncCreateGroupRaw(context, request, cq));
     }
-    ::grpc::Status UpdateGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::UpdateGroupRequest& request, ::google::monitoring::v3::Group* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::UpdateGroupRequest& request, ::google::monitoring::v3::Group* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>> AsyncUpdateGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::UpdateGroupRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>>(AsyncUpdateGroupRaw(context, request, cq));
     }
-    ::grpc::Status DeleteGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteGroupRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteGroupRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteGroup(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteGroupRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteGroupRaw(context, request, cq));
     }
-    ::grpc::Status ListGroupMembers(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupMembersRequest& request, ::google::monitoring::v3::ListGroupMembersResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListGroupMembers(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupMembersRequest& request, ::google::monitoring::v3::ListGroupMembersResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupMembersResponse>> AsyncListGroupMembers(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupMembersRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupMembersResponse>>(AsyncListGroupMembersRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupsResponse>* AsyncListGroupsRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>* AsyncGetGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::GetGroupRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>* AsyncCreateGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateGroupRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>* AsyncUpdateGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::UpdateGroupRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteGroupRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupMembersResponse>* AsyncListGroupMembersRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupMembersRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupsResponse>* AsyncListGroupsRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>* AsyncGetGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::GetGroupRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>* AsyncCreateGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::CreateGroupRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::Group>* AsyncUpdateGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::UpdateGroupRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteGroupRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::DeleteGroupRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::monitoring::v3::ListGroupMembersResponse>* AsyncListGroupMembersRaw(::grpc::ClientContext* context, const ::google::monitoring::v3::ListGroupMembersRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListGroups_;
     const ::grpc::RpcMethod rpcmethod_GetGroup_;
     const ::grpc::RpcMethod rpcmethod_CreateGroup_;
@@ -169,11 +170,11 @@ class GroupService GRPC_FINAL {
     WithAsyncMethod_ListGroups() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListGroups() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListGroups() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListGroups(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupsRequest* request, ::google::monitoring::v3::ListGroupsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListGroups(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupsRequest* request, ::google::monitoring::v3::ListGroupsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -189,11 +190,11 @@ class GroupService GRPC_FINAL {
     WithAsyncMethod_GetGroup() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetGroup() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::GetGroupRequest* request, ::google::monitoring::v3::Group* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::GetGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -209,11 +210,11 @@ class GroupService GRPC_FINAL {
     WithAsyncMethod_CreateGroup() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateGroup() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateGroupRequest* request, ::google::monitoring::v3::Group* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -229,11 +230,11 @@ class GroupService GRPC_FINAL {
     WithAsyncMethod_UpdateGroup() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateGroup() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::UpdateGroupRequest* request, ::google::monitoring::v3::Group* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::UpdateGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -249,11 +250,11 @@ class GroupService GRPC_FINAL {
     WithAsyncMethod_DeleteGroup() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteGroup() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteGroupRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteGroupRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -269,11 +270,11 @@ class GroupService GRPC_FINAL {
     WithAsyncMethod_ListGroupMembers() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_ListGroupMembers() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListGroupMembers() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListGroupMembers(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupMembersRequest* request, ::google::monitoring::v3::ListGroupMembersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListGroupMembers(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupMembersRequest* request, ::google::monitoring::v3::ListGroupMembersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -290,11 +291,11 @@ class GroupService GRPC_FINAL {
     WithGenericMethod_ListGroups() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListGroups() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListGroups() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListGroups(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupsRequest* request, ::google::monitoring::v3::ListGroupsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListGroups(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupsRequest* request, ::google::monitoring::v3::ListGroupsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -307,11 +308,11 @@ class GroupService GRPC_FINAL {
     WithGenericMethod_GetGroup() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetGroup() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::GetGroupRequest* request, ::google::monitoring::v3::Group* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::GetGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -324,11 +325,11 @@ class GroupService GRPC_FINAL {
     WithGenericMethod_CreateGroup() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateGroup() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateGroupRequest* request, ::google::monitoring::v3::Group* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -341,11 +342,11 @@ class GroupService GRPC_FINAL {
     WithGenericMethod_UpdateGroup() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateGroup() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::UpdateGroupRequest* request, ::google::monitoring::v3::Group* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::UpdateGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -358,11 +359,11 @@ class GroupService GRPC_FINAL {
     WithGenericMethod_DeleteGroup() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteGroup() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteGroupRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteGroupRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -375,15 +376,138 @@ class GroupService GRPC_FINAL {
     WithGenericMethod_ListGroupMembers() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_ListGroupMembers() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListGroupMembers() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListGroupMembers(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupMembersRequest* request, ::google::monitoring::v3::ListGroupMembersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListGroupMembers(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupMembersRequest* request, ::google::monitoring::v3::ListGroupMembersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListGroups : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListGroups() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::ListGroupsRequest, ::google::monitoring::v3::ListGroupsResponse>(std::bind(&WithStreamedUnaryMethod_ListGroups<BaseClass>::StreamedListGroups, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListGroups() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListGroups(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupsRequest* request, ::google::monitoring::v3::ListGroupsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListGroups(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::ListGroupsRequest,::google::monitoring::v3::ListGroupsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetGroup : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetGroup() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::GetGroupRequest, ::google::monitoring::v3::Group>(std::bind(&WithStreamedUnaryMethod_GetGroup<BaseClass>::StreamedGetGroup, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetGroup() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::GetGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetGroup(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::GetGroupRequest,::google::monitoring::v3::Group>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateGroup : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateGroup() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::CreateGroupRequest, ::google::monitoring::v3::Group>(std::bind(&WithStreamedUnaryMethod_CreateGroup<BaseClass>::StreamedCreateGroup, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateGroup() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::CreateGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateGroup(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::CreateGroupRequest,::google::monitoring::v3::Group>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateGroup : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateGroup() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::UpdateGroupRequest, ::google::monitoring::v3::Group>(std::bind(&WithStreamedUnaryMethod_UpdateGroup<BaseClass>::StreamedUpdateGroup, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateGroup() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::UpdateGroupRequest* request, ::google::monitoring::v3::Group* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateGroup(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::UpdateGroupRequest,::google::monitoring::v3::Group>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteGroup : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteGroup() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::DeleteGroupRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteGroup<BaseClass>::StreamedDeleteGroup, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteGroup() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteGroup(::grpc::ServerContext* context, const ::google::monitoring::v3::DeleteGroupRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteGroup(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::DeleteGroupRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListGroupMembers : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListGroupMembers() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::monitoring::v3::ListGroupMembersRequest, ::google::monitoring::v3::ListGroupMembersResponse>(std::bind(&WithStreamedUnaryMethod_ListGroupMembers<BaseClass>::StreamedListGroupMembers, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListGroupMembers() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListGroupMembers(::grpc::ServerContext* context, const ::google::monitoring::v3::ListGroupMembersRequest* request, ::google::monitoring::v3::ListGroupMembersResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListGroupMembers(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::monitoring::v3::ListGroupMembersRequest,::google::monitoring::v3::ListGroupMembersResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListGroups<WithStreamedUnaryMethod_GetGroup<WithStreamedUnaryMethod_CreateGroup<WithStreamedUnaryMethod_UpdateGroup<WithStreamedUnaryMethod_DeleteGroup<WithStreamedUnaryMethod_ListGroupMembers<Service > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListGroups<WithStreamedUnaryMethod_GetGroup<WithStreamedUnaryMethod_CreateGroup<WithStreamedUnaryMethod_UpdateGroup<WithStreamedUnaryMethod_DeleteGroup<WithStreamedUnaryMethod_ListGroupMembers<Service > > > > > > StreamedService;
 };
 
 }  // namespace v3

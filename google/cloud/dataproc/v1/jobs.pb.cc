@@ -137,14 +137,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   LoggingConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       LoggingConfig_descriptor_,
-      LoggingConfig::default_instance_,
+      LoggingConfig::internal_default_instance(),
       LoggingConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(LoggingConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LoggingConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LoggingConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LoggingConfig, _internal_metadata_));
   LoggingConfig_DriverLogLevelsEntry_descriptor_ = LoggingConfig_descriptor_->nested_type(0);
   LoggingConfig_Level_descriptor_ = LoggingConfig_descriptor_->enum_type(0);
   HadoopJob_descriptor_ = file->message_type(1);
@@ -162,7 +161,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   HadoopJob_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       HadoopJob_descriptor_,
-      HadoopJob::default_instance_,
+      HadoopJob::internal_default_instance(),
       HadoopJob_offsets_,
       -1,
       -1,
@@ -170,8 +169,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
       HadoopJob_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HadoopJob, _oneof_case_[0]),
       sizeof(HadoopJob),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HadoopJob, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HadoopJob, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HadoopJob, _internal_metadata_));
   HadoopJob_PropertiesEntry_descriptor_ = HadoopJob_descriptor_->nested_type(0);
   SparkJob_descriptor_ = file->message_type(2);
   static const int SparkJob_offsets_[9] = {
@@ -188,7 +186,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   SparkJob_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SparkJob_descriptor_,
-      SparkJob::default_instance_,
+      SparkJob::internal_default_instance(),
       SparkJob_offsets_,
       -1,
       -1,
@@ -196,8 +194,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
       SparkJob_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkJob, _oneof_case_[0]),
       sizeof(SparkJob),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkJob, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkJob, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkJob, _internal_metadata_));
   SparkJob_PropertiesEntry_descriptor_ = SparkJob_descriptor_->nested_type(0);
   PySparkJob_descriptor_ = file->message_type(3);
   static const int PySparkJob_offsets_[8] = {
@@ -213,14 +210,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   PySparkJob_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PySparkJob_descriptor_,
-      PySparkJob::default_instance_,
+      PySparkJob::internal_default_instance(),
       PySparkJob_offsets_,
       -1,
       -1,
       -1,
       sizeof(PySparkJob),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PySparkJob, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PySparkJob, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PySparkJob, _internal_metadata_));
   PySparkJob_PropertiesEntry_descriptor_ = PySparkJob_descriptor_->nested_type(0);
   QueryList_descriptor_ = file->message_type(4);
   static const int QueryList_offsets_[1] = {
@@ -229,14 +225,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   QueryList_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       QueryList_descriptor_,
-      QueryList::default_instance_,
+      QueryList::internal_default_instance(),
       QueryList_offsets_,
       -1,
       -1,
       -1,
       sizeof(QueryList),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryList, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryList, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryList, _internal_metadata_));
   HiveJob_descriptor_ = file->message_type(5);
   static const int HiveJob_offsets_[7] = {
     PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(HiveJob_default_oneof_instance_, query_file_uri_),
@@ -250,7 +245,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   HiveJob_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       HiveJob_descriptor_,
-      HiveJob::default_instance_,
+      HiveJob::internal_default_instance(),
       HiveJob_offsets_,
       -1,
       -1,
@@ -258,8 +253,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
       HiveJob_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HiveJob, _oneof_case_[0]),
       sizeof(HiveJob),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HiveJob, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HiveJob, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HiveJob, _internal_metadata_));
   HiveJob_ScriptVariablesEntry_descriptor_ = HiveJob_descriptor_->nested_type(0);
   HiveJob_PropertiesEntry_descriptor_ = HiveJob_descriptor_->nested_type(1);
   SparkSqlJob_descriptor_ = file->message_type(6);
@@ -275,7 +269,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   SparkSqlJob_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SparkSqlJob_descriptor_,
-      SparkSqlJob::default_instance_,
+      SparkSqlJob::internal_default_instance(),
       SparkSqlJob_offsets_,
       -1,
       -1,
@@ -283,8 +277,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
       SparkSqlJob_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkSqlJob, _oneof_case_[0]),
       sizeof(SparkSqlJob),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkSqlJob, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkSqlJob, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SparkSqlJob, _internal_metadata_));
   SparkSqlJob_ScriptVariablesEntry_descriptor_ = SparkSqlJob_descriptor_->nested_type(0);
   SparkSqlJob_PropertiesEntry_descriptor_ = SparkSqlJob_descriptor_->nested_type(1);
   PigJob_descriptor_ = file->message_type(7);
@@ -301,7 +294,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   PigJob_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PigJob_descriptor_,
-      PigJob::default_instance_,
+      PigJob::internal_default_instance(),
       PigJob_offsets_,
       -1,
       -1,
@@ -309,8 +302,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
       PigJob_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PigJob, _oneof_case_[0]),
       sizeof(PigJob),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PigJob, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PigJob, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PigJob, _internal_metadata_));
   PigJob_ScriptVariablesEntry_descriptor_ = PigJob_descriptor_->nested_type(0);
   PigJob_PropertiesEntry_descriptor_ = PigJob_descriptor_->nested_type(1);
   JobPlacement_descriptor_ = file->message_type(8);
@@ -321,14 +313,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   JobPlacement_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       JobPlacement_descriptor_,
-      JobPlacement::default_instance_,
+      JobPlacement::internal_default_instance(),
       JobPlacement_offsets_,
       -1,
       -1,
       -1,
       sizeof(JobPlacement),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobPlacement, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobPlacement, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobPlacement, _internal_metadata_));
   JobStatus_descriptor_ = file->message_type(9);
   static const int JobStatus_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobStatus, state_),
@@ -338,14 +329,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   JobStatus_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       JobStatus_descriptor_,
-      JobStatus::default_instance_,
+      JobStatus::internal_default_instance(),
       JobStatus_offsets_,
       -1,
       -1,
       -1,
       sizeof(JobStatus),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobStatus, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobStatus, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobStatus, _internal_metadata_));
   JobStatus_State_descriptor_ = JobStatus_descriptor_->enum_type(0);
   JobReference_descriptor_ = file->message_type(10);
   static const int JobReference_offsets_[2] = {
@@ -355,14 +345,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   JobReference_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       JobReference_descriptor_,
-      JobReference::default_instance_,
+      JobReference::internal_default_instance(),
       JobReference_offsets_,
       -1,
       -1,
       -1,
       sizeof(JobReference),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobReference, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobReference, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(JobReference, _internal_metadata_));
   Job_descriptor_ = file->message_type(11);
   static const int Job_offsets_[13] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, reference_),
@@ -382,7 +371,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   Job_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Job_descriptor_,
-      Job::default_instance_,
+      Job::internal_default_instance(),
       Job_offsets_,
       -1,
       -1,
@@ -390,8 +379,7 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
       Job_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _oneof_case_[0]),
       sizeof(Job),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _internal_metadata_));
   SubmitJobRequest_descriptor_ = file->message_type(12);
   static const int SubmitJobRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitJobRequest, project_id_),
@@ -401,14 +389,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   SubmitJobRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SubmitJobRequest_descriptor_,
-      SubmitJobRequest::default_instance_,
+      SubmitJobRequest::internal_default_instance(),
       SubmitJobRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(SubmitJobRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitJobRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitJobRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SubmitJobRequest, _internal_metadata_));
   GetJobRequest_descriptor_ = file->message_type(13);
   static const int GetJobRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetJobRequest, project_id_),
@@ -418,14 +405,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   GetJobRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetJobRequest_descriptor_,
-      GetJobRequest::default_instance_,
+      GetJobRequest::internal_default_instance(),
       GetJobRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetJobRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetJobRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetJobRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetJobRequest, _internal_metadata_));
   ListJobsRequest_descriptor_ = file->message_type(14);
   static const int ListJobsRequest_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, project_id_),
@@ -438,14 +424,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   ListJobsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListJobsRequest_descriptor_,
-      ListJobsRequest::default_instance_,
+      ListJobsRequest::internal_default_instance(),
       ListJobsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListJobsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, _internal_metadata_));
   ListJobsRequest_JobStateMatcher_descriptor_ = ListJobsRequest_descriptor_->enum_type(0);
   ListJobsResponse_descriptor_ = file->message_type(15);
   static const int ListJobsResponse_offsets_[2] = {
@@ -455,14 +440,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   ListJobsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListJobsResponse_descriptor_,
-      ListJobsResponse::default_instance_,
+      ListJobsResponse::internal_default_instance(),
       ListJobsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListJobsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsResponse, _internal_metadata_));
   CancelJobRequest_descriptor_ = file->message_type(16);
   static const int CancelJobRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CancelJobRequest, project_id_),
@@ -472,14 +456,13 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   CancelJobRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CancelJobRequest_descriptor_,
-      CancelJobRequest::default_instance_,
+      CancelJobRequest::internal_default_instance(),
       CancelJobRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CancelJobRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CancelJobRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CancelJobRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CancelJobRequest, _internal_metadata_));
   DeleteJobRequest_descriptor_ = file->message_type(17);
   static const int DeleteJobRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteJobRequest, project_id_),
@@ -489,20 +472,19 @@ void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
   DeleteJobRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteJobRequest_descriptor_,
-      DeleteJobRequest::default_instance_,
+      DeleteJobRequest::internal_default_instance(),
       DeleteJobRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteJobRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteJobRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteJobRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteJobRequest, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto);
 }
@@ -511,7 +493,7 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      LoggingConfig_descriptor_, &LoggingConfig::default_instance());
+      LoggingConfig_descriptor_, LoggingConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         LoggingConfig_DriverLogLevelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -522,7 +504,7 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 LoggingConfig_DriverLogLevelsEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      HadoopJob_descriptor_, &HadoopJob::default_instance());
+      HadoopJob_descriptor_, HadoopJob::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         HadoopJob_PropertiesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -533,7 +515,7 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 HadoopJob_PropertiesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SparkJob_descriptor_, &SparkJob::default_instance());
+      SparkJob_descriptor_, SparkJob::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         SparkJob_PropertiesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -544,7 +526,7 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 SparkJob_PropertiesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PySparkJob_descriptor_, &PySparkJob::default_instance());
+      PySparkJob_descriptor_, PySparkJob::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         PySparkJob_PropertiesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -555,9 +537,9 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 PySparkJob_PropertiesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      QueryList_descriptor_, &QueryList::default_instance());
+      QueryList_descriptor_, QueryList::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      HiveJob_descriptor_, &HiveJob::default_instance());
+      HiveJob_descriptor_, HiveJob::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         HiveJob_ScriptVariablesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -577,7 +559,7 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 HiveJob_PropertiesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SparkSqlJob_descriptor_, &SparkSqlJob::default_instance());
+      SparkSqlJob_descriptor_, SparkSqlJob::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         SparkSqlJob_ScriptVariablesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -597,7 +579,7 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 SparkSqlJob_PropertiesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PigJob_descriptor_, &PigJob::default_instance());
+      PigJob_descriptor_, PigJob::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         PigJob_ScriptVariablesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -617,84 +599,151 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 PigJob_PropertiesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      JobPlacement_descriptor_, &JobPlacement::default_instance());
+      JobPlacement_descriptor_, JobPlacement::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      JobStatus_descriptor_, &JobStatus::default_instance());
+      JobStatus_descriptor_, JobStatus::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      JobReference_descriptor_, &JobReference::default_instance());
+      JobReference_descriptor_, JobReference::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Job_descriptor_, &Job::default_instance());
+      Job_descriptor_, Job::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SubmitJobRequest_descriptor_, &SubmitJobRequest::default_instance());
+      SubmitJobRequest_descriptor_, SubmitJobRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetJobRequest_descriptor_, &GetJobRequest::default_instance());
+      GetJobRequest_descriptor_, GetJobRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListJobsRequest_descriptor_, &ListJobsRequest::default_instance());
+      ListJobsRequest_descriptor_, ListJobsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListJobsResponse_descriptor_, &ListJobsResponse::default_instance());
+      ListJobsResponse_descriptor_, ListJobsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CancelJobRequest_descriptor_, &CancelJobRequest::default_instance());
+      CancelJobRequest_descriptor_, CancelJobRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteJobRequest_descriptor_, &DeleteJobRequest::default_instance());
+      DeleteJobRequest_descriptor_, DeleteJobRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
-  delete LoggingConfig::default_instance_;
+  LoggingConfig_default_instance_.Shutdown();
   delete LoggingConfig_reflection_;
-  delete HadoopJob::default_instance_;
+  HadoopJob_default_instance_.Shutdown();
   delete HadoopJob_default_oneof_instance_;
   delete HadoopJob_reflection_;
-  delete SparkJob::default_instance_;
+  SparkJob_default_instance_.Shutdown();
   delete SparkJob_default_oneof_instance_;
   delete SparkJob_reflection_;
-  delete PySparkJob::default_instance_;
+  PySparkJob_default_instance_.Shutdown();
   delete PySparkJob_reflection_;
-  delete QueryList::default_instance_;
+  QueryList_default_instance_.Shutdown();
   delete QueryList_reflection_;
-  delete HiveJob::default_instance_;
+  HiveJob_default_instance_.Shutdown();
   delete HiveJob_default_oneof_instance_;
   delete HiveJob_reflection_;
-  delete SparkSqlJob::default_instance_;
+  SparkSqlJob_default_instance_.Shutdown();
   delete SparkSqlJob_default_oneof_instance_;
   delete SparkSqlJob_reflection_;
-  delete PigJob::default_instance_;
+  PigJob_default_instance_.Shutdown();
   delete PigJob_default_oneof_instance_;
   delete PigJob_reflection_;
-  delete JobPlacement::default_instance_;
+  JobPlacement_default_instance_.Shutdown();
   delete JobPlacement_reflection_;
-  delete JobStatus::default_instance_;
+  JobStatus_default_instance_.Shutdown();
   delete JobStatus_reflection_;
-  delete JobReference::default_instance_;
+  JobReference_default_instance_.Shutdown();
   delete JobReference_reflection_;
-  delete Job::default_instance_;
+  Job_default_instance_.Shutdown();
   delete Job_default_oneof_instance_;
   delete Job_reflection_;
-  delete SubmitJobRequest::default_instance_;
+  SubmitJobRequest_default_instance_.Shutdown();
   delete SubmitJobRequest_reflection_;
-  delete GetJobRequest::default_instance_;
+  GetJobRequest_default_instance_.Shutdown();
   delete GetJobRequest_reflection_;
-  delete ListJobsRequest::default_instance_;
+  ListJobsRequest_default_instance_.Shutdown();
   delete ListJobsRequest_reflection_;
-  delete ListJobsResponse::default_instance_;
+  ListJobsResponse_default_instance_.Shutdown();
   delete ListJobsResponse_reflection_;
-  delete CancelJobRequest::default_instance_;
+  CancelJobRequest_default_instance_.Shutdown();
   delete CancelJobRequest_reflection_;
-  delete DeleteJobRequest::default_instance_;
+  DeleteJobRequest_default_instance_.Shutdown();
   delete DeleteJobRequest_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  LoggingConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  HadoopJob_default_instance_.DefaultConstruct();
+  HadoopJob_default_oneof_instance_ = new HadoopJobOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  SparkJob_default_instance_.DefaultConstruct();
+  SparkJob_default_oneof_instance_ = new SparkJobOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  PySparkJob_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  QueryList_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  HiveJob_default_instance_.DefaultConstruct();
+  HiveJob_default_oneof_instance_ = new HiveJobOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  SparkSqlJob_default_instance_.DefaultConstruct();
+  SparkSqlJob_default_oneof_instance_ = new SparkSqlJobOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  PigJob_default_instance_.DefaultConstruct();
+  PigJob_default_oneof_instance_ = new PigJobOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  JobPlacement_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  JobStatus_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  JobReference_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Job_default_instance_.DefaultConstruct();
+  Job_default_oneof_instance_ = new JobOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  SubmitJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListJobsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListJobsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CancelJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteJobRequest_default_instance_.DefaultConstruct();
+  LoggingConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  HadoopJob_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SparkJob_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PySparkJob_default_instance_.get_mutable()->InitAsDefaultInstance();
+  QueryList_default_instance_.get_mutable()->InitAsDefaultInstance();
+  HiveJob_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SparkSqlJob_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PigJob_default_instance_.get_mutable()->InitAsDefaultInstance();
+  JobPlacement_default_instance_.get_mutable()->InitAsDefaultInstance();
+  JobStatus_default_instance_.get_mutable()->InitAsDefaultInstance();
+  JobReference_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Job_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SubmitJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListJobsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListJobsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CancelJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n#google/cloud/dataproc/v1/jobs.proto\022\030g"
     "oogle.cloud.dataproc.v1\032\034google/api/anno"
@@ -831,62 +880,39 @@ void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
     "l:\001*\022\221\001\n\tDeleteJob\022*.google.cloud.datapr"
     "oc.v1.DeleteJobRequest\032\026.google.protobuf"
     ".Empty\"@\202\323\344\223\002:*8/v1/projects/{project_id"
-    "}/regions/{region}/jobs/{job_id}B+\n\034com."
-    "google.cloud.dataproc.v1B\tJobsProtoP\001b\006p"
-    "roto3", 5485);
+    "}/regions/{region}/jobs/{job_id}Bm\n\034com."
+    "google.cloud.dataproc.v1B\tJobsProtoP\001Z@g"
+    "oogle.golang.org/genproto/googleapis/clo"
+    "ud/dataproc/v1;dataprocb\006proto3", 5551);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/dataproc/v1/jobs.proto", &protobuf_RegisterTypes);
-  LoggingConfig::default_instance_ = new LoggingConfig();
-  HadoopJob::default_instance_ = new HadoopJob();
-  HadoopJob_default_oneof_instance_ = new HadoopJobOneofInstance();
-  SparkJob::default_instance_ = new SparkJob();
-  SparkJob_default_oneof_instance_ = new SparkJobOneofInstance();
-  PySparkJob::default_instance_ = new PySparkJob();
-  QueryList::default_instance_ = new QueryList();
-  HiveJob::default_instance_ = new HiveJob();
-  HiveJob_default_oneof_instance_ = new HiveJobOneofInstance();
-  SparkSqlJob::default_instance_ = new SparkSqlJob();
-  SparkSqlJob_default_oneof_instance_ = new SparkSqlJobOneofInstance();
-  PigJob::default_instance_ = new PigJob();
-  PigJob_default_oneof_instance_ = new PigJobOneofInstance();
-  JobPlacement::default_instance_ = new JobPlacement();
-  JobStatus::default_instance_ = new JobStatus();
-  JobReference::default_instance_ = new JobReference();
-  Job::default_instance_ = new Job();
-  Job_default_oneof_instance_ = new JobOneofInstance();
-  SubmitJobRequest::default_instance_ = new SubmitJobRequest();
-  GetJobRequest::default_instance_ = new GetJobRequest();
-  ListJobsRequest::default_instance_ = new ListJobsRequest();
-  ListJobsResponse::default_instance_ = new ListJobsResponse();
-  CancelJobRequest::default_instance_ = new CancelJobRequest();
-  DeleteJobRequest::default_instance_ = new DeleteJobRequest();
-  LoggingConfig::default_instance_->InitAsDefaultInstance();
-  HadoopJob::default_instance_->InitAsDefaultInstance();
-  SparkJob::default_instance_->InitAsDefaultInstance();
-  PySparkJob::default_instance_->InitAsDefaultInstance();
-  QueryList::default_instance_->InitAsDefaultInstance();
-  HiveJob::default_instance_->InitAsDefaultInstance();
-  SparkSqlJob::default_instance_->InitAsDefaultInstance();
-  PigJob::default_instance_->InitAsDefaultInstance();
-  JobPlacement::default_instance_->InitAsDefaultInstance();
-  JobStatus::default_instance_->InitAsDefaultInstance();
-  JobReference::default_instance_->InitAsDefaultInstance();
-  Job::default_instance_->InitAsDefaultInstance();
-  SubmitJobRequest::default_instance_->InitAsDefaultInstance();
-  GetJobRequest::default_instance_->InitAsDefaultInstance();
-  ListJobsRequest::default_instance_->InitAsDefaultInstance();
-  ListJobsResponse::default_instance_->InitAsDefaultInstance();
-  CancelJobRequest::default_instance_->InitAsDefaultInstance();
-  DeleteJobRequest::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto() {
     protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -895,7 +921,7 @@ const ::google::protobuf::EnumDescriptor* LoggingConfig_Level_descriptor() {
   return LoggingConfig_Level_descriptor_;
 }
 bool LoggingConfig_Level_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -931,30 +957,28 @@ const int LoggingConfig::kDriverLogLevelsFieldNumber;
 
 LoggingConfig::LoggingConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.LoggingConfig)
 }
 
 void LoggingConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 LoggingConfig::LoggingConfig(const LoggingConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.LoggingConfig)
 }
 
 void LoggingConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   driver_log_levels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   driver_log_levels_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::LoggingConfig_DriverLogLevelsEntry_descriptor_);
+  _cached_size_ = 0;
 }
 
 LoggingConfig::~LoggingConfig() {
@@ -963,8 +987,6 @@ LoggingConfig::~LoggingConfig() {
 }
 
 void LoggingConfig::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void LoggingConfig::SetCachedSize(int size) const {
@@ -978,11 +1000,11 @@ const ::google::protobuf::Descriptor* LoggingConfig::descriptor() {
 }
 
 const LoggingConfig& LoggingConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-LoggingConfig* LoggingConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<LoggingConfig> LoggingConfig_default_instance_;
 
 LoggingConfig* LoggingConfig::New(::google::protobuf::Arena* arena) const {
   LoggingConfig* n = new LoggingConfig;
@@ -1111,6 +1133,7 @@ void LoggingConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* LoggingConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.LoggingConfig)
   // map<string, .google.cloud.dataproc.v1.LoggingConfig.Level> driver_log_levels = 2;
   if (!this->driver_log_levels().empty()) {
@@ -1169,12 +1192,13 @@ void LoggingConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int LoggingConfig::ByteSize() const {
+size_t LoggingConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.LoggingConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // map<string, .google.cloud.dataproc.v1.LoggingConfig.Level> driver_log_levels = 2;
-  total_size += 1 * this->driver_log_levels_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->driver_log_levels_size());
   {
     ::google::protobuf::scoped_ptr<LoggingConfig_DriverLogLevelsEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::google::cloud::dataproc::v1::LoggingConfig_Level >::const_iterator
@@ -1186,18 +1210,17 @@ int LoggingConfig::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LoggingConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.LoggingConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const LoggingConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const LoggingConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LoggingConfig>(
           &from);
   if (source == NULL) {
@@ -1205,15 +1228,21 @@ void LoggingConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.LoggingConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LoggingConfig::MergeFrom(const LoggingConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.LoggingConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void LoggingConfig::UnsafeMergeFrom(const LoggingConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   driver_log_levels_.MergeFrom(from.driver_log_levels_);
 }
 
@@ -1228,7 +1257,7 @@ void LoggingConfig::CopyFrom(const LoggingConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.LoggingConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LoggingConfig::IsInitialized() const {
@@ -1275,6 +1304,9 @@ LoggingConfig::mutable_driver_log_levels() {
   return driver_log_levels_.MutableMap();
 }
 
+inline const LoggingConfig* LoggingConfig::internal_default_instance() {
+  return &LoggingConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1292,35 +1324,34 @@ const int HadoopJob::kLoggingConfigFieldNumber;
 
 HadoopJob::HadoopJob()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.HadoopJob)
 }
 
 void HadoopJob::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   HadoopJob_default_oneof_instance_->main_jar_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   HadoopJob_default_oneof_instance_->main_class_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(&::google::cloud::dataproc::v1::LoggingConfig::default_instance());
+  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(
+      ::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance());
 }
 
 HadoopJob::HadoopJob(const HadoopJob& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.HadoopJob)
 }
 
 void HadoopJob::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   properties_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   properties_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::HadoopJob_PropertiesEntry_descriptor_);
   logging_config_ = NULL;
   clear_has_driver();
+  _cached_size_ = 0;
 }
 
 HadoopJob::~HadoopJob() {
@@ -1332,7 +1363,7 @@ void HadoopJob::SharedDtor() {
   if (has_driver()) {
     clear_driver();
   }
-  if (this != default_instance_) {
+  if (this != &HadoopJob_default_instance_.get()) {
     delete logging_config_;
   }
 }
@@ -1348,11 +1379,11 @@ const ::google::protobuf::Descriptor* HadoopJob::descriptor() {
 }
 
 const HadoopJob& HadoopJob::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-HadoopJob* HadoopJob::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<HadoopJob> HadoopJob_default_instance_;
 
 HadoopJob* HadoopJob::New(::google::protobuf::Arena* arena) const {
   HadoopJob* n = new HadoopJob;
@@ -1364,7 +1395,7 @@ HadoopJob* HadoopJob::New(::google::protobuf::Arena* arena) const {
 
 void HadoopJob::clear_driver() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.dataproc.v1.HadoopJob)
-  switch(driver_case()) {
+  switch (driver_case()) {
     case kMainJarFileUri: {
       driver_.main_jar_file_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -1415,14 +1446,13 @@ bool HadoopJob::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_main_class;
+        goto after_main_class;
         break;
       }
 
       // optional string main_class = 2;
       case 2: {
         if (tag == 18) {
-         parse_main_class:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_main_class()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1432,6 +1462,7 @@ bool HadoopJob::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_main_class:
         if (input->ExpectTag(26)) goto parse_args;
         break;
       }
@@ -1704,6 +1735,7 @@ void HadoopJob::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* HadoopJob::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.HadoopJob)
   // optional string main_jar_file_uri = 1;
   if (has_main_jar_file_uri()) {
@@ -1835,9 +1867,9 @@ void HadoopJob::SerializeWithCachedSizes(
   return target;
 }
 
-int HadoopJob::ByteSize() const {
+size_t HadoopJob::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.HadoopJob)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 8;
   if (this->has_logging_config()) {
@@ -1847,35 +1879,40 @@ int HadoopJob::ByteSize() const {
   }
 
   // repeated string args = 3;
-  total_size += 1 * this->args_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->args_size());
   for (int i = 0; i < this->args_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->args(i));
   }
 
   // repeated string jar_file_uris = 4;
-  total_size += 1 * this->jar_file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->jar_file_uris_size());
   for (int i = 0; i < this->jar_file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->jar_file_uris(i));
   }
 
   // repeated string file_uris = 5;
-  total_size += 1 * this->file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->file_uris_size());
   for (int i = 0; i < this->file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->file_uris(i));
   }
 
   // repeated string archive_uris = 6;
-  total_size += 1 * this->archive_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->archive_uris_size());
   for (int i = 0; i < this->archive_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->archive_uris(i));
   }
 
   // map<string, string> properties = 7;
-  total_size += 1 * this->properties_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->properties_size());
   {
     ::google::protobuf::scoped_ptr<HadoopJob_PropertiesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -1906,18 +1943,17 @@ int HadoopJob::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void HadoopJob::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.HadoopJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const HadoopJob* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const HadoopJob* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HadoopJob>(
           &from);
   if (source == NULL) {
@@ -1925,19 +1961,25 @@ void HadoopJob::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.HadoopJob)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HadoopJob::MergeFrom(const HadoopJob& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.HadoopJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  args_.MergeFrom(from.args_);
-  jar_file_uris_.MergeFrom(from.jar_file_uris_);
-  file_uris_.MergeFrom(from.file_uris_);
-  archive_uris_.MergeFrom(from.archive_uris_);
+}
+
+void HadoopJob::UnsafeMergeFrom(const HadoopJob& from) {
+  GOOGLE_DCHECK(&from != this);
+  args_.UnsafeMergeFrom(from.args_);
+  jar_file_uris_.UnsafeMergeFrom(from.jar_file_uris_);
+  file_uris_.UnsafeMergeFrom(from.file_uris_);
+  archive_uris_.UnsafeMergeFrom(from.archive_uris_);
   properties_.MergeFrom(from.properties_);
   switch (from.driver_case()) {
     case kMainJarFileUri: {
@@ -1968,7 +2010,7 @@ void HadoopJob::CopyFrom(const HadoopJob& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.HadoopJob)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HadoopJob::IsInitialized() const {
@@ -2017,14 +2059,14 @@ void HadoopJob::clear_main_jar_file_uri() {
     clear_has_driver();
   }
 }
- const ::std::string& HadoopJob::main_jar_file_uri() const {
+const ::std::string& HadoopJob::main_jar_file_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HadoopJob.main_jar_file_uri)
   if (has_main_jar_file_uri()) {
     return driver_.main_jar_file_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void HadoopJob::set_main_jar_file_uri(const ::std::string& value) {
+void HadoopJob::set_main_jar_file_uri(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.main_jar_file_uri)
   if (!has_main_jar_file_uri()) {
     clear_driver();
@@ -2034,7 +2076,7 @@ void HadoopJob::clear_main_jar_file_uri() {
   driver_.main_jar_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.main_jar_file_uri)
 }
- void HadoopJob::set_main_jar_file_uri(const char* value) {
+void HadoopJob::set_main_jar_file_uri(const char* value) {
   if (!has_main_jar_file_uri()) {
     clear_driver();
     set_has_main_jar_file_uri();
@@ -2044,7 +2086,7 @@ void HadoopJob::clear_main_jar_file_uri() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HadoopJob.main_jar_file_uri)
 }
- void HadoopJob::set_main_jar_file_uri(const char* value, size_t size) {
+void HadoopJob::set_main_jar_file_uri(const char* value, size_t size) {
   if (!has_main_jar_file_uri()) {
     clear_driver();
     set_has_main_jar_file_uri();
@@ -2054,7 +2096,7 @@ void HadoopJob::clear_main_jar_file_uri() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HadoopJob.main_jar_file_uri)
 }
- ::std::string* HadoopJob::mutable_main_jar_file_uri() {
+::std::string* HadoopJob::mutable_main_jar_file_uri() {
   if (!has_main_jar_file_uri()) {
     clear_driver();
     set_has_main_jar_file_uri();
@@ -2063,7 +2105,7 @@ void HadoopJob::clear_main_jar_file_uri() {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HadoopJob.main_jar_file_uri)
   return driver_.main_jar_file_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* HadoopJob::release_main_jar_file_uri() {
+::std::string* HadoopJob::release_main_jar_file_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.HadoopJob.main_jar_file_uri)
   if (has_main_jar_file_uri()) {
     clear_has_driver();
@@ -2072,7 +2114,7 @@ void HadoopJob::clear_main_jar_file_uri() {
     return NULL;
   }
 }
- void HadoopJob::set_allocated_main_jar_file_uri(::std::string* main_jar_file_uri) {
+void HadoopJob::set_allocated_main_jar_file_uri(::std::string* main_jar_file_uri) {
   if (!has_main_jar_file_uri()) {
     driver_.main_jar_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -2098,14 +2140,14 @@ void HadoopJob::clear_main_class() {
     clear_has_driver();
   }
 }
- const ::std::string& HadoopJob::main_class() const {
+const ::std::string& HadoopJob::main_class() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HadoopJob.main_class)
   if (has_main_class()) {
     return driver_.main_class_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void HadoopJob::set_main_class(const ::std::string& value) {
+void HadoopJob::set_main_class(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.main_class)
   if (!has_main_class()) {
     clear_driver();
@@ -2115,7 +2157,7 @@ void HadoopJob::clear_main_class() {
   driver_.main_class_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.main_class)
 }
- void HadoopJob::set_main_class(const char* value) {
+void HadoopJob::set_main_class(const char* value) {
   if (!has_main_class()) {
     clear_driver();
     set_has_main_class();
@@ -2125,7 +2167,7 @@ void HadoopJob::clear_main_class() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HadoopJob.main_class)
 }
- void HadoopJob::set_main_class(const char* value, size_t size) {
+void HadoopJob::set_main_class(const char* value, size_t size) {
   if (!has_main_class()) {
     clear_driver();
     set_has_main_class();
@@ -2135,7 +2177,7 @@ void HadoopJob::clear_main_class() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HadoopJob.main_class)
 }
- ::std::string* HadoopJob::mutable_main_class() {
+::std::string* HadoopJob::mutable_main_class() {
   if (!has_main_class()) {
     clear_driver();
     set_has_main_class();
@@ -2144,7 +2186,7 @@ void HadoopJob::clear_main_class() {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HadoopJob.main_class)
   return driver_.main_class_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* HadoopJob::release_main_class() {
+::std::string* HadoopJob::release_main_class() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.HadoopJob.main_class)
   if (has_main_class()) {
     clear_has_driver();
@@ -2153,7 +2195,7 @@ void HadoopJob::clear_main_class() {
     return NULL;
   }
 }
- void HadoopJob::set_allocated_main_class(::std::string* main_class) {
+void HadoopJob::set_allocated_main_class(::std::string* main_class) {
   if (!has_main_class()) {
     driver_.main_class_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -2173,49 +2215,49 @@ int HadoopJob::args_size() const {
 void HadoopJob::clear_args() {
   args_.Clear();
 }
- const ::std::string& HadoopJob::args(int index) const {
+const ::std::string& HadoopJob::args(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HadoopJob.args)
   return args_.Get(index);
 }
- ::std::string* HadoopJob::mutable_args(int index) {
+::std::string* HadoopJob::mutable_args(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HadoopJob.args)
   return args_.Mutable(index);
 }
- void HadoopJob::set_args(int index, const ::std::string& value) {
+void HadoopJob::set_args(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.args)
   args_.Mutable(index)->assign(value);
 }
- void HadoopJob::set_args(int index, const char* value) {
+void HadoopJob::set_args(int index, const char* value) {
   args_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HadoopJob.args)
 }
- void HadoopJob::set_args(int index, const char* value, size_t size) {
+void HadoopJob::set_args(int index, const char* value, size_t size) {
   args_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HadoopJob.args)
 }
- ::std::string* HadoopJob::add_args() {
+::std::string* HadoopJob::add_args() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.HadoopJob.args)
   return args_.Add();
 }
- void HadoopJob::add_args(const ::std::string& value) {
+void HadoopJob::add_args(const ::std::string& value) {
   args_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.HadoopJob.args)
 }
- void HadoopJob::add_args(const char* value) {
+void HadoopJob::add_args(const char* value) {
   args_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.HadoopJob.args)
 }
- void HadoopJob::add_args(const char* value, size_t size) {
+void HadoopJob::add_args(const char* value, size_t size) {
   args_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.HadoopJob.args)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 HadoopJob::args() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.HadoopJob.args)
   return args_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 HadoopJob::mutable_args() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.HadoopJob.args)
   return &args_;
@@ -2228,49 +2270,49 @@ int HadoopJob::jar_file_uris_size() const {
 void HadoopJob::clear_jar_file_uris() {
   jar_file_uris_.Clear();
 }
- const ::std::string& HadoopJob::jar_file_uris(int index) const {
+const ::std::string& HadoopJob::jar_file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
   return jar_file_uris_.Get(index);
 }
- ::std::string* HadoopJob::mutable_jar_file_uris(int index) {
+::std::string* HadoopJob::mutable_jar_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
   return jar_file_uris_.Mutable(index);
 }
- void HadoopJob::set_jar_file_uris(int index, const ::std::string& value) {
+void HadoopJob::set_jar_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
   jar_file_uris_.Mutable(index)->assign(value);
 }
- void HadoopJob::set_jar_file_uris(int index, const char* value) {
+void HadoopJob::set_jar_file_uris(int index, const char* value) {
   jar_file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
 }
- void HadoopJob::set_jar_file_uris(int index, const char* value, size_t size) {
+void HadoopJob::set_jar_file_uris(int index, const char* value, size_t size) {
   jar_file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
 }
- ::std::string* HadoopJob::add_jar_file_uris() {
+::std::string* HadoopJob::add_jar_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
   return jar_file_uris_.Add();
 }
- void HadoopJob::add_jar_file_uris(const ::std::string& value) {
+void HadoopJob::add_jar_file_uris(const ::std::string& value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
 }
- void HadoopJob::add_jar_file_uris(const char* value) {
+void HadoopJob::add_jar_file_uris(const char* value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
 }
- void HadoopJob::add_jar_file_uris(const char* value, size_t size) {
+void HadoopJob::add_jar_file_uris(const char* value, size_t size) {
   jar_file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 HadoopJob::jar_file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
   return jar_file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 HadoopJob::mutable_jar_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.HadoopJob.jar_file_uris)
   return &jar_file_uris_;
@@ -2283,49 +2325,49 @@ int HadoopJob::file_uris_size() const {
 void HadoopJob::clear_file_uris() {
   file_uris_.Clear();
 }
- const ::std::string& HadoopJob::file_uris(int index) const {
+const ::std::string& HadoopJob::file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HadoopJob.file_uris)
   return file_uris_.Get(index);
 }
- ::std::string* HadoopJob::mutable_file_uris(int index) {
+::std::string* HadoopJob::mutable_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HadoopJob.file_uris)
   return file_uris_.Mutable(index);
 }
- void HadoopJob::set_file_uris(int index, const ::std::string& value) {
+void HadoopJob::set_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.file_uris)
   file_uris_.Mutable(index)->assign(value);
 }
- void HadoopJob::set_file_uris(int index, const char* value) {
+void HadoopJob::set_file_uris(int index, const char* value) {
   file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HadoopJob.file_uris)
 }
- void HadoopJob::set_file_uris(int index, const char* value, size_t size) {
+void HadoopJob::set_file_uris(int index, const char* value, size_t size) {
   file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HadoopJob.file_uris)
 }
- ::std::string* HadoopJob::add_file_uris() {
+::std::string* HadoopJob::add_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.HadoopJob.file_uris)
   return file_uris_.Add();
 }
- void HadoopJob::add_file_uris(const ::std::string& value) {
+void HadoopJob::add_file_uris(const ::std::string& value) {
   file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.HadoopJob.file_uris)
 }
- void HadoopJob::add_file_uris(const char* value) {
+void HadoopJob::add_file_uris(const char* value) {
   file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.HadoopJob.file_uris)
 }
- void HadoopJob::add_file_uris(const char* value, size_t size) {
+void HadoopJob::add_file_uris(const char* value, size_t size) {
   file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.HadoopJob.file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 HadoopJob::file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.HadoopJob.file_uris)
   return file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 HadoopJob::mutable_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.HadoopJob.file_uris)
   return &file_uris_;
@@ -2338,49 +2380,49 @@ int HadoopJob::archive_uris_size() const {
 void HadoopJob::clear_archive_uris() {
   archive_uris_.Clear();
 }
- const ::std::string& HadoopJob::archive_uris(int index) const {
+const ::std::string& HadoopJob::archive_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HadoopJob.archive_uris)
   return archive_uris_.Get(index);
 }
- ::std::string* HadoopJob::mutable_archive_uris(int index) {
+::std::string* HadoopJob::mutable_archive_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HadoopJob.archive_uris)
   return archive_uris_.Mutable(index);
 }
- void HadoopJob::set_archive_uris(int index, const ::std::string& value) {
+void HadoopJob::set_archive_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HadoopJob.archive_uris)
   archive_uris_.Mutable(index)->assign(value);
 }
- void HadoopJob::set_archive_uris(int index, const char* value) {
+void HadoopJob::set_archive_uris(int index, const char* value) {
   archive_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HadoopJob.archive_uris)
 }
- void HadoopJob::set_archive_uris(int index, const char* value, size_t size) {
+void HadoopJob::set_archive_uris(int index, const char* value, size_t size) {
   archive_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HadoopJob.archive_uris)
 }
- ::std::string* HadoopJob::add_archive_uris() {
+::std::string* HadoopJob::add_archive_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.HadoopJob.archive_uris)
   return archive_uris_.Add();
 }
- void HadoopJob::add_archive_uris(const ::std::string& value) {
+void HadoopJob::add_archive_uris(const ::std::string& value) {
   archive_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.HadoopJob.archive_uris)
 }
- void HadoopJob::add_archive_uris(const char* value) {
+void HadoopJob::add_archive_uris(const char* value) {
   archive_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.HadoopJob.archive_uris)
 }
- void HadoopJob::add_archive_uris(const char* value, size_t size) {
+void HadoopJob::add_archive_uris(const char* value, size_t size) {
   archive_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.HadoopJob.archive_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 HadoopJob::archive_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.HadoopJob.archive_uris)
   return archive_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 HadoopJob::mutable_archive_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.HadoopJob.archive_uris)
   return &archive_uris_;
@@ -2406,7 +2448,7 @@ HadoopJob::mutable_properties() {
 
 // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 8;
 bool HadoopJob::has_logging_config() const {
-  return !_is_default_instance_ && logging_config_ != NULL;
+  return this != internal_default_instance() && logging_config_ != NULL;
 }
 void HadoopJob::clear_logging_config() {
   if (GetArenaNoVirtual() == NULL && logging_config_ != NULL) delete logging_config_;
@@ -2414,7 +2456,8 @@ void HadoopJob::clear_logging_config() {
 }
 const ::google::cloud::dataproc::v1::LoggingConfig& HadoopJob::logging_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HadoopJob.logging_config)
-  return logging_config_ != NULL ? *logging_config_ : *default_instance_->logging_config_;
+  return logging_config_ != NULL ? *logging_config_
+                         : *::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::LoggingConfig* HadoopJob::mutable_logging_config() {
   
@@ -2451,6 +2494,9 @@ void HadoopJob::clear_has_driver() {
 HadoopJob::DriverCase HadoopJob::driver_case() const {
   return HadoopJob::DriverCase(_oneof_case_[0]);
 }
+inline const HadoopJob* HadoopJob::internal_default_instance() {
+  return &HadoopJob_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2468,35 +2514,34 @@ const int SparkJob::kLoggingConfigFieldNumber;
 
 SparkJob::SparkJob()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.SparkJob)
 }
 
 void SparkJob::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   SparkJob_default_oneof_instance_->main_jar_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   SparkJob_default_oneof_instance_->main_class_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(&::google::cloud::dataproc::v1::LoggingConfig::default_instance());
+  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(
+      ::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance());
 }
 
 SparkJob::SparkJob(const SparkJob& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.SparkJob)
 }
 
 void SparkJob::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   properties_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   properties_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::SparkJob_PropertiesEntry_descriptor_);
   logging_config_ = NULL;
   clear_has_driver();
+  _cached_size_ = 0;
 }
 
 SparkJob::~SparkJob() {
@@ -2508,7 +2553,7 @@ void SparkJob::SharedDtor() {
   if (has_driver()) {
     clear_driver();
   }
-  if (this != default_instance_) {
+  if (this != &SparkJob_default_instance_.get()) {
     delete logging_config_;
   }
 }
@@ -2524,11 +2569,11 @@ const ::google::protobuf::Descriptor* SparkJob::descriptor() {
 }
 
 const SparkJob& SparkJob::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-SparkJob* SparkJob::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SparkJob> SparkJob_default_instance_;
 
 SparkJob* SparkJob::New(::google::protobuf::Arena* arena) const {
   SparkJob* n = new SparkJob;
@@ -2540,7 +2585,7 @@ SparkJob* SparkJob::New(::google::protobuf::Arena* arena) const {
 
 void SparkJob::clear_driver() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.dataproc.v1.SparkJob)
-  switch(driver_case()) {
+  switch (driver_case()) {
     case kMainJarFileUri: {
       driver_.main_jar_file_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -2591,14 +2636,13 @@ bool SparkJob::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_main_class;
+        goto after_main_class;
         break;
       }
 
       // optional string main_class = 2;
       case 2: {
         if (tag == 18) {
-         parse_main_class:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_main_class()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2608,6 +2652,7 @@ bool SparkJob::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_main_class:
         if (input->ExpectTag(26)) goto parse_args;
         break;
       }
@@ -2880,6 +2925,7 @@ void SparkJob::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SparkJob::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.SparkJob)
   // optional string main_jar_file_uri = 1;
   if (has_main_jar_file_uri()) {
@@ -3011,9 +3057,9 @@ void SparkJob::SerializeWithCachedSizes(
   return target;
 }
 
-int SparkJob::ByteSize() const {
+size_t SparkJob::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.SparkJob)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 8;
   if (this->has_logging_config()) {
@@ -3023,35 +3069,40 @@ int SparkJob::ByteSize() const {
   }
 
   // repeated string args = 3;
-  total_size += 1 * this->args_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->args_size());
   for (int i = 0; i < this->args_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->args(i));
   }
 
   // repeated string jar_file_uris = 4;
-  total_size += 1 * this->jar_file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->jar_file_uris_size());
   for (int i = 0; i < this->jar_file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->jar_file_uris(i));
   }
 
   // repeated string file_uris = 5;
-  total_size += 1 * this->file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->file_uris_size());
   for (int i = 0; i < this->file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->file_uris(i));
   }
 
   // repeated string archive_uris = 6;
-  total_size += 1 * this->archive_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->archive_uris_size());
   for (int i = 0; i < this->archive_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->archive_uris(i));
   }
 
   // map<string, string> properties = 7;
-  total_size += 1 * this->properties_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->properties_size());
   {
     ::google::protobuf::scoped_ptr<SparkJob_PropertiesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -3082,18 +3133,17 @@ int SparkJob::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SparkJob::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.SparkJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SparkJob* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SparkJob* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SparkJob>(
           &from);
   if (source == NULL) {
@@ -3101,19 +3151,25 @@ void SparkJob::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.SparkJob)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SparkJob::MergeFrom(const SparkJob& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.SparkJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  args_.MergeFrom(from.args_);
-  jar_file_uris_.MergeFrom(from.jar_file_uris_);
-  file_uris_.MergeFrom(from.file_uris_);
-  archive_uris_.MergeFrom(from.archive_uris_);
+}
+
+void SparkJob::UnsafeMergeFrom(const SparkJob& from) {
+  GOOGLE_DCHECK(&from != this);
+  args_.UnsafeMergeFrom(from.args_);
+  jar_file_uris_.UnsafeMergeFrom(from.jar_file_uris_);
+  file_uris_.UnsafeMergeFrom(from.file_uris_);
+  archive_uris_.UnsafeMergeFrom(from.archive_uris_);
   properties_.MergeFrom(from.properties_);
   switch (from.driver_case()) {
     case kMainJarFileUri: {
@@ -3144,7 +3200,7 @@ void SparkJob::CopyFrom(const SparkJob& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.SparkJob)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SparkJob::IsInitialized() const {
@@ -3193,14 +3249,14 @@ void SparkJob::clear_main_jar_file_uri() {
     clear_has_driver();
   }
 }
- const ::std::string& SparkJob::main_jar_file_uri() const {
+const ::std::string& SparkJob::main_jar_file_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkJob.main_jar_file_uri)
   if (has_main_jar_file_uri()) {
     return driver_.main_jar_file_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void SparkJob::set_main_jar_file_uri(const ::std::string& value) {
+void SparkJob::set_main_jar_file_uri(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.main_jar_file_uri)
   if (!has_main_jar_file_uri()) {
     clear_driver();
@@ -3210,7 +3266,7 @@ void SparkJob::clear_main_jar_file_uri() {
   driver_.main_jar_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.main_jar_file_uri)
 }
- void SparkJob::set_main_jar_file_uri(const char* value) {
+void SparkJob::set_main_jar_file_uri(const char* value) {
   if (!has_main_jar_file_uri()) {
     clear_driver();
     set_has_main_jar_file_uri();
@@ -3220,7 +3276,7 @@ void SparkJob::clear_main_jar_file_uri() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkJob.main_jar_file_uri)
 }
- void SparkJob::set_main_jar_file_uri(const char* value, size_t size) {
+void SparkJob::set_main_jar_file_uri(const char* value, size_t size) {
   if (!has_main_jar_file_uri()) {
     clear_driver();
     set_has_main_jar_file_uri();
@@ -3230,7 +3286,7 @@ void SparkJob::clear_main_jar_file_uri() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkJob.main_jar_file_uri)
 }
- ::std::string* SparkJob::mutable_main_jar_file_uri() {
+::std::string* SparkJob::mutable_main_jar_file_uri() {
   if (!has_main_jar_file_uri()) {
     clear_driver();
     set_has_main_jar_file_uri();
@@ -3239,7 +3295,7 @@ void SparkJob::clear_main_jar_file_uri() {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkJob.main_jar_file_uri)
   return driver_.main_jar_file_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SparkJob::release_main_jar_file_uri() {
+::std::string* SparkJob::release_main_jar_file_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.SparkJob.main_jar_file_uri)
   if (has_main_jar_file_uri()) {
     clear_has_driver();
@@ -3248,7 +3304,7 @@ void SparkJob::clear_main_jar_file_uri() {
     return NULL;
   }
 }
- void SparkJob::set_allocated_main_jar_file_uri(::std::string* main_jar_file_uri) {
+void SparkJob::set_allocated_main_jar_file_uri(::std::string* main_jar_file_uri) {
   if (!has_main_jar_file_uri()) {
     driver_.main_jar_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -3274,14 +3330,14 @@ void SparkJob::clear_main_class() {
     clear_has_driver();
   }
 }
- const ::std::string& SparkJob::main_class() const {
+const ::std::string& SparkJob::main_class() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkJob.main_class)
   if (has_main_class()) {
     return driver_.main_class_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void SparkJob::set_main_class(const ::std::string& value) {
+void SparkJob::set_main_class(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.main_class)
   if (!has_main_class()) {
     clear_driver();
@@ -3291,7 +3347,7 @@ void SparkJob::clear_main_class() {
   driver_.main_class_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.main_class)
 }
- void SparkJob::set_main_class(const char* value) {
+void SparkJob::set_main_class(const char* value) {
   if (!has_main_class()) {
     clear_driver();
     set_has_main_class();
@@ -3301,7 +3357,7 @@ void SparkJob::clear_main_class() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkJob.main_class)
 }
- void SparkJob::set_main_class(const char* value, size_t size) {
+void SparkJob::set_main_class(const char* value, size_t size) {
   if (!has_main_class()) {
     clear_driver();
     set_has_main_class();
@@ -3311,7 +3367,7 @@ void SparkJob::clear_main_class() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkJob.main_class)
 }
- ::std::string* SparkJob::mutable_main_class() {
+::std::string* SparkJob::mutable_main_class() {
   if (!has_main_class()) {
     clear_driver();
     set_has_main_class();
@@ -3320,7 +3376,7 @@ void SparkJob::clear_main_class() {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkJob.main_class)
   return driver_.main_class_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SparkJob::release_main_class() {
+::std::string* SparkJob::release_main_class() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.SparkJob.main_class)
   if (has_main_class()) {
     clear_has_driver();
@@ -3329,7 +3385,7 @@ void SparkJob::clear_main_class() {
     return NULL;
   }
 }
- void SparkJob::set_allocated_main_class(::std::string* main_class) {
+void SparkJob::set_allocated_main_class(::std::string* main_class) {
   if (!has_main_class()) {
     driver_.main_class_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -3349,49 +3405,49 @@ int SparkJob::args_size() const {
 void SparkJob::clear_args() {
   args_.Clear();
 }
- const ::std::string& SparkJob::args(int index) const {
+const ::std::string& SparkJob::args(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkJob.args)
   return args_.Get(index);
 }
- ::std::string* SparkJob::mutable_args(int index) {
+::std::string* SparkJob::mutable_args(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkJob.args)
   return args_.Mutable(index);
 }
- void SparkJob::set_args(int index, const ::std::string& value) {
+void SparkJob::set_args(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.args)
   args_.Mutable(index)->assign(value);
 }
- void SparkJob::set_args(int index, const char* value) {
+void SparkJob::set_args(int index, const char* value) {
   args_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkJob.args)
 }
- void SparkJob::set_args(int index, const char* value, size_t size) {
+void SparkJob::set_args(int index, const char* value, size_t size) {
   args_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkJob.args)
 }
- ::std::string* SparkJob::add_args() {
+::std::string* SparkJob::add_args() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.SparkJob.args)
   return args_.Add();
 }
- void SparkJob::add_args(const ::std::string& value) {
+void SparkJob::add_args(const ::std::string& value) {
   args_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.SparkJob.args)
 }
- void SparkJob::add_args(const char* value) {
+void SparkJob::add_args(const char* value) {
   args_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.SparkJob.args)
 }
- void SparkJob::add_args(const char* value, size_t size) {
+void SparkJob::add_args(const char* value, size_t size) {
   args_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.SparkJob.args)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SparkJob::args() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.SparkJob.args)
   return args_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SparkJob::mutable_args() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.SparkJob.args)
   return &args_;
@@ -3404,49 +3460,49 @@ int SparkJob::jar_file_uris_size() const {
 void SparkJob::clear_jar_file_uris() {
   jar_file_uris_.Clear();
 }
- const ::std::string& SparkJob::jar_file_uris(int index) const {
+const ::std::string& SparkJob::jar_file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
   return jar_file_uris_.Get(index);
 }
- ::std::string* SparkJob::mutable_jar_file_uris(int index) {
+::std::string* SparkJob::mutable_jar_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
   return jar_file_uris_.Mutable(index);
 }
- void SparkJob::set_jar_file_uris(int index, const ::std::string& value) {
+void SparkJob::set_jar_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
   jar_file_uris_.Mutable(index)->assign(value);
 }
- void SparkJob::set_jar_file_uris(int index, const char* value) {
+void SparkJob::set_jar_file_uris(int index, const char* value) {
   jar_file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
 }
- void SparkJob::set_jar_file_uris(int index, const char* value, size_t size) {
+void SparkJob::set_jar_file_uris(int index, const char* value, size_t size) {
   jar_file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
 }
- ::std::string* SparkJob::add_jar_file_uris() {
+::std::string* SparkJob::add_jar_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
   return jar_file_uris_.Add();
 }
- void SparkJob::add_jar_file_uris(const ::std::string& value) {
+void SparkJob::add_jar_file_uris(const ::std::string& value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
 }
- void SparkJob::add_jar_file_uris(const char* value) {
+void SparkJob::add_jar_file_uris(const char* value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
 }
- void SparkJob::add_jar_file_uris(const char* value, size_t size) {
+void SparkJob::add_jar_file_uris(const char* value, size_t size) {
   jar_file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SparkJob::jar_file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
   return jar_file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SparkJob::mutable_jar_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.SparkJob.jar_file_uris)
   return &jar_file_uris_;
@@ -3459,49 +3515,49 @@ int SparkJob::file_uris_size() const {
 void SparkJob::clear_file_uris() {
   file_uris_.Clear();
 }
- const ::std::string& SparkJob::file_uris(int index) const {
+const ::std::string& SparkJob::file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkJob.file_uris)
   return file_uris_.Get(index);
 }
- ::std::string* SparkJob::mutable_file_uris(int index) {
+::std::string* SparkJob::mutable_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkJob.file_uris)
   return file_uris_.Mutable(index);
 }
- void SparkJob::set_file_uris(int index, const ::std::string& value) {
+void SparkJob::set_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.file_uris)
   file_uris_.Mutable(index)->assign(value);
 }
- void SparkJob::set_file_uris(int index, const char* value) {
+void SparkJob::set_file_uris(int index, const char* value) {
   file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkJob.file_uris)
 }
- void SparkJob::set_file_uris(int index, const char* value, size_t size) {
+void SparkJob::set_file_uris(int index, const char* value, size_t size) {
   file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkJob.file_uris)
 }
- ::std::string* SparkJob::add_file_uris() {
+::std::string* SparkJob::add_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.SparkJob.file_uris)
   return file_uris_.Add();
 }
- void SparkJob::add_file_uris(const ::std::string& value) {
+void SparkJob::add_file_uris(const ::std::string& value) {
   file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.SparkJob.file_uris)
 }
- void SparkJob::add_file_uris(const char* value) {
+void SparkJob::add_file_uris(const char* value) {
   file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.SparkJob.file_uris)
 }
- void SparkJob::add_file_uris(const char* value, size_t size) {
+void SparkJob::add_file_uris(const char* value, size_t size) {
   file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.SparkJob.file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SparkJob::file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.SparkJob.file_uris)
   return file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SparkJob::mutable_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.SparkJob.file_uris)
   return &file_uris_;
@@ -3514,49 +3570,49 @@ int SparkJob::archive_uris_size() const {
 void SparkJob::clear_archive_uris() {
   archive_uris_.Clear();
 }
- const ::std::string& SparkJob::archive_uris(int index) const {
+const ::std::string& SparkJob::archive_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkJob.archive_uris)
   return archive_uris_.Get(index);
 }
- ::std::string* SparkJob::mutable_archive_uris(int index) {
+::std::string* SparkJob::mutable_archive_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkJob.archive_uris)
   return archive_uris_.Mutable(index);
 }
- void SparkJob::set_archive_uris(int index, const ::std::string& value) {
+void SparkJob::set_archive_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkJob.archive_uris)
   archive_uris_.Mutable(index)->assign(value);
 }
- void SparkJob::set_archive_uris(int index, const char* value) {
+void SparkJob::set_archive_uris(int index, const char* value) {
   archive_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkJob.archive_uris)
 }
- void SparkJob::set_archive_uris(int index, const char* value, size_t size) {
+void SparkJob::set_archive_uris(int index, const char* value, size_t size) {
   archive_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkJob.archive_uris)
 }
- ::std::string* SparkJob::add_archive_uris() {
+::std::string* SparkJob::add_archive_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.SparkJob.archive_uris)
   return archive_uris_.Add();
 }
- void SparkJob::add_archive_uris(const ::std::string& value) {
+void SparkJob::add_archive_uris(const ::std::string& value) {
   archive_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.SparkJob.archive_uris)
 }
- void SparkJob::add_archive_uris(const char* value) {
+void SparkJob::add_archive_uris(const char* value) {
   archive_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.SparkJob.archive_uris)
 }
- void SparkJob::add_archive_uris(const char* value, size_t size) {
+void SparkJob::add_archive_uris(const char* value, size_t size) {
   archive_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.SparkJob.archive_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SparkJob::archive_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.SparkJob.archive_uris)
   return archive_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SparkJob::mutable_archive_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.SparkJob.archive_uris)
   return &archive_uris_;
@@ -3582,7 +3638,7 @@ SparkJob::mutable_properties() {
 
 // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 8;
 bool SparkJob::has_logging_config() const {
-  return !_is_default_instance_ && logging_config_ != NULL;
+  return this != internal_default_instance() && logging_config_ != NULL;
 }
 void SparkJob::clear_logging_config() {
   if (GetArenaNoVirtual() == NULL && logging_config_ != NULL) delete logging_config_;
@@ -3590,7 +3646,8 @@ void SparkJob::clear_logging_config() {
 }
 const ::google::cloud::dataproc::v1::LoggingConfig& SparkJob::logging_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkJob.logging_config)
-  return logging_config_ != NULL ? *logging_config_ : *default_instance_->logging_config_;
+  return logging_config_ != NULL ? *logging_config_
+                         : *::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::LoggingConfig* SparkJob::mutable_logging_config() {
   
@@ -3627,6 +3684,9 @@ void SparkJob::clear_has_driver() {
 SparkJob::DriverCase SparkJob::driver_case() const {
   return SparkJob::DriverCase(_oneof_case_[0]);
 }
+inline const SparkJob* SparkJob::internal_default_instance() {
+  return &SparkJob_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3644,33 +3704,32 @@ const int PySparkJob::kLoggingConfigFieldNumber;
 
 PySparkJob::PySparkJob()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.PySparkJob)
 }
 
 void PySparkJob::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(&::google::cloud::dataproc::v1::LoggingConfig::default_instance());
+  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(
+      ::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance());
 }
 
 PySparkJob::PySparkJob(const PySparkJob& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.PySparkJob)
 }
 
 void PySparkJob::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  main_python_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   properties_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   properties_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::PySparkJob_PropertiesEntry_descriptor_);
+  main_python_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   logging_config_ = NULL;
+  _cached_size_ = 0;
 }
 
 PySparkJob::~PySparkJob() {
@@ -3680,7 +3739,7 @@ PySparkJob::~PySparkJob() {
 
 void PySparkJob::SharedDtor() {
   main_python_file_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &PySparkJob_default_instance_.get()) {
     delete logging_config_;
   }
 }
@@ -3696,11 +3755,11 @@ const ::google::protobuf::Descriptor* PySparkJob::descriptor() {
 }
 
 const PySparkJob& PySparkJob::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-PySparkJob* PySparkJob::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PySparkJob> PySparkJob_default_instance_;
 
 PySparkJob* PySparkJob::New(::google::protobuf::Arena* arena) const {
   PySparkJob* n = new PySparkJob;
@@ -4036,6 +4095,7 @@ void PySparkJob::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PySparkJob::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.PySparkJob)
   // optional string main_python_file_uri = 1;
   if (this->main_python_file_uri().size() > 0) {
@@ -4166,9 +4226,9 @@ void PySparkJob::SerializeWithCachedSizes(
   return target;
 }
 
-int PySparkJob::ByteSize() const {
+size_t PySparkJob::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.PySparkJob)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string main_python_file_uri = 1;
   if (this->main_python_file_uri().size() > 0) {
@@ -4185,42 +4245,48 @@ int PySparkJob::ByteSize() const {
   }
 
   // repeated string args = 2;
-  total_size += 1 * this->args_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->args_size());
   for (int i = 0; i < this->args_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->args(i));
   }
 
   // repeated string python_file_uris = 3;
-  total_size += 1 * this->python_file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->python_file_uris_size());
   for (int i = 0; i < this->python_file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->python_file_uris(i));
   }
 
   // repeated string jar_file_uris = 4;
-  total_size += 1 * this->jar_file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->jar_file_uris_size());
   for (int i = 0; i < this->jar_file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->jar_file_uris(i));
   }
 
   // repeated string file_uris = 5;
-  total_size += 1 * this->file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->file_uris_size());
   for (int i = 0; i < this->file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->file_uris(i));
   }
 
   // repeated string archive_uris = 6;
-  total_size += 1 * this->archive_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->archive_uris_size());
   for (int i = 0; i < this->archive_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->archive_uris(i));
   }
 
   // map<string, string> properties = 7;
-  total_size += 1 * this->properties_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->properties_size());
   {
     ::google::protobuf::scoped_ptr<PySparkJob_PropertiesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -4232,18 +4298,17 @@ int PySparkJob::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PySparkJob::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.PySparkJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PySparkJob* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PySparkJob* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PySparkJob>(
           &from);
   if (source == NULL) {
@@ -4251,20 +4316,26 @@ void PySparkJob::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.PySparkJob)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PySparkJob::MergeFrom(const PySparkJob& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.PySparkJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  args_.MergeFrom(from.args_);
-  python_file_uris_.MergeFrom(from.python_file_uris_);
-  jar_file_uris_.MergeFrom(from.jar_file_uris_);
-  file_uris_.MergeFrom(from.file_uris_);
-  archive_uris_.MergeFrom(from.archive_uris_);
+}
+
+void PySparkJob::UnsafeMergeFrom(const PySparkJob& from) {
+  GOOGLE_DCHECK(&from != this);
+  args_.UnsafeMergeFrom(from.args_);
+  python_file_uris_.UnsafeMergeFrom(from.python_file_uris_);
+  jar_file_uris_.UnsafeMergeFrom(from.jar_file_uris_);
+  file_uris_.UnsafeMergeFrom(from.file_uris_);
+  archive_uris_.UnsafeMergeFrom(from.archive_uris_);
   properties_.MergeFrom(from.properties_);
   if (from.main_python_file_uri().size() > 0) {
 
@@ -4286,7 +4357,7 @@ void PySparkJob::CopyFrom(const PySparkJob& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.PySparkJob)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PySparkJob::IsInitialized() const {
@@ -4326,37 +4397,37 @@ void PySparkJob::InternalSwap(PySparkJob* other) {
 void PySparkJob::clear_main_python_file_uri() {
   main_python_file_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& PySparkJob::main_python_file_uri() const {
+const ::std::string& PySparkJob::main_python_file_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PySparkJob.main_python_file_uri)
   return main_python_file_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PySparkJob::set_main_python_file_uri(const ::std::string& value) {
+void PySparkJob::set_main_python_file_uri(const ::std::string& value) {
   
   main_python_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PySparkJob.main_python_file_uri)
 }
- void PySparkJob::set_main_python_file_uri(const char* value) {
+void PySparkJob::set_main_python_file_uri(const char* value) {
   
   main_python_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PySparkJob.main_python_file_uri)
 }
- void PySparkJob::set_main_python_file_uri(const char* value, size_t size) {
+void PySparkJob::set_main_python_file_uri(const char* value, size_t size) {
   
   main_python_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PySparkJob.main_python_file_uri)
 }
- ::std::string* PySparkJob::mutable_main_python_file_uri() {
+::std::string* PySparkJob::mutable_main_python_file_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PySparkJob.main_python_file_uri)
   return main_python_file_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* PySparkJob::release_main_python_file_uri() {
+::std::string* PySparkJob::release_main_python_file_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.PySparkJob.main_python_file_uri)
   
   return main_python_file_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PySparkJob::set_allocated_main_python_file_uri(::std::string* main_python_file_uri) {
+void PySparkJob::set_allocated_main_python_file_uri(::std::string* main_python_file_uri) {
   if (main_python_file_uri != NULL) {
     
   } else {
@@ -4373,49 +4444,49 @@ int PySparkJob::args_size() const {
 void PySparkJob::clear_args() {
   args_.Clear();
 }
- const ::std::string& PySparkJob::args(int index) const {
+const ::std::string& PySparkJob::args(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PySparkJob.args)
   return args_.Get(index);
 }
- ::std::string* PySparkJob::mutable_args(int index) {
+::std::string* PySparkJob::mutable_args(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PySparkJob.args)
   return args_.Mutable(index);
 }
- void PySparkJob::set_args(int index, const ::std::string& value) {
+void PySparkJob::set_args(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PySparkJob.args)
   args_.Mutable(index)->assign(value);
 }
- void PySparkJob::set_args(int index, const char* value) {
+void PySparkJob::set_args(int index, const char* value) {
   args_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PySparkJob.args)
 }
- void PySparkJob::set_args(int index, const char* value, size_t size) {
+void PySparkJob::set_args(int index, const char* value, size_t size) {
   args_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PySparkJob.args)
 }
- ::std::string* PySparkJob::add_args() {
+::std::string* PySparkJob::add_args() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.PySparkJob.args)
   return args_.Add();
 }
- void PySparkJob::add_args(const ::std::string& value) {
+void PySparkJob::add_args(const ::std::string& value) {
   args_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.PySparkJob.args)
 }
- void PySparkJob::add_args(const char* value) {
+void PySparkJob::add_args(const char* value) {
   args_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.PySparkJob.args)
 }
- void PySparkJob::add_args(const char* value, size_t size) {
+void PySparkJob::add_args(const char* value, size_t size) {
   args_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.PySparkJob.args)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 PySparkJob::args() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.PySparkJob.args)
   return args_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 PySparkJob::mutable_args() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.PySparkJob.args)
   return &args_;
@@ -4428,49 +4499,49 @@ int PySparkJob::python_file_uris_size() const {
 void PySparkJob::clear_python_file_uris() {
   python_file_uris_.Clear();
 }
- const ::std::string& PySparkJob::python_file_uris(int index) const {
+const ::std::string& PySparkJob::python_file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
   return python_file_uris_.Get(index);
 }
- ::std::string* PySparkJob::mutable_python_file_uris(int index) {
+::std::string* PySparkJob::mutable_python_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
   return python_file_uris_.Mutable(index);
 }
- void PySparkJob::set_python_file_uris(int index, const ::std::string& value) {
+void PySparkJob::set_python_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
   python_file_uris_.Mutable(index)->assign(value);
 }
- void PySparkJob::set_python_file_uris(int index, const char* value) {
+void PySparkJob::set_python_file_uris(int index, const char* value) {
   python_file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
 }
- void PySparkJob::set_python_file_uris(int index, const char* value, size_t size) {
+void PySparkJob::set_python_file_uris(int index, const char* value, size_t size) {
   python_file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
 }
- ::std::string* PySparkJob::add_python_file_uris() {
+::std::string* PySparkJob::add_python_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
   return python_file_uris_.Add();
 }
- void PySparkJob::add_python_file_uris(const ::std::string& value) {
+void PySparkJob::add_python_file_uris(const ::std::string& value) {
   python_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
 }
- void PySparkJob::add_python_file_uris(const char* value) {
+void PySparkJob::add_python_file_uris(const char* value) {
   python_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
 }
- void PySparkJob::add_python_file_uris(const char* value, size_t size) {
+void PySparkJob::add_python_file_uris(const char* value, size_t size) {
   python_file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 PySparkJob::python_file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
   return python_file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 PySparkJob::mutable_python_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.PySparkJob.python_file_uris)
   return &python_file_uris_;
@@ -4483,49 +4554,49 @@ int PySparkJob::jar_file_uris_size() const {
 void PySparkJob::clear_jar_file_uris() {
   jar_file_uris_.Clear();
 }
- const ::std::string& PySparkJob::jar_file_uris(int index) const {
+const ::std::string& PySparkJob::jar_file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
   return jar_file_uris_.Get(index);
 }
- ::std::string* PySparkJob::mutable_jar_file_uris(int index) {
+::std::string* PySparkJob::mutable_jar_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
   return jar_file_uris_.Mutable(index);
 }
- void PySparkJob::set_jar_file_uris(int index, const ::std::string& value) {
+void PySparkJob::set_jar_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
   jar_file_uris_.Mutable(index)->assign(value);
 }
- void PySparkJob::set_jar_file_uris(int index, const char* value) {
+void PySparkJob::set_jar_file_uris(int index, const char* value) {
   jar_file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
 }
- void PySparkJob::set_jar_file_uris(int index, const char* value, size_t size) {
+void PySparkJob::set_jar_file_uris(int index, const char* value, size_t size) {
   jar_file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
 }
- ::std::string* PySparkJob::add_jar_file_uris() {
+::std::string* PySparkJob::add_jar_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
   return jar_file_uris_.Add();
 }
- void PySparkJob::add_jar_file_uris(const ::std::string& value) {
+void PySparkJob::add_jar_file_uris(const ::std::string& value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
 }
- void PySparkJob::add_jar_file_uris(const char* value) {
+void PySparkJob::add_jar_file_uris(const char* value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
 }
- void PySparkJob::add_jar_file_uris(const char* value, size_t size) {
+void PySparkJob::add_jar_file_uris(const char* value, size_t size) {
   jar_file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 PySparkJob::jar_file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
   return jar_file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 PySparkJob::mutable_jar_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.PySparkJob.jar_file_uris)
   return &jar_file_uris_;
@@ -4538,49 +4609,49 @@ int PySparkJob::file_uris_size() const {
 void PySparkJob::clear_file_uris() {
   file_uris_.Clear();
 }
- const ::std::string& PySparkJob::file_uris(int index) const {
+const ::std::string& PySparkJob::file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PySparkJob.file_uris)
   return file_uris_.Get(index);
 }
- ::std::string* PySparkJob::mutable_file_uris(int index) {
+::std::string* PySparkJob::mutable_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PySparkJob.file_uris)
   return file_uris_.Mutable(index);
 }
- void PySparkJob::set_file_uris(int index, const ::std::string& value) {
+void PySparkJob::set_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PySparkJob.file_uris)
   file_uris_.Mutable(index)->assign(value);
 }
- void PySparkJob::set_file_uris(int index, const char* value) {
+void PySparkJob::set_file_uris(int index, const char* value) {
   file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PySparkJob.file_uris)
 }
- void PySparkJob::set_file_uris(int index, const char* value, size_t size) {
+void PySparkJob::set_file_uris(int index, const char* value, size_t size) {
   file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PySparkJob.file_uris)
 }
- ::std::string* PySparkJob::add_file_uris() {
+::std::string* PySparkJob::add_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.PySparkJob.file_uris)
   return file_uris_.Add();
 }
- void PySparkJob::add_file_uris(const ::std::string& value) {
+void PySparkJob::add_file_uris(const ::std::string& value) {
   file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.PySparkJob.file_uris)
 }
- void PySparkJob::add_file_uris(const char* value) {
+void PySparkJob::add_file_uris(const char* value) {
   file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.PySparkJob.file_uris)
 }
- void PySparkJob::add_file_uris(const char* value, size_t size) {
+void PySparkJob::add_file_uris(const char* value, size_t size) {
   file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.PySparkJob.file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 PySparkJob::file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.PySparkJob.file_uris)
   return file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 PySparkJob::mutable_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.PySparkJob.file_uris)
   return &file_uris_;
@@ -4593,49 +4664,49 @@ int PySparkJob::archive_uris_size() const {
 void PySparkJob::clear_archive_uris() {
   archive_uris_.Clear();
 }
- const ::std::string& PySparkJob::archive_uris(int index) const {
+const ::std::string& PySparkJob::archive_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PySparkJob.archive_uris)
   return archive_uris_.Get(index);
 }
- ::std::string* PySparkJob::mutable_archive_uris(int index) {
+::std::string* PySparkJob::mutable_archive_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PySparkJob.archive_uris)
   return archive_uris_.Mutable(index);
 }
- void PySparkJob::set_archive_uris(int index, const ::std::string& value) {
+void PySparkJob::set_archive_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PySparkJob.archive_uris)
   archive_uris_.Mutable(index)->assign(value);
 }
- void PySparkJob::set_archive_uris(int index, const char* value) {
+void PySparkJob::set_archive_uris(int index, const char* value) {
   archive_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PySparkJob.archive_uris)
 }
- void PySparkJob::set_archive_uris(int index, const char* value, size_t size) {
+void PySparkJob::set_archive_uris(int index, const char* value, size_t size) {
   archive_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PySparkJob.archive_uris)
 }
- ::std::string* PySparkJob::add_archive_uris() {
+::std::string* PySparkJob::add_archive_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.PySparkJob.archive_uris)
   return archive_uris_.Add();
 }
- void PySparkJob::add_archive_uris(const ::std::string& value) {
+void PySparkJob::add_archive_uris(const ::std::string& value) {
   archive_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.PySparkJob.archive_uris)
 }
- void PySparkJob::add_archive_uris(const char* value) {
+void PySparkJob::add_archive_uris(const char* value) {
   archive_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.PySparkJob.archive_uris)
 }
- void PySparkJob::add_archive_uris(const char* value, size_t size) {
+void PySparkJob::add_archive_uris(const char* value, size_t size) {
   archive_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.PySparkJob.archive_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 PySparkJob::archive_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.PySparkJob.archive_uris)
   return archive_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 PySparkJob::mutable_archive_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.PySparkJob.archive_uris)
   return &archive_uris_;
@@ -4661,7 +4732,7 @@ PySparkJob::mutable_properties() {
 
 // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 8;
 bool PySparkJob::has_logging_config() const {
-  return !_is_default_instance_ && logging_config_ != NULL;
+  return this != internal_default_instance() && logging_config_ != NULL;
 }
 void PySparkJob::clear_logging_config() {
   if (GetArenaNoVirtual() == NULL && logging_config_ != NULL) delete logging_config_;
@@ -4669,7 +4740,8 @@ void PySparkJob::clear_logging_config() {
 }
 const ::google::cloud::dataproc::v1::LoggingConfig& PySparkJob::logging_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PySparkJob.logging_config)
-  return logging_config_ != NULL ? *logging_config_ : *default_instance_->logging_config_;
+  return logging_config_ != NULL ? *logging_config_
+                         : *::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::LoggingConfig* PySparkJob::mutable_logging_config() {
   
@@ -4697,6 +4769,9 @@ void PySparkJob::set_allocated_logging_config(::google::cloud::dataproc::v1::Log
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.PySparkJob.logging_config)
 }
 
+inline const PySparkJob* PySparkJob::internal_default_instance() {
+  return &PySparkJob_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4707,25 +4782,23 @@ const int QueryList::kQueriesFieldNumber;
 
 QueryList::QueryList()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.QueryList)
 }
 
 void QueryList::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 QueryList::QueryList(const QueryList& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.QueryList)
 }
 
 void QueryList::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
 }
 
@@ -4735,8 +4808,6 @@ QueryList::~QueryList() {
 }
 
 void QueryList::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void QueryList::SetCachedSize(int size) const {
@@ -4750,11 +4821,11 @@ const ::google::protobuf::Descriptor* QueryList::descriptor() {
 }
 
 const QueryList& QueryList::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-QueryList* QueryList::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<QueryList> QueryList_default_instance_;
 
 QueryList* QueryList::New(::google::protobuf::Arena* arena) const {
   QueryList* n = new QueryList;
@@ -4837,6 +4908,7 @@ void QueryList::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* QueryList::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.QueryList)
   // repeated string queries = 1;
   for (int i = 0; i < this->queries_size(); i++) {
@@ -4852,29 +4924,29 @@ void QueryList::SerializeWithCachedSizes(
   return target;
 }
 
-int QueryList::ByteSize() const {
+size_t QueryList::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.QueryList)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated string queries = 1;
-  total_size += 1 * this->queries_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->queries_size());
   for (int i = 0; i < this->queries_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->queries(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void QueryList::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.QueryList)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const QueryList* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const QueryList* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const QueryList>(
           &from);
   if (source == NULL) {
@@ -4882,16 +4954,22 @@ void QueryList::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.QueryList)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void QueryList::MergeFrom(const QueryList& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.QueryList)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  queries_.MergeFrom(from.queries_);
+}
+
+void QueryList::UnsafeMergeFrom(const QueryList& from) {
+  GOOGLE_DCHECK(&from != this);
+  queries_.UnsafeMergeFrom(from.queries_);
 }
 
 void QueryList::CopyFrom(const ::google::protobuf::Message& from) {
@@ -4905,7 +4983,7 @@ void QueryList::CopyFrom(const QueryList& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.QueryList)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool QueryList::IsInitialized() const {
@@ -4941,54 +5019,57 @@ int QueryList::queries_size() const {
 void QueryList::clear_queries() {
   queries_.Clear();
 }
- const ::std::string& QueryList::queries(int index) const {
+const ::std::string& QueryList::queries(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.QueryList.queries)
   return queries_.Get(index);
 }
- ::std::string* QueryList::mutable_queries(int index) {
+::std::string* QueryList::mutable_queries(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.QueryList.queries)
   return queries_.Mutable(index);
 }
- void QueryList::set_queries(int index, const ::std::string& value) {
+void QueryList::set_queries(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.QueryList.queries)
   queries_.Mutable(index)->assign(value);
 }
- void QueryList::set_queries(int index, const char* value) {
+void QueryList::set_queries(int index, const char* value) {
   queries_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.QueryList.queries)
 }
- void QueryList::set_queries(int index, const char* value, size_t size) {
+void QueryList::set_queries(int index, const char* value, size_t size) {
   queries_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.QueryList.queries)
 }
- ::std::string* QueryList::add_queries() {
+::std::string* QueryList::add_queries() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.QueryList.queries)
   return queries_.Add();
 }
- void QueryList::add_queries(const ::std::string& value) {
+void QueryList::add_queries(const ::std::string& value) {
   queries_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.QueryList.queries)
 }
- void QueryList::add_queries(const char* value) {
+void QueryList::add_queries(const char* value) {
   queries_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.QueryList.queries)
 }
- void QueryList::add_queries(const char* value, size_t size) {
+void QueryList::add_queries(const char* value, size_t size) {
   queries_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.QueryList.queries)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 QueryList::queries() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.QueryList.queries)
   return queries_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 QueryList::mutable_queries() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.QueryList.queries)
   return &queries_;
 }
 
+inline const QueryList* QueryList::internal_default_instance() {
+  return &QueryList_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5004,29 +5085,26 @@ const int HiveJob::kJarFileUrisFieldNumber;
 
 HiveJob::HiveJob()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.HiveJob)
 }
 
 void HiveJob::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   HiveJob_default_oneof_instance_->query_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  HiveJob_default_oneof_instance_->query_list_ = const_cast< ::google::cloud::dataproc::v1::QueryList*>(&::google::cloud::dataproc::v1::QueryList::default_instance());
+  HiveJob_default_oneof_instance_->query_list_ = const_cast< ::google::cloud::dataproc::v1::QueryList*>(
+      ::google::cloud::dataproc::v1::QueryList::internal_default_instance());
 }
 
 HiveJob::HiveJob(const HiveJob& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.HiveJob)
 }
 
 void HiveJob::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  continue_on_failure_ = false;
   script_variables_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   script_variables_.SetEntryDescriptor(
@@ -5035,7 +5113,9 @@ void HiveJob::SharedCtor() {
       protobuf_AssignDescriptorsOnce);
   properties_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::HiveJob_PropertiesEntry_descriptor_);
+  continue_on_failure_ = false;
   clear_has_queries();
+  _cached_size_ = 0;
 }
 
 HiveJob::~HiveJob() {
@@ -5046,8 +5126,6 @@ HiveJob::~HiveJob() {
 void HiveJob::SharedDtor() {
   if (has_queries()) {
     clear_queries();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -5062,11 +5140,11 @@ const ::google::protobuf::Descriptor* HiveJob::descriptor() {
 }
 
 const HiveJob& HiveJob::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-HiveJob* HiveJob::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<HiveJob> HiveJob_default_instance_;
 
 HiveJob* HiveJob::New(::google::protobuf::Arena* arena) const {
   HiveJob* n = new HiveJob;
@@ -5078,7 +5156,7 @@ HiveJob* HiveJob::New(::google::protobuf::Arena* arena) const {
 
 void HiveJob::clear_queries() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.dataproc.v1.HiveJob)
-  switch(queries_case()) {
+  switch (queries_case()) {
     case kQueryFileUri: {
       queries_.query_file_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -5126,19 +5204,19 @@ bool HiveJob::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_query_list;
+        goto after_query_list;
         break;
       }
 
       // optional .google.cloud.dataproc.v1.QueryList query_list = 2;
       case 2: {
         if (tag == 18) {
-         parse_query_list:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_query_list()));
         } else {
           goto handle_unusual;
         }
+       after_query_list:
         if (input->ExpectTag(24)) goto parse_continue_on_failure;
         break;
       }
@@ -5147,10 +5225,10 @@ bool HiveJob::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_continue_on_failure:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &continue_on_failure_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5404,6 +5482,7 @@ void HiveJob::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* HiveJob::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.HiveJob)
   // optional string query_file_uri = 1;
   if (has_query_file_uri()) {
@@ -5556,9 +5635,9 @@ void HiveJob::SerializeWithCachedSizes(
   return target;
 }
 
-int HiveJob::ByteSize() const {
+size_t HiveJob::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.HiveJob)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional bool continue_on_failure = 3;
   if (this->continue_on_failure() != 0) {
@@ -5566,7 +5645,8 @@ int HiveJob::ByteSize() const {
   }
 
   // map<string, string> script_variables = 4;
-  total_size += 1 * this->script_variables_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->script_variables_size());
   {
     ::google::protobuf::scoped_ptr<HiveJob_ScriptVariablesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -5579,7 +5659,8 @@ int HiveJob::ByteSize() const {
   }
 
   // map<string, string> properties = 5;
-  total_size += 1 * this->properties_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->properties_size());
   {
     ::google::protobuf::scoped_ptr<HiveJob_PropertiesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -5592,7 +5673,8 @@ int HiveJob::ByteSize() const {
   }
 
   // repeated string jar_file_uris = 6;
-  total_size += 1 * this->jar_file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->jar_file_uris_size());
   for (int i = 0; i < this->jar_file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->jar_file_uris(i));
@@ -5617,18 +5699,17 @@ int HiveJob::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void HiveJob::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.HiveJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const HiveJob* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const HiveJob* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HiveJob>(
           &from);
   if (source == NULL) {
@@ -5636,18 +5717,24 @@ void HiveJob::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.HiveJob)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HiveJob::MergeFrom(const HiveJob& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.HiveJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void HiveJob::UnsafeMergeFrom(const HiveJob& from) {
+  GOOGLE_DCHECK(&from != this);
   script_variables_.MergeFrom(from.script_variables_);
   properties_.MergeFrom(from.properties_);
-  jar_file_uris_.MergeFrom(from.jar_file_uris_);
+  jar_file_uris_.UnsafeMergeFrom(from.jar_file_uris_);
   switch (from.queries_case()) {
     case kQueryFileUri: {
       set_query_file_uri(from.query_file_uri());
@@ -5677,7 +5764,7 @@ void HiveJob::CopyFrom(const HiveJob& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.HiveJob)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HiveJob::IsInitialized() const {
@@ -5724,14 +5811,14 @@ void HiveJob::clear_query_file_uri() {
     clear_has_queries();
   }
 }
- const ::std::string& HiveJob::query_file_uri() const {
+const ::std::string& HiveJob::query_file_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HiveJob.query_file_uri)
   if (has_query_file_uri()) {
     return queries_.query_file_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void HiveJob::set_query_file_uri(const ::std::string& value) {
+void HiveJob::set_query_file_uri(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HiveJob.query_file_uri)
   if (!has_query_file_uri()) {
     clear_queries();
@@ -5741,7 +5828,7 @@ void HiveJob::clear_query_file_uri() {
   queries_.query_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HiveJob.query_file_uri)
 }
- void HiveJob::set_query_file_uri(const char* value) {
+void HiveJob::set_query_file_uri(const char* value) {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -5751,7 +5838,7 @@ void HiveJob::clear_query_file_uri() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HiveJob.query_file_uri)
 }
- void HiveJob::set_query_file_uri(const char* value, size_t size) {
+void HiveJob::set_query_file_uri(const char* value, size_t size) {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -5761,7 +5848,7 @@ void HiveJob::clear_query_file_uri() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HiveJob.query_file_uri)
 }
- ::std::string* HiveJob::mutable_query_file_uri() {
+::std::string* HiveJob::mutable_query_file_uri() {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -5770,7 +5857,7 @@ void HiveJob::clear_query_file_uri() {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HiveJob.query_file_uri)
   return queries_.query_file_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* HiveJob::release_query_file_uri() {
+::std::string* HiveJob::release_query_file_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.HiveJob.query_file_uri)
   if (has_query_file_uri()) {
     clear_has_queries();
@@ -5779,7 +5866,7 @@ void HiveJob::clear_query_file_uri() {
     return NULL;
   }
 }
- void HiveJob::set_allocated_query_file_uri(::std::string* query_file_uri) {
+void HiveJob::set_allocated_query_file_uri(::std::string* query_file_uri) {
   if (!has_query_file_uri()) {
     queries_.query_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -5844,11 +5931,11 @@ void HiveJob::set_allocated_query_list(::google::cloud::dataproc::v1::QueryList*
 void HiveJob::clear_continue_on_failure() {
   continue_on_failure_ = false;
 }
- bool HiveJob::continue_on_failure() const {
+bool HiveJob::continue_on_failure() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HiveJob.continue_on_failure)
   return continue_on_failure_;
 }
- void HiveJob::set_continue_on_failure(bool value) {
+void HiveJob::set_continue_on_failure(bool value) {
   
   continue_on_failure_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HiveJob.continue_on_failure)
@@ -5897,49 +5984,49 @@ int HiveJob::jar_file_uris_size() const {
 void HiveJob::clear_jar_file_uris() {
   jar_file_uris_.Clear();
 }
- const ::std::string& HiveJob::jar_file_uris(int index) const {
+const ::std::string& HiveJob::jar_file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
   return jar_file_uris_.Get(index);
 }
- ::std::string* HiveJob::mutable_jar_file_uris(int index) {
+::std::string* HiveJob::mutable_jar_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
   return jar_file_uris_.Mutable(index);
 }
- void HiveJob::set_jar_file_uris(int index, const ::std::string& value) {
+void HiveJob::set_jar_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
   jar_file_uris_.Mutable(index)->assign(value);
 }
- void HiveJob::set_jar_file_uris(int index, const char* value) {
+void HiveJob::set_jar_file_uris(int index, const char* value) {
   jar_file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
 }
- void HiveJob::set_jar_file_uris(int index, const char* value, size_t size) {
+void HiveJob::set_jar_file_uris(int index, const char* value, size_t size) {
   jar_file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
 }
- ::std::string* HiveJob::add_jar_file_uris() {
+::std::string* HiveJob::add_jar_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
   return jar_file_uris_.Add();
 }
- void HiveJob::add_jar_file_uris(const ::std::string& value) {
+void HiveJob::add_jar_file_uris(const ::std::string& value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
 }
- void HiveJob::add_jar_file_uris(const char* value) {
+void HiveJob::add_jar_file_uris(const char* value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
 }
- void HiveJob::add_jar_file_uris(const char* value, size_t size) {
+void HiveJob::add_jar_file_uris(const char* value, size_t size) {
   jar_file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 HiveJob::jar_file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
   return jar_file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 HiveJob::mutable_jar_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.HiveJob.jar_file_uris)
   return &jar_file_uris_;
@@ -5953,6 +6040,9 @@ void HiveJob::clear_has_queries() {
 }
 HiveJob::QueriesCase HiveJob::queries_case() const {
   return HiveJob::QueriesCase(_oneof_case_[0]);
+}
+inline const HiveJob* HiveJob::internal_default_instance() {
+  return &HiveJob_default_instance_.get();
 }
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
@@ -5969,29 +6059,28 @@ const int SparkSqlJob::kLoggingConfigFieldNumber;
 
 SparkSqlJob::SparkSqlJob()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.SparkSqlJob)
 }
 
 void SparkSqlJob::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   SparkSqlJob_default_oneof_instance_->query_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  SparkSqlJob_default_oneof_instance_->query_list_ = const_cast< ::google::cloud::dataproc::v1::QueryList*>(&::google::cloud::dataproc::v1::QueryList::default_instance());
-  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(&::google::cloud::dataproc::v1::LoggingConfig::default_instance());
+  SparkSqlJob_default_oneof_instance_->query_list_ = const_cast< ::google::cloud::dataproc::v1::QueryList*>(
+      ::google::cloud::dataproc::v1::QueryList::internal_default_instance());
+  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(
+      ::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance());
 }
 
 SparkSqlJob::SparkSqlJob(const SparkSqlJob& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.SparkSqlJob)
 }
 
 void SparkSqlJob::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   script_variables_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   script_variables_.SetEntryDescriptor(
@@ -6002,6 +6091,7 @@ void SparkSqlJob::SharedCtor() {
       &::google::cloud::dataproc::v1::SparkSqlJob_PropertiesEntry_descriptor_);
   logging_config_ = NULL;
   clear_has_queries();
+  _cached_size_ = 0;
 }
 
 SparkSqlJob::~SparkSqlJob() {
@@ -6013,7 +6103,7 @@ void SparkSqlJob::SharedDtor() {
   if (has_queries()) {
     clear_queries();
   }
-  if (this != default_instance_) {
+  if (this != &SparkSqlJob_default_instance_.get()) {
     delete logging_config_;
   }
 }
@@ -6029,11 +6119,11 @@ const ::google::protobuf::Descriptor* SparkSqlJob::descriptor() {
 }
 
 const SparkSqlJob& SparkSqlJob::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-SparkSqlJob* SparkSqlJob::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SparkSqlJob> SparkSqlJob_default_instance_;
 
 SparkSqlJob* SparkSqlJob::New(::google::protobuf::Arena* arena) const {
   SparkSqlJob* n = new SparkSqlJob;
@@ -6045,7 +6135,7 @@ SparkSqlJob* SparkSqlJob::New(::google::protobuf::Arena* arena) const {
 
 void SparkSqlJob::clear_queries() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.dataproc.v1.SparkSqlJob)
-  switch(queries_case()) {
+  switch (queries_case()) {
     case kQueryFileUri: {
       queries_.query_file_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -6094,19 +6184,19 @@ bool SparkSqlJob::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_query_list;
+        goto after_query_list;
         break;
       }
 
       // optional .google.cloud.dataproc.v1.QueryList query_list = 2;
       case 2: {
         if (tag == 18) {
-         parse_query_list:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_query_list()));
         } else {
           goto handle_unusual;
         }
+       after_query_list:
         if (input->ExpectTag(26)) goto parse_script_variables;
         break;
       }
@@ -6371,6 +6461,7 @@ void SparkSqlJob::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SparkSqlJob::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.SparkSqlJob)
   // optional string query_file_uri = 1;
   if (has_query_file_uri()) {
@@ -6525,9 +6616,9 @@ void SparkSqlJob::SerializeWithCachedSizes(
   return target;
 }
 
-int SparkSqlJob::ByteSize() const {
+size_t SparkSqlJob::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.SparkSqlJob)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 6;
   if (this->has_logging_config()) {
@@ -6537,7 +6628,8 @@ int SparkSqlJob::ByteSize() const {
   }
 
   // map<string, string> script_variables = 3;
-  total_size += 1 * this->script_variables_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->script_variables_size());
   {
     ::google::protobuf::scoped_ptr<SparkSqlJob_ScriptVariablesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -6550,7 +6642,8 @@ int SparkSqlJob::ByteSize() const {
   }
 
   // map<string, string> properties = 4;
-  total_size += 1 * this->properties_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->properties_size());
   {
     ::google::protobuf::scoped_ptr<SparkSqlJob_PropertiesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -6563,7 +6656,8 @@ int SparkSqlJob::ByteSize() const {
   }
 
   // repeated string jar_file_uris = 56;
-  total_size += 2 * this->jar_file_uris_size();
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->jar_file_uris_size());
   for (int i = 0; i < this->jar_file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->jar_file_uris(i));
@@ -6588,18 +6682,17 @@ int SparkSqlJob::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SparkSqlJob::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.SparkSqlJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SparkSqlJob* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SparkSqlJob* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SparkSqlJob>(
           &from);
   if (source == NULL) {
@@ -6607,18 +6700,24 @@ void SparkSqlJob::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.SparkSqlJob)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SparkSqlJob::MergeFrom(const SparkSqlJob& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.SparkSqlJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SparkSqlJob::UnsafeMergeFrom(const SparkSqlJob& from) {
+  GOOGLE_DCHECK(&from != this);
   script_variables_.MergeFrom(from.script_variables_);
   properties_.MergeFrom(from.properties_);
-  jar_file_uris_.MergeFrom(from.jar_file_uris_);
+  jar_file_uris_.UnsafeMergeFrom(from.jar_file_uris_);
   switch (from.queries_case()) {
     case kQueryFileUri: {
       set_query_file_uri(from.query_file_uri());
@@ -6648,7 +6747,7 @@ void SparkSqlJob::CopyFrom(const SparkSqlJob& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.SparkSqlJob)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SparkSqlJob::IsInitialized() const {
@@ -6695,14 +6794,14 @@ void SparkSqlJob::clear_query_file_uri() {
     clear_has_queries();
   }
 }
- const ::std::string& SparkSqlJob::query_file_uri() const {
+const ::std::string& SparkSqlJob::query_file_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkSqlJob.query_file_uri)
   if (has_query_file_uri()) {
     return queries_.query_file_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void SparkSqlJob::set_query_file_uri(const ::std::string& value) {
+void SparkSqlJob::set_query_file_uri(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkSqlJob.query_file_uri)
   if (!has_query_file_uri()) {
     clear_queries();
@@ -6712,7 +6811,7 @@ void SparkSqlJob::clear_query_file_uri() {
   queries_.query_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkSqlJob.query_file_uri)
 }
- void SparkSqlJob::set_query_file_uri(const char* value) {
+void SparkSqlJob::set_query_file_uri(const char* value) {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -6722,7 +6821,7 @@ void SparkSqlJob::clear_query_file_uri() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkSqlJob.query_file_uri)
 }
- void SparkSqlJob::set_query_file_uri(const char* value, size_t size) {
+void SparkSqlJob::set_query_file_uri(const char* value, size_t size) {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -6732,7 +6831,7 @@ void SparkSqlJob::clear_query_file_uri() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkSqlJob.query_file_uri)
 }
- ::std::string* SparkSqlJob::mutable_query_file_uri() {
+::std::string* SparkSqlJob::mutable_query_file_uri() {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -6741,7 +6840,7 @@ void SparkSqlJob::clear_query_file_uri() {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkSqlJob.query_file_uri)
   return queries_.query_file_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SparkSqlJob::release_query_file_uri() {
+::std::string* SparkSqlJob::release_query_file_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.SparkSqlJob.query_file_uri)
   if (has_query_file_uri()) {
     clear_has_queries();
@@ -6750,7 +6849,7 @@ void SparkSqlJob::clear_query_file_uri() {
     return NULL;
   }
 }
- void SparkSqlJob::set_allocated_query_file_uri(::std::string* query_file_uri) {
+void SparkSqlJob::set_allocated_query_file_uri(::std::string* query_file_uri) {
   if (!has_query_file_uri()) {
     queries_.query_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -6854,49 +6953,49 @@ int SparkSqlJob::jar_file_uris_size() const {
 void SparkSqlJob::clear_jar_file_uris() {
   jar_file_uris_.Clear();
 }
- const ::std::string& SparkSqlJob::jar_file_uris(int index) const {
+const ::std::string& SparkSqlJob::jar_file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
   return jar_file_uris_.Get(index);
 }
- ::std::string* SparkSqlJob::mutable_jar_file_uris(int index) {
+::std::string* SparkSqlJob::mutable_jar_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
   return jar_file_uris_.Mutable(index);
 }
- void SparkSqlJob::set_jar_file_uris(int index, const ::std::string& value) {
+void SparkSqlJob::set_jar_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
   jar_file_uris_.Mutable(index)->assign(value);
 }
- void SparkSqlJob::set_jar_file_uris(int index, const char* value) {
+void SparkSqlJob::set_jar_file_uris(int index, const char* value) {
   jar_file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
 }
- void SparkSqlJob::set_jar_file_uris(int index, const char* value, size_t size) {
+void SparkSqlJob::set_jar_file_uris(int index, const char* value, size_t size) {
   jar_file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
 }
- ::std::string* SparkSqlJob::add_jar_file_uris() {
+::std::string* SparkSqlJob::add_jar_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
   return jar_file_uris_.Add();
 }
- void SparkSqlJob::add_jar_file_uris(const ::std::string& value) {
+void SparkSqlJob::add_jar_file_uris(const ::std::string& value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
 }
- void SparkSqlJob::add_jar_file_uris(const char* value) {
+void SparkSqlJob::add_jar_file_uris(const char* value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
 }
- void SparkSqlJob::add_jar_file_uris(const char* value, size_t size) {
+void SparkSqlJob::add_jar_file_uris(const char* value, size_t size) {
   jar_file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SparkSqlJob::jar_file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
   return jar_file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SparkSqlJob::mutable_jar_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.SparkSqlJob.jar_file_uris)
   return &jar_file_uris_;
@@ -6904,7 +7003,7 @@ SparkSqlJob::mutable_jar_file_uris() {
 
 // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 6;
 bool SparkSqlJob::has_logging_config() const {
-  return !_is_default_instance_ && logging_config_ != NULL;
+  return this != internal_default_instance() && logging_config_ != NULL;
 }
 void SparkSqlJob::clear_logging_config() {
   if (GetArenaNoVirtual() == NULL && logging_config_ != NULL) delete logging_config_;
@@ -6912,7 +7011,8 @@ void SparkSqlJob::clear_logging_config() {
 }
 const ::google::cloud::dataproc::v1::LoggingConfig& SparkSqlJob::logging_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SparkSqlJob.logging_config)
-  return logging_config_ != NULL ? *logging_config_ : *default_instance_->logging_config_;
+  return logging_config_ != NULL ? *logging_config_
+                         : *::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::LoggingConfig* SparkSqlJob::mutable_logging_config() {
   
@@ -6949,6 +7049,9 @@ void SparkSqlJob::clear_has_queries() {
 SparkSqlJob::QueriesCase SparkSqlJob::queries_case() const {
   return SparkSqlJob::QueriesCase(_oneof_case_[0]);
 }
+inline const SparkSqlJob* SparkSqlJob::internal_default_instance() {
+  return &SparkSqlJob_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6965,30 +7068,28 @@ const int PigJob::kLoggingConfigFieldNumber;
 
 PigJob::PigJob()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.PigJob)
 }
 
 void PigJob::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   PigJob_default_oneof_instance_->query_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  PigJob_default_oneof_instance_->query_list_ = const_cast< ::google::cloud::dataproc::v1::QueryList*>(&::google::cloud::dataproc::v1::QueryList::default_instance());
-  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(&::google::cloud::dataproc::v1::LoggingConfig::default_instance());
+  PigJob_default_oneof_instance_->query_list_ = const_cast< ::google::cloud::dataproc::v1::QueryList*>(
+      ::google::cloud::dataproc::v1::QueryList::internal_default_instance());
+  logging_config_ = const_cast< ::google::cloud::dataproc::v1::LoggingConfig*>(
+      ::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance());
 }
 
 PigJob::PigJob(const PigJob& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.PigJob)
 }
 
 void PigJob::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  continue_on_failure_ = false;
   script_variables_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   script_variables_.SetEntryDescriptor(
@@ -6998,7 +7099,9 @@ void PigJob::SharedCtor() {
   properties_.SetEntryDescriptor(
       &::google::cloud::dataproc::v1::PigJob_PropertiesEntry_descriptor_);
   logging_config_ = NULL;
+  continue_on_failure_ = false;
   clear_has_queries();
+  _cached_size_ = 0;
 }
 
 PigJob::~PigJob() {
@@ -7010,7 +7113,7 @@ void PigJob::SharedDtor() {
   if (has_queries()) {
     clear_queries();
   }
-  if (this != default_instance_) {
+  if (this != &PigJob_default_instance_.get()) {
     delete logging_config_;
   }
 }
@@ -7026,11 +7129,11 @@ const ::google::protobuf::Descriptor* PigJob::descriptor() {
 }
 
 const PigJob& PigJob::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-PigJob* PigJob::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PigJob> PigJob_default_instance_;
 
 PigJob* PigJob::New(::google::protobuf::Arena* arena) const {
   PigJob* n = new PigJob;
@@ -7042,7 +7145,7 @@ PigJob* PigJob::New(::google::protobuf::Arena* arena) const {
 
 void PigJob::clear_queries() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.dataproc.v1.PigJob)
-  switch(queries_case()) {
+  switch (queries_case()) {
     case kQueryFileUri: {
       queries_.query_file_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -7092,19 +7195,19 @@ bool PigJob::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_query_list;
+        goto after_query_list;
         break;
       }
 
       // optional .google.cloud.dataproc.v1.QueryList query_list = 2;
       case 2: {
         if (tag == 18) {
-         parse_query_list:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_query_list()));
         } else {
           goto handle_unusual;
         }
+       after_query_list:
         if (input->ExpectTag(24)) goto parse_continue_on_failure;
         break;
       }
@@ -7113,10 +7216,10 @@ bool PigJob::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_continue_on_failure:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &continue_on_failure_)));
-
         } else {
           goto handle_unusual;
         }
@@ -7389,6 +7492,7 @@ void PigJob::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PigJob::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.PigJob)
   // optional string query_file_uri = 1;
   if (has_query_file_uri()) {
@@ -7548,9 +7652,9 @@ void PigJob::SerializeWithCachedSizes(
   return target;
 }
 
-int PigJob::ByteSize() const {
+size_t PigJob::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.PigJob)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional bool continue_on_failure = 3;
   if (this->continue_on_failure() != 0) {
@@ -7565,7 +7669,8 @@ int PigJob::ByteSize() const {
   }
 
   // map<string, string> script_variables = 4;
-  total_size += 1 * this->script_variables_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->script_variables_size());
   {
     ::google::protobuf::scoped_ptr<PigJob_ScriptVariablesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -7578,7 +7683,8 @@ int PigJob::ByteSize() const {
   }
 
   // map<string, string> properties = 5;
-  total_size += 1 * this->properties_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->properties_size());
   {
     ::google::protobuf::scoped_ptr<PigJob_PropertiesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -7591,7 +7697,8 @@ int PigJob::ByteSize() const {
   }
 
   // repeated string jar_file_uris = 6;
-  total_size += 1 * this->jar_file_uris_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->jar_file_uris_size());
   for (int i = 0; i < this->jar_file_uris_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->jar_file_uris(i));
@@ -7616,18 +7723,17 @@ int PigJob::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PigJob::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.PigJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PigJob* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PigJob* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PigJob>(
           &from);
   if (source == NULL) {
@@ -7635,18 +7741,24 @@ void PigJob::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.PigJob)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PigJob::MergeFrom(const PigJob& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.PigJob)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void PigJob::UnsafeMergeFrom(const PigJob& from) {
+  GOOGLE_DCHECK(&from != this);
   script_variables_.MergeFrom(from.script_variables_);
   properties_.MergeFrom(from.properties_);
-  jar_file_uris_.MergeFrom(from.jar_file_uris_);
+  jar_file_uris_.UnsafeMergeFrom(from.jar_file_uris_);
   switch (from.queries_case()) {
     case kQueryFileUri: {
       set_query_file_uri(from.query_file_uri());
@@ -7679,7 +7791,7 @@ void PigJob::CopyFrom(const PigJob& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.PigJob)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PigJob::IsInitialized() const {
@@ -7727,14 +7839,14 @@ void PigJob::clear_query_file_uri() {
     clear_has_queries();
   }
 }
- const ::std::string& PigJob::query_file_uri() const {
+const ::std::string& PigJob::query_file_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PigJob.query_file_uri)
   if (has_query_file_uri()) {
     return queries_.query_file_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void PigJob::set_query_file_uri(const ::std::string& value) {
+void PigJob::set_query_file_uri(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PigJob.query_file_uri)
   if (!has_query_file_uri()) {
     clear_queries();
@@ -7744,7 +7856,7 @@ void PigJob::clear_query_file_uri() {
   queries_.query_file_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PigJob.query_file_uri)
 }
- void PigJob::set_query_file_uri(const char* value) {
+void PigJob::set_query_file_uri(const char* value) {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -7754,7 +7866,7 @@ void PigJob::clear_query_file_uri() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PigJob.query_file_uri)
 }
- void PigJob::set_query_file_uri(const char* value, size_t size) {
+void PigJob::set_query_file_uri(const char* value, size_t size) {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -7764,7 +7876,7 @@ void PigJob::clear_query_file_uri() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PigJob.query_file_uri)
 }
- ::std::string* PigJob::mutable_query_file_uri() {
+::std::string* PigJob::mutable_query_file_uri() {
   if (!has_query_file_uri()) {
     clear_queries();
     set_has_query_file_uri();
@@ -7773,7 +7885,7 @@ void PigJob::clear_query_file_uri() {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PigJob.query_file_uri)
   return queries_.query_file_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* PigJob::release_query_file_uri() {
+::std::string* PigJob::release_query_file_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.PigJob.query_file_uri)
   if (has_query_file_uri()) {
     clear_has_queries();
@@ -7782,7 +7894,7 @@ void PigJob::clear_query_file_uri() {
     return NULL;
   }
 }
- void PigJob::set_allocated_query_file_uri(::std::string* query_file_uri) {
+void PigJob::set_allocated_query_file_uri(::std::string* query_file_uri) {
   if (!has_query_file_uri()) {
     queries_.query_file_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -7847,11 +7959,11 @@ void PigJob::set_allocated_query_list(::google::cloud::dataproc::v1::QueryList* 
 void PigJob::clear_continue_on_failure() {
   continue_on_failure_ = false;
 }
- bool PigJob::continue_on_failure() const {
+bool PigJob::continue_on_failure() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PigJob.continue_on_failure)
   return continue_on_failure_;
 }
- void PigJob::set_continue_on_failure(bool value) {
+void PigJob::set_continue_on_failure(bool value) {
   
   continue_on_failure_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PigJob.continue_on_failure)
@@ -7900,49 +8012,49 @@ int PigJob::jar_file_uris_size() const {
 void PigJob::clear_jar_file_uris() {
   jar_file_uris_.Clear();
 }
- const ::std::string& PigJob::jar_file_uris(int index) const {
+const ::std::string& PigJob::jar_file_uris(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PigJob.jar_file_uris)
   return jar_file_uris_.Get(index);
 }
- ::std::string* PigJob::mutable_jar_file_uris(int index) {
+::std::string* PigJob::mutable_jar_file_uris(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.PigJob.jar_file_uris)
   return jar_file_uris_.Mutable(index);
 }
- void PigJob::set_jar_file_uris(int index, const ::std::string& value) {
+void PigJob::set_jar_file_uris(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.PigJob.jar_file_uris)
   jar_file_uris_.Mutable(index)->assign(value);
 }
- void PigJob::set_jar_file_uris(int index, const char* value) {
+void PigJob::set_jar_file_uris(int index, const char* value) {
   jar_file_uris_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.PigJob.jar_file_uris)
 }
- void PigJob::set_jar_file_uris(int index, const char* value, size_t size) {
+void PigJob::set_jar_file_uris(int index, const char* value, size_t size) {
   jar_file_uris_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.PigJob.jar_file_uris)
 }
- ::std::string* PigJob::add_jar_file_uris() {
+::std::string* PigJob::add_jar_file_uris() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.dataproc.v1.PigJob.jar_file_uris)
   return jar_file_uris_.Add();
 }
- void PigJob::add_jar_file_uris(const ::std::string& value) {
+void PigJob::add_jar_file_uris(const ::std::string& value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.dataproc.v1.PigJob.jar_file_uris)
 }
- void PigJob::add_jar_file_uris(const char* value) {
+void PigJob::add_jar_file_uris(const char* value) {
   jar_file_uris_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.dataproc.v1.PigJob.jar_file_uris)
 }
- void PigJob::add_jar_file_uris(const char* value, size_t size) {
+void PigJob::add_jar_file_uris(const char* value, size_t size) {
   jar_file_uris_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.dataproc.v1.PigJob.jar_file_uris)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 PigJob::jar_file_uris() const {
   // @@protoc_insertion_point(field_list:google.cloud.dataproc.v1.PigJob.jar_file_uris)
   return jar_file_uris_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 PigJob::mutable_jar_file_uris() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.dataproc.v1.PigJob.jar_file_uris)
   return &jar_file_uris_;
@@ -7950,7 +8062,7 @@ PigJob::mutable_jar_file_uris() {
 
 // optional .google.cloud.dataproc.v1.LoggingConfig logging_config = 7;
 bool PigJob::has_logging_config() const {
-  return !_is_default_instance_ && logging_config_ != NULL;
+  return this != internal_default_instance() && logging_config_ != NULL;
 }
 void PigJob::clear_logging_config() {
   if (GetArenaNoVirtual() == NULL && logging_config_ != NULL) delete logging_config_;
@@ -7958,7 +8070,8 @@ void PigJob::clear_logging_config() {
 }
 const ::google::cloud::dataproc::v1::LoggingConfig& PigJob::logging_config() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.PigJob.logging_config)
-  return logging_config_ != NULL ? *logging_config_ : *default_instance_->logging_config_;
+  return logging_config_ != NULL ? *logging_config_
+                         : *::google::cloud::dataproc::v1::LoggingConfig::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::LoggingConfig* PigJob::mutable_logging_config() {
   
@@ -7995,6 +8108,9 @@ void PigJob::clear_has_queries() {
 PigJob::QueriesCase PigJob::queries_case() const {
   return PigJob::QueriesCase(_oneof_case_[0]);
 }
+inline const PigJob* PigJob::internal_default_instance() {
+  return &PigJob_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8006,28 +8122,26 @@ const int JobPlacement::kClusterUuidFieldNumber;
 
 JobPlacement::JobPlacement()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.JobPlacement)
 }
 
 void JobPlacement::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 JobPlacement::JobPlacement(const JobPlacement& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.JobPlacement)
 }
 
 void JobPlacement::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_uuid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 JobPlacement::~JobPlacement() {
@@ -8038,8 +8152,6 @@ JobPlacement::~JobPlacement() {
 void JobPlacement::SharedDtor() {
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_uuid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void JobPlacement::SetCachedSize(int size) const {
@@ -8053,11 +8165,11 @@ const ::google::protobuf::Descriptor* JobPlacement::descriptor() {
 }
 
 const JobPlacement& JobPlacement::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-JobPlacement* JobPlacement::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<JobPlacement> JobPlacement_default_instance_;
 
 JobPlacement* JobPlacement::New(::google::protobuf::Arena* arena) const {
   JobPlacement* n = new JobPlacement;
@@ -8165,6 +8277,7 @@ void JobPlacement::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* JobPlacement::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.JobPlacement)
   // optional string cluster_name = 1;
   if (this->cluster_name().size() > 0) {
@@ -8192,9 +8305,9 @@ void JobPlacement::SerializeWithCachedSizes(
   return target;
 }
 
-int JobPlacement::ByteSize() const {
+size_t JobPlacement::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.JobPlacement)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string cluster_name = 1;
   if (this->cluster_name().size() > 0) {
@@ -8210,18 +8323,17 @@ int JobPlacement::ByteSize() const {
         this->cluster_uuid());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void JobPlacement::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.JobPlacement)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const JobPlacement* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const JobPlacement* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const JobPlacement>(
           &from);
   if (source == NULL) {
@@ -8229,15 +8341,21 @@ void JobPlacement::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.JobPlacement)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void JobPlacement::MergeFrom(const JobPlacement& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.JobPlacement)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void JobPlacement::UnsafeMergeFrom(const JobPlacement& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.cluster_name().size() > 0) {
 
     cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
@@ -8259,7 +8377,7 @@ void JobPlacement::CopyFrom(const JobPlacement& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.JobPlacement)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool JobPlacement::IsInitialized() const {
@@ -8293,37 +8411,37 @@ void JobPlacement::InternalSwap(JobPlacement* other) {
 void JobPlacement::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& JobPlacement::cluster_name() const {
+const ::std::string& JobPlacement::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.JobPlacement.cluster_name)
   return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobPlacement::set_cluster_name(const ::std::string& value) {
+void JobPlacement::set_cluster_name(const ::std::string& value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.JobPlacement.cluster_name)
 }
- void JobPlacement::set_cluster_name(const char* value) {
+void JobPlacement::set_cluster_name(const char* value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.JobPlacement.cluster_name)
 }
- void JobPlacement::set_cluster_name(const char* value, size_t size) {
+void JobPlacement::set_cluster_name(const char* value, size_t size) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.JobPlacement.cluster_name)
 }
- ::std::string* JobPlacement::mutable_cluster_name() {
+::std::string* JobPlacement::mutable_cluster_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.JobPlacement.cluster_name)
   return cluster_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* JobPlacement::release_cluster_name() {
+::std::string* JobPlacement::release_cluster_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.JobPlacement.cluster_name)
   
   return cluster_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobPlacement::set_allocated_cluster_name(::std::string* cluster_name) {
+void JobPlacement::set_allocated_cluster_name(::std::string* cluster_name) {
   if (cluster_name != NULL) {
     
   } else {
@@ -8337,37 +8455,37 @@ void JobPlacement::clear_cluster_name() {
 void JobPlacement::clear_cluster_uuid() {
   cluster_uuid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& JobPlacement::cluster_uuid() const {
+const ::std::string& JobPlacement::cluster_uuid() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.JobPlacement.cluster_uuid)
   return cluster_uuid_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobPlacement::set_cluster_uuid(const ::std::string& value) {
+void JobPlacement::set_cluster_uuid(const ::std::string& value) {
   
   cluster_uuid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.JobPlacement.cluster_uuid)
 }
- void JobPlacement::set_cluster_uuid(const char* value) {
+void JobPlacement::set_cluster_uuid(const char* value) {
   
   cluster_uuid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.JobPlacement.cluster_uuid)
 }
- void JobPlacement::set_cluster_uuid(const char* value, size_t size) {
+void JobPlacement::set_cluster_uuid(const char* value, size_t size) {
   
   cluster_uuid_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.JobPlacement.cluster_uuid)
 }
- ::std::string* JobPlacement::mutable_cluster_uuid() {
+::std::string* JobPlacement::mutable_cluster_uuid() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.JobPlacement.cluster_uuid)
   return cluster_uuid_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* JobPlacement::release_cluster_uuid() {
+::std::string* JobPlacement::release_cluster_uuid() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.JobPlacement.cluster_uuid)
   
   return cluster_uuid_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobPlacement::set_allocated_cluster_uuid(::std::string* cluster_uuid) {
+void JobPlacement::set_allocated_cluster_uuid(::std::string* cluster_uuid) {
   if (cluster_uuid != NULL) {
     
   } else {
@@ -8377,6 +8495,9 @@ void JobPlacement::clear_cluster_uuid() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.JobPlacement.cluster_uuid)
 }
 
+inline const JobPlacement* JobPlacement::internal_default_instance() {
+  return &JobPlacement_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8386,7 +8507,7 @@ const ::google::protobuf::EnumDescriptor* JobStatus_State_descriptor() {
   return JobStatus_State_descriptor_;
 }
 bool JobStatus_State_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -8424,30 +8545,29 @@ const int JobStatus::kStateStartTimeFieldNumber;
 
 JobStatus::JobStatus()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.JobStatus)
 }
 
 void JobStatus::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  state_start_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  state_start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 JobStatus::JobStatus(const JobStatus& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.JobStatus)
 }
 
 void JobStatus::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  state_ = 0;
   details_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   state_start_time_ = NULL;
+  state_ = 0;
+  _cached_size_ = 0;
 }
 
 JobStatus::~JobStatus() {
@@ -8457,7 +8577,7 @@ JobStatus::~JobStatus() {
 
 void JobStatus::SharedDtor() {
   details_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &JobStatus_default_instance_.get()) {
     delete state_start_time_;
   }
 }
@@ -8473,11 +8593,11 @@ const ::google::protobuf::Descriptor* JobStatus::descriptor() {
 }
 
 const JobStatus& JobStatus::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-JobStatus* JobStatus::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<JobStatus> JobStatus_default_instance_;
 
 JobStatus* JobStatus::New(::google::protobuf::Arena* arena) const {
   JobStatus* n = new JobStatus;
@@ -8601,6 +8721,7 @@ void JobStatus::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* JobStatus::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.JobStatus)
   // optional .google.cloud.dataproc.v1.JobStatus.State state = 1;
   if (this->state() != 0) {
@@ -8630,9 +8751,9 @@ void JobStatus::SerializeWithCachedSizes(
   return target;
 }
 
-int JobStatus::ByteSize() const {
+size_t JobStatus::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.JobStatus)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.dataproc.v1.JobStatus.State state = 1;
   if (this->state() != 0) {
@@ -8654,18 +8775,17 @@ int JobStatus::ByteSize() const {
         *this->state_start_time_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void JobStatus::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.JobStatus)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const JobStatus* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const JobStatus* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const JobStatus>(
           &from);
   if (source == NULL) {
@@ -8673,15 +8793,21 @@ void JobStatus::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.JobStatus)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void JobStatus::MergeFrom(const JobStatus& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.JobStatus)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void JobStatus::UnsafeMergeFrom(const JobStatus& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.state() != 0) {
     set_state(from.state());
   }
@@ -8705,7 +8831,7 @@ void JobStatus::CopyFrom(const JobStatus& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.JobStatus)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool JobStatus::IsInitialized() const {
@@ -8740,11 +8866,11 @@ void JobStatus::InternalSwap(JobStatus* other) {
 void JobStatus::clear_state() {
   state_ = 0;
 }
- ::google::cloud::dataproc::v1::JobStatus_State JobStatus::state() const {
+::google::cloud::dataproc::v1::JobStatus_State JobStatus::state() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.JobStatus.state)
   return static_cast< ::google::cloud::dataproc::v1::JobStatus_State >(state_);
 }
- void JobStatus::set_state(::google::cloud::dataproc::v1::JobStatus_State value) {
+void JobStatus::set_state(::google::cloud::dataproc::v1::JobStatus_State value) {
   
   state_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.JobStatus.state)
@@ -8754,37 +8880,37 @@ void JobStatus::clear_state() {
 void JobStatus::clear_details() {
   details_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& JobStatus::details() const {
+const ::std::string& JobStatus::details() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.JobStatus.details)
   return details_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobStatus::set_details(const ::std::string& value) {
+void JobStatus::set_details(const ::std::string& value) {
   
   details_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.JobStatus.details)
 }
- void JobStatus::set_details(const char* value) {
+void JobStatus::set_details(const char* value) {
   
   details_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.JobStatus.details)
 }
- void JobStatus::set_details(const char* value, size_t size) {
+void JobStatus::set_details(const char* value, size_t size) {
   
   details_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.JobStatus.details)
 }
- ::std::string* JobStatus::mutable_details() {
+::std::string* JobStatus::mutable_details() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.JobStatus.details)
   return details_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* JobStatus::release_details() {
+::std::string* JobStatus::release_details() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.JobStatus.details)
   
   return details_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobStatus::set_allocated_details(::std::string* details) {
+void JobStatus::set_allocated_details(::std::string* details) {
   if (details != NULL) {
     
   } else {
@@ -8796,7 +8922,7 @@ void JobStatus::clear_details() {
 
 // optional .google.protobuf.Timestamp state_start_time = 6;
 bool JobStatus::has_state_start_time() const {
-  return !_is_default_instance_ && state_start_time_ != NULL;
+  return this != internal_default_instance() && state_start_time_ != NULL;
 }
 void JobStatus::clear_state_start_time() {
   if (GetArenaNoVirtual() == NULL && state_start_time_ != NULL) delete state_start_time_;
@@ -8804,7 +8930,8 @@ void JobStatus::clear_state_start_time() {
 }
 const ::google::protobuf::Timestamp& JobStatus::state_start_time() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.JobStatus.state_start_time)
-  return state_start_time_ != NULL ? *state_start_time_ : *default_instance_->state_start_time_;
+  return state_start_time_ != NULL ? *state_start_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* JobStatus::mutable_state_start_time() {
   
@@ -8837,6 +8964,9 @@ void JobStatus::set_allocated_state_start_time(::google::protobuf::Timestamp* st
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.JobStatus.state_start_time)
 }
 
+inline const JobStatus* JobStatus::internal_default_instance() {
+  return &JobStatus_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8848,28 +8978,26 @@ const int JobReference::kJobIdFieldNumber;
 
 JobReference::JobReference()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.JobReference)
 }
 
 void JobReference::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 JobReference::JobReference(const JobReference& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.JobReference)
 }
 
 void JobReference::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 JobReference::~JobReference() {
@@ -8880,8 +9008,6 @@ JobReference::~JobReference() {
 void JobReference::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void JobReference::SetCachedSize(int size) const {
@@ -8895,11 +9021,11 @@ const ::google::protobuf::Descriptor* JobReference::descriptor() {
 }
 
 const JobReference& JobReference::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-JobReference* JobReference::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<JobReference> JobReference_default_instance_;
 
 JobReference* JobReference::New(::google::protobuf::Arena* arena) const {
   JobReference* n = new JobReference;
@@ -9007,6 +9133,7 @@ void JobReference::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* JobReference::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.JobReference)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -9034,9 +9161,9 @@ void JobReference::SerializeWithCachedSizes(
   return target;
 }
 
-int JobReference::ByteSize() const {
+size_t JobReference::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.JobReference)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -9052,18 +9179,17 @@ int JobReference::ByteSize() const {
         this->job_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void JobReference::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.JobReference)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const JobReference* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const JobReference* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const JobReference>(
           &from);
   if (source == NULL) {
@@ -9071,15 +9197,21 @@ void JobReference::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.JobReference)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void JobReference::MergeFrom(const JobReference& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.JobReference)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void JobReference::UnsafeMergeFrom(const JobReference& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -9101,7 +9233,7 @@ void JobReference::CopyFrom(const JobReference& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.JobReference)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool JobReference::IsInitialized() const {
@@ -9135,37 +9267,37 @@ void JobReference::InternalSwap(JobReference* other) {
 void JobReference::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& JobReference::project_id() const {
+const ::std::string& JobReference::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.JobReference.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobReference::set_project_id(const ::std::string& value) {
+void JobReference::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.JobReference.project_id)
 }
- void JobReference::set_project_id(const char* value) {
+void JobReference::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.JobReference.project_id)
 }
- void JobReference::set_project_id(const char* value, size_t size) {
+void JobReference::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.JobReference.project_id)
 }
- ::std::string* JobReference::mutable_project_id() {
+::std::string* JobReference::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.JobReference.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* JobReference::release_project_id() {
+::std::string* JobReference::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.JobReference.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobReference::set_allocated_project_id(::std::string* project_id) {
+void JobReference::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -9179,37 +9311,37 @@ void JobReference::clear_project_id() {
 void JobReference::clear_job_id() {
   job_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& JobReference::job_id() const {
+const ::std::string& JobReference::job_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.JobReference.job_id)
   return job_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobReference::set_job_id(const ::std::string& value) {
+void JobReference::set_job_id(const ::std::string& value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.JobReference.job_id)
 }
- void JobReference::set_job_id(const char* value) {
+void JobReference::set_job_id(const char* value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.JobReference.job_id)
 }
- void JobReference::set_job_id(const char* value, size_t size) {
+void JobReference::set_job_id(const char* value, size_t size) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.JobReference.job_id)
 }
- ::std::string* JobReference::mutable_job_id() {
+::std::string* JobReference::mutable_job_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.JobReference.job_id)
   return job_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* JobReference::release_job_id() {
+::std::string* JobReference::release_job_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.JobReference.job_id)
   
   return job_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void JobReference::set_allocated_job_id(::std::string* job_id) {
+void JobReference::set_allocated_job_id(::std::string* job_id) {
   if (job_id != NULL) {
     
   } else {
@@ -9219,6 +9351,9 @@ void JobReference::clear_job_id() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.JobReference.job_id)
 }
 
+inline const JobReference* JobReference::internal_default_instance() {
+  return &JobReference_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9240,41 +9375,48 @@ const int Job::kDriverControlFilesUriFieldNumber;
 
 Job::Job()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.Job)
 }
 
 void Job::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  reference_ = const_cast< ::google::cloud::dataproc::v1::JobReference*>(&::google::cloud::dataproc::v1::JobReference::default_instance());
-  placement_ = const_cast< ::google::cloud::dataproc::v1::JobPlacement*>(&::google::cloud::dataproc::v1::JobPlacement::default_instance());
-  Job_default_oneof_instance_->hadoop_job_ = const_cast< ::google::cloud::dataproc::v1::HadoopJob*>(&::google::cloud::dataproc::v1::HadoopJob::default_instance());
-  Job_default_oneof_instance_->spark_job_ = const_cast< ::google::cloud::dataproc::v1::SparkJob*>(&::google::cloud::dataproc::v1::SparkJob::default_instance());
-  Job_default_oneof_instance_->pyspark_job_ = const_cast< ::google::cloud::dataproc::v1::PySparkJob*>(&::google::cloud::dataproc::v1::PySparkJob::default_instance());
-  Job_default_oneof_instance_->hive_job_ = const_cast< ::google::cloud::dataproc::v1::HiveJob*>(&::google::cloud::dataproc::v1::HiveJob::default_instance());
-  Job_default_oneof_instance_->pig_job_ = const_cast< ::google::cloud::dataproc::v1::PigJob*>(&::google::cloud::dataproc::v1::PigJob::default_instance());
-  Job_default_oneof_instance_->spark_sql_job_ = const_cast< ::google::cloud::dataproc::v1::SparkSqlJob*>(&::google::cloud::dataproc::v1::SparkSqlJob::default_instance());
-  status_ = const_cast< ::google::cloud::dataproc::v1::JobStatus*>(&::google::cloud::dataproc::v1::JobStatus::default_instance());
+  reference_ = const_cast< ::google::cloud::dataproc::v1::JobReference*>(
+      ::google::cloud::dataproc::v1::JobReference::internal_default_instance());
+  placement_ = const_cast< ::google::cloud::dataproc::v1::JobPlacement*>(
+      ::google::cloud::dataproc::v1::JobPlacement::internal_default_instance());
+  Job_default_oneof_instance_->hadoop_job_ = const_cast< ::google::cloud::dataproc::v1::HadoopJob*>(
+      ::google::cloud::dataproc::v1::HadoopJob::internal_default_instance());
+  Job_default_oneof_instance_->spark_job_ = const_cast< ::google::cloud::dataproc::v1::SparkJob*>(
+      ::google::cloud::dataproc::v1::SparkJob::internal_default_instance());
+  Job_default_oneof_instance_->pyspark_job_ = const_cast< ::google::cloud::dataproc::v1::PySparkJob*>(
+      ::google::cloud::dataproc::v1::PySparkJob::internal_default_instance());
+  Job_default_oneof_instance_->hive_job_ = const_cast< ::google::cloud::dataproc::v1::HiveJob*>(
+      ::google::cloud::dataproc::v1::HiveJob::internal_default_instance());
+  Job_default_oneof_instance_->pig_job_ = const_cast< ::google::cloud::dataproc::v1::PigJob*>(
+      ::google::cloud::dataproc::v1::PigJob::internal_default_instance());
+  Job_default_oneof_instance_->spark_sql_job_ = const_cast< ::google::cloud::dataproc::v1::SparkSqlJob*>(
+      ::google::cloud::dataproc::v1::SparkSqlJob::internal_default_instance());
+  status_ = const_cast< ::google::cloud::dataproc::v1::JobStatus*>(
+      ::google::cloud::dataproc::v1::JobStatus::internal_default_instance());
 }
 
 Job::Job(const Job& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.Job)
 }
 
 void Job::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
+  driver_output_resource_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  driver_control_files_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   reference_ = NULL;
   placement_ = NULL;
   status_ = NULL;
-  driver_output_resource_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  driver_control_files_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_type_job();
+  _cached_size_ = 0;
 }
 
 Job::~Job() {
@@ -9288,7 +9430,7 @@ void Job::SharedDtor() {
   if (has_type_job()) {
     clear_type_job();
   }
-  if (this != default_instance_) {
+  if (this != &Job_default_instance_.get()) {
     delete reference_;
     delete placement_;
     delete status_;
@@ -9306,11 +9448,11 @@ const ::google::protobuf::Descriptor* Job::descriptor() {
 }
 
 const Job& Job::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-Job* Job::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Job> Job_default_instance_;
 
 Job* Job::New(::google::protobuf::Arena* arena) const {
   Job* n = new Job;
@@ -9322,7 +9464,7 @@ Job* Job::New(::google::protobuf::Arena* arena) const {
 
 void Job::clear_type_job() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.dataproc.v1.Job)
-  switch(type_job_case()) {
+  switch (type_job_case()) {
     case kHadoopJob: {
       delete type_job_.hadoop_job_;
       break;
@@ -9413,40 +9555,37 @@ bool Job::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(34)) goto parse_spark_job;
+        goto after_pig_job;
         break;
       }
 
       // optional .google.cloud.dataproc.v1.SparkJob spark_job = 4;
       case 4: {
         if (tag == 34) {
-         parse_spark_job:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_spark_job()));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(42)) goto parse_pyspark_job;
+        goto after_pig_job;
         break;
       }
 
       // optional .google.cloud.dataproc.v1.PySparkJob pyspark_job = 5;
       case 5: {
         if (tag == 42) {
-         parse_pyspark_job:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_pyspark_job()));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(50)) goto parse_hive_job;
+        goto after_pig_job;
         break;
       }
 
       // optional .google.cloud.dataproc.v1.HiveJob hive_job = 6;
       case 6: {
         if (tag == 50) {
-         parse_hive_job:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_hive_job()));
         } else {
@@ -9465,6 +9604,7 @@ bool Job::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_pig_job:
         if (input->ExpectTag(66)) goto parse_status;
         break;
       }
@@ -9655,6 +9795,7 @@ void Job::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Job::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.Job)
   // optional .google.cloud.dataproc.v1.JobReference reference = 1;
   if (this->has_reference()) {
@@ -9752,9 +9893,9 @@ void Job::SerializeWithCachedSizes(
   return target;
 }
 
-int Job::ByteSize() const {
+size_t Job::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.Job)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.dataproc.v1.JobReference reference = 1;
   if (this->has_reference()) {
@@ -9792,11 +9933,14 @@ int Job::ByteSize() const {
   }
 
   // repeated .google.cloud.dataproc.v1.JobStatus status_history = 13;
-  total_size += 1 * this->status_history_size();
-  for (int i = 0; i < this->status_history_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->status_history(i));
+  {
+    unsigned int count = this->status_history_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->status_history(i));
+    }
   }
 
   switch (type_job_case()) {
@@ -9846,18 +9990,17 @@ int Job::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Job::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.Job)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Job* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Job* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Job>(
           &from);
   if (source == NULL) {
@@ -9865,15 +10008,21 @@ void Job::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.Job)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Job::MergeFrom(const Job& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.Job)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Job::UnsafeMergeFrom(const Job& from) {
+  GOOGLE_DCHECK(&from != this);
   status_history_.MergeFrom(from.status_history_);
   switch (from.type_job_case()) {
     case kHadoopJob: {
@@ -9934,7 +10083,7 @@ void Job::CopyFrom(const Job& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.Job)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Job::IsInitialized() const {
@@ -9972,7 +10121,7 @@ void Job::InternalSwap(Job* other) {
 
 // optional .google.cloud.dataproc.v1.JobReference reference = 1;
 bool Job::has_reference() const {
-  return !_is_default_instance_ && reference_ != NULL;
+  return this != internal_default_instance() && reference_ != NULL;
 }
 void Job::clear_reference() {
   if (GetArenaNoVirtual() == NULL && reference_ != NULL) delete reference_;
@@ -9980,7 +10129,8 @@ void Job::clear_reference() {
 }
 const ::google::cloud::dataproc::v1::JobReference& Job::reference() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Job.reference)
-  return reference_ != NULL ? *reference_ : *default_instance_->reference_;
+  return reference_ != NULL ? *reference_
+                         : *::google::cloud::dataproc::v1::JobReference::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::JobReference* Job::mutable_reference() {
   
@@ -10010,7 +10160,7 @@ void Job::set_allocated_reference(::google::cloud::dataproc::v1::JobReference* r
 
 // optional .google.cloud.dataproc.v1.JobPlacement placement = 2;
 bool Job::has_placement() const {
-  return !_is_default_instance_ && placement_ != NULL;
+  return this != internal_default_instance() && placement_ != NULL;
 }
 void Job::clear_placement() {
   if (GetArenaNoVirtual() == NULL && placement_ != NULL) delete placement_;
@@ -10018,7 +10168,8 @@ void Job::clear_placement() {
 }
 const ::google::cloud::dataproc::v1::JobPlacement& Job::placement() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Job.placement)
-  return placement_ != NULL ? *placement_ : *default_instance_->placement_;
+  return placement_ != NULL ? *placement_
+                         : *::google::cloud::dataproc::v1::JobPlacement::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::JobPlacement* Job::mutable_placement() {
   
@@ -10336,7 +10487,7 @@ void Job::set_allocated_spark_sql_job(::google::cloud::dataproc::v1::SparkSqlJob
 
 // optional .google.cloud.dataproc.v1.JobStatus status = 8;
 bool Job::has_status() const {
-  return !_is_default_instance_ && status_ != NULL;
+  return this != internal_default_instance() && status_ != NULL;
 }
 void Job::clear_status() {
   if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
@@ -10344,7 +10495,8 @@ void Job::clear_status() {
 }
 const ::google::cloud::dataproc::v1::JobStatus& Job::status() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Job.status)
-  return status_ != NULL ? *status_ : *default_instance_->status_;
+  return status_ != NULL ? *status_
+                         : *::google::cloud::dataproc::v1::JobStatus::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::JobStatus* Job::mutable_status() {
   
@@ -10406,37 +10558,37 @@ Job::status_history() const {
 void Job::clear_driver_output_resource_uri() {
   driver_output_resource_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Job::driver_output_resource_uri() const {
+const ::std::string& Job::driver_output_resource_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Job.driver_output_resource_uri)
   return driver_output_resource_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Job::set_driver_output_resource_uri(const ::std::string& value) {
+void Job::set_driver_output_resource_uri(const ::std::string& value) {
   
   driver_output_resource_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.Job.driver_output_resource_uri)
 }
- void Job::set_driver_output_resource_uri(const char* value) {
+void Job::set_driver_output_resource_uri(const char* value) {
   
   driver_output_resource_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.Job.driver_output_resource_uri)
 }
- void Job::set_driver_output_resource_uri(const char* value, size_t size) {
+void Job::set_driver_output_resource_uri(const char* value, size_t size) {
   
   driver_output_resource_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.Job.driver_output_resource_uri)
 }
- ::std::string* Job::mutable_driver_output_resource_uri() {
+::std::string* Job::mutable_driver_output_resource_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.Job.driver_output_resource_uri)
   return driver_output_resource_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Job::release_driver_output_resource_uri() {
+::std::string* Job::release_driver_output_resource_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.Job.driver_output_resource_uri)
   
   return driver_output_resource_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Job::set_allocated_driver_output_resource_uri(::std::string* driver_output_resource_uri) {
+void Job::set_allocated_driver_output_resource_uri(::std::string* driver_output_resource_uri) {
   if (driver_output_resource_uri != NULL) {
     
   } else {
@@ -10450,37 +10602,37 @@ void Job::clear_driver_output_resource_uri() {
 void Job::clear_driver_control_files_uri() {
   driver_control_files_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Job::driver_control_files_uri() const {
+const ::std::string& Job::driver_control_files_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Job.driver_control_files_uri)
   return driver_control_files_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Job::set_driver_control_files_uri(const ::std::string& value) {
+void Job::set_driver_control_files_uri(const ::std::string& value) {
   
   driver_control_files_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.Job.driver_control_files_uri)
 }
- void Job::set_driver_control_files_uri(const char* value) {
+void Job::set_driver_control_files_uri(const char* value) {
   
   driver_control_files_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.Job.driver_control_files_uri)
 }
- void Job::set_driver_control_files_uri(const char* value, size_t size) {
+void Job::set_driver_control_files_uri(const char* value, size_t size) {
   
   driver_control_files_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.Job.driver_control_files_uri)
 }
- ::std::string* Job::mutable_driver_control_files_uri() {
+::std::string* Job::mutable_driver_control_files_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.Job.driver_control_files_uri)
   return driver_control_files_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Job::release_driver_control_files_uri() {
+::std::string* Job::release_driver_control_files_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.Job.driver_control_files_uri)
   
   return driver_control_files_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Job::set_allocated_driver_control_files_uri(::std::string* driver_control_files_uri) {
+void Job::set_allocated_driver_control_files_uri(::std::string* driver_control_files_uri) {
   if (driver_control_files_uri != NULL) {
     
   } else {
@@ -10499,6 +10651,9 @@ void Job::clear_has_type_job() {
 Job::TypeJobCase Job::type_job_case() const {
   return Job::TypeJobCase(_oneof_case_[0]);
 }
+inline const Job* Job::internal_default_instance() {
+  return &Job_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -10511,30 +10666,29 @@ const int SubmitJobRequest::kJobFieldNumber;
 
 SubmitJobRequest::SubmitJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.SubmitJobRequest)
 }
 
 void SubmitJobRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  job_ = const_cast< ::google::cloud::dataproc::v1::Job*>(&::google::cloud::dataproc::v1::Job::default_instance());
+  job_ = const_cast< ::google::cloud::dataproc::v1::Job*>(
+      ::google::cloud::dataproc::v1::Job::internal_default_instance());
 }
 
 SubmitJobRequest::SubmitJobRequest(const SubmitJobRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.SubmitJobRequest)
 }
 
 void SubmitJobRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_ = NULL;
+  _cached_size_ = 0;
 }
 
 SubmitJobRequest::~SubmitJobRequest() {
@@ -10545,7 +10699,7 @@ SubmitJobRequest::~SubmitJobRequest() {
 void SubmitJobRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &SubmitJobRequest_default_instance_.get()) {
     delete job_;
   }
 }
@@ -10561,11 +10715,11 @@ const ::google::protobuf::Descriptor* SubmitJobRequest::descriptor() {
 }
 
 const SubmitJobRequest& SubmitJobRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-SubmitJobRequest* SubmitJobRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SubmitJobRequest> SubmitJobRequest_default_instance_;
 
 SubmitJobRequest* SubmitJobRequest::New(::google::protobuf::Arena* arena) const {
   SubmitJobRequest* n = new SubmitJobRequest;
@@ -10694,6 +10848,7 @@ void SubmitJobRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SubmitJobRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.SubmitJobRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -10728,9 +10883,9 @@ void SubmitJobRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int SubmitJobRequest::ByteSize() const {
+size_t SubmitJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.SubmitJobRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -10753,18 +10908,17 @@ int SubmitJobRequest::ByteSize() const {
         *this->job_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SubmitJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.SubmitJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SubmitJobRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SubmitJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SubmitJobRequest>(
           &from);
   if (source == NULL) {
@@ -10772,15 +10926,21 @@ void SubmitJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.SubmitJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SubmitJobRequest::MergeFrom(const SubmitJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.SubmitJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SubmitJobRequest::UnsafeMergeFrom(const SubmitJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -10805,7 +10965,7 @@ void SubmitJobRequest::CopyFrom(const SubmitJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.SubmitJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SubmitJobRequest::IsInitialized() const {
@@ -10840,37 +11000,37 @@ void SubmitJobRequest::InternalSwap(SubmitJobRequest* other) {
 void SubmitJobRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SubmitJobRequest::project_id() const {
+const ::std::string& SubmitJobRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SubmitJobRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SubmitJobRequest::set_project_id(const ::std::string& value) {
+void SubmitJobRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SubmitJobRequest.project_id)
 }
- void SubmitJobRequest::set_project_id(const char* value) {
+void SubmitJobRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SubmitJobRequest.project_id)
 }
- void SubmitJobRequest::set_project_id(const char* value, size_t size) {
+void SubmitJobRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SubmitJobRequest.project_id)
 }
- ::std::string* SubmitJobRequest::mutable_project_id() {
+::std::string* SubmitJobRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SubmitJobRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SubmitJobRequest::release_project_id() {
+::std::string* SubmitJobRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.SubmitJobRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SubmitJobRequest::set_allocated_project_id(::std::string* project_id) {
+void SubmitJobRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -10884,37 +11044,37 @@ void SubmitJobRequest::clear_project_id() {
 void SubmitJobRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SubmitJobRequest::region() const {
+const ::std::string& SubmitJobRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SubmitJobRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SubmitJobRequest::set_region(const ::std::string& value) {
+void SubmitJobRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.SubmitJobRequest.region)
 }
- void SubmitJobRequest::set_region(const char* value) {
+void SubmitJobRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.SubmitJobRequest.region)
 }
- void SubmitJobRequest::set_region(const char* value, size_t size) {
+void SubmitJobRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.SubmitJobRequest.region)
 }
- ::std::string* SubmitJobRequest::mutable_region() {
+::std::string* SubmitJobRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.SubmitJobRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SubmitJobRequest::release_region() {
+::std::string* SubmitJobRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.SubmitJobRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SubmitJobRequest::set_allocated_region(::std::string* region) {
+void SubmitJobRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -10926,7 +11086,7 @@ void SubmitJobRequest::clear_region() {
 
 // optional .google.cloud.dataproc.v1.Job job = 2;
 bool SubmitJobRequest::has_job() const {
-  return !_is_default_instance_ && job_ != NULL;
+  return this != internal_default_instance() && job_ != NULL;
 }
 void SubmitJobRequest::clear_job() {
   if (GetArenaNoVirtual() == NULL && job_ != NULL) delete job_;
@@ -10934,7 +11094,8 @@ void SubmitJobRequest::clear_job() {
 }
 const ::google::cloud::dataproc::v1::Job& SubmitJobRequest::job() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SubmitJobRequest.job)
-  return job_ != NULL ? *job_ : *default_instance_->job_;
+  return job_ != NULL ? *job_
+                         : *::google::cloud::dataproc::v1::Job::internal_default_instance();
 }
 ::google::cloud::dataproc::v1::Job* SubmitJobRequest::mutable_job() {
   
@@ -10962,6 +11123,9 @@ void SubmitJobRequest::set_allocated_job(::google::cloud::dataproc::v1::Job* job
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.SubmitJobRequest.job)
 }
 
+inline const SubmitJobRequest* SubmitJobRequest::internal_default_instance() {
+  return &SubmitJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -10974,29 +11138,27 @@ const int GetJobRequest::kJobIdFieldNumber;
 
 GetJobRequest::GetJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.GetJobRequest)
 }
 
 void GetJobRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetJobRequest::GetJobRequest(const GetJobRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.GetJobRequest)
 }
 
 void GetJobRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetJobRequest::~GetJobRequest() {
@@ -11008,8 +11170,6 @@ void GetJobRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetJobRequest::SetCachedSize(int size) const {
@@ -11023,11 +11183,11 @@ const ::google::protobuf::Descriptor* GetJobRequest::descriptor() {
 }
 
 const GetJobRequest& GetJobRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-GetJobRequest* GetJobRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetJobRequest> GetJobRequest_default_instance_;
 
 GetJobRequest* GetJobRequest::New(::google::protobuf::Arena* arena) const {
   GetJobRequest* n = new GetJobRequest;
@@ -11163,6 +11323,7 @@ void GetJobRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetJobRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.GetJobRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -11201,9 +11362,9 @@ void GetJobRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetJobRequest::ByteSize() const {
+size_t GetJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.GetJobRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -11226,18 +11387,17 @@ int GetJobRequest::ByteSize() const {
         this->job_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.GetJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetJobRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetJobRequest>(
           &from);
   if (source == NULL) {
@@ -11245,15 +11405,21 @@ void GetJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.GetJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetJobRequest::MergeFrom(const GetJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.GetJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetJobRequest::UnsafeMergeFrom(const GetJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -11279,7 +11445,7 @@ void GetJobRequest::CopyFrom(const GetJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.GetJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetJobRequest::IsInitialized() const {
@@ -11314,37 +11480,37 @@ void GetJobRequest::InternalSwap(GetJobRequest* other) {
 void GetJobRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetJobRequest::project_id() const {
+const ::std::string& GetJobRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetJobRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetJobRequest::set_project_id(const ::std::string& value) {
+void GetJobRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GetJobRequest.project_id)
 }
- void GetJobRequest::set_project_id(const char* value) {
+void GetJobRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GetJobRequest.project_id)
 }
- void GetJobRequest::set_project_id(const char* value, size_t size) {
+void GetJobRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GetJobRequest.project_id)
 }
- ::std::string* GetJobRequest::mutable_project_id() {
+::std::string* GetJobRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GetJobRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetJobRequest::release_project_id() {
+::std::string* GetJobRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GetJobRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetJobRequest::set_allocated_project_id(::std::string* project_id) {
+void GetJobRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -11358,37 +11524,37 @@ void GetJobRequest::clear_project_id() {
 void GetJobRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetJobRequest::region() const {
+const ::std::string& GetJobRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetJobRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetJobRequest::set_region(const ::std::string& value) {
+void GetJobRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GetJobRequest.region)
 }
- void GetJobRequest::set_region(const char* value) {
+void GetJobRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GetJobRequest.region)
 }
- void GetJobRequest::set_region(const char* value, size_t size) {
+void GetJobRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GetJobRequest.region)
 }
- ::std::string* GetJobRequest::mutable_region() {
+::std::string* GetJobRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GetJobRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetJobRequest::release_region() {
+::std::string* GetJobRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GetJobRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetJobRequest::set_allocated_region(::std::string* region) {
+void GetJobRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -11402,37 +11568,37 @@ void GetJobRequest::clear_region() {
 void GetJobRequest::clear_job_id() {
   job_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetJobRequest::job_id() const {
+const ::std::string& GetJobRequest::job_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetJobRequest.job_id)
   return job_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetJobRequest::set_job_id(const ::std::string& value) {
+void GetJobRequest::set_job_id(const ::std::string& value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.GetJobRequest.job_id)
 }
- void GetJobRequest::set_job_id(const char* value) {
+void GetJobRequest::set_job_id(const char* value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.GetJobRequest.job_id)
 }
- void GetJobRequest::set_job_id(const char* value, size_t size) {
+void GetJobRequest::set_job_id(const char* value, size_t size) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.GetJobRequest.job_id)
 }
- ::std::string* GetJobRequest::mutable_job_id() {
+::std::string* GetJobRequest::mutable_job_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.GetJobRequest.job_id)
   return job_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetJobRequest::release_job_id() {
+::std::string* GetJobRequest::release_job_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.GetJobRequest.job_id)
   
   return job_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetJobRequest::set_allocated_job_id(::std::string* job_id) {
+void GetJobRequest::set_allocated_job_id(::std::string* job_id) {
   if (job_id != NULL) {
     
   } else {
@@ -11442,6 +11608,9 @@ void GetJobRequest::clear_job_id() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GetJobRequest.job_id)
 }
 
+inline const GetJobRequest* GetJobRequest::internal_default_instance() {
+  return &GetJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -11451,7 +11620,7 @@ const ::google::protobuf::EnumDescriptor* ListJobsRequest_JobStateMatcher_descri
   return ListJobsRequest_JobStateMatcher_descriptor_;
 }
 bool ListJobsRequest_JobStateMatcher_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -11480,32 +11649,30 @@ const int ListJobsRequest::kJobStateMatcherFieldNumber;
 
 ListJobsRequest::ListJobsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ListJobsRequest)
 }
 
 void ListJobsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListJobsRequest::ListJobsRequest(const ListJobsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ListJobsRequest)
 }
 
 void ListJobsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  job_state_matcher_ = 0;
+  ::memset(&page_size_, 0, reinterpret_cast<char*>(&job_state_matcher_) -
+    reinterpret_cast<char*>(&page_size_) + sizeof(job_state_matcher_));
+  _cached_size_ = 0;
 }
 
 ListJobsRequest::~ListJobsRequest() {
@@ -11518,8 +11685,6 @@ void ListJobsRequest::SharedDtor() {
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListJobsRequest::SetCachedSize(int size) const {
@@ -11533,11 +11698,11 @@ const ::google::protobuf::Descriptor* ListJobsRequest::descriptor() {
 }
 
 const ListJobsRequest& ListJobsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-ListJobsRequest* ListJobsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListJobsRequest> ListJobsRequest_default_instance_;
 
 ListJobsRequest* ListJobsRequest::New(::google::protobuf::Arena* arena) const {
   ListJobsRequest* n = new ListJobsRequest;
@@ -11561,7 +11726,7 @@ void ListJobsRequest::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -11606,10 +11771,10 @@ bool ListJobsRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -11764,6 +11929,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListJobsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ListJobsRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -11824,9 +11990,9 @@ void ListJobsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListJobsRequest::ByteSize() const {
+size_t ListJobsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ListJobsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -11869,18 +12035,17 @@ int ListJobsRequest::ByteSize() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->job_state_matcher());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListJobsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ListJobsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListJobsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListJobsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListJobsRequest>(
           &from);
   if (source == NULL) {
@@ -11888,15 +12053,21 @@ void ListJobsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ListJobsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListJobsRequest::MergeFrom(const ListJobsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ListJobsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListJobsRequest::UnsafeMergeFrom(const ListJobsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -11932,7 +12103,7 @@ void ListJobsRequest::CopyFrom(const ListJobsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ListJobsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListJobsRequest::IsInitialized() const {
@@ -11970,37 +12141,37 @@ void ListJobsRequest::InternalSwap(ListJobsRequest* other) {
 void ListJobsRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListJobsRequest::project_id() const {
+const ::std::string& ListJobsRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListJobsRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_project_id(const ::std::string& value) {
+void ListJobsRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListJobsRequest.project_id)
 }
- void ListJobsRequest::set_project_id(const char* value) {
+void ListJobsRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListJobsRequest.project_id)
 }
- void ListJobsRequest::set_project_id(const char* value, size_t size) {
+void ListJobsRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListJobsRequest.project_id)
 }
- ::std::string* ListJobsRequest::mutable_project_id() {
+::std::string* ListJobsRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListJobsRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListJobsRequest::release_project_id() {
+::std::string* ListJobsRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListJobsRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_allocated_project_id(::std::string* project_id) {
+void ListJobsRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -12014,37 +12185,37 @@ void ListJobsRequest::clear_project_id() {
 void ListJobsRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListJobsRequest::region() const {
+const ::std::string& ListJobsRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListJobsRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_region(const ::std::string& value) {
+void ListJobsRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListJobsRequest.region)
 }
- void ListJobsRequest::set_region(const char* value) {
+void ListJobsRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListJobsRequest.region)
 }
- void ListJobsRequest::set_region(const char* value, size_t size) {
+void ListJobsRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListJobsRequest.region)
 }
- ::std::string* ListJobsRequest::mutable_region() {
+::std::string* ListJobsRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListJobsRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListJobsRequest::release_region() {
+::std::string* ListJobsRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListJobsRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_allocated_region(::std::string* region) {
+void ListJobsRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -12058,11 +12229,11 @@ void ListJobsRequest::clear_region() {
 void ListJobsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListJobsRequest::page_size() const {
+::google::protobuf::int32 ListJobsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListJobsRequest.page_size)
   return page_size_;
 }
- void ListJobsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListJobsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListJobsRequest.page_size)
@@ -12072,37 +12243,37 @@ void ListJobsRequest::clear_page_size() {
 void ListJobsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListJobsRequest::page_token() const {
+const ::std::string& ListJobsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListJobsRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_page_token(const ::std::string& value) {
+void ListJobsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListJobsRequest.page_token)
 }
- void ListJobsRequest::set_page_token(const char* value) {
+void ListJobsRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListJobsRequest.page_token)
 }
- void ListJobsRequest::set_page_token(const char* value, size_t size) {
+void ListJobsRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListJobsRequest.page_token)
 }
- ::std::string* ListJobsRequest::mutable_page_token() {
+::std::string* ListJobsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListJobsRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListJobsRequest::release_page_token() {
+::std::string* ListJobsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListJobsRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListJobsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -12116,37 +12287,37 @@ void ListJobsRequest::clear_page_token() {
 void ListJobsRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListJobsRequest::cluster_name() const {
+const ::std::string& ListJobsRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListJobsRequest.cluster_name)
   return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_cluster_name(const ::std::string& value) {
+void ListJobsRequest::set_cluster_name(const ::std::string& value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListJobsRequest.cluster_name)
 }
- void ListJobsRequest::set_cluster_name(const char* value) {
+void ListJobsRequest::set_cluster_name(const char* value) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListJobsRequest.cluster_name)
 }
- void ListJobsRequest::set_cluster_name(const char* value, size_t size) {
+void ListJobsRequest::set_cluster_name(const char* value, size_t size) {
   
   cluster_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListJobsRequest.cluster_name)
 }
- ::std::string* ListJobsRequest::mutable_cluster_name() {
+::std::string* ListJobsRequest::mutable_cluster_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListJobsRequest.cluster_name)
   return cluster_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListJobsRequest::release_cluster_name() {
+::std::string* ListJobsRequest::release_cluster_name() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListJobsRequest.cluster_name)
   
   return cluster_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsRequest::set_allocated_cluster_name(::std::string* cluster_name) {
+void ListJobsRequest::set_allocated_cluster_name(::std::string* cluster_name) {
   if (cluster_name != NULL) {
     
   } else {
@@ -12160,16 +12331,19 @@ void ListJobsRequest::clear_cluster_name() {
 void ListJobsRequest::clear_job_state_matcher() {
   job_state_matcher_ = 0;
 }
- ::google::cloud::dataproc::v1::ListJobsRequest_JobStateMatcher ListJobsRequest::job_state_matcher() const {
+::google::cloud::dataproc::v1::ListJobsRequest_JobStateMatcher ListJobsRequest::job_state_matcher() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListJobsRequest.job_state_matcher)
   return static_cast< ::google::cloud::dataproc::v1::ListJobsRequest_JobStateMatcher >(job_state_matcher_);
 }
- void ListJobsRequest::set_job_state_matcher(::google::cloud::dataproc::v1::ListJobsRequest_JobStateMatcher value) {
+void ListJobsRequest::set_job_state_matcher(::google::cloud::dataproc::v1::ListJobsRequest_JobStateMatcher value) {
   
   job_state_matcher_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListJobsRequest.job_state_matcher)
 }
 
+inline const ListJobsRequest* ListJobsRequest::internal_default_instance() {
+  return &ListJobsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -12181,27 +12355,25 @@ const int ListJobsResponse::kNextPageTokenFieldNumber;
 
 ListJobsResponse::ListJobsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ListJobsResponse)
 }
 
 void ListJobsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListJobsResponse::ListJobsResponse(const ListJobsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ListJobsResponse)
 }
 
 void ListJobsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListJobsResponse::~ListJobsResponse() {
@@ -12211,8 +12383,6 @@ ListJobsResponse::~ListJobsResponse() {
 
 void ListJobsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListJobsResponse::SetCachedSize(int size) const {
@@ -12226,11 +12396,11 @@ const ::google::protobuf::Descriptor* ListJobsResponse::descriptor() {
 }
 
 const ListJobsResponse& ListJobsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-ListJobsResponse* ListJobsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListJobsResponse> ListJobsResponse_default_instance_;
 
 ListJobsResponse* ListJobsResponse::New(::google::protobuf::Arena* arena) const {
   ListJobsResponse* n = new ListJobsResponse;
@@ -12334,6 +12504,7 @@ void ListJobsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListJobsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ListJobsResponse)
   // repeated .google.cloud.dataproc.v1.Job jobs = 1;
   for (unsigned int i = 0, n = this->jobs_size(); i < n; i++) {
@@ -12357,9 +12528,9 @@ void ListJobsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListJobsResponse::ByteSize() const {
+size_t ListJobsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ListJobsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -12369,25 +12540,27 @@ int ListJobsResponse::ByteSize() const {
   }
 
   // repeated .google.cloud.dataproc.v1.Job jobs = 1;
-  total_size += 1 * this->jobs_size();
-  for (int i = 0; i < this->jobs_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->jobs(i));
+  {
+    unsigned int count = this->jobs_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->jobs(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListJobsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ListJobsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListJobsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListJobsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListJobsResponse>(
           &from);
   if (source == NULL) {
@@ -12395,15 +12568,21 @@ void ListJobsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ListJobsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListJobsResponse::MergeFrom(const ListJobsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ListJobsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListJobsResponse::UnsafeMergeFrom(const ListJobsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   jobs_.MergeFrom(from.jobs_);
   if (from.next_page_token().size() > 0) {
 
@@ -12422,7 +12601,7 @@ void ListJobsResponse::CopyFrom(const ListJobsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ListJobsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListJobsResponse::IsInitialized() const {
@@ -12486,37 +12665,37 @@ ListJobsResponse::jobs() const {
 void ListJobsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListJobsResponse::next_page_token() const {
+const ::std::string& ListJobsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListJobsResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsResponse::set_next_page_token(const ::std::string& value) {
+void ListJobsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListJobsResponse.next_page_token)
 }
- void ListJobsResponse::set_next_page_token(const char* value) {
+void ListJobsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.ListJobsResponse.next_page_token)
 }
- void ListJobsResponse::set_next_page_token(const char* value, size_t size) {
+void ListJobsResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.ListJobsResponse.next_page_token)
 }
- ::std::string* ListJobsResponse::mutable_next_page_token() {
+::std::string* ListJobsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.ListJobsResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListJobsResponse::release_next_page_token() {
+::std::string* ListJobsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.ListJobsResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListJobsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListJobsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -12526,6 +12705,9 @@ void ListJobsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ListJobsResponse.next_page_token)
 }
 
+inline const ListJobsResponse* ListJobsResponse::internal_default_instance() {
+  return &ListJobsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -12538,29 +12720,27 @@ const int CancelJobRequest::kJobIdFieldNumber;
 
 CancelJobRequest::CancelJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.CancelJobRequest)
 }
 
 void CancelJobRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 CancelJobRequest::CancelJobRequest(const CancelJobRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.CancelJobRequest)
 }
 
 void CancelJobRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 CancelJobRequest::~CancelJobRequest() {
@@ -12572,8 +12752,6 @@ void CancelJobRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void CancelJobRequest::SetCachedSize(int size) const {
@@ -12587,11 +12765,11 @@ const ::google::protobuf::Descriptor* CancelJobRequest::descriptor() {
 }
 
 const CancelJobRequest& CancelJobRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-CancelJobRequest* CancelJobRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CancelJobRequest> CancelJobRequest_default_instance_;
 
 CancelJobRequest* CancelJobRequest::New(::google::protobuf::Arena* arena) const {
   CancelJobRequest* n = new CancelJobRequest;
@@ -12727,6 +12905,7 @@ void CancelJobRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CancelJobRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.CancelJobRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -12765,9 +12944,9 @@ void CancelJobRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CancelJobRequest::ByteSize() const {
+size_t CancelJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.CancelJobRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -12790,18 +12969,17 @@ int CancelJobRequest::ByteSize() const {
         this->job_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CancelJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.CancelJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CancelJobRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CancelJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CancelJobRequest>(
           &from);
   if (source == NULL) {
@@ -12809,15 +12987,21 @@ void CancelJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.CancelJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CancelJobRequest::MergeFrom(const CancelJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.CancelJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CancelJobRequest::UnsafeMergeFrom(const CancelJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -12843,7 +13027,7 @@ void CancelJobRequest::CopyFrom(const CancelJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.CancelJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CancelJobRequest::IsInitialized() const {
@@ -12878,37 +13062,37 @@ void CancelJobRequest::InternalSwap(CancelJobRequest* other) {
 void CancelJobRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CancelJobRequest::project_id() const {
+const ::std::string& CancelJobRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CancelJobRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CancelJobRequest::set_project_id(const ::std::string& value) {
+void CancelJobRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.CancelJobRequest.project_id)
 }
- void CancelJobRequest::set_project_id(const char* value) {
+void CancelJobRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.CancelJobRequest.project_id)
 }
- void CancelJobRequest::set_project_id(const char* value, size_t size) {
+void CancelJobRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.CancelJobRequest.project_id)
 }
- ::std::string* CancelJobRequest::mutable_project_id() {
+::std::string* CancelJobRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.CancelJobRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CancelJobRequest::release_project_id() {
+::std::string* CancelJobRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.CancelJobRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CancelJobRequest::set_allocated_project_id(::std::string* project_id) {
+void CancelJobRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -12922,37 +13106,37 @@ void CancelJobRequest::clear_project_id() {
 void CancelJobRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CancelJobRequest::region() const {
+const ::std::string& CancelJobRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CancelJobRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CancelJobRequest::set_region(const ::std::string& value) {
+void CancelJobRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.CancelJobRequest.region)
 }
- void CancelJobRequest::set_region(const char* value) {
+void CancelJobRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.CancelJobRequest.region)
 }
- void CancelJobRequest::set_region(const char* value, size_t size) {
+void CancelJobRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.CancelJobRequest.region)
 }
- ::std::string* CancelJobRequest::mutable_region() {
+::std::string* CancelJobRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.CancelJobRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CancelJobRequest::release_region() {
+::std::string* CancelJobRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.CancelJobRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CancelJobRequest::set_allocated_region(::std::string* region) {
+void CancelJobRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -12966,37 +13150,37 @@ void CancelJobRequest::clear_region() {
 void CancelJobRequest::clear_job_id() {
   job_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CancelJobRequest::job_id() const {
+const ::std::string& CancelJobRequest::job_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CancelJobRequest.job_id)
   return job_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CancelJobRequest::set_job_id(const ::std::string& value) {
+void CancelJobRequest::set_job_id(const ::std::string& value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.CancelJobRequest.job_id)
 }
- void CancelJobRequest::set_job_id(const char* value) {
+void CancelJobRequest::set_job_id(const char* value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.CancelJobRequest.job_id)
 }
- void CancelJobRequest::set_job_id(const char* value, size_t size) {
+void CancelJobRequest::set_job_id(const char* value, size_t size) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.CancelJobRequest.job_id)
 }
- ::std::string* CancelJobRequest::mutable_job_id() {
+::std::string* CancelJobRequest::mutable_job_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.CancelJobRequest.job_id)
   return job_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CancelJobRequest::release_job_id() {
+::std::string* CancelJobRequest::release_job_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.CancelJobRequest.job_id)
   
   return job_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CancelJobRequest::set_allocated_job_id(::std::string* job_id) {
+void CancelJobRequest::set_allocated_job_id(::std::string* job_id) {
   if (job_id != NULL) {
     
   } else {
@@ -13006,6 +13190,9 @@ void CancelJobRequest::clear_job_id() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.CancelJobRequest.job_id)
 }
 
+inline const CancelJobRequest* CancelJobRequest::internal_default_instance() {
+  return &CancelJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -13018,29 +13205,27 @@ const int DeleteJobRequest::kJobIdFieldNumber;
 
 DeleteJobRequest::DeleteJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DeleteJobRequest)
 }
 
 void DeleteJobRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteJobRequest::DeleteJobRequest(const DeleteJobRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DeleteJobRequest)
 }
 
 void DeleteJobRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteJobRequest::~DeleteJobRequest() {
@@ -13052,8 +13237,6 @@ void DeleteJobRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   job_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DeleteJobRequest::SetCachedSize(int size) const {
@@ -13067,11 +13250,11 @@ const ::google::protobuf::Descriptor* DeleteJobRequest::descriptor() {
 }
 
 const DeleteJobRequest& DeleteJobRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fjobs_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteJobRequest* DeleteJobRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteJobRequest> DeleteJobRequest_default_instance_;
 
 DeleteJobRequest* DeleteJobRequest::New(::google::protobuf::Arena* arena) const {
   DeleteJobRequest* n = new DeleteJobRequest;
@@ -13207,6 +13390,7 @@ void DeleteJobRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteJobRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DeleteJobRequest)
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -13245,9 +13429,9 @@ void DeleteJobRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteJobRequest::ByteSize() const {
+size_t DeleteJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DeleteJobRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_id = 1;
   if (this->project_id().size() > 0) {
@@ -13270,18 +13454,17 @@ int DeleteJobRequest::ByteSize() const {
         this->job_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DeleteJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteJobRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteJobRequest>(
           &from);
   if (source == NULL) {
@@ -13289,15 +13472,21 @@ void DeleteJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DeleteJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteJobRequest::MergeFrom(const DeleteJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DeleteJobRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteJobRequest::UnsafeMergeFrom(const DeleteJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -13323,7 +13512,7 @@ void DeleteJobRequest::CopyFrom(const DeleteJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DeleteJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteJobRequest::IsInitialized() const {
@@ -13358,37 +13547,37 @@ void DeleteJobRequest::InternalSwap(DeleteJobRequest* other) {
 void DeleteJobRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteJobRequest::project_id() const {
+const ::std::string& DeleteJobRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteJobRequest.project_id)
   return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteJobRequest::set_project_id(const ::std::string& value) {
+void DeleteJobRequest::set_project_id(const ::std::string& value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DeleteJobRequest.project_id)
 }
- void DeleteJobRequest::set_project_id(const char* value) {
+void DeleteJobRequest::set_project_id(const char* value) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DeleteJobRequest.project_id)
 }
- void DeleteJobRequest::set_project_id(const char* value, size_t size) {
+void DeleteJobRequest::set_project_id(const char* value, size_t size) {
   
   project_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DeleteJobRequest.project_id)
 }
- ::std::string* DeleteJobRequest::mutable_project_id() {
+::std::string* DeleteJobRequest::mutable_project_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DeleteJobRequest.project_id)
   return project_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteJobRequest::release_project_id() {
+::std::string* DeleteJobRequest::release_project_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DeleteJobRequest.project_id)
   
   return project_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteJobRequest::set_allocated_project_id(::std::string* project_id) {
+void DeleteJobRequest::set_allocated_project_id(::std::string* project_id) {
   if (project_id != NULL) {
     
   } else {
@@ -13402,37 +13591,37 @@ void DeleteJobRequest::clear_project_id() {
 void DeleteJobRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteJobRequest::region() const {
+const ::std::string& DeleteJobRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteJobRequest.region)
   return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteJobRequest::set_region(const ::std::string& value) {
+void DeleteJobRequest::set_region(const ::std::string& value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DeleteJobRequest.region)
 }
- void DeleteJobRequest::set_region(const char* value) {
+void DeleteJobRequest::set_region(const char* value) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DeleteJobRequest.region)
 }
- void DeleteJobRequest::set_region(const char* value, size_t size) {
+void DeleteJobRequest::set_region(const char* value, size_t size) {
   
   region_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DeleteJobRequest.region)
 }
- ::std::string* DeleteJobRequest::mutable_region() {
+::std::string* DeleteJobRequest::mutable_region() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DeleteJobRequest.region)
   return region_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteJobRequest::release_region() {
+::std::string* DeleteJobRequest::release_region() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DeleteJobRequest.region)
   
   return region_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteJobRequest::set_allocated_region(::std::string* region) {
+void DeleteJobRequest::set_allocated_region(::std::string* region) {
   if (region != NULL) {
     
   } else {
@@ -13446,37 +13635,37 @@ void DeleteJobRequest::clear_region() {
 void DeleteJobRequest::clear_job_id() {
   job_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteJobRequest::job_id() const {
+const ::std::string& DeleteJobRequest::job_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteJobRequest.job_id)
   return job_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteJobRequest::set_job_id(const ::std::string& value) {
+void DeleteJobRequest::set_job_id(const ::std::string& value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DeleteJobRequest.job_id)
 }
- void DeleteJobRequest::set_job_id(const char* value) {
+void DeleteJobRequest::set_job_id(const char* value) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.dataproc.v1.DeleteJobRequest.job_id)
 }
- void DeleteJobRequest::set_job_id(const char* value, size_t size) {
+void DeleteJobRequest::set_job_id(const char* value, size_t size) {
   
   job_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.dataproc.v1.DeleteJobRequest.job_id)
 }
- ::std::string* DeleteJobRequest::mutable_job_id() {
+::std::string* DeleteJobRequest::mutable_job_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.dataproc.v1.DeleteJobRequest.job_id)
   return job_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteJobRequest::release_job_id() {
+::std::string* DeleteJobRequest::release_job_id() {
   // @@protoc_insertion_point(field_release:google.cloud.dataproc.v1.DeleteJobRequest.job_id)
   
   return job_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteJobRequest::set_allocated_job_id(::std::string* job_id) {
+void DeleteJobRequest::set_allocated_job_id(::std::string* job_id) {
   if (job_id != NULL) {
     
   } else {
@@ -13486,6 +13675,9 @@ void DeleteJobRequest::clear_job_id() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DeleteJobRequest.job_id)
 }
 
+inline const DeleteJobRequest* DeleteJobRequest::internal_default_instance() {
+  return &DeleteJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

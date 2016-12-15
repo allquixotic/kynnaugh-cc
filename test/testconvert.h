@@ -18,7 +18,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #ifndef TEST_CONVERT_H
 #define TEST_CONVERT_H
 
-#include <QtTest>
+#include <qtest.h>
 #include <../convert.h>
 
 class TestConvert : public QObject

@@ -95,14 +95,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   SyncRecognizeRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SyncRecognizeRequest_descriptor_,
-      SyncRecognizeRequest::default_instance_,
+      SyncRecognizeRequest::internal_default_instance(),
       SyncRecognizeRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(SyncRecognizeRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SyncRecognizeRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SyncRecognizeRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SyncRecognizeRequest, _internal_metadata_));
   AsyncRecognizeRequest_descriptor_ = file->message_type(1);
   static const int AsyncRecognizeRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeRequest, config_),
@@ -111,14 +110,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   AsyncRecognizeRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       AsyncRecognizeRequest_descriptor_,
-      AsyncRecognizeRequest::default_instance_,
+      AsyncRecognizeRequest::internal_default_instance(),
       AsyncRecognizeRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(AsyncRecognizeRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeRequest, _internal_metadata_));
   StreamingRecognizeRequest_descriptor_ = file->message_type(2);
   static const int StreamingRecognizeRequest_offsets_[3] = {
     PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(StreamingRecognizeRequest_default_oneof_instance_, streaming_config_),
@@ -128,7 +126,7 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   StreamingRecognizeRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StreamingRecognizeRequest_descriptor_,
-      StreamingRecognizeRequest::default_instance_,
+      StreamingRecognizeRequest::internal_default_instance(),
       StreamingRecognizeRequest_offsets_,
       -1,
       -1,
@@ -136,8 +134,7 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
       StreamingRecognizeRequest_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeRequest, _oneof_case_[0]),
       sizeof(StreamingRecognizeRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeRequest, _internal_metadata_));
   StreamingRecognitionConfig_descriptor_ = file->message_type(3);
   static const int StreamingRecognitionConfig_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognitionConfig, config_),
@@ -147,14 +144,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   StreamingRecognitionConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StreamingRecognitionConfig_descriptor_,
-      StreamingRecognitionConfig::default_instance_,
+      StreamingRecognitionConfig::internal_default_instance(),
       StreamingRecognitionConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(StreamingRecognitionConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognitionConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognitionConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognitionConfig, _internal_metadata_));
   RecognitionConfig_descriptor_ = file->message_type(4);
   static const int RecognitionConfig_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionConfig, encoding_),
@@ -167,14 +163,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   RecognitionConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       RecognitionConfig_descriptor_,
-      RecognitionConfig::default_instance_,
+      RecognitionConfig::internal_default_instance(),
       RecognitionConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(RecognitionConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionConfig, _internal_metadata_));
   RecognitionConfig_AudioEncoding_descriptor_ = RecognitionConfig_descriptor_->enum_type(0);
   SpeechContext_descriptor_ = file->message_type(5);
   static const int SpeechContext_offsets_[1] = {
@@ -183,14 +178,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   SpeechContext_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SpeechContext_descriptor_,
-      SpeechContext::default_instance_,
+      SpeechContext::internal_default_instance(),
       SpeechContext_offsets_,
       -1,
       -1,
       -1,
       sizeof(SpeechContext),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechContext, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechContext, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechContext, _internal_metadata_));
   RecognitionAudio_descriptor_ = file->message_type(6);
   static const int RecognitionAudio_offsets_[3] = {
     PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RecognitionAudio_default_oneof_instance_, content_),
@@ -200,7 +194,7 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   RecognitionAudio_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       RecognitionAudio_descriptor_,
-      RecognitionAudio::default_instance_,
+      RecognitionAudio::internal_default_instance(),
       RecognitionAudio_offsets_,
       -1,
       -1,
@@ -208,8 +202,7 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
       RecognitionAudio_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionAudio, _oneof_case_[0]),
       sizeof(RecognitionAudio),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionAudio, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionAudio, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RecognitionAudio, _internal_metadata_));
   SyncRecognizeResponse_descriptor_ = file->message_type(7);
   static const int SyncRecognizeResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SyncRecognizeResponse, results_),
@@ -217,14 +210,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   SyncRecognizeResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SyncRecognizeResponse_descriptor_,
-      SyncRecognizeResponse::default_instance_,
+      SyncRecognizeResponse::internal_default_instance(),
       SyncRecognizeResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(SyncRecognizeResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SyncRecognizeResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SyncRecognizeResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SyncRecognizeResponse, _internal_metadata_));
   AsyncRecognizeResponse_descriptor_ = file->message_type(8);
   static const int AsyncRecognizeResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeResponse, results_),
@@ -232,14 +224,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   AsyncRecognizeResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       AsyncRecognizeResponse_descriptor_,
-      AsyncRecognizeResponse::default_instance_,
+      AsyncRecognizeResponse::internal_default_instance(),
       AsyncRecognizeResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(AsyncRecognizeResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeResponse, _internal_metadata_));
   AsyncRecognizeMetadata_descriptor_ = file->message_type(9);
   static const int AsyncRecognizeMetadata_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeMetadata, progress_percent_),
@@ -249,14 +240,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   AsyncRecognizeMetadata_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       AsyncRecognizeMetadata_descriptor_,
-      AsyncRecognizeMetadata::default_instance_,
+      AsyncRecognizeMetadata::internal_default_instance(),
       AsyncRecognizeMetadata_offsets_,
       -1,
       -1,
       -1,
       sizeof(AsyncRecognizeMetadata),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeMetadata, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeMetadata, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AsyncRecognizeMetadata, _internal_metadata_));
   StreamingRecognizeResponse_descriptor_ = file->message_type(10);
   static const int StreamingRecognizeResponse_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, error_),
@@ -267,14 +257,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   StreamingRecognizeResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StreamingRecognizeResponse_descriptor_,
-      StreamingRecognizeResponse::default_instance_,
+      StreamingRecognizeResponse::internal_default_instance(),
       StreamingRecognizeResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(StreamingRecognizeResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognizeResponse, _internal_metadata_));
   StreamingRecognizeResponse_EndpointerType_descriptor_ = StreamingRecognizeResponse_descriptor_->enum_type(0);
   StreamingRecognitionResult_descriptor_ = file->message_type(11);
   static const int StreamingRecognitionResult_offsets_[3] = {
@@ -285,14 +274,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   StreamingRecognitionResult_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StreamingRecognitionResult_descriptor_,
-      StreamingRecognitionResult::default_instance_,
+      StreamingRecognitionResult::internal_default_instance(),
       StreamingRecognitionResult_offsets_,
       -1,
       -1,
       -1,
       sizeof(StreamingRecognitionResult),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognitionResult, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognitionResult, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingRecognitionResult, _internal_metadata_));
   SpeechRecognitionResult_descriptor_ = file->message_type(12);
   static const int SpeechRecognitionResult_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionResult, alternatives_),
@@ -300,14 +288,13 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   SpeechRecognitionResult_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SpeechRecognitionResult_descriptor_,
-      SpeechRecognitionResult::default_instance_,
+      SpeechRecognitionResult::internal_default_instance(),
       SpeechRecognitionResult_offsets_,
       -1,
       -1,
       -1,
       sizeof(SpeechRecognitionResult),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionResult, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionResult, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionResult, _internal_metadata_));
   SpeechRecognitionAlternative_descriptor_ = file->message_type(13);
   static const int SpeechRecognitionAlternative_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionAlternative, transcript_),
@@ -316,20 +303,19 @@ void protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2epr
   SpeechRecognitionAlternative_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SpeechRecognitionAlternative_descriptor_,
-      SpeechRecognitionAlternative::default_instance_,
+      SpeechRecognitionAlternative::internal_default_instance(),
       SpeechRecognitionAlternative_offsets_,
       -1,
       -1,
       -1,
       sizeof(SpeechRecognitionAlternative),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionAlternative, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionAlternative, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SpeechRecognitionAlternative, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto);
 }
@@ -338,81 +324,123 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SyncRecognizeRequest_descriptor_, &SyncRecognizeRequest::default_instance());
+      SyncRecognizeRequest_descriptor_, SyncRecognizeRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      AsyncRecognizeRequest_descriptor_, &AsyncRecognizeRequest::default_instance());
+      AsyncRecognizeRequest_descriptor_, AsyncRecognizeRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StreamingRecognizeRequest_descriptor_, &StreamingRecognizeRequest::default_instance());
+      StreamingRecognizeRequest_descriptor_, StreamingRecognizeRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StreamingRecognitionConfig_descriptor_, &StreamingRecognitionConfig::default_instance());
+      StreamingRecognitionConfig_descriptor_, StreamingRecognitionConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      RecognitionConfig_descriptor_, &RecognitionConfig::default_instance());
+      RecognitionConfig_descriptor_, RecognitionConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SpeechContext_descriptor_, &SpeechContext::default_instance());
+      SpeechContext_descriptor_, SpeechContext::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      RecognitionAudio_descriptor_, &RecognitionAudio::default_instance());
+      RecognitionAudio_descriptor_, RecognitionAudio::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SyncRecognizeResponse_descriptor_, &SyncRecognizeResponse::default_instance());
+      SyncRecognizeResponse_descriptor_, SyncRecognizeResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      AsyncRecognizeResponse_descriptor_, &AsyncRecognizeResponse::default_instance());
+      AsyncRecognizeResponse_descriptor_, AsyncRecognizeResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      AsyncRecognizeMetadata_descriptor_, &AsyncRecognizeMetadata::default_instance());
+      AsyncRecognizeMetadata_descriptor_, AsyncRecognizeMetadata::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StreamingRecognizeResponse_descriptor_, &StreamingRecognizeResponse::default_instance());
+      StreamingRecognizeResponse_descriptor_, StreamingRecognizeResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StreamingRecognitionResult_descriptor_, &StreamingRecognitionResult::default_instance());
+      StreamingRecognitionResult_descriptor_, StreamingRecognitionResult::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SpeechRecognitionResult_descriptor_, &SpeechRecognitionResult::default_instance());
+      SpeechRecognitionResult_descriptor_, SpeechRecognitionResult::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SpeechRecognitionAlternative_descriptor_, &SpeechRecognitionAlternative::default_instance());
+      SpeechRecognitionAlternative_descriptor_, SpeechRecognitionAlternative::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto() {
-  delete SyncRecognizeRequest::default_instance_;
+  SyncRecognizeRequest_default_instance_.Shutdown();
   delete SyncRecognizeRequest_reflection_;
-  delete AsyncRecognizeRequest::default_instance_;
+  AsyncRecognizeRequest_default_instance_.Shutdown();
   delete AsyncRecognizeRequest_reflection_;
-  delete StreamingRecognizeRequest::default_instance_;
+  StreamingRecognizeRequest_default_instance_.Shutdown();
   delete StreamingRecognizeRequest_default_oneof_instance_;
   delete StreamingRecognizeRequest_reflection_;
-  delete StreamingRecognitionConfig::default_instance_;
+  StreamingRecognitionConfig_default_instance_.Shutdown();
   delete StreamingRecognitionConfig_reflection_;
-  delete RecognitionConfig::default_instance_;
+  RecognitionConfig_default_instance_.Shutdown();
   delete RecognitionConfig_reflection_;
-  delete SpeechContext::default_instance_;
+  SpeechContext_default_instance_.Shutdown();
   delete SpeechContext_reflection_;
-  delete RecognitionAudio::default_instance_;
+  RecognitionAudio_default_instance_.Shutdown();
   delete RecognitionAudio_default_oneof_instance_;
   delete RecognitionAudio_reflection_;
-  delete SyncRecognizeResponse::default_instance_;
+  SyncRecognizeResponse_default_instance_.Shutdown();
   delete SyncRecognizeResponse_reflection_;
-  delete AsyncRecognizeResponse::default_instance_;
+  AsyncRecognizeResponse_default_instance_.Shutdown();
   delete AsyncRecognizeResponse_reflection_;
-  delete AsyncRecognizeMetadata::default_instance_;
+  AsyncRecognizeMetadata_default_instance_.Shutdown();
   delete AsyncRecognizeMetadata_reflection_;
-  delete StreamingRecognizeResponse::default_instance_;
+  StreamingRecognizeResponse_default_instance_.Shutdown();
   delete StreamingRecognizeResponse_reflection_;
-  delete StreamingRecognitionResult::default_instance_;
+  StreamingRecognitionResult_default_instance_.Shutdown();
   delete StreamingRecognitionResult_reflection_;
-  delete SpeechRecognitionResult::default_instance_;
+  SpeechRecognitionResult_default_instance_.Shutdown();
   delete SpeechRecognitionResult_reflection_;
-  delete SpeechRecognitionAlternative::default_instance_;
+  SpeechRecognitionAlternative_default_instance_.Shutdown();
   delete SpeechRecognitionAlternative_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::longrunning::protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::rpc::protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
+  SyncRecognizeRequest_default_instance_.DefaultConstruct();
+  AsyncRecognizeRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  StreamingRecognizeRequest_default_instance_.DefaultConstruct();
+  StreamingRecognizeRequest_default_oneof_instance_ = new StreamingRecognizeRequestOneofInstance();
+  StreamingRecognitionConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  RecognitionConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SpeechContext_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  RecognitionAudio_default_instance_.DefaultConstruct();
+  RecognitionAudio_default_oneof_instance_ = new RecognitionAudioOneofInstance();
+  SyncRecognizeResponse_default_instance_.DefaultConstruct();
+  AsyncRecognizeResponse_default_instance_.DefaultConstruct();
+  AsyncRecognizeMetadata_default_instance_.DefaultConstruct();
+  StreamingRecognizeResponse_default_instance_.DefaultConstruct();
+  StreamingRecognitionResult_default_instance_.DefaultConstruct();
+  SpeechRecognitionResult_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SpeechRecognitionAlternative_default_instance_.DefaultConstruct();
+  SyncRecognizeRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AsyncRecognizeRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamingRecognizeRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamingRecognitionConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RecognitionConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SpeechContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RecognitionAudio_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SyncRecognizeResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AsyncRecognizeResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AsyncRecognizeMetadata_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamingRecognizeResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamingRecognitionResult_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SpeechRecognitionResult_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SpeechRecognitionAlternative_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n.google/cloud/speech/v1beta1/cloud_spee"
     "ch.proto\022\033google.cloud.speech.v1beta1\032\034g"
@@ -484,49 +512,40 @@ void protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto
     "ingRecognize\0226.google.cloud.speech.v1bet"
     "a1.StreamingRecognizeRequest\0327.google.cl"
     "oud.speech.v1beta1.StreamingRecognizeRes"
-    "ponse(\0010\001B0\n\037com.google.cloud.speech.v1b"
-    "eta1B\013SpeechProtoP\001b\006proto3", 2867);
+    "ponse(\0010\001Bs\n\037com.google.cloud.speech.v1b"
+    "eta1B\013SpeechProtoP\001ZAgoogle.golang.org/g"
+    "enproto/googleapis/cloud/speech/v1beta1;"
+    "speechb\006proto3", 2934);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/speech/v1beta1/cloud_speech.proto", &protobuf_RegisterTypes);
-  SyncRecognizeRequest::default_instance_ = new SyncRecognizeRequest();
-  AsyncRecognizeRequest::default_instance_ = new AsyncRecognizeRequest();
-  StreamingRecognizeRequest::default_instance_ = new StreamingRecognizeRequest();
-  StreamingRecognizeRequest_default_oneof_instance_ = new StreamingRecognizeRequestOneofInstance();
-  StreamingRecognitionConfig::default_instance_ = new StreamingRecognitionConfig();
-  RecognitionConfig::default_instance_ = new RecognitionConfig();
-  SpeechContext::default_instance_ = new SpeechContext();
-  RecognitionAudio::default_instance_ = new RecognitionAudio();
-  RecognitionAudio_default_oneof_instance_ = new RecognitionAudioOneofInstance();
-  SyncRecognizeResponse::default_instance_ = new SyncRecognizeResponse();
-  AsyncRecognizeResponse::default_instance_ = new AsyncRecognizeResponse();
-  AsyncRecognizeMetadata::default_instance_ = new AsyncRecognizeMetadata();
-  StreamingRecognizeResponse::default_instance_ = new StreamingRecognizeResponse();
-  StreamingRecognitionResult::default_instance_ = new StreamingRecognitionResult();
-  SpeechRecognitionResult::default_instance_ = new SpeechRecognitionResult();
-  SpeechRecognitionAlternative::default_instance_ = new SpeechRecognitionAlternative();
-  SyncRecognizeRequest::default_instance_->InitAsDefaultInstance();
-  AsyncRecognizeRequest::default_instance_->InitAsDefaultInstance();
-  StreamingRecognizeRequest::default_instance_->InitAsDefaultInstance();
-  StreamingRecognitionConfig::default_instance_->InitAsDefaultInstance();
-  RecognitionConfig::default_instance_->InitAsDefaultInstance();
-  SpeechContext::default_instance_->InitAsDefaultInstance();
-  RecognitionAudio::default_instance_->InitAsDefaultInstance();
-  SyncRecognizeResponse::default_instance_->InitAsDefaultInstance();
-  AsyncRecognizeResponse::default_instance_->InitAsDefaultInstance();
-  AsyncRecognizeMetadata::default_instance_->InitAsDefaultInstance();
-  StreamingRecognizeResponse::default_instance_->InitAsDefaultInstance();
-  StreamingRecognitionResult::default_instance_->InitAsDefaultInstance();
-  SpeechRecognitionResult::default_instance_->InitAsDefaultInstance();
-  SpeechRecognitionAlternative::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto() {
     protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -537,29 +556,30 @@ const int SyncRecognizeRequest::kAudioFieldNumber;
 
 SyncRecognizeRequest::SyncRecognizeRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.SyncRecognizeRequest)
 }
 
 void SyncRecognizeRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  config_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionConfig*>(&::google::cloud::speech::v1beta1::RecognitionConfig::default_instance());
-  audio_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionAudio*>(&::google::cloud::speech::v1beta1::RecognitionAudio::default_instance());
+  config_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionConfig*>(
+      ::google::cloud::speech::v1beta1::RecognitionConfig::internal_default_instance());
+  audio_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionAudio*>(
+      ::google::cloud::speech::v1beta1::RecognitionAudio::internal_default_instance());
 }
 
 SyncRecognizeRequest::SyncRecognizeRequest(const SyncRecognizeRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.SyncRecognizeRequest)
 }
 
 void SyncRecognizeRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   config_ = NULL;
   audio_ = NULL;
+  _cached_size_ = 0;
 }
 
 SyncRecognizeRequest::~SyncRecognizeRequest() {
@@ -568,7 +588,7 @@ SyncRecognizeRequest::~SyncRecognizeRequest() {
 }
 
 void SyncRecognizeRequest::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &SyncRecognizeRequest_default_instance_.get()) {
     delete config_;
     delete audio_;
   }
@@ -585,11 +605,11 @@ const ::google::protobuf::Descriptor* SyncRecognizeRequest::descriptor() {
 }
 
 const SyncRecognizeRequest& SyncRecognizeRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-SyncRecognizeRequest* SyncRecognizeRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SyncRecognizeRequest> SyncRecognizeRequest_default_instance_;
 
 SyncRecognizeRequest* SyncRecognizeRequest::New(::google::protobuf::Arena* arena) const {
   SyncRecognizeRequest* n = new SyncRecognizeRequest;
@@ -683,6 +703,7 @@ void SyncRecognizeRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SyncRecognizeRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.SyncRecognizeRequest)
   // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
   if (this->has_config()) {
@@ -702,9 +723,9 @@ void SyncRecognizeRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int SyncRecognizeRequest::ByteSize() const {
+size_t SyncRecognizeRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.SyncRecognizeRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
   if (this->has_config()) {
@@ -720,18 +741,17 @@ int SyncRecognizeRequest::ByteSize() const {
         *this->audio_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SyncRecognizeRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.SyncRecognizeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SyncRecognizeRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SyncRecognizeRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SyncRecognizeRequest>(
           &from);
   if (source == NULL) {
@@ -739,15 +759,21 @@ void SyncRecognizeRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.SyncRecognizeRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SyncRecognizeRequest::MergeFrom(const SyncRecognizeRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.SyncRecognizeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SyncRecognizeRequest::UnsafeMergeFrom(const SyncRecognizeRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_config()) {
     mutable_config()->::google::cloud::speech::v1beta1::RecognitionConfig::MergeFrom(from.config());
   }
@@ -767,7 +793,7 @@ void SyncRecognizeRequest::CopyFrom(const SyncRecognizeRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.SyncRecognizeRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SyncRecognizeRequest::IsInitialized() const {
@@ -799,7 +825,7 @@ void SyncRecognizeRequest::InternalSwap(SyncRecognizeRequest* other) {
 
 // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
 bool SyncRecognizeRequest::has_config() const {
-  return !_is_default_instance_ && config_ != NULL;
+  return this != internal_default_instance() && config_ != NULL;
 }
 void SyncRecognizeRequest::clear_config() {
   if (GetArenaNoVirtual() == NULL && config_ != NULL) delete config_;
@@ -807,7 +833,8 @@ void SyncRecognizeRequest::clear_config() {
 }
 const ::google::cloud::speech::v1beta1::RecognitionConfig& SyncRecognizeRequest::config() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.SyncRecognizeRequest.config)
-  return config_ != NULL ? *config_ : *default_instance_->config_;
+  return config_ != NULL ? *config_
+                         : *::google::cloud::speech::v1beta1::RecognitionConfig::internal_default_instance();
 }
 ::google::cloud::speech::v1beta1::RecognitionConfig* SyncRecognizeRequest::mutable_config() {
   
@@ -837,7 +864,7 @@ void SyncRecognizeRequest::set_allocated_config(::google::cloud::speech::v1beta1
 
 // optional .google.cloud.speech.v1beta1.RecognitionAudio audio = 2;
 bool SyncRecognizeRequest::has_audio() const {
-  return !_is_default_instance_ && audio_ != NULL;
+  return this != internal_default_instance() && audio_ != NULL;
 }
 void SyncRecognizeRequest::clear_audio() {
   if (GetArenaNoVirtual() == NULL && audio_ != NULL) delete audio_;
@@ -845,7 +872,8 @@ void SyncRecognizeRequest::clear_audio() {
 }
 const ::google::cloud::speech::v1beta1::RecognitionAudio& SyncRecognizeRequest::audio() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.SyncRecognizeRequest.audio)
-  return audio_ != NULL ? *audio_ : *default_instance_->audio_;
+  return audio_ != NULL ? *audio_
+                         : *::google::cloud::speech::v1beta1::RecognitionAudio::internal_default_instance();
 }
 ::google::cloud::speech::v1beta1::RecognitionAudio* SyncRecognizeRequest::mutable_audio() {
   
@@ -873,6 +901,9 @@ void SyncRecognizeRequest::set_allocated_audio(::google::cloud::speech::v1beta1:
   // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.SyncRecognizeRequest.audio)
 }
 
+inline const SyncRecognizeRequest* SyncRecognizeRequest::internal_default_instance() {
+  return &SyncRecognizeRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -884,29 +915,30 @@ const int AsyncRecognizeRequest::kAudioFieldNumber;
 
 AsyncRecognizeRequest::AsyncRecognizeRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
 }
 
 void AsyncRecognizeRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  config_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionConfig*>(&::google::cloud::speech::v1beta1::RecognitionConfig::default_instance());
-  audio_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionAudio*>(&::google::cloud::speech::v1beta1::RecognitionAudio::default_instance());
+  config_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionConfig*>(
+      ::google::cloud::speech::v1beta1::RecognitionConfig::internal_default_instance());
+  audio_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionAudio*>(
+      ::google::cloud::speech::v1beta1::RecognitionAudio::internal_default_instance());
 }
 
 AsyncRecognizeRequest::AsyncRecognizeRequest(const AsyncRecognizeRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
 }
 
 void AsyncRecognizeRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   config_ = NULL;
   audio_ = NULL;
+  _cached_size_ = 0;
 }
 
 AsyncRecognizeRequest::~AsyncRecognizeRequest() {
@@ -915,7 +947,7 @@ AsyncRecognizeRequest::~AsyncRecognizeRequest() {
 }
 
 void AsyncRecognizeRequest::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &AsyncRecognizeRequest_default_instance_.get()) {
     delete config_;
     delete audio_;
   }
@@ -932,11 +964,11 @@ const ::google::protobuf::Descriptor* AsyncRecognizeRequest::descriptor() {
 }
 
 const AsyncRecognizeRequest& AsyncRecognizeRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-AsyncRecognizeRequest* AsyncRecognizeRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<AsyncRecognizeRequest> AsyncRecognizeRequest_default_instance_;
 
 AsyncRecognizeRequest* AsyncRecognizeRequest::New(::google::protobuf::Arena* arena) const {
   AsyncRecognizeRequest* n = new AsyncRecognizeRequest;
@@ -1030,6 +1062,7 @@ void AsyncRecognizeRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* AsyncRecognizeRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
   // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
   if (this->has_config()) {
@@ -1049,9 +1082,9 @@ void AsyncRecognizeRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int AsyncRecognizeRequest::ByteSize() const {
+size_t AsyncRecognizeRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
   if (this->has_config()) {
@@ -1067,18 +1100,17 @@ int AsyncRecognizeRequest::ByteSize() const {
         *this->audio_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AsyncRecognizeRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const AsyncRecognizeRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const AsyncRecognizeRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AsyncRecognizeRequest>(
           &from);
   if (source == NULL) {
@@ -1086,15 +1118,21 @@ void AsyncRecognizeRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AsyncRecognizeRequest::MergeFrom(const AsyncRecognizeRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void AsyncRecognizeRequest::UnsafeMergeFrom(const AsyncRecognizeRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_config()) {
     mutable_config()->::google::cloud::speech::v1beta1::RecognitionConfig::MergeFrom(from.config());
   }
@@ -1114,7 +1152,7 @@ void AsyncRecognizeRequest::CopyFrom(const AsyncRecognizeRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.AsyncRecognizeRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AsyncRecognizeRequest::IsInitialized() const {
@@ -1146,7 +1184,7 @@ void AsyncRecognizeRequest::InternalSwap(AsyncRecognizeRequest* other) {
 
 // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
 bool AsyncRecognizeRequest::has_config() const {
-  return !_is_default_instance_ && config_ != NULL;
+  return this != internal_default_instance() && config_ != NULL;
 }
 void AsyncRecognizeRequest::clear_config() {
   if (GetArenaNoVirtual() == NULL && config_ != NULL) delete config_;
@@ -1154,7 +1192,8 @@ void AsyncRecognizeRequest::clear_config() {
 }
 const ::google::cloud::speech::v1beta1::RecognitionConfig& AsyncRecognizeRequest::config() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.AsyncRecognizeRequest.config)
-  return config_ != NULL ? *config_ : *default_instance_->config_;
+  return config_ != NULL ? *config_
+                         : *::google::cloud::speech::v1beta1::RecognitionConfig::internal_default_instance();
 }
 ::google::cloud::speech::v1beta1::RecognitionConfig* AsyncRecognizeRequest::mutable_config() {
   
@@ -1184,7 +1223,7 @@ void AsyncRecognizeRequest::set_allocated_config(::google::cloud::speech::v1beta
 
 // optional .google.cloud.speech.v1beta1.RecognitionAudio audio = 2;
 bool AsyncRecognizeRequest::has_audio() const {
-  return !_is_default_instance_ && audio_ != NULL;
+  return this != internal_default_instance() && audio_ != NULL;
 }
 void AsyncRecognizeRequest::clear_audio() {
   if (GetArenaNoVirtual() == NULL && audio_ != NULL) delete audio_;
@@ -1192,7 +1231,8 @@ void AsyncRecognizeRequest::clear_audio() {
 }
 const ::google::cloud::speech::v1beta1::RecognitionAudio& AsyncRecognizeRequest::audio() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.AsyncRecognizeRequest.audio)
-  return audio_ != NULL ? *audio_ : *default_instance_->audio_;
+  return audio_ != NULL ? *audio_
+                         : *::google::cloud::speech::v1beta1::RecognitionAudio::internal_default_instance();
 }
 ::google::cloud::speech::v1beta1::RecognitionAudio* AsyncRecognizeRequest::mutable_audio() {
   
@@ -1220,6 +1260,9 @@ void AsyncRecognizeRequest::set_allocated_audio(::google::cloud::speech::v1beta1
   // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.AsyncRecognizeRequest.audio)
 }
 
+inline const AsyncRecognizeRequest* AsyncRecognizeRequest::internal_default_instance() {
+  return &AsyncRecognizeRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1231,13 +1274,14 @@ const int StreamingRecognizeRequest::kAudioContentFieldNumber;
 
 StreamingRecognizeRequest::StreamingRecognizeRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
 }
 
 void StreamingRecognizeRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  StreamingRecognizeRequest_default_oneof_instance_->streaming_config_ = const_cast< ::google::cloud::speech::v1beta1::StreamingRecognitionConfig*>(&::google::cloud::speech::v1beta1::StreamingRecognitionConfig::default_instance());
+  StreamingRecognizeRequest_default_oneof_instance_->streaming_config_ = const_cast< ::google::cloud::speech::v1beta1::StreamingRecognitionConfig*>(
+      ::google::cloud::speech::v1beta1::StreamingRecognitionConfig::internal_default_instance());
   StreamingRecognizeRequest_default_oneof_instance_->audio_content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1245,15 +1289,13 @@ StreamingRecognizeRequest::StreamingRecognizeRequest(const StreamingRecognizeReq
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
 }
 
 void StreamingRecognizeRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   clear_has_streaming_request();
+  _cached_size_ = 0;
 }
 
 StreamingRecognizeRequest::~StreamingRecognizeRequest() {
@@ -1264,8 +1306,6 @@ StreamingRecognizeRequest::~StreamingRecognizeRequest() {
 void StreamingRecognizeRequest::SharedDtor() {
   if (has_streaming_request()) {
     clear_streaming_request();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -1280,11 +1320,11 @@ const ::google::protobuf::Descriptor* StreamingRecognizeRequest::descriptor() {
 }
 
 const StreamingRecognizeRequest& StreamingRecognizeRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-StreamingRecognizeRequest* StreamingRecognizeRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StreamingRecognizeRequest> StreamingRecognizeRequest_default_instance_;
 
 StreamingRecognizeRequest* StreamingRecognizeRequest::New(::google::protobuf::Arena* arena) const {
   StreamingRecognizeRequest* n = new StreamingRecognizeRequest;
@@ -1296,7 +1336,7 @@ StreamingRecognizeRequest* StreamingRecognizeRequest::New(::google::protobuf::Ar
 
 void StreamingRecognizeRequest::clear_streaming_request() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
-  switch(streaming_request_case()) {
+  switch (streaming_request_case()) {
     case kStreamingConfig: {
       delete streaming_request_.streaming_config_;
       break;
@@ -1336,19 +1376,19 @@ bool StreamingRecognizeRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_audio_content;
+        goto after_audio_content;
         break;
       }
 
       // optional bytes audio_content = 2;
       case 2: {
         if (tag == 18) {
-         parse_audio_content:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_audio_content()));
         } else {
           goto handle_unusual;
         }
+       after_audio_content:
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -1394,6 +1434,7 @@ void StreamingRecognizeRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StreamingRecognizeRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
   // optional .google.cloud.speech.v1beta1.StreamingRecognitionConfig streaming_config = 1;
   if (has_streaming_config()) {
@@ -1413,9 +1454,9 @@ void StreamingRecognizeRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int StreamingRecognizeRequest::ByteSize() const {
+size_t StreamingRecognizeRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   switch (streaming_request_case()) {
     // optional .google.cloud.speech.v1beta1.StreamingRecognitionConfig streaming_config = 1;
@@ -1436,18 +1477,17 @@ int StreamingRecognizeRequest::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StreamingRecognizeRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StreamingRecognizeRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StreamingRecognizeRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StreamingRecognizeRequest>(
           &from);
   if (source == NULL) {
@@ -1455,15 +1495,21 @@ void StreamingRecognizeRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StreamingRecognizeRequest::MergeFrom(const StreamingRecognizeRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StreamingRecognizeRequest::UnsafeMergeFrom(const StreamingRecognizeRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.streaming_request_case()) {
     case kStreamingConfig: {
       mutable_streaming_config()->::google::cloud::speech::v1beta1::StreamingRecognitionConfig::MergeFrom(from.streaming_config());
@@ -1490,7 +1536,7 @@ void StreamingRecognizeRequest::CopyFrom(const StreamingRecognizeRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognizeRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StreamingRecognizeRequest::IsInitialized() const {
@@ -1581,14 +1627,14 @@ void StreamingRecognizeRequest::clear_audio_content() {
     clear_has_streaming_request();
   }
 }
- const ::std::string& StreamingRecognizeRequest::audio_content() const {
+const ::std::string& StreamingRecognizeRequest::audio_content() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
   if (has_audio_content()) {
     return streaming_request_.audio_content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void StreamingRecognizeRequest::set_audio_content(const ::std::string& value) {
+void StreamingRecognizeRequest::set_audio_content(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
   if (!has_audio_content()) {
     clear_streaming_request();
@@ -1598,7 +1644,7 @@ void StreamingRecognizeRequest::clear_audio_content() {
   streaming_request_.audio_content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
 }
- void StreamingRecognizeRequest::set_audio_content(const char* value) {
+void StreamingRecognizeRequest::set_audio_content(const char* value) {
   if (!has_audio_content()) {
     clear_streaming_request();
     set_has_audio_content();
@@ -1608,7 +1654,7 @@ void StreamingRecognizeRequest::clear_audio_content() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
 }
- void StreamingRecognizeRequest::set_audio_content(const void* value, size_t size) {
+void StreamingRecognizeRequest::set_audio_content(const void* value, size_t size) {
   if (!has_audio_content()) {
     clear_streaming_request();
     set_has_audio_content();
@@ -1618,7 +1664,7 @@ void StreamingRecognizeRequest::clear_audio_content() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
 }
- ::std::string* StreamingRecognizeRequest::mutable_audio_content() {
+::std::string* StreamingRecognizeRequest::mutable_audio_content() {
   if (!has_audio_content()) {
     clear_streaming_request();
     set_has_audio_content();
@@ -1627,7 +1673,7 @@ void StreamingRecognizeRequest::clear_audio_content() {
   // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
   return streaming_request_.audio_content_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StreamingRecognizeRequest::release_audio_content() {
+::std::string* StreamingRecognizeRequest::release_audio_content() {
   // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.StreamingRecognizeRequest.audio_content)
   if (has_audio_content()) {
     clear_has_streaming_request();
@@ -1636,7 +1682,7 @@ void StreamingRecognizeRequest::clear_audio_content() {
     return NULL;
   }
 }
- void StreamingRecognizeRequest::set_allocated_audio_content(::std::string* audio_content) {
+void StreamingRecognizeRequest::set_allocated_audio_content(::std::string* audio_content) {
   if (!has_audio_content()) {
     streaming_request_.audio_content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -1658,6 +1704,9 @@ void StreamingRecognizeRequest::clear_has_streaming_request() {
 StreamingRecognizeRequest::StreamingRequestCase StreamingRecognizeRequest::streaming_request_case() const {
   return StreamingRecognizeRequest::StreamingRequestCase(_oneof_case_[0]);
 }
+inline const StreamingRecognizeRequest* StreamingRecognizeRequest::internal_default_instance() {
+  return &StreamingRecognizeRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1670,29 +1719,29 @@ const int StreamingRecognitionConfig::kInterimResultsFieldNumber;
 
 StreamingRecognitionConfig::StreamingRecognitionConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
 }
 
 void StreamingRecognitionConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  config_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionConfig*>(&::google::cloud::speech::v1beta1::RecognitionConfig::default_instance());
+  config_ = const_cast< ::google::cloud::speech::v1beta1::RecognitionConfig*>(
+      ::google::cloud::speech::v1beta1::RecognitionConfig::internal_default_instance());
 }
 
 StreamingRecognitionConfig::StreamingRecognitionConfig(const StreamingRecognitionConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
 }
 
 void StreamingRecognitionConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   config_ = NULL;
-  single_utterance_ = false;
-  interim_results_ = false;
+  ::memset(&single_utterance_, 0, reinterpret_cast<char*>(&interim_results_) -
+    reinterpret_cast<char*>(&single_utterance_) + sizeof(interim_results_));
+  _cached_size_ = 0;
 }
 
 StreamingRecognitionConfig::~StreamingRecognitionConfig() {
@@ -1701,7 +1750,7 @@ StreamingRecognitionConfig::~StreamingRecognitionConfig() {
 }
 
 void StreamingRecognitionConfig::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &StreamingRecognitionConfig_default_instance_.get()) {
     delete config_;
   }
 }
@@ -1717,11 +1766,11 @@ const ::google::protobuf::Descriptor* StreamingRecognitionConfig::descriptor() {
 }
 
 const StreamingRecognitionConfig& StreamingRecognitionConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-StreamingRecognitionConfig* StreamingRecognitionConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StreamingRecognitionConfig> StreamingRecognitionConfig_default_instance_;
 
 StreamingRecognitionConfig* StreamingRecognitionConfig::New(::google::protobuf::Arena* arena) const {
   StreamingRecognitionConfig* n = new StreamingRecognitionConfig;
@@ -1745,7 +1794,7 @@ void StreamingRecognitionConfig::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -1784,10 +1833,10 @@ bool StreamingRecognitionConfig::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_single_utterance:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &single_utterance_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1799,10 +1848,10 @@ bool StreamingRecognitionConfig::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_interim_results:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &interim_results_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1855,6 +1904,7 @@ void StreamingRecognitionConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StreamingRecognitionConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
   // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
   if (this->has_config()) {
@@ -1877,9 +1927,9 @@ void StreamingRecognitionConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int StreamingRecognitionConfig::ByteSize() const {
+size_t StreamingRecognitionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
   if (this->has_config()) {
@@ -1898,18 +1948,17 @@ int StreamingRecognitionConfig::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StreamingRecognitionConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StreamingRecognitionConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StreamingRecognitionConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StreamingRecognitionConfig>(
           &from);
   if (source == NULL) {
@@ -1917,15 +1966,21 @@ void StreamingRecognitionConfig::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StreamingRecognitionConfig::MergeFrom(const StreamingRecognitionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StreamingRecognitionConfig::UnsafeMergeFrom(const StreamingRecognitionConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_config()) {
     mutable_config()->::google::cloud::speech::v1beta1::RecognitionConfig::MergeFrom(from.config());
   }
@@ -1948,7 +2003,7 @@ void StreamingRecognitionConfig::CopyFrom(const StreamingRecognitionConfig& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognitionConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StreamingRecognitionConfig::IsInitialized() const {
@@ -1981,7 +2036,7 @@ void StreamingRecognitionConfig::InternalSwap(StreamingRecognitionConfig* other)
 
 // optional .google.cloud.speech.v1beta1.RecognitionConfig config = 1;
 bool StreamingRecognitionConfig::has_config() const {
-  return !_is_default_instance_ && config_ != NULL;
+  return this != internal_default_instance() && config_ != NULL;
 }
 void StreamingRecognitionConfig::clear_config() {
   if (GetArenaNoVirtual() == NULL && config_ != NULL) delete config_;
@@ -1989,7 +2044,8 @@ void StreamingRecognitionConfig::clear_config() {
 }
 const ::google::cloud::speech::v1beta1::RecognitionConfig& StreamingRecognitionConfig::config() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognitionConfig.config)
-  return config_ != NULL ? *config_ : *default_instance_->config_;
+  return config_ != NULL ? *config_
+                         : *::google::cloud::speech::v1beta1::RecognitionConfig::internal_default_instance();
 }
 ::google::cloud::speech::v1beta1::RecognitionConfig* StreamingRecognitionConfig::mutable_config() {
   
@@ -2021,11 +2077,11 @@ void StreamingRecognitionConfig::set_allocated_config(::google::cloud::speech::v
 void StreamingRecognitionConfig::clear_single_utterance() {
   single_utterance_ = false;
 }
- bool StreamingRecognitionConfig::single_utterance() const {
+bool StreamingRecognitionConfig::single_utterance() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognitionConfig.single_utterance)
   return single_utterance_;
 }
- void StreamingRecognitionConfig::set_single_utterance(bool value) {
+void StreamingRecognitionConfig::set_single_utterance(bool value) {
   
   single_utterance_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognitionConfig.single_utterance)
@@ -2035,16 +2091,19 @@ void StreamingRecognitionConfig::clear_single_utterance() {
 void StreamingRecognitionConfig::clear_interim_results() {
   interim_results_ = false;
 }
- bool StreamingRecognitionConfig::interim_results() const {
+bool StreamingRecognitionConfig::interim_results() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognitionConfig.interim_results)
   return interim_results_;
 }
- void StreamingRecognitionConfig::set_interim_results(bool value) {
+void StreamingRecognitionConfig::set_interim_results(bool value) {
   
   interim_results_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognitionConfig.interim_results)
 }
 
+inline const StreamingRecognitionConfig* StreamingRecognitionConfig::internal_default_instance() {
+  return &StreamingRecognitionConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2054,7 +2113,7 @@ const ::google::protobuf::EnumDescriptor* RecognitionConfig_AudioEncoding_descri
   return RecognitionConfig_AudioEncoding_descriptor_;
 }
 bool RecognitionConfig_AudioEncoding_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -2089,33 +2148,30 @@ const int RecognitionConfig::kSpeechContextFieldNumber;
 
 RecognitionConfig::RecognitionConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.RecognitionConfig)
 }
 
 void RecognitionConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  speech_context_ = const_cast< ::google::cloud::speech::v1beta1::SpeechContext*>(&::google::cloud::speech::v1beta1::SpeechContext::default_instance());
+  speech_context_ = const_cast< ::google::cloud::speech::v1beta1::SpeechContext*>(
+      ::google::cloud::speech::v1beta1::SpeechContext::internal_default_instance());
 }
 
 RecognitionConfig::RecognitionConfig(const RecognitionConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.RecognitionConfig)
 }
 
 void RecognitionConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  encoding_ = 0;
-  sample_rate_ = 0;
   language_code_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  max_alternatives_ = 0;
-  profanity_filter_ = false;
   speech_context_ = NULL;
+  ::memset(&encoding_, 0, reinterpret_cast<char*>(&profanity_filter_) -
+    reinterpret_cast<char*>(&encoding_) + sizeof(profanity_filter_));
+  _cached_size_ = 0;
 }
 
 RecognitionConfig::~RecognitionConfig() {
@@ -2125,7 +2181,7 @@ RecognitionConfig::~RecognitionConfig() {
 
 void RecognitionConfig::SharedDtor() {
   language_code_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &RecognitionConfig_default_instance_.get()) {
     delete speech_context_;
   }
 }
@@ -2141,11 +2197,11 @@ const ::google::protobuf::Descriptor* RecognitionConfig::descriptor() {
 }
 
 const RecognitionConfig& RecognitionConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-RecognitionConfig* RecognitionConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<RecognitionConfig> RecognitionConfig_default_instance_;
 
 RecognitionConfig* RecognitionConfig::New(::google::protobuf::Arena* arena) const {
   RecognitionConfig* n = new RecognitionConfig;
@@ -2169,12 +2225,11 @@ void RecognitionConfig::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
-  ZR_(encoding_, sample_rate_);
-  ZR_(max_alternatives_, profanity_filter_);
+  ZR_(encoding_, profanity_filter_);
   language_code_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (GetArenaNoVirtual() == NULL && speech_context_ != NULL) delete speech_context_;
   speech_context_ = NULL;
@@ -2213,10 +2268,10 @@ bool RecognitionConfig::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_sample_rate:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &sample_rate_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2245,10 +2300,10 @@ bool RecognitionConfig::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_max_alternatives:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_alternatives_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2260,10 +2315,10 @@ bool RecognitionConfig::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_profanity_filter:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &profanity_filter_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2350,6 +2405,7 @@ void RecognitionConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* RecognitionConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.RecognitionConfig)
   // optional .google.cloud.speech.v1beta1.RecognitionConfig.AudioEncoding encoding = 1;
   if (this->encoding() != 0) {
@@ -2394,9 +2450,9 @@ void RecognitionConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int RecognitionConfig::ByteSize() const {
+size_t RecognitionConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.RecognitionConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.speech.v1beta1.RecognitionConfig.AudioEncoding encoding = 1;
   if (this->encoding() != 0) {
@@ -2437,18 +2493,17 @@ int RecognitionConfig::ByteSize() const {
         *this->speech_context_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void RecognitionConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.RecognitionConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const RecognitionConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const RecognitionConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RecognitionConfig>(
           &from);
   if (source == NULL) {
@@ -2456,15 +2511,21 @@ void RecognitionConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.RecognitionConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RecognitionConfig::MergeFrom(const RecognitionConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.RecognitionConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void RecognitionConfig::UnsafeMergeFrom(const RecognitionConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.encoding() != 0) {
     set_encoding(from.encoding());
   }
@@ -2497,7 +2558,7 @@ void RecognitionConfig::CopyFrom(const RecognitionConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.RecognitionConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RecognitionConfig::IsInitialized() const {
@@ -2535,11 +2596,11 @@ void RecognitionConfig::InternalSwap(RecognitionConfig* other) {
 void RecognitionConfig::clear_encoding() {
   encoding_ = 0;
 }
- ::google::cloud::speech::v1beta1::RecognitionConfig_AudioEncoding RecognitionConfig::encoding() const {
+::google::cloud::speech::v1beta1::RecognitionConfig_AudioEncoding RecognitionConfig::encoding() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionConfig.encoding)
   return static_cast< ::google::cloud::speech::v1beta1::RecognitionConfig_AudioEncoding >(encoding_);
 }
- void RecognitionConfig::set_encoding(::google::cloud::speech::v1beta1::RecognitionConfig_AudioEncoding value) {
+void RecognitionConfig::set_encoding(::google::cloud::speech::v1beta1::RecognitionConfig_AudioEncoding value) {
   
   encoding_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionConfig.encoding)
@@ -2549,11 +2610,11 @@ void RecognitionConfig::clear_encoding() {
 void RecognitionConfig::clear_sample_rate() {
   sample_rate_ = 0;
 }
- ::google::protobuf::int32 RecognitionConfig::sample_rate() const {
+::google::protobuf::int32 RecognitionConfig::sample_rate() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionConfig.sample_rate)
   return sample_rate_;
 }
- void RecognitionConfig::set_sample_rate(::google::protobuf::int32 value) {
+void RecognitionConfig::set_sample_rate(::google::protobuf::int32 value) {
   
   sample_rate_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionConfig.sample_rate)
@@ -2563,37 +2624,37 @@ void RecognitionConfig::clear_sample_rate() {
 void RecognitionConfig::clear_language_code() {
   language_code_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& RecognitionConfig::language_code() const {
+const ::std::string& RecognitionConfig::language_code() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionConfig.language_code)
   return language_code_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void RecognitionConfig::set_language_code(const ::std::string& value) {
+void RecognitionConfig::set_language_code(const ::std::string& value) {
   
   language_code_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionConfig.language_code)
 }
- void RecognitionConfig::set_language_code(const char* value) {
+void RecognitionConfig::set_language_code(const char* value) {
   
   language_code_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.RecognitionConfig.language_code)
 }
- void RecognitionConfig::set_language_code(const char* value, size_t size) {
+void RecognitionConfig::set_language_code(const char* value, size_t size) {
   
   language_code_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.RecognitionConfig.language_code)
 }
- ::std::string* RecognitionConfig::mutable_language_code() {
+::std::string* RecognitionConfig::mutable_language_code() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.RecognitionConfig.language_code)
   return language_code_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* RecognitionConfig::release_language_code() {
+::std::string* RecognitionConfig::release_language_code() {
   // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.RecognitionConfig.language_code)
   
   return language_code_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void RecognitionConfig::set_allocated_language_code(::std::string* language_code) {
+void RecognitionConfig::set_allocated_language_code(::std::string* language_code) {
   if (language_code != NULL) {
     
   } else {
@@ -2607,11 +2668,11 @@ void RecognitionConfig::clear_language_code() {
 void RecognitionConfig::clear_max_alternatives() {
   max_alternatives_ = 0;
 }
- ::google::protobuf::int32 RecognitionConfig::max_alternatives() const {
+::google::protobuf::int32 RecognitionConfig::max_alternatives() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionConfig.max_alternatives)
   return max_alternatives_;
 }
- void RecognitionConfig::set_max_alternatives(::google::protobuf::int32 value) {
+void RecognitionConfig::set_max_alternatives(::google::protobuf::int32 value) {
   
   max_alternatives_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionConfig.max_alternatives)
@@ -2621,11 +2682,11 @@ void RecognitionConfig::clear_max_alternatives() {
 void RecognitionConfig::clear_profanity_filter() {
   profanity_filter_ = false;
 }
- bool RecognitionConfig::profanity_filter() const {
+bool RecognitionConfig::profanity_filter() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionConfig.profanity_filter)
   return profanity_filter_;
 }
- void RecognitionConfig::set_profanity_filter(bool value) {
+void RecognitionConfig::set_profanity_filter(bool value) {
   
   profanity_filter_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionConfig.profanity_filter)
@@ -2633,7 +2694,7 @@ void RecognitionConfig::clear_profanity_filter() {
 
 // optional .google.cloud.speech.v1beta1.SpeechContext speech_context = 6;
 bool RecognitionConfig::has_speech_context() const {
-  return !_is_default_instance_ && speech_context_ != NULL;
+  return this != internal_default_instance() && speech_context_ != NULL;
 }
 void RecognitionConfig::clear_speech_context() {
   if (GetArenaNoVirtual() == NULL && speech_context_ != NULL) delete speech_context_;
@@ -2641,7 +2702,8 @@ void RecognitionConfig::clear_speech_context() {
 }
 const ::google::cloud::speech::v1beta1::SpeechContext& RecognitionConfig::speech_context() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionConfig.speech_context)
-  return speech_context_ != NULL ? *speech_context_ : *default_instance_->speech_context_;
+  return speech_context_ != NULL ? *speech_context_
+                         : *::google::cloud::speech::v1beta1::SpeechContext::internal_default_instance();
 }
 ::google::cloud::speech::v1beta1::SpeechContext* RecognitionConfig::mutable_speech_context() {
   
@@ -2669,6 +2731,9 @@ void RecognitionConfig::set_allocated_speech_context(::google::cloud::speech::v1
   // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.RecognitionConfig.speech_context)
 }
 
+inline const RecognitionConfig* RecognitionConfig::internal_default_instance() {
+  return &RecognitionConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2679,25 +2744,23 @@ const int SpeechContext::kPhrasesFieldNumber;
 
 SpeechContext::SpeechContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.SpeechContext)
 }
 
 void SpeechContext::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SpeechContext::SpeechContext(const SpeechContext& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.SpeechContext)
 }
 
 void SpeechContext::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
 }
 
@@ -2707,8 +2770,6 @@ SpeechContext::~SpeechContext() {
 }
 
 void SpeechContext::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void SpeechContext::SetCachedSize(int size) const {
@@ -2722,11 +2783,11 @@ const ::google::protobuf::Descriptor* SpeechContext::descriptor() {
 }
 
 const SpeechContext& SpeechContext::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-SpeechContext* SpeechContext::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SpeechContext> SpeechContext_default_instance_;
 
 SpeechContext* SpeechContext::New(::google::protobuf::Arena* arena) const {
   SpeechContext* n = new SpeechContext;
@@ -2809,6 +2870,7 @@ void SpeechContext::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SpeechContext::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.SpeechContext)
   // repeated string phrases = 1;
   for (int i = 0; i < this->phrases_size(); i++) {
@@ -2824,29 +2886,29 @@ void SpeechContext::SerializeWithCachedSizes(
   return target;
 }
 
-int SpeechContext::ByteSize() const {
+size_t SpeechContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.SpeechContext)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated string phrases = 1;
-  total_size += 1 * this->phrases_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->phrases_size());
   for (int i = 0; i < this->phrases_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->phrases(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SpeechContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.SpeechContext)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SpeechContext* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SpeechContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SpeechContext>(
           &from);
   if (source == NULL) {
@@ -2854,16 +2916,22 @@ void SpeechContext::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.SpeechContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SpeechContext::MergeFrom(const SpeechContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.SpeechContext)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  phrases_.MergeFrom(from.phrases_);
+}
+
+void SpeechContext::UnsafeMergeFrom(const SpeechContext& from) {
+  GOOGLE_DCHECK(&from != this);
+  phrases_.UnsafeMergeFrom(from.phrases_);
 }
 
 void SpeechContext::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2877,7 +2945,7 @@ void SpeechContext::CopyFrom(const SpeechContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.SpeechContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SpeechContext::IsInitialized() const {
@@ -2913,54 +2981,57 @@ int SpeechContext::phrases_size() const {
 void SpeechContext::clear_phrases() {
   phrases_.Clear();
 }
- const ::std::string& SpeechContext::phrases(int index) const {
+const ::std::string& SpeechContext::phrases(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.SpeechContext.phrases)
   return phrases_.Get(index);
 }
- ::std::string* SpeechContext::mutable_phrases(int index) {
+::std::string* SpeechContext::mutable_phrases(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.SpeechContext.phrases)
   return phrases_.Mutable(index);
 }
- void SpeechContext::set_phrases(int index, const ::std::string& value) {
+void SpeechContext::set_phrases(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.SpeechContext.phrases)
   phrases_.Mutable(index)->assign(value);
 }
- void SpeechContext::set_phrases(int index, const char* value) {
+void SpeechContext::set_phrases(int index, const char* value) {
   phrases_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.SpeechContext.phrases)
 }
- void SpeechContext::set_phrases(int index, const char* value, size_t size) {
+void SpeechContext::set_phrases(int index, const char* value, size_t size) {
   phrases_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.SpeechContext.phrases)
 }
- ::std::string* SpeechContext::add_phrases() {
+::std::string* SpeechContext::add_phrases() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.speech.v1beta1.SpeechContext.phrases)
   return phrases_.Add();
 }
- void SpeechContext::add_phrases(const ::std::string& value) {
+void SpeechContext::add_phrases(const ::std::string& value) {
   phrases_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.speech.v1beta1.SpeechContext.phrases)
 }
- void SpeechContext::add_phrases(const char* value) {
+void SpeechContext::add_phrases(const char* value) {
   phrases_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.speech.v1beta1.SpeechContext.phrases)
 }
- void SpeechContext::add_phrases(const char* value, size_t size) {
+void SpeechContext::add_phrases(const char* value, size_t size) {
   phrases_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.speech.v1beta1.SpeechContext.phrases)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SpeechContext::phrases() const {
   // @@protoc_insertion_point(field_list:google.cloud.speech.v1beta1.SpeechContext.phrases)
   return phrases_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SpeechContext::mutable_phrases() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.speech.v1beta1.SpeechContext.phrases)
   return &phrases_;
 }
 
+inline const SpeechContext* SpeechContext::internal_default_instance() {
+  return &SpeechContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2972,12 +3043,12 @@ const int RecognitionAudio::kUriFieldNumber;
 
 RecognitionAudio::RecognitionAudio()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.RecognitionAudio)
 }
 
 void RecognitionAudio::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   RecognitionAudio_default_oneof_instance_->content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   RecognitionAudio_default_oneof_instance_->uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2986,15 +3057,13 @@ RecognitionAudio::RecognitionAudio(const RecognitionAudio& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.RecognitionAudio)
 }
 
 void RecognitionAudio::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   clear_has_audio_source();
+  _cached_size_ = 0;
 }
 
 RecognitionAudio::~RecognitionAudio() {
@@ -3005,8 +3074,6 @@ RecognitionAudio::~RecognitionAudio() {
 void RecognitionAudio::SharedDtor() {
   if (has_audio_source()) {
     clear_audio_source();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -3021,11 +3088,11 @@ const ::google::protobuf::Descriptor* RecognitionAudio::descriptor() {
 }
 
 const RecognitionAudio& RecognitionAudio::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-RecognitionAudio* RecognitionAudio::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<RecognitionAudio> RecognitionAudio_default_instance_;
 
 RecognitionAudio* RecognitionAudio::New(::google::protobuf::Arena* arena) const {
   RecognitionAudio* n = new RecognitionAudio;
@@ -3037,7 +3104,7 @@ RecognitionAudio* RecognitionAudio::New(::google::protobuf::Arena* arena) const 
 
 void RecognitionAudio::clear_audio_source() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.speech.v1beta1.RecognitionAudio)
-  switch(audio_source_case()) {
+  switch (audio_source_case()) {
     case kContent: {
       audio_source_.content_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -3077,14 +3144,13 @@ bool RecognitionAudio::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_uri;
+        goto after_uri;
         break;
       }
 
       // optional string uri = 2;
       case 2: {
         if (tag == 18) {
-         parse_uri:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3094,6 +3160,7 @@ bool RecognitionAudio::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_uri:
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -3143,6 +3210,7 @@ void RecognitionAudio::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* RecognitionAudio::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.RecognitionAudio)
   // optional bytes content = 1;
   if (has_content()) {
@@ -3166,9 +3234,9 @@ void RecognitionAudio::SerializeWithCachedSizes(
   return target;
 }
 
-int RecognitionAudio::ByteSize() const {
+size_t RecognitionAudio::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.RecognitionAudio)
-  int total_size = 0;
+  size_t total_size = 0;
 
   switch (audio_source_case()) {
     // optional bytes content = 1;
@@ -3189,18 +3257,17 @@ int RecognitionAudio::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void RecognitionAudio::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.RecognitionAudio)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const RecognitionAudio* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const RecognitionAudio* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RecognitionAudio>(
           &from);
   if (source == NULL) {
@@ -3208,15 +3275,21 @@ void RecognitionAudio::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.RecognitionAudio)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RecognitionAudio::MergeFrom(const RecognitionAudio& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.RecognitionAudio)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void RecognitionAudio::UnsafeMergeFrom(const RecognitionAudio& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.audio_source_case()) {
     case kContent: {
       set_content(from.content());
@@ -3243,7 +3316,7 @@ void RecognitionAudio::CopyFrom(const RecognitionAudio& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.RecognitionAudio)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RecognitionAudio::IsInitialized() const {
@@ -3286,14 +3359,14 @@ void RecognitionAudio::clear_content() {
     clear_has_audio_source();
   }
 }
- const ::std::string& RecognitionAudio::content() const {
+const ::std::string& RecognitionAudio::content() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionAudio.content)
   if (has_content()) {
     return audio_source_.content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void RecognitionAudio::set_content(const ::std::string& value) {
+void RecognitionAudio::set_content(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionAudio.content)
   if (!has_content()) {
     clear_audio_source();
@@ -3303,7 +3376,7 @@ void RecognitionAudio::clear_content() {
   audio_source_.content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionAudio.content)
 }
- void RecognitionAudio::set_content(const char* value) {
+void RecognitionAudio::set_content(const char* value) {
   if (!has_content()) {
     clear_audio_source();
     set_has_content();
@@ -3313,7 +3386,7 @@ void RecognitionAudio::clear_content() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.RecognitionAudio.content)
 }
- void RecognitionAudio::set_content(const void* value, size_t size) {
+void RecognitionAudio::set_content(const void* value, size_t size) {
   if (!has_content()) {
     clear_audio_source();
     set_has_content();
@@ -3323,7 +3396,7 @@ void RecognitionAudio::clear_content() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.RecognitionAudio.content)
 }
- ::std::string* RecognitionAudio::mutable_content() {
+::std::string* RecognitionAudio::mutable_content() {
   if (!has_content()) {
     clear_audio_source();
     set_has_content();
@@ -3332,7 +3405,7 @@ void RecognitionAudio::clear_content() {
   // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.RecognitionAudio.content)
   return audio_source_.content_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* RecognitionAudio::release_content() {
+::std::string* RecognitionAudio::release_content() {
   // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.RecognitionAudio.content)
   if (has_content()) {
     clear_has_audio_source();
@@ -3341,7 +3414,7 @@ void RecognitionAudio::clear_content() {
     return NULL;
   }
 }
- void RecognitionAudio::set_allocated_content(::std::string* content) {
+void RecognitionAudio::set_allocated_content(::std::string* content) {
   if (!has_content()) {
     audio_source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -3367,14 +3440,14 @@ void RecognitionAudio::clear_uri() {
     clear_has_audio_source();
   }
 }
- const ::std::string& RecognitionAudio::uri() const {
+const ::std::string& RecognitionAudio::uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.RecognitionAudio.uri)
   if (has_uri()) {
     return audio_source_.uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void RecognitionAudio::set_uri(const ::std::string& value) {
+void RecognitionAudio::set_uri(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionAudio.uri)
   if (!has_uri()) {
     clear_audio_source();
@@ -3384,7 +3457,7 @@ void RecognitionAudio::clear_uri() {
   audio_source_.uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.RecognitionAudio.uri)
 }
- void RecognitionAudio::set_uri(const char* value) {
+void RecognitionAudio::set_uri(const char* value) {
   if (!has_uri()) {
     clear_audio_source();
     set_has_uri();
@@ -3394,7 +3467,7 @@ void RecognitionAudio::clear_uri() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.RecognitionAudio.uri)
 }
- void RecognitionAudio::set_uri(const char* value, size_t size) {
+void RecognitionAudio::set_uri(const char* value, size_t size) {
   if (!has_uri()) {
     clear_audio_source();
     set_has_uri();
@@ -3404,7 +3477,7 @@ void RecognitionAudio::clear_uri() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.RecognitionAudio.uri)
 }
- ::std::string* RecognitionAudio::mutable_uri() {
+::std::string* RecognitionAudio::mutable_uri() {
   if (!has_uri()) {
     clear_audio_source();
     set_has_uri();
@@ -3413,7 +3486,7 @@ void RecognitionAudio::clear_uri() {
   // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.RecognitionAudio.uri)
   return audio_source_.uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* RecognitionAudio::release_uri() {
+::std::string* RecognitionAudio::release_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.RecognitionAudio.uri)
   if (has_uri()) {
     clear_has_audio_source();
@@ -3422,7 +3495,7 @@ void RecognitionAudio::clear_uri() {
     return NULL;
   }
 }
- void RecognitionAudio::set_allocated_uri(::std::string* uri) {
+void RecognitionAudio::set_allocated_uri(::std::string* uri) {
   if (!has_uri()) {
     audio_source_.uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -3444,6 +3517,9 @@ void RecognitionAudio::clear_has_audio_source() {
 RecognitionAudio::AudioSourceCase RecognitionAudio::audio_source_case() const {
   return RecognitionAudio::AudioSourceCase(_oneof_case_[0]);
 }
+inline const RecognitionAudio* RecognitionAudio::internal_default_instance() {
+  return &RecognitionAudio_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3454,24 +3530,23 @@ const int SyncRecognizeResponse::kResultsFieldNumber;
 
 SyncRecognizeResponse::SyncRecognizeResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.SyncRecognizeResponse)
 }
 
 void SyncRecognizeResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SyncRecognizeResponse::SyncRecognizeResponse(const SyncRecognizeResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.SyncRecognizeResponse)
 }
 
 void SyncRecognizeResponse::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -3481,8 +3556,6 @@ SyncRecognizeResponse::~SyncRecognizeResponse() {
 }
 
 void SyncRecognizeResponse::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void SyncRecognizeResponse::SetCachedSize(int size) const {
@@ -3496,11 +3569,11 @@ const ::google::protobuf::Descriptor* SyncRecognizeResponse::descriptor() {
 }
 
 const SyncRecognizeResponse& SyncRecognizeResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-SyncRecognizeResponse* SyncRecognizeResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SyncRecognizeResponse> SyncRecognizeResponse_default_instance_;
 
 SyncRecognizeResponse* SyncRecognizeResponse::New(::google::protobuf::Arena* arena) const {
   SyncRecognizeResponse* n = new SyncRecognizeResponse;
@@ -3576,6 +3649,7 @@ void SyncRecognizeResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SyncRecognizeResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.SyncRecognizeResponse)
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionResult results = 2;
   for (unsigned int i = 0, n = this->results_size(); i < n; i++) {
@@ -3588,30 +3662,32 @@ void SyncRecognizeResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int SyncRecognizeResponse::ByteSize() const {
+size_t SyncRecognizeResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.SyncRecognizeResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionResult results = 2;
-  total_size += 1 * this->results_size();
-  for (int i = 0; i < this->results_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->results(i));
+  {
+    unsigned int count = this->results_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->results(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SyncRecognizeResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.SyncRecognizeResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SyncRecognizeResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SyncRecognizeResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SyncRecognizeResponse>(
           &from);
   if (source == NULL) {
@@ -3619,15 +3695,21 @@ void SyncRecognizeResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.SyncRecognizeResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SyncRecognizeResponse::MergeFrom(const SyncRecognizeResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.SyncRecognizeResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SyncRecognizeResponse::UnsafeMergeFrom(const SyncRecognizeResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   results_.MergeFrom(from.results_);
 }
 
@@ -3642,7 +3724,7 @@ void SyncRecognizeResponse::CopyFrom(const SyncRecognizeResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.SyncRecognizeResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SyncRecognizeResponse::IsInitialized() const {
@@ -3701,6 +3783,9 @@ SyncRecognizeResponse::results() const {
   return results_;
 }
 
+inline const SyncRecognizeResponse* SyncRecognizeResponse::internal_default_instance() {
+  return &SyncRecognizeResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3711,24 +3796,23 @@ const int AsyncRecognizeResponse::kResultsFieldNumber;
 
 AsyncRecognizeResponse::AsyncRecognizeResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
 }
 
 void AsyncRecognizeResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 AsyncRecognizeResponse::AsyncRecognizeResponse(const AsyncRecognizeResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
 }
 
 void AsyncRecognizeResponse::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -3738,8 +3822,6 @@ AsyncRecognizeResponse::~AsyncRecognizeResponse() {
 }
 
 void AsyncRecognizeResponse::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void AsyncRecognizeResponse::SetCachedSize(int size) const {
@@ -3753,11 +3835,11 @@ const ::google::protobuf::Descriptor* AsyncRecognizeResponse::descriptor() {
 }
 
 const AsyncRecognizeResponse& AsyncRecognizeResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-AsyncRecognizeResponse* AsyncRecognizeResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<AsyncRecognizeResponse> AsyncRecognizeResponse_default_instance_;
 
 AsyncRecognizeResponse* AsyncRecognizeResponse::New(::google::protobuf::Arena* arena) const {
   AsyncRecognizeResponse* n = new AsyncRecognizeResponse;
@@ -3833,6 +3915,7 @@ void AsyncRecognizeResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* AsyncRecognizeResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionResult results = 2;
   for (unsigned int i = 0, n = this->results_size(); i < n; i++) {
@@ -3845,30 +3928,32 @@ void AsyncRecognizeResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int AsyncRecognizeResponse::ByteSize() const {
+size_t AsyncRecognizeResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionResult results = 2;
-  total_size += 1 * this->results_size();
-  for (int i = 0; i < this->results_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->results(i));
+  {
+    unsigned int count = this->results_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->results(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AsyncRecognizeResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const AsyncRecognizeResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const AsyncRecognizeResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AsyncRecognizeResponse>(
           &from);
   if (source == NULL) {
@@ -3876,15 +3961,21 @@ void AsyncRecognizeResponse::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AsyncRecognizeResponse::MergeFrom(const AsyncRecognizeResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void AsyncRecognizeResponse::UnsafeMergeFrom(const AsyncRecognizeResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   results_.MergeFrom(from.results_);
 }
 
@@ -3899,7 +3990,7 @@ void AsyncRecognizeResponse::CopyFrom(const AsyncRecognizeResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.AsyncRecognizeResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AsyncRecognizeResponse::IsInitialized() const {
@@ -3958,6 +4049,9 @@ AsyncRecognizeResponse::results() const {
   return results_;
 }
 
+inline const AsyncRecognizeResponse* AsyncRecognizeResponse::internal_default_instance() {
+  return &AsyncRecognizeResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3970,30 +4064,31 @@ const int AsyncRecognizeMetadata::kLastUpdateTimeFieldNumber;
 
 AsyncRecognizeMetadata::AsyncRecognizeMetadata()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
 }
 
 void AsyncRecognizeMetadata::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  start_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  last_update_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  last_update_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 AsyncRecognizeMetadata::AsyncRecognizeMetadata(const AsyncRecognizeMetadata& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
 }
 
 void AsyncRecognizeMetadata::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
-  progress_percent_ = 0;
   start_time_ = NULL;
   last_update_time_ = NULL;
+  progress_percent_ = 0;
+  _cached_size_ = 0;
 }
 
 AsyncRecognizeMetadata::~AsyncRecognizeMetadata() {
@@ -4002,7 +4097,7 @@ AsyncRecognizeMetadata::~AsyncRecognizeMetadata() {
 }
 
 void AsyncRecognizeMetadata::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &AsyncRecognizeMetadata_default_instance_.get()) {
     delete start_time_;
     delete last_update_time_;
   }
@@ -4019,11 +4114,11 @@ const ::google::protobuf::Descriptor* AsyncRecognizeMetadata::descriptor() {
 }
 
 const AsyncRecognizeMetadata& AsyncRecognizeMetadata::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-AsyncRecognizeMetadata* AsyncRecognizeMetadata::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<AsyncRecognizeMetadata> AsyncRecognizeMetadata_default_instance_;
 
 AsyncRecognizeMetadata* AsyncRecognizeMetadata::New(::google::protobuf::Arena* arena) const {
   AsyncRecognizeMetadata* n = new AsyncRecognizeMetadata;
@@ -4055,10 +4150,10 @@ bool AsyncRecognizeMetadata::MergePartialFromCodedStream(
       // optional int32 progress_percent = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &progress_percent_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4138,6 +4233,7 @@ void AsyncRecognizeMetadata::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* AsyncRecognizeMetadata::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
   // optional int32 progress_percent = 1;
   if (this->progress_percent() != 0) {
@@ -4162,9 +4258,9 @@ void AsyncRecognizeMetadata::SerializeWithCachedSizes(
   return target;
 }
 
-int AsyncRecognizeMetadata::ByteSize() const {
+size_t AsyncRecognizeMetadata::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 progress_percent = 1;
   if (this->progress_percent() != 0) {
@@ -4187,18 +4283,17 @@ int AsyncRecognizeMetadata::ByteSize() const {
         *this->last_update_time_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AsyncRecognizeMetadata::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const AsyncRecognizeMetadata* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const AsyncRecognizeMetadata* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AsyncRecognizeMetadata>(
           &from);
   if (source == NULL) {
@@ -4206,15 +4301,21 @@ void AsyncRecognizeMetadata::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AsyncRecognizeMetadata::MergeFrom(const AsyncRecognizeMetadata& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void AsyncRecognizeMetadata::UnsafeMergeFrom(const AsyncRecognizeMetadata& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.progress_percent() != 0) {
     set_progress_percent(from.progress_percent());
   }
@@ -4237,7 +4338,7 @@ void AsyncRecognizeMetadata::CopyFrom(const AsyncRecognizeMetadata& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.AsyncRecognizeMetadata)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AsyncRecognizeMetadata::IsInitialized() const {
@@ -4272,11 +4373,11 @@ void AsyncRecognizeMetadata::InternalSwap(AsyncRecognizeMetadata* other) {
 void AsyncRecognizeMetadata::clear_progress_percent() {
   progress_percent_ = 0;
 }
- ::google::protobuf::int32 AsyncRecognizeMetadata::progress_percent() const {
+::google::protobuf::int32 AsyncRecognizeMetadata::progress_percent() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.AsyncRecognizeMetadata.progress_percent)
   return progress_percent_;
 }
- void AsyncRecognizeMetadata::set_progress_percent(::google::protobuf::int32 value) {
+void AsyncRecognizeMetadata::set_progress_percent(::google::protobuf::int32 value) {
   
   progress_percent_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.AsyncRecognizeMetadata.progress_percent)
@@ -4284,7 +4385,7 @@ void AsyncRecognizeMetadata::clear_progress_percent() {
 
 // optional .google.protobuf.Timestamp start_time = 2;
 bool AsyncRecognizeMetadata::has_start_time() const {
-  return !_is_default_instance_ && start_time_ != NULL;
+  return this != internal_default_instance() && start_time_ != NULL;
 }
 void AsyncRecognizeMetadata::clear_start_time() {
   if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
@@ -4292,7 +4393,8 @@ void AsyncRecognizeMetadata::clear_start_time() {
 }
 const ::google::protobuf::Timestamp& AsyncRecognizeMetadata::start_time() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.AsyncRecognizeMetadata.start_time)
-  return start_time_ != NULL ? *start_time_ : *default_instance_->start_time_;
+  return start_time_ != NULL ? *start_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* AsyncRecognizeMetadata::mutable_start_time() {
   
@@ -4327,7 +4429,7 @@ void AsyncRecognizeMetadata::set_allocated_start_time(::google::protobuf::Timest
 
 // optional .google.protobuf.Timestamp last_update_time = 3;
 bool AsyncRecognizeMetadata::has_last_update_time() const {
-  return !_is_default_instance_ && last_update_time_ != NULL;
+  return this != internal_default_instance() && last_update_time_ != NULL;
 }
 void AsyncRecognizeMetadata::clear_last_update_time() {
   if (GetArenaNoVirtual() == NULL && last_update_time_ != NULL) delete last_update_time_;
@@ -4335,7 +4437,8 @@ void AsyncRecognizeMetadata::clear_last_update_time() {
 }
 const ::google::protobuf::Timestamp& AsyncRecognizeMetadata::last_update_time() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.AsyncRecognizeMetadata.last_update_time)
-  return last_update_time_ != NULL ? *last_update_time_ : *default_instance_->last_update_time_;
+  return last_update_time_ != NULL ? *last_update_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* AsyncRecognizeMetadata::mutable_last_update_time() {
   
@@ -4368,6 +4471,9 @@ void AsyncRecognizeMetadata::set_allocated_last_update_time(::google::protobuf::
   // @@protoc_insertion_point(field_set_allocated:google.cloud.speech.v1beta1.AsyncRecognizeMetadata.last_update_time)
 }
 
+inline const AsyncRecognizeMetadata* AsyncRecognizeMetadata::internal_default_instance() {
+  return &AsyncRecognizeMetadata_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4377,7 +4483,7 @@ const ::google::protobuf::EnumDescriptor* StreamingRecognizeResponse_EndpointerT
   return StreamingRecognizeResponse_EndpointerType_descriptor_;
 }
 bool StreamingRecognizeResponse_EndpointerType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -4408,29 +4514,29 @@ const int StreamingRecognizeResponse::kEndpointerTypeFieldNumber;
 
 StreamingRecognizeResponse::StreamingRecognizeResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
 }
 
 void StreamingRecognizeResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  error_ = const_cast< ::google::rpc::Status*>(&::google::rpc::Status::default_instance());
+  error_ = const_cast< ::google::rpc::Status*>(
+      ::google::rpc::Status::internal_default_instance());
 }
 
 StreamingRecognizeResponse::StreamingRecognizeResponse(const StreamingRecognizeResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
 }
 
 void StreamingRecognizeResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   error_ = NULL;
-  result_index_ = 0;
-  endpointer_type_ = 0;
+  ::memset(&result_index_, 0, reinterpret_cast<char*>(&endpointer_type_) -
+    reinterpret_cast<char*>(&result_index_) + sizeof(endpointer_type_));
+  _cached_size_ = 0;
 }
 
 StreamingRecognizeResponse::~StreamingRecognizeResponse() {
@@ -4439,7 +4545,7 @@ StreamingRecognizeResponse::~StreamingRecognizeResponse() {
 }
 
 void StreamingRecognizeResponse::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &StreamingRecognizeResponse_default_instance_.get()) {
     delete error_;
   }
 }
@@ -4455,11 +4561,11 @@ const ::google::protobuf::Descriptor* StreamingRecognizeResponse::descriptor() {
 }
 
 const StreamingRecognizeResponse& StreamingRecognizeResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-StreamingRecognizeResponse* StreamingRecognizeResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StreamingRecognizeResponse> StreamingRecognizeResponse_default_instance_;
 
 StreamingRecognizeResponse* StreamingRecognizeResponse::New(::google::protobuf::Arena* arena) const {
   StreamingRecognizeResponse* n = new StreamingRecognizeResponse;
@@ -4483,7 +4589,7 @@ void StreamingRecognizeResponse::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -4540,10 +4646,10 @@ bool StreamingRecognizeResponse::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_result_index:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &result_index_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4619,6 +4725,7 @@ void StreamingRecognizeResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StreamingRecognizeResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
   // optional .google.rpc.Status error = 1;
   if (this->has_error()) {
@@ -4649,9 +4756,9 @@ void StreamingRecognizeResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int StreamingRecognizeResponse::ByteSize() const {
+size_t StreamingRecognizeResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.rpc.Status error = 1;
   if (this->has_error()) {
@@ -4674,25 +4781,27 @@ int StreamingRecognizeResponse::ByteSize() const {
   }
 
   // repeated .google.cloud.speech.v1beta1.StreamingRecognitionResult results = 2;
-  total_size += 1 * this->results_size();
-  for (int i = 0; i < this->results_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->results(i));
+  {
+    unsigned int count = this->results_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->results(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StreamingRecognizeResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StreamingRecognizeResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StreamingRecognizeResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StreamingRecognizeResponse>(
           &from);
   if (source == NULL) {
@@ -4700,15 +4809,21 @@ void StreamingRecognizeResponse::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StreamingRecognizeResponse::MergeFrom(const StreamingRecognizeResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StreamingRecognizeResponse::UnsafeMergeFrom(const StreamingRecognizeResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   results_.MergeFrom(from.results_);
   if (from.has_error()) {
     mutable_error()->::google::rpc::Status::MergeFrom(from.error());
@@ -4732,7 +4847,7 @@ void StreamingRecognizeResponse::CopyFrom(const StreamingRecognizeResponse& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognizeResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StreamingRecognizeResponse::IsInitialized() const {
@@ -4766,7 +4881,7 @@ void StreamingRecognizeResponse::InternalSwap(StreamingRecognizeResponse* other)
 
 // optional .google.rpc.Status error = 1;
 bool StreamingRecognizeResponse::has_error() const {
-  return !_is_default_instance_ && error_ != NULL;
+  return this != internal_default_instance() && error_ != NULL;
 }
 void StreamingRecognizeResponse::clear_error() {
   if (GetArenaNoVirtual() == NULL && error_ != NULL) delete error_;
@@ -4774,7 +4889,8 @@ void StreamingRecognizeResponse::clear_error() {
 }
 const ::google::rpc::Status& StreamingRecognizeResponse::error() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.error)
-  return error_ != NULL ? *error_ : *default_instance_->error_;
+  return error_ != NULL ? *error_
+                         : *::google::rpc::Status::internal_default_instance();
 }
 ::google::rpc::Status* StreamingRecognizeResponse::mutable_error() {
   
@@ -4836,11 +4952,11 @@ StreamingRecognizeResponse::results() const {
 void StreamingRecognizeResponse::clear_result_index() {
   result_index_ = 0;
 }
- ::google::protobuf::int32 StreamingRecognizeResponse::result_index() const {
+::google::protobuf::int32 StreamingRecognizeResponse::result_index() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.result_index)
   return result_index_;
 }
- void StreamingRecognizeResponse::set_result_index(::google::protobuf::int32 value) {
+void StreamingRecognizeResponse::set_result_index(::google::protobuf::int32 value) {
   
   result_index_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeResponse.result_index)
@@ -4850,16 +4966,19 @@ void StreamingRecognizeResponse::clear_result_index() {
 void StreamingRecognizeResponse::clear_endpointer_type() {
   endpointer_type_ = 0;
 }
- ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::endpointer_type() const {
+::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType StreamingRecognizeResponse::endpointer_type() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognizeResponse.endpointer_type)
   return static_cast< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType >(endpointer_type_);
 }
- void StreamingRecognizeResponse::set_endpointer_type(::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType value) {
+void StreamingRecognizeResponse::set_endpointer_type(::google::cloud::speech::v1beta1::StreamingRecognizeResponse_EndpointerType value) {
   
   endpointer_type_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognizeResponse.endpointer_type)
 }
 
+inline const StreamingRecognizeResponse* StreamingRecognizeResponse::internal_default_instance() {
+  return &StreamingRecognizeResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4872,27 +4991,26 @@ const int StreamingRecognitionResult::kStabilityFieldNumber;
 
 StreamingRecognitionResult::StreamingRecognitionResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.StreamingRecognitionResult)
 }
 
 void StreamingRecognitionResult::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 StreamingRecognitionResult::StreamingRecognitionResult(const StreamingRecognitionResult& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.StreamingRecognitionResult)
 }
 
 void StreamingRecognitionResult::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&is_final_, 0, reinterpret_cast<char*>(&stability_) -
+    reinterpret_cast<char*>(&is_final_) + sizeof(stability_));
   _cached_size_ = 0;
-  is_final_ = false;
-  stability_ = 0;
 }
 
 StreamingRecognitionResult::~StreamingRecognitionResult() {
@@ -4901,8 +5019,6 @@ StreamingRecognitionResult::~StreamingRecognitionResult() {
 }
 
 void StreamingRecognitionResult::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void StreamingRecognitionResult::SetCachedSize(int size) const {
@@ -4916,11 +5032,11 @@ const ::google::protobuf::Descriptor* StreamingRecognitionResult::descriptor() {
 }
 
 const StreamingRecognitionResult& StreamingRecognitionResult::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-StreamingRecognitionResult* StreamingRecognitionResult::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StreamingRecognitionResult> StreamingRecognitionResult_default_instance_;
 
 StreamingRecognitionResult* StreamingRecognitionResult::New(::google::protobuf::Arena* arena) const {
   StreamingRecognitionResult* n = new StreamingRecognitionResult;
@@ -4944,7 +5060,7 @@ void StreamingRecognitionResult::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -4986,10 +5102,10 @@ bool StreamingRecognitionResult::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_is_final:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_final_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5001,10 +5117,10 @@ bool StreamingRecognitionResult::MergePartialFromCodedStream(
       case 3: {
         if (tag == 29) {
          parse_stability:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &stability_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5057,6 +5173,7 @@ void StreamingRecognitionResult::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StreamingRecognitionResult::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.StreamingRecognitionResult)
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionAlternative alternatives = 1;
   for (unsigned int i = 0, n = this->alternatives_size(); i < n; i++) {
@@ -5079,9 +5196,9 @@ void StreamingRecognitionResult::SerializeWithCachedSizes(
   return target;
 }
 
-int StreamingRecognitionResult::ByteSize() const {
+size_t StreamingRecognitionResult::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.StreamingRecognitionResult)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional bool is_final = 2;
   if (this->is_final() != 0) {
@@ -5094,25 +5211,27 @@ int StreamingRecognitionResult::ByteSize() const {
   }
 
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionAlternative alternatives = 1;
-  total_size += 1 * this->alternatives_size();
-  for (int i = 0; i < this->alternatives_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->alternatives(i));
+  {
+    unsigned int count = this->alternatives_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->alternatives(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StreamingRecognitionResult::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognitionResult)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StreamingRecognitionResult* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StreamingRecognitionResult* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StreamingRecognitionResult>(
           &from);
   if (source == NULL) {
@@ -5120,15 +5239,21 @@ void StreamingRecognitionResult::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.StreamingRecognitionResult)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StreamingRecognitionResult::MergeFrom(const StreamingRecognitionResult& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.StreamingRecognitionResult)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StreamingRecognitionResult::UnsafeMergeFrom(const StreamingRecognitionResult& from) {
+  GOOGLE_DCHECK(&from != this);
   alternatives_.MergeFrom(from.alternatives_);
   if (from.is_final() != 0) {
     set_is_final(from.is_final());
@@ -5149,7 +5274,7 @@ void StreamingRecognitionResult::CopyFrom(const StreamingRecognitionResult& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.StreamingRecognitionResult)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StreamingRecognitionResult::IsInitialized() const {
@@ -5214,11 +5339,11 @@ StreamingRecognitionResult::alternatives() const {
 void StreamingRecognitionResult::clear_is_final() {
   is_final_ = false;
 }
- bool StreamingRecognitionResult::is_final() const {
+bool StreamingRecognitionResult::is_final() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognitionResult.is_final)
   return is_final_;
 }
- void StreamingRecognitionResult::set_is_final(bool value) {
+void StreamingRecognitionResult::set_is_final(bool value) {
   
   is_final_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognitionResult.is_final)
@@ -5228,16 +5353,19 @@ void StreamingRecognitionResult::clear_is_final() {
 void StreamingRecognitionResult::clear_stability() {
   stability_ = 0;
 }
- float StreamingRecognitionResult::stability() const {
+float StreamingRecognitionResult::stability() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.StreamingRecognitionResult.stability)
   return stability_;
 }
- void StreamingRecognitionResult::set_stability(float value) {
+void StreamingRecognitionResult::set_stability(float value) {
   
   stability_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.StreamingRecognitionResult.stability)
 }
 
+inline const StreamingRecognitionResult* StreamingRecognitionResult::internal_default_instance() {
+  return &StreamingRecognitionResult_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5248,24 +5376,23 @@ const int SpeechRecognitionResult::kAlternativesFieldNumber;
 
 SpeechRecognitionResult::SpeechRecognitionResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.SpeechRecognitionResult)
 }
 
 void SpeechRecognitionResult::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SpeechRecognitionResult::SpeechRecognitionResult(const SpeechRecognitionResult& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.SpeechRecognitionResult)
 }
 
 void SpeechRecognitionResult::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -5275,8 +5402,6 @@ SpeechRecognitionResult::~SpeechRecognitionResult() {
 }
 
 void SpeechRecognitionResult::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void SpeechRecognitionResult::SetCachedSize(int size) const {
@@ -5290,11 +5415,11 @@ const ::google::protobuf::Descriptor* SpeechRecognitionResult::descriptor() {
 }
 
 const SpeechRecognitionResult& SpeechRecognitionResult::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-SpeechRecognitionResult* SpeechRecognitionResult::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SpeechRecognitionResult> SpeechRecognitionResult_default_instance_;
 
 SpeechRecognitionResult* SpeechRecognitionResult::New(::google::protobuf::Arena* arena) const {
   SpeechRecognitionResult* n = new SpeechRecognitionResult;
@@ -5370,6 +5495,7 @@ void SpeechRecognitionResult::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SpeechRecognitionResult::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.SpeechRecognitionResult)
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionAlternative alternatives = 1;
   for (unsigned int i = 0, n = this->alternatives_size(); i < n; i++) {
@@ -5382,30 +5508,32 @@ void SpeechRecognitionResult::SerializeWithCachedSizes(
   return target;
 }
 
-int SpeechRecognitionResult::ByteSize() const {
+size_t SpeechRecognitionResult::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.SpeechRecognitionResult)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.cloud.speech.v1beta1.SpeechRecognitionAlternative alternatives = 1;
-  total_size += 1 * this->alternatives_size();
-  for (int i = 0; i < this->alternatives_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->alternatives(i));
+  {
+    unsigned int count = this->alternatives_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->alternatives(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SpeechRecognitionResult::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.SpeechRecognitionResult)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SpeechRecognitionResult* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SpeechRecognitionResult* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SpeechRecognitionResult>(
           &from);
   if (source == NULL) {
@@ -5413,15 +5541,21 @@ void SpeechRecognitionResult::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.SpeechRecognitionResult)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SpeechRecognitionResult::MergeFrom(const SpeechRecognitionResult& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.SpeechRecognitionResult)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SpeechRecognitionResult::UnsafeMergeFrom(const SpeechRecognitionResult& from) {
+  GOOGLE_DCHECK(&from != this);
   alternatives_.MergeFrom(from.alternatives_);
 }
 
@@ -5436,7 +5570,7 @@ void SpeechRecognitionResult::CopyFrom(const SpeechRecognitionResult& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.SpeechRecognitionResult)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SpeechRecognitionResult::IsInitialized() const {
@@ -5495,6 +5629,9 @@ SpeechRecognitionResult::alternatives() const {
   return alternatives_;
 }
 
+inline const SpeechRecognitionResult* SpeechRecognitionResult::internal_default_instance() {
+  return &SpeechRecognitionResult_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5506,28 +5643,26 @@ const int SpeechRecognitionAlternative::kConfidenceFieldNumber;
 
 SpeechRecognitionAlternative::SpeechRecognitionAlternative()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
 }
 
 void SpeechRecognitionAlternative::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SpeechRecognitionAlternative::SpeechRecognitionAlternative(const SpeechRecognitionAlternative& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
 }
 
 void SpeechRecognitionAlternative::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   transcript_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   confidence_ = 0;
+  _cached_size_ = 0;
 }
 
 SpeechRecognitionAlternative::~SpeechRecognitionAlternative() {
@@ -5537,8 +5672,6 @@ SpeechRecognitionAlternative::~SpeechRecognitionAlternative() {
 
 void SpeechRecognitionAlternative::SharedDtor() {
   transcript_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void SpeechRecognitionAlternative::SetCachedSize(int size) const {
@@ -5552,11 +5685,11 @@ const ::google::protobuf::Descriptor* SpeechRecognitionAlternative::descriptor()
 }
 
 const SpeechRecognitionAlternative& SpeechRecognitionAlternative::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fspeech_2fv1beta1_2fcloud_5fspeech_2eproto();
+  return *internal_default_instance();
 }
 
-SpeechRecognitionAlternative* SpeechRecognitionAlternative::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SpeechRecognitionAlternative> SpeechRecognitionAlternative_default_instance_;
 
 SpeechRecognitionAlternative* SpeechRecognitionAlternative::New(::google::protobuf::Arena* arena) const {
   SpeechRecognitionAlternative* n = new SpeechRecognitionAlternative;
@@ -5602,10 +5735,10 @@ bool SpeechRecognitionAlternative::MergePartialFromCodedStream(
       case 2: {
         if (tag == 21) {
          parse_confidence:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &confidence_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5657,6 +5790,7 @@ void SpeechRecognitionAlternative::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SpeechRecognitionAlternative::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
   // optional string transcript = 1;
   if (this->transcript().size() > 0) {
@@ -5678,9 +5812,9 @@ void SpeechRecognitionAlternative::SerializeWithCachedSizes(
   return target;
 }
 
-int SpeechRecognitionAlternative::ByteSize() const {
+size_t SpeechRecognitionAlternative::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string transcript = 1;
   if (this->transcript().size() > 0) {
@@ -5694,18 +5828,17 @@ int SpeechRecognitionAlternative::ByteSize() const {
     total_size += 1 + 4;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SpeechRecognitionAlternative::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SpeechRecognitionAlternative* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SpeechRecognitionAlternative* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SpeechRecognitionAlternative>(
           &from);
   if (source == NULL) {
@@ -5713,15 +5846,21 @@ void SpeechRecognitionAlternative::MergeFrom(const ::google::protobuf::Message& 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SpeechRecognitionAlternative::MergeFrom(const SpeechRecognitionAlternative& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SpeechRecognitionAlternative::UnsafeMergeFrom(const SpeechRecognitionAlternative& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.transcript().size() > 0) {
 
     transcript_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.transcript_);
@@ -5742,7 +5881,7 @@ void SpeechRecognitionAlternative::CopyFrom(const SpeechRecognitionAlternative& 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.speech.v1beta1.SpeechRecognitionAlternative)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SpeechRecognitionAlternative::IsInitialized() const {
@@ -5776,37 +5915,37 @@ void SpeechRecognitionAlternative::InternalSwap(SpeechRecognitionAlternative* ot
 void SpeechRecognitionAlternative::clear_transcript() {
   transcript_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SpeechRecognitionAlternative::transcript() const {
+const ::std::string& SpeechRecognitionAlternative::transcript() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.transcript)
   return transcript_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SpeechRecognitionAlternative::set_transcript(const ::std::string& value) {
+void SpeechRecognitionAlternative::set_transcript(const ::std::string& value) {
   
   transcript_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.transcript)
 }
- void SpeechRecognitionAlternative::set_transcript(const char* value) {
+void SpeechRecognitionAlternative::set_transcript(const char* value) {
   
   transcript_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.transcript)
 }
- void SpeechRecognitionAlternative::set_transcript(const char* value, size_t size) {
+void SpeechRecognitionAlternative::set_transcript(const char* value, size_t size) {
   
   transcript_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.transcript)
 }
- ::std::string* SpeechRecognitionAlternative::mutable_transcript() {
+::std::string* SpeechRecognitionAlternative::mutable_transcript() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.transcript)
   return transcript_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SpeechRecognitionAlternative::release_transcript() {
+::std::string* SpeechRecognitionAlternative::release_transcript() {
   // @@protoc_insertion_point(field_release:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.transcript)
   
   return transcript_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SpeechRecognitionAlternative::set_allocated_transcript(::std::string* transcript) {
+void SpeechRecognitionAlternative::set_allocated_transcript(::std::string* transcript) {
   if (transcript != NULL) {
     
   } else {
@@ -5820,16 +5959,19 @@ void SpeechRecognitionAlternative::clear_transcript() {
 void SpeechRecognitionAlternative::clear_confidence() {
   confidence_ = 0;
 }
- float SpeechRecognitionAlternative::confidence() const {
+float SpeechRecognitionAlternative::confidence() const {
   // @@protoc_insertion_point(field_get:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.confidence)
   return confidence_;
 }
- void SpeechRecognitionAlternative::set_confidence(float value) {
+void SpeechRecognitionAlternative::set_confidence(float value) {
   
   confidence_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.speech.v1beta1.SpeechRecognitionAlternative.confidence)
 }
 
+inline const SpeechRecognitionAlternative* SpeechRecognitionAlternative::internal_default_instance() {
+  return &SpeechRecognitionAlternative_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

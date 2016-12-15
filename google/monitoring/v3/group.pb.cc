@@ -48,20 +48,19 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_2eproto() {
   Group_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Group_descriptor_,
-      Group::default_instance_,
+      Group::internal_default_instance(),
       Group_offsets_,
       -1,
       -1,
       -1,
       sizeof(Group),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Group, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Group, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Group, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_2eproto);
 }
@@ -70,43 +69,68 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Group_descriptor_, &Group::default_instance());
+      Group_descriptor_, Group::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_2eproto() {
-  delete Group::default_instance_;
+  Group_default_instance_.Shutdown();
   delete Group_reflection_;
 }
 
-void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  ::google::protobuf::internal::GetEmptyString();
+  Group_default_instance_.DefaultConstruct();
+  Group_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto_once_);
+void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n google/monitoring/v3/group.proto\022\024goog"
     "le.monitoring.v3\"d\n\005Group\022\014\n\004name\030\001 \001(\t\022"
     "\024\n\014display_name\030\002 \001(\t\022\023\n\013parent_name\030\003 \001"
-    "(\t\022\016\n\006filter\030\005 \001(\t\022\022\n\nis_cluster\030\006 \001(\010BE"
-    "\n\030com.google.monitoring.v3B\nGroupProtoP\001"
-    "\252\002\032Google.Cloud.Monitoring.V3b\006proto3", 237);
+    "(\t\022\016\n\006filter\030\005 \001(\t\022\022\n\nis_cluster\030\006 \001(\010B\205"
+    "\001\n\030com.google.monitoring.v3B\nGroupProtoP"
+    "\001Z>google.golang.org/genproto/googleapis"
+    "/monitoring/v3;monitoring\252\002\032Google.Cloud"
+    ".Monitoring.V3b\006proto3", 302);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/monitoring/v3/group.proto", &protobuf_RegisterTypes);
-  Group::default_instance_ = new Group();
-  Group::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto_once_);
+void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto_once_,
+                 &protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fgroup_2eproto {
   StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fgroup_2eproto() {
     protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto();
   }
 } static_descriptor_initializer_google_2fmonitoring_2fv3_2fgroup_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -120,31 +144,29 @@ const int Group::kIsClusterFieldNumber;
 
 Group::Group()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.Group)
 }
 
 void Group::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Group::Group(const Group& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.Group)
 }
 
 void Group::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   display_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   parent_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   is_cluster_ = false;
+  _cached_size_ = 0;
 }
 
 Group::~Group() {
@@ -157,8 +179,6 @@ void Group::SharedDtor() {
   display_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   parent_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Group::SetCachedSize(int size) const {
@@ -172,11 +192,11 @@ const ::google::protobuf::Descriptor* Group::descriptor() {
 }
 
 const Group& Group::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_2eproto();
+  return *internal_default_instance();
 }
 
-Group* Group::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Group> Group_default_instance_;
 
 Group* Group::New(::google::protobuf::Arena* arena) const {
   Group* n = new Group;
@@ -276,10 +296,10 @@ bool Group::MergePartialFromCodedStream(
       case 6: {
         if (tag == 48) {
          parse_is_cluster:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_cluster_)));
-
         } else {
           goto handle_unusual;
         }
@@ -361,6 +381,7 @@ void Group::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Group::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.Group)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -415,9 +436,9 @@ void Group::SerializeWithCachedSizes(
   return target;
 }
 
-int Group::ByteSize() const {
+size_t Group::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.Group)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -452,18 +473,17 @@ int Group::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Group::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.Group)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Group* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Group* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Group>(
           &from);
   if (source == NULL) {
@@ -471,15 +491,21 @@ void Group::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.Group)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Group::MergeFrom(const Group& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.Group)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Group::UnsafeMergeFrom(const Group& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -512,7 +538,7 @@ void Group::CopyFrom(const Group& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.Group)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Group::IsInitialized() const {
@@ -549,37 +575,37 @@ void Group::InternalSwap(Group* other) {
 void Group::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Group::name() const {
+const ::std::string& Group::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Group.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_name(const ::std::string& value) {
+void Group::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Group.name)
 }
- void Group::set_name(const char* value) {
+void Group::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.Group.name)
 }
- void Group::set_name(const char* value, size_t size) {
+void Group::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.Group.name)
 }
- ::std::string* Group::mutable_name() {
+::std::string* Group::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.Group.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Group::release_name() {
+::std::string* Group::release_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.Group.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_allocated_name(::std::string* name) {
+void Group::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -593,37 +619,37 @@ void Group::clear_name() {
 void Group::clear_display_name() {
   display_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Group::display_name() const {
+const ::std::string& Group::display_name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Group.display_name)
   return display_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_display_name(const ::std::string& value) {
+void Group::set_display_name(const ::std::string& value) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Group.display_name)
 }
- void Group::set_display_name(const char* value) {
+void Group::set_display_name(const char* value) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.Group.display_name)
 }
- void Group::set_display_name(const char* value, size_t size) {
+void Group::set_display_name(const char* value, size_t size) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.Group.display_name)
 }
- ::std::string* Group::mutable_display_name() {
+::std::string* Group::mutable_display_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.Group.display_name)
   return display_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Group::release_display_name() {
+::std::string* Group::release_display_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.Group.display_name)
   
   return display_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_allocated_display_name(::std::string* display_name) {
+void Group::set_allocated_display_name(::std::string* display_name) {
   if (display_name != NULL) {
     
   } else {
@@ -637,37 +663,37 @@ void Group::clear_display_name() {
 void Group::clear_parent_name() {
   parent_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Group::parent_name() const {
+const ::std::string& Group::parent_name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Group.parent_name)
   return parent_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_parent_name(const ::std::string& value) {
+void Group::set_parent_name(const ::std::string& value) {
   
   parent_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Group.parent_name)
 }
- void Group::set_parent_name(const char* value) {
+void Group::set_parent_name(const char* value) {
   
   parent_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.Group.parent_name)
 }
- void Group::set_parent_name(const char* value, size_t size) {
+void Group::set_parent_name(const char* value, size_t size) {
   
   parent_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.Group.parent_name)
 }
- ::std::string* Group::mutable_parent_name() {
+::std::string* Group::mutable_parent_name() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.Group.parent_name)
   return parent_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Group::release_parent_name() {
+::std::string* Group::release_parent_name() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.Group.parent_name)
   
   return parent_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_allocated_parent_name(::std::string* parent_name) {
+void Group::set_allocated_parent_name(::std::string* parent_name) {
   if (parent_name != NULL) {
     
   } else {
@@ -681,37 +707,37 @@ void Group::clear_parent_name() {
 void Group::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Group::filter() const {
+const ::std::string& Group::filter() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Group.filter)
   return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_filter(const ::std::string& value) {
+void Group::set_filter(const ::std::string& value) {
   
   filter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Group.filter)
 }
- void Group::set_filter(const char* value) {
+void Group::set_filter(const char* value) {
   
   filter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.Group.filter)
 }
- void Group::set_filter(const char* value, size_t size) {
+void Group::set_filter(const char* value, size_t size) {
   
   filter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.Group.filter)
 }
- ::std::string* Group::mutable_filter() {
+::std::string* Group::mutable_filter() {
   
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.Group.filter)
   return filter_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Group::release_filter() {
+::std::string* Group::release_filter() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.Group.filter)
   
   return filter_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Group::set_allocated_filter(::std::string* filter) {
+void Group::set_allocated_filter(::std::string* filter) {
   if (filter != NULL) {
     
   } else {
@@ -725,16 +751,19 @@ void Group::clear_filter() {
 void Group::clear_is_cluster() {
   is_cluster_ = false;
 }
- bool Group::is_cluster() const {
+bool Group::is_cluster() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Group.is_cluster)
   return is_cluster_;
 }
- void Group::set_is_cluster(bool value) {
+void Group::set_is_cluster(bool value) {
   
   is_cluster_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Group.is_cluster)
 }
 
+inline const Group* Group::internal_default_instance() {
+  return &Group_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

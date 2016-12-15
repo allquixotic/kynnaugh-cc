@@ -18,28 +18,53 @@ QT       -= gui
 TARGET = kynnaugh
 TEMPLATE = lib
 
-CONFIG += warn_off
+CONFIG += warn_off c++11
 
 DEFINES += KYNNAUGH_LIBRARY
 
 win32 {
     DEFINES += "_WIN32_WINNT=0x0600"
     DEFINES += "WINVER=0x0600"
+    #Put your grpc, grpc++, OpenSSL/BoringSSL, zlib, GStreamer, GLib, and QtGStreamer libraries in this path
+    #Or modify the paths below to where you put them
+    LIBS += -LC:\gstreamer\1.0\x86_64\lib -LC:\gstreamer\1.0\x86_64\bin
+
+    #Put your grpc, grpc++, OpenSSL/BoringSSL, zlib, GStreamer, GLib, and QtGStreamer include directories in these paths
+    #Or modify the paths below to where you put them
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\Qt5GStreamer
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\gstreamer-1.0
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\glib-2.0
+    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include
+
+    #gRPC / gRPC++ linkage
+    LIBS += -lgrpc++ -lgrpc -lgpr -lz
+
+    #protobuf linkage
+    LIBS += -llibprotobuf
+
+    #SSL linkage
+    LIBS += -llibeay32 -lssleay32
+    #Required by OpenSSL
+    LIBS += -lws2_32
+
+    #QtGstreamer linkage
+    LIBS += -lQt5GStreamer-1.0 -lQt5GStreamerUtils-1.0 -lQt5GLib-2.0 -lgstreamer-1.0 -lglib-2.0
 }
 
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\Qt5GStreamer
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\gstreamer-1.0
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\glib-2.0
-INCLUDEPATH += C:\gstreamer\1.0\x86_64\include
+#Look for the generated headers in the base repo directory
 INCLUDEPATH += $$PWD
 
-LIBS += -lgrpc++ -lgrpc -lgpr -lz
-LIBS += -LC:\gstreamer\1.0\x86_64\lib -LC:\gstreamer\1.0\x86_64\bin -lQt5GStreamer-1.0 -lQt5GStreamerUtils-1.0 -lQt5GLib-2.0 -lgstreamer-1.0 -lglib-2.0
-LIBS += -llibprotobuf
-LIBS += -llibeay32 -lssleay32 -lws2_32
+unix {
+    CONFIG += link_pkgconfig
+    PKGCONFIG += Qt5GStreamer-1.0
+    PKGCONFIG += Qt5GStreamerUtils-1.0
+    PKGCONFIG += gstreamer-1.0
+    PKGCONFIG += grpc++
+}
 
-# DEFINES += QT_NO_KEYWORDS
 
+#Due to build errors we only include just enough sources to use Cloud Speech
+#There are other generated sources that we don't need that we exclude
 SOURCES += kynnaugh.cpp \
     sampledef.cpp \
     convert.cpp \

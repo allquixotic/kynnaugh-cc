@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -52,7 +53,7 @@ namespace v1 {
 //
 // A user can list previously-requested builds or get builds by their ID to
 // determine the status of the build.
-class CloudBuild GRPC_FINAL {
+class CloudBuild final {
  public:
   class StubInterface {
    public:
@@ -133,57 +134,57 @@ class CloudBuild GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::cloudbuild::v1::BuildTrigger>* AsyncUpdateBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateBuildRaw(context, request, cq));
     }
-    ::grpc::Status GetBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest& request, ::google::devtools::cloudbuild::v1::Build* response) GRPC_OVERRIDE;
+    ::grpc::Status GetBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest& request, ::google::devtools::cloudbuild::v1::Build* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>> AsyncGetBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>>(AsyncGetBuildRaw(context, request, cq));
     }
-    ::grpc::Status ListBuilds(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest& request, ::google::devtools::cloudbuild::v1::ListBuildsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListBuilds(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest& request, ::google::devtools::cloudbuild::v1::ListBuildsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildsResponse>> AsyncListBuilds(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildsResponse>>(AsyncListBuildsRaw(context, request, cq));
     }
-    ::grpc::Status CancelBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest& request, ::google::devtools::cloudbuild::v1::Build* response) GRPC_OVERRIDE;
+    ::grpc::Status CancelBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest& request, ::google::devtools::cloudbuild::v1::Build* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>> AsyncCancelBuild(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>>(AsyncCancelBuildRaw(context, request, cq));
     }
-    ::grpc::Status CreateBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest& request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest& request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>> AsyncCreateBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>>(AsyncCreateBuildTriggerRaw(context, request, cq));
     }
-    ::grpc::Status GetBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest& request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_OVERRIDE;
+    ::grpc::Status GetBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest& request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>> AsyncGetBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>>(AsyncGetBuildTriggerRaw(context, request, cq));
     }
-    ::grpc::Status ListBuildTriggers(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest& request, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListBuildTriggers(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest& request, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse>> AsyncListBuildTriggers(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse>>(AsyncListBuildTriggersRaw(context, request, cq));
     }
-    ::grpc::Status DeleteBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteBuildTriggerRaw(context, request, cq));
     }
-    ::grpc::Status UpdateBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest& request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest& request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>> AsyncUpdateBuildTrigger(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>>(AsyncUpdateBuildTriggerRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateBuildRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>* AsyncGetBuildRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildsResponse>* AsyncListBuildsRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>* AsyncCancelBuildRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>* AsyncCreateBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>* AsyncGetBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse>* AsyncListBuildTriggersRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>* AsyncUpdateBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateBuildRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>* AsyncGetBuildRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildsResponse>* AsyncListBuildsRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::Build>* AsyncCancelBuildRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>* AsyncCreateBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>* AsyncGetBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse>* AsyncListBuildTriggersRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudbuild::v1::BuildTrigger>* AsyncUpdateBuildTriggerRaw(::grpc::ClientContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateBuild_;
     const ::grpc::RpcMethod rpcmethod_GetBuild_;
     const ::grpc::RpcMethod rpcmethod_ListBuilds_;
@@ -247,11 +248,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_CreateBuild() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateBuild() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateBuild() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -267,11 +268,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_GetBuild() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetBuild() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetBuild() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -287,11 +288,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_ListBuilds() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ListBuilds() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListBuilds() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBuilds(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest* request, ::google::devtools::cloudbuild::v1::ListBuildsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBuilds(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest* request, ::google::devtools::cloudbuild::v1::ListBuildsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -307,11 +308,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_CancelBuild() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_CancelBuild() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CancelBuild() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -327,11 +328,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_CreateBuildTrigger() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_CreateBuildTrigger() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -347,11 +348,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_GetBuildTrigger() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_GetBuildTrigger() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -367,11 +368,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_ListBuildTriggers() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_ListBuildTriggers() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListBuildTriggers() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBuildTriggers(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest* request, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBuildTriggers(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest* request, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -387,11 +388,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_DeleteBuildTrigger() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_DeleteBuildTrigger() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -407,11 +408,11 @@ class CloudBuild GRPC_FINAL {
     WithAsyncMethod_UpdateBuildTrigger() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_UpdateBuildTrigger() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -428,11 +429,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_CreateBuild() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateBuild() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateBuild() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -445,11 +446,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_GetBuild() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetBuild() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetBuild() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -462,11 +463,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_ListBuilds() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ListBuilds() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListBuilds() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBuilds(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest* request, ::google::devtools::cloudbuild::v1::ListBuildsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBuilds(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest* request, ::google::devtools::cloudbuild::v1::ListBuildsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -479,11 +480,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_CancelBuild() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_CancelBuild() GRPC_OVERRIDE {
+    ~WithGenericMethod_CancelBuild() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -496,11 +497,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_CreateBuildTrigger() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_CreateBuildTrigger() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -513,11 +514,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_GetBuildTrigger() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_GetBuildTrigger() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -530,11 +531,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_ListBuildTriggers() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_ListBuildTriggers() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListBuildTriggers() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBuildTriggers(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest* request, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBuildTriggers(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest* request, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -547,11 +548,11 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_DeleteBuildTrigger() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_DeleteBuildTrigger() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -564,15 +565,198 @@ class CloudBuild GRPC_FINAL {
     WithGenericMethod_UpdateBuildTrigger() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_UpdateBuildTrigger() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateBuildTrigger() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateBuild : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateBuild() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::CreateBuildRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateBuild<BaseClass>::StreamedCreateBuild, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateBuild() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateBuild(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::CreateBuildRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetBuild : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetBuild() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::GetBuildRequest, ::google::devtools::cloudbuild::v1::Build>(std::bind(&WithStreamedUnaryMethod_GetBuild<BaseClass>::StreamedGetBuild, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetBuild() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetBuild(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::GetBuildRequest,::google::devtools::cloudbuild::v1::Build>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListBuilds : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListBuilds() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::ListBuildsRequest, ::google::devtools::cloudbuild::v1::ListBuildsResponse>(std::bind(&WithStreamedUnaryMethod_ListBuilds<BaseClass>::StreamedListBuilds, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListBuilds() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListBuilds(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildsRequest* request, ::google::devtools::cloudbuild::v1::ListBuildsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListBuilds(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::ListBuildsRequest,::google::devtools::cloudbuild::v1::ListBuildsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CancelBuild : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CancelBuild() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::CancelBuildRequest, ::google::devtools::cloudbuild::v1::Build>(std::bind(&WithStreamedUnaryMethod_CancelBuild<BaseClass>::StreamedCancelBuild, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CancelBuild() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CancelBuild(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CancelBuildRequest* request, ::google::devtools::cloudbuild::v1::Build* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCancelBuild(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::CancelBuildRequest,::google::devtools::cloudbuild::v1::Build>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateBuildTrigger : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateBuildTrigger() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest, ::google::devtools::cloudbuild::v1::BuildTrigger>(std::bind(&WithStreamedUnaryMethod_CreateBuildTrigger<BaseClass>::StreamedCreateBuildTrigger, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateBuildTrigger() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateBuildTrigger(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::CreateBuildTriggerRequest,::google::devtools::cloudbuild::v1::BuildTrigger>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetBuildTrigger : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetBuildTrigger() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest, ::google::devtools::cloudbuild::v1::BuildTrigger>(std::bind(&WithStreamedUnaryMethod_GetBuildTrigger<BaseClass>::StreamedGetBuildTrigger, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetBuildTrigger() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetBuildTrigger(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::GetBuildTriggerRequest,::google::devtools::cloudbuild::v1::BuildTrigger>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListBuildTriggers : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListBuildTriggers() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse>(std::bind(&WithStreamedUnaryMethod_ListBuildTriggers<BaseClass>::StreamedListBuildTriggers, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListBuildTriggers() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListBuildTriggers(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest* request, ::google::devtools::cloudbuild::v1::ListBuildTriggersResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListBuildTriggers(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::ListBuildTriggersRequest,::google::devtools::cloudbuild::v1::ListBuildTriggersResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteBuildTrigger : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteBuildTrigger() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteBuildTrigger<BaseClass>::StreamedDeleteBuildTrigger, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteBuildTrigger() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteBuildTrigger(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::DeleteBuildTriggerRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateBuildTrigger : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateBuildTrigger() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest, ::google::devtools::cloudbuild::v1::BuildTrigger>(std::bind(&WithStreamedUnaryMethod_UpdateBuildTrigger<BaseClass>::StreamedUpdateBuildTrigger, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateBuildTrigger() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateBuildTrigger(::grpc::ServerContext* context, const ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest* request, ::google::devtools::cloudbuild::v1::BuildTrigger* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateBuildTrigger(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudbuild::v1::UpdateBuildTriggerRequest,::google::devtools::cloudbuild::v1::BuildTrigger>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateBuild<WithStreamedUnaryMethod_GetBuild<WithStreamedUnaryMethod_ListBuilds<WithStreamedUnaryMethod_CancelBuild<WithStreamedUnaryMethod_CreateBuildTrigger<WithStreamedUnaryMethod_GetBuildTrigger<WithStreamedUnaryMethod_ListBuildTriggers<WithStreamedUnaryMethod_DeleteBuildTrigger<WithStreamedUnaryMethod_UpdateBuildTrigger<Service > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateBuild<WithStreamedUnaryMethod_GetBuild<WithStreamedUnaryMethod_ListBuilds<WithStreamedUnaryMethod_CancelBuild<WithStreamedUnaryMethod_CreateBuildTrigger<WithStreamedUnaryMethod_GetBuildTrigger<WithStreamedUnaryMethod_ListBuildTriggers<WithStreamedUnaryMethod_DeleteBuildTrigger<WithStreamedUnaryMethod_UpdateBuildTrigger<Service > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

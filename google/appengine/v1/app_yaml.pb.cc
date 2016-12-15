@@ -80,14 +80,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   ApiConfigHandler_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ApiConfigHandler_descriptor_,
-      ApiConfigHandler::default_instance_,
+      ApiConfigHandler::internal_default_instance(),
       ApiConfigHandler_offsets_,
       -1,
       -1,
       -1,
       sizeof(ApiConfigHandler),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ApiConfigHandler, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ApiConfigHandler, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ApiConfigHandler, _internal_metadata_));
   ErrorHandler_descriptor_ = file->message_type(1);
   static const int ErrorHandler_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorHandler, error_code_),
@@ -97,14 +96,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   ErrorHandler_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ErrorHandler_descriptor_,
-      ErrorHandler::default_instance_,
+      ErrorHandler::internal_default_instance(),
       ErrorHandler_offsets_,
       -1,
       -1,
       -1,
       sizeof(ErrorHandler),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorHandler, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorHandler, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorHandler, _internal_metadata_));
   ErrorHandler_ErrorCode_descriptor_ = ErrorHandler_descriptor_->enum_type(0);
   UrlMap_descriptor_ = file->message_type(2);
   static const int UrlMap_offsets_[9] = {
@@ -121,7 +119,7 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   UrlMap_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UrlMap_descriptor_,
-      UrlMap::default_instance_,
+      UrlMap::internal_default_instance(),
       UrlMap_offsets_,
       -1,
       -1,
@@ -129,8 +127,7 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
       UrlMap_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlMap, _oneof_case_[0]),
       sizeof(UrlMap),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlMap, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlMap, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlMap, _internal_metadata_));
   UrlMap_RedirectHttpResponseCode_descriptor_ = UrlMap_descriptor_->enum_type(0);
   StaticFilesHandler_descriptor_ = file->message_type(3);
   static const int StaticFilesHandler_offsets_[7] = {
@@ -145,14 +142,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   StaticFilesHandler_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StaticFilesHandler_descriptor_,
-      StaticFilesHandler::default_instance_,
+      StaticFilesHandler::internal_default_instance(),
       StaticFilesHandler_offsets_,
       -1,
       -1,
       -1,
       sizeof(StaticFilesHandler),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StaticFilesHandler, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StaticFilesHandler, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StaticFilesHandler, _internal_metadata_));
   StaticFilesHandler_HttpHeadersEntry_descriptor_ = StaticFilesHandler_descriptor_->nested_type(0);
   ScriptHandler_descriptor_ = file->message_type(4);
   static const int ScriptHandler_offsets_[1] = {
@@ -161,14 +157,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   ScriptHandler_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ScriptHandler_descriptor_,
-      ScriptHandler::default_instance_,
+      ScriptHandler::internal_default_instance(),
       ScriptHandler_offsets_,
       -1,
       -1,
       -1,
       sizeof(ScriptHandler),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ScriptHandler, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ScriptHandler, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ScriptHandler, _internal_metadata_));
   ApiEndpointHandler_descriptor_ = file->message_type(5);
   static const int ApiEndpointHandler_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ApiEndpointHandler, script_path_),
@@ -176,14 +171,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   ApiEndpointHandler_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ApiEndpointHandler_descriptor_,
-      ApiEndpointHandler::default_instance_,
+      ApiEndpointHandler::internal_default_instance(),
       ApiEndpointHandler_offsets_,
       -1,
       -1,
       -1,
       sizeof(ApiEndpointHandler),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ApiEndpointHandler, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ApiEndpointHandler, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ApiEndpointHandler, _internal_metadata_));
   HealthCheck_descriptor_ = file->message_type(6);
   static const int HealthCheck_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HealthCheck, disable_health_check_),
@@ -197,14 +191,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   HealthCheck_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       HealthCheck_descriptor_,
-      HealthCheck::default_instance_,
+      HealthCheck::internal_default_instance(),
       HealthCheck_offsets_,
       -1,
       -1,
       -1,
       sizeof(HealthCheck),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HealthCheck, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HealthCheck, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HealthCheck, _internal_metadata_));
   Library_descriptor_ = file->message_type(7);
   static const int Library_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Library, name_),
@@ -213,14 +206,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
   Library_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Library_descriptor_,
-      Library::default_instance_,
+      Library::internal_default_instance(),
       Library_offsets_,
       -1,
       -1,
       -1,
       sizeof(Library),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Library, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Library, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Library, _internal_metadata_));
   AuthFailAction_descriptor_ = file->enum_type(0);
   LoginRequirement_descriptor_ = file->enum_type(1);
   SecurityLevel_descriptor_ = file->enum_type(2);
@@ -229,7 +221,7 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto);
 }
@@ -238,13 +230,13 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ApiConfigHandler_descriptor_, &ApiConfigHandler::default_instance());
+      ApiConfigHandler_descriptor_, ApiConfigHandler::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ErrorHandler_descriptor_, &ErrorHandler::default_instance());
+      ErrorHandler_descriptor_, ErrorHandler::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UrlMap_descriptor_, &UrlMap::default_instance());
+      UrlMap_descriptor_, UrlMap::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StaticFilesHandler_descriptor_, &StaticFilesHandler::default_instance());
+      StaticFilesHandler_descriptor_, StaticFilesHandler::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         StaticFilesHandler_HttpHeadersEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -255,46 +247,78 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 StaticFilesHandler_HttpHeadersEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ScriptHandler_descriptor_, &ScriptHandler::default_instance());
+      ScriptHandler_descriptor_, ScriptHandler::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ApiEndpointHandler_descriptor_, &ApiEndpointHandler::default_instance());
+      ApiEndpointHandler_descriptor_, ApiEndpointHandler::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      HealthCheck_descriptor_, &HealthCheck::default_instance());
+      HealthCheck_descriptor_, HealthCheck::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Library_descriptor_, &Library::default_instance());
+      Library_descriptor_, Library::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
-  delete ApiConfigHandler::default_instance_;
+  ApiConfigHandler_default_instance_.Shutdown();
   delete ApiConfigHandler_reflection_;
-  delete ErrorHandler::default_instance_;
+  ErrorHandler_default_instance_.Shutdown();
   delete ErrorHandler_reflection_;
-  delete UrlMap::default_instance_;
+  UrlMap_default_instance_.Shutdown();
   delete UrlMap_default_oneof_instance_;
   delete UrlMap_reflection_;
-  delete StaticFilesHandler::default_instance_;
+  StaticFilesHandler_default_instance_.Shutdown();
   delete StaticFilesHandler_reflection_;
-  delete ScriptHandler::default_instance_;
+  ScriptHandler_default_instance_.Shutdown();
   delete ScriptHandler_reflection_;
-  delete ApiEndpointHandler::default_instance_;
+  ApiEndpointHandler_default_instance_.Shutdown();
   delete ApiEndpointHandler_reflection_;
-  delete HealthCheck::default_instance_;
+  HealthCheck_default_instance_.Shutdown();
   delete HealthCheck_reflection_;
-  delete Library::default_instance_;
+  Library_default_instance_.Shutdown();
   delete Library_reflection_;
 }
 
-void protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  ApiConfigHandler_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ErrorHandler_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UrlMap_default_instance_.DefaultConstruct();
+  UrlMap_default_oneof_instance_ = new UrlMapOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  StaticFilesHandler_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ScriptHandler_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ApiEndpointHandler_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  HealthCheck_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Library_default_instance_.DefaultConstruct();
+  ApiConfigHandler_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ErrorHandler_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UrlMap_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StaticFilesHandler_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ScriptHandler_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ApiEndpointHandler_default_instance_.get_mutable()->InitAsDefaultInstance();
+  HealthCheck_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Library_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_once_);
+void protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\"google/appengine/v1/app_yaml.proto\022\023go"
     "ogle.appengine.v1\032\034google/api/annotation"
@@ -355,30 +379,21 @@ void protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
     "\020\003*y\n\rSecurityLevel\022\026\n\022SECURE_UNSPECIFIE"
     "D\020\000\022\022\n\016SECURE_DEFAULT\020\000\022\020\n\014SECURE_NEVER\020"
     "\001\022\023\n\017SECURE_OPTIONAL\020\002\022\021\n\rSECURE_ALWAYS\020"
-    "\003\032\002\020\001B)\n\027com.google.appengine.v1B\014AppYam"
-    "lProtoP\001b\006proto3", 2416);
+    "\003\032\002\020\001Bg\n\027com.google.appengine.v1B\014AppYam"
+    "lProtoP\001Z<google.golang.org/genproto/goo"
+    "gleapis/appengine/v1;appengineb\006proto3", 2478);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/appengine/v1/app_yaml.proto", &protobuf_RegisterTypes);
-  ApiConfigHandler::default_instance_ = new ApiConfigHandler();
-  ErrorHandler::default_instance_ = new ErrorHandler();
-  UrlMap::default_instance_ = new UrlMap();
-  UrlMap_default_oneof_instance_ = new UrlMapOneofInstance();
-  StaticFilesHandler::default_instance_ = new StaticFilesHandler();
-  ScriptHandler::default_instance_ = new ScriptHandler();
-  ApiEndpointHandler::default_instance_ = new ApiEndpointHandler();
-  HealthCheck::default_instance_ = new HealthCheck();
-  Library::default_instance_ = new Library();
-  ApiConfigHandler::default_instance_->InitAsDefaultInstance();
-  ErrorHandler::default_instance_->InitAsDefaultInstance();
-  UrlMap::default_instance_->InitAsDefaultInstance();
-  StaticFilesHandler::default_instance_->InitAsDefaultInstance();
-  ScriptHandler::default_instance_->InitAsDefaultInstance();
-  ApiEndpointHandler::default_instance_->InitAsDefaultInstance();
-  HealthCheck::default_instance_->InitAsDefaultInstance();
-  Library::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fappengine_2fv1_2fapp_5fyaml_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_once_);
+void protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_once_,
+                 &protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fappengine_2fv1_2fapp_5fyaml_2eproto {
   StaticDescriptorInitializer_google_2fappengine_2fv1_2fapp_5fyaml_2eproto() {
@@ -390,7 +405,7 @@ const ::google::protobuf::EnumDescriptor* AuthFailAction_descriptor() {
   return AuthFailAction_descriptor_;
 }
 bool AuthFailAction_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -405,7 +420,7 @@ const ::google::protobuf::EnumDescriptor* LoginRequirement_descriptor() {
   return LoginRequirement_descriptor_;
 }
 bool LoginRequirement_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -421,7 +436,7 @@ const ::google::protobuf::EnumDescriptor* SecurityLevel_descriptor() {
   return SecurityLevel_descriptor_;
 }
 bool SecurityLevel_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -431,6 +446,16 @@ bool SecurityLevel_IsValid(int value) {
       return false;
   }
 }
+
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
 
 
 // ===================================================================
@@ -445,31 +470,28 @@ const int ApiConfigHandler::kUrlFieldNumber;
 
 ApiConfigHandler::ApiConfigHandler()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.ApiConfigHandler)
 }
 
 void ApiConfigHandler::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ApiConfigHandler::ApiConfigHandler(const ApiConfigHandler& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.ApiConfigHandler)
 }
 
 void ApiConfigHandler::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  auth_fail_action_ = 0;
-  login_ = 0;
   script_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  security_level_ = 0;
   url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&auth_fail_action_, 0, reinterpret_cast<char*>(&security_level_) -
+    reinterpret_cast<char*>(&auth_fail_action_) + sizeof(security_level_));
+  _cached_size_ = 0;
 }
 
 ApiConfigHandler::~ApiConfigHandler() {
@@ -480,8 +502,6 @@ ApiConfigHandler::~ApiConfigHandler() {
 void ApiConfigHandler::SharedDtor() {
   script_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   url_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ApiConfigHandler::SetCachedSize(int size) const {
@@ -495,11 +515,11 @@ const ::google::protobuf::Descriptor* ApiConfigHandler::descriptor() {
 }
 
 const ApiConfigHandler& ApiConfigHandler::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-ApiConfigHandler* ApiConfigHandler::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ApiConfigHandler> ApiConfigHandler_default_instance_;
 
 ApiConfigHandler* ApiConfigHandler::New(::google::protobuf::Arena* arena) const {
   ApiConfigHandler* n = new ApiConfigHandler;
@@ -523,13 +543,12 @@ void ApiConfigHandler::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
-  ZR_(auth_fail_action_, login_);
+  ZR_(auth_fail_action_, security_level_);
   script_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  security_level_ = 0;
   url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 
 #undef ZR_HELPER_
@@ -695,6 +714,7 @@ void ApiConfigHandler::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ApiConfigHandler::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.ApiConfigHandler)
   // optional .google.appengine.v1.AuthFailAction auth_fail_action = 1;
   if (this->auth_fail_action() != 0) {
@@ -740,9 +760,9 @@ void ApiConfigHandler::SerializeWithCachedSizes(
   return target;
 }
 
-int ApiConfigHandler::ByteSize() const {
+size_t ApiConfigHandler::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.ApiConfigHandler)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.appengine.v1.AuthFailAction auth_fail_action = 1;
   if (this->auth_fail_action() != 0) {
@@ -776,18 +796,17 @@ int ApiConfigHandler::ByteSize() const {
         this->url());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ApiConfigHandler::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.ApiConfigHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ApiConfigHandler* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ApiConfigHandler* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ApiConfigHandler>(
           &from);
   if (source == NULL) {
@@ -795,15 +814,21 @@ void ApiConfigHandler::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.ApiConfigHandler)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ApiConfigHandler::MergeFrom(const ApiConfigHandler& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.ApiConfigHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ApiConfigHandler::UnsafeMergeFrom(const ApiConfigHandler& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.auth_fail_action() != 0) {
     set_auth_fail_action(from.auth_fail_action());
   }
@@ -834,7 +859,7 @@ void ApiConfigHandler::CopyFrom(const ApiConfigHandler& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.ApiConfigHandler)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ApiConfigHandler::IsInitialized() const {
@@ -871,11 +896,11 @@ void ApiConfigHandler::InternalSwap(ApiConfigHandler* other) {
 void ApiConfigHandler::clear_auth_fail_action() {
   auth_fail_action_ = 0;
 }
- ::google::appengine::v1::AuthFailAction ApiConfigHandler::auth_fail_action() const {
+::google::appengine::v1::AuthFailAction ApiConfigHandler::auth_fail_action() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ApiConfigHandler.auth_fail_action)
   return static_cast< ::google::appengine::v1::AuthFailAction >(auth_fail_action_);
 }
- void ApiConfigHandler::set_auth_fail_action(::google::appengine::v1::AuthFailAction value) {
+void ApiConfigHandler::set_auth_fail_action(::google::appengine::v1::AuthFailAction value) {
   
   auth_fail_action_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.ApiConfigHandler.auth_fail_action)
@@ -885,11 +910,11 @@ void ApiConfigHandler::clear_auth_fail_action() {
 void ApiConfigHandler::clear_login() {
   login_ = 0;
 }
- ::google::appengine::v1::LoginRequirement ApiConfigHandler::login() const {
+::google::appengine::v1::LoginRequirement ApiConfigHandler::login() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ApiConfigHandler.login)
   return static_cast< ::google::appengine::v1::LoginRequirement >(login_);
 }
- void ApiConfigHandler::set_login(::google::appengine::v1::LoginRequirement value) {
+void ApiConfigHandler::set_login(::google::appengine::v1::LoginRequirement value) {
   
   login_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.ApiConfigHandler.login)
@@ -899,37 +924,37 @@ void ApiConfigHandler::clear_login() {
 void ApiConfigHandler::clear_script() {
   script_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ApiConfigHandler::script() const {
+const ::std::string& ApiConfigHandler::script() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ApiConfigHandler.script)
   return script_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ApiConfigHandler::set_script(const ::std::string& value) {
+void ApiConfigHandler::set_script(const ::std::string& value) {
   
   script_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.ApiConfigHandler.script)
 }
- void ApiConfigHandler::set_script(const char* value) {
+void ApiConfigHandler::set_script(const char* value) {
   
   script_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.ApiConfigHandler.script)
 }
- void ApiConfigHandler::set_script(const char* value, size_t size) {
+void ApiConfigHandler::set_script(const char* value, size_t size) {
   
   script_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.ApiConfigHandler.script)
 }
- ::std::string* ApiConfigHandler::mutable_script() {
+::std::string* ApiConfigHandler::mutable_script() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.ApiConfigHandler.script)
   return script_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ApiConfigHandler::release_script() {
+::std::string* ApiConfigHandler::release_script() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.ApiConfigHandler.script)
   
   return script_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ApiConfigHandler::set_allocated_script(::std::string* script) {
+void ApiConfigHandler::set_allocated_script(::std::string* script) {
   if (script != NULL) {
     
   } else {
@@ -943,11 +968,11 @@ void ApiConfigHandler::clear_script() {
 void ApiConfigHandler::clear_security_level() {
   security_level_ = 0;
 }
- ::google::appengine::v1::SecurityLevel ApiConfigHandler::security_level() const {
+::google::appengine::v1::SecurityLevel ApiConfigHandler::security_level() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ApiConfigHandler.security_level)
   return static_cast< ::google::appengine::v1::SecurityLevel >(security_level_);
 }
- void ApiConfigHandler::set_security_level(::google::appengine::v1::SecurityLevel value) {
+void ApiConfigHandler::set_security_level(::google::appengine::v1::SecurityLevel value) {
   
   security_level_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.ApiConfigHandler.security_level)
@@ -957,37 +982,37 @@ void ApiConfigHandler::clear_security_level() {
 void ApiConfigHandler::clear_url() {
   url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ApiConfigHandler::url() const {
+const ::std::string& ApiConfigHandler::url() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ApiConfigHandler.url)
   return url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ApiConfigHandler::set_url(const ::std::string& value) {
+void ApiConfigHandler::set_url(const ::std::string& value) {
   
   url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.ApiConfigHandler.url)
 }
- void ApiConfigHandler::set_url(const char* value) {
+void ApiConfigHandler::set_url(const char* value) {
   
   url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.ApiConfigHandler.url)
 }
- void ApiConfigHandler::set_url(const char* value, size_t size) {
+void ApiConfigHandler::set_url(const char* value, size_t size) {
   
   url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.ApiConfigHandler.url)
 }
- ::std::string* ApiConfigHandler::mutable_url() {
+::std::string* ApiConfigHandler::mutable_url() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.ApiConfigHandler.url)
   return url_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ApiConfigHandler::release_url() {
+::std::string* ApiConfigHandler::release_url() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.ApiConfigHandler.url)
   
   return url_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ApiConfigHandler::set_allocated_url(::std::string* url) {
+void ApiConfigHandler::set_allocated_url(::std::string* url) {
   if (url != NULL) {
     
   } else {
@@ -997,6 +1022,9 @@ void ApiConfigHandler::clear_url() {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ApiConfigHandler.url)
 }
 
+inline const ApiConfigHandler* ApiConfigHandler::internal_default_instance() {
+  return &ApiConfigHandler_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1006,7 +1034,7 @@ const ::google::protobuf::EnumDescriptor* ErrorHandler_ErrorCode_descriptor() {
   return ErrorHandler_ErrorCode_descriptor_;
 }
 bool ErrorHandler_ErrorCode_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -1035,29 +1063,27 @@ const int ErrorHandler::kMimeTypeFieldNumber;
 
 ErrorHandler::ErrorHandler()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.ErrorHandler)
 }
 
 void ErrorHandler::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ErrorHandler::ErrorHandler(const ErrorHandler& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.ErrorHandler)
 }
 
 void ErrorHandler::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  error_code_ = 0;
   static_file_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mime_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  error_code_ = 0;
+  _cached_size_ = 0;
 }
 
 ErrorHandler::~ErrorHandler() {
@@ -1068,8 +1094,6 @@ ErrorHandler::~ErrorHandler() {
 void ErrorHandler::SharedDtor() {
   static_file_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mime_type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ErrorHandler::SetCachedSize(int size) const {
@@ -1083,11 +1107,11 @@ const ::google::protobuf::Descriptor* ErrorHandler::descriptor() {
 }
 
 const ErrorHandler& ErrorHandler::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-ErrorHandler* ErrorHandler::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ErrorHandler> ErrorHandler_default_instance_;
 
 ErrorHandler* ErrorHandler::New(::google::protobuf::Arena* arena) const {
   ErrorHandler* n = new ErrorHandler;
@@ -1218,6 +1242,7 @@ void ErrorHandler::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ErrorHandler::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.ErrorHandler)
   // optional .google.appengine.v1.ErrorHandler.ErrorCode error_code = 1;
   if (this->error_code() != 0) {
@@ -1251,9 +1276,9 @@ void ErrorHandler::SerializeWithCachedSizes(
   return target;
 }
 
-int ErrorHandler::ByteSize() const {
+size_t ErrorHandler::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.ErrorHandler)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.appengine.v1.ErrorHandler.ErrorCode error_code = 1;
   if (this->error_code() != 0) {
@@ -1275,18 +1300,17 @@ int ErrorHandler::ByteSize() const {
         this->mime_type());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ErrorHandler::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.ErrorHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ErrorHandler* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ErrorHandler* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ErrorHandler>(
           &from);
   if (source == NULL) {
@@ -1294,15 +1318,21 @@ void ErrorHandler::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.ErrorHandler)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ErrorHandler::MergeFrom(const ErrorHandler& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.ErrorHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ErrorHandler::UnsafeMergeFrom(const ErrorHandler& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.error_code() != 0) {
     set_error_code(from.error_code());
   }
@@ -1327,7 +1357,7 @@ void ErrorHandler::CopyFrom(const ErrorHandler& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.ErrorHandler)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ErrorHandler::IsInitialized() const {
@@ -1362,11 +1392,11 @@ void ErrorHandler::InternalSwap(ErrorHandler* other) {
 void ErrorHandler::clear_error_code() {
   error_code_ = 0;
 }
- ::google::appengine::v1::ErrorHandler_ErrorCode ErrorHandler::error_code() const {
+::google::appengine::v1::ErrorHandler_ErrorCode ErrorHandler::error_code() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ErrorHandler.error_code)
   return static_cast< ::google::appengine::v1::ErrorHandler_ErrorCode >(error_code_);
 }
- void ErrorHandler::set_error_code(::google::appengine::v1::ErrorHandler_ErrorCode value) {
+void ErrorHandler::set_error_code(::google::appengine::v1::ErrorHandler_ErrorCode value) {
   
   error_code_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.ErrorHandler.error_code)
@@ -1376,37 +1406,37 @@ void ErrorHandler::clear_error_code() {
 void ErrorHandler::clear_static_file() {
   static_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ErrorHandler::static_file() const {
+const ::std::string& ErrorHandler::static_file() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ErrorHandler.static_file)
   return static_file_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ErrorHandler::set_static_file(const ::std::string& value) {
+void ErrorHandler::set_static_file(const ::std::string& value) {
   
   static_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.ErrorHandler.static_file)
 }
- void ErrorHandler::set_static_file(const char* value) {
+void ErrorHandler::set_static_file(const char* value) {
   
   static_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.ErrorHandler.static_file)
 }
- void ErrorHandler::set_static_file(const char* value, size_t size) {
+void ErrorHandler::set_static_file(const char* value, size_t size) {
   
   static_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.ErrorHandler.static_file)
 }
- ::std::string* ErrorHandler::mutable_static_file() {
+::std::string* ErrorHandler::mutable_static_file() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.ErrorHandler.static_file)
   return static_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ErrorHandler::release_static_file() {
+::std::string* ErrorHandler::release_static_file() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.ErrorHandler.static_file)
   
   return static_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ErrorHandler::set_allocated_static_file(::std::string* static_file) {
+void ErrorHandler::set_allocated_static_file(::std::string* static_file) {
   if (static_file != NULL) {
     
   } else {
@@ -1420,37 +1450,37 @@ void ErrorHandler::clear_static_file() {
 void ErrorHandler::clear_mime_type() {
   mime_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ErrorHandler::mime_type() const {
+const ::std::string& ErrorHandler::mime_type() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ErrorHandler.mime_type)
   return mime_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ErrorHandler::set_mime_type(const ::std::string& value) {
+void ErrorHandler::set_mime_type(const ::std::string& value) {
   
   mime_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.ErrorHandler.mime_type)
 }
- void ErrorHandler::set_mime_type(const char* value) {
+void ErrorHandler::set_mime_type(const char* value) {
   
   mime_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.ErrorHandler.mime_type)
 }
- void ErrorHandler::set_mime_type(const char* value, size_t size) {
+void ErrorHandler::set_mime_type(const char* value, size_t size) {
   
   mime_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.ErrorHandler.mime_type)
 }
- ::std::string* ErrorHandler::mutable_mime_type() {
+::std::string* ErrorHandler::mutable_mime_type() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.ErrorHandler.mime_type)
   return mime_type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ErrorHandler::release_mime_type() {
+::std::string* ErrorHandler::release_mime_type() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.ErrorHandler.mime_type)
   
   return mime_type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ErrorHandler::set_allocated_mime_type(::std::string* mime_type) {
+void ErrorHandler::set_allocated_mime_type(::std::string* mime_type) {
   if (mime_type != NULL) {
     
   } else {
@@ -1460,6 +1490,9 @@ void ErrorHandler::clear_mime_type() {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ErrorHandler.mime_type)
 }
 
+inline const ErrorHandler* ErrorHandler::internal_default_instance() {
+  return &ErrorHandler_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1469,7 +1502,7 @@ const ::google::protobuf::EnumDescriptor* UrlMap_RedirectHttpResponseCode_descri
   return UrlMap_RedirectHttpResponseCode_descriptor_;
 }
 bool UrlMap_RedirectHttpResponseCode_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -1504,35 +1537,34 @@ const int UrlMap::kRedirectHttpResponseCodeFieldNumber;
 
 UrlMap::UrlMap()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.UrlMap)
 }
 
 void UrlMap::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  UrlMap_default_oneof_instance_->static_files_ = const_cast< ::google::appengine::v1::StaticFilesHandler*>(&::google::appengine::v1::StaticFilesHandler::default_instance());
-  UrlMap_default_oneof_instance_->script_ = const_cast< ::google::appengine::v1::ScriptHandler*>(&::google::appengine::v1::ScriptHandler::default_instance());
-  UrlMap_default_oneof_instance_->api_endpoint_ = const_cast< ::google::appengine::v1::ApiEndpointHandler*>(&::google::appengine::v1::ApiEndpointHandler::default_instance());
+  UrlMap_default_oneof_instance_->static_files_ = const_cast< ::google::appengine::v1::StaticFilesHandler*>(
+      ::google::appengine::v1::StaticFilesHandler::internal_default_instance());
+  UrlMap_default_oneof_instance_->script_ = const_cast< ::google::appengine::v1::ScriptHandler*>(
+      ::google::appengine::v1::ScriptHandler::internal_default_instance());
+  UrlMap_default_oneof_instance_->api_endpoint_ = const_cast< ::google::appengine::v1::ApiEndpointHandler*>(
+      ::google::appengine::v1::ApiEndpointHandler::internal_default_instance());
 }
 
 UrlMap::UrlMap(const UrlMap& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.UrlMap)
 }
 
 void UrlMap::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   url_regex_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  security_level_ = 0;
-  login_ = 0;
-  auth_fail_action_ = 0;
-  redirect_http_response_code_ = 0;
+  ::memset(&security_level_, 0, reinterpret_cast<char*>(&redirect_http_response_code_) -
+    reinterpret_cast<char*>(&security_level_) + sizeof(redirect_http_response_code_));
   clear_has_handler_type();
+  _cached_size_ = 0;
 }
 
 UrlMap::~UrlMap() {
@@ -1544,8 +1576,6 @@ void UrlMap::SharedDtor() {
   url_regex_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (has_handler_type()) {
     clear_handler_type();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -1560,11 +1590,11 @@ const ::google::protobuf::Descriptor* UrlMap::descriptor() {
 }
 
 const UrlMap& UrlMap::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-UrlMap* UrlMap::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UrlMap> UrlMap_default_instance_;
 
 UrlMap* UrlMap::New(::google::protobuf::Arena* arena) const {
   UrlMap* n = new UrlMap;
@@ -1576,7 +1606,7 @@ UrlMap* UrlMap::New(::google::protobuf::Arena* arena) const {
 
 void UrlMap::clear_handler_type() {
 // @@protoc_insertion_point(one_of_clear_start:google.appengine.v1.UrlMap)
-  switch(handler_type_case()) {
+  switch (handler_type_case()) {
     case kStaticFiles: {
       delete handler_type_.static_files_;
       break;
@@ -1611,7 +1641,7 @@ void UrlMap::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -1659,14 +1689,13 @@ bool UrlMap::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_script;
+        goto after_api_endpoint;
         break;
       }
 
       // optional .google.appengine.v1.ScriptHandler script = 3;
       case 3: {
         if (tag == 26) {
-         parse_script:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_script()));
         } else {
@@ -1685,6 +1714,7 @@ bool UrlMap::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_api_endpoint:
         if (input->ExpectTag(40)) goto parse_security_level;
         break;
       }
@@ -1834,6 +1864,7 @@ void UrlMap::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UrlMap::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.UrlMap)
   // optional string url_regex = 1;
   if (this->url_regex().size() > 0) {
@@ -1895,9 +1926,9 @@ void UrlMap::SerializeWithCachedSizes(
   return target;
 }
 
-int UrlMap::ByteSize() const {
+size_t UrlMap::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.UrlMap)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string url_regex = 1;
   if (this->url_regex().size() > 0) {
@@ -1956,18 +1987,17 @@ int UrlMap::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UrlMap::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.UrlMap)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UrlMap* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UrlMap* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UrlMap>(
           &from);
   if (source == NULL) {
@@ -1975,15 +2005,21 @@ void UrlMap::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.UrlMap)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UrlMap::MergeFrom(const UrlMap& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.UrlMap)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UrlMap::UnsafeMergeFrom(const UrlMap& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.handler_type_case()) {
     case kStaticFiles: {
       mutable_static_files()->::google::appengine::v1::StaticFilesHandler::MergeFrom(from.static_files());
@@ -2030,7 +2066,7 @@ void UrlMap::CopyFrom(const UrlMap& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.UrlMap)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UrlMap::IsInitialized() const {
@@ -2069,37 +2105,37 @@ void UrlMap::InternalSwap(UrlMap* other) {
 void UrlMap::clear_url_regex() {
   url_regex_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UrlMap::url_regex() const {
+const ::std::string& UrlMap::url_regex() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlMap.url_regex)
   return url_regex_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UrlMap::set_url_regex(const ::std::string& value) {
+void UrlMap::set_url_regex(const ::std::string& value) {
   
   url_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.UrlMap.url_regex)
 }
- void UrlMap::set_url_regex(const char* value) {
+void UrlMap::set_url_regex(const char* value) {
   
   url_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.UrlMap.url_regex)
 }
- void UrlMap::set_url_regex(const char* value, size_t size) {
+void UrlMap::set_url_regex(const char* value, size_t size) {
   
   url_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.UrlMap.url_regex)
 }
- ::std::string* UrlMap::mutable_url_regex() {
+::std::string* UrlMap::mutable_url_regex() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.UrlMap.url_regex)
   return url_regex_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UrlMap::release_url_regex() {
+::std::string* UrlMap::release_url_regex() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.UrlMap.url_regex)
   
   return url_regex_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UrlMap::set_allocated_url_regex(::std::string* url_regex) {
+void UrlMap::set_allocated_url_regex(::std::string* url_regex) {
   if (url_regex != NULL) {
     
   } else {
@@ -2257,11 +2293,11 @@ void UrlMap::set_allocated_api_endpoint(::google::appengine::v1::ApiEndpointHand
 void UrlMap::clear_security_level() {
   security_level_ = 0;
 }
- ::google::appengine::v1::SecurityLevel UrlMap::security_level() const {
+::google::appengine::v1::SecurityLevel UrlMap::security_level() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlMap.security_level)
   return static_cast< ::google::appengine::v1::SecurityLevel >(security_level_);
 }
- void UrlMap::set_security_level(::google::appengine::v1::SecurityLevel value) {
+void UrlMap::set_security_level(::google::appengine::v1::SecurityLevel value) {
   
   security_level_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.UrlMap.security_level)
@@ -2271,11 +2307,11 @@ void UrlMap::clear_security_level() {
 void UrlMap::clear_login() {
   login_ = 0;
 }
- ::google::appengine::v1::LoginRequirement UrlMap::login() const {
+::google::appengine::v1::LoginRequirement UrlMap::login() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlMap.login)
   return static_cast< ::google::appengine::v1::LoginRequirement >(login_);
 }
- void UrlMap::set_login(::google::appengine::v1::LoginRequirement value) {
+void UrlMap::set_login(::google::appengine::v1::LoginRequirement value) {
   
   login_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.UrlMap.login)
@@ -2285,11 +2321,11 @@ void UrlMap::clear_login() {
 void UrlMap::clear_auth_fail_action() {
   auth_fail_action_ = 0;
 }
- ::google::appengine::v1::AuthFailAction UrlMap::auth_fail_action() const {
+::google::appengine::v1::AuthFailAction UrlMap::auth_fail_action() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlMap.auth_fail_action)
   return static_cast< ::google::appengine::v1::AuthFailAction >(auth_fail_action_);
 }
- void UrlMap::set_auth_fail_action(::google::appengine::v1::AuthFailAction value) {
+void UrlMap::set_auth_fail_action(::google::appengine::v1::AuthFailAction value) {
   
   auth_fail_action_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.UrlMap.auth_fail_action)
@@ -2299,11 +2335,11 @@ void UrlMap::clear_auth_fail_action() {
 void UrlMap::clear_redirect_http_response_code() {
   redirect_http_response_code_ = 0;
 }
- ::google::appengine::v1::UrlMap_RedirectHttpResponseCode UrlMap::redirect_http_response_code() const {
+::google::appengine::v1::UrlMap_RedirectHttpResponseCode UrlMap::redirect_http_response_code() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlMap.redirect_http_response_code)
   return static_cast< ::google::appengine::v1::UrlMap_RedirectHttpResponseCode >(redirect_http_response_code_);
 }
- void UrlMap::set_redirect_http_response_code(::google::appengine::v1::UrlMap_RedirectHttpResponseCode value) {
+void UrlMap::set_redirect_http_response_code(::google::appengine::v1::UrlMap_RedirectHttpResponseCode value) {
   
   redirect_http_response_code_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.UrlMap.redirect_http_response_code)
@@ -2317,6 +2353,9 @@ void UrlMap::clear_has_handler_type() {
 }
 UrlMap::HandlerTypeCase UrlMap::handler_type_case() const {
   return UrlMap::HandlerTypeCase(_oneof_case_[0]);
+}
+inline const UrlMap* UrlMap::internal_default_instance() {
+  return &UrlMap_default_instance_.get();
 }
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
@@ -2334,37 +2373,36 @@ const int StaticFilesHandler::kApplicationReadableFieldNumber;
 
 StaticFilesHandler::StaticFilesHandler()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.StaticFilesHandler)
 }
 
 void StaticFilesHandler::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  expiration_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
+  expiration_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
 }
 
 StaticFilesHandler::StaticFilesHandler(const StaticFilesHandler& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.StaticFilesHandler)
 }
 
 void StaticFilesHandler::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  upload_path_regex_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   http_headers_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   http_headers_.SetEntryDescriptor(
       &::google::appengine::v1::StaticFilesHandler_HttpHeadersEntry_descriptor_);
+  path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  upload_path_regex_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mime_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   expiration_ = NULL;
-  require_matching_file_ = false;
-  application_readable_ = false;
+  ::memset(&require_matching_file_, 0, reinterpret_cast<char*>(&application_readable_) -
+    reinterpret_cast<char*>(&require_matching_file_) + sizeof(application_readable_));
+  _cached_size_ = 0;
 }
 
 StaticFilesHandler::~StaticFilesHandler() {
@@ -2376,7 +2414,7 @@ void StaticFilesHandler::SharedDtor() {
   path_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   upload_path_regex_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mime_type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &StaticFilesHandler_default_instance_.get()) {
     delete expiration_;
   }
 }
@@ -2392,11 +2430,11 @@ const ::google::protobuf::Descriptor* StaticFilesHandler::descriptor() {
 }
 
 const StaticFilesHandler& StaticFilesHandler::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-StaticFilesHandler* StaticFilesHandler::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StaticFilesHandler> StaticFilesHandler_default_instance_;
 
 StaticFilesHandler* StaticFilesHandler::New(::google::protobuf::Arena* arena) const {
   StaticFilesHandler* n = new StaticFilesHandler;
@@ -2420,7 +2458,7 @@ void StaticFilesHandler::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -2545,10 +2583,10 @@ bool StaticFilesHandler::MergePartialFromCodedStream(
       case 6: {
         if (tag == 48) {
          parse_require_matching_file:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &require_matching_file_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2560,10 +2598,10 @@ bool StaticFilesHandler::MergePartialFromCodedStream(
       case 7: {
         if (tag == 56) {
          parse_application_readable:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &application_readable_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2699,6 +2737,7 @@ void StaticFilesHandler::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StaticFilesHandler::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.StaticFilesHandler)
   // optional string path = 1;
   if (this->path().size() > 0) {
@@ -2811,9 +2850,9 @@ void StaticFilesHandler::SerializeWithCachedSizes(
   return target;
 }
 
-int StaticFilesHandler::ByteSize() const {
+size_t StaticFilesHandler::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.StaticFilesHandler)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string path = 1;
   if (this->path().size() > 0) {
@@ -2854,7 +2893,8 @@ int StaticFilesHandler::ByteSize() const {
   }
 
   // map<string, string> http_headers = 3;
-  total_size += 1 * this->http_headers_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->http_headers_size());
   {
     ::google::protobuf::scoped_ptr<StaticFilesHandler_HttpHeadersEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -2866,18 +2906,17 @@ int StaticFilesHandler::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StaticFilesHandler::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.StaticFilesHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StaticFilesHandler* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StaticFilesHandler* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StaticFilesHandler>(
           &from);
   if (source == NULL) {
@@ -2885,15 +2924,21 @@ void StaticFilesHandler::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.StaticFilesHandler)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StaticFilesHandler::MergeFrom(const StaticFilesHandler& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.StaticFilesHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StaticFilesHandler::UnsafeMergeFrom(const StaticFilesHandler& from) {
+  GOOGLE_DCHECK(&from != this);
   http_headers_.MergeFrom(from.http_headers_);
   if (from.path().size() > 0) {
 
@@ -2929,7 +2974,7 @@ void StaticFilesHandler::CopyFrom(const StaticFilesHandler& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.StaticFilesHandler)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StaticFilesHandler::IsInitialized() const {
@@ -2968,37 +3013,37 @@ void StaticFilesHandler::InternalSwap(StaticFilesHandler* other) {
 void StaticFilesHandler::clear_path() {
   path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StaticFilesHandler::path() const {
+const ::std::string& StaticFilesHandler::path() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.StaticFilesHandler.path)
   return path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StaticFilesHandler::set_path(const ::std::string& value) {
+void StaticFilesHandler::set_path(const ::std::string& value) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.StaticFilesHandler.path)
 }
- void StaticFilesHandler::set_path(const char* value) {
+void StaticFilesHandler::set_path(const char* value) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.StaticFilesHandler.path)
 }
- void StaticFilesHandler::set_path(const char* value, size_t size) {
+void StaticFilesHandler::set_path(const char* value, size_t size) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.StaticFilesHandler.path)
 }
- ::std::string* StaticFilesHandler::mutable_path() {
+::std::string* StaticFilesHandler::mutable_path() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.StaticFilesHandler.path)
   return path_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StaticFilesHandler::release_path() {
+::std::string* StaticFilesHandler::release_path() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.StaticFilesHandler.path)
   
   return path_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StaticFilesHandler::set_allocated_path(::std::string* path) {
+void StaticFilesHandler::set_allocated_path(::std::string* path) {
   if (path != NULL) {
     
   } else {
@@ -3012,37 +3057,37 @@ void StaticFilesHandler::clear_path() {
 void StaticFilesHandler::clear_upload_path_regex() {
   upload_path_regex_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StaticFilesHandler::upload_path_regex() const {
+const ::std::string& StaticFilesHandler::upload_path_regex() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.StaticFilesHandler.upload_path_regex)
   return upload_path_regex_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StaticFilesHandler::set_upload_path_regex(const ::std::string& value) {
+void StaticFilesHandler::set_upload_path_regex(const ::std::string& value) {
   
   upload_path_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.StaticFilesHandler.upload_path_regex)
 }
- void StaticFilesHandler::set_upload_path_regex(const char* value) {
+void StaticFilesHandler::set_upload_path_regex(const char* value) {
   
   upload_path_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.StaticFilesHandler.upload_path_regex)
 }
- void StaticFilesHandler::set_upload_path_regex(const char* value, size_t size) {
+void StaticFilesHandler::set_upload_path_regex(const char* value, size_t size) {
   
   upload_path_regex_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.StaticFilesHandler.upload_path_regex)
 }
- ::std::string* StaticFilesHandler::mutable_upload_path_regex() {
+::std::string* StaticFilesHandler::mutable_upload_path_regex() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.StaticFilesHandler.upload_path_regex)
   return upload_path_regex_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StaticFilesHandler::release_upload_path_regex() {
+::std::string* StaticFilesHandler::release_upload_path_regex() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.StaticFilesHandler.upload_path_regex)
   
   return upload_path_regex_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StaticFilesHandler::set_allocated_upload_path_regex(::std::string* upload_path_regex) {
+void StaticFilesHandler::set_allocated_upload_path_regex(::std::string* upload_path_regex) {
   if (upload_path_regex != NULL) {
     
   } else {
@@ -3074,37 +3119,37 @@ StaticFilesHandler::mutable_http_headers() {
 void StaticFilesHandler::clear_mime_type() {
   mime_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StaticFilesHandler::mime_type() const {
+const ::std::string& StaticFilesHandler::mime_type() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.StaticFilesHandler.mime_type)
   return mime_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StaticFilesHandler::set_mime_type(const ::std::string& value) {
+void StaticFilesHandler::set_mime_type(const ::std::string& value) {
   
   mime_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.StaticFilesHandler.mime_type)
 }
- void StaticFilesHandler::set_mime_type(const char* value) {
+void StaticFilesHandler::set_mime_type(const char* value) {
   
   mime_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.StaticFilesHandler.mime_type)
 }
- void StaticFilesHandler::set_mime_type(const char* value, size_t size) {
+void StaticFilesHandler::set_mime_type(const char* value, size_t size) {
   
   mime_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.StaticFilesHandler.mime_type)
 }
- ::std::string* StaticFilesHandler::mutable_mime_type() {
+::std::string* StaticFilesHandler::mutable_mime_type() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.StaticFilesHandler.mime_type)
   return mime_type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StaticFilesHandler::release_mime_type() {
+::std::string* StaticFilesHandler::release_mime_type() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.StaticFilesHandler.mime_type)
   
   return mime_type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StaticFilesHandler::set_allocated_mime_type(::std::string* mime_type) {
+void StaticFilesHandler::set_allocated_mime_type(::std::string* mime_type) {
   if (mime_type != NULL) {
     
   } else {
@@ -3116,7 +3161,7 @@ void StaticFilesHandler::clear_mime_type() {
 
 // optional .google.protobuf.Duration expiration = 5;
 bool StaticFilesHandler::has_expiration() const {
-  return !_is_default_instance_ && expiration_ != NULL;
+  return this != internal_default_instance() && expiration_ != NULL;
 }
 void StaticFilesHandler::clear_expiration() {
   if (GetArenaNoVirtual() == NULL && expiration_ != NULL) delete expiration_;
@@ -3124,7 +3169,8 @@ void StaticFilesHandler::clear_expiration() {
 }
 const ::google::protobuf::Duration& StaticFilesHandler::expiration() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.StaticFilesHandler.expiration)
-  return expiration_ != NULL ? *expiration_ : *default_instance_->expiration_;
+  return expiration_ != NULL ? *expiration_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* StaticFilesHandler::mutable_expiration() {
   
@@ -3143,6 +3189,11 @@ const ::google::protobuf::Duration& StaticFilesHandler::expiration() const {
 }
 void StaticFilesHandler::set_allocated_expiration(::google::protobuf::Duration* expiration) {
   delete expiration_;
+  if (expiration != NULL && expiration->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_expiration = new ::google::protobuf::Duration;
+    new_expiration->CopyFrom(*expiration);
+    expiration = new_expiration;
+  }
   expiration_ = expiration;
   if (expiration) {
     
@@ -3156,11 +3207,11 @@ void StaticFilesHandler::set_allocated_expiration(::google::protobuf::Duration* 
 void StaticFilesHandler::clear_require_matching_file() {
   require_matching_file_ = false;
 }
- bool StaticFilesHandler::require_matching_file() const {
+bool StaticFilesHandler::require_matching_file() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.StaticFilesHandler.require_matching_file)
   return require_matching_file_;
 }
- void StaticFilesHandler::set_require_matching_file(bool value) {
+void StaticFilesHandler::set_require_matching_file(bool value) {
   
   require_matching_file_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.StaticFilesHandler.require_matching_file)
@@ -3170,16 +3221,19 @@ void StaticFilesHandler::clear_require_matching_file() {
 void StaticFilesHandler::clear_application_readable() {
   application_readable_ = false;
 }
- bool StaticFilesHandler::application_readable() const {
+bool StaticFilesHandler::application_readable() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.StaticFilesHandler.application_readable)
   return application_readable_;
 }
- void StaticFilesHandler::set_application_readable(bool value) {
+void StaticFilesHandler::set_application_readable(bool value) {
   
   application_readable_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.StaticFilesHandler.application_readable)
 }
 
+inline const StaticFilesHandler* StaticFilesHandler::internal_default_instance() {
+  return &StaticFilesHandler_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3190,27 +3244,25 @@ const int ScriptHandler::kScriptPathFieldNumber;
 
 ScriptHandler::ScriptHandler()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.ScriptHandler)
 }
 
 void ScriptHandler::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ScriptHandler::ScriptHandler(const ScriptHandler& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.ScriptHandler)
 }
 
 void ScriptHandler::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   script_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ScriptHandler::~ScriptHandler() {
@@ -3220,8 +3272,6 @@ ScriptHandler::~ScriptHandler() {
 
 void ScriptHandler::SharedDtor() {
   script_path_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ScriptHandler::SetCachedSize(int size) const {
@@ -3235,11 +3285,11 @@ const ::google::protobuf::Descriptor* ScriptHandler::descriptor() {
 }
 
 const ScriptHandler& ScriptHandler::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-ScriptHandler* ScriptHandler::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ScriptHandler> ScriptHandler_default_instance_;
 
 ScriptHandler* ScriptHandler::New(::google::protobuf::Arena* arena) const {
   ScriptHandler* n = new ScriptHandler;
@@ -3319,6 +3369,7 @@ void ScriptHandler::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ScriptHandler::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.ScriptHandler)
   // optional string script_path = 1;
   if (this->script_path().size() > 0) {
@@ -3335,9 +3386,9 @@ void ScriptHandler::SerializeWithCachedSizes(
   return target;
 }
 
-int ScriptHandler::ByteSize() const {
+size_t ScriptHandler::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.ScriptHandler)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string script_path = 1;
   if (this->script_path().size() > 0) {
@@ -3346,18 +3397,17 @@ int ScriptHandler::ByteSize() const {
         this->script_path());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ScriptHandler::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.ScriptHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ScriptHandler* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ScriptHandler* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ScriptHandler>(
           &from);
   if (source == NULL) {
@@ -3365,15 +3415,21 @@ void ScriptHandler::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.ScriptHandler)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ScriptHandler::MergeFrom(const ScriptHandler& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.ScriptHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ScriptHandler::UnsafeMergeFrom(const ScriptHandler& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.script_path().size() > 0) {
 
     script_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.script_path_);
@@ -3391,7 +3447,7 @@ void ScriptHandler::CopyFrom(const ScriptHandler& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.ScriptHandler)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ScriptHandler::IsInitialized() const {
@@ -3424,37 +3480,37 @@ void ScriptHandler::InternalSwap(ScriptHandler* other) {
 void ScriptHandler::clear_script_path() {
   script_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ScriptHandler::script_path() const {
+const ::std::string& ScriptHandler::script_path() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ScriptHandler.script_path)
   return script_path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ScriptHandler::set_script_path(const ::std::string& value) {
+void ScriptHandler::set_script_path(const ::std::string& value) {
   
   script_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.ScriptHandler.script_path)
 }
- void ScriptHandler::set_script_path(const char* value) {
+void ScriptHandler::set_script_path(const char* value) {
   
   script_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.ScriptHandler.script_path)
 }
- void ScriptHandler::set_script_path(const char* value, size_t size) {
+void ScriptHandler::set_script_path(const char* value, size_t size) {
   
   script_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.ScriptHandler.script_path)
 }
- ::std::string* ScriptHandler::mutable_script_path() {
+::std::string* ScriptHandler::mutable_script_path() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.ScriptHandler.script_path)
   return script_path_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ScriptHandler::release_script_path() {
+::std::string* ScriptHandler::release_script_path() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.ScriptHandler.script_path)
   
   return script_path_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ScriptHandler::set_allocated_script_path(::std::string* script_path) {
+void ScriptHandler::set_allocated_script_path(::std::string* script_path) {
   if (script_path != NULL) {
     
   } else {
@@ -3464,6 +3520,9 @@ void ScriptHandler::clear_script_path() {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ScriptHandler.script_path)
 }
 
+inline const ScriptHandler* ScriptHandler::internal_default_instance() {
+  return &ScriptHandler_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3474,27 +3533,25 @@ const int ApiEndpointHandler::kScriptPathFieldNumber;
 
 ApiEndpointHandler::ApiEndpointHandler()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.ApiEndpointHandler)
 }
 
 void ApiEndpointHandler::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ApiEndpointHandler::ApiEndpointHandler(const ApiEndpointHandler& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.ApiEndpointHandler)
 }
 
 void ApiEndpointHandler::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   script_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ApiEndpointHandler::~ApiEndpointHandler() {
@@ -3504,8 +3561,6 @@ ApiEndpointHandler::~ApiEndpointHandler() {
 
 void ApiEndpointHandler::SharedDtor() {
   script_path_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ApiEndpointHandler::SetCachedSize(int size) const {
@@ -3519,11 +3574,11 @@ const ::google::protobuf::Descriptor* ApiEndpointHandler::descriptor() {
 }
 
 const ApiEndpointHandler& ApiEndpointHandler::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-ApiEndpointHandler* ApiEndpointHandler::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ApiEndpointHandler> ApiEndpointHandler_default_instance_;
 
 ApiEndpointHandler* ApiEndpointHandler::New(::google::protobuf::Arena* arena) const {
   ApiEndpointHandler* n = new ApiEndpointHandler;
@@ -3603,6 +3658,7 @@ void ApiEndpointHandler::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ApiEndpointHandler::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.ApiEndpointHandler)
   // optional string script_path = 1;
   if (this->script_path().size() > 0) {
@@ -3619,9 +3675,9 @@ void ApiEndpointHandler::SerializeWithCachedSizes(
   return target;
 }
 
-int ApiEndpointHandler::ByteSize() const {
+size_t ApiEndpointHandler::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.ApiEndpointHandler)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string script_path = 1;
   if (this->script_path().size() > 0) {
@@ -3630,18 +3686,17 @@ int ApiEndpointHandler::ByteSize() const {
         this->script_path());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ApiEndpointHandler::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.ApiEndpointHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ApiEndpointHandler* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ApiEndpointHandler* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ApiEndpointHandler>(
           &from);
   if (source == NULL) {
@@ -3649,15 +3704,21 @@ void ApiEndpointHandler::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.ApiEndpointHandler)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ApiEndpointHandler::MergeFrom(const ApiEndpointHandler& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.ApiEndpointHandler)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ApiEndpointHandler::UnsafeMergeFrom(const ApiEndpointHandler& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.script_path().size() > 0) {
 
     script_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.script_path_);
@@ -3675,7 +3736,7 @@ void ApiEndpointHandler::CopyFrom(const ApiEndpointHandler& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.ApiEndpointHandler)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ApiEndpointHandler::IsInitialized() const {
@@ -3708,37 +3769,37 @@ void ApiEndpointHandler::InternalSwap(ApiEndpointHandler* other) {
 void ApiEndpointHandler::clear_script_path() {
   script_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ApiEndpointHandler::script_path() const {
+const ::std::string& ApiEndpointHandler::script_path() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ApiEndpointHandler.script_path)
   return script_path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ApiEndpointHandler::set_script_path(const ::std::string& value) {
+void ApiEndpointHandler::set_script_path(const ::std::string& value) {
   
   script_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.ApiEndpointHandler.script_path)
 }
- void ApiEndpointHandler::set_script_path(const char* value) {
+void ApiEndpointHandler::set_script_path(const char* value) {
   
   script_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.ApiEndpointHandler.script_path)
 }
- void ApiEndpointHandler::set_script_path(const char* value, size_t size) {
+void ApiEndpointHandler::set_script_path(const char* value, size_t size) {
   
   script_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.ApiEndpointHandler.script_path)
 }
- ::std::string* ApiEndpointHandler::mutable_script_path() {
+::std::string* ApiEndpointHandler::mutable_script_path() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.ApiEndpointHandler.script_path)
   return script_path_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ApiEndpointHandler::release_script_path() {
+::std::string* ApiEndpointHandler::release_script_path() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.ApiEndpointHandler.script_path)
   
   return script_path_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ApiEndpointHandler::set_allocated_script_path(::std::string* script_path) {
+void ApiEndpointHandler::set_allocated_script_path(::std::string* script_path) {
   if (script_path != NULL) {
     
   } else {
@@ -3748,6 +3809,9 @@ void ApiEndpointHandler::clear_script_path() {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ApiEndpointHandler.script_path)
 }
 
+inline const ApiEndpointHandler* ApiEndpointHandler::internal_default_instance() {
+  return &ApiEndpointHandler_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3764,35 +3828,33 @@ const int HealthCheck::kTimeoutFieldNumber;
 
 HealthCheck::HealthCheck()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.HealthCheck)
 }
 
 void HealthCheck::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  check_interval_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
-  timeout_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
+  check_interval_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+  timeout_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
 }
 
 HealthCheck::HealthCheck(const HealthCheck& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.HealthCheck)
 }
 
 void HealthCheck::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  disable_health_check_ = false;
   host_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  healthy_threshold_ = 0u;
-  unhealthy_threshold_ = 0u;
-  restart_threshold_ = 0u;
   check_interval_ = NULL;
   timeout_ = NULL;
+  ::memset(&disable_health_check_, 0, reinterpret_cast<char*>(&restart_threshold_) -
+    reinterpret_cast<char*>(&disable_health_check_) + sizeof(restart_threshold_));
+  _cached_size_ = 0;
 }
 
 HealthCheck::~HealthCheck() {
@@ -3802,7 +3864,7 @@ HealthCheck::~HealthCheck() {
 
 void HealthCheck::SharedDtor() {
   host_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &HealthCheck_default_instance_.get()) {
     delete check_interval_;
     delete timeout_;
   }
@@ -3819,11 +3881,11 @@ const ::google::protobuf::Descriptor* HealthCheck::descriptor() {
 }
 
 const HealthCheck& HealthCheck::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-HealthCheck* HealthCheck::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<HealthCheck> HealthCheck_default_instance_;
 
 HealthCheck* HealthCheck::New(::google::protobuf::Arena* arena) const {
   HealthCheck* n = new HealthCheck;
@@ -3847,7 +3909,7 @@ void HealthCheck::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -3876,10 +3938,10 @@ bool HealthCheck::MergePartialFromCodedStream(
       // optional bool disable_health_check = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &disable_health_check_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3908,10 +3970,10 @@ bool HealthCheck::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_healthy_threshold:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &healthy_threshold_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3923,10 +3985,10 @@ bool HealthCheck::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_unhealthy_threshold:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &unhealthy_threshold_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3938,10 +4000,10 @@ bool HealthCheck::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_restart_threshold:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &restart_threshold_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4046,6 +4108,7 @@ void HealthCheck::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* HealthCheck::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.HealthCheck)
   // optional bool disable_health_check = 1;
   if (this->disable_health_check() != 0) {
@@ -4096,9 +4159,9 @@ void HealthCheck::SerializeWithCachedSizes(
   return target;
 }
 
-int HealthCheck::ByteSize() const {
+size_t HealthCheck::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.HealthCheck)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional bool disable_health_check = 1;
   if (this->disable_health_check() != 0) {
@@ -4147,18 +4210,17 @@ int HealthCheck::ByteSize() const {
         *this->timeout_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void HealthCheck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.HealthCheck)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const HealthCheck* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const HealthCheck* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HealthCheck>(
           &from);
   if (source == NULL) {
@@ -4166,15 +4228,21 @@ void HealthCheck::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.HealthCheck)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HealthCheck::MergeFrom(const HealthCheck& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.HealthCheck)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void HealthCheck::UnsafeMergeFrom(const HealthCheck& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.disable_health_check() != 0) {
     set_disable_health_check(from.disable_health_check());
   }
@@ -4210,7 +4278,7 @@ void HealthCheck::CopyFrom(const HealthCheck& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.HealthCheck)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HealthCheck::IsInitialized() const {
@@ -4249,11 +4317,11 @@ void HealthCheck::InternalSwap(HealthCheck* other) {
 void HealthCheck::clear_disable_health_check() {
   disable_health_check_ = false;
 }
- bool HealthCheck::disable_health_check() const {
+bool HealthCheck::disable_health_check() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.HealthCheck.disable_health_check)
   return disable_health_check_;
 }
- void HealthCheck::set_disable_health_check(bool value) {
+void HealthCheck::set_disable_health_check(bool value) {
   
   disable_health_check_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.HealthCheck.disable_health_check)
@@ -4263,37 +4331,37 @@ void HealthCheck::clear_disable_health_check() {
 void HealthCheck::clear_host() {
   host_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& HealthCheck::host() const {
+const ::std::string& HealthCheck::host() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.HealthCheck.host)
   return host_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void HealthCheck::set_host(const ::std::string& value) {
+void HealthCheck::set_host(const ::std::string& value) {
   
   host_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.HealthCheck.host)
 }
- void HealthCheck::set_host(const char* value) {
+void HealthCheck::set_host(const char* value) {
   
   host_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.HealthCheck.host)
 }
- void HealthCheck::set_host(const char* value, size_t size) {
+void HealthCheck::set_host(const char* value, size_t size) {
   
   host_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.HealthCheck.host)
 }
- ::std::string* HealthCheck::mutable_host() {
+::std::string* HealthCheck::mutable_host() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.HealthCheck.host)
   return host_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* HealthCheck::release_host() {
+::std::string* HealthCheck::release_host() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.HealthCheck.host)
   
   return host_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void HealthCheck::set_allocated_host(::std::string* host) {
+void HealthCheck::set_allocated_host(::std::string* host) {
   if (host != NULL) {
     
   } else {
@@ -4307,11 +4375,11 @@ void HealthCheck::clear_host() {
 void HealthCheck::clear_healthy_threshold() {
   healthy_threshold_ = 0u;
 }
- ::google::protobuf::uint32 HealthCheck::healthy_threshold() const {
+::google::protobuf::uint32 HealthCheck::healthy_threshold() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.HealthCheck.healthy_threshold)
   return healthy_threshold_;
 }
- void HealthCheck::set_healthy_threshold(::google::protobuf::uint32 value) {
+void HealthCheck::set_healthy_threshold(::google::protobuf::uint32 value) {
   
   healthy_threshold_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.HealthCheck.healthy_threshold)
@@ -4321,11 +4389,11 @@ void HealthCheck::clear_healthy_threshold() {
 void HealthCheck::clear_unhealthy_threshold() {
   unhealthy_threshold_ = 0u;
 }
- ::google::protobuf::uint32 HealthCheck::unhealthy_threshold() const {
+::google::protobuf::uint32 HealthCheck::unhealthy_threshold() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.HealthCheck.unhealthy_threshold)
   return unhealthy_threshold_;
 }
- void HealthCheck::set_unhealthy_threshold(::google::protobuf::uint32 value) {
+void HealthCheck::set_unhealthy_threshold(::google::protobuf::uint32 value) {
   
   unhealthy_threshold_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.HealthCheck.unhealthy_threshold)
@@ -4335,11 +4403,11 @@ void HealthCheck::clear_unhealthy_threshold() {
 void HealthCheck::clear_restart_threshold() {
   restart_threshold_ = 0u;
 }
- ::google::protobuf::uint32 HealthCheck::restart_threshold() const {
+::google::protobuf::uint32 HealthCheck::restart_threshold() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.HealthCheck.restart_threshold)
   return restart_threshold_;
 }
- void HealthCheck::set_restart_threshold(::google::protobuf::uint32 value) {
+void HealthCheck::set_restart_threshold(::google::protobuf::uint32 value) {
   
   restart_threshold_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.HealthCheck.restart_threshold)
@@ -4347,7 +4415,7 @@ void HealthCheck::clear_restart_threshold() {
 
 // optional .google.protobuf.Duration check_interval = 6;
 bool HealthCheck::has_check_interval() const {
-  return !_is_default_instance_ && check_interval_ != NULL;
+  return this != internal_default_instance() && check_interval_ != NULL;
 }
 void HealthCheck::clear_check_interval() {
   if (GetArenaNoVirtual() == NULL && check_interval_ != NULL) delete check_interval_;
@@ -4355,7 +4423,8 @@ void HealthCheck::clear_check_interval() {
 }
 const ::google::protobuf::Duration& HealthCheck::check_interval() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.HealthCheck.check_interval)
-  return check_interval_ != NULL ? *check_interval_ : *default_instance_->check_interval_;
+  return check_interval_ != NULL ? *check_interval_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* HealthCheck::mutable_check_interval() {
   
@@ -4374,6 +4443,11 @@ const ::google::protobuf::Duration& HealthCheck::check_interval() const {
 }
 void HealthCheck::set_allocated_check_interval(::google::protobuf::Duration* check_interval) {
   delete check_interval_;
+  if (check_interval != NULL && check_interval->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_check_interval = new ::google::protobuf::Duration;
+    new_check_interval->CopyFrom(*check_interval);
+    check_interval = new_check_interval;
+  }
   check_interval_ = check_interval;
   if (check_interval) {
     
@@ -4385,7 +4459,7 @@ void HealthCheck::set_allocated_check_interval(::google::protobuf::Duration* che
 
 // optional .google.protobuf.Duration timeout = 7;
 bool HealthCheck::has_timeout() const {
-  return !_is_default_instance_ && timeout_ != NULL;
+  return this != internal_default_instance() && timeout_ != NULL;
 }
 void HealthCheck::clear_timeout() {
   if (GetArenaNoVirtual() == NULL && timeout_ != NULL) delete timeout_;
@@ -4393,7 +4467,8 @@ void HealthCheck::clear_timeout() {
 }
 const ::google::protobuf::Duration& HealthCheck::timeout() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.HealthCheck.timeout)
-  return timeout_ != NULL ? *timeout_ : *default_instance_->timeout_;
+  return timeout_ != NULL ? *timeout_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* HealthCheck::mutable_timeout() {
   
@@ -4412,6 +4487,11 @@ const ::google::protobuf::Duration& HealthCheck::timeout() const {
 }
 void HealthCheck::set_allocated_timeout(::google::protobuf::Duration* timeout) {
   delete timeout_;
+  if (timeout != NULL && timeout->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_timeout = new ::google::protobuf::Duration;
+    new_timeout->CopyFrom(*timeout);
+    timeout = new_timeout;
+  }
   timeout_ = timeout;
   if (timeout) {
     
@@ -4421,6 +4501,9 @@ void HealthCheck::set_allocated_timeout(::google::protobuf::Duration* timeout) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.HealthCheck.timeout)
 }
 
+inline const HealthCheck* HealthCheck::internal_default_instance() {
+  return &HealthCheck_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4432,28 +4515,26 @@ const int Library::kVersionFieldNumber;
 
 Library::Library()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Library)
 }
 
 void Library::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Library::Library(const Library& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Library)
 }
 
 void Library::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Library::~Library() {
@@ -4464,8 +4545,6 @@ Library::~Library() {
 void Library::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Library::SetCachedSize(int size) const {
@@ -4479,11 +4558,11 @@ const ::google::protobuf::Descriptor* Library::descriptor() {
 }
 
 const Library& Library::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fapp_5fyaml_2eproto();
+  return *internal_default_instance();
 }
 
-Library* Library::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Library> Library_default_instance_;
 
 Library* Library::New(::google::protobuf::Arena* arena) const {
   Library* n = new Library;
@@ -4591,6 +4670,7 @@ void Library::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Library::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.Library)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4618,9 +4698,9 @@ void Library::SerializeWithCachedSizes(
   return target;
 }
 
-int Library::ByteSize() const {
+size_t Library::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Library)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4636,18 +4716,17 @@ int Library::ByteSize() const {
         this->version());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Library::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Library)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Library* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Library* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Library>(
           &from);
   if (source == NULL) {
@@ -4655,15 +4734,21 @@ void Library::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Library)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Library::MergeFrom(const Library& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Library)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Library::UnsafeMergeFrom(const Library& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -4685,7 +4770,7 @@ void Library::CopyFrom(const Library& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Library)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Library::IsInitialized() const {
@@ -4719,37 +4804,37 @@ void Library::InternalSwap(Library* other) {
 void Library::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Library::name() const {
+const ::std::string& Library::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Library.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Library::set_name(const ::std::string& value) {
+void Library::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Library.name)
 }
- void Library::set_name(const char* value) {
+void Library::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Library.name)
 }
- void Library::set_name(const char* value, size_t size) {
+void Library::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Library.name)
 }
- ::std::string* Library::mutable_name() {
+::std::string* Library::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Library.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Library::release_name() {
+::std::string* Library::release_name() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Library.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Library::set_allocated_name(::std::string* name) {
+void Library::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -4763,37 +4848,37 @@ void Library::clear_name() {
 void Library::clear_version() {
   version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Library::version() const {
+const ::std::string& Library::version() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Library.version)
   return version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Library::set_version(const ::std::string& value) {
+void Library::set_version(const ::std::string& value) {
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Library.version)
 }
- void Library::set_version(const char* value) {
+void Library::set_version(const char* value) {
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Library.version)
 }
- void Library::set_version(const char* value, size_t size) {
+void Library::set_version(const char* value, size_t size) {
   
   version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Library.version)
 }
- ::std::string* Library::mutable_version() {
+::std::string* Library::mutable_version() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Library.version)
   return version_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Library::release_version() {
+::std::string* Library::release_version() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Library.version)
   
   return version_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Library::set_allocated_version(::std::string* version) {
+void Library::set_allocated_version(::std::string* version) {
   if (version != NULL) {
     
   } else {
@@ -4803,6 +4888,9 @@ void Library::clear_version() {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Library.version)
 }
 
+inline const Library* Library::internal_default_instance() {
+  return &Library_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace servicemanagement {
 namespace v1 {
 
 // [Google Service Management API](/service-management/overview)
-class ServiceManager GRPC_FINAL {
+class ServiceManager final {
  public:
   class StubInterface {
    public:
@@ -193,87 +194,87 @@ class ServiceManager GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncEnableServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncDisableServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListServices(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest& request, ::google::api::servicemanagement::v1::ListServicesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListServices(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest& request, ::google::api::servicemanagement::v1::ListServicesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServicesResponse>> AsyncListServices(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServicesResponse>>(AsyncListServicesRaw(context, request, cq));
     }
-    ::grpc::Status GetService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest& request, ::google::api::servicemanagement::v1::ManagedService* response) GRPC_OVERRIDE;
+    ::grpc::Status GetService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest& request, ::google::api::servicemanagement::v1::ManagedService* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ManagedService>> AsyncGetService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ManagedService>>(AsyncGetServiceRaw(context, request, cq));
     }
-    ::grpc::Status CreateService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateServiceRaw(context, request, cq));
     }
-    ::grpc::Status DeleteService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDeleteService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDeleteServiceRaw(context, request, cq));
     }
-    ::grpc::Status UndeleteService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status UndeleteService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncUndeleteService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncUndeleteServiceRaw(context, request, cq));
     }
-    ::grpc::Status ListServiceConfigs(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest& request, ::google::api::servicemanagement::v1::ListServiceConfigsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListServiceConfigs(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest& request, ::google::api::servicemanagement::v1::ListServiceConfigsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceConfigsResponse>> AsyncListServiceConfigs(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceConfigsResponse>>(AsyncListServiceConfigsRaw(context, request, cq));
     }
-    ::grpc::Status GetServiceConfig(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest& request, ::google::api::Service* response) GRPC_OVERRIDE;
+    ::grpc::Status GetServiceConfig(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest& request, ::google::api::Service* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::Service>> AsyncGetServiceConfig(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::Service>>(AsyncGetServiceConfigRaw(context, request, cq));
     }
-    ::grpc::Status CreateServiceConfig(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest& request, ::google::api::Service* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateServiceConfig(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest& request, ::google::api::Service* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::Service>> AsyncCreateServiceConfig(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::Service>>(AsyncCreateServiceConfigRaw(context, request, cq));
     }
-    ::grpc::Status SubmitConfigSource(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status SubmitConfigSource(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncSubmitConfigSource(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncSubmitConfigSourceRaw(context, request, cq));
     }
-    ::grpc::Status ListServiceRollouts(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest& request, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListServiceRollouts(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest& request, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceRolloutsResponse>> AsyncListServiceRollouts(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceRolloutsResponse>>(AsyncListServiceRolloutsRaw(context, request, cq));
     }
-    ::grpc::Status GetServiceRollout(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest& request, ::google::api::servicemanagement::v1::Rollout* response) GRPC_OVERRIDE;
+    ::grpc::Status GetServiceRollout(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest& request, ::google::api::servicemanagement::v1::Rollout* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::Rollout>> AsyncGetServiceRollout(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::Rollout>>(AsyncGetServiceRolloutRaw(context, request, cq));
     }
-    ::grpc::Status CreateServiceRollout(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateServiceRollout(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateServiceRollout(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateServiceRolloutRaw(context, request, cq));
     }
-    ::grpc::Status GenerateConfigReport(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest& request, ::google::api::servicemanagement::v1::GenerateConfigReportResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status GenerateConfigReport(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest& request, ::google::api::servicemanagement::v1::GenerateConfigReportResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::GenerateConfigReportResponse>> AsyncGenerateConfigReport(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::GenerateConfigReportResponse>>(AsyncGenerateConfigReportRaw(context, request, cq));
     }
-    ::grpc::Status EnableService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status EnableService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncEnableService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncEnableServiceRaw(context, request, cq));
     }
-    ::grpc::Status DisableService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DisableService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDisableService(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDisableServiceRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServicesResponse>* AsyncListServicesRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ManagedService>* AsyncGetServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUndeleteServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceConfigsResponse>* AsyncListServiceConfigsRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::Service>* AsyncGetServiceConfigRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::Service>* AsyncCreateServiceConfigRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncSubmitConfigSourceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceRolloutsResponse>* AsyncListServiceRolloutsRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::Rollout>* AsyncGetServiceRolloutRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateServiceRolloutRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::GenerateConfigReportResponse>* AsyncGenerateConfigReportRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncEnableServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDisableServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServicesResponse>* AsyncListServicesRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ManagedService>* AsyncGetServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUndeleteServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceConfigsResponse>* AsyncListServiceConfigsRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::Service>* AsyncGetServiceConfigRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::Service>* AsyncCreateServiceConfigRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncSubmitConfigSourceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::ListServiceRolloutsResponse>* AsyncListServiceRolloutsRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::Rollout>* AsyncGetServiceRolloutRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateServiceRolloutRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicemanagement::v1::GenerateConfigReportResponse>* AsyncGenerateConfigReportRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncEnableServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDisableServiceRaw(::grpc::ClientContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListServices_;
     const ::grpc::RpcMethod rpcmethod_GetService_;
     const ::grpc::RpcMethod rpcmethod_CreateService_;
@@ -387,11 +388,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_ListServices() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListServices() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListServices() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest* request, ::google::api::servicemanagement::v1::ListServicesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest* request, ::google::api::servicemanagement::v1::ListServicesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -407,11 +408,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_GetService() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest* request, ::google::api::servicemanagement::v1::ManagedService* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest* request, ::google::api::servicemanagement::v1::ManagedService* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -427,11 +428,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_CreateService() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -447,11 +448,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_DeleteService() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DeleteService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -467,11 +468,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_UndeleteService() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_UndeleteService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UndeleteService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UndeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UndeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -487,11 +488,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_ListServiceConfigs() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_ListServiceConfigs() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListServiceConfigs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceConfigs(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest* request, ::google::api::servicemanagement::v1::ListServiceConfigsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceConfigs(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest* request, ::google::api::servicemanagement::v1::ListServiceConfigsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -507,11 +508,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_GetServiceConfig() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_GetServiceConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetServiceConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest* request, ::google::api::Service* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest* request, ::google::api::Service* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -527,11 +528,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_CreateServiceConfig() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_CreateServiceConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateServiceConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest* request, ::google::api::Service* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest* request, ::google::api::Service* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -547,11 +548,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_SubmitConfigSource() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_SubmitConfigSource() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SubmitConfigSource() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SubmitConfigSource(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SubmitConfigSource(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -567,11 +568,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_ListServiceRollouts() {
       ::grpc::Service::MarkMethodAsync(9);
     }
-    ~WithAsyncMethod_ListServiceRollouts() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListServiceRollouts() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceRollouts(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest* request, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceRollouts(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest* request, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -587,11 +588,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_GetServiceRollout() {
       ::grpc::Service::MarkMethodAsync(10);
     }
-    ~WithAsyncMethod_GetServiceRollout() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetServiceRollout() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest* request, ::google::api::servicemanagement::v1::Rollout* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest* request, ::google::api::servicemanagement::v1::Rollout* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -607,11 +608,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_CreateServiceRollout() {
       ::grpc::Service::MarkMethodAsync(11);
     }
-    ~WithAsyncMethod_CreateServiceRollout() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateServiceRollout() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -627,11 +628,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_GenerateConfigReport() {
       ::grpc::Service::MarkMethodAsync(12);
     }
-    ~WithAsyncMethod_GenerateConfigReport() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GenerateConfigReport() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GenerateConfigReport(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest* request, ::google::api::servicemanagement::v1::GenerateConfigReportResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GenerateConfigReport(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest* request, ::google::api::servicemanagement::v1::GenerateConfigReportResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -647,11 +648,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_EnableService() {
       ::grpc::Service::MarkMethodAsync(13);
     }
-    ~WithAsyncMethod_EnableService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_EnableService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status EnableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status EnableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -667,11 +668,11 @@ class ServiceManager GRPC_FINAL {
     WithAsyncMethod_DisableService() {
       ::grpc::Service::MarkMethodAsync(14);
     }
-    ~WithAsyncMethod_DisableService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DisableService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DisableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DisableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -688,11 +689,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_ListServices() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListServices() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListServices() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest* request, ::google::api::servicemanagement::v1::ListServicesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest* request, ::google::api::servicemanagement::v1::ListServicesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -705,11 +706,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_GetService() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetService() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest* request, ::google::api::servicemanagement::v1::ManagedService* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest* request, ::google::api::servicemanagement::v1::ManagedService* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -722,11 +723,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_CreateService() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateService() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -739,11 +740,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_DeleteService() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DeleteService() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -756,11 +757,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_UndeleteService() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_UndeleteService() GRPC_OVERRIDE {
+    ~WithGenericMethod_UndeleteService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UndeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UndeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -773,11 +774,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_ListServiceConfigs() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_ListServiceConfigs() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListServiceConfigs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceConfigs(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest* request, ::google::api::servicemanagement::v1::ListServiceConfigsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceConfigs(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest* request, ::google::api::servicemanagement::v1::ListServiceConfigsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -790,11 +791,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_GetServiceConfig() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_GetServiceConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetServiceConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest* request, ::google::api::Service* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest* request, ::google::api::Service* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -807,11 +808,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_CreateServiceConfig() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_CreateServiceConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateServiceConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest* request, ::google::api::Service* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest* request, ::google::api::Service* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -824,11 +825,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_SubmitConfigSource() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_SubmitConfigSource() GRPC_OVERRIDE {
+    ~WithGenericMethod_SubmitConfigSource() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SubmitConfigSource(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SubmitConfigSource(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -841,11 +842,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_ListServiceRollouts() {
       ::grpc::Service::MarkMethodGeneric(9);
     }
-    ~WithGenericMethod_ListServiceRollouts() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListServiceRollouts() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceRollouts(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest* request, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceRollouts(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest* request, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -858,11 +859,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_GetServiceRollout() {
       ::grpc::Service::MarkMethodGeneric(10);
     }
-    ~WithGenericMethod_GetServiceRollout() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetServiceRollout() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest* request, ::google::api::servicemanagement::v1::Rollout* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest* request, ::google::api::servicemanagement::v1::Rollout* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -875,11 +876,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_CreateServiceRollout() {
       ::grpc::Service::MarkMethodGeneric(11);
     }
-    ~WithGenericMethod_CreateServiceRollout() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateServiceRollout() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -892,11 +893,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_GenerateConfigReport() {
       ::grpc::Service::MarkMethodGeneric(12);
     }
-    ~WithGenericMethod_GenerateConfigReport() GRPC_OVERRIDE {
+    ~WithGenericMethod_GenerateConfigReport() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GenerateConfigReport(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest* request, ::google::api::servicemanagement::v1::GenerateConfigReportResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GenerateConfigReport(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest* request, ::google::api::servicemanagement::v1::GenerateConfigReportResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -909,11 +910,11 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_EnableService() {
       ::grpc::Service::MarkMethodGeneric(13);
     }
-    ~WithGenericMethod_EnableService() GRPC_OVERRIDE {
+    ~WithGenericMethod_EnableService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status EnableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status EnableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -926,15 +927,318 @@ class ServiceManager GRPC_FINAL {
     WithGenericMethod_DisableService() {
       ::grpc::Service::MarkMethodGeneric(14);
     }
-    ~WithGenericMethod_DisableService() GRPC_OVERRIDE {
+    ~WithGenericMethod_DisableService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DisableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DisableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListServices : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListServices() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::ListServicesRequest, ::google::api::servicemanagement::v1::ListServicesResponse>(std::bind(&WithStreamedUnaryMethod_ListServices<BaseClass>::StreamedListServices, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListServices() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServicesRequest* request, ::google::api::servicemanagement::v1::ListServicesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListServices(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::ListServicesRequest,::google::api::servicemanagement::v1::ListServicesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetService() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::GetServiceRequest, ::google::api::servicemanagement::v1::ManagedService>(std::bind(&WithStreamedUnaryMethod_GetService<BaseClass>::StreamedGetService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRequest* request, ::google::api::servicemanagement::v1::ManagedService* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::GetServiceRequest,::google::api::servicemanagement::v1::ManagedService>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateService() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::CreateServiceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateService<BaseClass>::StreamedCreateService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::CreateServiceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteService() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::DeleteServiceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteService<BaseClass>::StreamedDeleteService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::DeleteServiceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UndeleteService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UndeleteService() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::UndeleteServiceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_UndeleteService<BaseClass>::StreamedUndeleteService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UndeleteService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UndeleteService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::UndeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUndeleteService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::UndeleteServiceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListServiceConfigs : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListServiceConfigs() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::ListServiceConfigsRequest, ::google::api::servicemanagement::v1::ListServiceConfigsResponse>(std::bind(&WithStreamedUnaryMethod_ListServiceConfigs<BaseClass>::StreamedListServiceConfigs, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListServiceConfigs() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListServiceConfigs(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceConfigsRequest* request, ::google::api::servicemanagement::v1::ListServiceConfigsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListServiceConfigs(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::ListServiceConfigsRequest,::google::api::servicemanagement::v1::ListServiceConfigsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetServiceConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetServiceConfig() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::GetServiceConfigRequest, ::google::api::Service>(std::bind(&WithStreamedUnaryMethod_GetServiceConfig<BaseClass>::StreamedGetServiceConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetServiceConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceConfigRequest* request, ::google::api::Service* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetServiceConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::GetServiceConfigRequest,::google::api::Service>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateServiceConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateServiceConfig() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::CreateServiceConfigRequest, ::google::api::Service>(std::bind(&WithStreamedUnaryMethod_CreateServiceConfig<BaseClass>::StreamedCreateServiceConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateServiceConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateServiceConfig(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceConfigRequest* request, ::google::api::Service* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateServiceConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::CreateServiceConfigRequest,::google::api::Service>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SubmitConfigSource : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SubmitConfigSource() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::SubmitConfigSourceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_SubmitConfigSource<BaseClass>::StreamedSubmitConfigSource, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SubmitConfigSource() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SubmitConfigSource(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::SubmitConfigSourceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSubmitConfigSource(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::SubmitConfigSourceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListServiceRollouts : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListServiceRollouts() {
+      ::grpc::Service::MarkMethodStreamed(9,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::ListServiceRolloutsRequest, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse>(std::bind(&WithStreamedUnaryMethod_ListServiceRollouts<BaseClass>::StreamedListServiceRollouts, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListServiceRollouts() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListServiceRollouts(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::ListServiceRolloutsRequest* request, ::google::api::servicemanagement::v1::ListServiceRolloutsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListServiceRollouts(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::ListServiceRolloutsRequest,::google::api::servicemanagement::v1::ListServiceRolloutsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetServiceRollout : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetServiceRollout() {
+      ::grpc::Service::MarkMethodStreamed(10,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::GetServiceRolloutRequest, ::google::api::servicemanagement::v1::Rollout>(std::bind(&WithStreamedUnaryMethod_GetServiceRollout<BaseClass>::StreamedGetServiceRollout, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetServiceRollout() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GetServiceRolloutRequest* request, ::google::api::servicemanagement::v1::Rollout* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetServiceRollout(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::GetServiceRolloutRequest,::google::api::servicemanagement::v1::Rollout>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateServiceRollout : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateServiceRollout() {
+      ::grpc::Service::MarkMethodStreamed(11,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::CreateServiceRolloutRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateServiceRollout<BaseClass>::StreamedCreateServiceRollout, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateServiceRollout() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateServiceRollout(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::CreateServiceRolloutRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateServiceRollout(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::CreateServiceRolloutRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GenerateConfigReport : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GenerateConfigReport() {
+      ::grpc::Service::MarkMethodStreamed(12,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::GenerateConfigReportRequest, ::google::api::servicemanagement::v1::GenerateConfigReportResponse>(std::bind(&WithStreamedUnaryMethod_GenerateConfigReport<BaseClass>::StreamedGenerateConfigReport, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GenerateConfigReport() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GenerateConfigReport(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::GenerateConfigReportRequest* request, ::google::api::servicemanagement::v1::GenerateConfigReportResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGenerateConfigReport(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::GenerateConfigReportRequest,::google::api::servicemanagement::v1::GenerateConfigReportResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_EnableService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_EnableService() {
+      ::grpc::Service::MarkMethodStreamed(13,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::EnableServiceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_EnableService<BaseClass>::StreamedEnableService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_EnableService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status EnableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::EnableServiceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedEnableService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::EnableServiceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DisableService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DisableService() {
+      ::grpc::Service::MarkMethodStreamed(14,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicemanagement::v1::DisableServiceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DisableService<BaseClass>::StreamedDisableService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DisableService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DisableService(::grpc::ServerContext* context, const ::google::api::servicemanagement::v1::DisableServiceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDisableService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicemanagement::v1::DisableServiceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListServices<WithStreamedUnaryMethod_GetService<WithStreamedUnaryMethod_CreateService<WithStreamedUnaryMethod_DeleteService<WithStreamedUnaryMethod_UndeleteService<WithStreamedUnaryMethod_ListServiceConfigs<WithStreamedUnaryMethod_GetServiceConfig<WithStreamedUnaryMethod_CreateServiceConfig<WithStreamedUnaryMethod_SubmitConfigSource<WithStreamedUnaryMethod_ListServiceRollouts<WithStreamedUnaryMethod_GetServiceRollout<WithStreamedUnaryMethod_CreateServiceRollout<WithStreamedUnaryMethod_GenerateConfigReport<WithStreamedUnaryMethod_EnableService<WithStreamedUnaryMethod_DisableService<Service > > > > > > > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListServices<WithStreamedUnaryMethod_GetService<WithStreamedUnaryMethod_CreateService<WithStreamedUnaryMethod_DeleteService<WithStreamedUnaryMethod_UndeleteService<WithStreamedUnaryMethod_ListServiceConfigs<WithStreamedUnaryMethod_GetServiceConfig<WithStreamedUnaryMethod_CreateServiceConfig<WithStreamedUnaryMethod_SubmitConfigSource<WithStreamedUnaryMethod_ListServiceRollouts<WithStreamedUnaryMethod_GetServiceRollout<WithStreamedUnaryMethod_CreateServiceRollout<WithStreamedUnaryMethod_GenerateConfigReport<WithStreamedUnaryMethod_EnableService<WithStreamedUnaryMethod_DisableService<Service > > > > > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

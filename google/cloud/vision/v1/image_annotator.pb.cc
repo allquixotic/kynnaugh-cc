@@ -100,14 +100,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   Feature_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Feature_descriptor_,
-      Feature::default_instance_,
+      Feature::internal_default_instance(),
       Feature_offsets_,
       -1,
       -1,
       -1,
       sizeof(Feature),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Feature, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Feature, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Feature, _internal_metadata_));
   Feature_Type_descriptor_ = Feature_descriptor_->enum_type(0);
   ImageSource_descriptor_ = file->message_type(1);
   static const int ImageSource_offsets_[1] = {
@@ -116,14 +115,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   ImageSource_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ImageSource_descriptor_,
-      ImageSource::default_instance_,
+      ImageSource::internal_default_instance(),
       ImageSource_offsets_,
       -1,
       -1,
       -1,
       sizeof(ImageSource),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageSource, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageSource, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageSource, _internal_metadata_));
   Image_descriptor_ = file->message_type(2);
   static const int Image_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Image, content_),
@@ -132,14 +130,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   Image_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Image_descriptor_,
-      Image::default_instance_,
+      Image::internal_default_instance(),
       Image_offsets_,
       -1,
       -1,
       -1,
       sizeof(Image),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Image, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Image, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Image, _internal_metadata_));
   FaceAnnotation_descriptor_ = file->message_type(3);
   static const int FaceAnnotation_offsets_[15] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation, bounding_poly_),
@@ -161,14 +158,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   FaceAnnotation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       FaceAnnotation_descriptor_,
-      FaceAnnotation::default_instance_,
+      FaceAnnotation::internal_default_instance(),
       FaceAnnotation_offsets_,
       -1,
       -1,
       -1,
       sizeof(FaceAnnotation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation, _internal_metadata_));
   FaceAnnotation_Landmark_descriptor_ = FaceAnnotation_descriptor_->nested_type(0);
   static const int FaceAnnotation_Landmark_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation_Landmark, type_),
@@ -177,14 +173,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   FaceAnnotation_Landmark_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       FaceAnnotation_Landmark_descriptor_,
-      FaceAnnotation_Landmark::default_instance_,
+      FaceAnnotation_Landmark::internal_default_instance(),
       FaceAnnotation_Landmark_offsets_,
       -1,
       -1,
       -1,
       sizeof(FaceAnnotation_Landmark),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation_Landmark, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation_Landmark, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FaceAnnotation_Landmark, _internal_metadata_));
   FaceAnnotation_Landmark_Type_descriptor_ = FaceAnnotation_Landmark_descriptor_->enum_type(0);
   LocationInfo_descriptor_ = file->message_type(4);
   static const int LocationInfo_offsets_[1] = {
@@ -193,14 +188,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   LocationInfo_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       LocationInfo_descriptor_,
-      LocationInfo::default_instance_,
+      LocationInfo::internal_default_instance(),
       LocationInfo_offsets_,
       -1,
       -1,
       -1,
       sizeof(LocationInfo),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocationInfo, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocationInfo, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocationInfo, _internal_metadata_));
   Property_descriptor_ = file->message_type(5);
   static const int Property_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, name_),
@@ -209,14 +203,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   Property_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Property_descriptor_,
-      Property::default_instance_,
+      Property::internal_default_instance(),
       Property_offsets_,
       -1,
       -1,
       -1,
       sizeof(Property),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, _internal_metadata_));
   EntityAnnotation_descriptor_ = file->message_type(6);
   static const int EntityAnnotation_offsets_[9] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityAnnotation, mid_),
@@ -232,14 +225,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   EntityAnnotation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       EntityAnnotation_descriptor_,
-      EntityAnnotation::default_instance_,
+      EntityAnnotation::internal_default_instance(),
       EntityAnnotation_offsets_,
       -1,
       -1,
       -1,
       sizeof(EntityAnnotation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityAnnotation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityAnnotation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityAnnotation, _internal_metadata_));
   SafeSearchAnnotation_descriptor_ = file->message_type(7);
   static const int SafeSearchAnnotation_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SafeSearchAnnotation, adult_),
@@ -250,14 +242,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   SafeSearchAnnotation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SafeSearchAnnotation_descriptor_,
-      SafeSearchAnnotation::default_instance_,
+      SafeSearchAnnotation::internal_default_instance(),
       SafeSearchAnnotation_offsets_,
       -1,
       -1,
       -1,
       sizeof(SafeSearchAnnotation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SafeSearchAnnotation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SafeSearchAnnotation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SafeSearchAnnotation, _internal_metadata_));
   LatLongRect_descriptor_ = file->message_type(8);
   static const int LatLongRect_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LatLongRect, min_lat_lng_),
@@ -266,14 +257,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   LatLongRect_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       LatLongRect_descriptor_,
-      LatLongRect::default_instance_,
+      LatLongRect::internal_default_instance(),
       LatLongRect_offsets_,
       -1,
       -1,
       -1,
       sizeof(LatLongRect),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LatLongRect, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LatLongRect, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LatLongRect, _internal_metadata_));
   ColorInfo_descriptor_ = file->message_type(9);
   static const int ColorInfo_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColorInfo, color_),
@@ -283,14 +273,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   ColorInfo_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ColorInfo_descriptor_,
-      ColorInfo::default_instance_,
+      ColorInfo::internal_default_instance(),
       ColorInfo_offsets_,
       -1,
       -1,
       -1,
       sizeof(ColorInfo),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColorInfo, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColorInfo, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColorInfo, _internal_metadata_));
   DominantColorsAnnotation_descriptor_ = file->message_type(10);
   static const int DominantColorsAnnotation_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DominantColorsAnnotation, colors_),
@@ -298,14 +287,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   DominantColorsAnnotation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DominantColorsAnnotation_descriptor_,
-      DominantColorsAnnotation::default_instance_,
+      DominantColorsAnnotation::internal_default_instance(),
       DominantColorsAnnotation_offsets_,
       -1,
       -1,
       -1,
       sizeof(DominantColorsAnnotation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DominantColorsAnnotation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DominantColorsAnnotation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DominantColorsAnnotation, _internal_metadata_));
   ImageProperties_descriptor_ = file->message_type(11);
   static const int ImageProperties_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageProperties, dominant_colors_),
@@ -313,14 +301,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   ImageProperties_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ImageProperties_descriptor_,
-      ImageProperties::default_instance_,
+      ImageProperties::internal_default_instance(),
       ImageProperties_offsets_,
       -1,
       -1,
       -1,
       sizeof(ImageProperties),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageProperties, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageProperties, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageProperties, _internal_metadata_));
   ImageContext_descriptor_ = file->message_type(12);
   static const int ImageContext_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageContext, lat_long_rect_),
@@ -329,14 +316,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   ImageContext_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ImageContext_descriptor_,
-      ImageContext::default_instance_,
+      ImageContext::internal_default_instance(),
       ImageContext_offsets_,
       -1,
       -1,
       -1,
       sizeof(ImageContext),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageContext, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageContext, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImageContext, _internal_metadata_));
   AnnotateImageRequest_descriptor_ = file->message_type(13);
   static const int AnnotateImageRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageRequest, image_),
@@ -346,14 +332,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   AnnotateImageRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       AnnotateImageRequest_descriptor_,
-      AnnotateImageRequest::default_instance_,
+      AnnotateImageRequest::internal_default_instance(),
       AnnotateImageRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(AnnotateImageRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageRequest, _internal_metadata_));
   AnnotateImageResponse_descriptor_ = file->message_type(14);
   static const int AnnotateImageResponse_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageResponse, face_annotations_),
@@ -368,14 +353,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   AnnotateImageResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       AnnotateImageResponse_descriptor_,
-      AnnotateImageResponse::default_instance_,
+      AnnotateImageResponse::internal_default_instance(),
       AnnotateImageResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(AnnotateImageResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateImageResponse, _internal_metadata_));
   BatchAnnotateImagesRequest_descriptor_ = file->message_type(15);
   static const int BatchAnnotateImagesRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesRequest, requests_),
@@ -383,14 +367,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   BatchAnnotateImagesRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       BatchAnnotateImagesRequest_descriptor_,
-      BatchAnnotateImagesRequest::default_instance_,
+      BatchAnnotateImagesRequest::internal_default_instance(),
       BatchAnnotateImagesRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(BatchAnnotateImagesRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesRequest, _internal_metadata_));
   BatchAnnotateImagesResponse_descriptor_ = file->message_type(16);
   static const int BatchAnnotateImagesResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesResponse, responses_),
@@ -398,21 +381,20 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eprot
   BatchAnnotateImagesResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       BatchAnnotateImagesResponse_descriptor_,
-      BatchAnnotateImagesResponse::default_instance_,
+      BatchAnnotateImagesResponse::internal_default_instance(),
       BatchAnnotateImagesResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(BatchAnnotateImagesResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BatchAnnotateImagesResponse, _internal_metadata_));
   Likelihood_descriptor_ = file->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto);
 }
@@ -421,96 +403,144 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Feature_descriptor_, &Feature::default_instance());
+      Feature_descriptor_, Feature::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ImageSource_descriptor_, &ImageSource::default_instance());
+      ImageSource_descriptor_, ImageSource::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Image_descriptor_, &Image::default_instance());
+      Image_descriptor_, Image::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      FaceAnnotation_descriptor_, &FaceAnnotation::default_instance());
+      FaceAnnotation_descriptor_, FaceAnnotation::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      FaceAnnotation_Landmark_descriptor_, &FaceAnnotation_Landmark::default_instance());
+      FaceAnnotation_Landmark_descriptor_, FaceAnnotation_Landmark::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      LocationInfo_descriptor_, &LocationInfo::default_instance());
+      LocationInfo_descriptor_, LocationInfo::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Property_descriptor_, &Property::default_instance());
+      Property_descriptor_, Property::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      EntityAnnotation_descriptor_, &EntityAnnotation::default_instance());
+      EntityAnnotation_descriptor_, EntityAnnotation::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SafeSearchAnnotation_descriptor_, &SafeSearchAnnotation::default_instance());
+      SafeSearchAnnotation_descriptor_, SafeSearchAnnotation::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      LatLongRect_descriptor_, &LatLongRect::default_instance());
+      LatLongRect_descriptor_, LatLongRect::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ColorInfo_descriptor_, &ColorInfo::default_instance());
+      ColorInfo_descriptor_, ColorInfo::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DominantColorsAnnotation_descriptor_, &DominantColorsAnnotation::default_instance());
+      DominantColorsAnnotation_descriptor_, DominantColorsAnnotation::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ImageProperties_descriptor_, &ImageProperties::default_instance());
+      ImageProperties_descriptor_, ImageProperties::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ImageContext_descriptor_, &ImageContext::default_instance());
+      ImageContext_descriptor_, ImageContext::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      AnnotateImageRequest_descriptor_, &AnnotateImageRequest::default_instance());
+      AnnotateImageRequest_descriptor_, AnnotateImageRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      AnnotateImageResponse_descriptor_, &AnnotateImageResponse::default_instance());
+      AnnotateImageResponse_descriptor_, AnnotateImageResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      BatchAnnotateImagesRequest_descriptor_, &BatchAnnotateImagesRequest::default_instance());
+      BatchAnnotateImagesRequest_descriptor_, BatchAnnotateImagesRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      BatchAnnotateImagesResponse_descriptor_, &BatchAnnotateImagesResponse::default_instance());
+      BatchAnnotateImagesResponse_descriptor_, BatchAnnotateImagesResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto() {
-  delete Feature::default_instance_;
+  Feature_default_instance_.Shutdown();
   delete Feature_reflection_;
-  delete ImageSource::default_instance_;
+  ImageSource_default_instance_.Shutdown();
   delete ImageSource_reflection_;
-  delete Image::default_instance_;
+  Image_default_instance_.Shutdown();
   delete Image_reflection_;
-  delete FaceAnnotation::default_instance_;
+  FaceAnnotation_default_instance_.Shutdown();
   delete FaceAnnotation_reflection_;
-  delete FaceAnnotation_Landmark::default_instance_;
+  FaceAnnotation_Landmark_default_instance_.Shutdown();
   delete FaceAnnotation_Landmark_reflection_;
-  delete LocationInfo::default_instance_;
+  LocationInfo_default_instance_.Shutdown();
   delete LocationInfo_reflection_;
-  delete Property::default_instance_;
+  Property_default_instance_.Shutdown();
   delete Property_reflection_;
-  delete EntityAnnotation::default_instance_;
+  EntityAnnotation_default_instance_.Shutdown();
   delete EntityAnnotation_reflection_;
-  delete SafeSearchAnnotation::default_instance_;
+  SafeSearchAnnotation_default_instance_.Shutdown();
   delete SafeSearchAnnotation_reflection_;
-  delete LatLongRect::default_instance_;
+  LatLongRect_default_instance_.Shutdown();
   delete LatLongRect_reflection_;
-  delete ColorInfo::default_instance_;
+  ColorInfo_default_instance_.Shutdown();
   delete ColorInfo_reflection_;
-  delete DominantColorsAnnotation::default_instance_;
+  DominantColorsAnnotation_default_instance_.Shutdown();
   delete DominantColorsAnnotation_reflection_;
-  delete ImageProperties::default_instance_;
+  ImageProperties_default_instance_.Shutdown();
   delete ImageProperties_reflection_;
-  delete ImageContext::default_instance_;
+  ImageContext_default_instance_.Shutdown();
   delete ImageContext_reflection_;
-  delete AnnotateImageRequest::default_instance_;
+  AnnotateImageRequest_default_instance_.Shutdown();
   delete AnnotateImageRequest_reflection_;
-  delete AnnotateImageResponse::default_instance_;
+  AnnotateImageResponse_default_instance_.Shutdown();
   delete AnnotateImageResponse_reflection_;
-  delete BatchAnnotateImagesRequest::default_instance_;
+  BatchAnnotateImagesRequest_default_instance_.Shutdown();
   delete BatchAnnotateImagesRequest_reflection_;
-  delete BatchAnnotateImagesResponse::default_instance_;
+  BatchAnnotateImagesResponse_default_instance_.Shutdown();
   delete BatchAnnotateImagesResponse_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::cloud::vision::v1::protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
-  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
-  ::google::type::protobuf_AddDesc_google_2ftype_2fcolor_2eproto();
-  ::google::type::protobuf_AddDesc_google_2ftype_2flatlng_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::cloud::vision::v1::protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+  ::google::rpc::protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
+  ::google::type::protobuf_InitDefaults_google_2ftype_2fcolor_2eproto();
+  ::google::type::protobuf_InitDefaults_google_2ftype_2flatlng_2eproto();
+  Feature_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ImageSource_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Image_default_instance_.DefaultConstruct();
+  FaceAnnotation_default_instance_.DefaultConstruct();
+  FaceAnnotation_Landmark_default_instance_.DefaultConstruct();
+  LocationInfo_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Property_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  EntityAnnotation_default_instance_.DefaultConstruct();
+  SafeSearchAnnotation_default_instance_.DefaultConstruct();
+  LatLongRect_default_instance_.DefaultConstruct();
+  ColorInfo_default_instance_.DefaultConstruct();
+  DominantColorsAnnotation_default_instance_.DefaultConstruct();
+  ImageProperties_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ImageContext_default_instance_.DefaultConstruct();
+  AnnotateImageRequest_default_instance_.DefaultConstruct();
+  AnnotateImageResponse_default_instance_.DefaultConstruct();
+  BatchAnnotateImagesRequest_default_instance_.DefaultConstruct();
+  BatchAnnotateImagesResponse_default_instance_.DefaultConstruct();
+  Feature_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ImageSource_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Image_default_instance_.get_mutable()->InitAsDefaultInstance();
+  FaceAnnotation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  FaceAnnotation_Landmark_default_instance_.get_mutable()->InitAsDefaultInstance();
+  LocationInfo_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Property_default_instance_.get_mutable()->InitAsDefaultInstance();
+  EntityAnnotation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SafeSearchAnnotation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  LatLongRect_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ColorInfo_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DominantColorsAnnotation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ImageProperties_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ImageContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnnotateImageRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnnotateImageResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BatchAnnotateImagesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BatchAnnotateImagesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n,google/cloud/vision/v1/image_annotator"
     ".proto\022\026google.cloud.vision.v1\032\034google/a"
@@ -628,51 +658,25 @@ void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto()
     "d.vision.v1.BatchAnnotateImagesRequest\0323"
     ".google.cloud.vision.v1.BatchAnnotateIma"
     "gesResponse\"\036\202\323\344\223\002\030\"\023/v1/images:annotate"
-    ":\001*Bm\n\032com.google.cloud.vision.v1B\023Image"
-    "AnnotatorProtoP\001Z5google.golang.org/genp"
-    "roto/googleapis/cloud/vision/v1\370\001\001b\006prot"
-    "o3", 4762);
+    ":\001*Bt\n\032com.google.cloud.vision.v1B\023Image"
+    "AnnotatorProtoP\001Z<google.golang.org/genp"
+    "roto/googleapis/cloud/vision/v1;vision\370\001"
+    "\001b\006proto3", 4769);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/vision/v1/image_annotator.proto", &protobuf_RegisterTypes);
-  Feature::default_instance_ = new Feature();
-  ImageSource::default_instance_ = new ImageSource();
-  Image::default_instance_ = new Image();
-  FaceAnnotation::default_instance_ = new FaceAnnotation();
-  FaceAnnotation_Landmark::default_instance_ = new FaceAnnotation_Landmark();
-  LocationInfo::default_instance_ = new LocationInfo();
-  Property::default_instance_ = new Property();
-  EntityAnnotation::default_instance_ = new EntityAnnotation();
-  SafeSearchAnnotation::default_instance_ = new SafeSearchAnnotation();
-  LatLongRect::default_instance_ = new LatLongRect();
-  ColorInfo::default_instance_ = new ColorInfo();
-  DominantColorsAnnotation::default_instance_ = new DominantColorsAnnotation();
-  ImageProperties::default_instance_ = new ImageProperties();
-  ImageContext::default_instance_ = new ImageContext();
-  AnnotateImageRequest::default_instance_ = new AnnotateImageRequest();
-  AnnotateImageResponse::default_instance_ = new AnnotateImageResponse();
-  BatchAnnotateImagesRequest::default_instance_ = new BatchAnnotateImagesRequest();
-  BatchAnnotateImagesResponse::default_instance_ = new BatchAnnotateImagesResponse();
-  Feature::default_instance_->InitAsDefaultInstance();
-  ImageSource::default_instance_->InitAsDefaultInstance();
-  Image::default_instance_->InitAsDefaultInstance();
-  FaceAnnotation::default_instance_->InitAsDefaultInstance();
-  FaceAnnotation_Landmark::default_instance_->InitAsDefaultInstance();
-  LocationInfo::default_instance_->InitAsDefaultInstance();
-  Property::default_instance_->InitAsDefaultInstance();
-  EntityAnnotation::default_instance_->InitAsDefaultInstance();
-  SafeSearchAnnotation::default_instance_->InitAsDefaultInstance();
-  LatLongRect::default_instance_->InitAsDefaultInstance();
-  ColorInfo::default_instance_->InitAsDefaultInstance();
-  DominantColorsAnnotation::default_instance_->InitAsDefaultInstance();
-  ImageProperties::default_instance_->InitAsDefaultInstance();
-  ImageContext::default_instance_->InitAsDefaultInstance();
-  AnnotateImageRequest::default_instance_->InitAsDefaultInstance();
-  AnnotateImageResponse::default_instance_->InitAsDefaultInstance();
-  BatchAnnotateImagesRequest::default_instance_->InitAsDefaultInstance();
-  BatchAnnotateImagesResponse::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::cloud::vision::v1::protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+  ::google::rpc::protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
+  ::google::type::protobuf_AddDesc_google_2ftype_2fcolor_2eproto();
+  ::google::type::protobuf_AddDesc_google_2ftype_2flatlng_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto() {
@@ -684,7 +688,7 @@ const ::google::protobuf::EnumDescriptor* Likelihood_descriptor() {
   return Likelihood_descriptor_;
 }
 bool Likelihood_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -698,6 +702,16 @@ bool Likelihood_IsValid(int value) {
 }
 
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 const ::google::protobuf::EnumDescriptor* Feature_Type_descriptor() {
@@ -705,7 +719,7 @@ const ::google::protobuf::EnumDescriptor* Feature_Type_descriptor() {
   return Feature_Type_descriptor_;
 }
 bool Feature_Type_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -740,35 +754,36 @@ const int Feature::kMaxResultsFieldNumber;
 
 Feature::Feature()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.Feature)
 }
-
 Feature::Feature(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.Feature)
 }
 
 void Feature::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Feature::Feature(const Feature& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.Feature)
 }
 
 void Feature::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&type_, 0, reinterpret_cast<char*>(&max_results_) -
+    reinterpret_cast<char*>(&type_) + sizeof(max_results_));
   _cached_size_ = 0;
-  type_ = 0;
-  max_results_ = 0;
 }
 
 Feature::~Feature() {
@@ -777,12 +792,11 @@ Feature::~Feature() {
 }
 
 void Feature::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void Feature::ArenaDtor(void* object) {
@@ -802,11 +816,11 @@ const ::google::protobuf::Descriptor* Feature::descriptor() {
 }
 
 const Feature& Feature::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-Feature* Feature::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Feature> Feature_default_instance_;
 
 Feature* Feature::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Feature>(arena);
@@ -826,7 +840,7 @@ void Feature::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -866,10 +880,10 @@ bool Feature::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_max_results:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_results_)));
-
         } else {
           goto handle_unusual;
         }
@@ -917,6 +931,7 @@ void Feature::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Feature::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.Feature)
   // optional .google.cloud.vision.v1.Feature.Type type = 1;
   if (this->type() != 0) {
@@ -933,9 +948,9 @@ void Feature::SerializeWithCachedSizes(
   return target;
 }
 
-int Feature::ByteSize() const {
+size_t Feature::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.Feature)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.Feature.Type type = 1;
   if (this->type() != 0) {
@@ -950,18 +965,17 @@ int Feature::ByteSize() const {
         this->max_results());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Feature::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.Feature)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Feature* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Feature* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Feature>(
           &from);
   if (source == NULL) {
@@ -969,15 +983,21 @@ void Feature::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.Feature)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Feature::MergeFrom(const Feature& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.Feature)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Feature::UnsafeMergeFrom(const Feature& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.type() != 0) {
     set_type(from.type());
   }
@@ -997,7 +1017,7 @@ void Feature::CopyFrom(const Feature& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.Feature)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Feature::IsInitialized() const {
@@ -1011,7 +1031,7 @@ void Feature::Swap(Feature* other) {
     InternalSwap(other);
   } else {
     Feature temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1043,11 +1063,11 @@ void Feature::InternalSwap(Feature* other) {
 void Feature::clear_type() {
   type_ = 0;
 }
- ::google::cloud::vision::v1::Feature_Type Feature::type() const {
+::google::cloud::vision::v1::Feature_Type Feature::type() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Feature.type)
   return static_cast< ::google::cloud::vision::v1::Feature_Type >(type_);
 }
- void Feature::set_type(::google::cloud::vision::v1::Feature_Type value) {
+void Feature::set_type(::google::cloud::vision::v1::Feature_Type value) {
   
   type_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Feature.type)
@@ -1057,16 +1077,19 @@ void Feature::clear_type() {
 void Feature::clear_max_results() {
   max_results_ = 0;
 }
- ::google::protobuf::int32 Feature::max_results() const {
+::google::protobuf::int32 Feature::max_results() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Feature.max_results)
   return max_results_;
 }
- void Feature::set_max_results(::google::protobuf::int32 value) {
+void Feature::set_max_results(::google::protobuf::int32 value) {
   
   max_results_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Feature.max_results)
 }
 
+inline const Feature* Feature::internal_default_instance() {
+  return &Feature_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1077,35 +1100,35 @@ const int ImageSource::kGcsImageUriFieldNumber;
 
 ImageSource::ImageSource()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.ImageSource)
 }
-
 ImageSource::ImageSource(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.ImageSource)
 }
 
 void ImageSource::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ImageSource::ImageSource(const ImageSource& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.ImageSource)
 }
 
 void ImageSource::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   gcs_image_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ImageSource::~ImageSource() {
@@ -1114,13 +1137,12 @@ ImageSource::~ImageSource() {
 }
 
 void ImageSource::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  gcs_image_uri_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  gcs_image_uri_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ImageSource::ArenaDtor(void* object) {
@@ -1140,11 +1162,11 @@ const ::google::protobuf::Descriptor* ImageSource::descriptor() {
 }
 
 const ImageSource& ImageSource::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-ImageSource* ImageSource::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ImageSource> ImageSource_default_instance_;
 
 ImageSource* ImageSource::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ImageSource>(arena);
@@ -1220,6 +1242,7 @@ void ImageSource::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ImageSource::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.ImageSource)
   // optional string gcs_image_uri = 1;
   if (this->gcs_image_uri().size() > 0) {
@@ -1236,9 +1259,9 @@ void ImageSource::SerializeWithCachedSizes(
   return target;
 }
 
-int ImageSource::ByteSize() const {
+size_t ImageSource::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.ImageSource)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string gcs_image_uri = 1;
   if (this->gcs_image_uri().size() > 0) {
@@ -1247,18 +1270,17 @@ int ImageSource::ByteSize() const {
         this->gcs_image_uri());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ImageSource::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.ImageSource)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ImageSource* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ImageSource* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ImageSource>(
           &from);
   if (source == NULL) {
@@ -1266,15 +1288,21 @@ void ImageSource::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.ImageSource)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ImageSource::MergeFrom(const ImageSource& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.ImageSource)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ImageSource::UnsafeMergeFrom(const ImageSource& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.gcs_image_uri().size() > 0) {
     set_gcs_image_uri(from.gcs_image_uri());
   }
@@ -1291,7 +1319,7 @@ void ImageSource::CopyFrom(const ImageSource& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.ImageSource)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ImageSource::IsInitialized() const {
@@ -1305,7 +1333,7 @@ void ImageSource::Swap(ImageSource* other) {
     InternalSwap(other);
   } else {
     ImageSource temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1336,46 +1364,46 @@ void ImageSource::InternalSwap(ImageSource* other) {
 void ImageSource::clear_gcs_image_uri() {
   gcs_image_uri_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ImageSource::gcs_image_uri() const {
+const ::std::string& ImageSource::gcs_image_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.ImageSource.gcs_image_uri)
   return gcs_image_uri_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ImageSource::set_gcs_image_uri(const ::std::string& value) {
+void ImageSource::set_gcs_image_uri(const ::std::string& value) {
   
   gcs_image_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.ImageSource.gcs_image_uri)
 }
- void ImageSource::set_gcs_image_uri(const char* value) {
+void ImageSource::set_gcs_image_uri(const char* value) {
   
   gcs_image_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.ImageSource.gcs_image_uri)
 }
- void ImageSource::set_gcs_image_uri(const char* value,
+void ImageSource::set_gcs_image_uri(const char* value,
     size_t size) {
   
   gcs_image_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.ImageSource.gcs_image_uri)
 }
- ::std::string* ImageSource::mutable_gcs_image_uri() {
+::std::string* ImageSource::mutable_gcs_image_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.ImageSource.gcs_image_uri)
   return gcs_image_uri_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ImageSource::release_gcs_image_uri() {
+::std::string* ImageSource::release_gcs_image_uri() {
   // @@protoc_insertion_point(field_release:google.cloud.vision.v1.ImageSource.gcs_image_uri)
   
   return gcs_image_uri_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ImageSource::unsafe_arena_release_gcs_image_uri() {
+::std::string* ImageSource::unsafe_arena_release_gcs_image_uri() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.cloud.vision.v1.ImageSource.gcs_image_uri)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return gcs_image_uri_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ImageSource::set_allocated_gcs_image_uri(::std::string* gcs_image_uri) {
+void ImageSource::set_allocated_gcs_image_uri(::std::string* gcs_image_uri) {
   if (gcs_image_uri != NULL) {
     
   } else {
@@ -1385,7 +1413,7 @@ void ImageSource::clear_gcs_image_uri() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.ImageSource.gcs_image_uri)
 }
- void ImageSource::unsafe_arena_set_allocated_gcs_image_uri(
+void ImageSource::unsafe_arena_set_allocated_gcs_image_uri(
     ::std::string* gcs_image_uri) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (gcs_image_uri != NULL) {
@@ -1398,6 +1426,9 @@ void ImageSource::clear_gcs_image_uri() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.cloud.vision.v1.ImageSource.gcs_image_uri)
 }
 
+inline const ImageSource* ImageSource::internal_default_instance() {
+  return &ImageSource_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1410,8 +1441,7 @@ void Image::_slow_mutable_source() {
   if (source_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::ImageSource* temp = new ::google::cloud::vision::v1::ImageSource;
-    temp->MergeFrom(*source_);
+    ::google::cloud::vision::v1::ImageSource* temp = new ::google::cloud::vision::v1::ImageSource(*source_);
     source_ = NULL;
     return temp;
   }
@@ -1457,37 +1487,38 @@ const int Image::kSourceFieldNumber;
 
 Image::Image()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.Image)
 }
-
 Image::Image(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.Image)
 }
 
 void Image::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  source_ = const_cast< ::google::cloud::vision::v1::ImageSource*>(&::google::cloud::vision::v1::ImageSource::default_instance());
+  source_ = const_cast< ::google::cloud::vision::v1::ImageSource*>(
+      ::google::cloud::vision::v1::ImageSource::internal_default_instance());
 }
 
 Image::Image(const Image& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.Image)
 }
 
 void Image::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   source_ = NULL;
+  _cached_size_ = 0;
 }
 
 Image::~Image() {
@@ -1496,12 +1527,13 @@ Image::~Image() {
 }
 
 void Image::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  content_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  content_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &Image_default_instance_.get()) {
     delete source_;
   }
 }
@@ -1523,11 +1555,11 @@ const ::google::protobuf::Descriptor* Image::descriptor() {
 }
 
 const Image& Image::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-Image* Image::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Image> Image_default_instance_;
 
 Image* Image::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Image>(arena);
@@ -1616,6 +1648,7 @@ void Image::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Image::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.Image)
   // optional bytes content = 1;
   if (this->content().size() > 0) {
@@ -1635,9 +1668,9 @@ void Image::SerializeWithCachedSizes(
   return target;
 }
 
-int Image::ByteSize() const {
+size_t Image::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.Image)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional bytes content = 1;
   if (this->content().size() > 0) {
@@ -1653,18 +1686,17 @@ int Image::ByteSize() const {
         *this->source_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Image::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.Image)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Image* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Image* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Image>(
           &from);
   if (source == NULL) {
@@ -1672,15 +1704,21 @@ void Image::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.Image)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Image::MergeFrom(const Image& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.Image)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Image::UnsafeMergeFrom(const Image& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.content().size() > 0) {
     set_content(from.content());
   }
@@ -1700,7 +1738,7 @@ void Image::CopyFrom(const Image& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.Image)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Image::IsInitialized() const {
@@ -1714,7 +1752,7 @@ void Image::Swap(Image* other) {
     InternalSwap(other);
   } else {
     Image temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1746,46 +1784,46 @@ void Image::InternalSwap(Image* other) {
 void Image::clear_content() {
   content_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Image::content() const {
+const ::std::string& Image::content() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Image.content)
   return content_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Image::set_content(const ::std::string& value) {
+void Image::set_content(const ::std::string& value) {
   
   content_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Image.content)
 }
- void Image::set_content(const char* value) {
+void Image::set_content(const char* value) {
   
   content_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.Image.content)
 }
- void Image::set_content(const void* value,
+void Image::set_content(const void* value,
     size_t size) {
   
   content_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.Image.content)
 }
- ::std::string* Image::mutable_content() {
+::std::string* Image::mutable_content() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.Image.content)
   return content_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Image::release_content() {
+::std::string* Image::release_content() {
   // @@protoc_insertion_point(field_release:google.cloud.vision.v1.Image.content)
   
   return content_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Image::unsafe_arena_release_content() {
+::std::string* Image::unsafe_arena_release_content() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.cloud.vision.v1.Image.content)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return content_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Image::set_allocated_content(::std::string* content) {
+void Image::set_allocated_content(::std::string* content) {
   if (content != NULL) {
     
   } else {
@@ -1795,7 +1833,7 @@ void Image::clear_content() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.Image.content)
 }
- void Image::unsafe_arena_set_allocated_content(
+void Image::unsafe_arena_set_allocated_content(
     ::std::string* content) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (content != NULL) {
@@ -1810,7 +1848,7 @@ void Image::clear_content() {
 
 // optional .google.cloud.vision.v1.ImageSource source = 2;
 bool Image::has_source() const {
-  return !_is_default_instance_ && source_ != NULL;
+  return this != internal_default_instance() && source_ != NULL;
 }
 void Image::clear_source() {
   if (GetArenaNoVirtual() == NULL && source_ != NULL) delete source_;
@@ -1818,7 +1856,8 @@ void Image::clear_source() {
 }
 const ::google::cloud::vision::v1::ImageSource& Image::source() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Image.source)
-  return source_ != NULL ? *source_ : *default_instance_->source_;
+  return source_ != NULL ? *source_
+                         : *::google::cloud::vision::v1::ImageSource::internal_default_instance();
 }
 ::google::cloud::vision::v1::ImageSource* Image::mutable_source() {
   
@@ -1856,6 +1895,9 @@ const ::google::cloud::vision::v1::ImageSource& Image::source() const {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.Image.source)
 }
 
+inline const Image* Image::internal_default_instance() {
+  return &Image_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1865,7 +1907,7 @@ const ::google::protobuf::EnumDescriptor* FaceAnnotation_Landmark_Type_descripto
   return FaceAnnotation_Landmark_Type_descriptor_;
 }
 bool FaceAnnotation_Landmark_Type_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -1955,8 +1997,7 @@ void FaceAnnotation_Landmark::_slow_mutable_position() {
   if (position_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::Position* temp = new ::google::cloud::vision::v1::Position;
-    temp->MergeFrom(*position_);
+    ::google::cloud::vision::v1::Position* temp = new ::google::cloud::vision::v1::Position(*position_);
     position_ = NULL;
     return temp;
   }
@@ -2002,36 +2043,38 @@ const int FaceAnnotation_Landmark::kPositionFieldNumber;
 
 FaceAnnotation_Landmark::FaceAnnotation_Landmark()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.FaceAnnotation.Landmark)
 }
-
 FaceAnnotation_Landmark::FaceAnnotation_Landmark(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.FaceAnnotation.Landmark)
 }
 
 void FaceAnnotation_Landmark::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  position_ = const_cast< ::google::cloud::vision::v1::Position*>(&::google::cloud::vision::v1::Position::default_instance());
+  position_ = const_cast< ::google::cloud::vision::v1::Position*>(
+      ::google::cloud::vision::v1::Position::internal_default_instance());
 }
 
 FaceAnnotation_Landmark::FaceAnnotation_Landmark(const FaceAnnotation_Landmark& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.FaceAnnotation.Landmark)
 }
 
 void FaceAnnotation_Landmark::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
-  type_ = 0;
   position_ = NULL;
+  type_ = 0;
+  _cached_size_ = 0;
 }
 
 FaceAnnotation_Landmark::~FaceAnnotation_Landmark() {
@@ -2040,11 +2083,12 @@ FaceAnnotation_Landmark::~FaceAnnotation_Landmark() {
 }
 
 void FaceAnnotation_Landmark::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &FaceAnnotation_Landmark_default_instance_.get()) {
     delete position_;
   }
 }
@@ -2066,11 +2110,11 @@ const ::google::protobuf::Descriptor* FaceAnnotation_Landmark::descriptor() {
 }
 
 const FaceAnnotation_Landmark& FaceAnnotation_Landmark::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-FaceAnnotation_Landmark* FaceAnnotation_Landmark::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<FaceAnnotation_Landmark> FaceAnnotation_Landmark_default_instance_;
 
 FaceAnnotation_Landmark* FaceAnnotation_Landmark::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<FaceAnnotation_Landmark>(arena);
@@ -2162,6 +2206,7 @@ void FaceAnnotation_Landmark::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* FaceAnnotation_Landmark::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.FaceAnnotation.Landmark)
   // optional .google.cloud.vision.v1.FaceAnnotation.Landmark.Type type = 3;
   if (this->type() != 0) {
@@ -2180,9 +2225,9 @@ void FaceAnnotation_Landmark::SerializeWithCachedSizes(
   return target;
 }
 
-int FaceAnnotation_Landmark::ByteSize() const {
+size_t FaceAnnotation_Landmark::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.FaceAnnotation.Landmark)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.FaceAnnotation.Landmark.Type type = 3;
   if (this->type() != 0) {
@@ -2197,18 +2242,17 @@ int FaceAnnotation_Landmark::ByteSize() const {
         *this->position_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void FaceAnnotation_Landmark::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.FaceAnnotation.Landmark)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const FaceAnnotation_Landmark* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const FaceAnnotation_Landmark* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const FaceAnnotation_Landmark>(
           &from);
   if (source == NULL) {
@@ -2216,15 +2260,21 @@ void FaceAnnotation_Landmark::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.FaceAnnotation.Landmark)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void FaceAnnotation_Landmark::MergeFrom(const FaceAnnotation_Landmark& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.FaceAnnotation.Landmark)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void FaceAnnotation_Landmark::UnsafeMergeFrom(const FaceAnnotation_Landmark& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.type() != 0) {
     set_type(from.type());
   }
@@ -2244,7 +2294,7 @@ void FaceAnnotation_Landmark::CopyFrom(const FaceAnnotation_Landmark& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.FaceAnnotation.Landmark)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool FaceAnnotation_Landmark::IsInitialized() const {
@@ -2258,7 +2308,7 @@ void FaceAnnotation_Landmark::Swap(FaceAnnotation_Landmark* other) {
     InternalSwap(other);
   } else {
     FaceAnnotation_Landmark temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -2294,8 +2344,7 @@ void FaceAnnotation::_slow_mutable_bounding_poly() {
   if (bounding_poly_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::BoundingPoly* temp = new ::google::cloud::vision::v1::BoundingPoly;
-    temp->MergeFrom(*bounding_poly_);
+    ::google::cloud::vision::v1::BoundingPoly* temp = new ::google::cloud::vision::v1::BoundingPoly(*bounding_poly_);
     bounding_poly_ = NULL;
     return temp;
   }
@@ -2342,8 +2391,7 @@ void FaceAnnotation::_slow_mutable_fd_bounding_poly() {
   if (fd_bounding_poly_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::BoundingPoly* temp = new ::google::cloud::vision::v1::BoundingPoly;
-    temp->MergeFrom(*fd_bounding_poly_);
+    ::google::cloud::vision::v1::BoundingPoly* temp = new ::google::cloud::vision::v1::BoundingPoly(*fd_bounding_poly_);
     fd_bounding_poly_ = NULL;
     return temp;
   }
@@ -2402,50 +2450,43 @@ const int FaceAnnotation::kHeadwearLikelihoodFieldNumber;
 
 FaceAnnotation::FaceAnnotation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.FaceAnnotation)
 }
-
 FaceAnnotation::FaceAnnotation(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   landmarks_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.FaceAnnotation)
 }
 
 void FaceAnnotation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  bounding_poly_ = const_cast< ::google::cloud::vision::v1::BoundingPoly*>(&::google::cloud::vision::v1::BoundingPoly::default_instance());
-  fd_bounding_poly_ = const_cast< ::google::cloud::vision::v1::BoundingPoly*>(&::google::cloud::vision::v1::BoundingPoly::default_instance());
+  bounding_poly_ = const_cast< ::google::cloud::vision::v1::BoundingPoly*>(
+      ::google::cloud::vision::v1::BoundingPoly::internal_default_instance());
+  fd_bounding_poly_ = const_cast< ::google::cloud::vision::v1::BoundingPoly*>(
+      ::google::cloud::vision::v1::BoundingPoly::internal_default_instance());
 }
 
 FaceAnnotation::FaceAnnotation(const FaceAnnotation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.FaceAnnotation)
 }
 
 void FaceAnnotation::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   bounding_poly_ = NULL;
   fd_bounding_poly_ = NULL;
-  roll_angle_ = 0;
-  pan_angle_ = 0;
-  tilt_angle_ = 0;
-  detection_confidence_ = 0;
-  landmarking_confidence_ = 0;
-  joy_likelihood_ = 0;
-  sorrow_likelihood_ = 0;
-  anger_likelihood_ = 0;
-  surprise_likelihood_ = 0;
-  under_exposed_likelihood_ = 0;
-  blurred_likelihood_ = 0;
-  headwear_likelihood_ = 0;
+  ::memset(&roll_angle_, 0, reinterpret_cast<char*>(&headwear_likelihood_) -
+    reinterpret_cast<char*>(&roll_angle_) + sizeof(headwear_likelihood_));
+  _cached_size_ = 0;
 }
 
 FaceAnnotation::~FaceAnnotation() {
@@ -2454,11 +2495,12 @@ FaceAnnotation::~FaceAnnotation() {
 }
 
 void FaceAnnotation::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &FaceAnnotation_default_instance_.get()) {
     delete bounding_poly_;
     delete fd_bounding_poly_;
   }
@@ -2481,11 +2523,11 @@ const ::google::protobuf::Descriptor* FaceAnnotation::descriptor() {
 }
 
 const FaceAnnotation& FaceAnnotation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-FaceAnnotation* FaceAnnotation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<FaceAnnotation> FaceAnnotation_default_instance_;
 
 FaceAnnotation* FaceAnnotation::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<FaceAnnotation>(arena);
@@ -2505,7 +2547,7 @@ void FaceAnnotation::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -2578,10 +2620,10 @@ bool FaceAnnotation::MergePartialFromCodedStream(
       case 4: {
         if (tag == 37) {
          parse_roll_angle:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &roll_angle_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2593,10 +2635,10 @@ bool FaceAnnotation::MergePartialFromCodedStream(
       case 5: {
         if (tag == 45) {
          parse_pan_angle:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &pan_angle_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2608,10 +2650,10 @@ bool FaceAnnotation::MergePartialFromCodedStream(
       case 6: {
         if (tag == 53) {
          parse_tilt_angle:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &tilt_angle_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2623,10 +2665,10 @@ bool FaceAnnotation::MergePartialFromCodedStream(
       case 7: {
         if (tag == 61) {
          parse_detection_confidence:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &detection_confidence_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2638,10 +2680,10 @@ bool FaceAnnotation::MergePartialFromCodedStream(
       case 8: {
         if (tag == 69) {
          parse_landmarking_confidence:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &landmarking_confidence_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2875,6 +2917,7 @@ void FaceAnnotation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* FaceAnnotation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.FaceAnnotation)
   // optional .google.cloud.vision.v1.BoundingPoly bounding_poly = 1;
   if (this->has_bounding_poly()) {
@@ -2968,9 +3011,9 @@ void FaceAnnotation::SerializeWithCachedSizes(
   return target;
 }
 
-int FaceAnnotation::ByteSize() const {
+size_t FaceAnnotation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.FaceAnnotation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.BoundingPoly bounding_poly = 1;
   if (this->has_bounding_poly()) {
@@ -3054,25 +3097,27 @@ int FaceAnnotation::ByteSize() const {
   }
 
   // repeated .google.cloud.vision.v1.FaceAnnotation.Landmark landmarks = 3;
-  total_size += 1 * this->landmarks_size();
-  for (int i = 0; i < this->landmarks_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->landmarks(i));
+  {
+    unsigned int count = this->landmarks_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->landmarks(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void FaceAnnotation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.FaceAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const FaceAnnotation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const FaceAnnotation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const FaceAnnotation>(
           &from);
   if (source == NULL) {
@@ -3080,15 +3125,21 @@ void FaceAnnotation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.FaceAnnotation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void FaceAnnotation::MergeFrom(const FaceAnnotation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.FaceAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void FaceAnnotation::UnsafeMergeFrom(const FaceAnnotation& from) {
+  GOOGLE_DCHECK(&from != this);
   landmarks_.MergeFrom(from.landmarks_);
   if (from.has_bounding_poly()) {
     mutable_bounding_poly()->::google::cloud::vision::v1::BoundingPoly::MergeFrom(from.bounding_poly());
@@ -3145,7 +3196,7 @@ void FaceAnnotation::CopyFrom(const FaceAnnotation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.FaceAnnotation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool FaceAnnotation::IsInitialized() const {
@@ -3159,7 +3210,7 @@ void FaceAnnotation::Swap(FaceAnnotation* other) {
     InternalSwap(other);
   } else {
     FaceAnnotation temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3204,11 +3255,11 @@ void FaceAnnotation::InternalSwap(FaceAnnotation* other) {
 void FaceAnnotation_Landmark::clear_type() {
   type_ = 0;
 }
- ::google::cloud::vision::v1::FaceAnnotation_Landmark_Type FaceAnnotation_Landmark::type() const {
+::google::cloud::vision::v1::FaceAnnotation_Landmark_Type FaceAnnotation_Landmark::type() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.Landmark.type)
   return static_cast< ::google::cloud::vision::v1::FaceAnnotation_Landmark_Type >(type_);
 }
- void FaceAnnotation_Landmark::set_type(::google::cloud::vision::v1::FaceAnnotation_Landmark_Type value) {
+void FaceAnnotation_Landmark::set_type(::google::cloud::vision::v1::FaceAnnotation_Landmark_Type value) {
   
   type_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.Landmark.type)
@@ -3216,7 +3267,7 @@ void FaceAnnotation_Landmark::clear_type() {
 
 // optional .google.cloud.vision.v1.Position position = 4;
 bool FaceAnnotation_Landmark::has_position() const {
-  return !_is_default_instance_ && position_ != NULL;
+  return this != internal_default_instance() && position_ != NULL;
 }
 void FaceAnnotation_Landmark::clear_position() {
   if (GetArenaNoVirtual() == NULL && position_ != NULL) delete position_;
@@ -3224,7 +3275,8 @@ void FaceAnnotation_Landmark::clear_position() {
 }
 const ::google::cloud::vision::v1::Position& FaceAnnotation_Landmark::position() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.Landmark.position)
-  return position_ != NULL ? *position_ : *default_instance_->position_;
+  return position_ != NULL ? *position_
+                         : *::google::cloud::vision::v1::Position::internal_default_instance();
 }
 ::google::cloud::vision::v1::Position* FaceAnnotation_Landmark::mutable_position() {
   
@@ -3262,13 +3314,16 @@ const ::google::cloud::vision::v1::Position& FaceAnnotation_Landmark::position()
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.FaceAnnotation.Landmark.position)
 }
 
+inline const FaceAnnotation_Landmark* FaceAnnotation_Landmark::internal_default_instance() {
+  return &FaceAnnotation_Landmark_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // FaceAnnotation
 
 // optional .google.cloud.vision.v1.BoundingPoly bounding_poly = 1;
 bool FaceAnnotation::has_bounding_poly() const {
-  return !_is_default_instance_ && bounding_poly_ != NULL;
+  return this != internal_default_instance() && bounding_poly_ != NULL;
 }
 void FaceAnnotation::clear_bounding_poly() {
   if (GetArenaNoVirtual() == NULL && bounding_poly_ != NULL) delete bounding_poly_;
@@ -3276,7 +3331,8 @@ void FaceAnnotation::clear_bounding_poly() {
 }
 const ::google::cloud::vision::v1::BoundingPoly& FaceAnnotation::bounding_poly() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.bounding_poly)
-  return bounding_poly_ != NULL ? *bounding_poly_ : *default_instance_->bounding_poly_;
+  return bounding_poly_ != NULL ? *bounding_poly_
+                         : *::google::cloud::vision::v1::BoundingPoly::internal_default_instance();
 }
 ::google::cloud::vision::v1::BoundingPoly* FaceAnnotation::mutable_bounding_poly() {
   
@@ -3316,7 +3372,7 @@ const ::google::cloud::vision::v1::BoundingPoly& FaceAnnotation::bounding_poly()
 
 // optional .google.cloud.vision.v1.BoundingPoly fd_bounding_poly = 2;
 bool FaceAnnotation::has_fd_bounding_poly() const {
-  return !_is_default_instance_ && fd_bounding_poly_ != NULL;
+  return this != internal_default_instance() && fd_bounding_poly_ != NULL;
 }
 void FaceAnnotation::clear_fd_bounding_poly() {
   if (GetArenaNoVirtual() == NULL && fd_bounding_poly_ != NULL) delete fd_bounding_poly_;
@@ -3324,7 +3380,8 @@ void FaceAnnotation::clear_fd_bounding_poly() {
 }
 const ::google::cloud::vision::v1::BoundingPoly& FaceAnnotation::fd_bounding_poly() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.fd_bounding_poly)
-  return fd_bounding_poly_ != NULL ? *fd_bounding_poly_ : *default_instance_->fd_bounding_poly_;
+  return fd_bounding_poly_ != NULL ? *fd_bounding_poly_
+                         : *::google::cloud::vision::v1::BoundingPoly::internal_default_instance();
 }
 ::google::cloud::vision::v1::BoundingPoly* FaceAnnotation::mutable_fd_bounding_poly() {
   
@@ -3396,11 +3453,11 @@ FaceAnnotation::landmarks() const {
 void FaceAnnotation::clear_roll_angle() {
   roll_angle_ = 0;
 }
- float FaceAnnotation::roll_angle() const {
+float FaceAnnotation::roll_angle() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.roll_angle)
   return roll_angle_;
 }
- void FaceAnnotation::set_roll_angle(float value) {
+void FaceAnnotation::set_roll_angle(float value) {
   
   roll_angle_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.roll_angle)
@@ -3410,11 +3467,11 @@ void FaceAnnotation::clear_roll_angle() {
 void FaceAnnotation::clear_pan_angle() {
   pan_angle_ = 0;
 }
- float FaceAnnotation::pan_angle() const {
+float FaceAnnotation::pan_angle() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.pan_angle)
   return pan_angle_;
 }
- void FaceAnnotation::set_pan_angle(float value) {
+void FaceAnnotation::set_pan_angle(float value) {
   
   pan_angle_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.pan_angle)
@@ -3424,11 +3481,11 @@ void FaceAnnotation::clear_pan_angle() {
 void FaceAnnotation::clear_tilt_angle() {
   tilt_angle_ = 0;
 }
- float FaceAnnotation::tilt_angle() const {
+float FaceAnnotation::tilt_angle() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.tilt_angle)
   return tilt_angle_;
 }
- void FaceAnnotation::set_tilt_angle(float value) {
+void FaceAnnotation::set_tilt_angle(float value) {
   
   tilt_angle_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.tilt_angle)
@@ -3438,11 +3495,11 @@ void FaceAnnotation::clear_tilt_angle() {
 void FaceAnnotation::clear_detection_confidence() {
   detection_confidence_ = 0;
 }
- float FaceAnnotation::detection_confidence() const {
+float FaceAnnotation::detection_confidence() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.detection_confidence)
   return detection_confidence_;
 }
- void FaceAnnotation::set_detection_confidence(float value) {
+void FaceAnnotation::set_detection_confidence(float value) {
   
   detection_confidence_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.detection_confidence)
@@ -3452,11 +3509,11 @@ void FaceAnnotation::clear_detection_confidence() {
 void FaceAnnotation::clear_landmarking_confidence() {
   landmarking_confidence_ = 0;
 }
- float FaceAnnotation::landmarking_confidence() const {
+float FaceAnnotation::landmarking_confidence() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.landmarking_confidence)
   return landmarking_confidence_;
 }
- void FaceAnnotation::set_landmarking_confidence(float value) {
+void FaceAnnotation::set_landmarking_confidence(float value) {
   
   landmarking_confidence_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.landmarking_confidence)
@@ -3466,11 +3523,11 @@ void FaceAnnotation::clear_landmarking_confidence() {
 void FaceAnnotation::clear_joy_likelihood() {
   joy_likelihood_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood FaceAnnotation::joy_likelihood() const {
+::google::cloud::vision::v1::Likelihood FaceAnnotation::joy_likelihood() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.joy_likelihood)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(joy_likelihood_);
 }
- void FaceAnnotation::set_joy_likelihood(::google::cloud::vision::v1::Likelihood value) {
+void FaceAnnotation::set_joy_likelihood(::google::cloud::vision::v1::Likelihood value) {
   
   joy_likelihood_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.joy_likelihood)
@@ -3480,11 +3537,11 @@ void FaceAnnotation::clear_joy_likelihood() {
 void FaceAnnotation::clear_sorrow_likelihood() {
   sorrow_likelihood_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood FaceAnnotation::sorrow_likelihood() const {
+::google::cloud::vision::v1::Likelihood FaceAnnotation::sorrow_likelihood() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.sorrow_likelihood)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(sorrow_likelihood_);
 }
- void FaceAnnotation::set_sorrow_likelihood(::google::cloud::vision::v1::Likelihood value) {
+void FaceAnnotation::set_sorrow_likelihood(::google::cloud::vision::v1::Likelihood value) {
   
   sorrow_likelihood_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.sorrow_likelihood)
@@ -3494,11 +3551,11 @@ void FaceAnnotation::clear_sorrow_likelihood() {
 void FaceAnnotation::clear_anger_likelihood() {
   anger_likelihood_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood FaceAnnotation::anger_likelihood() const {
+::google::cloud::vision::v1::Likelihood FaceAnnotation::anger_likelihood() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.anger_likelihood)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(anger_likelihood_);
 }
- void FaceAnnotation::set_anger_likelihood(::google::cloud::vision::v1::Likelihood value) {
+void FaceAnnotation::set_anger_likelihood(::google::cloud::vision::v1::Likelihood value) {
   
   anger_likelihood_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.anger_likelihood)
@@ -3508,11 +3565,11 @@ void FaceAnnotation::clear_anger_likelihood() {
 void FaceAnnotation::clear_surprise_likelihood() {
   surprise_likelihood_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood FaceAnnotation::surprise_likelihood() const {
+::google::cloud::vision::v1::Likelihood FaceAnnotation::surprise_likelihood() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.surprise_likelihood)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(surprise_likelihood_);
 }
- void FaceAnnotation::set_surprise_likelihood(::google::cloud::vision::v1::Likelihood value) {
+void FaceAnnotation::set_surprise_likelihood(::google::cloud::vision::v1::Likelihood value) {
   
   surprise_likelihood_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.surprise_likelihood)
@@ -3522,11 +3579,11 @@ void FaceAnnotation::clear_surprise_likelihood() {
 void FaceAnnotation::clear_under_exposed_likelihood() {
   under_exposed_likelihood_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood FaceAnnotation::under_exposed_likelihood() const {
+::google::cloud::vision::v1::Likelihood FaceAnnotation::under_exposed_likelihood() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.under_exposed_likelihood)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(under_exposed_likelihood_);
 }
- void FaceAnnotation::set_under_exposed_likelihood(::google::cloud::vision::v1::Likelihood value) {
+void FaceAnnotation::set_under_exposed_likelihood(::google::cloud::vision::v1::Likelihood value) {
   
   under_exposed_likelihood_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.under_exposed_likelihood)
@@ -3536,11 +3593,11 @@ void FaceAnnotation::clear_under_exposed_likelihood() {
 void FaceAnnotation::clear_blurred_likelihood() {
   blurred_likelihood_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood FaceAnnotation::blurred_likelihood() const {
+::google::cloud::vision::v1::Likelihood FaceAnnotation::blurred_likelihood() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.blurred_likelihood)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(blurred_likelihood_);
 }
- void FaceAnnotation::set_blurred_likelihood(::google::cloud::vision::v1::Likelihood value) {
+void FaceAnnotation::set_blurred_likelihood(::google::cloud::vision::v1::Likelihood value) {
   
   blurred_likelihood_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.blurred_likelihood)
@@ -3550,16 +3607,19 @@ void FaceAnnotation::clear_blurred_likelihood() {
 void FaceAnnotation::clear_headwear_likelihood() {
   headwear_likelihood_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood FaceAnnotation::headwear_likelihood() const {
+::google::cloud::vision::v1::Likelihood FaceAnnotation::headwear_likelihood() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.FaceAnnotation.headwear_likelihood)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(headwear_likelihood_);
 }
- void FaceAnnotation::set_headwear_likelihood(::google::cloud::vision::v1::Likelihood value) {
+void FaceAnnotation::set_headwear_likelihood(::google::cloud::vision::v1::Likelihood value) {
   
   headwear_likelihood_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.FaceAnnotation.headwear_likelihood)
 }
 
+inline const FaceAnnotation* FaceAnnotation::internal_default_instance() {
+  return &FaceAnnotation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3572,8 +3632,7 @@ void LocationInfo::_slow_mutable_lat_lng() {
   if (lat_lng_ == NULL) {
     return NULL;
   } else {
-    ::google::type::LatLng* temp = new ::google::type::LatLng;
-    temp->MergeFrom(*lat_lng_);
+    ::google::type::LatLng* temp = new ::google::type::LatLng(*lat_lng_);
     lat_lng_ = NULL;
     return temp;
   }
@@ -3604,35 +3663,37 @@ const int LocationInfo::kLatLngFieldNumber;
 
 LocationInfo::LocationInfo()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.LocationInfo)
 }
-
 LocationInfo::LocationInfo(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.LocationInfo)
 }
 
 void LocationInfo::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  lat_lng_ = const_cast< ::google::type::LatLng*>(&::google::type::LatLng::default_instance());
+  lat_lng_ = const_cast< ::google::type::LatLng*>(
+      ::google::type::LatLng::internal_default_instance());
 }
 
 LocationInfo::LocationInfo(const LocationInfo& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.LocationInfo)
 }
 
 void LocationInfo::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   lat_lng_ = NULL;
+  _cached_size_ = 0;
 }
 
 LocationInfo::~LocationInfo() {
@@ -3641,11 +3702,12 @@ LocationInfo::~LocationInfo() {
 }
 
 void LocationInfo::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &LocationInfo_default_instance_.get()) {
     delete lat_lng_;
   }
 }
@@ -3667,11 +3729,11 @@ const ::google::protobuf::Descriptor* LocationInfo::descriptor() {
 }
 
 const LocationInfo& LocationInfo::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-LocationInfo* LocationInfo::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<LocationInfo> LocationInfo_default_instance_;
 
 LocationInfo* LocationInfo::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<LocationInfo>(arena);
@@ -3740,6 +3802,7 @@ void LocationInfo::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* LocationInfo::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.LocationInfo)
   // optional .google.type.LatLng lat_lng = 1;
   if (this->has_lat_lng()) {
@@ -3752,9 +3815,9 @@ void LocationInfo::SerializeWithCachedSizes(
   return target;
 }
 
-int LocationInfo::ByteSize() const {
+size_t LocationInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.LocationInfo)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.type.LatLng lat_lng = 1;
   if (this->has_lat_lng()) {
@@ -3763,18 +3826,17 @@ int LocationInfo::ByteSize() const {
         *this->lat_lng_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LocationInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.LocationInfo)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const LocationInfo* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const LocationInfo* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LocationInfo>(
           &from);
   if (source == NULL) {
@@ -3782,15 +3844,21 @@ void LocationInfo::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.LocationInfo)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LocationInfo::MergeFrom(const LocationInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.LocationInfo)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void LocationInfo::UnsafeMergeFrom(const LocationInfo& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_lat_lng()) {
     mutable_lat_lng()->::google::type::LatLng::MergeFrom(from.lat_lng());
   }
@@ -3807,7 +3875,7 @@ void LocationInfo::CopyFrom(const LocationInfo& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.LocationInfo)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LocationInfo::IsInitialized() const {
@@ -3821,7 +3889,7 @@ void LocationInfo::Swap(LocationInfo* other) {
     InternalSwap(other);
   } else {
     LocationInfo temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3850,7 +3918,7 @@ void LocationInfo::InternalSwap(LocationInfo* other) {
 
 // optional .google.type.LatLng lat_lng = 1;
 bool LocationInfo::has_lat_lng() const {
-  return !_is_default_instance_ && lat_lng_ != NULL;
+  return this != internal_default_instance() && lat_lng_ != NULL;
 }
 void LocationInfo::clear_lat_lng() {
   if (GetArenaNoVirtual() == NULL && lat_lng_ != NULL) delete lat_lng_;
@@ -3858,7 +3926,8 @@ void LocationInfo::clear_lat_lng() {
 }
 const ::google::type::LatLng& LocationInfo::lat_lng() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.LocationInfo.lat_lng)
-  return lat_lng_ != NULL ? *lat_lng_ : *default_instance_->lat_lng_;
+  return lat_lng_ != NULL ? *lat_lng_
+                         : *::google::type::LatLng::internal_default_instance();
 }
 ::google::type::LatLng* LocationInfo::mutable_lat_lng() {
   
@@ -3898,6 +3967,9 @@ const ::google::type::LatLng& LocationInfo::lat_lng() const {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.LocationInfo.lat_lng)
 }
 
+inline const LocationInfo* LocationInfo::internal_default_instance() {
+  return &LocationInfo_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3909,36 +3981,36 @@ const int Property::kValueFieldNumber;
 
 Property::Property()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.Property)
 }
-
 Property::Property(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.Property)
 }
 
 void Property::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Property::Property(const Property& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.Property)
 }
 
 void Property::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Property::~Property() {
@@ -3947,14 +4019,13 @@ Property::~Property() {
 }
 
 void Property::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  value_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  value_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void Property::ArenaDtor(void* object) {
@@ -3974,11 +4045,11 @@ const ::google::protobuf::Descriptor* Property::descriptor() {
 }
 
 const Property& Property::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-Property* Property::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Property> Property_default_instance_;
 
 Property* Property::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Property>(arena);
@@ -4082,6 +4153,7 @@ void Property::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Property::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.Property)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4109,9 +4181,9 @@ void Property::SerializeWithCachedSizes(
   return target;
 }
 
-int Property::ByteSize() const {
+size_t Property::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.Property)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4127,18 +4199,17 @@ int Property::ByteSize() const {
         this->value());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Property::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.Property)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Property* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Property* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Property>(
           &from);
   if (source == NULL) {
@@ -4146,15 +4217,21 @@ void Property::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.Property)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Property::MergeFrom(const Property& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.Property)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Property::UnsafeMergeFrom(const Property& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -4174,7 +4251,7 @@ void Property::CopyFrom(const Property& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.Property)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Property::IsInitialized() const {
@@ -4188,7 +4265,7 @@ void Property::Swap(Property* other) {
     InternalSwap(other);
   } else {
     Property temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4220,46 +4297,46 @@ void Property::InternalSwap(Property* other) {
 void Property::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Property::name() const {
+const ::std::string& Property::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Property.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Property::set_name(const ::std::string& value) {
+void Property::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Property.name)
 }
- void Property::set_name(const char* value) {
+void Property::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.Property.name)
 }
- void Property::set_name(const char* value,
+void Property::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.Property.name)
 }
- ::std::string* Property::mutable_name() {
+::std::string* Property::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.Property.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Property::release_name() {
+::std::string* Property::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.vision.v1.Property.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Property::unsafe_arena_release_name() {
+::std::string* Property::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.cloud.vision.v1.Property.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Property::set_allocated_name(::std::string* name) {
+void Property::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -4269,7 +4346,7 @@ void Property::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.Property.name)
 }
- void Property::unsafe_arena_set_allocated_name(
+void Property::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -4286,46 +4363,46 @@ void Property::clear_name() {
 void Property::clear_value() {
   value_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Property::value() const {
+const ::std::string& Property::value() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Property.value)
   return value_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Property::set_value(const ::std::string& value) {
+void Property::set_value(const ::std::string& value) {
   
   value_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Property.value)
 }
- void Property::set_value(const char* value) {
+void Property::set_value(const char* value) {
   
   value_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.Property.value)
 }
- void Property::set_value(const char* value,
+void Property::set_value(const char* value,
     size_t size) {
   
   value_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.Property.value)
 }
- ::std::string* Property::mutable_value() {
+::std::string* Property::mutable_value() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.Property.value)
   return value_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Property::release_value() {
+::std::string* Property::release_value() {
   // @@protoc_insertion_point(field_release:google.cloud.vision.v1.Property.value)
   
   return value_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Property::unsafe_arena_release_value() {
+::std::string* Property::unsafe_arena_release_value() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.cloud.vision.v1.Property.value)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return value_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Property::set_allocated_value(::std::string* value) {
+void Property::set_allocated_value(::std::string* value) {
   if (value != NULL) {
     
   } else {
@@ -4335,7 +4412,7 @@ void Property::clear_value() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.Property.value)
 }
- void Property::unsafe_arena_set_allocated_value(
+void Property::unsafe_arena_set_allocated_value(
     ::std::string* value) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (value != NULL) {
@@ -4348,6 +4425,9 @@ void Property::clear_value() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.cloud.vision.v1.Property.value)
 }
 
+inline const Property* Property::internal_default_instance() {
+  return &Property_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4360,8 +4440,7 @@ void EntityAnnotation::_slow_mutable_bounding_poly() {
   if (bounding_poly_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::BoundingPoly* temp = new ::google::cloud::vision::v1::BoundingPoly;
-    temp->MergeFrom(*bounding_poly_);
+    ::google::cloud::vision::v1::BoundingPoly* temp = new ::google::cloud::vision::v1::BoundingPoly(*bounding_poly_);
     bounding_poly_ = NULL;
     return temp;
   }
@@ -4414,44 +4493,44 @@ const int EntityAnnotation::kPropertiesFieldNumber;
 
 EntityAnnotation::EntityAnnotation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.EntityAnnotation)
 }
-
 EntityAnnotation::EntityAnnotation(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   locations_(arena),
   properties_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.EntityAnnotation)
 }
 
 void EntityAnnotation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  bounding_poly_ = const_cast< ::google::cloud::vision::v1::BoundingPoly*>(&::google::cloud::vision::v1::BoundingPoly::default_instance());
+  bounding_poly_ = const_cast< ::google::cloud::vision::v1::BoundingPoly*>(
+      ::google::cloud::vision::v1::BoundingPoly::internal_default_instance());
 }
 
 EntityAnnotation::EntityAnnotation(const EntityAnnotation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.EntityAnnotation)
 }
 
 void EntityAnnotation::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   mid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   locale_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  score_ = 0;
-  confidence_ = 0;
-  topicality_ = 0;
   bounding_poly_ = NULL;
+  ::memset(&score_, 0, reinterpret_cast<char*>(&topicality_) -
+    reinterpret_cast<char*>(&score_) + sizeof(topicality_));
+  _cached_size_ = 0;
 }
 
 EntityAnnotation::~EntityAnnotation() {
@@ -4460,14 +4539,15 @@ EntityAnnotation::~EntityAnnotation() {
 }
 
 void EntityAnnotation::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  mid_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  locale_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  description_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  mid_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  locale_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  description_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &EntityAnnotation_default_instance_.get()) {
     delete bounding_poly_;
   }
 }
@@ -4489,11 +4569,11 @@ const ::google::protobuf::Descriptor* EntityAnnotation::descriptor() {
 }
 
 const EntityAnnotation& EntityAnnotation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-EntityAnnotation* EntityAnnotation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<EntityAnnotation> EntityAnnotation_default_instance_;
 
 EntityAnnotation* EntityAnnotation::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<EntityAnnotation>(arena);
@@ -4513,15 +4593,14 @@ void EntityAnnotation::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
-  ZR_(score_, confidence_);
+  ZR_(score_, topicality_);
   mid_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   locale_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  topicality_ = 0;
   if (GetArenaNoVirtual() == NULL && bounding_poly_ != NULL) delete bounding_poly_;
   bounding_poly_ = NULL;
 
@@ -4596,10 +4675,10 @@ bool EntityAnnotation::MergePartialFromCodedStream(
       case 4: {
         if (tag == 37) {
          parse_score:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &score_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4611,10 +4690,10 @@ bool EntityAnnotation::MergePartialFromCodedStream(
       case 5: {
         if (tag == 45) {
          parse_confidence:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &confidence_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4626,10 +4705,10 @@ bool EntityAnnotation::MergePartialFromCodedStream(
       case 6: {
         if (tag == 53) {
          parse_topicality:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &topicality_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4775,6 +4854,7 @@ void EntityAnnotation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* EntityAnnotation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.EntityAnnotation)
   // optional string mid = 1;
   if (this->mid().size() > 0) {
@@ -4849,9 +4929,9 @@ void EntityAnnotation::SerializeWithCachedSizes(
   return target;
 }
 
-int EntityAnnotation::ByteSize() const {
+size_t EntityAnnotation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.EntityAnnotation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string mid = 1;
   if (this->mid().size() > 0) {
@@ -4897,33 +4977,38 @@ int EntityAnnotation::ByteSize() const {
   }
 
   // repeated .google.cloud.vision.v1.LocationInfo locations = 8;
-  total_size += 1 * this->locations_size();
-  for (int i = 0; i < this->locations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->locations(i));
+  {
+    unsigned int count = this->locations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->locations(i));
+    }
   }
 
   // repeated .google.cloud.vision.v1.Property properties = 9;
-  total_size += 1 * this->properties_size();
-  for (int i = 0; i < this->properties_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->properties(i));
+  {
+    unsigned int count = this->properties_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->properties(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void EntityAnnotation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.EntityAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const EntityAnnotation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const EntityAnnotation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const EntityAnnotation>(
           &from);
   if (source == NULL) {
@@ -4931,15 +5016,21 @@ void EntityAnnotation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.EntityAnnotation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void EntityAnnotation::MergeFrom(const EntityAnnotation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.EntityAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void EntityAnnotation::UnsafeMergeFrom(const EntityAnnotation& from) {
+  GOOGLE_DCHECK(&from != this);
   locations_.MergeFrom(from.locations_);
   properties_.MergeFrom(from.properties_);
   if (from.mid().size() > 0) {
@@ -4976,7 +5067,7 @@ void EntityAnnotation::CopyFrom(const EntityAnnotation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.EntityAnnotation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool EntityAnnotation::IsInitialized() const {
@@ -4990,7 +5081,7 @@ void EntityAnnotation::Swap(EntityAnnotation* other) {
     InternalSwap(other);
   } else {
     EntityAnnotation temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -5029,46 +5120,46 @@ void EntityAnnotation::InternalSwap(EntityAnnotation* other) {
 void EntityAnnotation::clear_mid() {
   mid_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& EntityAnnotation::mid() const {
+const ::std::string& EntityAnnotation::mid() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.EntityAnnotation.mid)
   return mid_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EntityAnnotation::set_mid(const ::std::string& value) {
+void EntityAnnotation::set_mid(const ::std::string& value) {
   
   mid_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.EntityAnnotation.mid)
 }
- void EntityAnnotation::set_mid(const char* value) {
+void EntityAnnotation::set_mid(const char* value) {
   
   mid_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.EntityAnnotation.mid)
 }
- void EntityAnnotation::set_mid(const char* value,
+void EntityAnnotation::set_mid(const char* value,
     size_t size) {
   
   mid_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.EntityAnnotation.mid)
 }
- ::std::string* EntityAnnotation::mutable_mid() {
+::std::string* EntityAnnotation::mutable_mid() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.EntityAnnotation.mid)
   return mid_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* EntityAnnotation::release_mid() {
+::std::string* EntityAnnotation::release_mid() {
   // @@protoc_insertion_point(field_release:google.cloud.vision.v1.EntityAnnotation.mid)
   
   return mid_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* EntityAnnotation::unsafe_arena_release_mid() {
+::std::string* EntityAnnotation::unsafe_arena_release_mid() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.cloud.vision.v1.EntityAnnotation.mid)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return mid_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void EntityAnnotation::set_allocated_mid(::std::string* mid) {
+void EntityAnnotation::set_allocated_mid(::std::string* mid) {
   if (mid != NULL) {
     
   } else {
@@ -5078,7 +5169,7 @@ void EntityAnnotation::clear_mid() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.EntityAnnotation.mid)
 }
- void EntityAnnotation::unsafe_arena_set_allocated_mid(
+void EntityAnnotation::unsafe_arena_set_allocated_mid(
     ::std::string* mid) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (mid != NULL) {
@@ -5095,46 +5186,46 @@ void EntityAnnotation::clear_mid() {
 void EntityAnnotation::clear_locale() {
   locale_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& EntityAnnotation::locale() const {
+const ::std::string& EntityAnnotation::locale() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.EntityAnnotation.locale)
   return locale_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EntityAnnotation::set_locale(const ::std::string& value) {
+void EntityAnnotation::set_locale(const ::std::string& value) {
   
   locale_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.EntityAnnotation.locale)
 }
- void EntityAnnotation::set_locale(const char* value) {
+void EntityAnnotation::set_locale(const char* value) {
   
   locale_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.EntityAnnotation.locale)
 }
- void EntityAnnotation::set_locale(const char* value,
+void EntityAnnotation::set_locale(const char* value,
     size_t size) {
   
   locale_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.EntityAnnotation.locale)
 }
- ::std::string* EntityAnnotation::mutable_locale() {
+::std::string* EntityAnnotation::mutable_locale() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.EntityAnnotation.locale)
   return locale_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* EntityAnnotation::release_locale() {
+::std::string* EntityAnnotation::release_locale() {
   // @@protoc_insertion_point(field_release:google.cloud.vision.v1.EntityAnnotation.locale)
   
   return locale_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* EntityAnnotation::unsafe_arena_release_locale() {
+::std::string* EntityAnnotation::unsafe_arena_release_locale() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.cloud.vision.v1.EntityAnnotation.locale)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return locale_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void EntityAnnotation::set_allocated_locale(::std::string* locale) {
+void EntityAnnotation::set_allocated_locale(::std::string* locale) {
   if (locale != NULL) {
     
   } else {
@@ -5144,7 +5235,7 @@ void EntityAnnotation::clear_locale() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.EntityAnnotation.locale)
 }
- void EntityAnnotation::unsafe_arena_set_allocated_locale(
+void EntityAnnotation::unsafe_arena_set_allocated_locale(
     ::std::string* locale) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (locale != NULL) {
@@ -5161,46 +5252,46 @@ void EntityAnnotation::clear_locale() {
 void EntityAnnotation::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& EntityAnnotation::description() const {
+const ::std::string& EntityAnnotation::description() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.EntityAnnotation.description)
   return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EntityAnnotation::set_description(const ::std::string& value) {
+void EntityAnnotation::set_description(const ::std::string& value) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.EntityAnnotation.description)
 }
- void EntityAnnotation::set_description(const char* value) {
+void EntityAnnotation::set_description(const char* value) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.EntityAnnotation.description)
 }
- void EntityAnnotation::set_description(const char* value,
+void EntityAnnotation::set_description(const char* value,
     size_t size) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.EntityAnnotation.description)
 }
- ::std::string* EntityAnnotation::mutable_description() {
+::std::string* EntityAnnotation::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.EntityAnnotation.description)
   return description_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* EntityAnnotation::release_description() {
+::std::string* EntityAnnotation::release_description() {
   // @@protoc_insertion_point(field_release:google.cloud.vision.v1.EntityAnnotation.description)
   
   return description_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* EntityAnnotation::unsafe_arena_release_description() {
+::std::string* EntityAnnotation::unsafe_arena_release_description() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.cloud.vision.v1.EntityAnnotation.description)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return description_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void EntityAnnotation::set_allocated_description(::std::string* description) {
+void EntityAnnotation::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -5210,7 +5301,7 @@ void EntityAnnotation::clear_description() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.EntityAnnotation.description)
 }
- void EntityAnnotation::unsafe_arena_set_allocated_description(
+void EntityAnnotation::unsafe_arena_set_allocated_description(
     ::std::string* description) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (description != NULL) {
@@ -5227,11 +5318,11 @@ void EntityAnnotation::clear_description() {
 void EntityAnnotation::clear_score() {
   score_ = 0;
 }
- float EntityAnnotation::score() const {
+float EntityAnnotation::score() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.EntityAnnotation.score)
   return score_;
 }
- void EntityAnnotation::set_score(float value) {
+void EntityAnnotation::set_score(float value) {
   
   score_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.EntityAnnotation.score)
@@ -5241,11 +5332,11 @@ void EntityAnnotation::clear_score() {
 void EntityAnnotation::clear_confidence() {
   confidence_ = 0;
 }
- float EntityAnnotation::confidence() const {
+float EntityAnnotation::confidence() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.EntityAnnotation.confidence)
   return confidence_;
 }
- void EntityAnnotation::set_confidence(float value) {
+void EntityAnnotation::set_confidence(float value) {
   
   confidence_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.EntityAnnotation.confidence)
@@ -5255,11 +5346,11 @@ void EntityAnnotation::clear_confidence() {
 void EntityAnnotation::clear_topicality() {
   topicality_ = 0;
 }
- float EntityAnnotation::topicality() const {
+float EntityAnnotation::topicality() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.EntityAnnotation.topicality)
   return topicality_;
 }
- void EntityAnnotation::set_topicality(float value) {
+void EntityAnnotation::set_topicality(float value) {
   
   topicality_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.EntityAnnotation.topicality)
@@ -5267,7 +5358,7 @@ void EntityAnnotation::clear_topicality() {
 
 // optional .google.cloud.vision.v1.BoundingPoly bounding_poly = 7;
 bool EntityAnnotation::has_bounding_poly() const {
-  return !_is_default_instance_ && bounding_poly_ != NULL;
+  return this != internal_default_instance() && bounding_poly_ != NULL;
 }
 void EntityAnnotation::clear_bounding_poly() {
   if (GetArenaNoVirtual() == NULL && bounding_poly_ != NULL) delete bounding_poly_;
@@ -5275,7 +5366,8 @@ void EntityAnnotation::clear_bounding_poly() {
 }
 const ::google::cloud::vision::v1::BoundingPoly& EntityAnnotation::bounding_poly() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.EntityAnnotation.bounding_poly)
-  return bounding_poly_ != NULL ? *bounding_poly_ : *default_instance_->bounding_poly_;
+  return bounding_poly_ != NULL ? *bounding_poly_
+                         : *::google::cloud::vision::v1::BoundingPoly::internal_default_instance();
 }
 ::google::cloud::vision::v1::BoundingPoly* EntityAnnotation::mutable_bounding_poly() {
   
@@ -5373,6 +5465,9 @@ EntityAnnotation::properties() const {
   return properties_;
 }
 
+inline const EntityAnnotation* EntityAnnotation::internal_default_instance() {
+  return &EntityAnnotation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5386,37 +5481,36 @@ const int SafeSearchAnnotation::kViolenceFieldNumber;
 
 SafeSearchAnnotation::SafeSearchAnnotation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.SafeSearchAnnotation)
 }
-
 SafeSearchAnnotation::SafeSearchAnnotation(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.SafeSearchAnnotation)
 }
 
 void SafeSearchAnnotation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SafeSearchAnnotation::SafeSearchAnnotation(const SafeSearchAnnotation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.SafeSearchAnnotation)
 }
 
 void SafeSearchAnnotation::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&adult_, 0, reinterpret_cast<char*>(&violence_) -
+    reinterpret_cast<char*>(&adult_) + sizeof(violence_));
   _cached_size_ = 0;
-  adult_ = 0;
-  spoof_ = 0;
-  medical_ = 0;
-  violence_ = 0;
 }
 
 SafeSearchAnnotation::~SafeSearchAnnotation() {
@@ -5425,12 +5519,11 @@ SafeSearchAnnotation::~SafeSearchAnnotation() {
 }
 
 void SafeSearchAnnotation::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void SafeSearchAnnotation::ArenaDtor(void* object) {
@@ -5450,11 +5543,11 @@ const ::google::protobuf::Descriptor* SafeSearchAnnotation::descriptor() {
 }
 
 const SafeSearchAnnotation& SafeSearchAnnotation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-SafeSearchAnnotation* SafeSearchAnnotation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SafeSearchAnnotation> SafeSearchAnnotation_default_instance_;
 
 SafeSearchAnnotation* SafeSearchAnnotation::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SafeSearchAnnotation>(arena);
@@ -5474,7 +5567,7 @@ void SafeSearchAnnotation::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -5611,6 +5704,7 @@ void SafeSearchAnnotation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SafeSearchAnnotation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.SafeSearchAnnotation)
   // optional .google.cloud.vision.v1.Likelihood adult = 1;
   if (this->adult() != 0) {
@@ -5640,9 +5734,9 @@ void SafeSearchAnnotation::SerializeWithCachedSizes(
   return target;
 }
 
-int SafeSearchAnnotation::ByteSize() const {
+size_t SafeSearchAnnotation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.SafeSearchAnnotation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.Likelihood adult = 1;
   if (this->adult() != 0) {
@@ -5668,18 +5762,17 @@ int SafeSearchAnnotation::ByteSize() const {
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->violence());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SafeSearchAnnotation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.SafeSearchAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SafeSearchAnnotation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SafeSearchAnnotation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SafeSearchAnnotation>(
           &from);
   if (source == NULL) {
@@ -5687,15 +5780,21 @@ void SafeSearchAnnotation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.SafeSearchAnnotation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SafeSearchAnnotation::MergeFrom(const SafeSearchAnnotation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.SafeSearchAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SafeSearchAnnotation::UnsafeMergeFrom(const SafeSearchAnnotation& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.adult() != 0) {
     set_adult(from.adult());
   }
@@ -5721,7 +5820,7 @@ void SafeSearchAnnotation::CopyFrom(const SafeSearchAnnotation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.SafeSearchAnnotation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SafeSearchAnnotation::IsInitialized() const {
@@ -5735,7 +5834,7 @@ void SafeSearchAnnotation::Swap(SafeSearchAnnotation* other) {
     InternalSwap(other);
   } else {
     SafeSearchAnnotation temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -5769,11 +5868,11 @@ void SafeSearchAnnotation::InternalSwap(SafeSearchAnnotation* other) {
 void SafeSearchAnnotation::clear_adult() {
   adult_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::adult() const {
+::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::adult() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.SafeSearchAnnotation.adult)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(adult_);
 }
- void SafeSearchAnnotation::set_adult(::google::cloud::vision::v1::Likelihood value) {
+void SafeSearchAnnotation::set_adult(::google::cloud::vision::v1::Likelihood value) {
   
   adult_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.SafeSearchAnnotation.adult)
@@ -5783,11 +5882,11 @@ void SafeSearchAnnotation::clear_adult() {
 void SafeSearchAnnotation::clear_spoof() {
   spoof_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::spoof() const {
+::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::spoof() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.SafeSearchAnnotation.spoof)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(spoof_);
 }
- void SafeSearchAnnotation::set_spoof(::google::cloud::vision::v1::Likelihood value) {
+void SafeSearchAnnotation::set_spoof(::google::cloud::vision::v1::Likelihood value) {
   
   spoof_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.SafeSearchAnnotation.spoof)
@@ -5797,11 +5896,11 @@ void SafeSearchAnnotation::clear_spoof() {
 void SafeSearchAnnotation::clear_medical() {
   medical_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::medical() const {
+::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::medical() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.SafeSearchAnnotation.medical)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(medical_);
 }
- void SafeSearchAnnotation::set_medical(::google::cloud::vision::v1::Likelihood value) {
+void SafeSearchAnnotation::set_medical(::google::cloud::vision::v1::Likelihood value) {
   
   medical_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.SafeSearchAnnotation.medical)
@@ -5811,16 +5910,19 @@ void SafeSearchAnnotation::clear_medical() {
 void SafeSearchAnnotation::clear_violence() {
   violence_ = 0;
 }
- ::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::violence() const {
+::google::cloud::vision::v1::Likelihood SafeSearchAnnotation::violence() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.SafeSearchAnnotation.violence)
   return static_cast< ::google::cloud::vision::v1::Likelihood >(violence_);
 }
- void SafeSearchAnnotation::set_violence(::google::cloud::vision::v1::Likelihood value) {
+void SafeSearchAnnotation::set_violence(::google::cloud::vision::v1::Likelihood value) {
   
   violence_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.SafeSearchAnnotation.violence)
 }
 
+inline const SafeSearchAnnotation* SafeSearchAnnotation::internal_default_instance() {
+  return &SafeSearchAnnotation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5833,8 +5935,7 @@ void LatLongRect::_slow_mutable_min_lat_lng() {
   if (min_lat_lng_ == NULL) {
     return NULL;
   } else {
-    ::google::type::LatLng* temp = new ::google::type::LatLng;
-    temp->MergeFrom(*min_lat_lng_);
+    ::google::type::LatLng* temp = new ::google::type::LatLng(*min_lat_lng_);
     min_lat_lng_ = NULL;
     return temp;
   }
@@ -5867,8 +5968,7 @@ void LatLongRect::_slow_mutable_max_lat_lng() {
   if (max_lat_lng_ == NULL) {
     return NULL;
   } else {
-    ::google::type::LatLng* temp = new ::google::type::LatLng;
-    temp->MergeFrom(*max_lat_lng_);
+    ::google::type::LatLng* temp = new ::google::type::LatLng(*max_lat_lng_);
     max_lat_lng_ = NULL;
     return temp;
   }
@@ -5900,37 +6000,40 @@ const int LatLongRect::kMaxLatLngFieldNumber;
 
 LatLongRect::LatLongRect()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.LatLongRect)
 }
-
 LatLongRect::LatLongRect(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.LatLongRect)
 }
 
 void LatLongRect::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  min_lat_lng_ = const_cast< ::google::type::LatLng*>(&::google::type::LatLng::default_instance());
-  max_lat_lng_ = const_cast< ::google::type::LatLng*>(&::google::type::LatLng::default_instance());
+  min_lat_lng_ = const_cast< ::google::type::LatLng*>(
+      ::google::type::LatLng::internal_default_instance());
+  max_lat_lng_ = const_cast< ::google::type::LatLng*>(
+      ::google::type::LatLng::internal_default_instance());
 }
 
 LatLongRect::LatLongRect(const LatLongRect& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.LatLongRect)
 }
 
 void LatLongRect::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   min_lat_lng_ = NULL;
   max_lat_lng_ = NULL;
+  _cached_size_ = 0;
 }
 
 LatLongRect::~LatLongRect() {
@@ -5939,11 +6042,12 @@ LatLongRect::~LatLongRect() {
 }
 
 void LatLongRect::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &LatLongRect_default_instance_.get()) {
     delete min_lat_lng_;
     delete max_lat_lng_;
   }
@@ -5966,11 +6070,11 @@ const ::google::protobuf::Descriptor* LatLongRect::descriptor() {
 }
 
 const LatLongRect& LatLongRect::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-LatLongRect* LatLongRect::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<LatLongRect> LatLongRect_default_instance_;
 
 LatLongRect* LatLongRect::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<LatLongRect>(arena);
@@ -6060,6 +6164,7 @@ void LatLongRect::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* LatLongRect::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.LatLongRect)
   // optional .google.type.LatLng min_lat_lng = 1;
   if (this->has_min_lat_lng()) {
@@ -6079,9 +6184,9 @@ void LatLongRect::SerializeWithCachedSizes(
   return target;
 }
 
-int LatLongRect::ByteSize() const {
+size_t LatLongRect::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.LatLongRect)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.type.LatLng min_lat_lng = 1;
   if (this->has_min_lat_lng()) {
@@ -6097,18 +6202,17 @@ int LatLongRect::ByteSize() const {
         *this->max_lat_lng_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LatLongRect::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.LatLongRect)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const LatLongRect* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const LatLongRect* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LatLongRect>(
           &from);
   if (source == NULL) {
@@ -6116,15 +6220,21 @@ void LatLongRect::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.LatLongRect)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LatLongRect::MergeFrom(const LatLongRect& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.LatLongRect)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void LatLongRect::UnsafeMergeFrom(const LatLongRect& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_min_lat_lng()) {
     mutable_min_lat_lng()->::google::type::LatLng::MergeFrom(from.min_lat_lng());
   }
@@ -6144,7 +6254,7 @@ void LatLongRect::CopyFrom(const LatLongRect& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.LatLongRect)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LatLongRect::IsInitialized() const {
@@ -6158,7 +6268,7 @@ void LatLongRect::Swap(LatLongRect* other) {
     InternalSwap(other);
   } else {
     LatLongRect temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -6188,7 +6298,7 @@ void LatLongRect::InternalSwap(LatLongRect* other) {
 
 // optional .google.type.LatLng min_lat_lng = 1;
 bool LatLongRect::has_min_lat_lng() const {
-  return !_is_default_instance_ && min_lat_lng_ != NULL;
+  return this != internal_default_instance() && min_lat_lng_ != NULL;
 }
 void LatLongRect::clear_min_lat_lng() {
   if (GetArenaNoVirtual() == NULL && min_lat_lng_ != NULL) delete min_lat_lng_;
@@ -6196,7 +6306,8 @@ void LatLongRect::clear_min_lat_lng() {
 }
 const ::google::type::LatLng& LatLongRect::min_lat_lng() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.LatLongRect.min_lat_lng)
-  return min_lat_lng_ != NULL ? *min_lat_lng_ : *default_instance_->min_lat_lng_;
+  return min_lat_lng_ != NULL ? *min_lat_lng_
+                         : *::google::type::LatLng::internal_default_instance();
 }
 ::google::type::LatLng* LatLongRect::mutable_min_lat_lng() {
   
@@ -6238,7 +6349,7 @@ const ::google::type::LatLng& LatLongRect::min_lat_lng() const {
 
 // optional .google.type.LatLng max_lat_lng = 2;
 bool LatLongRect::has_max_lat_lng() const {
-  return !_is_default_instance_ && max_lat_lng_ != NULL;
+  return this != internal_default_instance() && max_lat_lng_ != NULL;
 }
 void LatLongRect::clear_max_lat_lng() {
   if (GetArenaNoVirtual() == NULL && max_lat_lng_ != NULL) delete max_lat_lng_;
@@ -6246,7 +6357,8 @@ void LatLongRect::clear_max_lat_lng() {
 }
 const ::google::type::LatLng& LatLongRect::max_lat_lng() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.LatLongRect.max_lat_lng)
-  return max_lat_lng_ != NULL ? *max_lat_lng_ : *default_instance_->max_lat_lng_;
+  return max_lat_lng_ != NULL ? *max_lat_lng_
+                         : *::google::type::LatLng::internal_default_instance();
 }
 ::google::type::LatLng* LatLongRect::mutable_max_lat_lng() {
   
@@ -6286,6 +6398,9 @@ const ::google::type::LatLng& LatLongRect::max_lat_lng() const {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.LatLongRect.max_lat_lng)
 }
 
+inline const LatLongRect* LatLongRect::internal_default_instance() {
+  return &LatLongRect_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6298,8 +6413,7 @@ void ColorInfo::_slow_mutable_color() {
   if (color_ == NULL) {
     return NULL;
   } else {
-    ::google::type::Color* temp = new ::google::type::Color;
-    temp->MergeFrom(*color_);
+    ::google::type::Color* temp = new ::google::type::Color(*color_);
     color_ = NULL;
     return temp;
   }
@@ -6332,37 +6446,39 @@ const int ColorInfo::kPixelFractionFieldNumber;
 
 ColorInfo::ColorInfo()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.ColorInfo)
 }
-
 ColorInfo::ColorInfo(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.ColorInfo)
 }
 
 void ColorInfo::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  color_ = const_cast< ::google::type::Color*>(&::google::type::Color::default_instance());
+  color_ = const_cast< ::google::type::Color*>(
+      ::google::type::Color::internal_default_instance());
 }
 
 ColorInfo::ColorInfo(const ColorInfo& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.ColorInfo)
 }
 
 void ColorInfo::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   color_ = NULL;
-  score_ = 0;
-  pixel_fraction_ = 0;
+  ::memset(&score_, 0, reinterpret_cast<char*>(&pixel_fraction_) -
+    reinterpret_cast<char*>(&score_) + sizeof(pixel_fraction_));
+  _cached_size_ = 0;
 }
 
 ColorInfo::~ColorInfo() {
@@ -6371,11 +6487,12 @@ ColorInfo::~ColorInfo() {
 }
 
 void ColorInfo::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &ColorInfo_default_instance_.get()) {
     delete color_;
   }
 }
@@ -6397,11 +6514,11 @@ const ::google::protobuf::Descriptor* ColorInfo::descriptor() {
 }
 
 const ColorInfo& ColorInfo::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-ColorInfo* ColorInfo::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ColorInfo> ColorInfo_default_instance_;
 
 ColorInfo* ColorInfo::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ColorInfo>(arena);
@@ -6421,7 +6538,7 @@ void ColorInfo::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -6460,10 +6577,10 @@ bool ColorInfo::MergePartialFromCodedStream(
       case 2: {
         if (tag == 21) {
          parse_score:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &score_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6475,10 +6592,10 @@ bool ColorInfo::MergePartialFromCodedStream(
       case 3: {
         if (tag == 29) {
          parse_pixel_fraction:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &pixel_fraction_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6531,6 +6648,7 @@ void ColorInfo::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ColorInfo::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.ColorInfo)
   // optional .google.type.Color color = 1;
   if (this->has_color()) {
@@ -6553,9 +6671,9 @@ void ColorInfo::SerializeWithCachedSizes(
   return target;
 }
 
-int ColorInfo::ByteSize() const {
+size_t ColorInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.ColorInfo)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.type.Color color = 1;
   if (this->has_color()) {
@@ -6574,18 +6692,17 @@ int ColorInfo::ByteSize() const {
     total_size += 1 + 4;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ColorInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.ColorInfo)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ColorInfo* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ColorInfo* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ColorInfo>(
           &from);
   if (source == NULL) {
@@ -6593,15 +6710,21 @@ void ColorInfo::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.ColorInfo)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ColorInfo::MergeFrom(const ColorInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.ColorInfo)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ColorInfo::UnsafeMergeFrom(const ColorInfo& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_color()) {
     mutable_color()->::google::type::Color::MergeFrom(from.color());
   }
@@ -6624,7 +6747,7 @@ void ColorInfo::CopyFrom(const ColorInfo& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.ColorInfo)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ColorInfo::IsInitialized() const {
@@ -6638,7 +6761,7 @@ void ColorInfo::Swap(ColorInfo* other) {
     InternalSwap(other);
   } else {
     ColorInfo temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -6669,7 +6792,7 @@ void ColorInfo::InternalSwap(ColorInfo* other) {
 
 // optional .google.type.Color color = 1;
 bool ColorInfo::has_color() const {
-  return !_is_default_instance_ && color_ != NULL;
+  return this != internal_default_instance() && color_ != NULL;
 }
 void ColorInfo::clear_color() {
   if (GetArenaNoVirtual() == NULL && color_ != NULL) delete color_;
@@ -6677,7 +6800,8 @@ void ColorInfo::clear_color() {
 }
 const ::google::type::Color& ColorInfo::color() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.ColorInfo.color)
-  return color_ != NULL ? *color_ : *default_instance_->color_;
+  return color_ != NULL ? *color_
+                         : *::google::type::Color::internal_default_instance();
 }
 ::google::type::Color* ColorInfo::mutable_color() {
   
@@ -6721,11 +6845,11 @@ const ::google::type::Color& ColorInfo::color() const {
 void ColorInfo::clear_score() {
   score_ = 0;
 }
- float ColorInfo::score() const {
+float ColorInfo::score() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.ColorInfo.score)
   return score_;
 }
- void ColorInfo::set_score(float value) {
+void ColorInfo::set_score(float value) {
   
   score_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.ColorInfo.score)
@@ -6735,16 +6859,19 @@ void ColorInfo::clear_score() {
 void ColorInfo::clear_pixel_fraction() {
   pixel_fraction_ = 0;
 }
- float ColorInfo::pixel_fraction() const {
+float ColorInfo::pixel_fraction() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.ColorInfo.pixel_fraction)
   return pixel_fraction_;
 }
- void ColorInfo::set_pixel_fraction(float value) {
+void ColorInfo::set_pixel_fraction(float value) {
   
   pixel_fraction_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.ColorInfo.pixel_fraction)
 }
 
+inline const ColorInfo* ColorInfo::internal_default_instance() {
+  return &ColorInfo_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6755,33 +6882,34 @@ const int DominantColorsAnnotation::kColorsFieldNumber;
 
 DominantColorsAnnotation::DominantColorsAnnotation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.DominantColorsAnnotation)
 }
-
 DominantColorsAnnotation::DominantColorsAnnotation(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   colors_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.DominantColorsAnnotation)
 }
 
 void DominantColorsAnnotation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DominantColorsAnnotation::DominantColorsAnnotation(const DominantColorsAnnotation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.DominantColorsAnnotation)
 }
 
 void DominantColorsAnnotation::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -6791,12 +6919,11 @@ DominantColorsAnnotation::~DominantColorsAnnotation() {
 }
 
 void DominantColorsAnnotation::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void DominantColorsAnnotation::ArenaDtor(void* object) {
@@ -6816,11 +6943,11 @@ const ::google::protobuf::Descriptor* DominantColorsAnnotation::descriptor() {
 }
 
 const DominantColorsAnnotation& DominantColorsAnnotation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-DominantColorsAnnotation* DominantColorsAnnotation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DominantColorsAnnotation> DominantColorsAnnotation_default_instance_;
 
 DominantColorsAnnotation* DominantColorsAnnotation::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<DominantColorsAnnotation>(arena);
@@ -6892,6 +7019,7 @@ void DominantColorsAnnotation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DominantColorsAnnotation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.DominantColorsAnnotation)
   // repeated .google.cloud.vision.v1.ColorInfo colors = 1;
   for (unsigned int i = 0, n = this->colors_size(); i < n; i++) {
@@ -6904,30 +7032,32 @@ void DominantColorsAnnotation::SerializeWithCachedSizes(
   return target;
 }
 
-int DominantColorsAnnotation::ByteSize() const {
+size_t DominantColorsAnnotation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.DominantColorsAnnotation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.cloud.vision.v1.ColorInfo colors = 1;
-  total_size += 1 * this->colors_size();
-  for (int i = 0; i < this->colors_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->colors(i));
+  {
+    unsigned int count = this->colors_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->colors(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DominantColorsAnnotation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.DominantColorsAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DominantColorsAnnotation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DominantColorsAnnotation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DominantColorsAnnotation>(
           &from);
   if (source == NULL) {
@@ -6935,15 +7065,21 @@ void DominantColorsAnnotation::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.DominantColorsAnnotation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DominantColorsAnnotation::MergeFrom(const DominantColorsAnnotation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.DominantColorsAnnotation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DominantColorsAnnotation::UnsafeMergeFrom(const DominantColorsAnnotation& from) {
+  GOOGLE_DCHECK(&from != this);
   colors_.MergeFrom(from.colors_);
 }
 
@@ -6958,7 +7094,7 @@ void DominantColorsAnnotation::CopyFrom(const DominantColorsAnnotation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.DominantColorsAnnotation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DominantColorsAnnotation::IsInitialized() const {
@@ -6972,7 +7108,7 @@ void DominantColorsAnnotation::Swap(DominantColorsAnnotation* other) {
     InternalSwap(other);
   } else {
     DominantColorsAnnotation temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7029,6 +7165,9 @@ DominantColorsAnnotation::colors() const {
   return colors_;
 }
 
+inline const DominantColorsAnnotation* DominantColorsAnnotation::internal_default_instance() {
+  return &DominantColorsAnnotation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7041,8 +7180,7 @@ void ImageProperties::_slow_mutable_dominant_colors() {
   if (dominant_colors_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::DominantColorsAnnotation* temp = new ::google::cloud::vision::v1::DominantColorsAnnotation;
-    temp->MergeFrom(*dominant_colors_);
+    ::google::cloud::vision::v1::DominantColorsAnnotation* temp = new ::google::cloud::vision::v1::DominantColorsAnnotation(*dominant_colors_);
     dominant_colors_ = NULL;
     return temp;
   }
@@ -7087,35 +7225,37 @@ const int ImageProperties::kDominantColorsFieldNumber;
 
 ImageProperties::ImageProperties()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.ImageProperties)
 }
-
 ImageProperties::ImageProperties(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.ImageProperties)
 }
 
 void ImageProperties::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  dominant_colors_ = const_cast< ::google::cloud::vision::v1::DominantColorsAnnotation*>(&::google::cloud::vision::v1::DominantColorsAnnotation::default_instance());
+  dominant_colors_ = const_cast< ::google::cloud::vision::v1::DominantColorsAnnotation*>(
+      ::google::cloud::vision::v1::DominantColorsAnnotation::internal_default_instance());
 }
 
 ImageProperties::ImageProperties(const ImageProperties& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.ImageProperties)
 }
 
 void ImageProperties::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   dominant_colors_ = NULL;
+  _cached_size_ = 0;
 }
 
 ImageProperties::~ImageProperties() {
@@ -7124,11 +7264,12 @@ ImageProperties::~ImageProperties() {
 }
 
 void ImageProperties::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &ImageProperties_default_instance_.get()) {
     delete dominant_colors_;
   }
 }
@@ -7150,11 +7291,11 @@ const ::google::protobuf::Descriptor* ImageProperties::descriptor() {
 }
 
 const ImageProperties& ImageProperties::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-ImageProperties* ImageProperties::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ImageProperties> ImageProperties_default_instance_;
 
 ImageProperties* ImageProperties::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ImageProperties>(arena);
@@ -7223,6 +7364,7 @@ void ImageProperties::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ImageProperties::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.ImageProperties)
   // optional .google.cloud.vision.v1.DominantColorsAnnotation dominant_colors = 1;
   if (this->has_dominant_colors()) {
@@ -7235,9 +7377,9 @@ void ImageProperties::SerializeWithCachedSizes(
   return target;
 }
 
-int ImageProperties::ByteSize() const {
+size_t ImageProperties::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.ImageProperties)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.DominantColorsAnnotation dominant_colors = 1;
   if (this->has_dominant_colors()) {
@@ -7246,18 +7388,17 @@ int ImageProperties::ByteSize() const {
         *this->dominant_colors_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ImageProperties::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.ImageProperties)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ImageProperties* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ImageProperties* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ImageProperties>(
           &from);
   if (source == NULL) {
@@ -7265,15 +7406,21 @@ void ImageProperties::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.ImageProperties)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ImageProperties::MergeFrom(const ImageProperties& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.ImageProperties)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ImageProperties::UnsafeMergeFrom(const ImageProperties& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_dominant_colors()) {
     mutable_dominant_colors()->::google::cloud::vision::v1::DominantColorsAnnotation::MergeFrom(from.dominant_colors());
   }
@@ -7290,7 +7437,7 @@ void ImageProperties::CopyFrom(const ImageProperties& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.ImageProperties)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ImageProperties::IsInitialized() const {
@@ -7304,7 +7451,7 @@ void ImageProperties::Swap(ImageProperties* other) {
     InternalSwap(other);
   } else {
     ImageProperties temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7333,7 +7480,7 @@ void ImageProperties::InternalSwap(ImageProperties* other) {
 
 // optional .google.cloud.vision.v1.DominantColorsAnnotation dominant_colors = 1;
 bool ImageProperties::has_dominant_colors() const {
-  return !_is_default_instance_ && dominant_colors_ != NULL;
+  return this != internal_default_instance() && dominant_colors_ != NULL;
 }
 void ImageProperties::clear_dominant_colors() {
   if (GetArenaNoVirtual() == NULL && dominant_colors_ != NULL) delete dominant_colors_;
@@ -7341,7 +7488,8 @@ void ImageProperties::clear_dominant_colors() {
 }
 const ::google::cloud::vision::v1::DominantColorsAnnotation& ImageProperties::dominant_colors() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.ImageProperties.dominant_colors)
-  return dominant_colors_ != NULL ? *dominant_colors_ : *default_instance_->dominant_colors_;
+  return dominant_colors_ != NULL ? *dominant_colors_
+                         : *::google::cloud::vision::v1::DominantColorsAnnotation::internal_default_instance();
 }
 ::google::cloud::vision::v1::DominantColorsAnnotation* ImageProperties::mutable_dominant_colors() {
   
@@ -7379,6 +7527,9 @@ const ::google::cloud::vision::v1::DominantColorsAnnotation& ImageProperties::do
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.ImageProperties.dominant_colors)
 }
 
+inline const ImageProperties* ImageProperties::internal_default_instance() {
+  return &ImageProperties_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7391,8 +7542,7 @@ void ImageContext::_slow_mutable_lat_long_rect() {
   if (lat_long_rect_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::LatLongRect* temp = new ::google::cloud::vision::v1::LatLongRect;
-    temp->MergeFrom(*lat_long_rect_);
+    ::google::cloud::vision::v1::LatLongRect* temp = new ::google::cloud::vision::v1::LatLongRect(*lat_long_rect_);
     lat_long_rect_ = NULL;
     return temp;
   }
@@ -7438,37 +7588,38 @@ const int ImageContext::kLanguageHintsFieldNumber;
 
 ImageContext::ImageContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.ImageContext)
 }
-
 ImageContext::ImageContext(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   language_hints_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.ImageContext)
 }
 
 void ImageContext::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  lat_long_rect_ = const_cast< ::google::cloud::vision::v1::LatLongRect*>(&::google::cloud::vision::v1::LatLongRect::default_instance());
+  lat_long_rect_ = const_cast< ::google::cloud::vision::v1::LatLongRect*>(
+      ::google::cloud::vision::v1::LatLongRect::internal_default_instance());
 }
 
 ImageContext::ImageContext(const ImageContext& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.ImageContext)
 }
 
 void ImageContext::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   lat_long_rect_ = NULL;
+  _cached_size_ = 0;
 }
 
 ImageContext::~ImageContext() {
@@ -7477,11 +7628,12 @@ ImageContext::~ImageContext() {
 }
 
 void ImageContext::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &ImageContext_default_instance_.get()) {
     delete lat_long_rect_;
   }
 }
@@ -7503,11 +7655,11 @@ const ::google::protobuf::Descriptor* ImageContext::descriptor() {
 }
 
 const ImageContext& ImageContext::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-ImageContext* ImageContext::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ImageContext> ImageContext_default_instance_;
 
 ImageContext* ImageContext::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ImageContext>(arena);
@@ -7606,6 +7758,7 @@ void ImageContext::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ImageContext::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.ImageContext)
   // optional .google.cloud.vision.v1.LatLongRect lat_long_rect = 1;
   if (this->has_lat_long_rect()) {
@@ -7628,9 +7781,9 @@ void ImageContext::SerializeWithCachedSizes(
   return target;
 }
 
-int ImageContext::ByteSize() const {
+size_t ImageContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.ImageContext)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.LatLongRect lat_long_rect = 1;
   if (this->has_lat_long_rect()) {
@@ -7640,24 +7793,24 @@ int ImageContext::ByteSize() const {
   }
 
   // repeated string language_hints = 2;
-  total_size += 1 * this->language_hints_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->language_hints_size());
   for (int i = 0; i < this->language_hints_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->language_hints(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ImageContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.ImageContext)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ImageContext* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ImageContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ImageContext>(
           &from);
   if (source == NULL) {
@@ -7665,16 +7818,22 @@ void ImageContext::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.ImageContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ImageContext::MergeFrom(const ImageContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.ImageContext)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  language_hints_.MergeFrom(from.language_hints_);
+}
+
+void ImageContext::UnsafeMergeFrom(const ImageContext& from) {
+  GOOGLE_DCHECK(&from != this);
+  language_hints_.UnsafeMergeFrom(from.language_hints_);
   if (from.has_lat_long_rect()) {
     mutable_lat_long_rect()->::google::cloud::vision::v1::LatLongRect::MergeFrom(from.lat_long_rect());
   }
@@ -7691,7 +7850,7 @@ void ImageContext::CopyFrom(const ImageContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.ImageContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ImageContext::IsInitialized() const {
@@ -7705,7 +7864,7 @@ void ImageContext::Swap(ImageContext* other) {
     InternalSwap(other);
   } else {
     ImageContext temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7735,7 +7894,7 @@ void ImageContext::InternalSwap(ImageContext* other) {
 
 // optional .google.cloud.vision.v1.LatLongRect lat_long_rect = 1;
 bool ImageContext::has_lat_long_rect() const {
-  return !_is_default_instance_ && lat_long_rect_ != NULL;
+  return this != internal_default_instance() && lat_long_rect_ != NULL;
 }
 void ImageContext::clear_lat_long_rect() {
   if (GetArenaNoVirtual() == NULL && lat_long_rect_ != NULL) delete lat_long_rect_;
@@ -7743,7 +7902,8 @@ void ImageContext::clear_lat_long_rect() {
 }
 const ::google::cloud::vision::v1::LatLongRect& ImageContext::lat_long_rect() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.ImageContext.lat_long_rect)
-  return lat_long_rect_ != NULL ? *lat_long_rect_ : *default_instance_->lat_long_rect_;
+  return lat_long_rect_ != NULL ? *lat_long_rect_
+                         : *::google::cloud::vision::v1::LatLongRect::internal_default_instance();
 }
 ::google::cloud::vision::v1::LatLongRect* ImageContext::mutable_lat_long_rect() {
   
@@ -7788,54 +7948,57 @@ int ImageContext::language_hints_size() const {
 void ImageContext::clear_language_hints() {
   language_hints_.Clear();
 }
- const ::std::string& ImageContext::language_hints(int index) const {
+const ::std::string& ImageContext::language_hints(int index) const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.ImageContext.language_hints)
   return language_hints_.Get(index);
 }
- ::std::string* ImageContext::mutable_language_hints(int index) {
+::std::string* ImageContext::mutable_language_hints(int index) {
   // @@protoc_insertion_point(field_mutable:google.cloud.vision.v1.ImageContext.language_hints)
   return language_hints_.Mutable(index);
 }
- void ImageContext::set_language_hints(int index, const ::std::string& value) {
+void ImageContext::set_language_hints(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.ImageContext.language_hints)
   language_hints_.Mutable(index)->assign(value);
 }
- void ImageContext::set_language_hints(int index, const char* value) {
+void ImageContext::set_language_hints(int index, const char* value) {
   language_hints_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.cloud.vision.v1.ImageContext.language_hints)
 }
- void ImageContext::set_language_hints(int index, const char* value, size_t size) {
+void ImageContext::set_language_hints(int index, const char* value, size_t size) {
   language_hints_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.cloud.vision.v1.ImageContext.language_hints)
 }
- ::std::string* ImageContext::add_language_hints() {
+::std::string* ImageContext::add_language_hints() {
   // @@protoc_insertion_point(field_add_mutable:google.cloud.vision.v1.ImageContext.language_hints)
   return language_hints_.Add();
 }
- void ImageContext::add_language_hints(const ::std::string& value) {
+void ImageContext::add_language_hints(const ::std::string& value) {
   language_hints_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.cloud.vision.v1.ImageContext.language_hints)
 }
- void ImageContext::add_language_hints(const char* value) {
+void ImageContext::add_language_hints(const char* value) {
   language_hints_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.cloud.vision.v1.ImageContext.language_hints)
 }
- void ImageContext::add_language_hints(const char* value, size_t size) {
+void ImageContext::add_language_hints(const char* value, size_t size) {
   language_hints_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.cloud.vision.v1.ImageContext.language_hints)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 ImageContext::language_hints() const {
   // @@protoc_insertion_point(field_list:google.cloud.vision.v1.ImageContext.language_hints)
   return language_hints_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 ImageContext::mutable_language_hints() {
   // @@protoc_insertion_point(field_mutable_list:google.cloud.vision.v1.ImageContext.language_hints)
   return &language_hints_;
 }
 
+inline const ImageContext* ImageContext::internal_default_instance() {
+  return &ImageContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7848,8 +8011,7 @@ void AnnotateImageRequest::_slow_mutable_image() {
   if (image_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::Image* temp = new ::google::cloud::vision::v1::Image;
-    temp->MergeFrom(*image_);
+    ::google::cloud::vision::v1::Image* temp = new ::google::cloud::vision::v1::Image(*image_);
     image_ = NULL;
     return temp;
   }
@@ -7896,8 +8058,7 @@ void AnnotateImageRequest::_slow_mutable_image_context() {
   if (image_context_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::ImageContext* temp = new ::google::cloud::vision::v1::ImageContext;
-    temp->MergeFrom(*image_context_);
+    ::google::cloud::vision::v1::ImageContext* temp = new ::google::cloud::vision::v1::ImageContext(*image_context_);
     image_context_ = NULL;
     return temp;
   }
@@ -7944,38 +8105,41 @@ const int AnnotateImageRequest::kImageContextFieldNumber;
 
 AnnotateImageRequest::AnnotateImageRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.AnnotateImageRequest)
 }
-
 AnnotateImageRequest::AnnotateImageRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   features_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.AnnotateImageRequest)
 }
 
 void AnnotateImageRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  image_ = const_cast< ::google::cloud::vision::v1::Image*>(&::google::cloud::vision::v1::Image::default_instance());
-  image_context_ = const_cast< ::google::cloud::vision::v1::ImageContext*>(&::google::cloud::vision::v1::ImageContext::default_instance());
+  image_ = const_cast< ::google::cloud::vision::v1::Image*>(
+      ::google::cloud::vision::v1::Image::internal_default_instance());
+  image_context_ = const_cast< ::google::cloud::vision::v1::ImageContext*>(
+      ::google::cloud::vision::v1::ImageContext::internal_default_instance());
 }
 
 AnnotateImageRequest::AnnotateImageRequest(const AnnotateImageRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.AnnotateImageRequest)
 }
 
 void AnnotateImageRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   image_ = NULL;
   image_context_ = NULL;
+  _cached_size_ = 0;
 }
 
 AnnotateImageRequest::~AnnotateImageRequest() {
@@ -7984,11 +8148,12 @@ AnnotateImageRequest::~AnnotateImageRequest() {
 }
 
 void AnnotateImageRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &AnnotateImageRequest_default_instance_.get()) {
     delete image_;
     delete image_context_;
   }
@@ -8011,11 +8176,11 @@ const ::google::protobuf::Descriptor* AnnotateImageRequest::descriptor() {
 }
 
 const AnnotateImageRequest& AnnotateImageRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-AnnotateImageRequest* AnnotateImageRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<AnnotateImageRequest> AnnotateImageRequest_default_instance_;
 
 AnnotateImageRequest* AnnotateImageRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<AnnotateImageRequest>(arena);
@@ -8129,6 +8294,7 @@ void AnnotateImageRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* AnnotateImageRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.AnnotateImageRequest)
   // optional .google.cloud.vision.v1.Image image = 1;
   if (this->has_image()) {
@@ -8155,9 +8321,9 @@ void AnnotateImageRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int AnnotateImageRequest::ByteSize() const {
+size_t AnnotateImageRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.AnnotateImageRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.Image image = 1;
   if (this->has_image()) {
@@ -8174,25 +8340,27 @@ int AnnotateImageRequest::ByteSize() const {
   }
 
   // repeated .google.cloud.vision.v1.Feature features = 2;
-  total_size += 1 * this->features_size();
-  for (int i = 0; i < this->features_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->features(i));
+  {
+    unsigned int count = this->features_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->features(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AnnotateImageRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.AnnotateImageRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const AnnotateImageRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const AnnotateImageRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnnotateImageRequest>(
           &from);
   if (source == NULL) {
@@ -8200,15 +8368,21 @@ void AnnotateImageRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.AnnotateImageRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnnotateImageRequest::MergeFrom(const AnnotateImageRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.AnnotateImageRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void AnnotateImageRequest::UnsafeMergeFrom(const AnnotateImageRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   features_.MergeFrom(from.features_);
   if (from.has_image()) {
     mutable_image()->::google::cloud::vision::v1::Image::MergeFrom(from.image());
@@ -8229,7 +8403,7 @@ void AnnotateImageRequest::CopyFrom(const AnnotateImageRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.AnnotateImageRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnnotateImageRequest::IsInitialized() const {
@@ -8243,7 +8417,7 @@ void AnnotateImageRequest::Swap(AnnotateImageRequest* other) {
     InternalSwap(other);
   } else {
     AnnotateImageRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -8274,7 +8448,7 @@ void AnnotateImageRequest::InternalSwap(AnnotateImageRequest* other) {
 
 // optional .google.cloud.vision.v1.Image image = 1;
 bool AnnotateImageRequest::has_image() const {
-  return !_is_default_instance_ && image_ != NULL;
+  return this != internal_default_instance() && image_ != NULL;
 }
 void AnnotateImageRequest::clear_image() {
   if (GetArenaNoVirtual() == NULL && image_ != NULL) delete image_;
@@ -8282,7 +8456,8 @@ void AnnotateImageRequest::clear_image() {
 }
 const ::google::cloud::vision::v1::Image& AnnotateImageRequest::image() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.AnnotateImageRequest.image)
-  return image_ != NULL ? *image_ : *default_instance_->image_;
+  return image_ != NULL ? *image_
+                         : *::google::cloud::vision::v1::Image::internal_default_instance();
 }
 ::google::cloud::vision::v1::Image* AnnotateImageRequest::mutable_image() {
   
@@ -8352,7 +8527,7 @@ AnnotateImageRequest::features() const {
 
 // optional .google.cloud.vision.v1.ImageContext image_context = 3;
 bool AnnotateImageRequest::has_image_context() const {
-  return !_is_default_instance_ && image_context_ != NULL;
+  return this != internal_default_instance() && image_context_ != NULL;
 }
 void AnnotateImageRequest::clear_image_context() {
   if (GetArenaNoVirtual() == NULL && image_context_ != NULL) delete image_context_;
@@ -8360,7 +8535,8 @@ void AnnotateImageRequest::clear_image_context() {
 }
 const ::google::cloud::vision::v1::ImageContext& AnnotateImageRequest::image_context() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.AnnotateImageRequest.image_context)
-  return image_context_ != NULL ? *image_context_ : *default_instance_->image_context_;
+  return image_context_ != NULL ? *image_context_
+                         : *::google::cloud::vision::v1::ImageContext::internal_default_instance();
 }
 ::google::cloud::vision::v1::ImageContext* AnnotateImageRequest::mutable_image_context() {
   
@@ -8398,6 +8574,9 @@ const ::google::cloud::vision::v1::ImageContext& AnnotateImageRequest::image_con
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.AnnotateImageRequest.image_context)
 }
 
+inline const AnnotateImageRequest* AnnotateImageRequest::internal_default_instance() {
+  return &AnnotateImageRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8410,8 +8589,7 @@ void AnnotateImageResponse::_slow_mutable_safe_search_annotation() {
   if (safe_search_annotation_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::SafeSearchAnnotation* temp = new ::google::cloud::vision::v1::SafeSearchAnnotation;
-    temp->MergeFrom(*safe_search_annotation_);
+    ::google::cloud::vision::v1::SafeSearchAnnotation* temp = new ::google::cloud::vision::v1::SafeSearchAnnotation(*safe_search_annotation_);
     safe_search_annotation_ = NULL;
     return temp;
   }
@@ -8458,8 +8636,7 @@ void AnnotateImageResponse::_slow_mutable_image_properties_annotation() {
   if (image_properties_annotation_ == NULL) {
     return NULL;
   } else {
-    ::google::cloud::vision::v1::ImageProperties* temp = new ::google::cloud::vision::v1::ImageProperties;
-    temp->MergeFrom(*image_properties_annotation_);
+    ::google::cloud::vision::v1::ImageProperties* temp = new ::google::cloud::vision::v1::ImageProperties(*image_properties_annotation_);
     image_properties_annotation_ = NULL;
     return temp;
   }
@@ -8506,8 +8683,7 @@ void AnnotateImageResponse::_slow_mutable_error() {
   if (error_ == NULL) {
     return NULL;
   } else {
-    ::google::rpc::Status* temp = new ::google::rpc::Status;
-    temp->MergeFrom(*error_);
+    ::google::rpc::Status* temp = new ::google::rpc::Status(*error_);
     error_ = NULL;
     return temp;
   }
@@ -8545,10 +8721,10 @@ const int AnnotateImageResponse::kErrorFieldNumber;
 
 AnnotateImageResponse::AnnotateImageResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.AnnotateImageResponse)
 }
-
 AnnotateImageResponse::AnnotateImageResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
@@ -8557,32 +8733,36 @@ AnnotateImageResponse::AnnotateImageResponse(::google::protobuf::Arena* arena)
   logo_annotations_(arena),
   label_annotations_(arena),
   text_annotations_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.AnnotateImageResponse)
 }
 
 void AnnotateImageResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  safe_search_annotation_ = const_cast< ::google::cloud::vision::v1::SafeSearchAnnotation*>(&::google::cloud::vision::v1::SafeSearchAnnotation::default_instance());
-  image_properties_annotation_ = const_cast< ::google::cloud::vision::v1::ImageProperties*>(&::google::cloud::vision::v1::ImageProperties::default_instance());
-  error_ = const_cast< ::google::rpc::Status*>(&::google::rpc::Status::default_instance());
+  safe_search_annotation_ = const_cast< ::google::cloud::vision::v1::SafeSearchAnnotation*>(
+      ::google::cloud::vision::v1::SafeSearchAnnotation::internal_default_instance());
+  image_properties_annotation_ = const_cast< ::google::cloud::vision::v1::ImageProperties*>(
+      ::google::cloud::vision::v1::ImageProperties::internal_default_instance());
+  error_ = const_cast< ::google::rpc::Status*>(
+      ::google::rpc::Status::internal_default_instance());
 }
 
 AnnotateImageResponse::AnnotateImageResponse(const AnnotateImageResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.AnnotateImageResponse)
 }
 
 void AnnotateImageResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   safe_search_annotation_ = NULL;
   image_properties_annotation_ = NULL;
   error_ = NULL;
+  _cached_size_ = 0;
 }
 
 AnnotateImageResponse::~AnnotateImageResponse() {
@@ -8591,11 +8771,12 @@ AnnotateImageResponse::~AnnotateImageResponse() {
 }
 
 void AnnotateImageResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
+  if (this != &AnnotateImageResponse_default_instance_.get()) {
     delete safe_search_annotation_;
     delete image_properties_annotation_;
     delete error_;
@@ -8619,11 +8800,11 @@ const ::google::protobuf::Descriptor* AnnotateImageResponse::descriptor() {
 }
 
 const AnnotateImageResponse& AnnotateImageResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-AnnotateImageResponse* AnnotateImageResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<AnnotateImageResponse> AnnotateImageResponse_default_instance_;
 
 AnnotateImageResponse* AnnotateImageResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<AnnotateImageResponse>(arena);
@@ -8850,6 +9031,7 @@ void AnnotateImageResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* AnnotateImageResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.AnnotateImageResponse)
   // repeated .google.cloud.vision.v1.FaceAnnotation face_annotations = 1;
   for (unsigned int i = 0, n = this->face_annotations_size(); i < n; i++) {
@@ -8911,9 +9093,9 @@ void AnnotateImageResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int AnnotateImageResponse::ByteSize() const {
+size_t AnnotateImageResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.AnnotateImageResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.cloud.vision.v1.SafeSearchAnnotation safe_search_annotation = 6;
   if (this->has_safe_search_annotation()) {
@@ -8937,57 +9119,71 @@ int AnnotateImageResponse::ByteSize() const {
   }
 
   // repeated .google.cloud.vision.v1.FaceAnnotation face_annotations = 1;
-  total_size += 1 * this->face_annotations_size();
-  for (int i = 0; i < this->face_annotations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->face_annotations(i));
+  {
+    unsigned int count = this->face_annotations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->face_annotations(i));
+    }
   }
 
   // repeated .google.cloud.vision.v1.EntityAnnotation landmark_annotations = 2;
-  total_size += 1 * this->landmark_annotations_size();
-  for (int i = 0; i < this->landmark_annotations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->landmark_annotations(i));
+  {
+    unsigned int count = this->landmark_annotations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->landmark_annotations(i));
+    }
   }
 
   // repeated .google.cloud.vision.v1.EntityAnnotation logo_annotations = 3;
-  total_size += 1 * this->logo_annotations_size();
-  for (int i = 0; i < this->logo_annotations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->logo_annotations(i));
+  {
+    unsigned int count = this->logo_annotations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->logo_annotations(i));
+    }
   }
 
   // repeated .google.cloud.vision.v1.EntityAnnotation label_annotations = 4;
-  total_size += 1 * this->label_annotations_size();
-  for (int i = 0; i < this->label_annotations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->label_annotations(i));
+  {
+    unsigned int count = this->label_annotations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->label_annotations(i));
+    }
   }
 
   // repeated .google.cloud.vision.v1.EntityAnnotation text_annotations = 5;
-  total_size += 1 * this->text_annotations_size();
-  for (int i = 0; i < this->text_annotations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->text_annotations(i));
+  {
+    unsigned int count = this->text_annotations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->text_annotations(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AnnotateImageResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.AnnotateImageResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const AnnotateImageResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const AnnotateImageResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnnotateImageResponse>(
           &from);
   if (source == NULL) {
@@ -8995,15 +9191,21 @@ void AnnotateImageResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.AnnotateImageResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnnotateImageResponse::MergeFrom(const AnnotateImageResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.AnnotateImageResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void AnnotateImageResponse::UnsafeMergeFrom(const AnnotateImageResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   face_annotations_.MergeFrom(from.face_annotations_);
   landmark_annotations_.MergeFrom(from.landmark_annotations_);
   logo_annotations_.MergeFrom(from.logo_annotations_);
@@ -9031,7 +9233,7 @@ void AnnotateImageResponse::CopyFrom(const AnnotateImageResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.AnnotateImageResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnnotateImageResponse::IsInitialized() const {
@@ -9045,7 +9247,7 @@ void AnnotateImageResponse::Swap(AnnotateImageResponse* other) {
     InternalSwap(other);
   } else {
     AnnotateImageResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -9231,7 +9433,7 @@ AnnotateImageResponse::text_annotations() const {
 
 // optional .google.cloud.vision.v1.SafeSearchAnnotation safe_search_annotation = 6;
 bool AnnotateImageResponse::has_safe_search_annotation() const {
-  return !_is_default_instance_ && safe_search_annotation_ != NULL;
+  return this != internal_default_instance() && safe_search_annotation_ != NULL;
 }
 void AnnotateImageResponse::clear_safe_search_annotation() {
   if (GetArenaNoVirtual() == NULL && safe_search_annotation_ != NULL) delete safe_search_annotation_;
@@ -9239,7 +9441,8 @@ void AnnotateImageResponse::clear_safe_search_annotation() {
 }
 const ::google::cloud::vision::v1::SafeSearchAnnotation& AnnotateImageResponse::safe_search_annotation() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.AnnotateImageResponse.safe_search_annotation)
-  return safe_search_annotation_ != NULL ? *safe_search_annotation_ : *default_instance_->safe_search_annotation_;
+  return safe_search_annotation_ != NULL ? *safe_search_annotation_
+                         : *::google::cloud::vision::v1::SafeSearchAnnotation::internal_default_instance();
 }
 ::google::cloud::vision::v1::SafeSearchAnnotation* AnnotateImageResponse::mutable_safe_search_annotation() {
   
@@ -9279,7 +9482,7 @@ const ::google::cloud::vision::v1::SafeSearchAnnotation& AnnotateImageResponse::
 
 // optional .google.cloud.vision.v1.ImageProperties image_properties_annotation = 8;
 bool AnnotateImageResponse::has_image_properties_annotation() const {
-  return !_is_default_instance_ && image_properties_annotation_ != NULL;
+  return this != internal_default_instance() && image_properties_annotation_ != NULL;
 }
 void AnnotateImageResponse::clear_image_properties_annotation() {
   if (GetArenaNoVirtual() == NULL && image_properties_annotation_ != NULL) delete image_properties_annotation_;
@@ -9287,7 +9490,8 @@ void AnnotateImageResponse::clear_image_properties_annotation() {
 }
 const ::google::cloud::vision::v1::ImageProperties& AnnotateImageResponse::image_properties_annotation() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.AnnotateImageResponse.image_properties_annotation)
-  return image_properties_annotation_ != NULL ? *image_properties_annotation_ : *default_instance_->image_properties_annotation_;
+  return image_properties_annotation_ != NULL ? *image_properties_annotation_
+                         : *::google::cloud::vision::v1::ImageProperties::internal_default_instance();
 }
 ::google::cloud::vision::v1::ImageProperties* AnnotateImageResponse::mutable_image_properties_annotation() {
   
@@ -9327,7 +9531,7 @@ const ::google::cloud::vision::v1::ImageProperties& AnnotateImageResponse::image
 
 // optional .google.rpc.Status error = 9;
 bool AnnotateImageResponse::has_error() const {
-  return !_is_default_instance_ && error_ != NULL;
+  return this != internal_default_instance() && error_ != NULL;
 }
 void AnnotateImageResponse::clear_error() {
   if (GetArenaNoVirtual() == NULL && error_ != NULL) delete error_;
@@ -9335,7 +9539,8 @@ void AnnotateImageResponse::clear_error() {
 }
 const ::google::rpc::Status& AnnotateImageResponse::error() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.AnnotateImageResponse.error)
-  return error_ != NULL ? *error_ : *default_instance_->error_;
+  return error_ != NULL ? *error_
+                         : *::google::rpc::Status::internal_default_instance();
 }
 ::google::rpc::Status* AnnotateImageResponse::mutable_error() {
   
@@ -9375,6 +9580,9 @@ const ::google::rpc::Status& AnnotateImageResponse::error() const {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.vision.v1.AnnotateImageResponse.error)
 }
 
+inline const AnnotateImageResponse* AnnotateImageResponse::internal_default_instance() {
+  return &AnnotateImageResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9385,33 +9593,34 @@ const int BatchAnnotateImagesRequest::kRequestsFieldNumber;
 
 BatchAnnotateImagesRequest::BatchAnnotateImagesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.BatchAnnotateImagesRequest)
 }
-
 BatchAnnotateImagesRequest::BatchAnnotateImagesRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   requests_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.BatchAnnotateImagesRequest)
 }
 
 void BatchAnnotateImagesRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 BatchAnnotateImagesRequest::BatchAnnotateImagesRequest(const BatchAnnotateImagesRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.BatchAnnotateImagesRequest)
 }
 
 void BatchAnnotateImagesRequest::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -9421,12 +9630,11 @@ BatchAnnotateImagesRequest::~BatchAnnotateImagesRequest() {
 }
 
 void BatchAnnotateImagesRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void BatchAnnotateImagesRequest::ArenaDtor(void* object) {
@@ -9446,11 +9654,11 @@ const ::google::protobuf::Descriptor* BatchAnnotateImagesRequest::descriptor() {
 }
 
 const BatchAnnotateImagesRequest& BatchAnnotateImagesRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-BatchAnnotateImagesRequest* BatchAnnotateImagesRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<BatchAnnotateImagesRequest> BatchAnnotateImagesRequest_default_instance_;
 
 BatchAnnotateImagesRequest* BatchAnnotateImagesRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<BatchAnnotateImagesRequest>(arena);
@@ -9522,6 +9730,7 @@ void BatchAnnotateImagesRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* BatchAnnotateImagesRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.BatchAnnotateImagesRequest)
   // repeated .google.cloud.vision.v1.AnnotateImageRequest requests = 1;
   for (unsigned int i = 0, n = this->requests_size(); i < n; i++) {
@@ -9534,30 +9743,32 @@ void BatchAnnotateImagesRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int BatchAnnotateImagesRequest::ByteSize() const {
+size_t BatchAnnotateImagesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.BatchAnnotateImagesRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.cloud.vision.v1.AnnotateImageRequest requests = 1;
-  total_size += 1 * this->requests_size();
-  for (int i = 0; i < this->requests_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->requests(i));
+  {
+    unsigned int count = this->requests_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->requests(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void BatchAnnotateImagesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.BatchAnnotateImagesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const BatchAnnotateImagesRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const BatchAnnotateImagesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BatchAnnotateImagesRequest>(
           &from);
   if (source == NULL) {
@@ -9565,15 +9776,21 @@ void BatchAnnotateImagesRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.BatchAnnotateImagesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BatchAnnotateImagesRequest::MergeFrom(const BatchAnnotateImagesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.BatchAnnotateImagesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void BatchAnnotateImagesRequest::UnsafeMergeFrom(const BatchAnnotateImagesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   requests_.MergeFrom(from.requests_);
 }
 
@@ -9588,7 +9805,7 @@ void BatchAnnotateImagesRequest::CopyFrom(const BatchAnnotateImagesRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.BatchAnnotateImagesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BatchAnnotateImagesRequest::IsInitialized() const {
@@ -9602,7 +9819,7 @@ void BatchAnnotateImagesRequest::Swap(BatchAnnotateImagesRequest* other) {
     InternalSwap(other);
   } else {
     BatchAnnotateImagesRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -9659,6 +9876,9 @@ BatchAnnotateImagesRequest::requests() const {
   return requests_;
 }
 
+inline const BatchAnnotateImagesRequest* BatchAnnotateImagesRequest::internal_default_instance() {
+  return &BatchAnnotateImagesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9669,33 +9889,34 @@ const int BatchAnnotateImagesResponse::kResponsesFieldNumber;
 
 BatchAnnotateImagesResponse::BatchAnnotateImagesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.BatchAnnotateImagesResponse)
 }
-
 BatchAnnotateImagesResponse::BatchAnnotateImagesResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   responses_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.BatchAnnotateImagesResponse)
 }
 
 void BatchAnnotateImagesResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 BatchAnnotateImagesResponse::BatchAnnotateImagesResponse(const BatchAnnotateImagesResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.BatchAnnotateImagesResponse)
 }
 
 void BatchAnnotateImagesResponse::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -9705,12 +9926,11 @@ BatchAnnotateImagesResponse::~BatchAnnotateImagesResponse() {
 }
 
 void BatchAnnotateImagesResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void BatchAnnotateImagesResponse::ArenaDtor(void* object) {
@@ -9730,11 +9950,11 @@ const ::google::protobuf::Descriptor* BatchAnnotateImagesResponse::descriptor() 
 }
 
 const BatchAnnotateImagesResponse& BatchAnnotateImagesResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fimage_5fannotator_2eproto();
+  return *internal_default_instance();
 }
 
-BatchAnnotateImagesResponse* BatchAnnotateImagesResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<BatchAnnotateImagesResponse> BatchAnnotateImagesResponse_default_instance_;
 
 BatchAnnotateImagesResponse* BatchAnnotateImagesResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<BatchAnnotateImagesResponse>(arena);
@@ -9806,6 +10026,7 @@ void BatchAnnotateImagesResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* BatchAnnotateImagesResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.BatchAnnotateImagesResponse)
   // repeated .google.cloud.vision.v1.AnnotateImageResponse responses = 1;
   for (unsigned int i = 0, n = this->responses_size(); i < n; i++) {
@@ -9818,30 +10039,32 @@ void BatchAnnotateImagesResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int BatchAnnotateImagesResponse::ByteSize() const {
+size_t BatchAnnotateImagesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.BatchAnnotateImagesResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.cloud.vision.v1.AnnotateImageResponse responses = 1;
-  total_size += 1 * this->responses_size();
-  for (int i = 0; i < this->responses_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->responses(i));
+  {
+    unsigned int count = this->responses_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->responses(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void BatchAnnotateImagesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.BatchAnnotateImagesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const BatchAnnotateImagesResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const BatchAnnotateImagesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BatchAnnotateImagesResponse>(
           &from);
   if (source == NULL) {
@@ -9849,15 +10072,21 @@ void BatchAnnotateImagesResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.BatchAnnotateImagesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BatchAnnotateImagesResponse::MergeFrom(const BatchAnnotateImagesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.BatchAnnotateImagesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void BatchAnnotateImagesResponse::UnsafeMergeFrom(const BatchAnnotateImagesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   responses_.MergeFrom(from.responses_);
 }
 
@@ -9872,7 +10101,7 @@ void BatchAnnotateImagesResponse::CopyFrom(const BatchAnnotateImagesResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.BatchAnnotateImagesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BatchAnnotateImagesResponse::IsInitialized() const {
@@ -9886,7 +10115,7 @@ void BatchAnnotateImagesResponse::Swap(BatchAnnotateImagesResponse* other) {
     InternalSwap(other);
   } else {
     BatchAnnotateImagesResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -9943,6 +10172,9 @@ BatchAnnotateImagesResponse::responses() const {
   return responses_;
 }
 
+inline const BatchAnnotateImagesResponse* BatchAnnotateImagesResponse::internal_default_instance() {
+  return &BatchAnnotateImagesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

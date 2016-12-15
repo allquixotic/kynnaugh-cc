@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -42,7 +43,7 @@ namespace google {
 namespace genomics {
 namespace v1 {
 
-class ReferenceServiceV1 GRPC_FINAL {
+class ReferenceServiceV1 final {
  public:
   class StubInterface {
    public:
@@ -114,37 +115,37 @@ class ReferenceServiceV1 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::genomics::v1::Reference>* AsyncGetReferenceRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::genomics::v1::ListBasesResponse>* AsyncListBasesRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListBasesRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status SearchReferenceSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest& request, ::google::genomics::v1::SearchReferenceSetsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchReferenceSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest& request, ::google::genomics::v1::SearchReferenceSetsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferenceSetsResponse>> AsyncSearchReferenceSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferenceSetsResponse>>(AsyncSearchReferenceSetsRaw(context, request, cq));
     }
-    ::grpc::Status GetReferenceSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceSetRequest& request, ::google::genomics::v1::ReferenceSet* response) GRPC_OVERRIDE;
+    ::grpc::Status GetReferenceSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceSetRequest& request, ::google::genomics::v1::ReferenceSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReferenceSet>> AsyncGetReferenceSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReferenceSet>>(AsyncGetReferenceSetRaw(context, request, cq));
     }
-    ::grpc::Status SearchReferences(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferencesRequest& request, ::google::genomics::v1::SearchReferencesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchReferences(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferencesRequest& request, ::google::genomics::v1::SearchReferencesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferencesResponse>> AsyncSearchReferences(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferencesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferencesResponse>>(AsyncSearchReferencesRaw(context, request, cq));
     }
-    ::grpc::Status GetReference(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceRequest& request, ::google::genomics::v1::Reference* response) GRPC_OVERRIDE;
+    ::grpc::Status GetReference(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceRequest& request, ::google::genomics::v1::Reference* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Reference>> AsyncGetReference(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Reference>>(AsyncGetReferenceRaw(context, request, cq));
     }
-    ::grpc::Status ListBases(::grpc::ClientContext* context, const ::google::genomics::v1::ListBasesRequest& request, ::google::genomics::v1::ListBasesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListBases(::grpc::ClientContext* context, const ::google::genomics::v1::ListBasesRequest& request, ::google::genomics::v1::ListBasesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListBasesResponse>> AsyncListBases(::grpc::ClientContext* context, const ::google::genomics::v1::ListBasesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListBasesResponse>>(AsyncListBasesRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferenceSetsResponse>* AsyncSearchReferenceSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReferenceSet>* AsyncGetReferenceSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferencesResponse>* AsyncSearchReferencesRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferencesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Reference>* AsyncGetReferenceRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListBasesResponse>* AsyncListBasesRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListBasesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferenceSetsResponse>* AsyncSearchReferenceSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReferenceSet>* AsyncGetReferenceSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReferencesResponse>* AsyncSearchReferencesRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReferencesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Reference>* AsyncGetReferenceRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetReferenceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListBasesResponse>* AsyncListBasesRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListBasesRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_SearchReferenceSets_;
     const ::grpc::RpcMethod rpcmethod_GetReferenceSet_;
     const ::grpc::RpcMethod rpcmethod_SearchReferences_;
@@ -211,11 +212,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchReferenceSets() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_SearchReferenceSets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchReferenceSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReferenceSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest* request, ::google::genomics::v1::SearchReferenceSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReferenceSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest* request, ::google::genomics::v1::SearchReferenceSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -231,11 +232,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetReferenceSet() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetReferenceSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetReferenceSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetReferenceSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceSetRequest* request, ::google::genomics::v1::ReferenceSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetReferenceSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceSetRequest* request, ::google::genomics::v1::ReferenceSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -251,11 +252,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchReferences() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_SearchReferences() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchReferences() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReferences(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferencesRequest* request, ::google::genomics::v1::SearchReferencesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReferences(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferencesRequest* request, ::google::genomics::v1::SearchReferencesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -271,11 +272,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetReference() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_GetReference() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetReference() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetReference(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceRequest* request, ::google::genomics::v1::Reference* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetReference(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceRequest* request, ::google::genomics::v1::Reference* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -291,11 +292,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithAsyncMethod_ListBases() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_ListBases() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListBases() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBases(::grpc::ServerContext* context, const ::google::genomics::v1::ListBasesRequest* request, ::google::genomics::v1::ListBasesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBases(::grpc::ServerContext* context, const ::google::genomics::v1::ListBasesRequest* request, ::google::genomics::v1::ListBasesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -312,11 +313,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchReferenceSets() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_SearchReferenceSets() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchReferenceSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReferenceSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest* request, ::google::genomics::v1::SearchReferenceSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReferenceSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest* request, ::google::genomics::v1::SearchReferenceSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -329,11 +330,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithGenericMethod_GetReferenceSet() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetReferenceSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetReferenceSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetReferenceSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceSetRequest* request, ::google::genomics::v1::ReferenceSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetReferenceSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceSetRequest* request, ::google::genomics::v1::ReferenceSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -346,11 +347,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchReferences() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_SearchReferences() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchReferences() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReferences(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferencesRequest* request, ::google::genomics::v1::SearchReferencesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReferences(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferencesRequest* request, ::google::genomics::v1::SearchReferencesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -363,11 +364,11 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithGenericMethod_GetReference() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_GetReference() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetReference() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetReference(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceRequest* request, ::google::genomics::v1::Reference* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetReference(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceRequest* request, ::google::genomics::v1::Reference* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -380,15 +381,118 @@ class ReferenceServiceV1 GRPC_FINAL {
     WithGenericMethod_ListBases() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_ListBases() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListBases() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBases(::grpc::ServerContext* context, const ::google::genomics::v1::ListBasesRequest* request, ::google::genomics::v1::ListBasesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBases(::grpc::ServerContext* context, const ::google::genomics::v1::ListBasesRequest* request, ::google::genomics::v1::ListBasesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchReferenceSets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchReferenceSets() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchReferenceSetsRequest, ::google::genomics::v1::SearchReferenceSetsResponse>(std::bind(&WithStreamedUnaryMethod_SearchReferenceSets<BaseClass>::StreamedSearchReferenceSets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchReferenceSets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchReferenceSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferenceSetsRequest* request, ::google::genomics::v1::SearchReferenceSetsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchReferenceSets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchReferenceSetsRequest,::google::genomics::v1::SearchReferenceSetsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetReferenceSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetReferenceSet() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetReferenceSetRequest, ::google::genomics::v1::ReferenceSet>(std::bind(&WithStreamedUnaryMethod_GetReferenceSet<BaseClass>::StreamedGetReferenceSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetReferenceSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetReferenceSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceSetRequest* request, ::google::genomics::v1::ReferenceSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetReferenceSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetReferenceSetRequest,::google::genomics::v1::ReferenceSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchReferences : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchReferences() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchReferencesRequest, ::google::genomics::v1::SearchReferencesResponse>(std::bind(&WithStreamedUnaryMethod_SearchReferences<BaseClass>::StreamedSearchReferences, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchReferences() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchReferences(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReferencesRequest* request, ::google::genomics::v1::SearchReferencesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchReferences(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchReferencesRequest,::google::genomics::v1::SearchReferencesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetReference : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetReference() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetReferenceRequest, ::google::genomics::v1::Reference>(std::bind(&WithStreamedUnaryMethod_GetReference<BaseClass>::StreamedGetReference, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetReference() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetReference(::grpc::ServerContext* context, const ::google::genomics::v1::GetReferenceRequest* request, ::google::genomics::v1::Reference* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetReference(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetReferenceRequest,::google::genomics::v1::Reference>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListBases : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListBases() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::ListBasesRequest, ::google::genomics::v1::ListBasesResponse>(std::bind(&WithStreamedUnaryMethod_ListBases<BaseClass>::StreamedListBases, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListBases() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListBases(::grpc::ServerContext* context, const ::google::genomics::v1::ListBasesRequest* request, ::google::genomics::v1::ListBasesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListBases(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::ListBasesRequest,::google::genomics::v1::ListBasesResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_SearchReferenceSets<WithStreamedUnaryMethod_GetReferenceSet<WithStreamedUnaryMethod_SearchReferences<WithStreamedUnaryMethod_GetReference<WithStreamedUnaryMethod_ListBases<Service > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_SearchReferenceSets<WithStreamedUnaryMethod_GetReferenceSet<WithStreamedUnaryMethod_SearchReferences<WithStreamedUnaryMethod_GetReference<WithStreamedUnaryMethod_ListBases<Service > > > > > StreamedService;
 };
 
 }  // namespace v1

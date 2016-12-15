@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace clouderrorreporting {
 namespace v1beta1 {
 
 // Service for retrieving and updating individual error groups.
-class ErrorGroupService GRPC_FINAL {
+class ErrorGroupService final {
  public:
   class StubInterface {
    public:
@@ -64,22 +65,22 @@ class ErrorGroupService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* AsyncGetGroupRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* AsyncUpdateGroupRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status GetGroup(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) GRPC_OVERRIDE;
+    ::grpc::Status GetGroup(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>> AsyncGetGroup(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>>(AsyncGetGroupRaw(context, request, cq));
     }
-    ::grpc::Status UpdateGroup(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateGroup(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>> AsyncUpdateGroup(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>>(AsyncUpdateGroupRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* AsyncGetGroupRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* AsyncUpdateGroupRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* AsyncGetGroupRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* AsyncUpdateGroupRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_GetGroup_;
     const ::grpc::RpcMethod rpcmethod_UpdateGroup_;
   };
@@ -103,11 +104,11 @@ class ErrorGroupService GRPC_FINAL {
     WithAsyncMethod_GetGroup() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_GetGroup() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -123,11 +124,11 @@ class ErrorGroupService GRPC_FINAL {
     WithAsyncMethod_UpdateGroup() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_UpdateGroup() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -144,11 +145,11 @@ class ErrorGroupService GRPC_FINAL {
     WithGenericMethod_GetGroup() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_GetGroup() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -161,15 +162,58 @@ class ErrorGroupService GRPC_FINAL {
     WithGenericMethod_UpdateGroup() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_UpdateGroup() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateGroup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetGroup : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetGroup() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>(std::bind(&WithStreamedUnaryMethod_GetGroup<BaseClass>::StreamedGetGroup, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetGroup() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetGroup(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouderrorreporting::v1beta1::GetGroupRequest,::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateGroup : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateGroup() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>(std::bind(&WithStreamedUnaryMethod_UpdateGroup<BaseClass>::StreamedUpdateGroup, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateGroup() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateGroup(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateGroup(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouderrorreporting::v1beta1::UpdateGroupRequest,::google::devtools::clouderrorreporting::v1beta1::ErrorGroup>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_GetGroup<WithStreamedUnaryMethod_UpdateGroup<Service > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_GetGroup<WithStreamedUnaryMethod_UpdateGroup<Service > > StreamedService;
 };
 
 }  // namespace v1beta1

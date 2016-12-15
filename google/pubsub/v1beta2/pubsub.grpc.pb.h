@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace v1beta2 {
 
 // The service that an application uses to manipulate subscriptions and to
 // consume messages from a subscription via the Pull method.
-class Subscriber GRPC_FINAL {
+class Subscriber final {
  public:
   class StubInterface {
    public:
@@ -126,52 +127,52 @@ class Subscriber GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::pubsub::v1beta2::PullResponse>* AsyncPullRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PullRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncModifyPushConfigRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Subscription& request, ::google::pubsub::v1beta2::Subscription* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Subscription& request, ::google::pubsub::v1beta2::Subscription* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>> AsyncCreateSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Subscription& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>>(AsyncCreateSubscriptionRaw(context, request, cq));
     }
-    ::grpc::Status GetSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest& request, ::google::pubsub::v1beta2::Subscription* response) GRPC_OVERRIDE;
+    ::grpc::Status GetSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest& request, ::google::pubsub::v1beta2::Subscription* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>> AsyncGetSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>>(AsyncGetSubscriptionRaw(context, request, cq));
     }
-    ::grpc::Status ListSubscriptions(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest& request, ::google::pubsub::v1beta2::ListSubscriptionsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListSubscriptions(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest& request, ::google::pubsub::v1beta2::ListSubscriptionsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListSubscriptionsResponse>> AsyncListSubscriptions(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListSubscriptionsResponse>>(AsyncListSubscriptionsRaw(context, request, cq));
     }
-    ::grpc::Status DeleteSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteSubscriptionRaw(context, request, cq));
     }
-    ::grpc::Status ModifyAckDeadline(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status ModifyAckDeadline(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncModifyAckDeadline(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncModifyAckDeadlineRaw(context, request, cq));
     }
-    ::grpc::Status Acknowledge(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status Acknowledge(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncAcknowledge(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncAcknowledgeRaw(context, request, cq));
     }
-    ::grpc::Status Pull(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PullRequest& request, ::google::pubsub::v1beta2::PullResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status Pull(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PullRequest& request, ::google::pubsub::v1beta2::PullResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PullResponse>> AsyncPull(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PullRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PullResponse>>(AsyncPullRaw(context, request, cq));
     }
-    ::grpc::Status ModifyPushConfig(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status ModifyPushConfig(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncModifyPushConfig(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncModifyPushConfigRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>* AsyncCreateSubscriptionRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Subscription& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>* AsyncGetSubscriptionRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListSubscriptionsResponse>* AsyncListSubscriptionsRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteSubscriptionRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncModifyAckDeadlineRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncAcknowledgeRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PullResponse>* AsyncPullRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PullRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncModifyPushConfigRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>* AsyncCreateSubscriptionRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Subscription& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Subscription>* AsyncGetSubscriptionRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListSubscriptionsResponse>* AsyncListSubscriptionsRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteSubscriptionRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncModifyAckDeadlineRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncAcknowledgeRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PullResponse>* AsyncPullRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PullRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncModifyPushConfigRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateSubscription_;
     const ::grpc::RpcMethod rpcmethod_GetSubscription_;
     const ::grpc::RpcMethod rpcmethod_ListSubscriptions_;
@@ -239,11 +240,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_CreateSubscription() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateSubscription() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateSubscription() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Subscription* request, ::google::pubsub::v1beta2::Subscription* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Subscription* request, ::google::pubsub::v1beta2::Subscription* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -259,11 +260,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_GetSubscription() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetSubscription() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetSubscription() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest* request, ::google::pubsub::v1beta2::Subscription* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest* request, ::google::pubsub::v1beta2::Subscription* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -279,11 +280,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_ListSubscriptions() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ListSubscriptions() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListSubscriptions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListSubscriptionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListSubscriptionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -299,11 +300,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_DeleteSubscription() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DeleteSubscription() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteSubscription() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -319,11 +320,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_ModifyAckDeadline() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_ModifyAckDeadline() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ModifyAckDeadline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ModifyAckDeadline(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ModifyAckDeadline(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -339,11 +340,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_Acknowledge() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_Acknowledge() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Acknowledge() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Acknowledge(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Acknowledge(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -359,11 +360,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_Pull() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_Pull() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Pull() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Pull(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PullRequest* request, ::google::pubsub::v1beta2::PullResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Pull(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PullRequest* request, ::google::pubsub::v1beta2::PullResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -379,11 +380,11 @@ class Subscriber GRPC_FINAL {
     WithAsyncMethod_ModifyPushConfig() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_ModifyPushConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ModifyPushConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ModifyPushConfig(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ModifyPushConfig(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -400,11 +401,11 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_CreateSubscription() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateSubscription() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateSubscription() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Subscription* request, ::google::pubsub::v1beta2::Subscription* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Subscription* request, ::google::pubsub::v1beta2::Subscription* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -417,11 +418,11 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_GetSubscription() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetSubscription() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetSubscription() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest* request, ::google::pubsub::v1beta2::Subscription* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest* request, ::google::pubsub::v1beta2::Subscription* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -434,11 +435,11 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_ListSubscriptions() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ListSubscriptions() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListSubscriptions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListSubscriptionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListSubscriptionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -451,11 +452,11 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_DeleteSubscription() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DeleteSubscription() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteSubscription() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -468,11 +469,11 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_ModifyAckDeadline() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_ModifyAckDeadline() GRPC_OVERRIDE {
+    ~WithGenericMethod_ModifyAckDeadline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ModifyAckDeadline(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ModifyAckDeadline(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -485,11 +486,11 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_Acknowledge() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_Acknowledge() GRPC_OVERRIDE {
+    ~WithGenericMethod_Acknowledge() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Acknowledge(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Acknowledge(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -502,11 +503,11 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_Pull() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_Pull() GRPC_OVERRIDE {
+    ~WithGenericMethod_Pull() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Pull(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PullRequest* request, ::google::pubsub::v1beta2::PullResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Pull(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PullRequest* request, ::google::pubsub::v1beta2::PullResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -519,20 +520,183 @@ class Subscriber GRPC_FINAL {
     WithGenericMethod_ModifyPushConfig() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_ModifyPushConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_ModifyPushConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ModifyPushConfig(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ModifyPushConfig(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateSubscription : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateSubscription() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::Subscription, ::google::pubsub::v1beta2::Subscription>(std::bind(&WithStreamedUnaryMethod_CreateSubscription<BaseClass>::StreamedCreateSubscription, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateSubscription() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Subscription* request, ::google::pubsub::v1beta2::Subscription* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateSubscription(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::Subscription,::google::pubsub::v1beta2::Subscription>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetSubscription : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetSubscription() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::GetSubscriptionRequest, ::google::pubsub::v1beta2::Subscription>(std::bind(&WithStreamedUnaryMethod_GetSubscription<BaseClass>::StreamedGetSubscription, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetSubscription() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetSubscriptionRequest* request, ::google::pubsub::v1beta2::Subscription* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetSubscription(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::GetSubscriptionRequest,::google::pubsub::v1beta2::Subscription>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListSubscriptions : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListSubscriptions() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::ListSubscriptionsRequest, ::google::pubsub::v1beta2::ListSubscriptionsResponse>(std::bind(&WithStreamedUnaryMethod_ListSubscriptions<BaseClass>::StreamedListSubscriptions, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListSubscriptions() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListSubscriptionsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListSubscriptions(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::ListSubscriptionsRequest,::google::pubsub::v1beta2::ListSubscriptionsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteSubscription : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteSubscription() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::DeleteSubscriptionRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteSubscription<BaseClass>::StreamedDeleteSubscription, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteSubscription() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteSubscription(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteSubscriptionRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteSubscription(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::DeleteSubscriptionRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModifyAckDeadline : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ModifyAckDeadline() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::ModifyAckDeadlineRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_ModifyAckDeadline<BaseClass>::StreamedModifyAckDeadline, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ModifyAckDeadline() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModifyAckDeadline(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyAckDeadlineRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModifyAckDeadline(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::ModifyAckDeadlineRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Acknowledge : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Acknowledge() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::AcknowledgeRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_Acknowledge<BaseClass>::StreamedAcknowledge, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Acknowledge() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Acknowledge(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::AcknowledgeRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedAcknowledge(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::AcknowledgeRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Pull : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Pull() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::PullRequest, ::google::pubsub::v1beta2::PullResponse>(std::bind(&WithStreamedUnaryMethod_Pull<BaseClass>::StreamedPull, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Pull() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Pull(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PullRequest* request, ::google::pubsub::v1beta2::PullResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedPull(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::PullRequest,::google::pubsub::v1beta2::PullResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ModifyPushConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ModifyPushConfig() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::ModifyPushConfigRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_ModifyPushConfig<BaseClass>::StreamedModifyPushConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ModifyPushConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ModifyPushConfig(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ModifyPushConfigRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedModifyPushConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::ModifyPushConfigRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateSubscription<WithStreamedUnaryMethod_GetSubscription<WithStreamedUnaryMethod_ListSubscriptions<WithStreamedUnaryMethod_DeleteSubscription<WithStreamedUnaryMethod_ModifyAckDeadline<WithStreamedUnaryMethod_Acknowledge<WithStreamedUnaryMethod_Pull<WithStreamedUnaryMethod_ModifyPushConfig<Service > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateSubscription<WithStreamedUnaryMethod_GetSubscription<WithStreamedUnaryMethod_ListSubscriptions<WithStreamedUnaryMethod_DeleteSubscription<WithStreamedUnaryMethod_ModifyAckDeadline<WithStreamedUnaryMethod_Acknowledge<WithStreamedUnaryMethod_Pull<WithStreamedUnaryMethod_ModifyPushConfig<Service > > > > > > > > StreamedService;
 };
 
 // The service that an application uses to manipulate topics, and to send
 // messages to a topic.
-class Publisher GRPC_FINAL {
+class Publisher final {
  public:
   class StubInterface {
    public:
@@ -580,42 +744,42 @@ class Publisher GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse>* AsyncListTopicSubscriptionsRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteTopicRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Topic& request, ::google::pubsub::v1beta2::Topic* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Topic& request, ::google::pubsub::v1beta2::Topic* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>> AsyncCreateTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Topic& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>>(AsyncCreateTopicRaw(context, request, cq));
     }
-    ::grpc::Status Publish(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PublishRequest& request, ::google::pubsub::v1beta2::PublishResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status Publish(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PublishRequest& request, ::google::pubsub::v1beta2::PublishResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PublishResponse>> AsyncPublish(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PublishRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PublishResponse>>(AsyncPublishRaw(context, request, cq));
     }
-    ::grpc::Status GetTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetTopicRequest& request, ::google::pubsub::v1beta2::Topic* response) GRPC_OVERRIDE;
+    ::grpc::Status GetTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetTopicRequest& request, ::google::pubsub::v1beta2::Topic* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>> AsyncGetTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetTopicRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>>(AsyncGetTopicRaw(context, request, cq));
     }
-    ::grpc::Status ListTopics(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest& request, ::google::pubsub::v1beta2::ListTopicsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListTopics(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest& request, ::google::pubsub::v1beta2::ListTopicsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicsResponse>> AsyncListTopics(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicsResponse>>(AsyncListTopicsRaw(context, request, cq));
     }
-    ::grpc::Status ListTopicSubscriptions(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest& request, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListTopicSubscriptions(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest& request, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse>> AsyncListTopicSubscriptions(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse>>(AsyncListTopicSubscriptionsRaw(context, request, cq));
     }
-    ::grpc::Status DeleteTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteTopic(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteTopicRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>* AsyncCreateTopicRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Topic& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PublishResponse>* AsyncPublishRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PublishRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>* AsyncGetTopicRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetTopicRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicsResponse>* AsyncListTopicsRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse>* AsyncListTopicSubscriptionsRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteTopicRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>* AsyncCreateTopicRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::Topic& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::PublishResponse>* AsyncPublishRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::PublishRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::Topic>* AsyncGetTopicRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::GetTopicRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicsResponse>* AsyncListTopicsRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse>* AsyncListTopicSubscriptionsRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteTopicRaw(::grpc::ClientContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateTopic_;
     const ::grpc::RpcMethod rpcmethod_Publish_;
     const ::grpc::RpcMethod rpcmethod_GetTopic_;
@@ -655,11 +819,11 @@ class Publisher GRPC_FINAL {
     WithAsyncMethod_CreateTopic() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateTopic() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateTopic() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Topic* request, ::google::pubsub::v1beta2::Topic* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Topic* request, ::google::pubsub::v1beta2::Topic* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -675,11 +839,11 @@ class Publisher GRPC_FINAL {
     WithAsyncMethod_Publish() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_Publish() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Publish() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Publish(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PublishRequest* request, ::google::pubsub::v1beta2::PublishResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Publish(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PublishRequest* request, ::google::pubsub::v1beta2::PublishResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -695,11 +859,11 @@ class Publisher GRPC_FINAL {
     WithAsyncMethod_GetTopic() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_GetTopic() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetTopic() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetTopicRequest* request, ::google::pubsub::v1beta2::Topic* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetTopicRequest* request, ::google::pubsub::v1beta2::Topic* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -715,11 +879,11 @@ class Publisher GRPC_FINAL {
     WithAsyncMethod_ListTopics() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_ListTopics() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListTopics() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTopics(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest* request, ::google::pubsub::v1beta2::ListTopicsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTopics(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest* request, ::google::pubsub::v1beta2::ListTopicsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -735,11 +899,11 @@ class Publisher GRPC_FINAL {
     WithAsyncMethod_ListTopicSubscriptions() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_ListTopicSubscriptions() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListTopicSubscriptions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTopicSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTopicSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -755,11 +919,11 @@ class Publisher GRPC_FINAL {
     WithAsyncMethod_DeleteTopic() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_DeleteTopic() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteTopic() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -776,11 +940,11 @@ class Publisher GRPC_FINAL {
     WithGenericMethod_CreateTopic() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateTopic() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateTopic() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Topic* request, ::google::pubsub::v1beta2::Topic* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Topic* request, ::google::pubsub::v1beta2::Topic* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -793,11 +957,11 @@ class Publisher GRPC_FINAL {
     WithGenericMethod_Publish() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_Publish() GRPC_OVERRIDE {
+    ~WithGenericMethod_Publish() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Publish(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PublishRequest* request, ::google::pubsub::v1beta2::PublishResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Publish(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PublishRequest* request, ::google::pubsub::v1beta2::PublishResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -810,11 +974,11 @@ class Publisher GRPC_FINAL {
     WithGenericMethod_GetTopic() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_GetTopic() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetTopic() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetTopicRequest* request, ::google::pubsub::v1beta2::Topic* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetTopicRequest* request, ::google::pubsub::v1beta2::Topic* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -827,11 +991,11 @@ class Publisher GRPC_FINAL {
     WithGenericMethod_ListTopics() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_ListTopics() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListTopics() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTopics(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest* request, ::google::pubsub::v1beta2::ListTopicsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTopics(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest* request, ::google::pubsub::v1beta2::ListTopicsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -844,11 +1008,11 @@ class Publisher GRPC_FINAL {
     WithGenericMethod_ListTopicSubscriptions() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_ListTopicSubscriptions() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListTopicSubscriptions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTopicSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTopicSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -861,15 +1025,138 @@ class Publisher GRPC_FINAL {
     WithGenericMethod_DeleteTopic() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_DeleteTopic() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteTopic() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateTopic : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateTopic() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::Topic, ::google::pubsub::v1beta2::Topic>(std::bind(&WithStreamedUnaryMethod_CreateTopic<BaseClass>::StreamedCreateTopic, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateTopic() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::Topic* request, ::google::pubsub::v1beta2::Topic* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateTopic(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::Topic,::google::pubsub::v1beta2::Topic>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Publish : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Publish() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::PublishRequest, ::google::pubsub::v1beta2::PublishResponse>(std::bind(&WithStreamedUnaryMethod_Publish<BaseClass>::StreamedPublish, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Publish() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Publish(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::PublishRequest* request, ::google::pubsub::v1beta2::PublishResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedPublish(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::PublishRequest,::google::pubsub::v1beta2::PublishResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetTopic : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetTopic() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::GetTopicRequest, ::google::pubsub::v1beta2::Topic>(std::bind(&WithStreamedUnaryMethod_GetTopic<BaseClass>::StreamedGetTopic, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetTopic() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::GetTopicRequest* request, ::google::pubsub::v1beta2::Topic* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetTopic(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::GetTopicRequest,::google::pubsub::v1beta2::Topic>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListTopics : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListTopics() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::ListTopicsRequest, ::google::pubsub::v1beta2::ListTopicsResponse>(std::bind(&WithStreamedUnaryMethod_ListTopics<BaseClass>::StreamedListTopics, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListTopics() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListTopics(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicsRequest* request, ::google::pubsub::v1beta2::ListTopicsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListTopics(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::ListTopicsRequest,::google::pubsub::v1beta2::ListTopicsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListTopicSubscriptions : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListTopicSubscriptions() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse>(std::bind(&WithStreamedUnaryMethod_ListTopicSubscriptions<BaseClass>::StreamedListTopicSubscriptions, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListTopicSubscriptions() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListTopicSubscriptions(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest* request, ::google::pubsub::v1beta2::ListTopicSubscriptionsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListTopicSubscriptions(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::ListTopicSubscriptionsRequest,::google::pubsub::v1beta2::ListTopicSubscriptionsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteTopic : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteTopic() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::pubsub::v1beta2::DeleteTopicRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteTopic<BaseClass>::StreamedDeleteTopic, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteTopic() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteTopic(::grpc::ServerContext* context, const ::google::pubsub::v1beta2::DeleteTopicRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteTopic(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::pubsub::v1beta2::DeleteTopicRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateTopic<WithStreamedUnaryMethod_Publish<WithStreamedUnaryMethod_GetTopic<WithStreamedUnaryMethod_ListTopics<WithStreamedUnaryMethod_ListTopicSubscriptions<WithStreamedUnaryMethod_DeleteTopic<Service > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateTopic<WithStreamedUnaryMethod_Publish<WithStreamedUnaryMethod_GetTopic<WithStreamedUnaryMethod_ListTopics<WithStreamedUnaryMethod_ListTopicSubscriptions<WithStreamedUnaryMethod_DeleteTopic<Service > > > > > > StreamedService;
 };
 
 }  // namespace v1beta2

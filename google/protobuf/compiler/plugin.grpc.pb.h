@@ -45,7 +45,6 @@
 // of dealing with the raw protocol defined here.
 //
 // A plugin executable needs only to be placed somewhere in the path.  The
-// plugin should be named "protoc-gen-{NAME}_out" is passed to protoc.
 //
 #ifndef GRPC_google_2fprotobuf_2fcompiler_2fplugin_2eproto__INCLUDED
 #define GRPC_google_2fprotobuf_2fcompiler_2fplugin_2eproto__INCLUDED
@@ -54,6 +53,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>

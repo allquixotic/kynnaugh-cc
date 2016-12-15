@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -55,7 +56,7 @@ namespace v2 {
 //
 // The Debugger service enables the client to set one or more Breakpoints on a
 // Debuggee and collect the results of the set Breakpoints.
-class Debugger2 GRPC_FINAL {
+class Debugger2 final {
  public:
   class StubInterface {
    public:
@@ -92,37 +93,37 @@ class Debugger2 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::clouddebugger::v2::ListBreakpointsResponse>* AsyncListBreakpointsRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::clouddebugger::v2::ListDebuggeesResponse>* AsyncListDebuggeesRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status SetBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest& request, ::google::devtools::clouddebugger::v2::SetBreakpointResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SetBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest& request, ::google::devtools::clouddebugger::v2::SetBreakpointResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::SetBreakpointResponse>> AsyncSetBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::SetBreakpointResponse>>(AsyncSetBreakpointRaw(context, request, cq));
     }
-    ::grpc::Status GetBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest& request, ::google::devtools::clouddebugger::v2::GetBreakpointResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status GetBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest& request, ::google::devtools::clouddebugger::v2::GetBreakpointResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::GetBreakpointResponse>> AsyncGetBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::GetBreakpointResponse>>(AsyncGetBreakpointRaw(context, request, cq));
     }
-    ::grpc::Status DeleteBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteBreakpoint(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteBreakpointRaw(context, request, cq));
     }
-    ::grpc::Status ListBreakpoints(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest& request, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListBreakpoints(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest& request, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListBreakpointsResponse>> AsyncListBreakpoints(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListBreakpointsResponse>>(AsyncListBreakpointsRaw(context, request, cq));
     }
-    ::grpc::Status ListDebuggees(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest& request, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListDebuggees(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest& request, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListDebuggeesResponse>> AsyncListDebuggees(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListDebuggeesResponse>>(AsyncListDebuggeesRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::SetBreakpointResponse>* AsyncSetBreakpointRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::GetBreakpointResponse>* AsyncGetBreakpointRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteBreakpointRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListBreakpointsResponse>* AsyncListBreakpointsRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListDebuggeesResponse>* AsyncListDebuggeesRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::SetBreakpointResponse>* AsyncSetBreakpointRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::GetBreakpointResponse>* AsyncGetBreakpointRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteBreakpointRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListBreakpointsResponse>* AsyncListBreakpointsRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouddebugger::v2::ListDebuggeesResponse>* AsyncListDebuggeesRaw(::grpc::ClientContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_SetBreakpoint_;
     const ::grpc::RpcMethod rpcmethod_GetBreakpoint_;
     const ::grpc::RpcMethod rpcmethod_DeleteBreakpoint_;
@@ -154,11 +155,11 @@ class Debugger2 GRPC_FINAL {
     WithAsyncMethod_SetBreakpoint() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_SetBreakpoint() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SetBreakpoint() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::SetBreakpointResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::SetBreakpointResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -174,11 +175,11 @@ class Debugger2 GRPC_FINAL {
     WithAsyncMethod_GetBreakpoint() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetBreakpoint() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetBreakpoint() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::GetBreakpointResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::GetBreakpointResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -194,11 +195,11 @@ class Debugger2 GRPC_FINAL {
     WithAsyncMethod_DeleteBreakpoint() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_DeleteBreakpoint() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteBreakpoint() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -214,11 +215,11 @@ class Debugger2 GRPC_FINAL {
     WithAsyncMethod_ListBreakpoints() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_ListBreakpoints() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListBreakpoints() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBreakpoints(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest* request, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBreakpoints(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest* request, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -234,11 +235,11 @@ class Debugger2 GRPC_FINAL {
     WithAsyncMethod_ListDebuggees() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_ListDebuggees() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListDebuggees() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListDebuggees(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest* request, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListDebuggees(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest* request, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -255,11 +256,11 @@ class Debugger2 GRPC_FINAL {
     WithGenericMethod_SetBreakpoint() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_SetBreakpoint() GRPC_OVERRIDE {
+    ~WithGenericMethod_SetBreakpoint() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::SetBreakpointResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::SetBreakpointResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -272,11 +273,11 @@ class Debugger2 GRPC_FINAL {
     WithGenericMethod_GetBreakpoint() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetBreakpoint() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetBreakpoint() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::GetBreakpointResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::GetBreakpointResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -289,11 +290,11 @@ class Debugger2 GRPC_FINAL {
     WithGenericMethod_DeleteBreakpoint() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_DeleteBreakpoint() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteBreakpoint() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -306,11 +307,11 @@ class Debugger2 GRPC_FINAL {
     WithGenericMethod_ListBreakpoints() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_ListBreakpoints() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListBreakpoints() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBreakpoints(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest* request, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBreakpoints(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest* request, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -323,15 +324,118 @@ class Debugger2 GRPC_FINAL {
     WithGenericMethod_ListDebuggees() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_ListDebuggees() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListDebuggees() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListDebuggees(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest* request, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListDebuggees(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest* request, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SetBreakpoint : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SetBreakpoint() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouddebugger::v2::SetBreakpointRequest, ::google::devtools::clouddebugger::v2::SetBreakpointResponse>(std::bind(&WithStreamedUnaryMethod_SetBreakpoint<BaseClass>::StreamedSetBreakpoint, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SetBreakpoint() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::SetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::SetBreakpointResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSetBreakpoint(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouddebugger::v2::SetBreakpointRequest,::google::devtools::clouddebugger::v2::SetBreakpointResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetBreakpoint : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetBreakpoint() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouddebugger::v2::GetBreakpointRequest, ::google::devtools::clouddebugger::v2::GetBreakpointResponse>(std::bind(&WithStreamedUnaryMethod_GetBreakpoint<BaseClass>::StreamedGetBreakpoint, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetBreakpoint() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::GetBreakpointRequest* request, ::google::devtools::clouddebugger::v2::GetBreakpointResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetBreakpoint(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouddebugger::v2::GetBreakpointRequest,::google::devtools::clouddebugger::v2::GetBreakpointResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteBreakpoint : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteBreakpoint() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteBreakpoint<BaseClass>::StreamedDeleteBreakpoint, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteBreakpoint() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteBreakpoint(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteBreakpoint(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouddebugger::v2::DeleteBreakpointRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListBreakpoints : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListBreakpoints() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouddebugger::v2::ListBreakpointsRequest, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse>(std::bind(&WithStreamedUnaryMethod_ListBreakpoints<BaseClass>::StreamedListBreakpoints, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListBreakpoints() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListBreakpoints(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListBreakpointsRequest* request, ::google::devtools::clouddebugger::v2::ListBreakpointsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListBreakpoints(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouddebugger::v2::ListBreakpointsRequest,::google::devtools::clouddebugger::v2::ListBreakpointsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListDebuggees : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListDebuggees() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouddebugger::v2::ListDebuggeesRequest, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse>(std::bind(&WithStreamedUnaryMethod_ListDebuggees<BaseClass>::StreamedListDebuggees, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListDebuggees() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListDebuggees(::grpc::ServerContext* context, const ::google::devtools::clouddebugger::v2::ListDebuggeesRequest* request, ::google::devtools::clouddebugger::v2::ListDebuggeesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListDebuggees(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouddebugger::v2::ListDebuggeesRequest,::google::devtools::clouddebugger::v2::ListDebuggeesResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_SetBreakpoint<WithStreamedUnaryMethod_GetBreakpoint<WithStreamedUnaryMethod_DeleteBreakpoint<WithStreamedUnaryMethod_ListBreakpoints<WithStreamedUnaryMethod_ListDebuggees<Service > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_SetBreakpoint<WithStreamedUnaryMethod_GetBreakpoint<WithStreamedUnaryMethod_DeleteBreakpoint<WithStreamedUnaryMethod_ListBreakpoints<WithStreamedUnaryMethod_ListDebuggees<Service > > > > > StreamedService;
 };
 
 }  // namespace v2

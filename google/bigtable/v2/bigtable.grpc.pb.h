@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -43,7 +44,7 @@ namespace bigtable {
 namespace v2 {
 
 // Service for reading from and writing to existing Bigtable tables.
-class Bigtable GRPC_FINAL {
+class Bigtable final {
  public:
   class StubInterface {
    public:
@@ -109,7 +110,7 @@ class Bigtable GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::bigtable::v2::CheckAndMutateRowResponse>* AsyncCheckAndMutateRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::bigtable::v2::ReadModifyWriteRowResponse>* AsyncReadModifyWriteRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
     std::unique_ptr< ::grpc::ClientReader< ::google::bigtable::v2::ReadRowsResponse>> ReadRows(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadRowsRequest& request) {
@@ -124,7 +125,7 @@ class Bigtable GRPC_FINAL {
     std::unique_ptr< ::grpc::ClientAsyncReader< ::google::bigtable::v2::SampleRowKeysResponse>> AsyncSampleRowKeys(::grpc::ClientContext* context, const ::google::bigtable::v2::SampleRowKeysRequest& request, ::grpc::CompletionQueue* cq, void* tag) {
       return std::unique_ptr< ::grpc::ClientAsyncReader< ::google::bigtable::v2::SampleRowKeysResponse>>(AsyncSampleRowKeysRaw(context, request, cq, tag));
     }
-    ::grpc::Status MutateRow(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowRequest& request, ::google::bigtable::v2::MutateRowResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status MutateRow(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowRequest& request, ::google::bigtable::v2::MutateRowResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::MutateRowResponse>> AsyncMutateRow(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::MutateRowResponse>>(AsyncMutateRowRaw(context, request, cq));
     }
@@ -134,26 +135,26 @@ class Bigtable GRPC_FINAL {
     std::unique_ptr< ::grpc::ClientAsyncReader< ::google::bigtable::v2::MutateRowsResponse>> AsyncMutateRows(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowsRequest& request, ::grpc::CompletionQueue* cq, void* tag) {
       return std::unique_ptr< ::grpc::ClientAsyncReader< ::google::bigtable::v2::MutateRowsResponse>>(AsyncMutateRowsRaw(context, request, cq, tag));
     }
-    ::grpc::Status CheckAndMutateRow(::grpc::ClientContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest& request, ::google::bigtable::v2::CheckAndMutateRowResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status CheckAndMutateRow(::grpc::ClientContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest& request, ::google::bigtable::v2::CheckAndMutateRowResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::CheckAndMutateRowResponse>> AsyncCheckAndMutateRow(::grpc::ClientContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::CheckAndMutateRowResponse>>(AsyncCheckAndMutateRowRaw(context, request, cq));
     }
-    ::grpc::Status ReadModifyWriteRow(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest& request, ::google::bigtable::v2::ReadModifyWriteRowResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ReadModifyWriteRow(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest& request, ::google::bigtable::v2::ReadModifyWriteRowResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::ReadModifyWriteRowResponse>> AsyncReadModifyWriteRow(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::ReadModifyWriteRowResponse>>(AsyncReadModifyWriteRowRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientReader< ::google::bigtable::v2::ReadRowsResponse>* ReadRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadRowsRequest& request) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReader< ::google::bigtable::v2::ReadRowsResponse>* AsyncReadRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadRowsRequest& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
-    ::grpc::ClientReader< ::google::bigtable::v2::SampleRowKeysResponse>* SampleRowKeysRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::SampleRowKeysRequest& request) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReader< ::google::bigtable::v2::SampleRowKeysResponse>* AsyncSampleRowKeysRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::SampleRowKeysRequest& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::MutateRowResponse>* AsyncMutateRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientReader< ::google::bigtable::v2::MutateRowsResponse>* MutateRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowsRequest& request) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReader< ::google::bigtable::v2::MutateRowsResponse>* AsyncMutateRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowsRequest& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::CheckAndMutateRowResponse>* AsyncCheckAndMutateRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::ReadModifyWriteRowResponse>* AsyncReadModifyWriteRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientReader< ::google::bigtable::v2::ReadRowsResponse>* ReadRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadRowsRequest& request) override;
+    ::grpc::ClientAsyncReader< ::google::bigtable::v2::ReadRowsResponse>* AsyncReadRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadRowsRequest& request, ::grpc::CompletionQueue* cq, void* tag) override;
+    ::grpc::ClientReader< ::google::bigtable::v2::SampleRowKeysResponse>* SampleRowKeysRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::SampleRowKeysRequest& request) override;
+    ::grpc::ClientAsyncReader< ::google::bigtable::v2::SampleRowKeysResponse>* AsyncSampleRowKeysRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::SampleRowKeysRequest& request, ::grpc::CompletionQueue* cq, void* tag) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::MutateRowResponse>* AsyncMutateRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientReader< ::google::bigtable::v2::MutateRowsResponse>* MutateRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowsRequest& request) override;
+    ::grpc::ClientAsyncReader< ::google::bigtable::v2::MutateRowsResponse>* AsyncMutateRowsRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::MutateRowsRequest& request, ::grpc::CompletionQueue* cq, void* tag) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::CheckAndMutateRowResponse>* AsyncCheckAndMutateRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::v2::ReadModifyWriteRowResponse>* AsyncReadModifyWriteRowRaw(::grpc::ClientContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ReadRows_;
     const ::grpc::RpcMethod rpcmethod_SampleRowKeys_;
     const ::grpc::RpcMethod rpcmethod_MutateRow_;
@@ -202,11 +203,11 @@ class Bigtable GRPC_FINAL {
     WithAsyncMethod_ReadRows() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ReadRows() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ReadRows() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ReadRows(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::ReadRowsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ReadRows(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::ReadRowsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -222,11 +223,11 @@ class Bigtable GRPC_FINAL {
     WithAsyncMethod_SampleRowKeys() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_SampleRowKeys() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SampleRowKeys() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SampleRowKeys(::grpc::ServerContext* context, const ::google::bigtable::v2::SampleRowKeysRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::SampleRowKeysResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SampleRowKeys(::grpc::ServerContext* context, const ::google::bigtable::v2::SampleRowKeysRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::SampleRowKeysResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -242,11 +243,11 @@ class Bigtable GRPC_FINAL {
     WithAsyncMethod_MutateRow() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_MutateRow() GRPC_OVERRIDE {
+    ~WithAsyncMethod_MutateRow() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowRequest* request, ::google::bigtable::v2::MutateRowResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowRequest* request, ::google::bigtable::v2::MutateRowResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -262,11 +263,11 @@ class Bigtable GRPC_FINAL {
     WithAsyncMethod_MutateRows() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_MutateRows() GRPC_OVERRIDE {
+    ~WithAsyncMethod_MutateRows() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MutateRows(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::MutateRowsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MutateRows(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::MutateRowsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -282,11 +283,11 @@ class Bigtable GRPC_FINAL {
     WithAsyncMethod_CheckAndMutateRow() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_CheckAndMutateRow() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CheckAndMutateRow() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CheckAndMutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest* request, ::google::bigtable::v2::CheckAndMutateRowResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CheckAndMutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest* request, ::google::bigtable::v2::CheckAndMutateRowResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -302,11 +303,11 @@ class Bigtable GRPC_FINAL {
     WithAsyncMethod_ReadModifyWriteRow() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_ReadModifyWriteRow() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ReadModifyWriteRow() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ReadModifyWriteRow(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest* request, ::google::bigtable::v2::ReadModifyWriteRowResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ReadModifyWriteRow(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest* request, ::google::bigtable::v2::ReadModifyWriteRowResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -323,11 +324,11 @@ class Bigtable GRPC_FINAL {
     WithGenericMethod_ReadRows() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ReadRows() GRPC_OVERRIDE {
+    ~WithGenericMethod_ReadRows() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ReadRows(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::ReadRowsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ReadRows(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::ReadRowsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -340,11 +341,11 @@ class Bigtable GRPC_FINAL {
     WithGenericMethod_SampleRowKeys() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_SampleRowKeys() GRPC_OVERRIDE {
+    ~WithGenericMethod_SampleRowKeys() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SampleRowKeys(::grpc::ServerContext* context, const ::google::bigtable::v2::SampleRowKeysRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::SampleRowKeysResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SampleRowKeys(::grpc::ServerContext* context, const ::google::bigtable::v2::SampleRowKeysRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::SampleRowKeysResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -357,11 +358,11 @@ class Bigtable GRPC_FINAL {
     WithGenericMethod_MutateRow() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_MutateRow() GRPC_OVERRIDE {
+    ~WithGenericMethod_MutateRow() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowRequest* request, ::google::bigtable::v2::MutateRowResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowRequest* request, ::google::bigtable::v2::MutateRowResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -374,11 +375,11 @@ class Bigtable GRPC_FINAL {
     WithGenericMethod_MutateRows() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_MutateRows() GRPC_OVERRIDE {
+    ~WithGenericMethod_MutateRows() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MutateRows(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::MutateRowsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MutateRows(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::MutateRowsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -391,11 +392,11 @@ class Bigtable GRPC_FINAL {
     WithGenericMethod_CheckAndMutateRow() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_CheckAndMutateRow() GRPC_OVERRIDE {
+    ~WithGenericMethod_CheckAndMutateRow() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CheckAndMutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest* request, ::google::bigtable::v2::CheckAndMutateRowResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CheckAndMutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest* request, ::google::bigtable::v2::CheckAndMutateRowResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -408,15 +409,138 @@ class Bigtable GRPC_FINAL {
     WithGenericMethod_ReadModifyWriteRow() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_ReadModifyWriteRow() GRPC_OVERRIDE {
+    ~WithGenericMethod_ReadModifyWriteRow() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ReadModifyWriteRow(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest* request, ::google::bigtable::v2::ReadModifyWriteRowResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ReadModifyWriteRow(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest* request, ::google::bigtable::v2::ReadModifyWriteRowResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_MutateRow : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_MutateRow() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::v2::MutateRowRequest, ::google::bigtable::v2::MutateRowResponse>(std::bind(&WithStreamedUnaryMethod_MutateRow<BaseClass>::StreamedMutateRow, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_MutateRow() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status MutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowRequest* request, ::google::bigtable::v2::MutateRowResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedMutateRow(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::v2::MutateRowRequest,::google::bigtable::v2::MutateRowResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CheckAndMutateRow : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CheckAndMutateRow() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::v2::CheckAndMutateRowRequest, ::google::bigtable::v2::CheckAndMutateRowResponse>(std::bind(&WithStreamedUnaryMethod_CheckAndMutateRow<BaseClass>::StreamedCheckAndMutateRow, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CheckAndMutateRow() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CheckAndMutateRow(::grpc::ServerContext* context, const ::google::bigtable::v2::CheckAndMutateRowRequest* request, ::google::bigtable::v2::CheckAndMutateRowResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCheckAndMutateRow(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::v2::CheckAndMutateRowRequest,::google::bigtable::v2::CheckAndMutateRowResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ReadModifyWriteRow : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ReadModifyWriteRow() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::v2::ReadModifyWriteRowRequest, ::google::bigtable::v2::ReadModifyWriteRowResponse>(std::bind(&WithStreamedUnaryMethod_ReadModifyWriteRow<BaseClass>::StreamedReadModifyWriteRow, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ReadModifyWriteRow() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ReadModifyWriteRow(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadModifyWriteRowRequest* request, ::google::bigtable::v2::ReadModifyWriteRowResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedReadModifyWriteRow(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::v2::ReadModifyWriteRowRequest,::google::bigtable::v2::ReadModifyWriteRowResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_MutateRow<WithStreamedUnaryMethod_CheckAndMutateRow<WithStreamedUnaryMethod_ReadModifyWriteRow<Service > > > StreamedUnaryService;
+  template <class BaseClass>
+  class WithSplitStreamingMethod_ReadRows : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithSplitStreamingMethod_ReadRows() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::SplitServerStreamingHandler< ::google::bigtable::v2::ReadRowsRequest, ::google::bigtable::v2::ReadRowsResponse>(std::bind(&WithSplitStreamingMethod_ReadRows<BaseClass>::StreamedReadRows, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithSplitStreamingMethod_ReadRows() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ReadRows(::grpc::ServerContext* context, const ::google::bigtable::v2::ReadRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::ReadRowsResponse>* writer) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with split streamed
+    virtual ::grpc::Status StreamedReadRows(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::google::bigtable::v2::ReadRowsRequest,::google::bigtable::v2::ReadRowsResponse>* server_split_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithSplitStreamingMethod_SampleRowKeys : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithSplitStreamingMethod_SampleRowKeys() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::SplitServerStreamingHandler< ::google::bigtable::v2::SampleRowKeysRequest, ::google::bigtable::v2::SampleRowKeysResponse>(std::bind(&WithSplitStreamingMethod_SampleRowKeys<BaseClass>::StreamedSampleRowKeys, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithSplitStreamingMethod_SampleRowKeys() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SampleRowKeys(::grpc::ServerContext* context, const ::google::bigtable::v2::SampleRowKeysRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::SampleRowKeysResponse>* writer) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with split streamed
+    virtual ::grpc::Status StreamedSampleRowKeys(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::google::bigtable::v2::SampleRowKeysRequest,::google::bigtable::v2::SampleRowKeysResponse>* server_split_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithSplitStreamingMethod_MutateRows : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithSplitStreamingMethod_MutateRows() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::SplitServerStreamingHandler< ::google::bigtable::v2::MutateRowsRequest, ::google::bigtable::v2::MutateRowsResponse>(std::bind(&WithSplitStreamingMethod_MutateRows<BaseClass>::StreamedMutateRows, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithSplitStreamingMethod_MutateRows() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status MutateRows(::grpc::ServerContext* context, const ::google::bigtable::v2::MutateRowsRequest* request, ::grpc::ServerWriter< ::google::bigtable::v2::MutateRowsResponse>* writer) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with split streamed
+    virtual ::grpc::Status StreamedMutateRows(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::google::bigtable::v2::MutateRowsRequest,::google::bigtable::v2::MutateRowsResponse>* server_split_streamer) = 0;
+  };
+  typedef WithSplitStreamingMethod_ReadRows<WithSplitStreamingMethod_SampleRowKeys<WithSplitStreamingMethod_MutateRows<Service > > > SplitStreamedService;
+  typedef WithSplitStreamingMethod_ReadRows<WithSplitStreamingMethod_SampleRowKeys<WithStreamedUnaryMethod_MutateRow<WithSplitStreamingMethod_MutateRows<WithStreamedUnaryMethod_CheckAndMutateRow<WithStreamedUnaryMethod_ReadModifyWriteRow<Service > > > > > > StreamedService;
 };
 
 }  // namespace v2

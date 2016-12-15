@@ -52,14 +52,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
   Vertex_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Vertex_descriptor_,
-      Vertex::default_instance_,
+      Vertex::internal_default_instance(),
       Vertex_offsets_,
       -1,
       -1,
       -1,
       sizeof(Vertex),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vertex, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vertex, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Vertex, _internal_metadata_));
   BoundingPoly_descriptor_ = file->message_type(1);
   static const int BoundingPoly_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BoundingPoly, vertices_),
@@ -67,14 +66,13 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
   BoundingPoly_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       BoundingPoly_descriptor_,
-      BoundingPoly::default_instance_,
+      BoundingPoly::internal_default_instance(),
       BoundingPoly_offsets_,
       -1,
       -1,
       -1,
       sizeof(BoundingPoly),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BoundingPoly, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BoundingPoly, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BoundingPoly, _internal_metadata_));
   Position_descriptor_ = file->message_type(2);
   static const int Position_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, x_),
@@ -84,20 +82,19 @@ void protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
   Position_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Position_descriptor_,
-      Position::default_instance_,
+      Position::internal_default_instance(),
       Position_offsets_,
       -1,
       -1,
       -1,
       sizeof(Position),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto);
 }
@@ -106,56 +103,80 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Vertex_descriptor_, &Vertex::default_instance());
+      Vertex_descriptor_, Vertex::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      BoundingPoly_descriptor_, &BoundingPoly::default_instance());
+      BoundingPoly_descriptor_, BoundingPoly::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Position_descriptor_, &Position::default_instance());
+      Position_descriptor_, Position::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
-  delete Vertex::default_instance_;
+  Vertex_default_instance_.Shutdown();
   delete Vertex_reflection_;
-  delete BoundingPoly::default_instance_;
+  BoundingPoly_default_instance_.Shutdown();
   delete BoundingPoly_reflection_;
-  delete Position::default_instance_;
+  Position_default_instance_.Shutdown();
   delete Position_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  Vertex_default_instance_.DefaultConstruct();
+  BoundingPoly_default_instance_.DefaultConstruct();
+  Position_default_instance_.DefaultConstruct();
+  Vertex_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BoundingPoly_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Position_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n%google/cloud/vision/v1/geometry.proto\022"
     "\026google.cloud.vision.v1\"\036\n\006Vertex\022\t\n\001x\030\001"
     " \001(\005\022\t\n\001y\030\002 \001(\005\"@\n\014BoundingPoly\0220\n\010verti"
     "ces\030\001 \003(\0132\036.google.cloud.vision.v1.Verte"
     "x\"+\n\010Position\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z"
-    "\030\003 \001(\002B0\n\032com.google.cloud.vision.v1B\rGe"
-    "ometryProtoP\001\370\001\001b\006proto3", 264);
+    "\030\003 \001(\002Bn\n\032com.google.cloud.vision.v1B\rGe"
+    "ometryProtoP\001Z<google.golang.org/genprot"
+    "o/googleapis/cloud/vision/v1;vision\370\001\001b\006"
+    "proto3", 326);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/vision/v1/geometry.proto", &protobuf_RegisterTypes);
-  Vertex::default_instance_ = new Vertex();
-  BoundingPoly::default_instance_ = new BoundingPoly();
-  Position::default_instance_ = new Position();
-  Vertex::default_instance_->InitAsDefaultInstance();
-  BoundingPoly::default_instance_->InitAsDefaultInstance();
-  Position::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto() {
     protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -166,35 +187,36 @@ const int Vertex::kYFieldNumber;
 
 Vertex::Vertex()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.Vertex)
 }
-
 Vertex::Vertex(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.Vertex)
 }
 
 void Vertex::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Vertex::Vertex(const Vertex& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.Vertex)
 }
 
 void Vertex::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&x_, 0, reinterpret_cast<char*>(&y_) -
+    reinterpret_cast<char*>(&x_) + sizeof(y_));
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
 }
 
 Vertex::~Vertex() {
@@ -203,12 +225,11 @@ Vertex::~Vertex() {
 }
 
 void Vertex::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void Vertex::ArenaDtor(void* object) {
@@ -228,11 +249,11 @@ const ::google::protobuf::Descriptor* Vertex::descriptor() {
 }
 
 const Vertex& Vertex::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+  return *internal_default_instance();
 }
 
-Vertex* Vertex::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Vertex> Vertex_default_instance_;
 
 Vertex* Vertex::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Vertex>(arena);
@@ -252,7 +273,7 @@ void Vertex::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -276,10 +297,10 @@ bool Vertex::MergePartialFromCodedStream(
       // optional int32 x = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &x_)));
-
         } else {
           goto handle_unusual;
         }
@@ -291,10 +312,10 @@ bool Vertex::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_y:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &y_)));
-
         } else {
           goto handle_unusual;
         }
@@ -341,6 +362,7 @@ void Vertex::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Vertex::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.Vertex)
   // optional int32 x = 1;
   if (this->x() != 0) {
@@ -356,9 +378,9 @@ void Vertex::SerializeWithCachedSizes(
   return target;
 }
 
-int Vertex::ByteSize() const {
+size_t Vertex::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.Vertex)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 x = 1;
   if (this->x() != 0) {
@@ -374,18 +396,17 @@ int Vertex::ByteSize() const {
         this->y());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Vertex::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.Vertex)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Vertex* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Vertex* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Vertex>(
           &from);
   if (source == NULL) {
@@ -393,15 +414,21 @@ void Vertex::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.Vertex)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Vertex::MergeFrom(const Vertex& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.Vertex)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Vertex::UnsafeMergeFrom(const Vertex& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.x() != 0) {
     set_x(from.x());
   }
@@ -421,7 +448,7 @@ void Vertex::CopyFrom(const Vertex& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.Vertex)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Vertex::IsInitialized() const {
@@ -435,7 +462,7 @@ void Vertex::Swap(Vertex* other) {
     InternalSwap(other);
   } else {
     Vertex temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -467,11 +494,11 @@ void Vertex::InternalSwap(Vertex* other) {
 void Vertex::clear_x() {
   x_ = 0;
 }
- ::google::protobuf::int32 Vertex::x() const {
+::google::protobuf::int32 Vertex::x() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Vertex.x)
   return x_;
 }
- void Vertex::set_x(::google::protobuf::int32 value) {
+void Vertex::set_x(::google::protobuf::int32 value) {
   
   x_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Vertex.x)
@@ -481,16 +508,19 @@ void Vertex::clear_x() {
 void Vertex::clear_y() {
   y_ = 0;
 }
- ::google::protobuf::int32 Vertex::y() const {
+::google::protobuf::int32 Vertex::y() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Vertex.y)
   return y_;
 }
- void Vertex::set_y(::google::protobuf::int32 value) {
+void Vertex::set_y(::google::protobuf::int32 value) {
   
   y_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Vertex.y)
 }
 
+inline const Vertex* Vertex::internal_default_instance() {
+  return &Vertex_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -501,33 +531,34 @@ const int BoundingPoly::kVerticesFieldNumber;
 
 BoundingPoly::BoundingPoly()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.BoundingPoly)
 }
-
 BoundingPoly::BoundingPoly(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   vertices_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.BoundingPoly)
 }
 
 void BoundingPoly::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 BoundingPoly::BoundingPoly(const BoundingPoly& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.BoundingPoly)
 }
 
 void BoundingPoly::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -537,12 +568,11 @@ BoundingPoly::~BoundingPoly() {
 }
 
 void BoundingPoly::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void BoundingPoly::ArenaDtor(void* object) {
@@ -562,11 +592,11 @@ const ::google::protobuf::Descriptor* BoundingPoly::descriptor() {
 }
 
 const BoundingPoly& BoundingPoly::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+  return *internal_default_instance();
 }
 
-BoundingPoly* BoundingPoly::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<BoundingPoly> BoundingPoly_default_instance_;
 
 BoundingPoly* BoundingPoly::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<BoundingPoly>(arena);
@@ -638,6 +668,7 @@ void BoundingPoly::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* BoundingPoly::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.BoundingPoly)
   // repeated .google.cloud.vision.v1.Vertex vertices = 1;
   for (unsigned int i = 0, n = this->vertices_size(); i < n; i++) {
@@ -650,30 +681,32 @@ void BoundingPoly::SerializeWithCachedSizes(
   return target;
 }
 
-int BoundingPoly::ByteSize() const {
+size_t BoundingPoly::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.BoundingPoly)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.cloud.vision.v1.Vertex vertices = 1;
-  total_size += 1 * this->vertices_size();
-  for (int i = 0; i < this->vertices_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->vertices(i));
+  {
+    unsigned int count = this->vertices_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->vertices(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void BoundingPoly::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.BoundingPoly)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const BoundingPoly* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const BoundingPoly* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BoundingPoly>(
           &from);
   if (source == NULL) {
@@ -681,15 +714,21 @@ void BoundingPoly::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.BoundingPoly)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BoundingPoly::MergeFrom(const BoundingPoly& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.BoundingPoly)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void BoundingPoly::UnsafeMergeFrom(const BoundingPoly& from) {
+  GOOGLE_DCHECK(&from != this);
   vertices_.MergeFrom(from.vertices_);
 }
 
@@ -704,7 +743,7 @@ void BoundingPoly::CopyFrom(const BoundingPoly& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.BoundingPoly)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BoundingPoly::IsInitialized() const {
@@ -718,7 +757,7 @@ void BoundingPoly::Swap(BoundingPoly* other) {
     InternalSwap(other);
   } else {
     BoundingPoly temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -775,6 +814,9 @@ BoundingPoly::vertices() const {
   return vertices_;
 }
 
+inline const BoundingPoly* BoundingPoly::internal_default_instance() {
+  return &BoundingPoly_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -787,36 +829,36 @@ const int Position::kZFieldNumber;
 
 Position::Position()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.vision.v1.Position)
 }
-
 Position::Position(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.cloud.vision.v1.Position)
 }
 
 void Position::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Position::Position(const Position& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.vision.v1.Position)
 }
 
 void Position::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&x_, 0, reinterpret_cast<char*>(&z_) -
+    reinterpret_cast<char*>(&x_) + sizeof(z_));
   _cached_size_ = 0;
-  x_ = 0;
-  y_ = 0;
-  z_ = 0;
 }
 
 Position::~Position() {
@@ -825,12 +867,11 @@ Position::~Position() {
 }
 
 void Position::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void Position::ArenaDtor(void* object) {
@@ -850,11 +891,11 @@ const ::google::protobuf::Descriptor* Position::descriptor() {
 }
 
 const Position& Position::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fvision_2fv1_2fgeometry_2eproto();
+  return *internal_default_instance();
 }
 
-Position* Position::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Position> Position_default_instance_;
 
 Position* Position::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Position>(arena);
@@ -874,7 +915,7 @@ void Position::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -898,10 +939,10 @@ bool Position::MergePartialFromCodedStream(
       // optional float x = 1;
       case 1: {
         if (tag == 13) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &x_)));
-
         } else {
           goto handle_unusual;
         }
@@ -913,10 +954,10 @@ bool Position::MergePartialFromCodedStream(
       case 2: {
         if (tag == 21) {
          parse_y:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &y_)));
-
         } else {
           goto handle_unusual;
         }
@@ -928,10 +969,10 @@ bool Position::MergePartialFromCodedStream(
       case 3: {
         if (tag == 29) {
          parse_z:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &z_)));
-
         } else {
           goto handle_unusual;
         }
@@ -983,6 +1024,7 @@ void Position::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Position::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.vision.v1.Position)
   // optional float x = 1;
   if (this->x() != 0) {
@@ -1003,9 +1045,9 @@ void Position::SerializeWithCachedSizes(
   return target;
 }
 
-int Position::ByteSize() const {
+size_t Position::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.vision.v1.Position)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional float x = 1;
   if (this->x() != 0) {
@@ -1022,18 +1064,17 @@ int Position::ByteSize() const {
     total_size += 1 + 4;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Position::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.vision.v1.Position)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Position* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Position* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Position>(
           &from);
   if (source == NULL) {
@@ -1041,15 +1082,21 @@ void Position::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.vision.v1.Position)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Position::MergeFrom(const Position& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.vision.v1.Position)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Position::UnsafeMergeFrom(const Position& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.x() != 0) {
     set_x(from.x());
   }
@@ -1072,7 +1119,7 @@ void Position::CopyFrom(const Position& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.vision.v1.Position)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Position::IsInitialized() const {
@@ -1086,7 +1133,7 @@ void Position::Swap(Position* other) {
     InternalSwap(other);
   } else {
     Position temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1119,11 +1166,11 @@ void Position::InternalSwap(Position* other) {
 void Position::clear_x() {
   x_ = 0;
 }
- float Position::x() const {
+float Position::x() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Position.x)
   return x_;
 }
- void Position::set_x(float value) {
+void Position::set_x(float value) {
   
   x_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Position.x)
@@ -1133,11 +1180,11 @@ void Position::clear_x() {
 void Position::clear_y() {
   y_ = 0;
 }
- float Position::y() const {
+float Position::y() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Position.y)
   return y_;
 }
- void Position::set_y(float value) {
+void Position::set_y(float value) {
   
   y_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Position.y)
@@ -1147,16 +1194,19 @@ void Position::clear_y() {
 void Position::clear_z() {
   z_ = 0;
 }
- float Position::z() const {
+float Position::z() const {
   // @@protoc_insertion_point(field_get:google.cloud.vision.v1.Position.z)
   return z_;
 }
- void Position::set_z(float value) {
+void Position::set_z(float value) {
   
   z_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.vision.v1.Position.z)
 }
 
+inline const Position* Position::internal_default_instance() {
+  return &Position_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

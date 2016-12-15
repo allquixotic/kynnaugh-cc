@@ -38,7 +38,7 @@ void protobuf_AssignDesc_google_2fapi_2fannotations_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fannotations_2eproto);
 }
@@ -53,31 +53,47 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void protobuf_ShutdownFile_google_2fapi_2fannotations_2eproto() {
 }
 
-void protobuf_AddDesc_google_2fapi_2fannotations_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fannotations_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fhttp_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fdescriptor_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fhttp_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fdescriptor_2eproto();
+  ::google::protobuf::internal::ExtensionSet::RegisterMessageExtension(
+    ::google::protobuf::MethodOptions::internal_default_instance(),
+    72295728, 11, false, false,
+    ::google::api::HttpRule::internal_default_instance());
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fannotations_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fannotations_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\034google/api/annotations.proto\022\ngoogle.a"
     "pi\032\025google/api/http.proto\032 google/protob"
     "uf/descriptor.proto:E\n\004http\022\036.google.pro"
     "tobuf.MethodOptions\030\260\312\274\" \001(\0132\024.google.ap"
-    "i.HttpRuleB+\n\016com.google.apiB\020Annotation"
-    "sProtoP\001\242\002\004GAPIb\006proto3", 223);
+    "i.HttpRuleBn\n\016com.google.apiB\020Annotation"
+    "sProtoP\001ZAgoogle.golang.org/genproto/goo"
+    "gleapis/api/annotations;annotations\242\002\004GA"
+    "PIb\006proto3", 290);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/annotations.proto", &protobuf_RegisterTypes);
-  ::google::protobuf::internal::ExtensionSet::RegisterMessageExtension(
-    &::google::protobuf::MethodOptions::default_instance(),
-    72295728, 11, false, false,
-    &::google::api::HttpRule::default_instance());
+  ::google::api::protobuf_AddDesc_google_2fapi_2fhttp_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fdescriptor_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fannotations_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fannotations_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fannotations_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fannotations_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fannotations_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fannotations_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fannotations_2eproto() {
@@ -86,7 +102,7 @@ struct StaticDescriptorInitializer_google_2fapi_2fannotations_2eproto {
 } static_descriptor_initializer_google_2fapi_2fannotations_2eproto_;
 ::google::protobuf::internal::ExtensionIdentifier< ::google::protobuf::MethodOptions,
     ::google::protobuf::internal::MessageTypeTraits< ::google::api::HttpRule >, 11, false >
-  http(kHttpFieldNumber, ::google::api::HttpRule::default_instance());
+  http(kHttpFieldNumber, *::google::api::HttpRule::internal_default_instance());
 
 // @@protoc_insertion_point(namespace_scope)
 

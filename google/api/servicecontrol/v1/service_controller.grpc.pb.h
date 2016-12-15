@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -47,7 +48,7 @@ namespace v1 {
 //
 // Lets clients check and report operations against
 // a [managed service][google.api.servicemanagement.v1.ManagedService].
-class ServiceController GRPC_FINAL {
+class ServiceController final {
  public:
   class StubInterface {
    public:
@@ -87,22 +88,22 @@ class ServiceController GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::api::servicecontrol::v1::CheckResponse>* AsyncCheckRaw(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::CheckRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::api::servicecontrol::v1::ReportResponse>* AsyncReportRaw(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::ReportRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status Check(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::CheckRequest& request, ::google::api::servicecontrol::v1::CheckResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status Check(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::CheckRequest& request, ::google::api::servicecontrol::v1::CheckResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::CheckResponse>> AsyncCheck(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::CheckRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::CheckResponse>>(AsyncCheckRaw(context, request, cq));
     }
-    ::grpc::Status Report(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::ReportRequest& request, ::google::api::servicecontrol::v1::ReportResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status Report(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::ReportRequest& request, ::google::api::servicecontrol::v1::ReportResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::ReportResponse>> AsyncReport(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::ReportRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::ReportResponse>>(AsyncReportRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::CheckResponse>* AsyncCheckRaw(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::CheckRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::ReportResponse>* AsyncReportRaw(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::ReportRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::CheckResponse>* AsyncCheckRaw(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::CheckRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::api::servicecontrol::v1::ReportResponse>* AsyncReportRaw(::grpc::ClientContext* context, const ::google::api::servicecontrol::v1::ReportRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_Check_;
     const ::grpc::RpcMethod rpcmethod_Report_;
   };
@@ -146,11 +147,11 @@ class ServiceController GRPC_FINAL {
     WithAsyncMethod_Check() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_Check() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Check() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Check(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::CheckRequest* request, ::google::api::servicecontrol::v1::CheckResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Check(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::CheckRequest* request, ::google::api::servicecontrol::v1::CheckResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -166,11 +167,11 @@ class ServiceController GRPC_FINAL {
     WithAsyncMethod_Report() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_Report() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Report() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Report(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::ReportRequest* request, ::google::api::servicecontrol::v1::ReportResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Report(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::ReportRequest* request, ::google::api::servicecontrol::v1::ReportResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -187,11 +188,11 @@ class ServiceController GRPC_FINAL {
     WithGenericMethod_Check() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_Check() GRPC_OVERRIDE {
+    ~WithGenericMethod_Check() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Check(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::CheckRequest* request, ::google::api::servicecontrol::v1::CheckResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Check(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::CheckRequest* request, ::google::api::servicecontrol::v1::CheckResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -204,15 +205,58 @@ class ServiceController GRPC_FINAL {
     WithGenericMethod_Report() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_Report() GRPC_OVERRIDE {
+    ~WithGenericMethod_Report() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Report(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::ReportRequest* request, ::google::api::servicecontrol::v1::ReportResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Report(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::ReportRequest* request, ::google::api::servicecontrol::v1::ReportResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Check : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Check() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicecontrol::v1::CheckRequest, ::google::api::servicecontrol::v1::CheckResponse>(std::bind(&WithStreamedUnaryMethod_Check<BaseClass>::StreamedCheck, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Check() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Check(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::CheckRequest* request, ::google::api::servicecontrol::v1::CheckResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCheck(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicecontrol::v1::CheckRequest,::google::api::servicecontrol::v1::CheckResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Report : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Report() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::api::servicecontrol::v1::ReportRequest, ::google::api::servicecontrol::v1::ReportResponse>(std::bind(&WithStreamedUnaryMethod_Report<BaseClass>::StreamedReport, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Report() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Report(::grpc::ServerContext* context, const ::google::api::servicecontrol::v1::ReportRequest* request, ::google::api::servicecontrol::v1::ReportResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedReport(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::api::servicecontrol::v1::ReportRequest,::google::api::servicecontrol::v1::ReportResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_Check<WithStreamedUnaryMethod_Report<Service > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_Check<WithStreamedUnaryMethod_Report<Service > > StreamedService;
 };
 
 }  // namespace v1

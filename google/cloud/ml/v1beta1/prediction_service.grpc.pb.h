@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -49,7 +50,7 @@ namespace v1beta1 {
 //
 // The Prediction API, which serves predictions for models managed by
 // ModelService.
-class OnlinePredictionService GRPC_FINAL {
+class OnlinePredictionService final {
  public:
   class StubInterface {
    public:
@@ -108,17 +109,17 @@ class OnlinePredictionService GRPC_FINAL {
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::api::HttpBody>* AsyncPredictRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::PredictRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status Predict(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::PredictRequest& request, ::google::api::HttpBody* response) GRPC_OVERRIDE;
+    ::grpc::Status Predict(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::PredictRequest& request, ::google::api::HttpBody* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::HttpBody>> AsyncPredict(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::PredictRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::api::HttpBody>>(AsyncPredictRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::api::HttpBody>* AsyncPredictRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::PredictRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::api::HttpBody>* AsyncPredictRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::PredictRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_Predict_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -184,11 +185,11 @@ class OnlinePredictionService GRPC_FINAL {
     WithAsyncMethod_Predict() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_Predict() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Predict() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Predict(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::PredictRequest* request, ::google::api::HttpBody* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Predict(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::PredictRequest* request, ::google::api::HttpBody* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -205,15 +206,38 @@ class OnlinePredictionService GRPC_FINAL {
     WithGenericMethod_Predict() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_Predict() GRPC_OVERRIDE {
+    ~WithGenericMethod_Predict() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Predict(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::PredictRequest* request, ::google::api::HttpBody* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Predict(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::PredictRequest* request, ::google::api::HttpBody* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Predict : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Predict() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::PredictRequest, ::google::api::HttpBody>(std::bind(&WithStreamedUnaryMethod_Predict<BaseClass>::StreamedPredict, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Predict() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Predict(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::PredictRequest* request, ::google::api::HttpBody* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedPredict(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::PredictRequest,::google::api::HttpBody>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_Predict<Service > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_Predict<Service > StreamedService;
 };
 
 }  // namespace v1beta1

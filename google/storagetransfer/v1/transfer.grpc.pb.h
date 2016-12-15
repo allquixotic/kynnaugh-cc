@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace v1 {
 
 // Transfers data between between Google Cloud Storage buckets or from a data
 // source external to Google to a Cloud Storage bucket.
-class StorageTransferService GRPC_FINAL {
+class StorageTransferService final {
  public:
   class StubInterface {
    public:
@@ -102,47 +103,47 @@ class StorageTransferService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncPauseTransferOperationRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncResumeTransferOperationRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status GetGoogleServiceAccount(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest& request, ::google::storagetransfer::v1::GoogleServiceAccount* response) GRPC_OVERRIDE;
+    ::grpc::Status GetGoogleServiceAccount(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest& request, ::google::storagetransfer::v1::GoogleServiceAccount* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::GoogleServiceAccount>> AsyncGetGoogleServiceAccount(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::GoogleServiceAccount>>(AsyncGetGoogleServiceAccountRaw(context, request, cq));
     }
-    ::grpc::Status CreateTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest& request, ::google::storagetransfer::v1::TransferJob* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest& request, ::google::storagetransfer::v1::TransferJob* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>> AsyncCreateTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>>(AsyncCreateTransferJobRaw(context, request, cq));
     }
-    ::grpc::Status UpdateTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest& request, ::google::storagetransfer::v1::TransferJob* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest& request, ::google::storagetransfer::v1::TransferJob* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>> AsyncUpdateTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>>(AsyncUpdateTransferJobRaw(context, request, cq));
     }
-    ::grpc::Status GetTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest& request, ::google::storagetransfer::v1::TransferJob* response) GRPC_OVERRIDE;
+    ::grpc::Status GetTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest& request, ::google::storagetransfer::v1::TransferJob* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>> AsyncGetTransferJob(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>>(AsyncGetTransferJobRaw(context, request, cq));
     }
-    ::grpc::Status ListTransferJobs(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest& request, ::google::storagetransfer::v1::ListTransferJobsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListTransferJobs(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest& request, ::google::storagetransfer::v1::ListTransferJobsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::ListTransferJobsResponse>> AsyncListTransferJobs(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::ListTransferJobsResponse>>(AsyncListTransferJobsRaw(context, request, cq));
     }
-    ::grpc::Status PauseTransferOperation(::grpc::ClientContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status PauseTransferOperation(::grpc::ClientContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncPauseTransferOperation(::grpc::ClientContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncPauseTransferOperationRaw(context, request, cq));
     }
-    ::grpc::Status ResumeTransferOperation(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status ResumeTransferOperation(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncResumeTransferOperation(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncResumeTransferOperationRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::GoogleServiceAccount>* AsyncGetGoogleServiceAccountRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>* AsyncCreateTransferJobRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>* AsyncUpdateTransferJobRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>* AsyncGetTransferJobRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::ListTransferJobsResponse>* AsyncListTransferJobsRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncPauseTransferOperationRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncResumeTransferOperationRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::GoogleServiceAccount>* AsyncGetGoogleServiceAccountRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>* AsyncCreateTransferJobRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>* AsyncUpdateTransferJobRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::TransferJob>* AsyncGetTransferJobRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::storagetransfer::v1::ListTransferJobsResponse>* AsyncListTransferJobsRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncPauseTransferOperationRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncResumeTransferOperationRaw(::grpc::ClientContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_GetGoogleServiceAccount_;
     const ::grpc::RpcMethod rpcmethod_CreateTransferJob_;
     const ::grpc::RpcMethod rpcmethod_UpdateTransferJob_;
@@ -189,11 +190,11 @@ class StorageTransferService GRPC_FINAL {
     WithAsyncMethod_GetGoogleServiceAccount() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_GetGoogleServiceAccount() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetGoogleServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGoogleServiceAccount(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest* request, ::google::storagetransfer::v1::GoogleServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetGoogleServiceAccount(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest* request, ::google::storagetransfer::v1::GoogleServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -209,11 +210,11 @@ class StorageTransferService GRPC_FINAL {
     WithAsyncMethod_CreateTransferJob() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_CreateTransferJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateTransferJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -229,11 +230,11 @@ class StorageTransferService GRPC_FINAL {
     WithAsyncMethod_UpdateTransferJob() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_UpdateTransferJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateTransferJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -249,11 +250,11 @@ class StorageTransferService GRPC_FINAL {
     WithAsyncMethod_GetTransferJob() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_GetTransferJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetTransferJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -269,11 +270,11 @@ class StorageTransferService GRPC_FINAL {
     WithAsyncMethod_ListTransferJobs() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_ListTransferJobs() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListTransferJobs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTransferJobs(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest* request, ::google::storagetransfer::v1::ListTransferJobsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTransferJobs(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest* request, ::google::storagetransfer::v1::ListTransferJobsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -289,11 +290,11 @@ class StorageTransferService GRPC_FINAL {
     WithAsyncMethod_PauseTransferOperation() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_PauseTransferOperation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_PauseTransferOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PauseTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status PauseTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -309,11 +310,11 @@ class StorageTransferService GRPC_FINAL {
     WithAsyncMethod_ResumeTransferOperation() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_ResumeTransferOperation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ResumeTransferOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ResumeTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ResumeTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -330,11 +331,11 @@ class StorageTransferService GRPC_FINAL {
     WithGenericMethod_GetGoogleServiceAccount() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_GetGoogleServiceAccount() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetGoogleServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetGoogleServiceAccount(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest* request, ::google::storagetransfer::v1::GoogleServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetGoogleServiceAccount(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest* request, ::google::storagetransfer::v1::GoogleServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -347,11 +348,11 @@ class StorageTransferService GRPC_FINAL {
     WithGenericMethod_CreateTransferJob() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_CreateTransferJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateTransferJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -364,11 +365,11 @@ class StorageTransferService GRPC_FINAL {
     WithGenericMethod_UpdateTransferJob() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_UpdateTransferJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateTransferJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -381,11 +382,11 @@ class StorageTransferService GRPC_FINAL {
     WithGenericMethod_GetTransferJob() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_GetTransferJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetTransferJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -398,11 +399,11 @@ class StorageTransferService GRPC_FINAL {
     WithGenericMethod_ListTransferJobs() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_ListTransferJobs() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListTransferJobs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTransferJobs(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest* request, ::google::storagetransfer::v1::ListTransferJobsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTransferJobs(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest* request, ::google::storagetransfer::v1::ListTransferJobsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -415,11 +416,11 @@ class StorageTransferService GRPC_FINAL {
     WithGenericMethod_PauseTransferOperation() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_PauseTransferOperation() GRPC_OVERRIDE {
+    ~WithGenericMethod_PauseTransferOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PauseTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status PauseTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -432,15 +433,158 @@ class StorageTransferService GRPC_FINAL {
     WithGenericMethod_ResumeTransferOperation() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_ResumeTransferOperation() GRPC_OVERRIDE {
+    ~WithGenericMethod_ResumeTransferOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ResumeTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ResumeTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetGoogleServiceAccount : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetGoogleServiceAccount() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::storagetransfer::v1::GetGoogleServiceAccountRequest, ::google::storagetransfer::v1::GoogleServiceAccount>(std::bind(&WithStreamedUnaryMethod_GetGoogleServiceAccount<BaseClass>::StreamedGetGoogleServiceAccount, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetGoogleServiceAccount() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetGoogleServiceAccount(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetGoogleServiceAccountRequest* request, ::google::storagetransfer::v1::GoogleServiceAccount* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetGoogleServiceAccount(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::storagetransfer::v1::GetGoogleServiceAccountRequest,::google::storagetransfer::v1::GoogleServiceAccount>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateTransferJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateTransferJob() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::storagetransfer::v1::CreateTransferJobRequest, ::google::storagetransfer::v1::TransferJob>(std::bind(&WithStreamedUnaryMethod_CreateTransferJob<BaseClass>::StreamedCreateTransferJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateTransferJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::CreateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateTransferJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::storagetransfer::v1::CreateTransferJobRequest,::google::storagetransfer::v1::TransferJob>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateTransferJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateTransferJob() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::storagetransfer::v1::UpdateTransferJobRequest, ::google::storagetransfer::v1::TransferJob>(std::bind(&WithStreamedUnaryMethod_UpdateTransferJob<BaseClass>::StreamedUpdateTransferJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateTransferJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::UpdateTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateTransferJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::storagetransfer::v1::UpdateTransferJobRequest,::google::storagetransfer::v1::TransferJob>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetTransferJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetTransferJob() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::storagetransfer::v1::GetTransferJobRequest, ::google::storagetransfer::v1::TransferJob>(std::bind(&WithStreamedUnaryMethod_GetTransferJob<BaseClass>::StreamedGetTransferJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetTransferJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetTransferJob(::grpc::ServerContext* context, const ::google::storagetransfer::v1::GetTransferJobRequest* request, ::google::storagetransfer::v1::TransferJob* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetTransferJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::storagetransfer::v1::GetTransferJobRequest,::google::storagetransfer::v1::TransferJob>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListTransferJobs : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListTransferJobs() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::storagetransfer::v1::ListTransferJobsRequest, ::google::storagetransfer::v1::ListTransferJobsResponse>(std::bind(&WithStreamedUnaryMethod_ListTransferJobs<BaseClass>::StreamedListTransferJobs, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListTransferJobs() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListTransferJobs(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ListTransferJobsRequest* request, ::google::storagetransfer::v1::ListTransferJobsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListTransferJobs(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::storagetransfer::v1::ListTransferJobsRequest,::google::storagetransfer::v1::ListTransferJobsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_PauseTransferOperation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_PauseTransferOperation() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::storagetransfer::v1::PauseTransferOperationRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_PauseTransferOperation<BaseClass>::StreamedPauseTransferOperation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_PauseTransferOperation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status PauseTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::PauseTransferOperationRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedPauseTransferOperation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::storagetransfer::v1::PauseTransferOperationRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ResumeTransferOperation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ResumeTransferOperation() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::storagetransfer::v1::ResumeTransferOperationRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_ResumeTransferOperation<BaseClass>::StreamedResumeTransferOperation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ResumeTransferOperation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ResumeTransferOperation(::grpc::ServerContext* context, const ::google::storagetransfer::v1::ResumeTransferOperationRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedResumeTransferOperation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::storagetransfer::v1::ResumeTransferOperationRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_GetGoogleServiceAccount<WithStreamedUnaryMethod_CreateTransferJob<WithStreamedUnaryMethod_UpdateTransferJob<WithStreamedUnaryMethod_GetTransferJob<WithStreamedUnaryMethod_ListTransferJobs<WithStreamedUnaryMethod_PauseTransferOperation<WithStreamedUnaryMethod_ResumeTransferOperation<Service > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_GetGoogleServiceAccount<WithStreamedUnaryMethod_CreateTransferJob<WithStreamedUnaryMethod_UpdateTransferJob<WithStreamedUnaryMethod_GetTransferJob<WithStreamedUnaryMethod_ListTransferJobs<WithStreamedUnaryMethod_PauseTransferOperation<WithStreamedUnaryMethod_ResumeTransferOperation<Service > > > > > > > StreamedService;
 };
 
 }  // namespace v1

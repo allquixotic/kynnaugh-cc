@@ -45,20 +45,19 @@ void protobuf_AssignDesc_google_2ftype_2fdate_2eproto() {
   Date_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Date_descriptor_,
-      Date::default_instance_,
+      Date::internal_default_instance(),
       Date_offsets_,
       -1,
       -1,
       -1,
       sizeof(Date),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Date, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Date, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Date, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2ftype_2fdate_2eproto);
 }
@@ -67,41 +66,64 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Date_descriptor_, &Date::default_instance());
+      Date_descriptor_, Date::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2ftype_2fdate_2eproto() {
-  delete Date::default_instance_;
+  Date_default_instance_.Shutdown();
   delete Date_reflection_;
 }
 
-void protobuf_AddDesc_google_2ftype_2fdate_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2ftype_2fdate_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2ftype_2fdate_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  Date_default_instance_.DefaultConstruct();
+  Date_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2ftype_2fdate_2eproto_once_);
+void protobuf_InitDefaults_google_2ftype_2fdate_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2ftype_2fdate_2eproto_once_,
+                 &protobuf_InitDefaults_google_2ftype_2fdate_2eproto_impl);
+}
+void protobuf_AddDesc_google_2ftype_2fdate_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2ftype_2fdate_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\026google/type/date.proto\022\013google.type\"0\n"
     "\004Date\022\014\n\004year\030\001 \001(\005\022\r\n\005month\030\002 \001(\005\022\013\n\003da"
-    "y\030\003 \001(\005B$\n\017com.google.typeB\tDateProtoP\001\242"
-    "\002\003GTPb\006proto3", 133);
+    "y\030\003 \001(\005B]\n\017com.google.typeB\tDateProtoP\001Z"
+    "4google.golang.org/genproto/googleapis/t"
+    "ype/date;date\370\001\001\242\002\003GTPb\006proto3", 190);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/type/date.proto", &protobuf_RegisterTypes);
-  Date::default_instance_ = new Date();
-  Date::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2ftype_2fdate_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2ftype_2fdate_2eproto_once_);
+void protobuf_AddDesc_google_2ftype_2fdate_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2ftype_2fdate_2eproto_once_,
+                 &protobuf_AddDesc_google_2ftype_2fdate_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2ftype_2fdate_2eproto {
   StaticDescriptorInitializer_google_2ftype_2fdate_2eproto() {
     protobuf_AddDesc_google_2ftype_2fdate_2eproto();
   }
 } static_descriptor_initializer_google_2ftype_2fdate_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -113,28 +135,36 @@ const int Date::kDayFieldNumber;
 
 Date::Date()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftype_2fdate_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.type.Date)
 }
+Date::Date(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2ftype_2fdate_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:google.type.Date)
+}
 
 void Date::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Date::Date(const Date& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.type.Date)
 }
 
 void Date::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&year_, 0, reinterpret_cast<char*>(&day_) -
+    reinterpret_cast<char*>(&year_) + sizeof(day_));
   _cached_size_ = 0;
-  year_ = 0;
-  month_ = 0;
-  day_ = 0;
 }
 
 Date::~Date() {
@@ -143,10 +173,19 @@ Date::~Date() {
 }
 
 void Date::SharedDtor() {
-  if (this != default_instance_) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
+    return;
   }
+
 }
 
+void Date::ArenaDtor(void* object) {
+  Date* _this = reinterpret_cast< Date* >(object);
+  (void)_this;
+}
+void Date::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
 void Date::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = size;
@@ -158,18 +197,14 @@ const ::google::protobuf::Descriptor* Date::descriptor() {
 }
 
 const Date& Date::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftype_2fdate_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftype_2fdate_2eproto();
+  return *internal_default_instance();
 }
 
-Date* Date::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Date> Date_default_instance_;
 
 Date* Date::New(::google::protobuf::Arena* arena) const {
-  Date* n = new Date;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+  return ::google::protobuf::Arena::CreateMessage<Date>(arena);
 }
 
 void Date::Clear() {
@@ -186,7 +221,7 @@ void Date::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -210,10 +245,10 @@ bool Date::MergePartialFromCodedStream(
       // optional int32 year = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &year_)));
-
         } else {
           goto handle_unusual;
         }
@@ -225,10 +260,10 @@ bool Date::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_month:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &month_)));
-
         } else {
           goto handle_unusual;
         }
@@ -240,10 +275,10 @@ bool Date::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_day:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &day_)));
-
         } else {
           goto handle_unusual;
         }
@@ -295,6 +330,7 @@ void Date::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Date::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.type.Date)
   // optional int32 year = 1;
   if (this->year() != 0) {
@@ -315,9 +351,9 @@ void Date::SerializeWithCachedSizes(
   return target;
 }
 
-int Date::ByteSize() const {
+size_t Date::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.type.Date)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 year = 1;
   if (this->year() != 0) {
@@ -340,18 +376,17 @@ int Date::ByteSize() const {
         this->day());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Date::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.type.Date)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Date* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Date* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Date>(
           &from);
   if (source == NULL) {
@@ -359,15 +394,21 @@ void Date::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.type.Date)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Date::MergeFrom(const Date& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.type.Date)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Date::UnsafeMergeFrom(const Date& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.year() != 0) {
     set_year(from.year());
   }
@@ -390,7 +431,7 @@ void Date::CopyFrom(const Date& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.type.Date)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Date::IsInitialized() const {
@@ -400,6 +441,18 @@ bool Date::IsInitialized() const {
 
 void Date::Swap(Date* other) {
   if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    Date temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
+  }
+}
+void Date::UnsafeArenaSwap(Date* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
   InternalSwap(other);
 }
 void Date::InternalSwap(Date* other) {
@@ -425,11 +478,11 @@ void Date::InternalSwap(Date* other) {
 void Date::clear_year() {
   year_ = 0;
 }
- ::google::protobuf::int32 Date::year() const {
+::google::protobuf::int32 Date::year() const {
   // @@protoc_insertion_point(field_get:google.type.Date.year)
   return year_;
 }
- void Date::set_year(::google::protobuf::int32 value) {
+void Date::set_year(::google::protobuf::int32 value) {
   
   year_ = value;
   // @@protoc_insertion_point(field_set:google.type.Date.year)
@@ -439,11 +492,11 @@ void Date::clear_year() {
 void Date::clear_month() {
   month_ = 0;
 }
- ::google::protobuf::int32 Date::month() const {
+::google::protobuf::int32 Date::month() const {
   // @@protoc_insertion_point(field_get:google.type.Date.month)
   return month_;
 }
- void Date::set_month(::google::protobuf::int32 value) {
+void Date::set_month(::google::protobuf::int32 value) {
   
   month_ = value;
   // @@protoc_insertion_point(field_set:google.type.Date.month)
@@ -453,16 +506,19 @@ void Date::clear_month() {
 void Date::clear_day() {
   day_ = 0;
 }
- ::google::protobuf::int32 Date::day() const {
+::google::protobuf::int32 Date::day() const {
   // @@protoc_insertion_point(field_get:google.type.Date.day)
   return day_;
 }
- void Date::set_day(::google::protobuf::int32 value) {
+void Date::set_day(::google::protobuf::int32 value) {
   
   day_ = value;
   // @@protoc_insertion_point(field_set:google.type.Date.day)
 }
 
+inline const Date* Date::internal_default_instance() {
+  return &Date_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

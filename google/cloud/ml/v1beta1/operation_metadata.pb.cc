@@ -52,21 +52,20 @@ void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2e
   OperationMetadata_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       OperationMetadata_descriptor_,
-      OperationMetadata::default_instance_,
+      OperationMetadata::internal_default_instance(),
       OperationMetadata_offsets_,
       -1,
       -1,
       -1,
       sizeof(OperationMetadata),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, _internal_metadata_));
   OperationMetadata_OperationType_descriptor_ = OperationMetadata_descriptor_->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto);
 }
@@ -75,26 +74,36 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      OperationMetadata_descriptor_, &OperationMetadata::default_instance());
+      OperationMetadata_descriptor_, OperationMetadata::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto() {
-  delete OperationMetadata::default_instance_;
+  OperationMetadata_default_instance_.Shutdown();
   delete OperationMetadata_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::cloud::ml::v1beta1::protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fmodel_5fservice_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::cloud::ml::v1beta1::protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fmodel_5fservice_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  OperationMetadata_default_instance_.DefaultConstruct();
+  OperationMetadata_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n0google/cloud/ml/v1beta1/operation_meta"
     "data.proto\022\027google.cloud.ml.v1beta1\032\034goo"
@@ -112,21 +121,39 @@ void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2epro
     ".v1beta1.Version\"i\n\rOperationType\022\036\n\032OPE"
     "RATION_TYPE_UNSPECIFIED\020\000\022\022\n\016CREATE_VERS"
     "ION\020\001\022\022\n\016DELETE_VERSION\020\002\022\020\n\014DELETE_MODE"
-    "L\020\003B;\n\037com.google.cloud.ml.api.v1beta1B\026"
-    "OperationMetadataProtoP\001b\006proto3", 712);
+    "L\020\003Bv\n\037com.google.cloud.ml.api.v1beta1B\026"
+    "OperationMetadataProtoP\001Z9google.golang."
+    "org/genproto/googleapis/cloud/ml/v1beta1"
+    ";mlb\006proto3", 771);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/ml/v1beta1/operation_metadata.proto", &protobuf_RegisterTypes);
-  OperationMetadata::default_instance_ = new OperationMetadata();
-  OperationMetadata::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::cloud::ml::v1beta1::protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fmodel_5fservice_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto() {
     protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -135,7 +162,7 @@ const ::google::protobuf::EnumDescriptor* OperationMetadata_OperationType_descri
   return OperationMetadata_OperationType_descriptor_;
 }
 bool OperationMetadata_OperationType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -167,37 +194,39 @@ const int OperationMetadata::kVersionFieldNumber;
 
 OperationMetadata::OperationMetadata()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.OperationMetadata)
 }
 
 void OperationMetadata::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  create_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  start_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  end_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  version_ = const_cast< ::google::cloud::ml::v1beta1::Version*>(&::google::cloud::ml::v1beta1::Version::default_instance());
+  create_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  version_ = const_cast< ::google::cloud::ml::v1beta1::Version*>(
+      ::google::cloud::ml::v1beta1::Version::internal_default_instance());
 }
 
 OperationMetadata::OperationMetadata(const OperationMetadata& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.OperationMetadata)
 }
 
 void OperationMetadata::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
+  model_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   create_time_ = NULL;
   start_time_ = NULL;
   end_time_ = NULL;
-  is_cancellation_requested_ = false;
-  operation_type_ = 0;
-  model_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   version_ = NULL;
+  ::memset(&is_cancellation_requested_, 0, reinterpret_cast<char*>(&operation_type_) -
+    reinterpret_cast<char*>(&is_cancellation_requested_) + sizeof(operation_type_));
+  _cached_size_ = 0;
 }
 
 OperationMetadata::~OperationMetadata() {
@@ -207,7 +236,7 @@ OperationMetadata::~OperationMetadata() {
 
 void OperationMetadata::SharedDtor() {
   model_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &OperationMetadata_default_instance_.get()) {
     delete create_time_;
     delete start_time_;
     delete end_time_;
@@ -226,11 +255,11 @@ const ::google::protobuf::Descriptor* OperationMetadata::descriptor() {
 }
 
 const OperationMetadata& OperationMetadata::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
+  return *internal_default_instance();
 }
 
-OperationMetadata* OperationMetadata::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<OperationMetadata> OperationMetadata_default_instance_;
 
 OperationMetadata* OperationMetadata::New(::google::protobuf::Arena* arena) const {
   OperationMetadata* n = new OperationMetadata;
@@ -254,7 +283,7 @@ void OperationMetadata::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -326,10 +355,10 @@ bool OperationMetadata::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_is_cancellation_requested:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_cancellation_requested_)));
-
         } else {
           goto handle_unusual;
         }
@@ -457,6 +486,7 @@ void OperationMetadata::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* OperationMetadata::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.OperationMetadata)
   // optional .google.protobuf.Timestamp create_time = 1;
   if (this->has_create_time()) {
@@ -512,9 +542,9 @@ void OperationMetadata::SerializeWithCachedSizes(
   return target;
 }
 
-int OperationMetadata::ByteSize() const {
+size_t OperationMetadata::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.OperationMetadata)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Timestamp create_time = 1;
   if (this->has_create_time()) {
@@ -562,18 +592,17 @@ int OperationMetadata::ByteSize() const {
         *this->version_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void OperationMetadata::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.OperationMetadata)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const OperationMetadata* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const OperationMetadata* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const OperationMetadata>(
           &from);
   if (source == NULL) {
@@ -581,15 +610,21 @@ void OperationMetadata::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.OperationMetadata)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void OperationMetadata::MergeFrom(const OperationMetadata& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.OperationMetadata)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void OperationMetadata::UnsafeMergeFrom(const OperationMetadata& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_create_time()) {
     mutable_create_time()->::google::protobuf::Timestamp::MergeFrom(from.create_time());
   }
@@ -625,7 +660,7 @@ void OperationMetadata::CopyFrom(const OperationMetadata& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.OperationMetadata)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool OperationMetadata::IsInitialized() const {
@@ -662,7 +697,7 @@ void OperationMetadata::InternalSwap(OperationMetadata* other) {
 
 // optional .google.protobuf.Timestamp create_time = 1;
 bool OperationMetadata::has_create_time() const {
-  return !_is_default_instance_ && create_time_ != NULL;
+  return this != internal_default_instance() && create_time_ != NULL;
 }
 void OperationMetadata::clear_create_time() {
   if (GetArenaNoVirtual() == NULL && create_time_ != NULL) delete create_time_;
@@ -670,7 +705,8 @@ void OperationMetadata::clear_create_time() {
 }
 const ::google::protobuf::Timestamp& OperationMetadata::create_time() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.create_time)
-  return create_time_ != NULL ? *create_time_ : *default_instance_->create_time_;
+  return create_time_ != NULL ? *create_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* OperationMetadata::mutable_create_time() {
   
@@ -705,7 +741,7 @@ void OperationMetadata::set_allocated_create_time(::google::protobuf::Timestamp*
 
 // optional .google.protobuf.Timestamp start_time = 2;
 bool OperationMetadata::has_start_time() const {
-  return !_is_default_instance_ && start_time_ != NULL;
+  return this != internal_default_instance() && start_time_ != NULL;
 }
 void OperationMetadata::clear_start_time() {
   if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
@@ -713,7 +749,8 @@ void OperationMetadata::clear_start_time() {
 }
 const ::google::protobuf::Timestamp& OperationMetadata::start_time() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.start_time)
-  return start_time_ != NULL ? *start_time_ : *default_instance_->start_time_;
+  return start_time_ != NULL ? *start_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* OperationMetadata::mutable_start_time() {
   
@@ -748,7 +785,7 @@ void OperationMetadata::set_allocated_start_time(::google::protobuf::Timestamp* 
 
 // optional .google.protobuf.Timestamp end_time = 3;
 bool OperationMetadata::has_end_time() const {
-  return !_is_default_instance_ && end_time_ != NULL;
+  return this != internal_default_instance() && end_time_ != NULL;
 }
 void OperationMetadata::clear_end_time() {
   if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
@@ -756,7 +793,8 @@ void OperationMetadata::clear_end_time() {
 }
 const ::google::protobuf::Timestamp& OperationMetadata::end_time() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.end_time)
-  return end_time_ != NULL ? *end_time_ : *default_instance_->end_time_;
+  return end_time_ != NULL ? *end_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* OperationMetadata::mutable_end_time() {
   
@@ -793,11 +831,11 @@ void OperationMetadata::set_allocated_end_time(::google::protobuf::Timestamp* en
 void OperationMetadata::clear_is_cancellation_requested() {
   is_cancellation_requested_ = false;
 }
- bool OperationMetadata::is_cancellation_requested() const {
+bool OperationMetadata::is_cancellation_requested() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.is_cancellation_requested)
   return is_cancellation_requested_;
 }
- void OperationMetadata::set_is_cancellation_requested(bool value) {
+void OperationMetadata::set_is_cancellation_requested(bool value) {
   
   is_cancellation_requested_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.OperationMetadata.is_cancellation_requested)
@@ -807,11 +845,11 @@ void OperationMetadata::clear_is_cancellation_requested() {
 void OperationMetadata::clear_operation_type() {
   operation_type_ = 0;
 }
- ::google::cloud::ml::v1beta1::OperationMetadata_OperationType OperationMetadata::operation_type() const {
+::google::cloud::ml::v1beta1::OperationMetadata_OperationType OperationMetadata::operation_type() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.operation_type)
   return static_cast< ::google::cloud::ml::v1beta1::OperationMetadata_OperationType >(operation_type_);
 }
- void OperationMetadata::set_operation_type(::google::cloud::ml::v1beta1::OperationMetadata_OperationType value) {
+void OperationMetadata::set_operation_type(::google::cloud::ml::v1beta1::OperationMetadata_OperationType value) {
   
   operation_type_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.OperationMetadata.operation_type)
@@ -821,37 +859,37 @@ void OperationMetadata::clear_operation_type() {
 void OperationMetadata::clear_model_name() {
   model_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& OperationMetadata::model_name() const {
+const ::std::string& OperationMetadata::model_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.model_name)
   return model_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void OperationMetadata::set_model_name(const ::std::string& value) {
+void OperationMetadata::set_model_name(const ::std::string& value) {
   
   model_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.OperationMetadata.model_name)
 }
- void OperationMetadata::set_model_name(const char* value) {
+void OperationMetadata::set_model_name(const char* value) {
   
   model_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.ml.v1beta1.OperationMetadata.model_name)
 }
- void OperationMetadata::set_model_name(const char* value, size_t size) {
+void OperationMetadata::set_model_name(const char* value, size_t size) {
   
   model_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.ml.v1beta1.OperationMetadata.model_name)
 }
- ::std::string* OperationMetadata::mutable_model_name() {
+::std::string* OperationMetadata::mutable_model_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.ml.v1beta1.OperationMetadata.model_name)
   return model_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* OperationMetadata::release_model_name() {
+::std::string* OperationMetadata::release_model_name() {
   // @@protoc_insertion_point(field_release:google.cloud.ml.v1beta1.OperationMetadata.model_name)
   
   return model_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void OperationMetadata::set_allocated_model_name(::std::string* model_name) {
+void OperationMetadata::set_allocated_model_name(::std::string* model_name) {
   if (model_name != NULL) {
     
   } else {
@@ -863,7 +901,7 @@ void OperationMetadata::clear_model_name() {
 
 // optional .google.cloud.ml.v1beta1.Version version = 7;
 bool OperationMetadata::has_version() const {
-  return !_is_default_instance_ && version_ != NULL;
+  return this != internal_default_instance() && version_ != NULL;
 }
 void OperationMetadata::clear_version() {
   if (GetArenaNoVirtual() == NULL && version_ != NULL) delete version_;
@@ -871,7 +909,8 @@ void OperationMetadata::clear_version() {
 }
 const ::google::cloud::ml::v1beta1::Version& OperationMetadata::version() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.version)
-  return version_ != NULL ? *version_ : *default_instance_->version_;
+  return version_ != NULL ? *version_
+                         : *::google::cloud::ml::v1beta1::Version::internal_default_instance();
 }
 ::google::cloud::ml::v1beta1::Version* OperationMetadata::mutable_version() {
   
@@ -899,6 +938,9 @@ void OperationMetadata::set_allocated_version(::google::cloud::ml::v1beta1::Vers
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.OperationMetadata.version)
 }
 
+inline const OperationMetadata* OperationMetadata::internal_default_instance() {
+  return &OperationMetadata_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -45,7 +46,7 @@ namespace v1 {
 
 // Retrieves Google Cloud Console billing accounts and associates them with
 // projects.
-class CloudBilling GRPC_FINAL {
+class CloudBilling final {
  public:
   class StubInterface {
    public:
@@ -120,37 +121,37 @@ class CloudBilling GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::billing::v1::ProjectBillingInfo>* AsyncGetProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::billing::v1::ProjectBillingInfo>* AsyncUpdateProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status GetBillingAccount(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest& request, ::google::cloud::billing::v1::BillingAccount* response) GRPC_OVERRIDE;
+    ::grpc::Status GetBillingAccount(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest& request, ::google::cloud::billing::v1::BillingAccount* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::BillingAccount>> AsyncGetBillingAccount(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::BillingAccount>>(AsyncGetBillingAccountRaw(context, request, cq));
     }
-    ::grpc::Status ListBillingAccounts(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest& request, ::google::cloud::billing::v1::ListBillingAccountsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListBillingAccounts(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest& request, ::google::cloud::billing::v1::ListBillingAccountsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListBillingAccountsResponse>> AsyncListBillingAccounts(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListBillingAccountsResponse>>(AsyncListBillingAccountsRaw(context, request, cq));
     }
-    ::grpc::Status ListProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest& request, ::google::cloud::billing::v1::ListProjectBillingInfoResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest& request, ::google::cloud::billing::v1::ListProjectBillingInfoResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListProjectBillingInfoResponse>> AsyncListProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListProjectBillingInfoResponse>>(AsyncListProjectBillingInfoRaw(context, request, cq));
     }
-    ::grpc::Status GetProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest& request, ::google::cloud::billing::v1::ProjectBillingInfo* response) GRPC_OVERRIDE;
+    ::grpc::Status GetProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest& request, ::google::cloud::billing::v1::ProjectBillingInfo* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>> AsyncGetProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>>(AsyncGetProjectBillingInfoRaw(context, request, cq));
     }
-    ::grpc::Status UpdateProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest& request, ::google::cloud::billing::v1::ProjectBillingInfo* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest& request, ::google::cloud::billing::v1::ProjectBillingInfo* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>> AsyncUpdateProjectBillingInfo(::grpc::ClientContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>>(AsyncUpdateProjectBillingInfoRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::BillingAccount>* AsyncGetBillingAccountRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListBillingAccountsResponse>* AsyncListBillingAccountsRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListProjectBillingInfoResponse>* AsyncListProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>* AsyncGetProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>* AsyncUpdateProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::BillingAccount>* AsyncGetBillingAccountRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListBillingAccountsResponse>* AsyncListBillingAccountsRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ListProjectBillingInfoResponse>* AsyncListProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>* AsyncGetProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::billing::v1::ProjectBillingInfo>* AsyncUpdateProjectBillingInfoRaw(::grpc::ClientContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_GetBillingAccount_;
     const ::grpc::RpcMethod rpcmethod_ListBillingAccounts_;
     const ::grpc::RpcMethod rpcmethod_ListProjectBillingInfo_;
@@ -220,11 +221,11 @@ class CloudBilling GRPC_FINAL {
     WithAsyncMethod_GetBillingAccount() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_GetBillingAccount() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetBillingAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBillingAccount(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest* request, ::google::cloud::billing::v1::BillingAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBillingAccount(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest* request, ::google::cloud::billing::v1::BillingAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -240,11 +241,11 @@ class CloudBilling GRPC_FINAL {
     WithAsyncMethod_ListBillingAccounts() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_ListBillingAccounts() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListBillingAccounts() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBillingAccounts(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest* request, ::google::cloud::billing::v1::ListBillingAccountsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBillingAccounts(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest* request, ::google::cloud::billing::v1::ListBillingAccountsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -260,11 +261,11 @@ class CloudBilling GRPC_FINAL {
     WithAsyncMethod_ListProjectBillingInfo() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ListProjectBillingInfo() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListProjectBillingInfo() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ListProjectBillingInfoResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ListProjectBillingInfoResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -280,11 +281,11 @@ class CloudBilling GRPC_FINAL {
     WithAsyncMethod_GetProjectBillingInfo() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_GetProjectBillingInfo() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetProjectBillingInfo() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -300,11 +301,11 @@ class CloudBilling GRPC_FINAL {
     WithAsyncMethod_UpdateProjectBillingInfo() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_UpdateProjectBillingInfo() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateProjectBillingInfo() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -321,11 +322,11 @@ class CloudBilling GRPC_FINAL {
     WithGenericMethod_GetBillingAccount() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_GetBillingAccount() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetBillingAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBillingAccount(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest* request, ::google::cloud::billing::v1::BillingAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBillingAccount(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest* request, ::google::cloud::billing::v1::BillingAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -338,11 +339,11 @@ class CloudBilling GRPC_FINAL {
     WithGenericMethod_ListBillingAccounts() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_ListBillingAccounts() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListBillingAccounts() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBillingAccounts(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest* request, ::google::cloud::billing::v1::ListBillingAccountsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBillingAccounts(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest* request, ::google::cloud::billing::v1::ListBillingAccountsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -355,11 +356,11 @@ class CloudBilling GRPC_FINAL {
     WithGenericMethod_ListProjectBillingInfo() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ListProjectBillingInfo() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListProjectBillingInfo() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ListProjectBillingInfoResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ListProjectBillingInfoResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -372,11 +373,11 @@ class CloudBilling GRPC_FINAL {
     WithGenericMethod_GetProjectBillingInfo() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_GetProjectBillingInfo() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetProjectBillingInfo() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -389,15 +390,118 @@ class CloudBilling GRPC_FINAL {
     WithGenericMethod_UpdateProjectBillingInfo() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_UpdateProjectBillingInfo() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateProjectBillingInfo() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetBillingAccount : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetBillingAccount() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::billing::v1::GetBillingAccountRequest, ::google::cloud::billing::v1::BillingAccount>(std::bind(&WithStreamedUnaryMethod_GetBillingAccount<BaseClass>::StreamedGetBillingAccount, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetBillingAccount() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetBillingAccount(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetBillingAccountRequest* request, ::google::cloud::billing::v1::BillingAccount* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetBillingAccount(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::billing::v1::GetBillingAccountRequest,::google::cloud::billing::v1::BillingAccount>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListBillingAccounts : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListBillingAccounts() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::billing::v1::ListBillingAccountsRequest, ::google::cloud::billing::v1::ListBillingAccountsResponse>(std::bind(&WithStreamedUnaryMethod_ListBillingAccounts<BaseClass>::StreamedListBillingAccounts, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListBillingAccounts() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListBillingAccounts(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListBillingAccountsRequest* request, ::google::cloud::billing::v1::ListBillingAccountsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListBillingAccounts(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::billing::v1::ListBillingAccountsRequest,::google::cloud::billing::v1::ListBillingAccountsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListProjectBillingInfo : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListProjectBillingInfo() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::billing::v1::ListProjectBillingInfoRequest, ::google::cloud::billing::v1::ListProjectBillingInfoResponse>(std::bind(&WithStreamedUnaryMethod_ListProjectBillingInfo<BaseClass>::StreamedListProjectBillingInfo, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListProjectBillingInfo() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::ListProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ListProjectBillingInfoResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListProjectBillingInfo(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::billing::v1::ListProjectBillingInfoRequest,::google::cloud::billing::v1::ListProjectBillingInfoResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetProjectBillingInfo : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetProjectBillingInfo() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::billing::v1::GetProjectBillingInfoRequest, ::google::cloud::billing::v1::ProjectBillingInfo>(std::bind(&WithStreamedUnaryMethod_GetProjectBillingInfo<BaseClass>::StreamedGetProjectBillingInfo, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetProjectBillingInfo() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::GetProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetProjectBillingInfo(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::billing::v1::GetProjectBillingInfoRequest,::google::cloud::billing::v1::ProjectBillingInfo>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateProjectBillingInfo : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateProjectBillingInfo() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest, ::google::cloud::billing::v1::ProjectBillingInfo>(std::bind(&WithStreamedUnaryMethod_UpdateProjectBillingInfo<BaseClass>::StreamedUpdateProjectBillingInfo, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateProjectBillingInfo() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateProjectBillingInfo(::grpc::ServerContext* context, const ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest* request, ::google::cloud::billing::v1::ProjectBillingInfo* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateProjectBillingInfo(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::billing::v1::UpdateProjectBillingInfoRequest,::google::cloud::billing::v1::ProjectBillingInfo>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_GetBillingAccount<WithStreamedUnaryMethod_ListBillingAccounts<WithStreamedUnaryMethod_ListProjectBillingInfo<WithStreamedUnaryMethod_GetProjectBillingInfo<WithStreamedUnaryMethod_UpdateProjectBillingInfo<Service > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_GetBillingAccount<WithStreamedUnaryMethod_ListBillingAccounts<WithStreamedUnaryMethod_ListProjectBillingInfo<WithStreamedUnaryMethod_GetProjectBillingInfo<WithStreamedUnaryMethod_UpdateProjectBillingInfo<Service > > > > > StreamedService;
 };
 
 }  // namespace v1

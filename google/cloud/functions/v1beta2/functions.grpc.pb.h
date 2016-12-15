@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace functions {
 namespace v1beta2 {
 
 // A service that application uses to manipulate triggers and functions.
-class CloudFunctionsService GRPC_FINAL {
+class CloudFunctionsService final {
  public:
   class StubInterface {
    public:
@@ -91,42 +92,42 @@ class CloudFunctionsService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncDeleteFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::functions::v1beta2::CallFunctionResponse>* AsyncCallFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListFunctions(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest& request, ::google::cloud::functions::v1beta2::ListFunctionsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListFunctions(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest& request, ::google::cloud::functions::v1beta2::ListFunctionsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::ListFunctionsResponse>> AsyncListFunctions(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::ListFunctionsResponse>>(AsyncListFunctionsRaw(context, request, cq));
     }
-    ::grpc::Status GetFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest& request, ::google::cloud::functions::v1beta2::CloudFunction* response) GRPC_OVERRIDE;
+    ::grpc::Status GetFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest& request, ::google::cloud::functions::v1beta2::CloudFunction* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CloudFunction>> AsyncGetFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CloudFunction>>(AsyncGetFunctionRaw(context, request, cq));
     }
-    ::grpc::Status CreateFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateFunctionRaw(context, request, cq));
     }
-    ::grpc::Status UpdateFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncUpdateFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncUpdateFunctionRaw(context, request, cq));
     }
-    ::grpc::Status DeleteFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDeleteFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDeleteFunctionRaw(context, request, cq));
     }
-    ::grpc::Status CallFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest& request, ::google::cloud::functions::v1beta2::CallFunctionResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status CallFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest& request, ::google::cloud::functions::v1beta2::CallFunctionResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CallFunctionResponse>> AsyncCallFunction(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CallFunctionResponse>>(AsyncCallFunctionRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::ListFunctionsResponse>* AsyncListFunctionsRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CloudFunction>* AsyncGetFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CallFunctionResponse>* AsyncCallFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::ListFunctionsResponse>* AsyncListFunctionsRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CloudFunction>* AsyncGetFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::functions::v1beta2::CallFunctionResponse>* AsyncCallFunctionRaw(::grpc::ClientContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListFunctions_;
     const ::grpc::RpcMethod rpcmethod_GetFunction_;
     const ::grpc::RpcMethod rpcmethod_CreateFunction_;
@@ -165,11 +166,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithAsyncMethod_ListFunctions() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListFunctions() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListFunctions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListFunctions(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest* request, ::google::cloud::functions::v1beta2::ListFunctionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListFunctions(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest* request, ::google::cloud::functions::v1beta2::ListFunctionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -185,11 +186,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithAsyncMethod_GetFunction() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetFunction() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest* request, ::google::cloud::functions::v1beta2::CloudFunction* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest* request, ::google::cloud::functions::v1beta2::CloudFunction* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -205,11 +206,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithAsyncMethod_CreateFunction() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateFunction() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -225,11 +226,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithAsyncMethod_UpdateFunction() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateFunction() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -245,11 +246,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithAsyncMethod_DeleteFunction() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteFunction() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -265,11 +266,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithAsyncMethod_CallFunction() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_CallFunction() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CallFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CallFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest* request, ::google::cloud::functions::v1beta2::CallFunctionResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CallFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest* request, ::google::cloud::functions::v1beta2::CallFunctionResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -286,11 +287,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithGenericMethod_ListFunctions() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListFunctions() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListFunctions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListFunctions(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest* request, ::google::cloud::functions::v1beta2::ListFunctionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListFunctions(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest* request, ::google::cloud::functions::v1beta2::ListFunctionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -303,11 +304,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithGenericMethod_GetFunction() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetFunction() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest* request, ::google::cloud::functions::v1beta2::CloudFunction* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest* request, ::google::cloud::functions::v1beta2::CloudFunction* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -320,11 +321,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithGenericMethod_CreateFunction() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateFunction() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -337,11 +338,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithGenericMethod_UpdateFunction() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateFunction() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -354,11 +355,11 @@ class CloudFunctionsService GRPC_FINAL {
     WithGenericMethod_DeleteFunction() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteFunction() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -371,15 +372,138 @@ class CloudFunctionsService GRPC_FINAL {
     WithGenericMethod_CallFunction() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_CallFunction() GRPC_OVERRIDE {
+    ~WithGenericMethod_CallFunction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CallFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest* request, ::google::cloud::functions::v1beta2::CallFunctionResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CallFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest* request, ::google::cloud::functions::v1beta2::CallFunctionResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListFunctions : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListFunctions() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::functions::v1beta2::ListFunctionsRequest, ::google::cloud::functions::v1beta2::ListFunctionsResponse>(std::bind(&WithStreamedUnaryMethod_ListFunctions<BaseClass>::StreamedListFunctions, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListFunctions() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListFunctions(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::ListFunctionsRequest* request, ::google::cloud::functions::v1beta2::ListFunctionsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListFunctions(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::functions::v1beta2::ListFunctionsRequest,::google::cloud::functions::v1beta2::ListFunctionsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetFunction : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetFunction() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::functions::v1beta2::GetFunctionRequest, ::google::cloud::functions::v1beta2::CloudFunction>(std::bind(&WithStreamedUnaryMethod_GetFunction<BaseClass>::StreamedGetFunction, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetFunction() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::GetFunctionRequest* request, ::google::cloud::functions::v1beta2::CloudFunction* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetFunction(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::functions::v1beta2::GetFunctionRequest,::google::cloud::functions::v1beta2::CloudFunction>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateFunction : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateFunction() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::functions::v1beta2::CreateFunctionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateFunction<BaseClass>::StreamedCreateFunction, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateFunction() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CreateFunctionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateFunction(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::functions::v1beta2::CreateFunctionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateFunction : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateFunction() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::functions::v1beta2::UpdateFunctionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_UpdateFunction<BaseClass>::StreamedUpdateFunction, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateFunction() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::UpdateFunctionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateFunction(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::functions::v1beta2::UpdateFunctionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteFunction : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteFunction() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::functions::v1beta2::DeleteFunctionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteFunction<BaseClass>::StreamedDeleteFunction, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteFunction() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::DeleteFunctionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteFunction(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::functions::v1beta2::DeleteFunctionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CallFunction : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CallFunction() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::functions::v1beta2::CallFunctionRequest, ::google::cloud::functions::v1beta2::CallFunctionResponse>(std::bind(&WithStreamedUnaryMethod_CallFunction<BaseClass>::StreamedCallFunction, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CallFunction() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CallFunction(::grpc::ServerContext* context, const ::google::cloud::functions::v1beta2::CallFunctionRequest* request, ::google::cloud::functions::v1beta2::CallFunctionResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCallFunction(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::functions::v1beta2::CallFunctionRequest,::google::cloud::functions::v1beta2::CallFunctionResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListFunctions<WithStreamedUnaryMethod_GetFunction<WithStreamedUnaryMethod_CreateFunction<WithStreamedUnaryMethod_UpdateFunction<WithStreamedUnaryMethod_DeleteFunction<WithStreamedUnaryMethod_CallFunction<Service > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListFunctions<WithStreamedUnaryMethod_GetFunction<WithStreamedUnaryMethod_CreateFunction<WithStreamedUnaryMethod_UpdateFunction<WithStreamedUnaryMethod_DeleteFunction<WithStreamedUnaryMethod_CallFunction<Service > > > > > > StreamedService;
 };
 
 }  // namespace v1beta2

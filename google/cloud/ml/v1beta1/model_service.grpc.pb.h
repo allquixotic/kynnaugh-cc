@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -75,7 +76,7 @@ namespace v1beta1 {
 //     request predictions of a version of your model, or use
 //     [projects.jobs.create](/ml/reference/rest/v1beta1/projects.jobs/create)
 //     to start a batch prediction job.
-class ModelService GRPC_FINAL {
+class ModelService final {
  public:
   class StubInterface {
    public:
@@ -178,57 +179,57 @@ class ModelService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncDeleteVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::ml::v1beta1::Version>* AsyncSetDefaultVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest& request, ::google::cloud::ml::v1beta1::Model* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest& request, ::google::cloud::ml::v1beta1::Model* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>> AsyncCreateModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>>(AsyncCreateModelRaw(context, request, cq));
     }
-    ::grpc::Status ListModels(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest& request, ::google::cloud::ml::v1beta1::ListModelsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListModels(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest& request, ::google::cloud::ml::v1beta1::ListModelsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListModelsResponse>> AsyncListModels(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListModelsResponse>>(AsyncListModelsRaw(context, request, cq));
     }
-    ::grpc::Status GetModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest& request, ::google::cloud::ml::v1beta1::Model* response) GRPC_OVERRIDE;
+    ::grpc::Status GetModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest& request, ::google::cloud::ml::v1beta1::Model* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>> AsyncGetModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>>(AsyncGetModelRaw(context, request, cq));
     }
-    ::grpc::Status DeleteModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDeleteModel(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDeleteModelRaw(context, request, cq));
     }
-    ::grpc::Status CreateVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateVersionRaw(context, request, cq));
     }
-    ::grpc::Status ListVersions(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest& request, ::google::cloud::ml::v1beta1::ListVersionsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListVersions(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest& request, ::google::cloud::ml::v1beta1::ListVersionsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListVersionsResponse>> AsyncListVersions(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListVersionsResponse>>(AsyncListVersionsRaw(context, request, cq));
     }
-    ::grpc::Status GetVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest& request, ::google::cloud::ml::v1beta1::Version* response) GRPC_OVERRIDE;
+    ::grpc::Status GetVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest& request, ::google::cloud::ml::v1beta1::Version* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>> AsyncGetVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>>(AsyncGetVersionRaw(context, request, cq));
     }
-    ::grpc::Status DeleteVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDeleteVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDeleteVersionRaw(context, request, cq));
     }
-    ::grpc::Status SetDefaultVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest& request, ::google::cloud::ml::v1beta1::Version* response) GRPC_OVERRIDE;
+    ::grpc::Status SetDefaultVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest& request, ::google::cloud::ml::v1beta1::Version* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>> AsyncSetDefaultVersion(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>>(AsyncSetDefaultVersionRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>* AsyncCreateModelRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListModelsResponse>* AsyncListModelsRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>* AsyncGetModelRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteModelRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListVersionsResponse>* AsyncListVersionsRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>* AsyncGetVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>* AsyncSetDefaultVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>* AsyncCreateModelRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListModelsResponse>* AsyncListModelsRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Model>* AsyncGetModelRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteModelRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListVersionsResponse>* AsyncListVersionsRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>* AsyncGetVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Version>* AsyncSetDefaultVersionRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateModel_;
     const ::grpc::RpcMethod rpcmethod_ListModels_;
     const ::grpc::RpcMethod rpcmethod_GetModel_;
@@ -314,11 +315,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_CreateModel() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateModel() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateModel() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -334,11 +335,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_ListModels() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_ListModels() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListModels() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListModels(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest* request, ::google::cloud::ml::v1beta1::ListModelsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListModels(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest* request, ::google::cloud::ml::v1beta1::ListModelsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -354,11 +355,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_GetModel() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_GetModel() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetModel() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -374,11 +375,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_DeleteModel() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DeleteModel() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteModel() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -394,11 +395,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_CreateVersion() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_CreateVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -414,11 +415,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_ListVersions() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_ListVersions() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListVersions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest* request, ::google::cloud::ml::v1beta1::ListVersionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest* request, ::google::cloud::ml::v1beta1::ListVersionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -434,11 +435,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_GetVersion() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_GetVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -454,11 +455,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_DeleteVersion() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_DeleteVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -474,11 +475,11 @@ class ModelService GRPC_FINAL {
     WithAsyncMethod_SetDefaultVersion() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_SetDefaultVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SetDefaultVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetDefaultVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetDefaultVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -495,11 +496,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_CreateModel() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateModel() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateModel() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -512,11 +513,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_ListModels() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_ListModels() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListModels() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListModels(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest* request, ::google::cloud::ml::v1beta1::ListModelsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListModels(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest* request, ::google::cloud::ml::v1beta1::ListModelsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -529,11 +530,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_GetModel() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_GetModel() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetModel() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -546,11 +547,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_DeleteModel() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DeleteModel() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteModel() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -563,11 +564,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_CreateVersion() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_CreateVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -580,11 +581,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_ListVersions() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_ListVersions() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListVersions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest* request, ::google::cloud::ml::v1beta1::ListVersionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest* request, ::google::cloud::ml::v1beta1::ListVersionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -597,11 +598,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_GetVersion() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_GetVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -614,11 +615,11 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_DeleteVersion() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_DeleteVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -631,15 +632,198 @@ class ModelService GRPC_FINAL {
     WithGenericMethod_SetDefaultVersion() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_SetDefaultVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_SetDefaultVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetDefaultVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetDefaultVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateModel : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateModel() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::CreateModelRequest, ::google::cloud::ml::v1beta1::Model>(std::bind(&WithStreamedUnaryMethod_CreateModel<BaseClass>::StreamedCreateModel, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateModel() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateModel(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::CreateModelRequest,::google::cloud::ml::v1beta1::Model>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListModels : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListModels() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::ListModelsRequest, ::google::cloud::ml::v1beta1::ListModelsResponse>(std::bind(&WithStreamedUnaryMethod_ListModels<BaseClass>::StreamedListModels, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListModels() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListModels(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListModelsRequest* request, ::google::cloud::ml::v1beta1::ListModelsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListModels(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::ListModelsRequest,::google::cloud::ml::v1beta1::ListModelsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetModel : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetModel() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::GetModelRequest, ::google::cloud::ml::v1beta1::Model>(std::bind(&WithStreamedUnaryMethod_GetModel<BaseClass>::StreamedGetModel, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetModel() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetModelRequest* request, ::google::cloud::ml::v1beta1::Model* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetModel(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::GetModelRequest,::google::cloud::ml::v1beta1::Model>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteModel : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteModel() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::DeleteModelRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteModel<BaseClass>::StreamedDeleteModel, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteModel() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteModel(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteModelRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteModel(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::DeleteModelRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateVersion() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::CreateVersionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateVersion<BaseClass>::StreamedCreateVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateVersionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::CreateVersionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListVersions : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListVersions() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::ListVersionsRequest, ::google::cloud::ml::v1beta1::ListVersionsResponse>(std::bind(&WithStreamedUnaryMethod_ListVersions<BaseClass>::StreamedListVersions, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListVersions() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListVersionsRequest* request, ::google::cloud::ml::v1beta1::ListVersionsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListVersions(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::ListVersionsRequest,::google::cloud::ml::v1beta1::ListVersionsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetVersion() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::GetVersionRequest, ::google::cloud::ml::v1beta1::Version>(std::bind(&WithStreamedUnaryMethod_GetVersion<BaseClass>::StreamedGetVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::GetVersionRequest,::google::cloud::ml::v1beta1::Version>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteVersion() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::DeleteVersionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteVersion<BaseClass>::StreamedDeleteVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::DeleteVersionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SetDefaultVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SetDefaultVersion() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::SetDefaultVersionRequest, ::google::cloud::ml::v1beta1::Version>(std::bind(&WithStreamedUnaryMethod_SetDefaultVersion<BaseClass>::StreamedSetDefaultVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SetDefaultVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SetDefaultVersion(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::SetDefaultVersionRequest* request, ::google::cloud::ml::v1beta1::Version* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSetDefaultVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::SetDefaultVersionRequest,::google::cloud::ml::v1beta1::Version>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateModel<WithStreamedUnaryMethod_ListModels<WithStreamedUnaryMethod_GetModel<WithStreamedUnaryMethod_DeleteModel<WithStreamedUnaryMethod_CreateVersion<WithStreamedUnaryMethod_ListVersions<WithStreamedUnaryMethod_GetVersion<WithStreamedUnaryMethod_DeleteVersion<WithStreamedUnaryMethod_SetDefaultVersion<Service > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateModel<WithStreamedUnaryMethod_ListModels<WithStreamedUnaryMethod_GetModel<WithStreamedUnaryMethod_DeleteModel<WithStreamedUnaryMethod_CreateVersion<WithStreamedUnaryMethod_ListVersions<WithStreamedUnaryMethod_GetVersion<WithStreamedUnaryMethod_DeleteVersion<WithStreamedUnaryMethod_SetDefaultVersion<Service > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1beta1

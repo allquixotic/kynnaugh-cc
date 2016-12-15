@@ -47,21 +47,20 @@ void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2epr
   CheckError_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CheckError_descriptor_,
-      CheckError::default_instance_,
+      CheckError::internal_default_instance(),
       CheckError_offsets_,
       -1,
       -1,
       -1,
       sizeof(CheckError),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CheckError, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CheckError, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CheckError, _internal_metadata_));
   CheckError_Code_descriptor_ = CheckError_descriptor_->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto);
 }
@@ -70,24 +69,34 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CheckError_descriptor_, &CheckError::default_instance());
+      CheckError_descriptor_, CheckError::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto() {
-  delete CheckError::default_instance_;
+  CheckError_default_instance_.Shutdown();
   delete CheckError_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  CheckError_default_instance_.DefaultConstruct();
+  CheckError_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n.google/api/servicecontrol/v1/check_err"
     "or.proto\022\034google.api.servicecontrol.v1\032\034"
@@ -104,22 +113,38 @@ void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto
     "\022\023\n\017API_KEY_EXPIRED\020p\022\025\n\021API_KEY_NOT_FOU"
     "ND\020q\022!\n\034NAMESPACE_LOOKUP_UNAVAILABLE\020\254\002\022"
     "\037\n\032SERVICE_STATUS_UNAVAILABLE\020\255\002\022\037\n\032BILL"
-    "ING_STATUS_UNAVAILABLE\020\256\002B8\n com.google."
-    "api.servicecontrol.v1B\017CheckErrorProtoP\001"
-    "\370\001\001b\006proto3", 691);
+    "ING_STATUS_UNAVAILABLE\020\256\002B\204\001\n com.google"
+    ".api.servicecontrol.v1B\017CheckErrorProtoP"
+    "\001ZJgoogle.golang.org/genproto/googleapis"
+    "/api/servicecontrol/v1;servicecontrol\370\001\001"
+    "b\006proto3", 768);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/servicecontrol/v1/check_error.proto", &protobuf_RegisterTypes);
-  CheckError::default_instance_ = new CheckError();
-  CheckError::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto() {
     protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -128,7 +153,7 @@ const ::google::protobuf::EnumDescriptor* CheckError_Code_descriptor() {
   return CheckError_Code_descriptor_;
 }
 bool CheckError_Code_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 5:
     case 7:
@@ -181,36 +206,36 @@ const int CheckError::kDetailFieldNumber;
 
 CheckError::CheckError()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicecontrol.v1.CheckError)
 }
-
 CheckError::CheckError(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.api.servicecontrol.v1.CheckError)
 }
 
 void CheckError::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 CheckError::CheckError(const CheckError& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicecontrol.v1.CheckError)
 }
 
 void CheckError::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  code_ = 0;
   detail_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  code_ = 0;
+  _cached_size_ = 0;
 }
 
 CheckError::~CheckError() {
@@ -219,13 +244,12 @@ CheckError::~CheckError() {
 }
 
 void CheckError::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  detail_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  detail_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void CheckError::ArenaDtor(void* object) {
@@ -245,11 +269,11 @@ const ::google::protobuf::Descriptor* CheckError::descriptor() {
 }
 
 const CheckError& CheckError::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fcheck_5ferror_2eproto();
+  return *internal_default_instance();
 }
 
-CheckError* CheckError::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CheckError> CheckError_default_instance_;
 
 CheckError* CheckError::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<CheckError>(arena);
@@ -348,6 +372,7 @@ void CheckError::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CheckError::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicecontrol.v1.CheckError)
   // optional .google.api.servicecontrol.v1.CheckError.Code code = 1;
   if (this->code() != 0) {
@@ -370,9 +395,9 @@ void CheckError::SerializeWithCachedSizes(
   return target;
 }
 
-int CheckError::ByteSize() const {
+size_t CheckError::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicecontrol.v1.CheckError)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.api.servicecontrol.v1.CheckError.Code code = 1;
   if (this->code() != 0) {
@@ -387,18 +412,17 @@ int CheckError::ByteSize() const {
         this->detail());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CheckError::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicecontrol.v1.CheckError)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CheckError* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CheckError* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CheckError>(
           &from);
   if (source == NULL) {
@@ -406,15 +430,21 @@ void CheckError::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicecontrol.v1.CheckError)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CheckError::MergeFrom(const CheckError& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicecontrol.v1.CheckError)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CheckError::UnsafeMergeFrom(const CheckError& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.code() != 0) {
     set_code(from.code());
   }
@@ -434,7 +464,7 @@ void CheckError::CopyFrom(const CheckError& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicecontrol.v1.CheckError)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CheckError::IsInitialized() const {
@@ -448,7 +478,7 @@ void CheckError::Swap(CheckError* other) {
     InternalSwap(other);
   } else {
     CheckError temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -480,11 +510,11 @@ void CheckError::InternalSwap(CheckError* other) {
 void CheckError::clear_code() {
   code_ = 0;
 }
- ::google::api::servicecontrol::v1::CheckError_Code CheckError::code() const {
+::google::api::servicecontrol::v1::CheckError_Code CheckError::code() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.CheckError.code)
   return static_cast< ::google::api::servicecontrol::v1::CheckError_Code >(code_);
 }
- void CheckError::set_code(::google::api::servicecontrol::v1::CheckError_Code value) {
+void CheckError::set_code(::google::api::servicecontrol::v1::CheckError_Code value) {
   
   code_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.CheckError.code)
@@ -494,46 +524,46 @@ void CheckError::clear_code() {
 void CheckError::clear_detail() {
   detail_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& CheckError::detail() const {
+const ::std::string& CheckError::detail() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.CheckError.detail)
   return detail_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CheckError::set_detail(const ::std::string& value) {
+void CheckError::set_detail(const ::std::string& value) {
   
   detail_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.CheckError.detail)
 }
- void CheckError::set_detail(const char* value) {
+void CheckError::set_detail(const char* value) {
   
   detail_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.api.servicecontrol.v1.CheckError.detail)
 }
- void CheckError::set_detail(const char* value,
+void CheckError::set_detail(const char* value,
     size_t size) {
   
   detail_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.api.servicecontrol.v1.CheckError.detail)
 }
- ::std::string* CheckError::mutable_detail() {
+::std::string* CheckError::mutable_detail() {
   
   // @@protoc_insertion_point(field_mutable:google.api.servicecontrol.v1.CheckError.detail)
   return detail_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CheckError::release_detail() {
+::std::string* CheckError::release_detail() {
   // @@protoc_insertion_point(field_release:google.api.servicecontrol.v1.CheckError.detail)
   
   return detail_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CheckError::unsafe_arena_release_detail() {
+::std::string* CheckError::unsafe_arena_release_detail() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.api.servicecontrol.v1.CheckError.detail)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return detail_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void CheckError::set_allocated_detail(::std::string* detail) {
+void CheckError::set_allocated_detail(::std::string* detail) {
   if (detail != NULL) {
     
   } else {
@@ -543,7 +573,7 @@ void CheckError::clear_detail() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.CheckError.detail)
 }
- void CheckError::unsafe_arena_set_allocated_detail(
+void CheckError::unsafe_arena_set_allocated_detail(
     ::std::string* detail) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (detail != NULL) {
@@ -556,6 +586,9 @@ void CheckError::clear_detail() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.api.servicecontrol.v1.CheckError.detail)
 }
 
+inline const CheckError* CheckError::internal_default_instance() {
+  return &CheckError_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

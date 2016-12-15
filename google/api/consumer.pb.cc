@@ -47,14 +47,13 @@ void protobuf_AssignDesc_google_2fapi_2fconsumer_2eproto() {
   ProjectProperties_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ProjectProperties_descriptor_,
-      ProjectProperties::default_instance_,
+      ProjectProperties::internal_default_instance(),
       ProjectProperties_offsets_,
       -1,
       -1,
       -1,
       sizeof(ProjectProperties),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectProperties, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectProperties, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectProperties, _internal_metadata_));
   Property_descriptor_ = file->message_type(1);
   static const int Property_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, name_),
@@ -64,21 +63,20 @@ void protobuf_AssignDesc_google_2fapi_2fconsumer_2eproto() {
   Property_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Property_descriptor_,
-      Property::default_instance_,
+      Property::internal_default_instance(),
       Property_offsets_,
       -1,
       -1,
       -1,
       sizeof(Property),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Property, _internal_metadata_));
   Property_PropertyType_descriptor_ = Property_descriptor_->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fconsumer_2eproto);
 }
@@ -87,27 +85,39 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ProjectProperties_descriptor_, &ProjectProperties::default_instance());
+      ProjectProperties_descriptor_, ProjectProperties::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Property_descriptor_, &Property::default_instance());
+      Property_descriptor_, Property::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fconsumer_2eproto() {
-  delete ProjectProperties::default_instance_;
+  ProjectProperties_default_instance_.Shutdown();
   delete ProjectProperties_reflection_;
-  delete Property::default_instance_;
+  Property_default_instance_.Shutdown();
   delete Property_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fconsumer_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fconsumer_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  ProjectProperties_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Property_default_instance_.DefaultConstruct();
+  ProjectProperties_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Property_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fconsumer_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\031google/api/consumer.proto\022\ngoogle.api\""
     "=\n\021ProjectProperties\022(\n\nproperties\030\001 \003(\013"
@@ -115,23 +125,36 @@ void protobuf_AddDesc_google_2fapi_2fconsumer_2eproto() {
     "ame\030\001 \001(\t\022/\n\004type\030\002 \001(\0162!.google.api.Pro"
     "perty.PropertyType\022\023\n\013description\030\003 \001(\t\""
     "L\n\014PropertyType\022\017\n\013UNSPECIFIED\020\000\022\t\n\005INT6"
-    "4\020\001\022\010\n\004BOOL\020\002\022\n\n\006STRING\020\003\022\n\n\006DOUBLE\020\004B!\n"
-    "\016com.google.apiB\rConsumerProtoP\001b\006proto3", 320);
+    "4\020\001\022\010\n\004BOOL\020\002\022\n\n\006STRING\020\003\022\n\n\006DOUBLE\020\004Bh\n"
+    "\016com.google.apiB\rConsumerProtoP\001ZEgoogle"
+    ".golang.org/genproto/googleapis/api/serv"
+    "iceconfig;serviceconfigb\006proto3", 391);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/consumer.proto", &protobuf_RegisterTypes);
-  ProjectProperties::default_instance_ = new ProjectProperties();
-  Property::default_instance_ = new Property();
-  ProjectProperties::default_instance_->InitAsDefaultInstance();
-  Property::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fconsumer_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fconsumer_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fconsumer_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fconsumer_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fconsumer_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fconsumer_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fconsumer_2eproto() {
     protobuf_AddDesc_google_2fapi_2fconsumer_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fconsumer_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -141,24 +164,23 @@ const int ProjectProperties::kPropertiesFieldNumber;
 
 ProjectProperties::ProjectProperties()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.ProjectProperties)
 }
 
 void ProjectProperties::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ProjectProperties::ProjectProperties(const ProjectProperties& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.ProjectProperties)
 }
 
 void ProjectProperties::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -168,8 +190,6 @@ ProjectProperties::~ProjectProperties() {
 }
 
 void ProjectProperties::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void ProjectProperties::SetCachedSize(int size) const {
@@ -183,11 +203,11 @@ const ::google::protobuf::Descriptor* ProjectProperties::descriptor() {
 }
 
 const ProjectProperties& ProjectProperties::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fconsumer_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto();
+  return *internal_default_instance();
 }
 
-ProjectProperties* ProjectProperties::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ProjectProperties> ProjectProperties_default_instance_;
 
 ProjectProperties* ProjectProperties::New(::google::protobuf::Arena* arena) const {
   ProjectProperties* n = new ProjectProperties;
@@ -263,6 +283,7 @@ void ProjectProperties::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ProjectProperties::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.ProjectProperties)
   // repeated .google.api.Property properties = 1;
   for (unsigned int i = 0, n = this->properties_size(); i < n; i++) {
@@ -275,30 +296,32 @@ void ProjectProperties::SerializeWithCachedSizes(
   return target;
 }
 
-int ProjectProperties::ByteSize() const {
+size_t ProjectProperties::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.ProjectProperties)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.api.Property properties = 1;
-  total_size += 1 * this->properties_size();
-  for (int i = 0; i < this->properties_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->properties(i));
+  {
+    unsigned int count = this->properties_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->properties(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ProjectProperties::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.ProjectProperties)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ProjectProperties* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ProjectProperties* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ProjectProperties>(
           &from);
   if (source == NULL) {
@@ -306,15 +329,21 @@ void ProjectProperties::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.ProjectProperties)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ProjectProperties::MergeFrom(const ProjectProperties& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.ProjectProperties)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ProjectProperties::UnsafeMergeFrom(const ProjectProperties& from) {
+  GOOGLE_DCHECK(&from != this);
   properties_.MergeFrom(from.properties_);
 }
 
@@ -329,7 +358,7 @@ void ProjectProperties::CopyFrom(const ProjectProperties& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.ProjectProperties)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ProjectProperties::IsInitialized() const {
@@ -388,6 +417,9 @@ ProjectProperties::properties() const {
   return properties_;
 }
 
+inline const ProjectProperties* ProjectProperties::internal_default_instance() {
+  return &ProjectProperties_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -397,7 +429,7 @@ const ::google::protobuf::EnumDescriptor* Property_PropertyType_descriptor() {
   return Property_PropertyType_descriptor_;
 }
 bool Property_PropertyType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -427,29 +459,27 @@ const int Property::kDescriptionFieldNumber;
 
 Property::Property()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Property)
 }
 
 void Property::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Property::Property(const Property& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Property)
 }
 
 void Property::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  type_ = 0;
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
+  _cached_size_ = 0;
 }
 
 Property::~Property() {
@@ -460,8 +490,6 @@ Property::~Property() {
 void Property::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Property::SetCachedSize(int size) const {
@@ -475,11 +503,11 @@ const ::google::protobuf::Descriptor* Property::descriptor() {
 }
 
 const Property& Property::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fconsumer_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto();
+  return *internal_default_instance();
 }
 
-Property* Property::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Property> Property_default_instance_;
 
 Property* Property::New(::google::protobuf::Arena* arena) const {
   Property* n = new Property;
@@ -610,6 +638,7 @@ void Property::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Property::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Property)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -643,9 +672,9 @@ void Property::SerializeWithCachedSizes(
   return target;
 }
 
-int Property::ByteSize() const {
+size_t Property::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Property)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -667,18 +696,17 @@ int Property::ByteSize() const {
         this->description());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Property::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Property)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Property* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Property* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Property>(
           &from);
   if (source == NULL) {
@@ -686,15 +714,21 @@ void Property::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Property)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Property::MergeFrom(const Property& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Property)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Property::UnsafeMergeFrom(const Property& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -719,7 +753,7 @@ void Property::CopyFrom(const Property& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Property)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Property::IsInitialized() const {
@@ -754,37 +788,37 @@ void Property::InternalSwap(Property* other) {
 void Property::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Property::name() const {
+const ::std::string& Property::name() const {
   // @@protoc_insertion_point(field_get:google.api.Property.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Property::set_name(const ::std::string& value) {
+void Property::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Property.name)
 }
- void Property::set_name(const char* value) {
+void Property::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Property.name)
 }
- void Property::set_name(const char* value, size_t size) {
+void Property::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Property.name)
 }
- ::std::string* Property::mutable_name() {
+::std::string* Property::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Property.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Property::release_name() {
+::std::string* Property::release_name() {
   // @@protoc_insertion_point(field_release:google.api.Property.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Property::set_allocated_name(::std::string* name) {
+void Property::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -798,11 +832,11 @@ void Property::clear_name() {
 void Property::clear_type() {
   type_ = 0;
 }
- ::google::api::Property_PropertyType Property::type() const {
+::google::api::Property_PropertyType Property::type() const {
   // @@protoc_insertion_point(field_get:google.api.Property.type)
   return static_cast< ::google::api::Property_PropertyType >(type_);
 }
- void Property::set_type(::google::api::Property_PropertyType value) {
+void Property::set_type(::google::api::Property_PropertyType value) {
   
   type_ = value;
   // @@protoc_insertion_point(field_set:google.api.Property.type)
@@ -812,37 +846,37 @@ void Property::clear_type() {
 void Property::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Property::description() const {
+const ::std::string& Property::description() const {
   // @@protoc_insertion_point(field_get:google.api.Property.description)
   return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Property::set_description(const ::std::string& value) {
+void Property::set_description(const ::std::string& value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Property.description)
 }
- void Property::set_description(const char* value) {
+void Property::set_description(const char* value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Property.description)
 }
- void Property::set_description(const char* value, size_t size) {
+void Property::set_description(const char* value, size_t size) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Property.description)
 }
- ::std::string* Property::mutable_description() {
+::std::string* Property::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Property.description)
   return description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Property::release_description() {
+::std::string* Property::release_description() {
   // @@protoc_insertion_point(field_release:google.api.Property.description)
   
   return description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Property::set_allocated_description(::std::string* description) {
+void Property::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -852,6 +886,9 @@ void Property::clear_description() {
   // @@protoc_insertion_point(field_set_allocated:google.api.Property.description)
 }
 
+inline const Property* Property::internal_default_instance() {
+  return &Property_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -56,14 +56,13 @@ void protobuf_AssignDesc_google_2fapi_2fmetric_2eproto() {
   MetricDescriptor_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       MetricDescriptor_descriptor_,
-      MetricDescriptor::default_instance_,
+      MetricDescriptor::internal_default_instance(),
       MetricDescriptor_offsets_,
       -1,
       -1,
       -1,
       sizeof(MetricDescriptor),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MetricDescriptor, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MetricDescriptor, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MetricDescriptor, _internal_metadata_));
   MetricDescriptor_MetricKind_descriptor_ = MetricDescriptor_descriptor_->enum_type(0);
   MetricDescriptor_ValueType_descriptor_ = MetricDescriptor_descriptor_->enum_type(1);
   Metric_descriptor_ = file->message_type(1);
@@ -74,21 +73,20 @@ void protobuf_AssignDesc_google_2fapi_2fmetric_2eproto() {
   Metric_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Metric_descriptor_,
-      Metric::default_instance_,
+      Metric::internal_default_instance(),
       Metric_offsets_,
       -1,
       -1,
       -1,
       sizeof(Metric),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Metric, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Metric, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Metric, _internal_metadata_));
   Metric_LabelsEntry_descriptor_ = Metric_descriptor_->nested_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fmetric_2eproto);
 }
@@ -97,9 +95,9 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      MetricDescriptor_descriptor_, &MetricDescriptor::default_instance());
+      MetricDescriptor_descriptor_, MetricDescriptor::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Metric_descriptor_, &Metric::default_instance());
+      Metric_descriptor_, Metric::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         Metric_LabelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -114,20 +112,33 @@ void protobuf_RegisterTypes(const ::std::string&) {
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fmetric_2eproto() {
-  delete MetricDescriptor::default_instance_;
+  MetricDescriptor_default_instance_.Shutdown();
   delete MetricDescriptor_reflection_;
-  delete Metric::default_instance_;
+  Metric_default_instance_.Shutdown();
   delete Metric_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fmetric_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fmetric_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fmetric_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2flabel_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2flabel_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  MetricDescriptor_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Metric_default_instance_.DefaultConstruct();
+  MetricDescriptor_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Metric_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fmetric_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fmetric_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fmetric_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fmetric_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fmetric_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fmetric_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\027google/api/metric.proto\022\ngoogle.api\032\026g"
     "oogle/api/label.proto\"\322\003\n\020MetricDescript"
@@ -145,23 +156,36 @@ void protobuf_AddDesc_google_2fapi_2fmetric_2eproto() {
     "\t\n\005MONEY\020\006\"u\n\006Metric\022\014\n\004type\030\003 \001(\t\022.\n\006la"
     "bels\030\002 \003(\0132\036.google.api.Metric.LabelsEnt"
     "ry\032-\n\013LabelsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030"
-    "\002 \001(\t:\0028\001B&\n\016com.google.apiB\013MetricProto"
-    "P\001\242\002\004GAPIb\006proto3", 697);
+    "\002 \001(\t:\0028\001B_\n\016com.google.apiB\013MetricProto"
+    "P\001Z7google.golang.org/genproto/googleapi"
+    "s/api/metric;metric\242\002\004GAPIb\006proto3", 754);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/metric.proto", &protobuf_RegisterTypes);
-  MetricDescriptor::default_instance_ = new MetricDescriptor();
-  Metric::default_instance_ = new Metric();
-  MetricDescriptor::default_instance_->InitAsDefaultInstance();
-  Metric::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2flabel_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fmetric_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fmetric_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fmetric_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fmetric_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fmetric_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fmetric_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fmetric_2eproto() {
     protobuf_AddDesc_google_2fapi_2fmetric_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fmetric_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -170,7 +194,7 @@ const ::google::protobuf::EnumDescriptor* MetricDescriptor_MetricKind_descriptor
   return MetricDescriptor_MetricKind_descriptor_;
 }
 bool MetricDescriptor_MetricKind_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -195,7 +219,7 @@ const ::google::protobuf::EnumDescriptor* MetricDescriptor_ValueType_descriptor(
   return MetricDescriptor_ValueType_descriptor_;
 }
 bool MetricDescriptor_ValueType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -234,33 +258,31 @@ const int MetricDescriptor::kDisplayNameFieldNumber;
 
 MetricDescriptor::MetricDescriptor()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fmetric_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.MetricDescriptor)
 }
 
 void MetricDescriptor::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 MetricDescriptor::MetricDescriptor(const MetricDescriptor& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.MetricDescriptor)
 }
 
 void MetricDescriptor::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  metric_kind_ = 0;
-  value_type_ = 0;
   unit_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   display_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&metric_kind_, 0, reinterpret_cast<char*>(&value_type_) -
+    reinterpret_cast<char*>(&metric_kind_) + sizeof(value_type_));
+  _cached_size_ = 0;
 }
 
 MetricDescriptor::~MetricDescriptor() {
@@ -274,8 +296,6 @@ void MetricDescriptor::SharedDtor() {
   unit_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   display_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void MetricDescriptor::SetCachedSize(int size) const {
@@ -289,11 +309,11 @@ const ::google::protobuf::Descriptor* MetricDescriptor::descriptor() {
 }
 
 const MetricDescriptor& MetricDescriptor::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fmetric_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fmetric_2eproto();
+  return *internal_default_instance();
 }
 
-MetricDescriptor* MetricDescriptor::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<MetricDescriptor> MetricDescriptor_default_instance_;
 
 MetricDescriptor* MetricDescriptor::New(::google::protobuf::Arena* arena) const {
   MetricDescriptor* n = new MetricDescriptor;
@@ -317,7 +337,7 @@ void MetricDescriptor::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -574,6 +594,7 @@ void MetricDescriptor::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* MetricDescriptor::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.MetricDescriptor)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -653,9 +674,9 @@ void MetricDescriptor::SerializeWithCachedSizes(
   return target;
 }
 
-int MetricDescriptor::ByteSize() const {
+size_t MetricDescriptor::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.MetricDescriptor)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -705,25 +726,27 @@ int MetricDescriptor::ByteSize() const {
   }
 
   // repeated .google.api.LabelDescriptor labels = 2;
-  total_size += 1 * this->labels_size();
-  for (int i = 0; i < this->labels_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->labels(i));
+  {
+    unsigned int count = this->labels_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->labels(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void MetricDescriptor::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.MetricDescriptor)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const MetricDescriptor* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const MetricDescriptor* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const MetricDescriptor>(
           &from);
   if (source == NULL) {
@@ -731,15 +754,21 @@ void MetricDescriptor::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.MetricDescriptor)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void MetricDescriptor::MergeFrom(const MetricDescriptor& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.MetricDescriptor)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void MetricDescriptor::UnsafeMergeFrom(const MetricDescriptor& from) {
+  GOOGLE_DCHECK(&from != this);
   labels_.MergeFrom(from.labels_);
   if (from.name().size() > 0) {
 
@@ -780,7 +809,7 @@ void MetricDescriptor::CopyFrom(const MetricDescriptor& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.MetricDescriptor)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool MetricDescriptor::IsInitialized() const {
@@ -820,37 +849,37 @@ void MetricDescriptor::InternalSwap(MetricDescriptor* other) {
 void MetricDescriptor::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& MetricDescriptor::name() const {
+const ::std::string& MetricDescriptor::name() const {
   // @@protoc_insertion_point(field_get:google.api.MetricDescriptor.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_name(const ::std::string& value) {
+void MetricDescriptor::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.MetricDescriptor.name)
 }
- void MetricDescriptor::set_name(const char* value) {
+void MetricDescriptor::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.MetricDescriptor.name)
 }
- void MetricDescriptor::set_name(const char* value, size_t size) {
+void MetricDescriptor::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.MetricDescriptor.name)
 }
- ::std::string* MetricDescriptor::mutable_name() {
+::std::string* MetricDescriptor::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.MetricDescriptor.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* MetricDescriptor::release_name() {
+::std::string* MetricDescriptor::release_name() {
   // @@protoc_insertion_point(field_release:google.api.MetricDescriptor.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_allocated_name(::std::string* name) {
+void MetricDescriptor::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -864,37 +893,37 @@ void MetricDescriptor::clear_name() {
 void MetricDescriptor::clear_type() {
   type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& MetricDescriptor::type() const {
+const ::std::string& MetricDescriptor::type() const {
   // @@protoc_insertion_point(field_get:google.api.MetricDescriptor.type)
   return type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_type(const ::std::string& value) {
+void MetricDescriptor::set_type(const ::std::string& value) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.MetricDescriptor.type)
 }
- void MetricDescriptor::set_type(const char* value) {
+void MetricDescriptor::set_type(const char* value) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.MetricDescriptor.type)
 }
- void MetricDescriptor::set_type(const char* value, size_t size) {
+void MetricDescriptor::set_type(const char* value, size_t size) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.MetricDescriptor.type)
 }
- ::std::string* MetricDescriptor::mutable_type() {
+::std::string* MetricDescriptor::mutable_type() {
   
   // @@protoc_insertion_point(field_mutable:google.api.MetricDescriptor.type)
   return type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* MetricDescriptor::release_type() {
+::std::string* MetricDescriptor::release_type() {
   // @@protoc_insertion_point(field_release:google.api.MetricDescriptor.type)
   
   return type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_allocated_type(::std::string* type) {
+void MetricDescriptor::set_allocated_type(::std::string* type) {
   if (type != NULL) {
     
   } else {
@@ -938,11 +967,11 @@ MetricDescriptor::labels() const {
 void MetricDescriptor::clear_metric_kind() {
   metric_kind_ = 0;
 }
- ::google::api::MetricDescriptor_MetricKind MetricDescriptor::metric_kind() const {
+::google::api::MetricDescriptor_MetricKind MetricDescriptor::metric_kind() const {
   // @@protoc_insertion_point(field_get:google.api.MetricDescriptor.metric_kind)
   return static_cast< ::google::api::MetricDescriptor_MetricKind >(metric_kind_);
 }
- void MetricDescriptor::set_metric_kind(::google::api::MetricDescriptor_MetricKind value) {
+void MetricDescriptor::set_metric_kind(::google::api::MetricDescriptor_MetricKind value) {
   
   metric_kind_ = value;
   // @@protoc_insertion_point(field_set:google.api.MetricDescriptor.metric_kind)
@@ -952,11 +981,11 @@ void MetricDescriptor::clear_metric_kind() {
 void MetricDescriptor::clear_value_type() {
   value_type_ = 0;
 }
- ::google::api::MetricDescriptor_ValueType MetricDescriptor::value_type() const {
+::google::api::MetricDescriptor_ValueType MetricDescriptor::value_type() const {
   // @@protoc_insertion_point(field_get:google.api.MetricDescriptor.value_type)
   return static_cast< ::google::api::MetricDescriptor_ValueType >(value_type_);
 }
- void MetricDescriptor::set_value_type(::google::api::MetricDescriptor_ValueType value) {
+void MetricDescriptor::set_value_type(::google::api::MetricDescriptor_ValueType value) {
   
   value_type_ = value;
   // @@protoc_insertion_point(field_set:google.api.MetricDescriptor.value_type)
@@ -966,37 +995,37 @@ void MetricDescriptor::clear_value_type() {
 void MetricDescriptor::clear_unit() {
   unit_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& MetricDescriptor::unit() const {
+const ::std::string& MetricDescriptor::unit() const {
   // @@protoc_insertion_point(field_get:google.api.MetricDescriptor.unit)
   return unit_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_unit(const ::std::string& value) {
+void MetricDescriptor::set_unit(const ::std::string& value) {
   
   unit_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.MetricDescriptor.unit)
 }
- void MetricDescriptor::set_unit(const char* value) {
+void MetricDescriptor::set_unit(const char* value) {
   
   unit_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.MetricDescriptor.unit)
 }
- void MetricDescriptor::set_unit(const char* value, size_t size) {
+void MetricDescriptor::set_unit(const char* value, size_t size) {
   
   unit_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.MetricDescriptor.unit)
 }
- ::std::string* MetricDescriptor::mutable_unit() {
+::std::string* MetricDescriptor::mutable_unit() {
   
   // @@protoc_insertion_point(field_mutable:google.api.MetricDescriptor.unit)
   return unit_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* MetricDescriptor::release_unit() {
+::std::string* MetricDescriptor::release_unit() {
   // @@protoc_insertion_point(field_release:google.api.MetricDescriptor.unit)
   
   return unit_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_allocated_unit(::std::string* unit) {
+void MetricDescriptor::set_allocated_unit(::std::string* unit) {
   if (unit != NULL) {
     
   } else {
@@ -1010,37 +1039,37 @@ void MetricDescriptor::clear_unit() {
 void MetricDescriptor::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& MetricDescriptor::description() const {
+const ::std::string& MetricDescriptor::description() const {
   // @@protoc_insertion_point(field_get:google.api.MetricDescriptor.description)
   return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_description(const ::std::string& value) {
+void MetricDescriptor::set_description(const ::std::string& value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.MetricDescriptor.description)
 }
- void MetricDescriptor::set_description(const char* value) {
+void MetricDescriptor::set_description(const char* value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.MetricDescriptor.description)
 }
- void MetricDescriptor::set_description(const char* value, size_t size) {
+void MetricDescriptor::set_description(const char* value, size_t size) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.MetricDescriptor.description)
 }
- ::std::string* MetricDescriptor::mutable_description() {
+::std::string* MetricDescriptor::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.api.MetricDescriptor.description)
   return description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* MetricDescriptor::release_description() {
+::std::string* MetricDescriptor::release_description() {
   // @@protoc_insertion_point(field_release:google.api.MetricDescriptor.description)
   
   return description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_allocated_description(::std::string* description) {
+void MetricDescriptor::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -1054,37 +1083,37 @@ void MetricDescriptor::clear_description() {
 void MetricDescriptor::clear_display_name() {
   display_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& MetricDescriptor::display_name() const {
+const ::std::string& MetricDescriptor::display_name() const {
   // @@protoc_insertion_point(field_get:google.api.MetricDescriptor.display_name)
   return display_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_display_name(const ::std::string& value) {
+void MetricDescriptor::set_display_name(const ::std::string& value) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.MetricDescriptor.display_name)
 }
- void MetricDescriptor::set_display_name(const char* value) {
+void MetricDescriptor::set_display_name(const char* value) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.MetricDescriptor.display_name)
 }
- void MetricDescriptor::set_display_name(const char* value, size_t size) {
+void MetricDescriptor::set_display_name(const char* value, size_t size) {
   
   display_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.MetricDescriptor.display_name)
 }
- ::std::string* MetricDescriptor::mutable_display_name() {
+::std::string* MetricDescriptor::mutable_display_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.MetricDescriptor.display_name)
   return display_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* MetricDescriptor::release_display_name() {
+::std::string* MetricDescriptor::release_display_name() {
   // @@protoc_insertion_point(field_release:google.api.MetricDescriptor.display_name)
   
   return display_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void MetricDescriptor::set_allocated_display_name(::std::string* display_name) {
+void MetricDescriptor::set_allocated_display_name(::std::string* display_name) {
   if (display_name != NULL) {
     
   } else {
@@ -1094,6 +1123,9 @@ void MetricDescriptor::clear_display_name() {
   // @@protoc_insertion_point(field_set_allocated:google.api.MetricDescriptor.display_name)
 }
 
+inline const MetricDescriptor* MetricDescriptor::internal_default_instance() {
+  return &MetricDescriptor_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1105,31 +1137,29 @@ const int Metric::kLabelsFieldNumber;
 
 Metric::Metric()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fmetric_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Metric)
 }
 
 void Metric::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Metric::Metric(const Metric& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Metric)
 }
 
 void Metric::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   labels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   labels_.SetEntryDescriptor(
       &::google::api::Metric_LabelsEntry_descriptor_);
+  type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Metric::~Metric() {
@@ -1139,8 +1169,6 @@ Metric::~Metric() {
 
 void Metric::SharedDtor() {
   type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Metric::SetCachedSize(int size) const {
@@ -1154,11 +1182,11 @@ const ::google::protobuf::Descriptor* Metric::descriptor() {
 }
 
 const Metric& Metric::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fmetric_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fmetric_2eproto();
+  return *internal_default_instance();
 }
 
-Metric* Metric::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Metric> Metric_default_instance_;
 
 Metric* Metric::New(::google::protobuf::Arena* arena) const {
   Metric* n = new Metric;
@@ -1323,6 +1351,7 @@ void Metric::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Metric::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Metric)
   // map<string, string> labels = 2;
   if (!this->labels().empty()) {
@@ -1396,9 +1425,9 @@ void Metric::SerializeWithCachedSizes(
   return target;
 }
 
-int Metric::ByteSize() const {
+size_t Metric::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Metric)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string type = 3;
   if (this->type().size() > 0) {
@@ -1408,7 +1437,8 @@ int Metric::ByteSize() const {
   }
 
   // map<string, string> labels = 2;
-  total_size += 1 * this->labels_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->labels_size());
   {
     ::google::protobuf::scoped_ptr<Metric_LabelsEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -1420,18 +1450,17 @@ int Metric::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Metric::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Metric)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Metric* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Metric* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Metric>(
           &from);
   if (source == NULL) {
@@ -1439,15 +1468,21 @@ void Metric::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Metric)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Metric::MergeFrom(const Metric& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Metric)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Metric::UnsafeMergeFrom(const Metric& from) {
+  GOOGLE_DCHECK(&from != this);
   labels_.MergeFrom(from.labels_);
   if (from.type().size() > 0) {
 
@@ -1466,7 +1501,7 @@ void Metric::CopyFrom(const Metric& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Metric)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Metric::IsInitialized() const {
@@ -1500,37 +1535,37 @@ void Metric::InternalSwap(Metric* other) {
 void Metric::clear_type() {
   type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Metric::type() const {
+const ::std::string& Metric::type() const {
   // @@protoc_insertion_point(field_get:google.api.Metric.type)
   return type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Metric::set_type(const ::std::string& value) {
+void Metric::set_type(const ::std::string& value) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Metric.type)
 }
- void Metric::set_type(const char* value) {
+void Metric::set_type(const char* value) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Metric.type)
 }
- void Metric::set_type(const char* value, size_t size) {
+void Metric::set_type(const char* value, size_t size) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Metric.type)
 }
- ::std::string* Metric::mutable_type() {
+::std::string* Metric::mutable_type() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Metric.type)
   return type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Metric::release_type() {
+::std::string* Metric::release_type() {
   // @@protoc_insertion_point(field_release:google.api.Metric.type)
   
   return type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Metric::set_allocated_type(::std::string* type) {
+void Metric::set_allocated_type(::std::string* type) {
   if (type != NULL) {
     
   } else {
@@ -1558,6 +1593,9 @@ Metric::mutable_labels() {
   return labels_.MutableMap();
 }
 
+inline const Metric* Metric::internal_default_instance() {
+  return &Metric_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

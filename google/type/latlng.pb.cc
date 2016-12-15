@@ -44,20 +44,19 @@ void protobuf_AssignDesc_google_2ftype_2flatlng_2eproto() {
   LatLng_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       LatLng_descriptor_,
-      LatLng::default_instance_,
+      LatLng::internal_default_instance(),
       LatLng_offsets_,
       -1,
       -1,
       -1,
       sizeof(LatLng),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LatLng, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LatLng, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LatLng, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2ftype_2flatlng_2eproto);
 }
@@ -66,41 +65,64 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      LatLng_descriptor_, &LatLng::default_instance());
+      LatLng_descriptor_, LatLng::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2ftype_2flatlng_2eproto() {
-  delete LatLng::default_instance_;
+  LatLng_default_instance_.Shutdown();
   delete LatLng_reflection_;
 }
 
-void protobuf_AddDesc_google_2ftype_2flatlng_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2ftype_2flatlng_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2ftype_2flatlng_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  LatLng_default_instance_.DefaultConstruct();
+  LatLng_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2ftype_2flatlng_2eproto_once_);
+void protobuf_InitDefaults_google_2ftype_2flatlng_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2ftype_2flatlng_2eproto_once_,
+                 &protobuf_InitDefaults_google_2ftype_2flatlng_2eproto_impl);
+}
+void protobuf_AddDesc_google_2ftype_2flatlng_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2ftype_2flatlng_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\030google/type/latlng.proto\022\013google.type\""
     "-\n\006LatLng\022\020\n\010latitude\030\001 \001(\001\022\021\n\tlongitude"
-    "\030\002 \001(\001B&\n\017com.google.typeB\013LatLngProtoP\001"
-    "\242\002\003GTPb\006proto3", 134);
+    "\030\002 \001(\001B`\n\017com.google.typeB\013LatLngProtoP\001"
+    "Z8google.golang.org/genproto/googleapis/"
+    "type/latlng;latlng\242\002\003GTPb\006proto3", 192);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/type/latlng.proto", &protobuf_RegisterTypes);
-  LatLng::default_instance_ = new LatLng();
-  LatLng::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2ftype_2flatlng_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2ftype_2flatlng_2eproto_once_);
+void protobuf_AddDesc_google_2ftype_2flatlng_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2ftype_2flatlng_2eproto_once_,
+                 &protobuf_AddDesc_google_2ftype_2flatlng_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2ftype_2flatlng_2eproto {
   StaticDescriptorInitializer_google_2ftype_2flatlng_2eproto() {
     protobuf_AddDesc_google_2ftype_2flatlng_2eproto();
   }
 } static_descriptor_initializer_google_2ftype_2flatlng_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -111,27 +133,26 @@ const int LatLng::kLongitudeFieldNumber;
 
 LatLng::LatLng()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftype_2flatlng_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.type.LatLng)
 }
 
 void LatLng::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 LatLng::LatLng(const LatLng& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.type.LatLng)
 }
 
 void LatLng::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&latitude_, 0, reinterpret_cast<char*>(&longitude_) -
+    reinterpret_cast<char*>(&latitude_) + sizeof(longitude_));
   _cached_size_ = 0;
-  latitude_ = 0;
-  longitude_ = 0;
 }
 
 LatLng::~LatLng() {
@@ -140,8 +161,6 @@ LatLng::~LatLng() {
 }
 
 void LatLng::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void LatLng::SetCachedSize(int size) const {
@@ -155,11 +174,11 @@ const ::google::protobuf::Descriptor* LatLng::descriptor() {
 }
 
 const LatLng& LatLng::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftype_2flatlng_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftype_2flatlng_2eproto();
+  return *internal_default_instance();
 }
 
-LatLng* LatLng::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<LatLng> LatLng_default_instance_;
 
 LatLng* LatLng::New(::google::protobuf::Arena* arena) const {
   LatLng* n = new LatLng;
@@ -183,7 +202,7 @@ void LatLng::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -207,10 +226,10 @@ bool LatLng::MergePartialFromCodedStream(
       // optional double latitude = 1;
       case 1: {
         if (tag == 9) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &latitude_)));
-
         } else {
           goto handle_unusual;
         }
@@ -222,10 +241,10 @@ bool LatLng::MergePartialFromCodedStream(
       case 2: {
         if (tag == 17) {
          parse_longitude:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &longitude_)));
-
         } else {
           goto handle_unusual;
         }
@@ -272,6 +291,7 @@ void LatLng::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* LatLng::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.type.LatLng)
   // optional double latitude = 1;
   if (this->latitude() != 0) {
@@ -287,9 +307,9 @@ void LatLng::SerializeWithCachedSizes(
   return target;
 }
 
-int LatLng::ByteSize() const {
+size_t LatLng::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.type.LatLng)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional double latitude = 1;
   if (this->latitude() != 0) {
@@ -301,18 +321,17 @@ int LatLng::ByteSize() const {
     total_size += 1 + 8;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LatLng::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.type.LatLng)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const LatLng* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const LatLng* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LatLng>(
           &from);
   if (source == NULL) {
@@ -320,15 +339,21 @@ void LatLng::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.type.LatLng)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LatLng::MergeFrom(const LatLng& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.type.LatLng)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void LatLng::UnsafeMergeFrom(const LatLng& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.latitude() != 0) {
     set_latitude(from.latitude());
   }
@@ -348,7 +373,7 @@ void LatLng::CopyFrom(const LatLng& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.type.LatLng)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LatLng::IsInitialized() const {
@@ -382,11 +407,11 @@ void LatLng::InternalSwap(LatLng* other) {
 void LatLng::clear_latitude() {
   latitude_ = 0;
 }
- double LatLng::latitude() const {
+double LatLng::latitude() const {
   // @@protoc_insertion_point(field_get:google.type.LatLng.latitude)
   return latitude_;
 }
- void LatLng::set_latitude(double value) {
+void LatLng::set_latitude(double value) {
   
   latitude_ = value;
   // @@protoc_insertion_point(field_set:google.type.LatLng.latitude)
@@ -396,16 +421,19 @@ void LatLng::clear_latitude() {
 void LatLng::clear_longitude() {
   longitude_ = 0;
 }
- double LatLng::longitude() const {
+double LatLng::longitude() const {
   // @@protoc_insertion_point(field_get:google.type.LatLng.longitude)
   return longitude_;
 }
- void LatLng::set_longitude(double value) {
+void LatLng::set_longitude(double value) {
   
   longitude_ = value;
   // @@protoc_insertion_point(field_set:google.type.LatLng.longitude)
 }
 
+inline const LatLng* LatLng::internal_default_instance() {
+  return &LatLng_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

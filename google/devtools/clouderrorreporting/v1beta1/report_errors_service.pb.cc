@@ -52,28 +52,26 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2frep
   ReportErrorEventRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ReportErrorEventRequest_descriptor_,
-      ReportErrorEventRequest::default_instance_,
+      ReportErrorEventRequest::internal_default_instance(),
       ReportErrorEventRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ReportErrorEventRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportErrorEventRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportErrorEventRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportErrorEventRequest, _internal_metadata_));
   ReportErrorEventResponse_descriptor_ = file->message_type(1);
   static const int ReportErrorEventResponse_offsets_[1] = {
   };
   ReportErrorEventResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ReportErrorEventResponse_descriptor_,
-      ReportErrorEventResponse::default_instance_,
+      ReportErrorEventResponse::internal_default_instance(),
       ReportErrorEventResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ReportErrorEventResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportErrorEventResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportErrorEventResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportErrorEventResponse, _internal_metadata_));
   ReportedErrorEvent_descriptor_ = file->message_type(2);
   static const int ReportedErrorEvent_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportedErrorEvent, event_time_),
@@ -84,20 +82,19 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2frep
   ReportedErrorEvent_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ReportedErrorEvent_descriptor_,
-      ReportedErrorEvent::default_instance_,
+      ReportedErrorEvent::internal_default_instance(),
       ReportedErrorEvent_offsets_,
       -1,
       -1,
       -1,
       sizeof(ReportedErrorEvent),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportedErrorEvent, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportedErrorEvent, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReportedErrorEvent, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto);
 }
@@ -106,34 +103,49 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ReportErrorEventRequest_descriptor_, &ReportErrorEventRequest::default_instance());
+      ReportErrorEventRequest_descriptor_, ReportErrorEventRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ReportErrorEventResponse_descriptor_, &ReportErrorEventResponse::default_instance());
+      ReportErrorEventResponse_descriptor_, ReportErrorEventResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ReportedErrorEvent_descriptor_, &ReportedErrorEvent::default_instance());
+      ReportedErrorEvent_descriptor_, ReportedErrorEvent::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto() {
-  delete ReportErrorEventRequest::default_instance_;
+  ReportErrorEventRequest_default_instance_.Shutdown();
   delete ReportErrorEventRequest_reflection_;
-  delete ReportErrorEventResponse::default_instance_;
+  ReportErrorEventResponse_default_instance_.Shutdown();
   delete ReportErrorEventResponse_reflection_;
-  delete ReportedErrorEvent::default_instance_;
+  ReportedErrorEvent_default_instance_.Shutdown();
   delete ReportedErrorEvent_reflection_;
 }
 
-void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::devtools::clouderrorreporting::v1beta1::protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2fcommon_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::devtools::clouderrorreporting::v1beta1::protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2fcommon_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  ReportErrorEventRequest_default_instance_.DefaultConstruct();
+  ReportErrorEventResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ReportedErrorEvent_default_instance_.DefaultConstruct();
+  ReportErrorEventRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ReportErrorEventResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ReportedErrorEvent_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_once_);
+void protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\nGgoogle/devtools/clouderrorreporting/v1"
     "beta1/report_errors_service.proto\022+googl"
@@ -157,27 +169,41 @@ void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport
     "t\032E.google.devtools.clouderrorreporting."
     "v1beta1.ReportErrorEventResponse\"\?\202\323\344\223\0029"
     "\"0/v1beta1/{project_name=projects/*}/eve"
-    "nts:report:\005eventBs\n/com.google.devtools"
-    ".clouderrorreporting.v1beta1B\030ReportErro"
-    "rsServiceProtoP\001\252\002#Google.Cloud.ErrorRep"
-    "orting.V1Beta1b\006proto3", 1022);
+    "nts:report:\005eventB\323\001\n/com.google.devtool"
+    "s.clouderrorreporting.v1beta1B\030ReportErr"
+    "orsServiceProtoP\001Z^google.golang.org/gen"
+    "proto/googleapis/devtools/clouderrorrepo"
+    "rting/v1beta1;clouderrorreporting\252\002#Goog"
+    "le.Cloud.ErrorReporting.V1Beta1b\006proto3", 1119);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/devtools/clouderrorreporting/v1beta1/report_errors_service.proto", &protobuf_RegisterTypes);
-  ReportErrorEventRequest::default_instance_ = new ReportErrorEventRequest();
-  ReportErrorEventResponse::default_instance_ = new ReportErrorEventResponse();
-  ReportedErrorEvent::default_instance_ = new ReportedErrorEvent();
-  ReportErrorEventRequest::default_instance_->InitAsDefaultInstance();
-  ReportErrorEventResponse::default_instance_->InitAsDefaultInstance();
-  ReportedErrorEvent::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::devtools::clouderrorreporting::v1beta1::protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2fcommon_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_once_);
+void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_once_,
+                 &protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto {
   StaticDescriptorInitializer_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto() {
     protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -188,29 +214,28 @@ const int ReportErrorEventRequest::kEventFieldNumber;
 
 ReportErrorEventRequest::ReportErrorEventRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
 }
 
 void ReportErrorEventRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  event_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ReportedErrorEvent*>(&::google::devtools::clouderrorreporting::v1beta1::ReportedErrorEvent::default_instance());
+  event_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ReportedErrorEvent*>(
+      ::google::devtools::clouderrorreporting::v1beta1::ReportedErrorEvent::internal_default_instance());
 }
 
 ReportErrorEventRequest::ReportErrorEventRequest(const ReportErrorEventRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
 }
 
 void ReportErrorEventRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   event_ = NULL;
+  _cached_size_ = 0;
 }
 
 ReportErrorEventRequest::~ReportErrorEventRequest() {
@@ -220,7 +245,7 @@ ReportErrorEventRequest::~ReportErrorEventRequest() {
 
 void ReportErrorEventRequest::SharedDtor() {
   project_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &ReportErrorEventRequest_default_instance_.get()) {
     delete event_;
   }
 }
@@ -236,11 +261,11 @@ const ::google::protobuf::Descriptor* ReportErrorEventRequest::descriptor() {
 }
 
 const ReportErrorEventRequest& ReportErrorEventRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-ReportErrorEventRequest* ReportErrorEventRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ReportErrorEventRequest> ReportErrorEventRequest_default_instance_;
 
 ReportErrorEventRequest* ReportErrorEventRequest::New(::google::protobuf::Arena* arena) const {
   ReportErrorEventRequest* n = new ReportErrorEventRequest;
@@ -341,6 +366,7 @@ void ReportErrorEventRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ReportErrorEventRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
   // optional string project_name = 1;
   if (this->project_name().size() > 0) {
@@ -364,9 +390,9 @@ void ReportErrorEventRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ReportErrorEventRequest::ByteSize() const {
+size_t ReportErrorEventRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project_name = 1;
   if (this->project_name().size() > 0) {
@@ -382,18 +408,17 @@ int ReportErrorEventRequest::ByteSize() const {
         *this->event_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ReportErrorEventRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ReportErrorEventRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ReportErrorEventRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReportErrorEventRequest>(
           &from);
   if (source == NULL) {
@@ -401,15 +426,21 @@ void ReportErrorEventRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReportErrorEventRequest::MergeFrom(const ReportErrorEventRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ReportErrorEventRequest::UnsafeMergeFrom(const ReportErrorEventRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_name().size() > 0) {
 
     project_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_name_);
@@ -430,7 +461,7 @@ void ReportErrorEventRequest::CopyFrom(const ReportErrorEventRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReportErrorEventRequest::IsInitialized() const {
@@ -464,37 +495,37 @@ void ReportErrorEventRequest::InternalSwap(ReportErrorEventRequest* other) {
 void ReportErrorEventRequest::clear_project_name() {
   project_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ReportErrorEventRequest::project_name() const {
+const ::std::string& ReportErrorEventRequest::project_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
   return project_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReportErrorEventRequest::set_project_name(const ::std::string& value) {
+void ReportErrorEventRequest::set_project_name(const ::std::string& value) {
   
   project_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
 }
- void ReportErrorEventRequest::set_project_name(const char* value) {
+void ReportErrorEventRequest::set_project_name(const char* value) {
   
   project_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
 }
- void ReportErrorEventRequest::set_project_name(const char* value, size_t size) {
+void ReportErrorEventRequest::set_project_name(const char* value, size_t size) {
   
   project_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
 }
- ::std::string* ReportErrorEventRequest::mutable_project_name() {
+::std::string* ReportErrorEventRequest::mutable_project_name() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
   return project_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ReportErrorEventRequest::release_project_name() {
+::std::string* ReportErrorEventRequest::release_project_name() {
   // @@protoc_insertion_point(field_release:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
   
   return project_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReportErrorEventRequest::set_allocated_project_name(::std::string* project_name) {
+void ReportErrorEventRequest::set_allocated_project_name(::std::string* project_name) {
   if (project_name != NULL) {
     
   } else {
@@ -506,7 +537,7 @@ void ReportErrorEventRequest::clear_project_name() {
 
 // optional .google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent event = 2;
 bool ReportErrorEventRequest::has_event() const {
-  return !_is_default_instance_ && event_ != NULL;
+  return this != internal_default_instance() && event_ != NULL;
 }
 void ReportErrorEventRequest::clear_event() {
   if (GetArenaNoVirtual() == NULL && event_ != NULL) delete event_;
@@ -514,7 +545,8 @@ void ReportErrorEventRequest::clear_event() {
 }
 const ::google::devtools::clouderrorreporting::v1beta1::ReportedErrorEvent& ReportErrorEventRequest::event() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.event)
-  return event_ != NULL ? *event_ : *default_instance_->event_;
+  return event_ != NULL ? *event_
+                         : *::google::devtools::clouderrorreporting::v1beta1::ReportedErrorEvent::internal_default_instance();
 }
 ::google::devtools::clouderrorreporting::v1beta1::ReportedErrorEvent* ReportErrorEventRequest::mutable_event() {
   
@@ -542,6 +574,9 @@ void ReportErrorEventRequest::set_allocated_event(::google::devtools::clouderror
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.event)
 }
 
+inline const ReportErrorEventRequest* ReportErrorEventRequest::internal_default_instance() {
+  return &ReportErrorEventRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -551,24 +586,23 @@ void ReportErrorEventRequest::set_allocated_event(::google::devtools::clouderror
 
 ReportErrorEventResponse::ReportErrorEventResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
 }
 
 void ReportErrorEventResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ReportErrorEventResponse::ReportErrorEventResponse(const ReportErrorEventResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
 }
 
 void ReportErrorEventResponse::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -578,8 +612,6 @@ ReportErrorEventResponse::~ReportErrorEventResponse() {
 }
 
 void ReportErrorEventResponse::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void ReportErrorEventResponse::SetCachedSize(int size) const {
@@ -593,11 +625,11 @@ const ::google::protobuf::Descriptor* ReportErrorEventResponse::descriptor() {
 }
 
 const ReportErrorEventResponse& ReportErrorEventResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-ReportErrorEventResponse* ReportErrorEventResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ReportErrorEventResponse> ReportErrorEventResponse_default_instance_;
 
 ReportErrorEventResponse* ReportErrorEventResponse::New(::google::protobuf::Arena* arena) const {
   ReportErrorEventResponse* n = new ReportErrorEventResponse;
@@ -645,27 +677,27 @@ void ReportErrorEventResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ReportErrorEventResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
   // @@protoc_insertion_point(serialize_to_array_end:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
   return target;
 }
 
-int ReportErrorEventResponse::ByteSize() const {
+size_t ReportErrorEventResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ReportErrorEventResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ReportErrorEventResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ReportErrorEventResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReportErrorEventResponse>(
           &from);
   if (source == NULL) {
@@ -673,15 +705,21 @@ void ReportErrorEventResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReportErrorEventResponse::MergeFrom(const ReportErrorEventResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ReportErrorEventResponse::UnsafeMergeFrom(const ReportErrorEventResponse& from) {
+  GOOGLE_DCHECK(&from != this);
 }
 
 void ReportErrorEventResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -695,7 +733,7 @@ void ReportErrorEventResponse::CopyFrom(const ReportErrorEventResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReportErrorEventResponse::IsInitialized() const {
@@ -723,6 +761,9 @@ void ReportErrorEventResponse::InternalSwap(ReportErrorEventResponse* other) {
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReportErrorEventResponse
 
+inline const ReportErrorEventResponse* ReportErrorEventResponse::internal_default_instance() {
+  return &ReportErrorEventResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -736,33 +777,34 @@ const int ReportedErrorEvent::kContextFieldNumber;
 
 ReportedErrorEvent::ReportedErrorEvent()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
 }
 
 void ReportedErrorEvent::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  event_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  service_context_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ServiceContext*>(&::google::devtools::clouderrorreporting::v1beta1::ServiceContext::default_instance());
-  context_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ErrorContext*>(&::google::devtools::clouderrorreporting::v1beta1::ErrorContext::default_instance());
+  event_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  service_context_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ServiceContext*>(
+      ::google::devtools::clouderrorreporting::v1beta1::ServiceContext::internal_default_instance());
+  context_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ErrorContext*>(
+      ::google::devtools::clouderrorreporting::v1beta1::ErrorContext::internal_default_instance());
 }
 
 ReportedErrorEvent::ReportedErrorEvent(const ReportedErrorEvent& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
 }
 
 void ReportedErrorEvent::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
+  message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   event_time_ = NULL;
   service_context_ = NULL;
-  message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   context_ = NULL;
+  _cached_size_ = 0;
 }
 
 ReportedErrorEvent::~ReportedErrorEvent() {
@@ -772,7 +814,7 @@ ReportedErrorEvent::~ReportedErrorEvent() {
 
 void ReportedErrorEvent::SharedDtor() {
   message_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &ReportedErrorEvent_default_instance_.get()) {
     delete event_time_;
     delete service_context_;
     delete context_;
@@ -790,11 +832,11 @@ const ::google::protobuf::Descriptor* ReportedErrorEvent::descriptor() {
 }
 
 const ReportedErrorEvent& ReportedErrorEvent::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-ReportedErrorEvent* ReportedErrorEvent::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ReportedErrorEvent> ReportedErrorEvent_default_instance_;
 
 ReportedErrorEvent* ReportedErrorEvent::New(::google::protobuf::Arena* arena) const {
   ReportedErrorEvent* n = new ReportedErrorEvent;
@@ -937,6 +979,7 @@ void ReportedErrorEvent::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ReportedErrorEvent::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
   // optional .google.protobuf.Timestamp event_time = 1;
   if (this->has_event_time()) {
@@ -974,9 +1017,9 @@ void ReportedErrorEvent::SerializeWithCachedSizes(
   return target;
 }
 
-int ReportedErrorEvent::ByteSize() const {
+size_t ReportedErrorEvent::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Timestamp event_time = 1;
   if (this->has_event_time()) {
@@ -1006,18 +1049,17 @@ int ReportedErrorEvent::ByteSize() const {
         *this->context_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ReportedErrorEvent::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ReportedErrorEvent* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ReportedErrorEvent* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReportedErrorEvent>(
           &from);
   if (source == NULL) {
@@ -1025,15 +1067,21 @@ void ReportedErrorEvent::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReportedErrorEvent::MergeFrom(const ReportedErrorEvent& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ReportedErrorEvent::UnsafeMergeFrom(const ReportedErrorEvent& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_event_time()) {
     mutable_event_time()->::google::protobuf::Timestamp::MergeFrom(from.event_time());
   }
@@ -1060,7 +1108,7 @@ void ReportedErrorEvent::CopyFrom(const ReportedErrorEvent& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReportedErrorEvent::IsInitialized() const {
@@ -1094,7 +1142,7 @@ void ReportedErrorEvent::InternalSwap(ReportedErrorEvent* other) {
 
 // optional .google.protobuf.Timestamp event_time = 1;
 bool ReportedErrorEvent::has_event_time() const {
-  return !_is_default_instance_ && event_time_ != NULL;
+  return this != internal_default_instance() && event_time_ != NULL;
 }
 void ReportedErrorEvent::clear_event_time() {
   if (GetArenaNoVirtual() == NULL && event_time_ != NULL) delete event_time_;
@@ -1102,7 +1150,8 @@ void ReportedErrorEvent::clear_event_time() {
 }
 const ::google::protobuf::Timestamp& ReportedErrorEvent::event_time() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.event_time)
-  return event_time_ != NULL ? *event_time_ : *default_instance_->event_time_;
+  return event_time_ != NULL ? *event_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* ReportedErrorEvent::mutable_event_time() {
   
@@ -1137,7 +1186,7 @@ void ReportedErrorEvent::set_allocated_event_time(::google::protobuf::Timestamp*
 
 // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContext service_context = 2;
 bool ReportedErrorEvent::has_service_context() const {
-  return !_is_default_instance_ && service_context_ != NULL;
+  return this != internal_default_instance() && service_context_ != NULL;
 }
 void ReportedErrorEvent::clear_service_context() {
   if (GetArenaNoVirtual() == NULL && service_context_ != NULL) delete service_context_;
@@ -1145,7 +1194,8 @@ void ReportedErrorEvent::clear_service_context() {
 }
 const ::google::devtools::clouderrorreporting::v1beta1::ServiceContext& ReportedErrorEvent::service_context() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.service_context)
-  return service_context_ != NULL ? *service_context_ : *default_instance_->service_context_;
+  return service_context_ != NULL ? *service_context_
+                         : *::google::devtools::clouderrorreporting::v1beta1::ServiceContext::internal_default_instance();
 }
 ::google::devtools::clouderrorreporting::v1beta1::ServiceContext* ReportedErrorEvent::mutable_service_context() {
   
@@ -1177,37 +1227,37 @@ void ReportedErrorEvent::set_allocated_service_context(::google::devtools::cloud
 void ReportedErrorEvent::clear_message() {
   message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ReportedErrorEvent::message() const {
+const ::std::string& ReportedErrorEvent::message() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
   return message_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReportedErrorEvent::set_message(const ::std::string& value) {
+void ReportedErrorEvent::set_message(const ::std::string& value) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
 }
- void ReportedErrorEvent::set_message(const char* value) {
+void ReportedErrorEvent::set_message(const char* value) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
 }
- void ReportedErrorEvent::set_message(const char* value, size_t size) {
+void ReportedErrorEvent::set_message(const char* value, size_t size) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
 }
- ::std::string* ReportedErrorEvent::mutable_message() {
+::std::string* ReportedErrorEvent::mutable_message() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
   return message_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ReportedErrorEvent::release_message() {
+::std::string* ReportedErrorEvent::release_message() {
   // @@protoc_insertion_point(field_release:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
   
   return message_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReportedErrorEvent::set_allocated_message(::std::string* message) {
+void ReportedErrorEvent::set_allocated_message(::std::string* message) {
   if (message != NULL) {
     
   } else {
@@ -1219,7 +1269,7 @@ void ReportedErrorEvent::clear_message() {
 
 // optional .google.devtools.clouderrorreporting.v1beta1.ErrorContext context = 4;
 bool ReportedErrorEvent::has_context() const {
-  return !_is_default_instance_ && context_ != NULL;
+  return this != internal_default_instance() && context_ != NULL;
 }
 void ReportedErrorEvent::clear_context() {
   if (GetArenaNoVirtual() == NULL && context_ != NULL) delete context_;
@@ -1227,7 +1277,8 @@ void ReportedErrorEvent::clear_context() {
 }
 const ::google::devtools::clouderrorreporting::v1beta1::ErrorContext& ReportedErrorEvent::context() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.context)
-  return context_ != NULL ? *context_ : *default_instance_->context_;
+  return context_ != NULL ? *context_
+                         : *::google::devtools::clouderrorreporting::v1beta1::ErrorContext::internal_default_instance();
 }
 ::google::devtools::clouderrorreporting::v1beta1::ErrorContext* ReportedErrorEvent::mutable_context() {
   
@@ -1255,6 +1306,9 @@ void ReportedErrorEvent::set_allocated_context(::google::devtools::clouderrorrep
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.context)
 }
 
+inline const ReportedErrorEvent* ReportedErrorEvent::internal_default_instance() {
+  return &ReportedErrorEvent_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

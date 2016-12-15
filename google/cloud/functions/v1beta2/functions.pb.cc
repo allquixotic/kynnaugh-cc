@@ -106,7 +106,7 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   CloudFunction_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CloudFunction_descriptor_,
-      CloudFunction::default_instance_,
+      CloudFunction::internal_default_instance(),
       CloudFunction_offsets_,
       -1,
       -1,
@@ -114,8 +114,7 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
       CloudFunction_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudFunction, _oneof_case_[0]),
       sizeof(CloudFunction),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudFunction, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudFunction, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudFunction, _internal_metadata_));
   HTTPSTrigger_descriptor_ = file->message_type(1);
   static const int HTTPSTrigger_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HTTPSTrigger, url_),
@@ -123,14 +122,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   HTTPSTrigger_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       HTTPSTrigger_descriptor_,
-      HTTPSTrigger::default_instance_,
+      HTTPSTrigger::internal_default_instance(),
       HTTPSTrigger_offsets_,
       -1,
       -1,
       -1,
       sizeof(HTTPSTrigger),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HTTPSTrigger, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HTTPSTrigger, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HTTPSTrigger, _internal_metadata_));
   EventTrigger_descriptor_ = file->message_type(2);
   static const int EventTrigger_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventTrigger, event_type_),
@@ -140,14 +138,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   EventTrigger_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       EventTrigger_descriptor_,
-      EventTrigger::default_instance_,
+      EventTrigger::internal_default_instance(),
       EventTrigger_offsets_,
       -1,
       -1,
       -1,
       sizeof(EventTrigger),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventTrigger, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventTrigger, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EventTrigger, _internal_metadata_));
   SourceRepository_descriptor_ = file->message_type(3);
   static const int SourceRepository_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceRepository, repository_url_),
@@ -161,7 +158,7 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   SourceRepository_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SourceRepository_descriptor_,
-      SourceRepository::default_instance_,
+      SourceRepository::internal_default_instance(),
       SourceRepository_offsets_,
       -1,
       -1,
@@ -169,8 +166,7 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
       SourceRepository_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceRepository, _oneof_case_[0]),
       sizeof(SourceRepository),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceRepository, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceRepository, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceRepository, _internal_metadata_));
   CreateFunctionRequest_descriptor_ = file->message_type(4);
   static const int CreateFunctionRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateFunctionRequest, location_),
@@ -179,14 +175,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   CreateFunctionRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CreateFunctionRequest_descriptor_,
-      CreateFunctionRequest::default_instance_,
+      CreateFunctionRequest::internal_default_instance(),
       CreateFunctionRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CreateFunctionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateFunctionRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateFunctionRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateFunctionRequest, _internal_metadata_));
   UpdateFunctionRequest_descriptor_ = file->message_type(5);
   static const int UpdateFunctionRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateFunctionRequest, name_),
@@ -195,14 +190,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   UpdateFunctionRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UpdateFunctionRequest_descriptor_,
-      UpdateFunctionRequest::default_instance_,
+      UpdateFunctionRequest::internal_default_instance(),
       UpdateFunctionRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(UpdateFunctionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateFunctionRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateFunctionRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateFunctionRequest, _internal_metadata_));
   GetFunctionRequest_descriptor_ = file->message_type(6);
   static const int GetFunctionRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetFunctionRequest, name_),
@@ -210,14 +204,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   GetFunctionRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetFunctionRequest_descriptor_,
-      GetFunctionRequest::default_instance_,
+      GetFunctionRequest::internal_default_instance(),
       GetFunctionRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetFunctionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetFunctionRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetFunctionRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetFunctionRequest, _internal_metadata_));
   ListFunctionsRequest_descriptor_ = file->message_type(7);
   static const int ListFunctionsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsRequest, location_),
@@ -227,14 +220,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   ListFunctionsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListFunctionsRequest_descriptor_,
-      ListFunctionsRequest::default_instance_,
+      ListFunctionsRequest::internal_default_instance(),
       ListFunctionsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListFunctionsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsRequest, _internal_metadata_));
   ListFunctionsResponse_descriptor_ = file->message_type(8);
   static const int ListFunctionsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsResponse, functions_),
@@ -243,14 +235,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   ListFunctionsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListFunctionsResponse_descriptor_,
-      ListFunctionsResponse::default_instance_,
+      ListFunctionsResponse::internal_default_instance(),
       ListFunctionsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListFunctionsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListFunctionsResponse, _internal_metadata_));
   DeleteFunctionRequest_descriptor_ = file->message_type(9);
   static const int DeleteFunctionRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteFunctionRequest, name_),
@@ -258,14 +249,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   DeleteFunctionRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteFunctionRequest_descriptor_,
-      DeleteFunctionRequest::default_instance_,
+      DeleteFunctionRequest::internal_default_instance(),
       DeleteFunctionRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteFunctionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteFunctionRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteFunctionRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteFunctionRequest, _internal_metadata_));
   CallFunctionRequest_descriptor_ = file->message_type(10);
   static const int CallFunctionRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionRequest, name_),
@@ -274,14 +264,13 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   CallFunctionRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CallFunctionRequest_descriptor_,
-      CallFunctionRequest::default_instance_,
+      CallFunctionRequest::internal_default_instance(),
       CallFunctionRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(CallFunctionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionRequest, _internal_metadata_));
   CallFunctionResponse_descriptor_ = file->message_type(11);
   static const int CallFunctionResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionResponse, execution_id_),
@@ -291,21 +280,20 @@ void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eprot
   CallFunctionResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CallFunctionResponse_descriptor_,
-      CallFunctionResponse::default_instance_,
+      CallFunctionResponse::internal_default_instance(),
       CallFunctionResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(CallFunctionResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CallFunctionResponse, _internal_metadata_));
   CloudFunctionStatus_descriptor_ = file->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto);
 }
@@ -314,72 +302,117 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CloudFunction_descriptor_, &CloudFunction::default_instance());
+      CloudFunction_descriptor_, CloudFunction::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      HTTPSTrigger_descriptor_, &HTTPSTrigger::default_instance());
+      HTTPSTrigger_descriptor_, HTTPSTrigger::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      EventTrigger_descriptor_, &EventTrigger::default_instance());
+      EventTrigger_descriptor_, EventTrigger::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SourceRepository_descriptor_, &SourceRepository::default_instance());
+      SourceRepository_descriptor_, SourceRepository::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CreateFunctionRequest_descriptor_, &CreateFunctionRequest::default_instance());
+      CreateFunctionRequest_descriptor_, CreateFunctionRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UpdateFunctionRequest_descriptor_, &UpdateFunctionRequest::default_instance());
+      UpdateFunctionRequest_descriptor_, UpdateFunctionRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetFunctionRequest_descriptor_, &GetFunctionRequest::default_instance());
+      GetFunctionRequest_descriptor_, GetFunctionRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListFunctionsRequest_descriptor_, &ListFunctionsRequest::default_instance());
+      ListFunctionsRequest_descriptor_, ListFunctionsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListFunctionsResponse_descriptor_, &ListFunctionsResponse::default_instance());
+      ListFunctionsResponse_descriptor_, ListFunctionsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteFunctionRequest_descriptor_, &DeleteFunctionRequest::default_instance());
+      DeleteFunctionRequest_descriptor_, DeleteFunctionRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CallFunctionRequest_descriptor_, &CallFunctionRequest::default_instance());
+      CallFunctionRequest_descriptor_, CallFunctionRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CallFunctionResponse_descriptor_, &CallFunctionResponse::default_instance());
+      CallFunctionResponse_descriptor_, CallFunctionResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto() {
-  delete CloudFunction::default_instance_;
+  CloudFunction_default_instance_.Shutdown();
   delete CloudFunction_default_oneof_instance_;
   delete CloudFunction_reflection_;
-  delete HTTPSTrigger::default_instance_;
+  HTTPSTrigger_default_instance_.Shutdown();
   delete HTTPSTrigger_reflection_;
-  delete EventTrigger::default_instance_;
+  EventTrigger_default_instance_.Shutdown();
   delete EventTrigger_reflection_;
-  delete SourceRepository::default_instance_;
+  SourceRepository_default_instance_.Shutdown();
   delete SourceRepository_default_oneof_instance_;
   delete SourceRepository_reflection_;
-  delete CreateFunctionRequest::default_instance_;
+  CreateFunctionRequest_default_instance_.Shutdown();
   delete CreateFunctionRequest_reflection_;
-  delete UpdateFunctionRequest::default_instance_;
+  UpdateFunctionRequest_default_instance_.Shutdown();
   delete UpdateFunctionRequest_reflection_;
-  delete GetFunctionRequest::default_instance_;
+  GetFunctionRequest_default_instance_.Shutdown();
   delete GetFunctionRequest_reflection_;
-  delete ListFunctionsRequest::default_instance_;
+  ListFunctionsRequest_default_instance_.Shutdown();
   delete ListFunctionsRequest_reflection_;
-  delete ListFunctionsResponse::default_instance_;
+  ListFunctionsResponse_default_instance_.Shutdown();
   delete ListFunctionsResponse_reflection_;
-  delete DeleteFunctionRequest::default_instance_;
+  DeleteFunctionRequest_default_instance_.Shutdown();
   delete DeleteFunctionRequest_reflection_;
-  delete CallFunctionRequest::default_instance_;
+  CallFunctionRequest_default_instance_.Shutdown();
   delete CallFunctionRequest_reflection_;
-  delete CallFunctionResponse::default_instance_;
+  CallFunctionResponse_default_instance_.Shutdown();
   delete CallFunctionResponse_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::longrunning::protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  CloudFunction_default_instance_.DefaultConstruct();
+  CloudFunction_default_oneof_instance_ = new CloudFunctionOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  HTTPSTrigger_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  EventTrigger_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SourceRepository_default_instance_.DefaultConstruct();
+  SourceRepository_default_oneof_instance_ = new SourceRepositoryOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateFunctionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateFunctionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetFunctionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListFunctionsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListFunctionsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteFunctionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CallFunctionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CallFunctionResponse_default_instance_.DefaultConstruct();
+  CloudFunction_default_instance_.get_mutable()->InitAsDefaultInstance();
+  HTTPSTrigger_default_instance_.get_mutable()->InitAsDefaultInstance();
+  EventTrigger_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SourceRepository_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateFunctionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateFunctionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetFunctionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListFunctionsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListFunctionsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteFunctionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CallFunctionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CallFunctionResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n.google/cloud/functions/v1beta2/functio"
     "ns.proto\022\036google.cloud.functions.v1beta2"
@@ -451,39 +484,23 @@ void protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto()
     "st\0324.google.cloud.functions.v1beta2.Call"
     "FunctionResponse\"B\202\323\344\223\002<\"7/v1beta2/{name"
     "=projects/*/locations/*/functions/*}:cal"
-    "l:\001*B<\n\"com.google.cloud.functions.v1bet"
-    "a2B\016FunctionsProtoP\001\242\002\003GCFb\006proto3", 2874);
+    "l:\001*B\205\001\n\"com.google.cloud.functions.v1be"
+    "ta2B\016FunctionsProtoP\001ZGgoogle.golang.org"
+    "/genproto/googleapis/cloud/functions/v1b"
+    "eta2;functions\242\002\003GCFb\006proto3", 2948);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/functions/v1beta2/functions.proto", &protobuf_RegisterTypes);
-  CloudFunction::default_instance_ = new CloudFunction();
-  CloudFunction_default_oneof_instance_ = new CloudFunctionOneofInstance();
-  HTTPSTrigger::default_instance_ = new HTTPSTrigger();
-  EventTrigger::default_instance_ = new EventTrigger();
-  SourceRepository::default_instance_ = new SourceRepository();
-  SourceRepository_default_oneof_instance_ = new SourceRepositoryOneofInstance();
-  CreateFunctionRequest::default_instance_ = new CreateFunctionRequest();
-  UpdateFunctionRequest::default_instance_ = new UpdateFunctionRequest();
-  GetFunctionRequest::default_instance_ = new GetFunctionRequest();
-  ListFunctionsRequest::default_instance_ = new ListFunctionsRequest();
-  ListFunctionsResponse::default_instance_ = new ListFunctionsResponse();
-  DeleteFunctionRequest::default_instance_ = new DeleteFunctionRequest();
-  CallFunctionRequest::default_instance_ = new CallFunctionRequest();
-  CallFunctionResponse::default_instance_ = new CallFunctionResponse();
-  CloudFunction::default_instance_->InitAsDefaultInstance();
-  HTTPSTrigger::default_instance_->InitAsDefaultInstance();
-  EventTrigger::default_instance_->InitAsDefaultInstance();
-  SourceRepository::default_instance_->InitAsDefaultInstance();
-  CreateFunctionRequest::default_instance_->InitAsDefaultInstance();
-  UpdateFunctionRequest::default_instance_->InitAsDefaultInstance();
-  GetFunctionRequest::default_instance_->InitAsDefaultInstance();
-  ListFunctionsRequest::default_instance_->InitAsDefaultInstance();
-  ListFunctionsResponse::default_instance_->InitAsDefaultInstance();
-  DeleteFunctionRequest::default_instance_->InitAsDefaultInstance();
-  CallFunctionRequest::default_instance_->InitAsDefaultInstance();
-  CallFunctionResponse::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto() {
@@ -495,7 +512,7 @@ const ::google::protobuf::EnumDescriptor* CloudFunctionStatus_descriptor() {
   return CloudFunctionStatus_descriptor_;
 }
 bool CloudFunctionStatus_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -506,6 +523,16 @@ bool CloudFunctionStatus_IsValid(int value) {
       return false;
   }
 }
+
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
 
 
 // ===================================================================
@@ -528,42 +555,44 @@ const int CloudFunction::kServiceAccountFieldNumber;
 
 CloudFunction::CloudFunction()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.CloudFunction)
 }
 
 void CloudFunction::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   CloudFunction_default_oneof_instance_->gcs_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  CloudFunction_default_oneof_instance_->source_repository_ = const_cast< ::google::cloud::functions::v1beta2::SourceRepository*>(&::google::cloud::functions::v1beta2::SourceRepository::default_instance());
+  CloudFunction_default_oneof_instance_->source_repository_ = const_cast< ::google::cloud::functions::v1beta2::SourceRepository*>(
+      ::google::cloud::functions::v1beta2::SourceRepository::internal_default_instance());
   CloudFunction_default_oneof_instance_->pubsub_trigger_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   CloudFunction_default_oneof_instance_->gcs_trigger_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  CloudFunction_default_oneof_instance_->https_trigger_ = const_cast< ::google::cloud::functions::v1beta2::HTTPSTrigger*>(&::google::cloud::functions::v1beta2::HTTPSTrigger::default_instance());
-  CloudFunction_default_oneof_instance_->event_trigger_ = const_cast< ::google::cloud::functions::v1beta2::EventTrigger*>(&::google::cloud::functions::v1beta2::EventTrigger::default_instance());
-  timeout_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
+  CloudFunction_default_oneof_instance_->https_trigger_ = const_cast< ::google::cloud::functions::v1beta2::HTTPSTrigger*>(
+      ::google::cloud::functions::v1beta2::HTTPSTrigger::internal_default_instance());
+  CloudFunction_default_oneof_instance_->event_trigger_ = const_cast< ::google::cloud::functions::v1beta2::EventTrigger*>(
+      ::google::cloud::functions::v1beta2::EventTrigger::internal_default_instance());
+  timeout_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
 }
 
 CloudFunction::CloudFunction(const CloudFunction& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.CloudFunction)
 }
 
 void CloudFunction::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  status_ = 0;
   latest_operation_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   entry_point_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  timeout_ = NULL;
-  available_memory_mb_ = 0;
   service_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  timeout_ = NULL;
+  ::memset(&status_, 0, reinterpret_cast<char*>(&available_memory_mb_) -
+    reinterpret_cast<char*>(&status_) + sizeof(available_memory_mb_));
   clear_has_source_code();
   clear_has_trigger();
+  _cached_size_ = 0;
 }
 
 CloudFunction::~CloudFunction() {
@@ -582,7 +611,7 @@ void CloudFunction::SharedDtor() {
   if (has_trigger()) {
     clear_trigger();
   }
-  if (this != default_instance_) {
+  if (this != &CloudFunction_default_instance_.get()) {
     delete timeout_;
   }
 }
@@ -598,11 +627,11 @@ const ::google::protobuf::Descriptor* CloudFunction::descriptor() {
 }
 
 const CloudFunction& CloudFunction::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-CloudFunction* CloudFunction::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CloudFunction> CloudFunction_default_instance_;
 
 CloudFunction* CloudFunction::New(::google::protobuf::Arena* arena) const {
   CloudFunction* n = new CloudFunction;
@@ -614,7 +643,7 @@ CloudFunction* CloudFunction::New(::google::protobuf::Arena* arena) const {
 
 void CloudFunction::clear_source_code() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.functions.v1beta2.CloudFunction)
-  switch(source_code_case()) {
+  switch (source_code_case()) {
     case kGcsUrl: {
       source_code_.gcs_url_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -632,7 +661,7 @@ void CloudFunction::clear_source_code() {
 
 void CloudFunction::clear_trigger() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.functions.v1beta2.CloudFunction)
-  switch(trigger_case()) {
+  switch (trigger_case()) {
     case kPubsubTrigger: {
       trigger_.pubsub_trigger_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -710,19 +739,19 @@ bool CloudFunction::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_source_repository;
+        goto after_source_repository;
         break;
       }
 
       // optional .google.cloud.functions.v1beta2.SourceRepository source_repository = 3;
       case 3: {
         if (tag == 26) {
-         parse_source_repository:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_source_repository()));
         } else {
           goto handle_unusual;
         }
+       after_source_repository:
         if (input->ExpectTag(34)) goto parse_pubsub_trigger;
         break;
       }
@@ -740,14 +769,13 @@ bool CloudFunction::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(42)) goto parse_gcs_trigger;
+        goto after_https_trigger;
         break;
       }
 
       // optional string gcs_trigger = 5;
       case 5: {
         if (tag == 42) {
-         parse_gcs_trigger:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_gcs_trigger()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -770,6 +798,7 @@ bool CloudFunction::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_https_trigger:
         if (input->ExpectTag(56)) goto parse_status;
         break;
       }
@@ -841,10 +870,10 @@ bool CloudFunction::MergePartialFromCodedStream(
       case 11: {
         if (tag == 88) {
          parse_available_memory_mb:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &available_memory_mb_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1016,6 +1045,7 @@ void CloudFunction::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CloudFunction::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.CloudFunction)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1137,9 +1167,9 @@ void CloudFunction::SerializeWithCachedSizes(
   return target;
 }
 
-int CloudFunction::ByteSize() const {
+size_t CloudFunction::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.CloudFunction)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1241,18 +1271,17 @@ int CloudFunction::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CloudFunction::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.CloudFunction)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CloudFunction* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CloudFunction* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CloudFunction>(
           &from);
   if (source == NULL) {
@@ -1260,15 +1289,21 @@ void CloudFunction::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.CloudFunction)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CloudFunction::MergeFrom(const CloudFunction& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.CloudFunction)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CloudFunction::UnsafeMergeFrom(const CloudFunction& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.source_code_case()) {
     case kGcsUrl: {
       set_gcs_url(from.gcs_url());
@@ -1341,7 +1376,7 @@ void CloudFunction::CopyFrom(const CloudFunction& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.CloudFunction)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CloudFunction::IsInitialized() const {
@@ -1384,37 +1419,37 @@ void CloudFunction::InternalSwap(CloudFunction* other) {
 void CloudFunction::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CloudFunction::name() const {
+const ::std::string& CloudFunction::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_name(const ::std::string& value) {
+void CloudFunction::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.name)
 }
- void CloudFunction::set_name(const char* value) {
+void CloudFunction::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CloudFunction.name)
 }
- void CloudFunction::set_name(const char* value, size_t size) {
+void CloudFunction::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CloudFunction.name)
 }
- ::std::string* CloudFunction::mutable_name() {
+::std::string* CloudFunction::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CloudFunction.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CloudFunction::release_name() {
+::std::string* CloudFunction::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CloudFunction.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_allocated_name(::std::string* name) {
+void CloudFunction::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1437,14 +1472,14 @@ void CloudFunction::clear_gcs_url() {
     clear_has_source_code();
   }
 }
- const ::std::string& CloudFunction::gcs_url() const {
+const ::std::string& CloudFunction::gcs_url() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.gcs_url)
   if (has_gcs_url()) {
     return source_code_.gcs_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void CloudFunction::set_gcs_url(const ::std::string& value) {
+void CloudFunction::set_gcs_url(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.gcs_url)
   if (!has_gcs_url()) {
     clear_source_code();
@@ -1454,7 +1489,7 @@ void CloudFunction::clear_gcs_url() {
   source_code_.gcs_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.gcs_url)
 }
- void CloudFunction::set_gcs_url(const char* value) {
+void CloudFunction::set_gcs_url(const char* value) {
   if (!has_gcs_url()) {
     clear_source_code();
     set_has_gcs_url();
@@ -1464,7 +1499,7 @@ void CloudFunction::clear_gcs_url() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CloudFunction.gcs_url)
 }
- void CloudFunction::set_gcs_url(const char* value, size_t size) {
+void CloudFunction::set_gcs_url(const char* value, size_t size) {
   if (!has_gcs_url()) {
     clear_source_code();
     set_has_gcs_url();
@@ -1474,7 +1509,7 @@ void CloudFunction::clear_gcs_url() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CloudFunction.gcs_url)
 }
- ::std::string* CloudFunction::mutable_gcs_url() {
+::std::string* CloudFunction::mutable_gcs_url() {
   if (!has_gcs_url()) {
     clear_source_code();
     set_has_gcs_url();
@@ -1483,7 +1518,7 @@ void CloudFunction::clear_gcs_url() {
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CloudFunction.gcs_url)
   return source_code_.gcs_url_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CloudFunction::release_gcs_url() {
+::std::string* CloudFunction::release_gcs_url() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CloudFunction.gcs_url)
   if (has_gcs_url()) {
     clear_has_source_code();
@@ -1492,7 +1527,7 @@ void CloudFunction::clear_gcs_url() {
     return NULL;
   }
 }
- void CloudFunction::set_allocated_gcs_url(::std::string* gcs_url) {
+void CloudFunction::set_allocated_gcs_url(::std::string* gcs_url) {
   if (!has_gcs_url()) {
     source_code_.gcs_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -1566,14 +1601,14 @@ void CloudFunction::clear_pubsub_trigger() {
     clear_has_trigger();
   }
 }
- const ::std::string& CloudFunction::pubsub_trigger() const {
+const ::std::string& CloudFunction::pubsub_trigger() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.pubsub_trigger)
   if (has_pubsub_trigger()) {
     return trigger_.pubsub_trigger_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void CloudFunction::set_pubsub_trigger(const ::std::string& value) {
+void CloudFunction::set_pubsub_trigger(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.pubsub_trigger)
   if (!has_pubsub_trigger()) {
     clear_trigger();
@@ -1583,7 +1618,7 @@ void CloudFunction::clear_pubsub_trigger() {
   trigger_.pubsub_trigger_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.pubsub_trigger)
 }
- void CloudFunction::set_pubsub_trigger(const char* value) {
+void CloudFunction::set_pubsub_trigger(const char* value) {
   if (!has_pubsub_trigger()) {
     clear_trigger();
     set_has_pubsub_trigger();
@@ -1593,7 +1628,7 @@ void CloudFunction::clear_pubsub_trigger() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CloudFunction.pubsub_trigger)
 }
- void CloudFunction::set_pubsub_trigger(const char* value, size_t size) {
+void CloudFunction::set_pubsub_trigger(const char* value, size_t size) {
   if (!has_pubsub_trigger()) {
     clear_trigger();
     set_has_pubsub_trigger();
@@ -1603,7 +1638,7 @@ void CloudFunction::clear_pubsub_trigger() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CloudFunction.pubsub_trigger)
 }
- ::std::string* CloudFunction::mutable_pubsub_trigger() {
+::std::string* CloudFunction::mutable_pubsub_trigger() {
   if (!has_pubsub_trigger()) {
     clear_trigger();
     set_has_pubsub_trigger();
@@ -1612,7 +1647,7 @@ void CloudFunction::clear_pubsub_trigger() {
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CloudFunction.pubsub_trigger)
   return trigger_.pubsub_trigger_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CloudFunction::release_pubsub_trigger() {
+::std::string* CloudFunction::release_pubsub_trigger() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CloudFunction.pubsub_trigger)
   if (has_pubsub_trigger()) {
     clear_has_trigger();
@@ -1621,7 +1656,7 @@ void CloudFunction::clear_pubsub_trigger() {
     return NULL;
   }
 }
- void CloudFunction::set_allocated_pubsub_trigger(::std::string* pubsub_trigger) {
+void CloudFunction::set_allocated_pubsub_trigger(::std::string* pubsub_trigger) {
   if (!has_pubsub_trigger()) {
     trigger_.pubsub_trigger_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -1647,14 +1682,14 @@ void CloudFunction::clear_gcs_trigger() {
     clear_has_trigger();
   }
 }
- const ::std::string& CloudFunction::gcs_trigger() const {
+const ::std::string& CloudFunction::gcs_trigger() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.gcs_trigger)
   if (has_gcs_trigger()) {
     return trigger_.gcs_trigger_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void CloudFunction::set_gcs_trigger(const ::std::string& value) {
+void CloudFunction::set_gcs_trigger(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.gcs_trigger)
   if (!has_gcs_trigger()) {
     clear_trigger();
@@ -1664,7 +1699,7 @@ void CloudFunction::clear_gcs_trigger() {
   trigger_.gcs_trigger_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.gcs_trigger)
 }
- void CloudFunction::set_gcs_trigger(const char* value) {
+void CloudFunction::set_gcs_trigger(const char* value) {
   if (!has_gcs_trigger()) {
     clear_trigger();
     set_has_gcs_trigger();
@@ -1674,7 +1709,7 @@ void CloudFunction::clear_gcs_trigger() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CloudFunction.gcs_trigger)
 }
- void CloudFunction::set_gcs_trigger(const char* value, size_t size) {
+void CloudFunction::set_gcs_trigger(const char* value, size_t size) {
   if (!has_gcs_trigger()) {
     clear_trigger();
     set_has_gcs_trigger();
@@ -1684,7 +1719,7 @@ void CloudFunction::clear_gcs_trigger() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CloudFunction.gcs_trigger)
 }
- ::std::string* CloudFunction::mutable_gcs_trigger() {
+::std::string* CloudFunction::mutable_gcs_trigger() {
   if (!has_gcs_trigger()) {
     clear_trigger();
     set_has_gcs_trigger();
@@ -1693,7 +1728,7 @@ void CloudFunction::clear_gcs_trigger() {
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CloudFunction.gcs_trigger)
   return trigger_.gcs_trigger_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CloudFunction::release_gcs_trigger() {
+::std::string* CloudFunction::release_gcs_trigger() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CloudFunction.gcs_trigger)
   if (has_gcs_trigger()) {
     clear_has_trigger();
@@ -1702,7 +1737,7 @@ void CloudFunction::clear_gcs_trigger() {
     return NULL;
   }
 }
- void CloudFunction::set_allocated_gcs_trigger(::std::string* gcs_trigger) {
+void CloudFunction::set_allocated_gcs_trigger(::std::string* gcs_trigger) {
   if (!has_gcs_trigger()) {
     trigger_.gcs_trigger_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -1815,11 +1850,11 @@ void CloudFunction::set_allocated_event_trigger(::google::cloud::functions::v1be
 void CloudFunction::clear_status() {
   status_ = 0;
 }
- ::google::cloud::functions::v1beta2::CloudFunctionStatus CloudFunction::status() const {
+::google::cloud::functions::v1beta2::CloudFunctionStatus CloudFunction::status() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.status)
   return static_cast< ::google::cloud::functions::v1beta2::CloudFunctionStatus >(status_);
 }
- void CloudFunction::set_status(::google::cloud::functions::v1beta2::CloudFunctionStatus value) {
+void CloudFunction::set_status(::google::cloud::functions::v1beta2::CloudFunctionStatus value) {
   
   status_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.status)
@@ -1829,37 +1864,37 @@ void CloudFunction::clear_status() {
 void CloudFunction::clear_latest_operation() {
   latest_operation_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CloudFunction::latest_operation() const {
+const ::std::string& CloudFunction::latest_operation() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.latest_operation)
   return latest_operation_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_latest_operation(const ::std::string& value) {
+void CloudFunction::set_latest_operation(const ::std::string& value) {
   
   latest_operation_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.latest_operation)
 }
- void CloudFunction::set_latest_operation(const char* value) {
+void CloudFunction::set_latest_operation(const char* value) {
   
   latest_operation_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CloudFunction.latest_operation)
 }
- void CloudFunction::set_latest_operation(const char* value, size_t size) {
+void CloudFunction::set_latest_operation(const char* value, size_t size) {
   
   latest_operation_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CloudFunction.latest_operation)
 }
- ::std::string* CloudFunction::mutable_latest_operation() {
+::std::string* CloudFunction::mutable_latest_operation() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CloudFunction.latest_operation)
   return latest_operation_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CloudFunction::release_latest_operation() {
+::std::string* CloudFunction::release_latest_operation() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CloudFunction.latest_operation)
   
   return latest_operation_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_allocated_latest_operation(::std::string* latest_operation) {
+void CloudFunction::set_allocated_latest_operation(::std::string* latest_operation) {
   if (latest_operation != NULL) {
     
   } else {
@@ -1873,37 +1908,37 @@ void CloudFunction::clear_latest_operation() {
 void CloudFunction::clear_entry_point() {
   entry_point_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CloudFunction::entry_point() const {
+const ::std::string& CloudFunction::entry_point() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.entry_point)
   return entry_point_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_entry_point(const ::std::string& value) {
+void CloudFunction::set_entry_point(const ::std::string& value) {
   
   entry_point_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.entry_point)
 }
- void CloudFunction::set_entry_point(const char* value) {
+void CloudFunction::set_entry_point(const char* value) {
   
   entry_point_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CloudFunction.entry_point)
 }
- void CloudFunction::set_entry_point(const char* value, size_t size) {
+void CloudFunction::set_entry_point(const char* value, size_t size) {
   
   entry_point_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CloudFunction.entry_point)
 }
- ::std::string* CloudFunction::mutable_entry_point() {
+::std::string* CloudFunction::mutable_entry_point() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CloudFunction.entry_point)
   return entry_point_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CloudFunction::release_entry_point() {
+::std::string* CloudFunction::release_entry_point() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CloudFunction.entry_point)
   
   return entry_point_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_allocated_entry_point(::std::string* entry_point) {
+void CloudFunction::set_allocated_entry_point(::std::string* entry_point) {
   if (entry_point != NULL) {
     
   } else {
@@ -1915,7 +1950,7 @@ void CloudFunction::clear_entry_point() {
 
 // optional .google.protobuf.Duration timeout = 10;
 bool CloudFunction::has_timeout() const {
-  return !_is_default_instance_ && timeout_ != NULL;
+  return this != internal_default_instance() && timeout_ != NULL;
 }
 void CloudFunction::clear_timeout() {
   if (GetArenaNoVirtual() == NULL && timeout_ != NULL) delete timeout_;
@@ -1923,7 +1958,8 @@ void CloudFunction::clear_timeout() {
 }
 const ::google::protobuf::Duration& CloudFunction::timeout() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.timeout)
-  return timeout_ != NULL ? *timeout_ : *default_instance_->timeout_;
+  return timeout_ != NULL ? *timeout_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* CloudFunction::mutable_timeout() {
   
@@ -1942,6 +1978,11 @@ const ::google::protobuf::Duration& CloudFunction::timeout() const {
 }
 void CloudFunction::set_allocated_timeout(::google::protobuf::Duration* timeout) {
   delete timeout_;
+  if (timeout != NULL && timeout->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_timeout = new ::google::protobuf::Duration;
+    new_timeout->CopyFrom(*timeout);
+    timeout = new_timeout;
+  }
   timeout_ = timeout;
   if (timeout) {
     
@@ -1955,11 +1996,11 @@ void CloudFunction::set_allocated_timeout(::google::protobuf::Duration* timeout)
 void CloudFunction::clear_available_memory_mb() {
   available_memory_mb_ = 0;
 }
- ::google::protobuf::int32 CloudFunction::available_memory_mb() const {
+::google::protobuf::int32 CloudFunction::available_memory_mb() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.available_memory_mb)
   return available_memory_mb_;
 }
- void CloudFunction::set_available_memory_mb(::google::protobuf::int32 value) {
+void CloudFunction::set_available_memory_mb(::google::protobuf::int32 value) {
   
   available_memory_mb_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.available_memory_mb)
@@ -1969,37 +2010,37 @@ void CloudFunction::clear_available_memory_mb() {
 void CloudFunction::clear_service_account() {
   service_account_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CloudFunction::service_account() const {
+const ::std::string& CloudFunction::service_account() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CloudFunction.service_account)
   return service_account_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_service_account(const ::std::string& value) {
+void CloudFunction::set_service_account(const ::std::string& value) {
   
   service_account_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CloudFunction.service_account)
 }
- void CloudFunction::set_service_account(const char* value) {
+void CloudFunction::set_service_account(const char* value) {
   
   service_account_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CloudFunction.service_account)
 }
- void CloudFunction::set_service_account(const char* value, size_t size) {
+void CloudFunction::set_service_account(const char* value, size_t size) {
   
   service_account_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CloudFunction.service_account)
 }
- ::std::string* CloudFunction::mutable_service_account() {
+::std::string* CloudFunction::mutable_service_account() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CloudFunction.service_account)
   return service_account_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CloudFunction::release_service_account() {
+::std::string* CloudFunction::release_service_account() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CloudFunction.service_account)
   
   return service_account_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CloudFunction::set_allocated_service_account(::std::string* service_account) {
+void CloudFunction::set_allocated_service_account(::std::string* service_account) {
   if (service_account != NULL) {
     
   } else {
@@ -2027,6 +2068,9 @@ CloudFunction::SourceCodeCase CloudFunction::source_code_case() const {
 CloudFunction::TriggerCase CloudFunction::trigger_case() const {
   return CloudFunction::TriggerCase(_oneof_case_[1]);
 }
+inline const CloudFunction* CloudFunction::internal_default_instance() {
+  return &CloudFunction_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2037,27 +2081,25 @@ const int HTTPSTrigger::kUrlFieldNumber;
 
 HTTPSTrigger::HTTPSTrigger()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.HTTPSTrigger)
 }
 
 void HTTPSTrigger::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 HTTPSTrigger::HTTPSTrigger(const HTTPSTrigger& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.HTTPSTrigger)
 }
 
 void HTTPSTrigger::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 HTTPSTrigger::~HTTPSTrigger() {
@@ -2067,8 +2109,6 @@ HTTPSTrigger::~HTTPSTrigger() {
 
 void HTTPSTrigger::SharedDtor() {
   url_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void HTTPSTrigger::SetCachedSize(int size) const {
@@ -2082,11 +2122,11 @@ const ::google::protobuf::Descriptor* HTTPSTrigger::descriptor() {
 }
 
 const HTTPSTrigger& HTTPSTrigger::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-HTTPSTrigger* HTTPSTrigger::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<HTTPSTrigger> HTTPSTrigger_default_instance_;
 
 HTTPSTrigger* HTTPSTrigger::New(::google::protobuf::Arena* arena) const {
   HTTPSTrigger* n = new HTTPSTrigger;
@@ -2166,6 +2206,7 @@ void HTTPSTrigger::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* HTTPSTrigger::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.HTTPSTrigger)
   // optional string url = 1;
   if (this->url().size() > 0) {
@@ -2182,9 +2223,9 @@ void HTTPSTrigger::SerializeWithCachedSizes(
   return target;
 }
 
-int HTTPSTrigger::ByteSize() const {
+size_t HTTPSTrigger::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.HTTPSTrigger)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string url = 1;
   if (this->url().size() > 0) {
@@ -2193,18 +2234,17 @@ int HTTPSTrigger::ByteSize() const {
         this->url());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void HTTPSTrigger::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.HTTPSTrigger)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const HTTPSTrigger* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const HTTPSTrigger* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HTTPSTrigger>(
           &from);
   if (source == NULL) {
@@ -2212,15 +2252,21 @@ void HTTPSTrigger::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.HTTPSTrigger)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HTTPSTrigger::MergeFrom(const HTTPSTrigger& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.HTTPSTrigger)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void HTTPSTrigger::UnsafeMergeFrom(const HTTPSTrigger& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.url().size() > 0) {
 
     url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.url_);
@@ -2238,7 +2284,7 @@ void HTTPSTrigger::CopyFrom(const HTTPSTrigger& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.HTTPSTrigger)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HTTPSTrigger::IsInitialized() const {
@@ -2271,37 +2317,37 @@ void HTTPSTrigger::InternalSwap(HTTPSTrigger* other) {
 void HTTPSTrigger::clear_url() {
   url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& HTTPSTrigger::url() const {
+const ::std::string& HTTPSTrigger::url() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.HTTPSTrigger.url)
   return url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void HTTPSTrigger::set_url(const ::std::string& value) {
+void HTTPSTrigger::set_url(const ::std::string& value) {
   
   url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.HTTPSTrigger.url)
 }
- void HTTPSTrigger::set_url(const char* value) {
+void HTTPSTrigger::set_url(const char* value) {
   
   url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.HTTPSTrigger.url)
 }
- void HTTPSTrigger::set_url(const char* value, size_t size) {
+void HTTPSTrigger::set_url(const char* value, size_t size) {
   
   url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.HTTPSTrigger.url)
 }
- ::std::string* HTTPSTrigger::mutable_url() {
+::std::string* HTTPSTrigger::mutable_url() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.HTTPSTrigger.url)
   return url_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* HTTPSTrigger::release_url() {
+::std::string* HTTPSTrigger::release_url() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.HTTPSTrigger.url)
   
   return url_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void HTTPSTrigger::set_allocated_url(::std::string* url) {
+void HTTPSTrigger::set_allocated_url(::std::string* url) {
   if (url != NULL) {
     
   } else {
@@ -2311,6 +2357,9 @@ void HTTPSTrigger::clear_url() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.HTTPSTrigger.url)
 }
 
+inline const HTTPSTrigger* HTTPSTrigger::internal_default_instance() {
+  return &HTTPSTrigger_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2323,29 +2372,27 @@ const int EventTrigger::kPathFieldNumber;
 
 EventTrigger::EventTrigger()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.EventTrigger)
 }
 
 void EventTrigger::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 EventTrigger::EventTrigger(const EventTrigger& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.EventTrigger)
 }
 
 void EventTrigger::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   event_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   resource_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 EventTrigger::~EventTrigger() {
@@ -2357,8 +2404,6 @@ void EventTrigger::SharedDtor() {
   event_type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   resource_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   path_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void EventTrigger::SetCachedSize(int size) const {
@@ -2372,11 +2417,11 @@ const ::google::protobuf::Descriptor* EventTrigger::descriptor() {
 }
 
 const EventTrigger& EventTrigger::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-EventTrigger* EventTrigger::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<EventTrigger> EventTrigger_default_instance_;
 
 EventTrigger* EventTrigger::New(::google::protobuf::Arena* arena) const {
   EventTrigger* n = new EventTrigger;
@@ -2512,6 +2557,7 @@ void EventTrigger::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* EventTrigger::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.EventTrigger)
   // optional string event_type = 1;
   if (this->event_type().size() > 0) {
@@ -2550,9 +2596,9 @@ void EventTrigger::SerializeWithCachedSizes(
   return target;
 }
 
-int EventTrigger::ByteSize() const {
+size_t EventTrigger::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.EventTrigger)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string event_type = 1;
   if (this->event_type().size() > 0) {
@@ -2575,18 +2621,17 @@ int EventTrigger::ByteSize() const {
         this->path());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void EventTrigger::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.EventTrigger)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const EventTrigger* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const EventTrigger* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const EventTrigger>(
           &from);
   if (source == NULL) {
@@ -2594,15 +2639,21 @@ void EventTrigger::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.EventTrigger)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void EventTrigger::MergeFrom(const EventTrigger& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.EventTrigger)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void EventTrigger::UnsafeMergeFrom(const EventTrigger& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.event_type().size() > 0) {
 
     event_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.event_type_);
@@ -2628,7 +2679,7 @@ void EventTrigger::CopyFrom(const EventTrigger& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.EventTrigger)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool EventTrigger::IsInitialized() const {
@@ -2663,37 +2714,37 @@ void EventTrigger::InternalSwap(EventTrigger* other) {
 void EventTrigger::clear_event_type() {
   event_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& EventTrigger::event_type() const {
+const ::std::string& EventTrigger::event_type() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.EventTrigger.event_type)
   return event_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EventTrigger::set_event_type(const ::std::string& value) {
+void EventTrigger::set_event_type(const ::std::string& value) {
   
   event_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.EventTrigger.event_type)
 }
- void EventTrigger::set_event_type(const char* value) {
+void EventTrigger::set_event_type(const char* value) {
   
   event_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.EventTrigger.event_type)
 }
- void EventTrigger::set_event_type(const char* value, size_t size) {
+void EventTrigger::set_event_type(const char* value, size_t size) {
   
   event_type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.EventTrigger.event_type)
 }
- ::std::string* EventTrigger::mutable_event_type() {
+::std::string* EventTrigger::mutable_event_type() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.EventTrigger.event_type)
   return event_type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* EventTrigger::release_event_type() {
+::std::string* EventTrigger::release_event_type() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.EventTrigger.event_type)
   
   return event_type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EventTrigger::set_allocated_event_type(::std::string* event_type) {
+void EventTrigger::set_allocated_event_type(::std::string* event_type) {
   if (event_type != NULL) {
     
   } else {
@@ -2707,37 +2758,37 @@ void EventTrigger::clear_event_type() {
 void EventTrigger::clear_resource() {
   resource_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& EventTrigger::resource() const {
+const ::std::string& EventTrigger::resource() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.EventTrigger.resource)
   return resource_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EventTrigger::set_resource(const ::std::string& value) {
+void EventTrigger::set_resource(const ::std::string& value) {
   
   resource_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.EventTrigger.resource)
 }
- void EventTrigger::set_resource(const char* value) {
+void EventTrigger::set_resource(const char* value) {
   
   resource_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.EventTrigger.resource)
 }
- void EventTrigger::set_resource(const char* value, size_t size) {
+void EventTrigger::set_resource(const char* value, size_t size) {
   
   resource_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.EventTrigger.resource)
 }
- ::std::string* EventTrigger::mutable_resource() {
+::std::string* EventTrigger::mutable_resource() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.EventTrigger.resource)
   return resource_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* EventTrigger::release_resource() {
+::std::string* EventTrigger::release_resource() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.EventTrigger.resource)
   
   return resource_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EventTrigger::set_allocated_resource(::std::string* resource) {
+void EventTrigger::set_allocated_resource(::std::string* resource) {
   if (resource != NULL) {
     
   } else {
@@ -2751,37 +2802,37 @@ void EventTrigger::clear_resource() {
 void EventTrigger::clear_path() {
   path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& EventTrigger::path() const {
+const ::std::string& EventTrigger::path() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.EventTrigger.path)
   return path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EventTrigger::set_path(const ::std::string& value) {
+void EventTrigger::set_path(const ::std::string& value) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.EventTrigger.path)
 }
- void EventTrigger::set_path(const char* value) {
+void EventTrigger::set_path(const char* value) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.EventTrigger.path)
 }
- void EventTrigger::set_path(const char* value, size_t size) {
+void EventTrigger::set_path(const char* value, size_t size) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.EventTrigger.path)
 }
- ::std::string* EventTrigger::mutable_path() {
+::std::string* EventTrigger::mutable_path() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.EventTrigger.path)
   return path_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* EventTrigger::release_path() {
+::std::string* EventTrigger::release_path() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.EventTrigger.path)
   
   return path_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void EventTrigger::set_allocated_path(::std::string* path) {
+void EventTrigger::set_allocated_path(::std::string* path) {
   if (path != NULL) {
     
   } else {
@@ -2791,6 +2842,9 @@ void EventTrigger::clear_path() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.EventTrigger.path)
 }
 
+inline const EventTrigger* EventTrigger::internal_default_instance() {
+  return &EventTrigger_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2806,12 +2860,12 @@ const int SourceRepository::kDeployedRevisionFieldNumber;
 
 SourceRepository::SourceRepository()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.SourceRepository)
 }
 
 void SourceRepository::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   SourceRepository_default_oneof_instance_->branch_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   SourceRepository_default_oneof_instance_->tag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   SourceRepository_default_oneof_instance_->revision_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2821,18 +2875,16 @@ SourceRepository::SourceRepository(const SourceRepository& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.SourceRepository)
 }
 
 void SourceRepository::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   repository_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   source_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   deployed_revision_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_version();
+  _cached_size_ = 0;
 }
 
 SourceRepository::~SourceRepository() {
@@ -2847,8 +2899,6 @@ void SourceRepository::SharedDtor() {
   if (has_version()) {
     clear_version();
   }
-  if (this != default_instance_) {
-  }
 }
 
 void SourceRepository::SetCachedSize(int size) const {
@@ -2862,11 +2912,11 @@ const ::google::protobuf::Descriptor* SourceRepository::descriptor() {
 }
 
 const SourceRepository& SourceRepository::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-SourceRepository* SourceRepository::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SourceRepository> SourceRepository_default_instance_;
 
 SourceRepository* SourceRepository::New(::google::protobuf::Arena* arena) const {
   SourceRepository* n = new SourceRepository;
@@ -2878,7 +2928,7 @@ SourceRepository* SourceRepository::New(::google::protobuf::Arena* arena) const 
 
 void SourceRepository::clear_version() {
 // @@protoc_insertion_point(one_of_clear_start:google.cloud.functions.v1beta2.SourceRepository)
-  switch(version_case()) {
+  switch (version_case()) {
     case kBranch: {
       version_.branch_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
       break;
@@ -2963,14 +3013,13 @@ bool SourceRepository::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(34)) goto parse_tag;
+        goto after_revision;
         break;
       }
 
       // optional string tag = 4;
       case 4: {
         if (tag == 34) {
-         parse_tag:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_tag()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2997,6 +3046,7 @@ bool SourceRepository::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_revision:
         if (input->ExpectTag(50)) goto parse_deployed_revision;
         break;
       }
@@ -3107,6 +3157,7 @@ void SourceRepository::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SourceRepository::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.SourceRepository)
   // optional string repository_url = 1;
   if (this->repository_url().size() > 0) {
@@ -3178,9 +3229,9 @@ void SourceRepository::SerializeWithCachedSizes(
   return target;
 }
 
-int SourceRepository::ByteSize() const {
+size_t SourceRepository::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.SourceRepository)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string repository_url = 1;
   if (this->repository_url().size() > 0) {
@@ -3229,18 +3280,17 @@ int SourceRepository::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SourceRepository::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.SourceRepository)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SourceRepository* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SourceRepository* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SourceRepository>(
           &from);
   if (source == NULL) {
@@ -3248,15 +3298,21 @@ void SourceRepository::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.SourceRepository)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SourceRepository::MergeFrom(const SourceRepository& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.SourceRepository)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SourceRepository::UnsafeMergeFrom(const SourceRepository& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.version_case()) {
     case kBranch: {
       set_branch(from.branch());
@@ -3299,7 +3355,7 @@ void SourceRepository::CopyFrom(const SourceRepository& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.SourceRepository)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SourceRepository::IsInitialized() const {
@@ -3336,37 +3392,37 @@ void SourceRepository::InternalSwap(SourceRepository* other) {
 void SourceRepository::clear_repository_url() {
   repository_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SourceRepository::repository_url() const {
+const ::std::string& SourceRepository::repository_url() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.SourceRepository.repository_url)
   return repository_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceRepository::set_repository_url(const ::std::string& value) {
+void SourceRepository::set_repository_url(const ::std::string& value) {
   
   repository_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.repository_url)
 }
- void SourceRepository::set_repository_url(const char* value) {
+void SourceRepository::set_repository_url(const char* value) {
   
   repository_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.SourceRepository.repository_url)
 }
- void SourceRepository::set_repository_url(const char* value, size_t size) {
+void SourceRepository::set_repository_url(const char* value, size_t size) {
   
   repository_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.SourceRepository.repository_url)
 }
- ::std::string* SourceRepository::mutable_repository_url() {
+::std::string* SourceRepository::mutable_repository_url() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.SourceRepository.repository_url)
   return repository_url_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SourceRepository::release_repository_url() {
+::std::string* SourceRepository::release_repository_url() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.SourceRepository.repository_url)
   
   return repository_url_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceRepository::set_allocated_repository_url(::std::string* repository_url) {
+void SourceRepository::set_allocated_repository_url(::std::string* repository_url) {
   if (repository_url != NULL) {
     
   } else {
@@ -3380,37 +3436,37 @@ void SourceRepository::clear_repository_url() {
 void SourceRepository::clear_source_path() {
   source_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SourceRepository::source_path() const {
+const ::std::string& SourceRepository::source_path() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.SourceRepository.source_path)
   return source_path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceRepository::set_source_path(const ::std::string& value) {
+void SourceRepository::set_source_path(const ::std::string& value) {
   
   source_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.source_path)
 }
- void SourceRepository::set_source_path(const char* value) {
+void SourceRepository::set_source_path(const char* value) {
   
   source_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.SourceRepository.source_path)
 }
- void SourceRepository::set_source_path(const char* value, size_t size) {
+void SourceRepository::set_source_path(const char* value, size_t size) {
   
   source_path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.SourceRepository.source_path)
 }
- ::std::string* SourceRepository::mutable_source_path() {
+::std::string* SourceRepository::mutable_source_path() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.SourceRepository.source_path)
   return source_path_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SourceRepository::release_source_path() {
+::std::string* SourceRepository::release_source_path() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.SourceRepository.source_path)
   
   return source_path_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceRepository::set_allocated_source_path(::std::string* source_path) {
+void SourceRepository::set_allocated_source_path(::std::string* source_path) {
   if (source_path != NULL) {
     
   } else {
@@ -3433,14 +3489,14 @@ void SourceRepository::clear_branch() {
     clear_has_version();
   }
 }
- const ::std::string& SourceRepository::branch() const {
+const ::std::string& SourceRepository::branch() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.SourceRepository.branch)
   if (has_branch()) {
     return version_.branch_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void SourceRepository::set_branch(const ::std::string& value) {
+void SourceRepository::set_branch(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.branch)
   if (!has_branch()) {
     clear_version();
@@ -3450,7 +3506,7 @@ void SourceRepository::clear_branch() {
   version_.branch_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.branch)
 }
- void SourceRepository::set_branch(const char* value) {
+void SourceRepository::set_branch(const char* value) {
   if (!has_branch()) {
     clear_version();
     set_has_branch();
@@ -3460,7 +3516,7 @@ void SourceRepository::clear_branch() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.SourceRepository.branch)
 }
- void SourceRepository::set_branch(const char* value, size_t size) {
+void SourceRepository::set_branch(const char* value, size_t size) {
   if (!has_branch()) {
     clear_version();
     set_has_branch();
@@ -3470,7 +3526,7 @@ void SourceRepository::clear_branch() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.SourceRepository.branch)
 }
- ::std::string* SourceRepository::mutable_branch() {
+::std::string* SourceRepository::mutable_branch() {
   if (!has_branch()) {
     clear_version();
     set_has_branch();
@@ -3479,7 +3535,7 @@ void SourceRepository::clear_branch() {
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.SourceRepository.branch)
   return version_.branch_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SourceRepository::release_branch() {
+::std::string* SourceRepository::release_branch() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.SourceRepository.branch)
   if (has_branch()) {
     clear_has_version();
@@ -3488,7 +3544,7 @@ void SourceRepository::clear_branch() {
     return NULL;
   }
 }
- void SourceRepository::set_allocated_branch(::std::string* branch) {
+void SourceRepository::set_allocated_branch(::std::string* branch) {
   if (!has_branch()) {
     version_.branch_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -3514,14 +3570,14 @@ void SourceRepository::clear_tag() {
     clear_has_version();
   }
 }
- const ::std::string& SourceRepository::tag() const {
+const ::std::string& SourceRepository::tag() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.SourceRepository.tag)
   if (has_tag()) {
     return version_.tag_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void SourceRepository::set_tag(const ::std::string& value) {
+void SourceRepository::set_tag(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.tag)
   if (!has_tag()) {
     clear_version();
@@ -3531,7 +3587,7 @@ void SourceRepository::clear_tag() {
   version_.tag_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.tag)
 }
- void SourceRepository::set_tag(const char* value) {
+void SourceRepository::set_tag(const char* value) {
   if (!has_tag()) {
     clear_version();
     set_has_tag();
@@ -3541,7 +3597,7 @@ void SourceRepository::clear_tag() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.SourceRepository.tag)
 }
- void SourceRepository::set_tag(const char* value, size_t size) {
+void SourceRepository::set_tag(const char* value, size_t size) {
   if (!has_tag()) {
     clear_version();
     set_has_tag();
@@ -3551,7 +3607,7 @@ void SourceRepository::clear_tag() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.SourceRepository.tag)
 }
- ::std::string* SourceRepository::mutable_tag() {
+::std::string* SourceRepository::mutable_tag() {
   if (!has_tag()) {
     clear_version();
     set_has_tag();
@@ -3560,7 +3616,7 @@ void SourceRepository::clear_tag() {
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.SourceRepository.tag)
   return version_.tag_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SourceRepository::release_tag() {
+::std::string* SourceRepository::release_tag() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.SourceRepository.tag)
   if (has_tag()) {
     clear_has_version();
@@ -3569,7 +3625,7 @@ void SourceRepository::clear_tag() {
     return NULL;
   }
 }
- void SourceRepository::set_allocated_tag(::std::string* tag) {
+void SourceRepository::set_allocated_tag(::std::string* tag) {
   if (!has_tag()) {
     version_.tag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -3595,14 +3651,14 @@ void SourceRepository::clear_revision() {
     clear_has_version();
   }
 }
- const ::std::string& SourceRepository::revision() const {
+const ::std::string& SourceRepository::revision() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.SourceRepository.revision)
   if (has_revision()) {
     return version_.revision_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void SourceRepository::set_revision(const ::std::string& value) {
+void SourceRepository::set_revision(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.revision)
   if (!has_revision()) {
     clear_version();
@@ -3612,7 +3668,7 @@ void SourceRepository::clear_revision() {
   version_.revision_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.revision)
 }
- void SourceRepository::set_revision(const char* value) {
+void SourceRepository::set_revision(const char* value) {
   if (!has_revision()) {
     clear_version();
     set_has_revision();
@@ -3622,7 +3678,7 @@ void SourceRepository::clear_revision() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.SourceRepository.revision)
 }
- void SourceRepository::set_revision(const char* value, size_t size) {
+void SourceRepository::set_revision(const char* value, size_t size) {
   if (!has_revision()) {
     clear_version();
     set_has_revision();
@@ -3632,7 +3688,7 @@ void SourceRepository::clear_revision() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.SourceRepository.revision)
 }
- ::std::string* SourceRepository::mutable_revision() {
+::std::string* SourceRepository::mutable_revision() {
   if (!has_revision()) {
     clear_version();
     set_has_revision();
@@ -3641,7 +3697,7 @@ void SourceRepository::clear_revision() {
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.SourceRepository.revision)
   return version_.revision_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SourceRepository::release_revision() {
+::std::string* SourceRepository::release_revision() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.SourceRepository.revision)
   if (has_revision()) {
     clear_has_version();
@@ -3650,7 +3706,7 @@ void SourceRepository::clear_revision() {
     return NULL;
   }
 }
- void SourceRepository::set_allocated_revision(::std::string* revision) {
+void SourceRepository::set_allocated_revision(::std::string* revision) {
   if (!has_revision()) {
     version_.revision_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -3667,37 +3723,37 @@ void SourceRepository::clear_revision() {
 void SourceRepository::clear_deployed_revision() {
   deployed_revision_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SourceRepository::deployed_revision() const {
+const ::std::string& SourceRepository::deployed_revision() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.SourceRepository.deployed_revision)
   return deployed_revision_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceRepository::set_deployed_revision(const ::std::string& value) {
+void SourceRepository::set_deployed_revision(const ::std::string& value) {
   
   deployed_revision_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.SourceRepository.deployed_revision)
 }
- void SourceRepository::set_deployed_revision(const char* value) {
+void SourceRepository::set_deployed_revision(const char* value) {
   
   deployed_revision_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.SourceRepository.deployed_revision)
 }
- void SourceRepository::set_deployed_revision(const char* value, size_t size) {
+void SourceRepository::set_deployed_revision(const char* value, size_t size) {
   
   deployed_revision_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.SourceRepository.deployed_revision)
 }
- ::std::string* SourceRepository::mutable_deployed_revision() {
+::std::string* SourceRepository::mutable_deployed_revision() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.SourceRepository.deployed_revision)
   return deployed_revision_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SourceRepository::release_deployed_revision() {
+::std::string* SourceRepository::release_deployed_revision() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.SourceRepository.deployed_revision)
   
   return deployed_revision_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceRepository::set_allocated_deployed_revision(::std::string* deployed_revision) {
+void SourceRepository::set_allocated_deployed_revision(::std::string* deployed_revision) {
   if (deployed_revision != NULL) {
     
   } else {
@@ -3716,6 +3772,9 @@ void SourceRepository::clear_has_version() {
 SourceRepository::VersionCase SourceRepository::version_case() const {
   return SourceRepository::VersionCase(_oneof_case_[0]);
 }
+inline const SourceRepository* SourceRepository::internal_default_instance() {
+  return &SourceRepository_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3727,29 +3786,28 @@ const int CreateFunctionRequest::kFunctionFieldNumber;
 
 CreateFunctionRequest::CreateFunctionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.CreateFunctionRequest)
 }
 
 void CreateFunctionRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  function_ = const_cast< ::google::cloud::functions::v1beta2::CloudFunction*>(&::google::cloud::functions::v1beta2::CloudFunction::default_instance());
+  function_ = const_cast< ::google::cloud::functions::v1beta2::CloudFunction*>(
+      ::google::cloud::functions::v1beta2::CloudFunction::internal_default_instance());
 }
 
 CreateFunctionRequest::CreateFunctionRequest(const CreateFunctionRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.CreateFunctionRequest)
 }
 
 void CreateFunctionRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   location_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   function_ = NULL;
+  _cached_size_ = 0;
 }
 
 CreateFunctionRequest::~CreateFunctionRequest() {
@@ -3759,7 +3817,7 @@ CreateFunctionRequest::~CreateFunctionRequest() {
 
 void CreateFunctionRequest::SharedDtor() {
   location_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &CreateFunctionRequest_default_instance_.get()) {
     delete function_;
   }
 }
@@ -3775,11 +3833,11 @@ const ::google::protobuf::Descriptor* CreateFunctionRequest::descriptor() {
 }
 
 const CreateFunctionRequest& CreateFunctionRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-CreateFunctionRequest* CreateFunctionRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CreateFunctionRequest> CreateFunctionRequest_default_instance_;
 
 CreateFunctionRequest* CreateFunctionRequest::New(::google::protobuf::Arena* arena) const {
   CreateFunctionRequest* n = new CreateFunctionRequest;
@@ -3880,6 +3938,7 @@ void CreateFunctionRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CreateFunctionRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.CreateFunctionRequest)
   // optional string location = 1;
   if (this->location().size() > 0) {
@@ -3903,9 +3962,9 @@ void CreateFunctionRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CreateFunctionRequest::ByteSize() const {
+size_t CreateFunctionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.CreateFunctionRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string location = 1;
   if (this->location().size() > 0) {
@@ -3921,18 +3980,17 @@ int CreateFunctionRequest::ByteSize() const {
         *this->function_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CreateFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.CreateFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CreateFunctionRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CreateFunctionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateFunctionRequest>(
           &from);
   if (source == NULL) {
@@ -3940,15 +3998,21 @@ void CreateFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.CreateFunctionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateFunctionRequest::MergeFrom(const CreateFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.CreateFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CreateFunctionRequest::UnsafeMergeFrom(const CreateFunctionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.location().size() > 0) {
 
     location_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.location_);
@@ -3969,7 +4033,7 @@ void CreateFunctionRequest::CopyFrom(const CreateFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.CreateFunctionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateFunctionRequest::IsInitialized() const {
@@ -4003,37 +4067,37 @@ void CreateFunctionRequest::InternalSwap(CreateFunctionRequest* other) {
 void CreateFunctionRequest::clear_location() {
   location_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CreateFunctionRequest::location() const {
+const ::std::string& CreateFunctionRequest::location() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CreateFunctionRequest.location)
   return location_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateFunctionRequest::set_location(const ::std::string& value) {
+void CreateFunctionRequest::set_location(const ::std::string& value) {
   
   location_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CreateFunctionRequest.location)
 }
- void CreateFunctionRequest::set_location(const char* value) {
+void CreateFunctionRequest::set_location(const char* value) {
   
   location_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CreateFunctionRequest.location)
 }
- void CreateFunctionRequest::set_location(const char* value, size_t size) {
+void CreateFunctionRequest::set_location(const char* value, size_t size) {
   
   location_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CreateFunctionRequest.location)
 }
- ::std::string* CreateFunctionRequest::mutable_location() {
+::std::string* CreateFunctionRequest::mutable_location() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CreateFunctionRequest.location)
   return location_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CreateFunctionRequest::release_location() {
+::std::string* CreateFunctionRequest::release_location() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CreateFunctionRequest.location)
   
   return location_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CreateFunctionRequest::set_allocated_location(::std::string* location) {
+void CreateFunctionRequest::set_allocated_location(::std::string* location) {
   if (location != NULL) {
     
   } else {
@@ -4045,7 +4109,7 @@ void CreateFunctionRequest::clear_location() {
 
 // optional .google.cloud.functions.v1beta2.CloudFunction function = 2;
 bool CreateFunctionRequest::has_function() const {
-  return !_is_default_instance_ && function_ != NULL;
+  return this != internal_default_instance() && function_ != NULL;
 }
 void CreateFunctionRequest::clear_function() {
   if (GetArenaNoVirtual() == NULL && function_ != NULL) delete function_;
@@ -4053,7 +4117,8 @@ void CreateFunctionRequest::clear_function() {
 }
 const ::google::cloud::functions::v1beta2::CloudFunction& CreateFunctionRequest::function() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CreateFunctionRequest.function)
-  return function_ != NULL ? *function_ : *default_instance_->function_;
+  return function_ != NULL ? *function_
+                         : *::google::cloud::functions::v1beta2::CloudFunction::internal_default_instance();
 }
 ::google::cloud::functions::v1beta2::CloudFunction* CreateFunctionRequest::mutable_function() {
   
@@ -4081,6 +4146,9 @@ void CreateFunctionRequest::set_allocated_function(::google::cloud::functions::v
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.CreateFunctionRequest.function)
 }
 
+inline const CreateFunctionRequest* CreateFunctionRequest::internal_default_instance() {
+  return &CreateFunctionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4092,29 +4160,28 @@ const int UpdateFunctionRequest::kFunctionFieldNumber;
 
 UpdateFunctionRequest::UpdateFunctionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.UpdateFunctionRequest)
 }
 
 void UpdateFunctionRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  function_ = const_cast< ::google::cloud::functions::v1beta2::CloudFunction*>(&::google::cloud::functions::v1beta2::CloudFunction::default_instance());
+  function_ = const_cast< ::google::cloud::functions::v1beta2::CloudFunction*>(
+      ::google::cloud::functions::v1beta2::CloudFunction::internal_default_instance());
 }
 
 UpdateFunctionRequest::UpdateFunctionRequest(const UpdateFunctionRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.UpdateFunctionRequest)
 }
 
 void UpdateFunctionRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   function_ = NULL;
+  _cached_size_ = 0;
 }
 
 UpdateFunctionRequest::~UpdateFunctionRequest() {
@@ -4124,7 +4191,7 @@ UpdateFunctionRequest::~UpdateFunctionRequest() {
 
 void UpdateFunctionRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &UpdateFunctionRequest_default_instance_.get()) {
     delete function_;
   }
 }
@@ -4140,11 +4207,11 @@ const ::google::protobuf::Descriptor* UpdateFunctionRequest::descriptor() {
 }
 
 const UpdateFunctionRequest& UpdateFunctionRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-UpdateFunctionRequest* UpdateFunctionRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UpdateFunctionRequest> UpdateFunctionRequest_default_instance_;
 
 UpdateFunctionRequest* UpdateFunctionRequest::New(::google::protobuf::Arena* arena) const {
   UpdateFunctionRequest* n = new UpdateFunctionRequest;
@@ -4245,6 +4312,7 @@ void UpdateFunctionRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UpdateFunctionRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.UpdateFunctionRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4268,9 +4336,9 @@ void UpdateFunctionRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int UpdateFunctionRequest::ByteSize() const {
+size_t UpdateFunctionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.UpdateFunctionRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4286,18 +4354,17 @@ int UpdateFunctionRequest::ByteSize() const {
         *this->function_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UpdateFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.UpdateFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UpdateFunctionRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UpdateFunctionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateFunctionRequest>(
           &from);
   if (source == NULL) {
@@ -4305,15 +4372,21 @@ void UpdateFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.UpdateFunctionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateFunctionRequest::MergeFrom(const UpdateFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.UpdateFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UpdateFunctionRequest::UnsafeMergeFrom(const UpdateFunctionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -4334,7 +4407,7 @@ void UpdateFunctionRequest::CopyFrom(const UpdateFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.UpdateFunctionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateFunctionRequest::IsInitialized() const {
@@ -4368,37 +4441,37 @@ void UpdateFunctionRequest::InternalSwap(UpdateFunctionRequest* other) {
 void UpdateFunctionRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UpdateFunctionRequest::name() const {
+const ::std::string& UpdateFunctionRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.UpdateFunctionRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateFunctionRequest::set_name(const ::std::string& value) {
+void UpdateFunctionRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.UpdateFunctionRequest.name)
 }
- void UpdateFunctionRequest::set_name(const char* value) {
+void UpdateFunctionRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.UpdateFunctionRequest.name)
 }
- void UpdateFunctionRequest::set_name(const char* value, size_t size) {
+void UpdateFunctionRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.UpdateFunctionRequest.name)
 }
- ::std::string* UpdateFunctionRequest::mutable_name() {
+::std::string* UpdateFunctionRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.UpdateFunctionRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UpdateFunctionRequest::release_name() {
+::std::string* UpdateFunctionRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.UpdateFunctionRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UpdateFunctionRequest::set_allocated_name(::std::string* name) {
+void UpdateFunctionRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -4410,7 +4483,7 @@ void UpdateFunctionRequest::clear_name() {
 
 // optional .google.cloud.functions.v1beta2.CloudFunction function = 2;
 bool UpdateFunctionRequest::has_function() const {
-  return !_is_default_instance_ && function_ != NULL;
+  return this != internal_default_instance() && function_ != NULL;
 }
 void UpdateFunctionRequest::clear_function() {
   if (GetArenaNoVirtual() == NULL && function_ != NULL) delete function_;
@@ -4418,7 +4491,8 @@ void UpdateFunctionRequest::clear_function() {
 }
 const ::google::cloud::functions::v1beta2::CloudFunction& UpdateFunctionRequest::function() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.UpdateFunctionRequest.function)
-  return function_ != NULL ? *function_ : *default_instance_->function_;
+  return function_ != NULL ? *function_
+                         : *::google::cloud::functions::v1beta2::CloudFunction::internal_default_instance();
 }
 ::google::cloud::functions::v1beta2::CloudFunction* UpdateFunctionRequest::mutable_function() {
   
@@ -4446,6 +4520,9 @@ void UpdateFunctionRequest::set_allocated_function(::google::cloud::functions::v
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.UpdateFunctionRequest.function)
 }
 
+inline const UpdateFunctionRequest* UpdateFunctionRequest::internal_default_instance() {
+  return &UpdateFunctionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4456,27 +4533,25 @@ const int GetFunctionRequest::kNameFieldNumber;
 
 GetFunctionRequest::GetFunctionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.GetFunctionRequest)
 }
 
 void GetFunctionRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetFunctionRequest::GetFunctionRequest(const GetFunctionRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.GetFunctionRequest)
 }
 
 void GetFunctionRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetFunctionRequest::~GetFunctionRequest() {
@@ -4486,8 +4561,6 @@ GetFunctionRequest::~GetFunctionRequest() {
 
 void GetFunctionRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void GetFunctionRequest::SetCachedSize(int size) const {
@@ -4501,11 +4574,11 @@ const ::google::protobuf::Descriptor* GetFunctionRequest::descriptor() {
 }
 
 const GetFunctionRequest& GetFunctionRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-GetFunctionRequest* GetFunctionRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetFunctionRequest> GetFunctionRequest_default_instance_;
 
 GetFunctionRequest* GetFunctionRequest::New(::google::protobuf::Arena* arena) const {
   GetFunctionRequest* n = new GetFunctionRequest;
@@ -4585,6 +4658,7 @@ void GetFunctionRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetFunctionRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.GetFunctionRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4601,9 +4675,9 @@ void GetFunctionRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetFunctionRequest::ByteSize() const {
+size_t GetFunctionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.GetFunctionRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -4612,18 +4686,17 @@ int GetFunctionRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.GetFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetFunctionRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetFunctionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetFunctionRequest>(
           &from);
   if (source == NULL) {
@@ -4631,15 +4704,21 @@ void GetFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.GetFunctionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetFunctionRequest::MergeFrom(const GetFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.GetFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetFunctionRequest::UnsafeMergeFrom(const GetFunctionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -4657,7 +4736,7 @@ void GetFunctionRequest::CopyFrom(const GetFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.GetFunctionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetFunctionRequest::IsInitialized() const {
@@ -4690,37 +4769,37 @@ void GetFunctionRequest::InternalSwap(GetFunctionRequest* other) {
 void GetFunctionRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& GetFunctionRequest::name() const {
+const ::std::string& GetFunctionRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.GetFunctionRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetFunctionRequest::set_name(const ::std::string& value) {
+void GetFunctionRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.GetFunctionRequest.name)
 }
- void GetFunctionRequest::set_name(const char* value) {
+void GetFunctionRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.GetFunctionRequest.name)
 }
- void GetFunctionRequest::set_name(const char* value, size_t size) {
+void GetFunctionRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.GetFunctionRequest.name)
 }
- ::std::string* GetFunctionRequest::mutable_name() {
+::std::string* GetFunctionRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.GetFunctionRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* GetFunctionRequest::release_name() {
+::std::string* GetFunctionRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.GetFunctionRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetFunctionRequest::set_allocated_name(::std::string* name) {
+void GetFunctionRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -4730,6 +4809,9 @@ void GetFunctionRequest::clear_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.GetFunctionRequest.name)
 }
 
+inline const GetFunctionRequest* GetFunctionRequest::internal_default_instance() {
+  return &GetFunctionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4742,29 +4824,27 @@ const int ListFunctionsRequest::kPageTokenFieldNumber;
 
 ListFunctionsRequest::ListFunctionsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.ListFunctionsRequest)
 }
 
 void ListFunctionsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListFunctionsRequest::ListFunctionsRequest(const ListFunctionsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.ListFunctionsRequest)
 }
 
 void ListFunctionsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   location_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListFunctionsRequest::~ListFunctionsRequest() {
@@ -4775,8 +4855,6 @@ ListFunctionsRequest::~ListFunctionsRequest() {
 void ListFunctionsRequest::SharedDtor() {
   location_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListFunctionsRequest::SetCachedSize(int size) const {
@@ -4790,11 +4868,11 @@ const ::google::protobuf::Descriptor* ListFunctionsRequest::descriptor() {
 }
 
 const ListFunctionsRequest& ListFunctionsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-ListFunctionsRequest* ListFunctionsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListFunctionsRequest> ListFunctionsRequest_default_instance_;
 
 ListFunctionsRequest* ListFunctionsRequest::New(::google::protobuf::Arena* arena) const {
   ListFunctionsRequest* n = new ListFunctionsRequest;
@@ -4841,10 +4919,10 @@ bool ListFunctionsRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4923,6 +5001,7 @@ void ListFunctionsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListFunctionsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.ListFunctionsRequest)
   // optional string location = 1;
   if (this->location().size() > 0) {
@@ -4955,9 +5034,9 @@ void ListFunctionsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListFunctionsRequest::ByteSize() const {
+size_t ListFunctionsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.ListFunctionsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string location = 1;
   if (this->location().size() > 0) {
@@ -4980,18 +5059,17 @@ int ListFunctionsRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListFunctionsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.ListFunctionsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListFunctionsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListFunctionsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListFunctionsRequest>(
           &from);
   if (source == NULL) {
@@ -4999,15 +5077,21 @@ void ListFunctionsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.ListFunctionsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListFunctionsRequest::MergeFrom(const ListFunctionsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.ListFunctionsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListFunctionsRequest::UnsafeMergeFrom(const ListFunctionsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.location().size() > 0) {
 
     location_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.location_);
@@ -5032,7 +5116,7 @@ void ListFunctionsRequest::CopyFrom(const ListFunctionsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.ListFunctionsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListFunctionsRequest::IsInitialized() const {
@@ -5067,37 +5151,37 @@ void ListFunctionsRequest::InternalSwap(ListFunctionsRequest* other) {
 void ListFunctionsRequest::clear_location() {
   location_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListFunctionsRequest::location() const {
+const ::std::string& ListFunctionsRequest::location() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.ListFunctionsRequest.location)
   return location_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListFunctionsRequest::set_location(const ::std::string& value) {
+void ListFunctionsRequest::set_location(const ::std::string& value) {
   
   location_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.ListFunctionsRequest.location)
 }
- void ListFunctionsRequest::set_location(const char* value) {
+void ListFunctionsRequest::set_location(const char* value) {
   
   location_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.ListFunctionsRequest.location)
 }
- void ListFunctionsRequest::set_location(const char* value, size_t size) {
+void ListFunctionsRequest::set_location(const char* value, size_t size) {
   
   location_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.ListFunctionsRequest.location)
 }
- ::std::string* ListFunctionsRequest::mutable_location() {
+::std::string* ListFunctionsRequest::mutable_location() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.ListFunctionsRequest.location)
   return location_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListFunctionsRequest::release_location() {
+::std::string* ListFunctionsRequest::release_location() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.ListFunctionsRequest.location)
   
   return location_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListFunctionsRequest::set_allocated_location(::std::string* location) {
+void ListFunctionsRequest::set_allocated_location(::std::string* location) {
   if (location != NULL) {
     
   } else {
@@ -5111,11 +5195,11 @@ void ListFunctionsRequest::clear_location() {
 void ListFunctionsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListFunctionsRequest::page_size() const {
+::google::protobuf::int32 ListFunctionsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.ListFunctionsRequest.page_size)
   return page_size_;
 }
- void ListFunctionsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListFunctionsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.ListFunctionsRequest.page_size)
@@ -5125,37 +5209,37 @@ void ListFunctionsRequest::clear_page_size() {
 void ListFunctionsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListFunctionsRequest::page_token() const {
+const ::std::string& ListFunctionsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.ListFunctionsRequest.page_token)
   return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListFunctionsRequest::set_page_token(const ::std::string& value) {
+void ListFunctionsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.ListFunctionsRequest.page_token)
 }
- void ListFunctionsRequest::set_page_token(const char* value) {
+void ListFunctionsRequest::set_page_token(const char* value) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.ListFunctionsRequest.page_token)
 }
- void ListFunctionsRequest::set_page_token(const char* value, size_t size) {
+void ListFunctionsRequest::set_page_token(const char* value, size_t size) {
   
   page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.ListFunctionsRequest.page_token)
 }
- ::std::string* ListFunctionsRequest::mutable_page_token() {
+::std::string* ListFunctionsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.ListFunctionsRequest.page_token)
   return page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListFunctionsRequest::release_page_token() {
+::std::string* ListFunctionsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.ListFunctionsRequest.page_token)
   
   return page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListFunctionsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListFunctionsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -5165,6 +5249,9 @@ void ListFunctionsRequest::clear_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.ListFunctionsRequest.page_token)
 }
 
+inline const ListFunctionsRequest* ListFunctionsRequest::internal_default_instance() {
+  return &ListFunctionsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5176,27 +5263,25 @@ const int ListFunctionsResponse::kNextPageTokenFieldNumber;
 
 ListFunctionsResponse::ListFunctionsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.ListFunctionsResponse)
 }
 
 void ListFunctionsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListFunctionsResponse::ListFunctionsResponse(const ListFunctionsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.ListFunctionsResponse)
 }
 
 void ListFunctionsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListFunctionsResponse::~ListFunctionsResponse() {
@@ -5206,8 +5291,6 @@ ListFunctionsResponse::~ListFunctionsResponse() {
 
 void ListFunctionsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void ListFunctionsResponse::SetCachedSize(int size) const {
@@ -5221,11 +5304,11 @@ const ::google::protobuf::Descriptor* ListFunctionsResponse::descriptor() {
 }
 
 const ListFunctionsResponse& ListFunctionsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-ListFunctionsResponse* ListFunctionsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListFunctionsResponse> ListFunctionsResponse_default_instance_;
 
 ListFunctionsResponse* ListFunctionsResponse::New(::google::protobuf::Arena* arena) const {
   ListFunctionsResponse* n = new ListFunctionsResponse;
@@ -5329,6 +5412,7 @@ void ListFunctionsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListFunctionsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.ListFunctionsResponse)
   // repeated .google.cloud.functions.v1beta2.CloudFunction functions = 1;
   for (unsigned int i = 0, n = this->functions_size(); i < n; i++) {
@@ -5352,9 +5436,9 @@ void ListFunctionsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListFunctionsResponse::ByteSize() const {
+size_t ListFunctionsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.ListFunctionsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -5364,25 +5448,27 @@ int ListFunctionsResponse::ByteSize() const {
   }
 
   // repeated .google.cloud.functions.v1beta2.CloudFunction functions = 1;
-  total_size += 1 * this->functions_size();
-  for (int i = 0; i < this->functions_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->functions(i));
+  {
+    unsigned int count = this->functions_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->functions(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListFunctionsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.ListFunctionsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListFunctionsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListFunctionsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListFunctionsResponse>(
           &from);
   if (source == NULL) {
@@ -5390,15 +5476,21 @@ void ListFunctionsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.ListFunctionsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListFunctionsResponse::MergeFrom(const ListFunctionsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.ListFunctionsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListFunctionsResponse::UnsafeMergeFrom(const ListFunctionsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   functions_.MergeFrom(from.functions_);
   if (from.next_page_token().size() > 0) {
 
@@ -5417,7 +5509,7 @@ void ListFunctionsResponse::CopyFrom(const ListFunctionsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.ListFunctionsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListFunctionsResponse::IsInitialized() const {
@@ -5481,37 +5573,37 @@ ListFunctionsResponse::functions() const {
 void ListFunctionsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& ListFunctionsResponse::next_page_token() const {
+const ::std::string& ListFunctionsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.ListFunctionsResponse.next_page_token)
   return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListFunctionsResponse::set_next_page_token(const ::std::string& value) {
+void ListFunctionsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.ListFunctionsResponse.next_page_token)
 }
- void ListFunctionsResponse::set_next_page_token(const char* value) {
+void ListFunctionsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.ListFunctionsResponse.next_page_token)
 }
- void ListFunctionsResponse::set_next_page_token(const char* value, size_t size) {
+void ListFunctionsResponse::set_next_page_token(const char* value, size_t size) {
   
   next_page_token_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.ListFunctionsResponse.next_page_token)
 }
- ::std::string* ListFunctionsResponse::mutable_next_page_token() {
+::std::string* ListFunctionsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.ListFunctionsResponse.next_page_token)
   return next_page_token_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* ListFunctionsResponse::release_next_page_token() {
+::std::string* ListFunctionsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.ListFunctionsResponse.next_page_token)
   
   return next_page_token_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListFunctionsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListFunctionsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -5521,6 +5613,9 @@ void ListFunctionsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.ListFunctionsResponse.next_page_token)
 }
 
+inline const ListFunctionsResponse* ListFunctionsResponse::internal_default_instance() {
+  return &ListFunctionsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5531,27 +5626,25 @@ const int DeleteFunctionRequest::kNameFieldNumber;
 
 DeleteFunctionRequest::DeleteFunctionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.DeleteFunctionRequest)
 }
 
 void DeleteFunctionRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteFunctionRequest::DeleteFunctionRequest(const DeleteFunctionRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.DeleteFunctionRequest)
 }
 
 void DeleteFunctionRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteFunctionRequest::~DeleteFunctionRequest() {
@@ -5561,8 +5654,6 @@ DeleteFunctionRequest::~DeleteFunctionRequest() {
 
 void DeleteFunctionRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DeleteFunctionRequest::SetCachedSize(int size) const {
@@ -5576,11 +5667,11 @@ const ::google::protobuf::Descriptor* DeleteFunctionRequest::descriptor() {
 }
 
 const DeleteFunctionRequest& DeleteFunctionRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteFunctionRequest* DeleteFunctionRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteFunctionRequest> DeleteFunctionRequest_default_instance_;
 
 DeleteFunctionRequest* DeleteFunctionRequest::New(::google::protobuf::Arena* arena) const {
   DeleteFunctionRequest* n = new DeleteFunctionRequest;
@@ -5660,6 +5751,7 @@ void DeleteFunctionRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteFunctionRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.DeleteFunctionRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -5676,9 +5768,9 @@ void DeleteFunctionRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteFunctionRequest::ByteSize() const {
+size_t DeleteFunctionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.DeleteFunctionRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -5687,18 +5779,17 @@ int DeleteFunctionRequest::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.DeleteFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteFunctionRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteFunctionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteFunctionRequest>(
           &from);
   if (source == NULL) {
@@ -5706,15 +5797,21 @@ void DeleteFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.DeleteFunctionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteFunctionRequest::MergeFrom(const DeleteFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.DeleteFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteFunctionRequest::UnsafeMergeFrom(const DeleteFunctionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -5732,7 +5829,7 @@ void DeleteFunctionRequest::CopyFrom(const DeleteFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.DeleteFunctionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteFunctionRequest::IsInitialized() const {
@@ -5765,37 +5862,37 @@ void DeleteFunctionRequest::InternalSwap(DeleteFunctionRequest* other) {
 void DeleteFunctionRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DeleteFunctionRequest::name() const {
+const ::std::string& DeleteFunctionRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.DeleteFunctionRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteFunctionRequest::set_name(const ::std::string& value) {
+void DeleteFunctionRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.DeleteFunctionRequest.name)
 }
- void DeleteFunctionRequest::set_name(const char* value) {
+void DeleteFunctionRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.DeleteFunctionRequest.name)
 }
- void DeleteFunctionRequest::set_name(const char* value, size_t size) {
+void DeleteFunctionRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.DeleteFunctionRequest.name)
 }
- ::std::string* DeleteFunctionRequest::mutable_name() {
+::std::string* DeleteFunctionRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.DeleteFunctionRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DeleteFunctionRequest::release_name() {
+::std::string* DeleteFunctionRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.DeleteFunctionRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteFunctionRequest::set_allocated_name(::std::string* name) {
+void DeleteFunctionRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -5805,6 +5902,9 @@ void DeleteFunctionRequest::clear_name() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.DeleteFunctionRequest.name)
 }
 
+inline const DeleteFunctionRequest* DeleteFunctionRequest::internal_default_instance() {
+  return &DeleteFunctionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5816,28 +5916,26 @@ const int CallFunctionRequest::kDataFieldNumber;
 
 CallFunctionRequest::CallFunctionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.CallFunctionRequest)
 }
 
 void CallFunctionRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 CallFunctionRequest::CallFunctionRequest(const CallFunctionRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.CallFunctionRequest)
 }
 
 void CallFunctionRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 CallFunctionRequest::~CallFunctionRequest() {
@@ -5848,8 +5946,6 @@ CallFunctionRequest::~CallFunctionRequest() {
 void CallFunctionRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   data_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void CallFunctionRequest::SetCachedSize(int size) const {
@@ -5863,11 +5959,11 @@ const ::google::protobuf::Descriptor* CallFunctionRequest::descriptor() {
 }
 
 const CallFunctionRequest& CallFunctionRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-CallFunctionRequest* CallFunctionRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CallFunctionRequest> CallFunctionRequest_default_instance_;
 
 CallFunctionRequest* CallFunctionRequest::New(::google::protobuf::Arena* arena) const {
   CallFunctionRequest* n = new CallFunctionRequest;
@@ -5975,6 +6071,7 @@ void CallFunctionRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CallFunctionRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.CallFunctionRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6002,9 +6099,9 @@ void CallFunctionRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int CallFunctionRequest::ByteSize() const {
+size_t CallFunctionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.CallFunctionRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -6020,18 +6117,17 @@ int CallFunctionRequest::ByteSize() const {
         this->data());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CallFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.CallFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CallFunctionRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CallFunctionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CallFunctionRequest>(
           &from);
   if (source == NULL) {
@@ -6039,15 +6135,21 @@ void CallFunctionRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.CallFunctionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CallFunctionRequest::MergeFrom(const CallFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.CallFunctionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CallFunctionRequest::UnsafeMergeFrom(const CallFunctionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -6069,7 +6171,7 @@ void CallFunctionRequest::CopyFrom(const CallFunctionRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.CallFunctionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CallFunctionRequest::IsInitialized() const {
@@ -6103,37 +6205,37 @@ void CallFunctionRequest::InternalSwap(CallFunctionRequest* other) {
 void CallFunctionRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CallFunctionRequest::name() const {
+const ::std::string& CallFunctionRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CallFunctionRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionRequest::set_name(const ::std::string& value) {
+void CallFunctionRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CallFunctionRequest.name)
 }
- void CallFunctionRequest::set_name(const char* value) {
+void CallFunctionRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CallFunctionRequest.name)
 }
- void CallFunctionRequest::set_name(const char* value, size_t size) {
+void CallFunctionRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CallFunctionRequest.name)
 }
- ::std::string* CallFunctionRequest::mutable_name() {
+::std::string* CallFunctionRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CallFunctionRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CallFunctionRequest::release_name() {
+::std::string* CallFunctionRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CallFunctionRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionRequest::set_allocated_name(::std::string* name) {
+void CallFunctionRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -6147,37 +6249,37 @@ void CallFunctionRequest::clear_name() {
 void CallFunctionRequest::clear_data() {
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CallFunctionRequest::data() const {
+const ::std::string& CallFunctionRequest::data() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CallFunctionRequest.data)
   return data_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionRequest::set_data(const ::std::string& value) {
+void CallFunctionRequest::set_data(const ::std::string& value) {
   
   data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CallFunctionRequest.data)
 }
- void CallFunctionRequest::set_data(const char* value) {
+void CallFunctionRequest::set_data(const char* value) {
   
   data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CallFunctionRequest.data)
 }
- void CallFunctionRequest::set_data(const char* value, size_t size) {
+void CallFunctionRequest::set_data(const char* value, size_t size) {
   
   data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CallFunctionRequest.data)
 }
- ::std::string* CallFunctionRequest::mutable_data() {
+::std::string* CallFunctionRequest::mutable_data() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CallFunctionRequest.data)
   return data_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CallFunctionRequest::release_data() {
+::std::string* CallFunctionRequest::release_data() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CallFunctionRequest.data)
   
   return data_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionRequest::set_allocated_data(::std::string* data) {
+void CallFunctionRequest::set_allocated_data(::std::string* data) {
   if (data != NULL) {
     
   } else {
@@ -6187,6 +6289,9 @@ void CallFunctionRequest::clear_data() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.CallFunctionRequest.data)
 }
 
+inline const CallFunctionRequest* CallFunctionRequest::internal_default_instance() {
+  return &CallFunctionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6199,29 +6304,27 @@ const int CallFunctionResponse::kErrorFieldNumber;
 
 CallFunctionResponse::CallFunctionResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.CallFunctionResponse)
 }
 
 void CallFunctionResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 CallFunctionResponse::CallFunctionResponse(const CallFunctionResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.CallFunctionResponse)
 }
 
 void CallFunctionResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   execution_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   result_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   error_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 CallFunctionResponse::~CallFunctionResponse() {
@@ -6233,8 +6336,6 @@ void CallFunctionResponse::SharedDtor() {
   execution_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   result_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   error_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void CallFunctionResponse::SetCachedSize(int size) const {
@@ -6248,11 +6349,11 @@ const ::google::protobuf::Descriptor* CallFunctionResponse::descriptor() {
 }
 
 const CallFunctionResponse& CallFunctionResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2ffunctions_2eproto();
+  return *internal_default_instance();
 }
 
-CallFunctionResponse* CallFunctionResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CallFunctionResponse> CallFunctionResponse_default_instance_;
 
 CallFunctionResponse* CallFunctionResponse::New(::google::protobuf::Arena* arena) const {
   CallFunctionResponse* n = new CallFunctionResponse;
@@ -6388,6 +6489,7 @@ void CallFunctionResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CallFunctionResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.CallFunctionResponse)
   // optional string execution_id = 1;
   if (this->execution_id().size() > 0) {
@@ -6426,9 +6528,9 @@ void CallFunctionResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int CallFunctionResponse::ByteSize() const {
+size_t CallFunctionResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.CallFunctionResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string execution_id = 1;
   if (this->execution_id().size() > 0) {
@@ -6451,18 +6553,17 @@ int CallFunctionResponse::ByteSize() const {
         this->error());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CallFunctionResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.CallFunctionResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CallFunctionResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CallFunctionResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CallFunctionResponse>(
           &from);
   if (source == NULL) {
@@ -6470,15 +6571,21 @@ void CallFunctionResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.CallFunctionResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CallFunctionResponse::MergeFrom(const CallFunctionResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.CallFunctionResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CallFunctionResponse::UnsafeMergeFrom(const CallFunctionResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.execution_id().size() > 0) {
 
     execution_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.execution_id_);
@@ -6504,7 +6611,7 @@ void CallFunctionResponse::CopyFrom(const CallFunctionResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.CallFunctionResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CallFunctionResponse::IsInitialized() const {
@@ -6539,37 +6646,37 @@ void CallFunctionResponse::InternalSwap(CallFunctionResponse* other) {
 void CallFunctionResponse::clear_execution_id() {
   execution_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CallFunctionResponse::execution_id() const {
+const ::std::string& CallFunctionResponse::execution_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CallFunctionResponse.execution_id)
   return execution_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionResponse::set_execution_id(const ::std::string& value) {
+void CallFunctionResponse::set_execution_id(const ::std::string& value) {
   
   execution_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CallFunctionResponse.execution_id)
 }
- void CallFunctionResponse::set_execution_id(const char* value) {
+void CallFunctionResponse::set_execution_id(const char* value) {
   
   execution_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CallFunctionResponse.execution_id)
 }
- void CallFunctionResponse::set_execution_id(const char* value, size_t size) {
+void CallFunctionResponse::set_execution_id(const char* value, size_t size) {
   
   execution_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CallFunctionResponse.execution_id)
 }
- ::std::string* CallFunctionResponse::mutable_execution_id() {
+::std::string* CallFunctionResponse::mutable_execution_id() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CallFunctionResponse.execution_id)
   return execution_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CallFunctionResponse::release_execution_id() {
+::std::string* CallFunctionResponse::release_execution_id() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CallFunctionResponse.execution_id)
   
   return execution_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionResponse::set_allocated_execution_id(::std::string* execution_id) {
+void CallFunctionResponse::set_allocated_execution_id(::std::string* execution_id) {
   if (execution_id != NULL) {
     
   } else {
@@ -6583,37 +6690,37 @@ void CallFunctionResponse::clear_execution_id() {
 void CallFunctionResponse::clear_result() {
   result_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CallFunctionResponse::result() const {
+const ::std::string& CallFunctionResponse::result() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CallFunctionResponse.result)
   return result_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionResponse::set_result(const ::std::string& value) {
+void CallFunctionResponse::set_result(const ::std::string& value) {
   
   result_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CallFunctionResponse.result)
 }
- void CallFunctionResponse::set_result(const char* value) {
+void CallFunctionResponse::set_result(const char* value) {
   
   result_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CallFunctionResponse.result)
 }
- void CallFunctionResponse::set_result(const char* value, size_t size) {
+void CallFunctionResponse::set_result(const char* value, size_t size) {
   
   result_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CallFunctionResponse.result)
 }
- ::std::string* CallFunctionResponse::mutable_result() {
+::std::string* CallFunctionResponse::mutable_result() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CallFunctionResponse.result)
   return result_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CallFunctionResponse::release_result() {
+::std::string* CallFunctionResponse::release_result() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CallFunctionResponse.result)
   
   return result_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionResponse::set_allocated_result(::std::string* result) {
+void CallFunctionResponse::set_allocated_result(::std::string* result) {
   if (result != NULL) {
     
   } else {
@@ -6627,37 +6734,37 @@ void CallFunctionResponse::clear_result() {
 void CallFunctionResponse::clear_error() {
   error_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& CallFunctionResponse::error() const {
+const ::std::string& CallFunctionResponse::error() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.CallFunctionResponse.error)
   return error_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionResponse::set_error(const ::std::string& value) {
+void CallFunctionResponse::set_error(const ::std::string& value) {
   
   error_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.CallFunctionResponse.error)
 }
- void CallFunctionResponse::set_error(const char* value) {
+void CallFunctionResponse::set_error(const char* value) {
   
   error_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.functions.v1beta2.CallFunctionResponse.error)
 }
- void CallFunctionResponse::set_error(const char* value, size_t size) {
+void CallFunctionResponse::set_error(const char* value, size_t size) {
   
   error_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.functions.v1beta2.CallFunctionResponse.error)
 }
- ::std::string* CallFunctionResponse::mutable_error() {
+::std::string* CallFunctionResponse::mutable_error() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.functions.v1beta2.CallFunctionResponse.error)
   return error_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* CallFunctionResponse::release_error() {
+::std::string* CallFunctionResponse::release_error() {
   // @@protoc_insertion_point(field_release:google.cloud.functions.v1beta2.CallFunctionResponse.error)
   
   return error_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CallFunctionResponse::set_allocated_error(::std::string* error) {
+void CallFunctionResponse::set_allocated_error(::std::string* error) {
   if (error != NULL) {
     
   } else {
@@ -6667,6 +6774,9 @@ void CallFunctionResponse::clear_error() {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.CallFunctionResponse.error)
 }
 
+inline const CallFunctionResponse* CallFunctionResponse::internal_default_instance() {
+  return &CallFunctionResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

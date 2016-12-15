@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -42,7 +43,7 @@ namespace google {
 namespace genomics {
 namespace v1 {
 
-class StreamingVariantService GRPC_FINAL {
+class StreamingVariantService final {
  public:
   class StubInterface {
    public:
@@ -59,7 +60,7 @@ class StreamingVariantService GRPC_FINAL {
     virtual ::grpc::ClientReaderInterface< ::google::genomics::v1::StreamVariantsResponse>* StreamVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamVariantsRequest& request) = 0;
     virtual ::grpc::ClientAsyncReaderInterface< ::google::genomics::v1::StreamVariantsResponse>* AsyncStreamVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamVariantsRequest& request, ::grpc::CompletionQueue* cq, void* tag) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
     std::unique_ptr< ::grpc::ClientReader< ::google::genomics::v1::StreamVariantsResponse>> StreamVariants(::grpc::ClientContext* context, const ::google::genomics::v1::StreamVariantsRequest& request) {
@@ -71,8 +72,8 @@ class StreamingVariantService GRPC_FINAL {
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientReader< ::google::genomics::v1::StreamVariantsResponse>* StreamVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamVariantsRequest& request) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReader< ::google::genomics::v1::StreamVariantsResponse>* AsyncStreamVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamVariantsRequest& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
+    ::grpc::ClientReader< ::google::genomics::v1::StreamVariantsResponse>* StreamVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamVariantsRequest& request) override;
+    ::grpc::ClientAsyncReader< ::google::genomics::v1::StreamVariantsResponse>* AsyncStreamVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamVariantsRequest& request, ::grpc::CompletionQueue* cq, void* tag) override;
     const ::grpc::RpcMethod rpcmethod_StreamVariants_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -93,11 +94,11 @@ class StreamingVariantService GRPC_FINAL {
     WithAsyncMethod_StreamVariants() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_StreamVariants() GRPC_OVERRIDE {
+    ~WithAsyncMethod_StreamVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StreamVariants(::grpc::ServerContext* context, const ::google::genomics::v1::StreamVariantsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamVariantsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status StreamVariants(::grpc::ServerContext* context, const ::google::genomics::v1::StreamVariantsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamVariantsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -114,18 +115,41 @@ class StreamingVariantService GRPC_FINAL {
     WithGenericMethod_StreamVariants() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_StreamVariants() GRPC_OVERRIDE {
+    ~WithGenericMethod_StreamVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StreamVariants(::grpc::ServerContext* context, const ::google::genomics::v1::StreamVariantsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamVariantsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status StreamVariants(::grpc::ServerContext* context, const ::google::genomics::v1::StreamVariantsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamVariantsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  typedef Service StreamedUnaryService;
+  template <class BaseClass>
+  class WithSplitStreamingMethod_StreamVariants : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithSplitStreamingMethod_StreamVariants() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::SplitServerStreamingHandler< ::google::genomics::v1::StreamVariantsRequest, ::google::genomics::v1::StreamVariantsResponse>(std::bind(&WithSplitStreamingMethod_StreamVariants<BaseClass>::StreamedStreamVariants, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithSplitStreamingMethod_StreamVariants() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status StreamVariants(::grpc::ServerContext* context, const ::google::genomics::v1::StreamVariantsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamVariantsResponse>* writer) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with split streamed
+    virtual ::grpc::Status StreamedStreamVariants(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::google::genomics::v1::StreamVariantsRequest,::google::genomics::v1::StreamVariantsResponse>* server_split_streamer) = 0;
+  };
+  typedef WithSplitStreamingMethod_StreamVariants<Service > SplitStreamedService;
+  typedef WithSplitStreamingMethod_StreamVariants<Service > StreamedService;
 };
 
-class VariantServiceV1 GRPC_FINAL {
+class VariantServiceV1 final {
  public:
   class StubInterface {
    public:
@@ -430,102 +454,102 @@ class VariantServiceV1 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteCallSetRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::genomics::v1::CallSet>* AsyncGetCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetCallSetRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ImportVariants(::grpc::ClientContext* context, const ::google::genomics::v1::ImportVariantsRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status ImportVariants(::grpc::ClientContext* context, const ::google::genomics::v1::ImportVariantsRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncImportVariants(::grpc::ClientContext* context, const ::google::genomics::v1::ImportVariantsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncImportVariantsRaw(context, request, cq));
     }
-    ::grpc::Status CreateVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantSetRequest& request, ::google::genomics::v1::VariantSet* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantSetRequest& request, ::google::genomics::v1::VariantSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>> AsyncCreateVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>>(AsyncCreateVariantSetRaw(context, request, cq));
     }
-    ::grpc::Status ExportVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::ExportVariantSetRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status ExportVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::ExportVariantSetRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncExportVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::ExportVariantSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncExportVariantSetRaw(context, request, cq));
     }
-    ::grpc::Status GetVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantSetRequest& request, ::google::genomics::v1::VariantSet* response) GRPC_OVERRIDE;
+    ::grpc::Status GetVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantSetRequest& request, ::google::genomics::v1::VariantSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>> AsyncGetVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>>(AsyncGetVariantSetRaw(context, request, cq));
     }
-    ::grpc::Status SearchVariantSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantSetsRequest& request, ::google::genomics::v1::SearchVariantSetsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchVariantSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantSetsRequest& request, ::google::genomics::v1::SearchVariantSetsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantSetsResponse>> AsyncSearchVariantSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantSetsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantSetsResponse>>(AsyncSearchVariantSetsRaw(context, request, cq));
     }
-    ::grpc::Status DeleteVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantSetRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantSetRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteVariantSetRaw(context, request, cq));
     }
-    ::grpc::Status UpdateVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantSetRequest& request, ::google::genomics::v1::VariantSet* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantSetRequest& request, ::google::genomics::v1::VariantSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>> AsyncUpdateVariantSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>>(AsyncUpdateVariantSetRaw(context, request, cq));
     }
-    ::grpc::Status SearchVariants(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantsRequest& request, ::google::genomics::v1::SearchVariantsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchVariants(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantsRequest& request, ::google::genomics::v1::SearchVariantsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantsResponse>> AsyncSearchVariants(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantsResponse>>(AsyncSearchVariantsRaw(context, request, cq));
     }
-    ::grpc::Status CreateVariant(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantRequest& request, ::google::genomics::v1::Variant* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateVariant(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantRequest& request, ::google::genomics::v1::Variant* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>> AsyncCreateVariant(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>>(AsyncCreateVariantRaw(context, request, cq));
     }
-    ::grpc::Status UpdateVariant(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantRequest& request, ::google::genomics::v1::Variant* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateVariant(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantRequest& request, ::google::genomics::v1::Variant* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>> AsyncUpdateVariant(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>>(AsyncUpdateVariantRaw(context, request, cq));
     }
-    ::grpc::Status DeleteVariant(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteVariant(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteVariant(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteVariantRaw(context, request, cq));
     }
-    ::grpc::Status GetVariant(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantRequest& request, ::google::genomics::v1::Variant* response) GRPC_OVERRIDE;
+    ::grpc::Status GetVariant(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantRequest& request, ::google::genomics::v1::Variant* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>> AsyncGetVariant(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>>(AsyncGetVariantRaw(context, request, cq));
     }
-    ::grpc::Status MergeVariants(::grpc::ClientContext* context, const ::google::genomics::v1::MergeVariantsRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status MergeVariants(::grpc::ClientContext* context, const ::google::genomics::v1::MergeVariantsRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncMergeVariants(::grpc::ClientContext* context, const ::google::genomics::v1::MergeVariantsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncMergeVariantsRaw(context, request, cq));
     }
-    ::grpc::Status SearchCallSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchCallSetsRequest& request, ::google::genomics::v1::SearchCallSetsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchCallSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchCallSetsRequest& request, ::google::genomics::v1::SearchCallSetsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchCallSetsResponse>> AsyncSearchCallSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchCallSetsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchCallSetsResponse>>(AsyncSearchCallSetsRaw(context, request, cq));
     }
-    ::grpc::Status CreateCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateCallSetRequest& request, ::google::genomics::v1::CallSet* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateCallSetRequest& request, ::google::genomics::v1::CallSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>> AsyncCreateCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::CreateCallSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>>(AsyncCreateCallSetRaw(context, request, cq));
     }
-    ::grpc::Status UpdateCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateCallSetRequest& request, ::google::genomics::v1::CallSet* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateCallSetRequest& request, ::google::genomics::v1::CallSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>> AsyncUpdateCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateCallSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>>(AsyncUpdateCallSetRaw(context, request, cq));
     }
-    ::grpc::Status DeleteCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteCallSetRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteCallSetRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteCallSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteCallSetRaw(context, request, cq));
     }
-    ::grpc::Status GetCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetCallSetRequest& request, ::google::genomics::v1::CallSet* response) GRPC_OVERRIDE;
+    ::grpc::Status GetCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetCallSetRequest& request, ::google::genomics::v1::CallSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>> AsyncGetCallSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetCallSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>>(AsyncGetCallSetRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncImportVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ImportVariantsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>* AsyncCreateVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncExportVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ExportVariantSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>* AsyncGetVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantSetsResponse>* AsyncSearchVariantSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantSetsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>* AsyncUpdateVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantsResponse>* AsyncSearchVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>* AsyncCreateVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>* AsyncUpdateVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>* AsyncGetVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncMergeVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::MergeVariantsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchCallSetsResponse>* AsyncSearchCallSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchCallSetsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>* AsyncCreateCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateCallSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>* AsyncUpdateCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateCallSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteCallSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>* AsyncGetCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetCallSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncImportVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ImportVariantsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>* AsyncCreateVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncExportVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ExportVariantSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>* AsyncGetVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantSetsResponse>* AsyncSearchVariantSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantSetsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::VariantSet>* AsyncUpdateVariantSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchVariantsResponse>* AsyncSearchVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchVariantsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>* AsyncCreateVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateVariantRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>* AsyncUpdateVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateVariantRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteVariantRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Variant>* AsyncGetVariantRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetVariantRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncMergeVariantsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::MergeVariantsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchCallSetsResponse>* AsyncSearchCallSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchCallSetsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>* AsyncCreateCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateCallSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>* AsyncUpdateCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateCallSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteCallSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::CallSet>* AsyncGetCallSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetCallSetRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ImportVariants_;
     const ::grpc::RpcMethod rpcmethod_CreateVariantSet_;
     const ::grpc::RpcMethod rpcmethod_ExportVariantSet_;
@@ -786,11 +810,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_ImportVariants() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ImportVariants() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ImportVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ImportVariants(::grpc::ServerContext* context, const ::google::genomics::v1::ImportVariantsRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ImportVariants(::grpc::ServerContext* context, const ::google::genomics::v1::ImportVariantsRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -806,11 +830,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_CreateVariantSet() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_CreateVariantSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -826,11 +850,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_ExportVariantSet() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ExportVariantSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ExportVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ExportVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportVariantSetRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ExportVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportVariantSetRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -846,11 +870,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetVariantSet() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_GetVariantSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -866,11 +890,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchVariantSets() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_SearchVariantSets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchVariantSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchVariantSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantSetsRequest* request, ::google::genomics::v1::SearchVariantSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchVariantSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantSetsRequest* request, ::google::genomics::v1::SearchVariantSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -886,11 +910,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_DeleteVariantSet() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_DeleteVariantSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -906,11 +930,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_UpdateVariantSet() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_UpdateVariantSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -926,11 +950,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchVariants() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_SearchVariants() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchVariants(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantsRequest* request, ::google::genomics::v1::SearchVariantsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchVariants(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantsRequest* request, ::google::genomics::v1::SearchVariantsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -946,11 +970,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_CreateVariant() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_CreateVariant() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantRequest* request, ::google::genomics::v1::Variant* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -966,11 +990,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_UpdateVariant() {
       ::grpc::Service::MarkMethodAsync(9);
     }
-    ~WithAsyncMethod_UpdateVariant() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantRequest* request, ::google::genomics::v1::Variant* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -986,11 +1010,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_DeleteVariant() {
       ::grpc::Service::MarkMethodAsync(10);
     }
-    ~WithAsyncMethod_DeleteVariant() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVariant(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVariant(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1006,11 +1030,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetVariant() {
       ::grpc::Service::MarkMethodAsync(11);
     }
-    ~WithAsyncMethod_GetVariant() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVariant(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantRequest* request, ::google::genomics::v1::Variant* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVariant(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1026,11 +1050,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_MergeVariants() {
       ::grpc::Service::MarkMethodAsync(12);
     }
-    ~WithAsyncMethod_MergeVariants() GRPC_OVERRIDE {
+    ~WithAsyncMethod_MergeVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MergeVariants(::grpc::ServerContext* context, const ::google::genomics::v1::MergeVariantsRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MergeVariants(::grpc::ServerContext* context, const ::google::genomics::v1::MergeVariantsRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1046,11 +1070,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchCallSets() {
       ::grpc::Service::MarkMethodAsync(13);
     }
-    ~WithAsyncMethod_SearchCallSets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchCallSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchCallSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchCallSetsRequest* request, ::google::genomics::v1::SearchCallSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchCallSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchCallSetsRequest* request, ::google::genomics::v1::SearchCallSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1066,11 +1090,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_CreateCallSet() {
       ::grpc::Service::MarkMethodAsync(14);
     }
-    ~WithAsyncMethod_CreateCallSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateCallSetRequest* request, ::google::genomics::v1::CallSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1086,11 +1110,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_UpdateCallSet() {
       ::grpc::Service::MarkMethodAsync(15);
     }
-    ~WithAsyncMethod_UpdateCallSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateCallSetRequest* request, ::google::genomics::v1::CallSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1106,11 +1130,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_DeleteCallSet() {
       ::grpc::Service::MarkMethodAsync(16);
     }
-    ~WithAsyncMethod_DeleteCallSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteCallSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteCallSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1126,11 +1150,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetCallSet() {
       ::grpc::Service::MarkMethodAsync(17);
     }
-    ~WithAsyncMethod_GetCallSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetCallSetRequest* request, ::google::genomics::v1::CallSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1147,11 +1171,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_ImportVariants() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ImportVariants() GRPC_OVERRIDE {
+    ~WithGenericMethod_ImportVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ImportVariants(::grpc::ServerContext* context, const ::google::genomics::v1::ImportVariantsRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ImportVariants(::grpc::ServerContext* context, const ::google::genomics::v1::ImportVariantsRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1164,11 +1188,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_CreateVariantSet() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_CreateVariantSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1181,11 +1205,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_ExportVariantSet() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ExportVariantSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_ExportVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ExportVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportVariantSetRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ExportVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportVariantSetRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1198,11 +1222,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_GetVariantSet() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_GetVariantSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1215,11 +1239,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchVariantSets() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_SearchVariantSets() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchVariantSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchVariantSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantSetsRequest* request, ::google::genomics::v1::SearchVariantSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchVariantSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantSetsRequest* request, ::google::genomics::v1::SearchVariantSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1232,11 +1256,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_DeleteVariantSet() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_DeleteVariantSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1249,11 +1273,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_UpdateVariantSet() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_UpdateVariantSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateVariantSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1266,11 +1290,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchVariants() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_SearchVariants() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchVariants(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantsRequest* request, ::google::genomics::v1::SearchVariantsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchVariants(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantsRequest* request, ::google::genomics::v1::SearchVariantsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1283,11 +1307,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_CreateVariant() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_CreateVariant() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantRequest* request, ::google::genomics::v1::Variant* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1300,11 +1324,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_UpdateVariant() {
       ::grpc::Service::MarkMethodGeneric(9);
     }
-    ~WithGenericMethod_UpdateVariant() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantRequest* request, ::google::genomics::v1::Variant* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1317,11 +1341,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_DeleteVariant() {
       ::grpc::Service::MarkMethodGeneric(10);
     }
-    ~WithGenericMethod_DeleteVariant() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVariant(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVariant(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1334,11 +1358,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_GetVariant() {
       ::grpc::Service::MarkMethodGeneric(11);
     }
-    ~WithGenericMethod_GetVariant() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetVariant() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVariant(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantRequest* request, ::google::genomics::v1::Variant* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVariant(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1351,11 +1375,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_MergeVariants() {
       ::grpc::Service::MarkMethodGeneric(12);
     }
-    ~WithGenericMethod_MergeVariants() GRPC_OVERRIDE {
+    ~WithGenericMethod_MergeVariants() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MergeVariants(::grpc::ServerContext* context, const ::google::genomics::v1::MergeVariantsRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MergeVariants(::grpc::ServerContext* context, const ::google::genomics::v1::MergeVariantsRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1368,11 +1392,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchCallSets() {
       ::grpc::Service::MarkMethodGeneric(13);
     }
-    ~WithGenericMethod_SearchCallSets() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchCallSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchCallSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchCallSetsRequest* request, ::google::genomics::v1::SearchCallSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchCallSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchCallSetsRequest* request, ::google::genomics::v1::SearchCallSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1385,11 +1409,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_CreateCallSet() {
       ::grpc::Service::MarkMethodGeneric(14);
     }
-    ~WithGenericMethod_CreateCallSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateCallSetRequest* request, ::google::genomics::v1::CallSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1402,11 +1426,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_UpdateCallSet() {
       ::grpc::Service::MarkMethodGeneric(15);
     }
-    ~WithGenericMethod_UpdateCallSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateCallSetRequest* request, ::google::genomics::v1::CallSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1419,11 +1443,11 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_DeleteCallSet() {
       ::grpc::Service::MarkMethodGeneric(16);
     }
-    ~WithGenericMethod_DeleteCallSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteCallSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteCallSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -1436,15 +1460,378 @@ class VariantServiceV1 GRPC_FINAL {
     WithGenericMethod_GetCallSet() {
       ::grpc::Service::MarkMethodGeneric(17);
     }
-    ~WithGenericMethod_GetCallSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetCallSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetCallSetRequest* request, ::google::genomics::v1::CallSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ImportVariants : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ImportVariants() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::ImportVariantsRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_ImportVariants<BaseClass>::StreamedImportVariants, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ImportVariants() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ImportVariants(::grpc::ServerContext* context, const ::google::genomics::v1::ImportVariantsRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedImportVariants(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::ImportVariantsRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateVariantSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateVariantSet() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::CreateVariantSetRequest, ::google::genomics::v1::VariantSet>(std::bind(&WithStreamedUnaryMethod_CreateVariantSet<BaseClass>::StreamedCreateVariantSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateVariantSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateVariantSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::CreateVariantSetRequest,::google::genomics::v1::VariantSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ExportVariantSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ExportVariantSet() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::ExportVariantSetRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_ExportVariantSet<BaseClass>::StreamedExportVariantSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ExportVariantSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ExportVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportVariantSetRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedExportVariantSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::ExportVariantSetRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetVariantSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetVariantSet() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetVariantSetRequest, ::google::genomics::v1::VariantSet>(std::bind(&WithStreamedUnaryMethod_GetVariantSet<BaseClass>::StreamedGetVariantSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetVariantSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetVariantSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetVariantSetRequest,::google::genomics::v1::VariantSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchVariantSets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchVariantSets() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchVariantSetsRequest, ::google::genomics::v1::SearchVariantSetsResponse>(std::bind(&WithStreamedUnaryMethod_SearchVariantSets<BaseClass>::StreamedSearchVariantSets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchVariantSets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchVariantSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantSetsRequest* request, ::google::genomics::v1::SearchVariantSetsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchVariantSets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchVariantSetsRequest,::google::genomics::v1::SearchVariantSetsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteVariantSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteVariantSet() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::DeleteVariantSetRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteVariantSet<BaseClass>::StreamedDeleteVariantSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteVariantSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantSetRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteVariantSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::DeleteVariantSetRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateVariantSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateVariantSet() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UpdateVariantSetRequest, ::google::genomics::v1::VariantSet>(std::bind(&WithStreamedUnaryMethod_UpdateVariantSet<BaseClass>::StreamedUpdateVariantSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateVariantSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateVariantSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantSetRequest* request, ::google::genomics::v1::VariantSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateVariantSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UpdateVariantSetRequest,::google::genomics::v1::VariantSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchVariants : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchVariants() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchVariantsRequest, ::google::genomics::v1::SearchVariantsResponse>(std::bind(&WithStreamedUnaryMethod_SearchVariants<BaseClass>::StreamedSearchVariants, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchVariants() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchVariants(::grpc::ServerContext* context, const ::google::genomics::v1::SearchVariantsRequest* request, ::google::genomics::v1::SearchVariantsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchVariants(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchVariantsRequest,::google::genomics::v1::SearchVariantsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateVariant : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateVariant() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::CreateVariantRequest, ::google::genomics::v1::Variant>(std::bind(&WithStreamedUnaryMethod_CreateVariant<BaseClass>::StreamedCreateVariant, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateVariant() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::CreateVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateVariant(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::CreateVariantRequest,::google::genomics::v1::Variant>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateVariant : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateVariant() {
+      ::grpc::Service::MarkMethodStreamed(9,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UpdateVariantRequest, ::google::genomics::v1::Variant>(std::bind(&WithStreamedUnaryMethod_UpdateVariant<BaseClass>::StreamedUpdateVariant, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateVariant() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateVariant(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateVariant(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UpdateVariantRequest,::google::genomics::v1::Variant>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteVariant : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteVariant() {
+      ::grpc::Service::MarkMethodStreamed(10,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::DeleteVariantRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteVariant<BaseClass>::StreamedDeleteVariant, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteVariant() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteVariant(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteVariantRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteVariant(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::DeleteVariantRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetVariant : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetVariant() {
+      ::grpc::Service::MarkMethodStreamed(11,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetVariantRequest, ::google::genomics::v1::Variant>(std::bind(&WithStreamedUnaryMethod_GetVariant<BaseClass>::StreamedGetVariant, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetVariant() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetVariant(::grpc::ServerContext* context, const ::google::genomics::v1::GetVariantRequest* request, ::google::genomics::v1::Variant* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetVariant(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetVariantRequest,::google::genomics::v1::Variant>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_MergeVariants : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_MergeVariants() {
+      ::grpc::Service::MarkMethodStreamed(12,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::MergeVariantsRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_MergeVariants<BaseClass>::StreamedMergeVariants, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_MergeVariants() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status MergeVariants(::grpc::ServerContext* context, const ::google::genomics::v1::MergeVariantsRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedMergeVariants(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::MergeVariantsRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchCallSets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchCallSets() {
+      ::grpc::Service::MarkMethodStreamed(13,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchCallSetsRequest, ::google::genomics::v1::SearchCallSetsResponse>(std::bind(&WithStreamedUnaryMethod_SearchCallSets<BaseClass>::StreamedSearchCallSets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchCallSets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchCallSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchCallSetsRequest* request, ::google::genomics::v1::SearchCallSetsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchCallSets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchCallSetsRequest,::google::genomics::v1::SearchCallSetsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateCallSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateCallSet() {
+      ::grpc::Service::MarkMethodStreamed(14,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::CreateCallSetRequest, ::google::genomics::v1::CallSet>(std::bind(&WithStreamedUnaryMethod_CreateCallSet<BaseClass>::StreamedCreateCallSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateCallSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::CreateCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateCallSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::CreateCallSetRequest,::google::genomics::v1::CallSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateCallSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateCallSet() {
+      ::grpc::Service::MarkMethodStreamed(15,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UpdateCallSetRequest, ::google::genomics::v1::CallSet>(std::bind(&WithStreamedUnaryMethod_UpdateCallSet<BaseClass>::StreamedUpdateCallSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateCallSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateCallSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UpdateCallSetRequest,::google::genomics::v1::CallSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteCallSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteCallSet() {
+      ::grpc::Service::MarkMethodStreamed(16,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::DeleteCallSetRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteCallSet<BaseClass>::StreamedDeleteCallSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteCallSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteCallSetRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteCallSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::DeleteCallSetRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetCallSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetCallSet() {
+      ::grpc::Service::MarkMethodStreamed(17,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetCallSetRequest, ::google::genomics::v1::CallSet>(std::bind(&WithStreamedUnaryMethod_GetCallSet<BaseClass>::StreamedGetCallSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetCallSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetCallSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetCallSetRequest* request, ::google::genomics::v1::CallSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetCallSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetCallSetRequest,::google::genomics::v1::CallSet>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ImportVariants<WithStreamedUnaryMethod_CreateVariantSet<WithStreamedUnaryMethod_ExportVariantSet<WithStreamedUnaryMethod_GetVariantSet<WithStreamedUnaryMethod_SearchVariantSets<WithStreamedUnaryMethod_DeleteVariantSet<WithStreamedUnaryMethod_UpdateVariantSet<WithStreamedUnaryMethod_SearchVariants<WithStreamedUnaryMethod_CreateVariant<WithStreamedUnaryMethod_UpdateVariant<WithStreamedUnaryMethod_DeleteVariant<WithStreamedUnaryMethod_GetVariant<WithStreamedUnaryMethod_MergeVariants<WithStreamedUnaryMethod_SearchCallSets<WithStreamedUnaryMethod_CreateCallSet<WithStreamedUnaryMethod_UpdateCallSet<WithStreamedUnaryMethod_DeleteCallSet<WithStreamedUnaryMethod_GetCallSet<Service > > > > > > > > > > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ImportVariants<WithStreamedUnaryMethod_CreateVariantSet<WithStreamedUnaryMethod_ExportVariantSet<WithStreamedUnaryMethod_GetVariantSet<WithStreamedUnaryMethod_SearchVariantSets<WithStreamedUnaryMethod_DeleteVariantSet<WithStreamedUnaryMethod_UpdateVariantSet<WithStreamedUnaryMethod_SearchVariants<WithStreamedUnaryMethod_CreateVariant<WithStreamedUnaryMethod_UpdateVariant<WithStreamedUnaryMethod_DeleteVariant<WithStreamedUnaryMethod_GetVariant<WithStreamedUnaryMethod_MergeVariants<WithStreamedUnaryMethod_SearchCallSets<WithStreamedUnaryMethod_CreateCallSet<WithStreamedUnaryMethod_UpdateCallSet<WithStreamedUnaryMethod_DeleteCallSet<WithStreamedUnaryMethod_GetCallSet<Service > > > > > > > > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

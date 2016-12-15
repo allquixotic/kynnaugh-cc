@@ -68,7 +68,7 @@ void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2epro
   Distribution_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Distribution_descriptor_,
-      Distribution::default_instance_,
+      Distribution::internal_default_instance(),
       Distribution_offsets_,
       -1,
       -1,
@@ -76,8 +76,7 @@ void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2epro
       Distribution_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, _oneof_case_[0]),
       sizeof(Distribution),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, _internal_metadata_));
   Distribution_LinearBuckets_descriptor_ = Distribution_descriptor_->nested_type(0);
   static const int Distribution_LinearBuckets_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_LinearBuckets, num_finite_buckets_),
@@ -87,14 +86,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2epro
   Distribution_LinearBuckets_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Distribution_LinearBuckets_descriptor_,
-      Distribution_LinearBuckets::default_instance_,
+      Distribution_LinearBuckets::internal_default_instance(),
       Distribution_LinearBuckets_offsets_,
       -1,
       -1,
       -1,
       sizeof(Distribution_LinearBuckets),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_LinearBuckets, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_LinearBuckets, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_LinearBuckets, _internal_metadata_));
   Distribution_ExponentialBuckets_descriptor_ = Distribution_descriptor_->nested_type(1);
   static const int Distribution_ExponentialBuckets_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExponentialBuckets, num_finite_buckets_),
@@ -104,14 +102,13 @@ void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2epro
   Distribution_ExponentialBuckets_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Distribution_ExponentialBuckets_descriptor_,
-      Distribution_ExponentialBuckets::default_instance_,
+      Distribution_ExponentialBuckets::internal_default_instance(),
       Distribution_ExponentialBuckets_offsets_,
       -1,
       -1,
       -1,
       sizeof(Distribution_ExponentialBuckets),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExponentialBuckets, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExponentialBuckets, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExponentialBuckets, _internal_metadata_));
   Distribution_ExplicitBuckets_descriptor_ = Distribution_descriptor_->nested_type(2);
   static const int Distribution_ExplicitBuckets_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExplicitBuckets, bounds_),
@@ -119,20 +116,19 @@ void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2epro
   Distribution_ExplicitBuckets_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Distribution_ExplicitBuckets_descriptor_,
-      Distribution_ExplicitBuckets::default_instance_,
+      Distribution_ExplicitBuckets::internal_default_instance(),
       Distribution_ExplicitBuckets_offsets_,
       -1,
       -1,
       -1,
       sizeof(Distribution_ExplicitBuckets),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExplicitBuckets, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExplicitBuckets, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_ExplicitBuckets, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto);
 }
@@ -141,36 +137,52 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Distribution_descriptor_, &Distribution::default_instance());
+      Distribution_descriptor_, Distribution::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Distribution_LinearBuckets_descriptor_, &Distribution_LinearBuckets::default_instance());
+      Distribution_LinearBuckets_descriptor_, Distribution_LinearBuckets::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Distribution_ExponentialBuckets_descriptor_, &Distribution_ExponentialBuckets::default_instance());
+      Distribution_ExponentialBuckets_descriptor_, Distribution_ExponentialBuckets::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Distribution_ExplicitBuckets_descriptor_, &Distribution_ExplicitBuckets::default_instance());
+      Distribution_ExplicitBuckets_descriptor_, Distribution_ExplicitBuckets::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto() {
-  delete Distribution::default_instance_;
+  Distribution_default_instance_.Shutdown();
   delete Distribution_default_oneof_instance_;
   delete Distribution_reflection_;
-  delete Distribution_LinearBuckets::default_instance_;
+  Distribution_LinearBuckets_default_instance_.Shutdown();
   delete Distribution_LinearBuckets_reflection_;
-  delete Distribution_ExponentialBuckets::default_instance_;
+  Distribution_ExponentialBuckets_default_instance_.Shutdown();
   delete Distribution_ExponentialBuckets_reflection_;
-  delete Distribution_ExplicitBuckets::default_instance_;
+  Distribution_ExplicitBuckets_default_instance_.Shutdown();
   delete Distribution_ExplicitBuckets_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  Distribution_default_instance_.DefaultConstruct();
+  Distribution_default_oneof_instance_ = new DistributionOneofInstance();
+  Distribution_LinearBuckets_default_instance_.DefaultConstruct();
+  Distribution_ExponentialBuckets_default_instance_.DefaultConstruct();
+  Distribution_ExplicitBuckets_default_instance_.DefaultConstruct();
+  Distribution_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_LinearBuckets_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_ExponentialBuckets_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_ExplicitBuckets_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n/google/api/servicecontrol/v1/distribut"
     "ion.proto\022\034google.api.servicecontrol.v1\""
@@ -189,29 +201,37 @@ void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto(
     "\n\022ExponentialBuckets\022\032\n\022num_finite_bucke"
     "ts\030\001 \001(\005\022\025\n\rgrowth_factor\030\002 \001(\001\022\r\n\005scale"
     "\030\003 \001(\001\032!\n\017ExplicitBuckets\022\016\n\006bounds\030\001 \003("
-    "\001B\017\n\rbucket_optionB:\n com.google.api.ser"
-    "vicecontrol.v1B\021DistributionProtoP\001\370\001\001b\006"
-    "proto3", 766);
+    "\001B\017\n\rbucket_optionB\206\001\n com.google.api.se"
+    "rvicecontrol.v1B\021DistributionProtoP\001ZJgo"
+    "ogle.golang.org/genproto/googleapis/api/"
+    "servicecontrol/v1;servicecontrol\370\001\001b\006pro"
+    "to3", 843);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/servicecontrol/v1/distribution.proto", &protobuf_RegisterTypes);
-  Distribution::default_instance_ = new Distribution();
-  Distribution_default_oneof_instance_ = new DistributionOneofInstance();
-  Distribution_LinearBuckets::default_instance_ = new Distribution_LinearBuckets();
-  Distribution_ExponentialBuckets::default_instance_ = new Distribution_ExponentialBuckets();
-  Distribution_ExplicitBuckets::default_instance_ = new Distribution_ExplicitBuckets();
-  Distribution::default_instance_->InitAsDefaultInstance();
-  Distribution_LinearBuckets::default_instance_->InitAsDefaultInstance();
-  Distribution_ExponentialBuckets::default_instance_->InitAsDefaultInstance();
-  Distribution_ExplicitBuckets::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto() {
     protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -223,36 +243,36 @@ const int Distribution_LinearBuckets::kOffsetFieldNumber;
 
 Distribution_LinearBuckets::Distribution_LinearBuckets()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicecontrol.v1.Distribution.LinearBuckets)
 }
-
 Distribution_LinearBuckets::Distribution_LinearBuckets(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.api.servicecontrol.v1.Distribution.LinearBuckets)
 }
 
 void Distribution_LinearBuckets::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Distribution_LinearBuckets::Distribution_LinearBuckets(const Distribution_LinearBuckets& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicecontrol.v1.Distribution.LinearBuckets)
 }
 
 void Distribution_LinearBuckets::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&width_, 0, reinterpret_cast<char*>(&num_finite_buckets_) -
+    reinterpret_cast<char*>(&width_) + sizeof(num_finite_buckets_));
   _cached_size_ = 0;
-  num_finite_buckets_ = 0;
-  width_ = 0;
-  offset_ = 0;
 }
 
 Distribution_LinearBuckets::~Distribution_LinearBuckets() {
@@ -261,12 +281,11 @@ Distribution_LinearBuckets::~Distribution_LinearBuckets() {
 }
 
 void Distribution_LinearBuckets::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void Distribution_LinearBuckets::ArenaDtor(void* object) {
@@ -286,11 +305,11 @@ const ::google::protobuf::Descriptor* Distribution_LinearBuckets::descriptor() {
 }
 
 const Distribution_LinearBuckets& Distribution_LinearBuckets::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+  return *internal_default_instance();
 }
 
-Distribution_LinearBuckets* Distribution_LinearBuckets::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_LinearBuckets> Distribution_LinearBuckets_default_instance_;
 
 Distribution_LinearBuckets* Distribution_LinearBuckets::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Distribution_LinearBuckets>(arena);
@@ -310,7 +329,7 @@ void Distribution_LinearBuckets::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -334,10 +353,10 @@ bool Distribution_LinearBuckets::MergePartialFromCodedStream(
       // optional int32 num_finite_buckets = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_finite_buckets_)));
-
         } else {
           goto handle_unusual;
         }
@@ -349,10 +368,10 @@ bool Distribution_LinearBuckets::MergePartialFromCodedStream(
       case 2: {
         if (tag == 17) {
          parse_width:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &width_)));
-
         } else {
           goto handle_unusual;
         }
@@ -364,10 +383,10 @@ bool Distribution_LinearBuckets::MergePartialFromCodedStream(
       case 3: {
         if (tag == 25) {
          parse_offset:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &offset_)));
-
         } else {
           goto handle_unusual;
         }
@@ -419,6 +438,7 @@ void Distribution_LinearBuckets::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Distribution_LinearBuckets::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicecontrol.v1.Distribution.LinearBuckets)
   // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
@@ -439,9 +459,9 @@ void Distribution_LinearBuckets::SerializeWithCachedSizes(
   return target;
 }
 
-int Distribution_LinearBuckets::ByteSize() const {
+size_t Distribution_LinearBuckets::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicecontrol.v1.Distribution.LinearBuckets)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
@@ -460,18 +480,17 @@ int Distribution_LinearBuckets::ByteSize() const {
     total_size += 1 + 8;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Distribution_LinearBuckets::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicecontrol.v1.Distribution.LinearBuckets)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Distribution_LinearBuckets* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Distribution_LinearBuckets* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_LinearBuckets>(
           &from);
   if (source == NULL) {
@@ -479,15 +498,21 @@ void Distribution_LinearBuckets::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicecontrol.v1.Distribution.LinearBuckets)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_LinearBuckets::MergeFrom(const Distribution_LinearBuckets& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicecontrol.v1.Distribution.LinearBuckets)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Distribution_LinearBuckets::UnsafeMergeFrom(const Distribution_LinearBuckets& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.num_finite_buckets() != 0) {
     set_num_finite_buckets(from.num_finite_buckets());
   }
@@ -510,7 +535,7 @@ void Distribution_LinearBuckets::CopyFrom(const Distribution_LinearBuckets& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicecontrol.v1.Distribution.LinearBuckets)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_LinearBuckets::IsInitialized() const {
@@ -524,7 +549,7 @@ void Distribution_LinearBuckets::Swap(Distribution_LinearBuckets* other) {
     InternalSwap(other);
   } else {
     Distribution_LinearBuckets temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -561,36 +586,36 @@ const int Distribution_ExponentialBuckets::kScaleFieldNumber;
 
 Distribution_ExponentialBuckets::Distribution_ExponentialBuckets()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
 }
-
 Distribution_ExponentialBuckets::Distribution_ExponentialBuckets(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
 }
 
 void Distribution_ExponentialBuckets::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Distribution_ExponentialBuckets::Distribution_ExponentialBuckets(const Distribution_ExponentialBuckets& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
 }
 
 void Distribution_ExponentialBuckets::SharedCtor() {
-    _is_default_instance_ = false;
+  ::memset(&growth_factor_, 0, reinterpret_cast<char*>(&num_finite_buckets_) -
+    reinterpret_cast<char*>(&growth_factor_) + sizeof(num_finite_buckets_));
   _cached_size_ = 0;
-  num_finite_buckets_ = 0;
-  growth_factor_ = 0;
-  scale_ = 0;
 }
 
 Distribution_ExponentialBuckets::~Distribution_ExponentialBuckets() {
@@ -599,12 +624,11 @@ Distribution_ExponentialBuckets::~Distribution_ExponentialBuckets() {
 }
 
 void Distribution_ExponentialBuckets::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void Distribution_ExponentialBuckets::ArenaDtor(void* object) {
@@ -624,11 +648,11 @@ const ::google::protobuf::Descriptor* Distribution_ExponentialBuckets::descripto
 }
 
 const Distribution_ExponentialBuckets& Distribution_ExponentialBuckets::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+  return *internal_default_instance();
 }
 
-Distribution_ExponentialBuckets* Distribution_ExponentialBuckets::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_ExponentialBuckets> Distribution_ExponentialBuckets_default_instance_;
 
 Distribution_ExponentialBuckets* Distribution_ExponentialBuckets::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Distribution_ExponentialBuckets>(arena);
@@ -648,7 +672,7 @@ void Distribution_ExponentialBuckets::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -672,10 +696,10 @@ bool Distribution_ExponentialBuckets::MergePartialFromCodedStream(
       // optional int32 num_finite_buckets = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &num_finite_buckets_)));
-
         } else {
           goto handle_unusual;
         }
@@ -687,10 +711,10 @@ bool Distribution_ExponentialBuckets::MergePartialFromCodedStream(
       case 2: {
         if (tag == 17) {
          parse_growth_factor:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &growth_factor_)));
-
         } else {
           goto handle_unusual;
         }
@@ -702,10 +726,10 @@ bool Distribution_ExponentialBuckets::MergePartialFromCodedStream(
       case 3: {
         if (tag == 25) {
          parse_scale:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &scale_)));
-
         } else {
           goto handle_unusual;
         }
@@ -757,6 +781,7 @@ void Distribution_ExponentialBuckets::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Distribution_ExponentialBuckets::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
   // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
@@ -777,9 +802,9 @@ void Distribution_ExponentialBuckets::SerializeWithCachedSizes(
   return target;
 }
 
-int Distribution_ExponentialBuckets::ByteSize() const {
+size_t Distribution_ExponentialBuckets::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
@@ -798,18 +823,17 @@ int Distribution_ExponentialBuckets::ByteSize() const {
     total_size += 1 + 8;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Distribution_ExponentialBuckets::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Distribution_ExponentialBuckets* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Distribution_ExponentialBuckets* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_ExponentialBuckets>(
           &from);
   if (source == NULL) {
@@ -817,15 +841,21 @@ void Distribution_ExponentialBuckets::MergeFrom(const ::google::protobuf::Messag
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_ExponentialBuckets::MergeFrom(const Distribution_ExponentialBuckets& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Distribution_ExponentialBuckets::UnsafeMergeFrom(const Distribution_ExponentialBuckets& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.num_finite_buckets() != 0) {
     set_num_finite_buckets(from.num_finite_buckets());
   }
@@ -848,7 +878,7 @@ void Distribution_ExponentialBuckets::CopyFrom(const Distribution_ExponentialBuc
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicecontrol.v1.Distribution.ExponentialBuckets)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_ExponentialBuckets::IsInitialized() const {
@@ -862,7 +892,7 @@ void Distribution_ExponentialBuckets::Swap(Distribution_ExponentialBuckets* othe
     InternalSwap(other);
   } else {
     Distribution_ExponentialBuckets temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -897,33 +927,34 @@ const int Distribution_ExplicitBuckets::kBoundsFieldNumber;
 
 Distribution_ExplicitBuckets::Distribution_ExplicitBuckets()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
 }
-
 Distribution_ExplicitBuckets::Distribution_ExplicitBuckets(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   bounds_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
 }
 
 void Distribution_ExplicitBuckets::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Distribution_ExplicitBuckets::Distribution_ExplicitBuckets(const Distribution_ExplicitBuckets& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
 }
 
 void Distribution_ExplicitBuckets::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -933,12 +964,11 @@ Distribution_ExplicitBuckets::~Distribution_ExplicitBuckets() {
 }
 
 void Distribution_ExplicitBuckets::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void Distribution_ExplicitBuckets::ArenaDtor(void* object) {
@@ -958,11 +988,11 @@ const ::google::protobuf::Descriptor* Distribution_ExplicitBuckets::descriptor()
 }
 
 const Distribution_ExplicitBuckets& Distribution_ExplicitBuckets::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+  return *internal_default_instance();
 }
 
-Distribution_ExplicitBuckets* Distribution_ExplicitBuckets::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_ExplicitBuckets> Distribution_ExplicitBuckets_default_instance_;
 
 Distribution_ExplicitBuckets* Distribution_ExplicitBuckets::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Distribution_ExplicitBuckets>(arena);
@@ -1039,6 +1069,7 @@ void Distribution_ExplicitBuckets::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Distribution_ExplicitBuckets::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
   // repeated double bounds = 1;
   if (this->bounds_size() > 0) {
@@ -1058,36 +1089,37 @@ void Distribution_ExplicitBuckets::SerializeWithCachedSizes(
   return target;
 }
 
-int Distribution_ExplicitBuckets::ByteSize() const {
+size_t Distribution_ExplicitBuckets::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated double bounds = 1;
   {
-    int data_size = 0;
-    data_size = 8 * this->bounds_size();
+    size_t data_size = 0;
+    unsigned int count = this->bounds_size();
+    data_size = 8UL * count;
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _bounds_cached_byte_size_ = data_size;
+    _bounds_cached_byte_size_ = cached_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Distribution_ExplicitBuckets::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Distribution_ExplicitBuckets* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Distribution_ExplicitBuckets* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_ExplicitBuckets>(
           &from);
   if (source == NULL) {
@@ -1095,16 +1127,22 @@ void Distribution_ExplicitBuckets::MergeFrom(const ::google::protobuf::Message& 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_ExplicitBuckets::MergeFrom(const Distribution_ExplicitBuckets& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  bounds_.MergeFrom(from.bounds_);
+}
+
+void Distribution_ExplicitBuckets::UnsafeMergeFrom(const Distribution_ExplicitBuckets& from) {
+  GOOGLE_DCHECK(&from != this);
+  bounds_.UnsafeMergeFrom(from.bounds_);
 }
 
 void Distribution_ExplicitBuckets::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1118,7 +1156,7 @@ void Distribution_ExplicitBuckets::CopyFrom(const Distribution_ExplicitBuckets& 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicecontrol.v1.Distribution.ExplicitBuckets)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_ExplicitBuckets::IsInitialized() const {
@@ -1132,7 +1170,7 @@ void Distribution_ExplicitBuckets::Swap(Distribution_ExplicitBuckets* other) {
     InternalSwap(other);
   } else {
     Distribution_ExplicitBuckets temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1173,43 +1211,44 @@ const int Distribution::kExplicitBucketsFieldNumber;
 
 Distribution::Distribution()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.servicecontrol.v1.Distribution)
 }
-
 Distribution::Distribution(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   bucket_counts_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.api.servicecontrol.v1.Distribution)
 }
 
 void Distribution::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  Distribution_default_oneof_instance_->linear_buckets_ = const_cast< ::google::api::servicecontrol::v1::Distribution_LinearBuckets*>(&::google::api::servicecontrol::v1::Distribution_LinearBuckets::default_instance());
-  Distribution_default_oneof_instance_->exponential_buckets_ = const_cast< ::google::api::servicecontrol::v1::Distribution_ExponentialBuckets*>(&::google::api::servicecontrol::v1::Distribution_ExponentialBuckets::default_instance());
-  Distribution_default_oneof_instance_->explicit_buckets_ = const_cast< ::google::api::servicecontrol::v1::Distribution_ExplicitBuckets*>(&::google::api::servicecontrol::v1::Distribution_ExplicitBuckets::default_instance());
+  Distribution_default_oneof_instance_->linear_buckets_ = const_cast< ::google::api::servicecontrol::v1::Distribution_LinearBuckets*>(
+      ::google::api::servicecontrol::v1::Distribution_LinearBuckets::internal_default_instance());
+  Distribution_default_oneof_instance_->exponential_buckets_ = const_cast< ::google::api::servicecontrol::v1::Distribution_ExponentialBuckets*>(
+      ::google::api::servicecontrol::v1::Distribution_ExponentialBuckets::internal_default_instance());
+  Distribution_default_oneof_instance_->explicit_buckets_ = const_cast< ::google::api::servicecontrol::v1::Distribution_ExplicitBuckets*>(
+      ::google::api::servicecontrol::v1::Distribution_ExplicitBuckets::internal_default_instance());
 }
 
 Distribution::Distribution(const Distribution& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.servicecontrol.v1.Distribution)
 }
 
 void Distribution::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
-  count_ = GOOGLE_LONGLONG(0);
-  mean_ = 0;
-  minimum_ = 0;
-  maximum_ = 0;
-  sum_of_squared_deviation_ = 0;
+  ::memset(&count_, 0, reinterpret_cast<char*>(&sum_of_squared_deviation_) -
+    reinterpret_cast<char*>(&count_) + sizeof(sum_of_squared_deviation_));
   clear_has_bucket_option();
+  _cached_size_ = 0;
 }
 
 Distribution::~Distribution() {
@@ -1218,14 +1257,13 @@ Distribution::~Distribution() {
 }
 
 void Distribution::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
   if (has_bucket_option()) {
     clear_bucket_option();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -1246,11 +1284,11 @@ const ::google::protobuf::Descriptor* Distribution::descriptor() {
 }
 
 const Distribution& Distribution::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fdistribution_2eproto();
+  return *internal_default_instance();
 }
 
-Distribution* Distribution::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Distribution> Distribution_default_instance_;
 
 Distribution* Distribution::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Distribution>(arena);
@@ -1258,7 +1296,7 @@ Distribution* Distribution::New(::google::protobuf::Arena* arena) const {
 
 void Distribution::clear_bucket_option() {
 // @@protoc_insertion_point(one_of_clear_start:google.api.servicecontrol.v1.Distribution)
-  switch(bucket_option_case()) {
+  switch (bucket_option_case()) {
     case kLinearBuckets: {
       if (GetArenaNoVirtual() == NULL) {
         delete bucket_option_.linear_buckets_;
@@ -1299,7 +1337,7 @@ void Distribution::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -1325,10 +1363,10 @@ bool Distribution::MergePartialFromCodedStream(
       // optional int64 count = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &count_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1340,10 +1378,10 @@ bool Distribution::MergePartialFromCodedStream(
       case 2: {
         if (tag == 17) {
          parse_mean:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &mean_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1355,10 +1393,10 @@ bool Distribution::MergePartialFromCodedStream(
       case 3: {
         if (tag == 25) {
          parse_minimum:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &minimum_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1370,10 +1408,10 @@ bool Distribution::MergePartialFromCodedStream(
       case 4: {
         if (tag == 33) {
          parse_maximum:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &maximum_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1385,10 +1423,10 @@ bool Distribution::MergePartialFromCodedStream(
       case 5: {
         if (tag == 41) {
          parse_sum_of_squared_deviation:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, &sum_of_squared_deviation_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1423,14 +1461,13 @@ bool Distribution::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(66)) goto parse_exponential_buckets;
+        goto after_explicit_buckets;
         break;
       }
 
       // optional .google.api.servicecontrol.v1.Distribution.ExponentialBuckets exponential_buckets = 8;
       case 8: {
         if (tag == 66) {
-         parse_exponential_buckets:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_exponential_buckets()));
         } else {
@@ -1449,6 +1486,7 @@ bool Distribution::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_explicit_buckets:
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -1535,6 +1573,7 @@ void Distribution::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Distribution::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.servicecontrol.v1.Distribution)
   // optional int64 count = 1;
   if (this->count() != 0) {
@@ -1600,9 +1639,9 @@ void Distribution::SerializeWithCachedSizes(
   return target;
 }
 
-int Distribution::ByteSize() const {
+size_t Distribution::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.servicecontrol.v1.Distribution)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int64 count = 1;
   if (this->count() != 0) {
@@ -1633,8 +1672,9 @@ int Distribution::ByteSize() const {
 
   // repeated int64 bucket_counts = 6;
   {
-    int data_size = 0;
-    for (int i = 0; i < this->bucket_counts_size(); i++) {
+    size_t data_size = 0;
+    unsigned int count = this->bucket_counts_size();
+    for (unsigned int i = 0; i < count; i++) {
       data_size += ::google::protobuf::internal::WireFormatLite::
         Int64Size(this->bucket_counts(i));
     }
@@ -1642,8 +1682,9 @@ int Distribution::ByteSize() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _bucket_counts_cached_byte_size_ = data_size;
+    _bucket_counts_cached_byte_size_ = cached_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
@@ -1674,18 +1715,17 @@ int Distribution::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Distribution::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.servicecontrol.v1.Distribution)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Distribution* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Distribution* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution>(
           &from);
   if (source == NULL) {
@@ -1693,16 +1733,22 @@ void Distribution::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.servicecontrol.v1.Distribution)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution::MergeFrom(const Distribution& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.servicecontrol.v1.Distribution)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  bucket_counts_.MergeFrom(from.bucket_counts_);
+}
+
+void Distribution::UnsafeMergeFrom(const Distribution& from) {
+  GOOGLE_DCHECK(&from != this);
+  bucket_counts_.UnsafeMergeFrom(from.bucket_counts_);
   switch (from.bucket_option_case()) {
     case kLinearBuckets: {
       mutable_linear_buckets()->::google::api::servicecontrol::v1::Distribution_LinearBuckets::MergeFrom(from.linear_buckets());
@@ -1748,7 +1794,7 @@ void Distribution::CopyFrom(const Distribution& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.servicecontrol.v1.Distribution)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution::IsInitialized() const {
@@ -1762,7 +1808,7 @@ void Distribution::Swap(Distribution* other) {
     InternalSwap(other);
   } else {
     Distribution temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1800,11 +1846,11 @@ void Distribution::InternalSwap(Distribution* other) {
 void Distribution_LinearBuckets::clear_num_finite_buckets() {
   num_finite_buckets_ = 0;
 }
- ::google::protobuf::int32 Distribution_LinearBuckets::num_finite_buckets() const {
+::google::protobuf::int32 Distribution_LinearBuckets::num_finite_buckets() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.LinearBuckets.num_finite_buckets)
   return num_finite_buckets_;
 }
- void Distribution_LinearBuckets::set_num_finite_buckets(::google::protobuf::int32 value) {
+void Distribution_LinearBuckets::set_num_finite_buckets(::google::protobuf::int32 value) {
   
   num_finite_buckets_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.LinearBuckets.num_finite_buckets)
@@ -1814,11 +1860,11 @@ void Distribution_LinearBuckets::clear_num_finite_buckets() {
 void Distribution_LinearBuckets::clear_width() {
   width_ = 0;
 }
- double Distribution_LinearBuckets::width() const {
+double Distribution_LinearBuckets::width() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.LinearBuckets.width)
   return width_;
 }
- void Distribution_LinearBuckets::set_width(double value) {
+void Distribution_LinearBuckets::set_width(double value) {
   
   width_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.LinearBuckets.width)
@@ -1828,16 +1874,19 @@ void Distribution_LinearBuckets::clear_width() {
 void Distribution_LinearBuckets::clear_offset() {
   offset_ = 0;
 }
- double Distribution_LinearBuckets::offset() const {
+double Distribution_LinearBuckets::offset() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.LinearBuckets.offset)
   return offset_;
 }
- void Distribution_LinearBuckets::set_offset(double value) {
+void Distribution_LinearBuckets::set_offset(double value) {
   
   offset_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.LinearBuckets.offset)
 }
 
+inline const Distribution_LinearBuckets* Distribution_LinearBuckets::internal_default_instance() {
+  return &Distribution_LinearBuckets_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Distribution_ExponentialBuckets
@@ -1846,11 +1895,11 @@ void Distribution_LinearBuckets::clear_offset() {
 void Distribution_ExponentialBuckets::clear_num_finite_buckets() {
   num_finite_buckets_ = 0;
 }
- ::google::protobuf::int32 Distribution_ExponentialBuckets::num_finite_buckets() const {
+::google::protobuf::int32 Distribution_ExponentialBuckets::num_finite_buckets() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.ExponentialBuckets.num_finite_buckets)
   return num_finite_buckets_;
 }
- void Distribution_ExponentialBuckets::set_num_finite_buckets(::google::protobuf::int32 value) {
+void Distribution_ExponentialBuckets::set_num_finite_buckets(::google::protobuf::int32 value) {
   
   num_finite_buckets_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.ExponentialBuckets.num_finite_buckets)
@@ -1860,11 +1909,11 @@ void Distribution_ExponentialBuckets::clear_num_finite_buckets() {
 void Distribution_ExponentialBuckets::clear_growth_factor() {
   growth_factor_ = 0;
 }
- double Distribution_ExponentialBuckets::growth_factor() const {
+double Distribution_ExponentialBuckets::growth_factor() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.ExponentialBuckets.growth_factor)
   return growth_factor_;
 }
- void Distribution_ExponentialBuckets::set_growth_factor(double value) {
+void Distribution_ExponentialBuckets::set_growth_factor(double value) {
   
   growth_factor_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.ExponentialBuckets.growth_factor)
@@ -1874,16 +1923,19 @@ void Distribution_ExponentialBuckets::clear_growth_factor() {
 void Distribution_ExponentialBuckets::clear_scale() {
   scale_ = 0;
 }
- double Distribution_ExponentialBuckets::scale() const {
+double Distribution_ExponentialBuckets::scale() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.ExponentialBuckets.scale)
   return scale_;
 }
- void Distribution_ExponentialBuckets::set_scale(double value) {
+void Distribution_ExponentialBuckets::set_scale(double value) {
   
   scale_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.ExponentialBuckets.scale)
 }
 
+inline const Distribution_ExponentialBuckets* Distribution_ExponentialBuckets::internal_default_instance() {
+  return &Distribution_ExponentialBuckets_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Distribution_ExplicitBuckets
@@ -1895,29 +1947,32 @@ int Distribution_ExplicitBuckets::bounds_size() const {
 void Distribution_ExplicitBuckets::clear_bounds() {
   bounds_.Clear();
 }
- double Distribution_ExplicitBuckets::bounds(int index) const {
+double Distribution_ExplicitBuckets::bounds(int index) const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.ExplicitBuckets.bounds)
   return bounds_.Get(index);
 }
- void Distribution_ExplicitBuckets::set_bounds(int index, double value) {
+void Distribution_ExplicitBuckets::set_bounds(int index, double value) {
   bounds_.Set(index, value);
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.ExplicitBuckets.bounds)
 }
- void Distribution_ExplicitBuckets::add_bounds(double value) {
+void Distribution_ExplicitBuckets::add_bounds(double value) {
   bounds_.Add(value);
   // @@protoc_insertion_point(field_add:google.api.servicecontrol.v1.Distribution.ExplicitBuckets.bounds)
 }
- const ::google::protobuf::RepeatedField< double >&
+const ::google::protobuf::RepeatedField< double >&
 Distribution_ExplicitBuckets::bounds() const {
   // @@protoc_insertion_point(field_list:google.api.servicecontrol.v1.Distribution.ExplicitBuckets.bounds)
   return bounds_;
 }
- ::google::protobuf::RepeatedField< double >*
+::google::protobuf::RepeatedField< double >*
 Distribution_ExplicitBuckets::mutable_bounds() {
   // @@protoc_insertion_point(field_mutable_list:google.api.servicecontrol.v1.Distribution.ExplicitBuckets.bounds)
   return &bounds_;
 }
 
+inline const Distribution_ExplicitBuckets* Distribution_ExplicitBuckets::internal_default_instance() {
+  return &Distribution_ExplicitBuckets_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Distribution
@@ -1926,11 +1981,11 @@ Distribution_ExplicitBuckets::mutable_bounds() {
 void Distribution::clear_count() {
   count_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 Distribution::count() const {
+::google::protobuf::int64 Distribution::count() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.count)
   return count_;
 }
- void Distribution::set_count(::google::protobuf::int64 value) {
+void Distribution::set_count(::google::protobuf::int64 value) {
   
   count_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.count)
@@ -1940,11 +1995,11 @@ void Distribution::clear_count() {
 void Distribution::clear_mean() {
   mean_ = 0;
 }
- double Distribution::mean() const {
+double Distribution::mean() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.mean)
   return mean_;
 }
- void Distribution::set_mean(double value) {
+void Distribution::set_mean(double value) {
   
   mean_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.mean)
@@ -1954,11 +2009,11 @@ void Distribution::clear_mean() {
 void Distribution::clear_minimum() {
   minimum_ = 0;
 }
- double Distribution::minimum() const {
+double Distribution::minimum() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.minimum)
   return minimum_;
 }
- void Distribution::set_minimum(double value) {
+void Distribution::set_minimum(double value) {
   
   minimum_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.minimum)
@@ -1968,11 +2023,11 @@ void Distribution::clear_minimum() {
 void Distribution::clear_maximum() {
   maximum_ = 0;
 }
- double Distribution::maximum() const {
+double Distribution::maximum() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.maximum)
   return maximum_;
 }
- void Distribution::set_maximum(double value) {
+void Distribution::set_maximum(double value) {
   
   maximum_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.maximum)
@@ -1982,11 +2037,11 @@ void Distribution::clear_maximum() {
 void Distribution::clear_sum_of_squared_deviation() {
   sum_of_squared_deviation_ = 0;
 }
- double Distribution::sum_of_squared_deviation() const {
+double Distribution::sum_of_squared_deviation() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.sum_of_squared_deviation)
   return sum_of_squared_deviation_;
 }
- void Distribution::set_sum_of_squared_deviation(double value) {
+void Distribution::set_sum_of_squared_deviation(double value) {
   
   sum_of_squared_deviation_ = value;
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.sum_of_squared_deviation)
@@ -1999,24 +2054,24 @@ int Distribution::bucket_counts_size() const {
 void Distribution::clear_bucket_counts() {
   bucket_counts_.Clear();
 }
- ::google::protobuf::int64 Distribution::bucket_counts(int index) const {
+::google::protobuf::int64 Distribution::bucket_counts(int index) const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Distribution.bucket_counts)
   return bucket_counts_.Get(index);
 }
- void Distribution::set_bucket_counts(int index, ::google::protobuf::int64 value) {
+void Distribution::set_bucket_counts(int index, ::google::protobuf::int64 value) {
   bucket_counts_.Set(index, value);
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Distribution.bucket_counts)
 }
- void Distribution::add_bucket_counts(::google::protobuf::int64 value) {
+void Distribution::add_bucket_counts(::google::protobuf::int64 value) {
   bucket_counts_.Add(value);
   // @@protoc_insertion_point(field_add:google.api.servicecontrol.v1.Distribution.bucket_counts)
 }
- const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
 Distribution::bucket_counts() const {
   // @@protoc_insertion_point(field_list:google.api.servicecontrol.v1.Distribution.bucket_counts)
   return bucket_counts_;
 }
- ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
 Distribution::mutable_bucket_counts() {
   // @@protoc_insertion_point(field_mutable_list:google.api.servicecontrol.v1.Distribution.bucket_counts)
   return &bucket_counts_;
@@ -2059,8 +2114,7 @@ void Distribution::clear_linear_buckets() {
   if (has_linear_buckets()) {
     clear_has_bucket_option();
     if (GetArenaNoVirtual() != NULL) {
-      ::google::api::servicecontrol::v1::Distribution_LinearBuckets* temp = new ::google::api::servicecontrol::v1::Distribution_LinearBuckets;
-      temp->MergeFrom(*bucket_option_.linear_buckets_);
+      ::google::api::servicecontrol::v1::Distribution_LinearBuckets* temp = new ::google::api::servicecontrol::v1::Distribution_LinearBuckets(*bucket_option_.linear_buckets_);
       bucket_option_.linear_buckets_ = NULL;
       return temp;
     } else {
@@ -2148,8 +2202,7 @@ void Distribution::clear_exponential_buckets() {
   if (has_exponential_buckets()) {
     clear_has_bucket_option();
     if (GetArenaNoVirtual() != NULL) {
-      ::google::api::servicecontrol::v1::Distribution_ExponentialBuckets* temp = new ::google::api::servicecontrol::v1::Distribution_ExponentialBuckets;
-      temp->MergeFrom(*bucket_option_.exponential_buckets_);
+      ::google::api::servicecontrol::v1::Distribution_ExponentialBuckets* temp = new ::google::api::servicecontrol::v1::Distribution_ExponentialBuckets(*bucket_option_.exponential_buckets_);
       bucket_option_.exponential_buckets_ = NULL;
       return temp;
     } else {
@@ -2237,8 +2290,7 @@ void Distribution::clear_explicit_buckets() {
   if (has_explicit_buckets()) {
     clear_has_bucket_option();
     if (GetArenaNoVirtual() != NULL) {
-      ::google::api::servicecontrol::v1::Distribution_ExplicitBuckets* temp = new ::google::api::servicecontrol::v1::Distribution_ExplicitBuckets;
-      temp->MergeFrom(*bucket_option_.explicit_buckets_);
+      ::google::api::servicecontrol::v1::Distribution_ExplicitBuckets* temp = new ::google::api::servicecontrol::v1::Distribution_ExplicitBuckets(*bucket_option_.explicit_buckets_);
       bucket_option_.explicit_buckets_ = NULL;
       return temp;
     } else {
@@ -2297,6 +2349,9 @@ void Distribution::clear_has_bucket_option() {
 }
 Distribution::BucketOptionCase Distribution::bucket_option_case() const {
   return Distribution::BucketOptionCase(_oneof_case_[0]);
+}
+inline const Distribution* Distribution::internal_default_instance() {
+  return &Distribution_default_instance_.get();
 }
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 

@@ -40,7 +40,7 @@ void protobuf_AssignDesc_google_2frpc_2fcode_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2frpc_2fcode_2eproto);
 }
@@ -55,13 +55,20 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void protobuf_ShutdownFile_google_2frpc_2fcode_2eproto() {
 }
 
-void protobuf_AddDesc_google_2frpc_2fcode_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2frpc_2fcode_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2frpc_2fcode_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2frpc_2fcode_2eproto_once_);
+void protobuf_InitDefaults_google_2frpc_2fcode_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2frpc_2fcode_2eproto_once_,
+                 &protobuf_InitDefaults_google_2frpc_2fcode_2eproto_impl);
+}
+void protobuf_AddDesc_google_2frpc_2fcode_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2frpc_2fcode_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\025google/rpc/code.proto\022\ngoogle.rpc*\267\002\n\004"
     "Code\022\006\n\002OK\020\000\022\r\n\tCANCELLED\020\001\022\013\n\007UNKNOWN\020\002"
@@ -80,6 +87,11 @@ void protobuf_AddDesc_google_2frpc_2fcode_2eproto() {
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2frpc_2fcode_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2frpc_2fcode_2eproto_once_);
+void protobuf_AddDesc_google_2frpc_2fcode_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2frpc_2fcode_2eproto_once_,
+                 &protobuf_AddDesc_google_2frpc_2fcode_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2frpc_2fcode_2eproto {
   StaticDescriptorInitializer_google_2frpc_2fcode_2eproto() {
@@ -91,7 +103,7 @@ const ::google::protobuf::EnumDescriptor* Code_descriptor() {
   return Code_descriptor_;
 }
 bool Code_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:

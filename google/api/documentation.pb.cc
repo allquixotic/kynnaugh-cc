@@ -53,14 +53,13 @@ void protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto() {
   Documentation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Documentation_descriptor_,
-      Documentation::default_instance_,
+      Documentation::internal_default_instance(),
       Documentation_offsets_,
       -1,
       -1,
       -1,
       sizeof(Documentation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Documentation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Documentation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Documentation, _internal_metadata_));
   DocumentationRule_descriptor_ = file->message_type(1);
   static const int DocumentationRule_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DocumentationRule, selector_),
@@ -70,14 +69,13 @@ void protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto() {
   DocumentationRule_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DocumentationRule_descriptor_,
-      DocumentationRule::default_instance_,
+      DocumentationRule::internal_default_instance(),
       DocumentationRule_offsets_,
       -1,
       -1,
       -1,
       sizeof(DocumentationRule),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DocumentationRule, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DocumentationRule, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DocumentationRule, _internal_metadata_));
   Page_descriptor_ = file->message_type(2);
   static const int Page_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Page, name_),
@@ -87,20 +85,19 @@ void protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto() {
   Page_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Page_descriptor_,
-      Page::default_instance_,
+      Page::internal_default_instance(),
       Page_offsets_,
       -1,
       -1,
       -1,
       sizeof(Page),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Page, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Page, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Page, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto);
 }
@@ -109,31 +106,47 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Documentation_descriptor_, &Documentation::default_instance());
+      Documentation_descriptor_, Documentation::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DocumentationRule_descriptor_, &DocumentationRule::default_instance());
+      DocumentationRule_descriptor_, DocumentationRule::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Page_descriptor_, &Page::default_instance());
+      Page_descriptor_, Page::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fdocumentation_2eproto() {
-  delete Documentation::default_instance_;
+  Documentation_default_instance_.Shutdown();
   delete Documentation_reflection_;
-  delete DocumentationRule::default_instance_;
+  DocumentationRule_default_instance_.Shutdown();
   delete DocumentationRule_reflection_;
-  delete Page::default_instance_;
+  Page_default_instance_.Shutdown();
   delete Page_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  ::google::protobuf::internal::GetEmptyString();
+  Documentation_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DocumentationRule_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Page_default_instance_.DefaultConstruct();
+  Documentation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DocumentationRule_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Page_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\036google/api/documentation.proto\022\ngoogle"
     ".api\"\241\001\n\rDocumentation\022\017\n\007summary\030\001 \001(\t\022"
@@ -144,25 +157,36 @@ void protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto() {
     "r\030\001 \001(\t\022\023\n\013description\030\002 \001(\t\022\037\n\027deprecat"
     "ion_description\030\003 \001(\t\"I\n\004Page\022\014\n\004name\030\001 "
     "\001(\t\022\017\n\007content\030\002 \001(\t\022\"\n\010subpages\030\003 \003(\0132\020"
-    ".google.api.PageB-\n\016com.google.apiB\022Docu"
-    "mentationProtoP\001\242\002\004GAPIb\006proto3", 431);
+    ".google.api.PageBt\n\016com.google.apiB\022Docu"
+    "mentationProtoP\001ZEgoogle.golang.org/genp"
+    "roto/googleapis/api/serviceconfig;servic"
+    "econfig\242\002\004GAPIb\006proto3", 502);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/documentation.proto", &protobuf_RegisterTypes);
-  Documentation::default_instance_ = new Documentation();
-  DocumentationRule::default_instance_ = new DocumentationRule();
-  Page::default_instance_ = new Page();
-  Documentation::default_instance_->InitAsDefaultInstance();
-  DocumentationRule::default_instance_->InitAsDefaultInstance();
-  Page::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fdocumentation_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fdocumentation_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fdocumentation_2eproto() {
     protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fdocumentation_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -176,29 +200,27 @@ const int Documentation::kOverviewFieldNumber;
 
 Documentation::Documentation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Documentation)
 }
 
 void Documentation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Documentation::Documentation(const Documentation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Documentation)
 }
 
 void Documentation::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   summary_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   documentation_root_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   overview_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Documentation::~Documentation() {
@@ -210,8 +232,6 @@ void Documentation::SharedDtor() {
   summary_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   documentation_root_url_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   overview_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Documentation::SetCachedSize(int size) const {
@@ -225,11 +245,11 @@ const ::google::protobuf::Descriptor* Documentation::descriptor() {
 }
 
 const Documentation& Documentation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
+  return *internal_default_instance();
 }
 
-Documentation* Documentation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Documentation> Documentation_default_instance_;
 
 Documentation* Documentation::New(::google::protobuf::Arena* arena) const {
   Documentation* n = new Documentation;
@@ -413,6 +433,7 @@ void Documentation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Documentation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Documentation)
   // optional string summary = 1;
   if (this->summary().size() > 0) {
@@ -465,9 +486,9 @@ void Documentation::SerializeWithCachedSizes(
   return target;
 }
 
-int Documentation::ByteSize() const {
+size_t Documentation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Documentation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string summary = 1;
   if (this->summary().size() > 0) {
@@ -491,33 +512,38 @@ int Documentation::ByteSize() const {
   }
 
   // repeated .google.api.Page pages = 5;
-  total_size += 1 * this->pages_size();
-  for (int i = 0; i < this->pages_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->pages(i));
+  {
+    unsigned int count = this->pages_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->pages(i));
+    }
   }
 
   // repeated .google.api.DocumentationRule rules = 3;
-  total_size += 1 * this->rules_size();
-  for (int i = 0; i < this->rules_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->rules(i));
+  {
+    unsigned int count = this->rules_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->rules(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Documentation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Documentation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Documentation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Documentation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Documentation>(
           &from);
   if (source == NULL) {
@@ -525,15 +551,21 @@ void Documentation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Documentation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Documentation::MergeFrom(const Documentation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Documentation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Documentation::UnsafeMergeFrom(const Documentation& from) {
+  GOOGLE_DCHECK(&from != this);
   pages_.MergeFrom(from.pages_);
   rules_.MergeFrom(from.rules_);
   if (from.summary().size() > 0) {
@@ -561,7 +593,7 @@ void Documentation::CopyFrom(const Documentation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Documentation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Documentation::IsInitialized() const {
@@ -598,37 +630,37 @@ void Documentation::InternalSwap(Documentation* other) {
 void Documentation::clear_summary() {
   summary_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Documentation::summary() const {
+const ::std::string& Documentation::summary() const {
   // @@protoc_insertion_point(field_get:google.api.Documentation.summary)
   return summary_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Documentation::set_summary(const ::std::string& value) {
+void Documentation::set_summary(const ::std::string& value) {
   
   summary_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Documentation.summary)
 }
- void Documentation::set_summary(const char* value) {
+void Documentation::set_summary(const char* value) {
   
   summary_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Documentation.summary)
 }
- void Documentation::set_summary(const char* value, size_t size) {
+void Documentation::set_summary(const char* value, size_t size) {
   
   summary_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Documentation.summary)
 }
- ::std::string* Documentation::mutable_summary() {
+::std::string* Documentation::mutable_summary() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Documentation.summary)
   return summary_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Documentation::release_summary() {
+::std::string* Documentation::release_summary() {
   // @@protoc_insertion_point(field_release:google.api.Documentation.summary)
   
   return summary_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Documentation::set_allocated_summary(::std::string* summary) {
+void Documentation::set_allocated_summary(::std::string* summary) {
   if (summary != NULL) {
     
   } else {
@@ -702,37 +734,37 @@ Documentation::rules() const {
 void Documentation::clear_documentation_root_url() {
   documentation_root_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Documentation::documentation_root_url() const {
+const ::std::string& Documentation::documentation_root_url() const {
   // @@protoc_insertion_point(field_get:google.api.Documentation.documentation_root_url)
   return documentation_root_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Documentation::set_documentation_root_url(const ::std::string& value) {
+void Documentation::set_documentation_root_url(const ::std::string& value) {
   
   documentation_root_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Documentation.documentation_root_url)
 }
- void Documentation::set_documentation_root_url(const char* value) {
+void Documentation::set_documentation_root_url(const char* value) {
   
   documentation_root_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Documentation.documentation_root_url)
 }
- void Documentation::set_documentation_root_url(const char* value, size_t size) {
+void Documentation::set_documentation_root_url(const char* value, size_t size) {
   
   documentation_root_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Documentation.documentation_root_url)
 }
- ::std::string* Documentation::mutable_documentation_root_url() {
+::std::string* Documentation::mutable_documentation_root_url() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Documentation.documentation_root_url)
   return documentation_root_url_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Documentation::release_documentation_root_url() {
+::std::string* Documentation::release_documentation_root_url() {
   // @@protoc_insertion_point(field_release:google.api.Documentation.documentation_root_url)
   
   return documentation_root_url_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Documentation::set_allocated_documentation_root_url(::std::string* documentation_root_url) {
+void Documentation::set_allocated_documentation_root_url(::std::string* documentation_root_url) {
   if (documentation_root_url != NULL) {
     
   } else {
@@ -746,37 +778,37 @@ void Documentation::clear_documentation_root_url() {
 void Documentation::clear_overview() {
   overview_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Documentation::overview() const {
+const ::std::string& Documentation::overview() const {
   // @@protoc_insertion_point(field_get:google.api.Documentation.overview)
   return overview_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Documentation::set_overview(const ::std::string& value) {
+void Documentation::set_overview(const ::std::string& value) {
   
   overview_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Documentation.overview)
 }
- void Documentation::set_overview(const char* value) {
+void Documentation::set_overview(const char* value) {
   
   overview_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Documentation.overview)
 }
- void Documentation::set_overview(const char* value, size_t size) {
+void Documentation::set_overview(const char* value, size_t size) {
   
   overview_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Documentation.overview)
 }
- ::std::string* Documentation::mutable_overview() {
+::std::string* Documentation::mutable_overview() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Documentation.overview)
   return overview_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Documentation::release_overview() {
+::std::string* Documentation::release_overview() {
   // @@protoc_insertion_point(field_release:google.api.Documentation.overview)
   
   return overview_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Documentation::set_allocated_overview(::std::string* overview) {
+void Documentation::set_allocated_overview(::std::string* overview) {
   if (overview != NULL) {
     
   } else {
@@ -786,6 +818,9 @@ void Documentation::clear_overview() {
   // @@protoc_insertion_point(field_set_allocated:google.api.Documentation.overview)
 }
 
+inline const Documentation* Documentation::internal_default_instance() {
+  return &Documentation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -798,29 +833,27 @@ const int DocumentationRule::kDeprecationDescriptionFieldNumber;
 
 DocumentationRule::DocumentationRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.DocumentationRule)
 }
 
 void DocumentationRule::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DocumentationRule::DocumentationRule(const DocumentationRule& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.DocumentationRule)
 }
 
 void DocumentationRule::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   deprecation_description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DocumentationRule::~DocumentationRule() {
@@ -832,8 +865,6 @@ void DocumentationRule::SharedDtor() {
   selector_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   deprecation_description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void DocumentationRule::SetCachedSize(int size) const {
@@ -847,11 +878,11 @@ const ::google::protobuf::Descriptor* DocumentationRule::descriptor() {
 }
 
 const DocumentationRule& DocumentationRule::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
+  return *internal_default_instance();
 }
 
-DocumentationRule* DocumentationRule::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DocumentationRule> DocumentationRule_default_instance_;
 
 DocumentationRule* DocumentationRule::New(::google::protobuf::Arena* arena) const {
   DocumentationRule* n = new DocumentationRule;
@@ -987,6 +1018,7 @@ void DocumentationRule::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DocumentationRule::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.DocumentationRule)
   // optional string selector = 1;
   if (this->selector().size() > 0) {
@@ -1025,9 +1057,9 @@ void DocumentationRule::SerializeWithCachedSizes(
   return target;
 }
 
-int DocumentationRule::ByteSize() const {
+size_t DocumentationRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.DocumentationRule)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string selector = 1;
   if (this->selector().size() > 0) {
@@ -1050,18 +1082,17 @@ int DocumentationRule::ByteSize() const {
         this->deprecation_description());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DocumentationRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.DocumentationRule)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DocumentationRule* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DocumentationRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DocumentationRule>(
           &from);
   if (source == NULL) {
@@ -1069,15 +1100,21 @@ void DocumentationRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.DocumentationRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DocumentationRule::MergeFrom(const DocumentationRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.DocumentationRule)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DocumentationRule::UnsafeMergeFrom(const DocumentationRule& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.selector().size() > 0) {
 
     selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
@@ -1103,7 +1140,7 @@ void DocumentationRule::CopyFrom(const DocumentationRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.DocumentationRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DocumentationRule::IsInitialized() const {
@@ -1138,37 +1175,37 @@ void DocumentationRule::InternalSwap(DocumentationRule* other) {
 void DocumentationRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DocumentationRule::selector() const {
+const ::std::string& DocumentationRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.DocumentationRule.selector)
   return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DocumentationRule::set_selector(const ::std::string& value) {
+void DocumentationRule::set_selector(const ::std::string& value) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.DocumentationRule.selector)
 }
- void DocumentationRule::set_selector(const char* value) {
+void DocumentationRule::set_selector(const char* value) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.DocumentationRule.selector)
 }
- void DocumentationRule::set_selector(const char* value, size_t size) {
+void DocumentationRule::set_selector(const char* value, size_t size) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.DocumentationRule.selector)
 }
- ::std::string* DocumentationRule::mutable_selector() {
+::std::string* DocumentationRule::mutable_selector() {
   
   // @@protoc_insertion_point(field_mutable:google.api.DocumentationRule.selector)
   return selector_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DocumentationRule::release_selector() {
+::std::string* DocumentationRule::release_selector() {
   // @@protoc_insertion_point(field_release:google.api.DocumentationRule.selector)
   
   return selector_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DocumentationRule::set_allocated_selector(::std::string* selector) {
+void DocumentationRule::set_allocated_selector(::std::string* selector) {
   if (selector != NULL) {
     
   } else {
@@ -1182,37 +1219,37 @@ void DocumentationRule::clear_selector() {
 void DocumentationRule::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DocumentationRule::description() const {
+const ::std::string& DocumentationRule::description() const {
   // @@protoc_insertion_point(field_get:google.api.DocumentationRule.description)
   return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DocumentationRule::set_description(const ::std::string& value) {
+void DocumentationRule::set_description(const ::std::string& value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.DocumentationRule.description)
 }
- void DocumentationRule::set_description(const char* value) {
+void DocumentationRule::set_description(const char* value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.DocumentationRule.description)
 }
- void DocumentationRule::set_description(const char* value, size_t size) {
+void DocumentationRule::set_description(const char* value, size_t size) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.DocumentationRule.description)
 }
- ::std::string* DocumentationRule::mutable_description() {
+::std::string* DocumentationRule::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.api.DocumentationRule.description)
   return description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DocumentationRule::release_description() {
+::std::string* DocumentationRule::release_description() {
   // @@protoc_insertion_point(field_release:google.api.DocumentationRule.description)
   
   return description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DocumentationRule::set_allocated_description(::std::string* description) {
+void DocumentationRule::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -1226,37 +1263,37 @@ void DocumentationRule::clear_description() {
 void DocumentationRule::clear_deprecation_description() {
   deprecation_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& DocumentationRule::deprecation_description() const {
+const ::std::string& DocumentationRule::deprecation_description() const {
   // @@protoc_insertion_point(field_get:google.api.DocumentationRule.deprecation_description)
   return deprecation_description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DocumentationRule::set_deprecation_description(const ::std::string& value) {
+void DocumentationRule::set_deprecation_description(const ::std::string& value) {
   
   deprecation_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.DocumentationRule.deprecation_description)
 }
- void DocumentationRule::set_deprecation_description(const char* value) {
+void DocumentationRule::set_deprecation_description(const char* value) {
   
   deprecation_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.DocumentationRule.deprecation_description)
 }
- void DocumentationRule::set_deprecation_description(const char* value, size_t size) {
+void DocumentationRule::set_deprecation_description(const char* value, size_t size) {
   
   deprecation_description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.DocumentationRule.deprecation_description)
 }
- ::std::string* DocumentationRule::mutable_deprecation_description() {
+::std::string* DocumentationRule::mutable_deprecation_description() {
   
   // @@protoc_insertion_point(field_mutable:google.api.DocumentationRule.deprecation_description)
   return deprecation_description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* DocumentationRule::release_deprecation_description() {
+::std::string* DocumentationRule::release_deprecation_description() {
   // @@protoc_insertion_point(field_release:google.api.DocumentationRule.deprecation_description)
   
   return deprecation_description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DocumentationRule::set_allocated_deprecation_description(::std::string* deprecation_description) {
+void DocumentationRule::set_allocated_deprecation_description(::std::string* deprecation_description) {
   if (deprecation_description != NULL) {
     
   } else {
@@ -1266,6 +1303,9 @@ void DocumentationRule::clear_deprecation_description() {
   // @@protoc_insertion_point(field_set_allocated:google.api.DocumentationRule.deprecation_description)
 }
 
+inline const DocumentationRule* DocumentationRule::internal_default_instance() {
+  return &DocumentationRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1278,28 +1318,26 @@ const int Page::kSubpagesFieldNumber;
 
 Page::Page()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Page)
 }
 
 void Page::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Page::Page(const Page& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Page)
 }
 
 void Page::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Page::~Page() {
@@ -1310,8 +1348,6 @@ Page::~Page() {
 void Page::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   content_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Page::SetCachedSize(int size) const {
@@ -1325,11 +1361,11 @@ const ::google::protobuf::Descriptor* Page::descriptor() {
 }
 
 const Page& Page::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
+  return *internal_default_instance();
 }
 
-Page* Page::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Page> Page_default_instance_;
 
 Page* Page::New(::google::protobuf::Arena* arena) const {
   Page* n = new Page;
@@ -1461,6 +1497,7 @@ void Page::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Page::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Page)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1495,9 +1532,9 @@ void Page::SerializeWithCachedSizes(
   return target;
 }
 
-int Page::ByteSize() const {
+size_t Page::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Page)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1514,25 +1551,27 @@ int Page::ByteSize() const {
   }
 
   // repeated .google.api.Page subpages = 3;
-  total_size += 1 * this->subpages_size();
-  for (int i = 0; i < this->subpages_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->subpages(i));
+  {
+    unsigned int count = this->subpages_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->subpages(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Page::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Page)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Page* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Page* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Page>(
           &from);
   if (source == NULL) {
@@ -1540,15 +1579,21 @@ void Page::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Page)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Page::MergeFrom(const Page& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Page)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Page::UnsafeMergeFrom(const Page& from) {
+  GOOGLE_DCHECK(&from != this);
   subpages_.MergeFrom(from.subpages_);
   if (from.name().size() > 0) {
 
@@ -1571,7 +1616,7 @@ void Page::CopyFrom(const Page& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Page)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Page::IsInitialized() const {
@@ -1606,37 +1651,37 @@ void Page::InternalSwap(Page* other) {
 void Page::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Page::name() const {
+const ::std::string& Page::name() const {
   // @@protoc_insertion_point(field_get:google.api.Page.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Page::set_name(const ::std::string& value) {
+void Page::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Page.name)
 }
- void Page::set_name(const char* value) {
+void Page::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Page.name)
 }
- void Page::set_name(const char* value, size_t size) {
+void Page::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Page.name)
 }
- ::std::string* Page::mutable_name() {
+::std::string* Page::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Page.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Page::release_name() {
+::std::string* Page::release_name() {
   // @@protoc_insertion_point(field_release:google.api.Page.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Page::set_allocated_name(::std::string* name) {
+void Page::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1650,37 +1695,37 @@ void Page::clear_name() {
 void Page::clear_content() {
   content_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Page::content() const {
+const ::std::string& Page::content() const {
   // @@protoc_insertion_point(field_get:google.api.Page.content)
   return content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Page::set_content(const ::std::string& value) {
+void Page::set_content(const ::std::string& value) {
   
   content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Page.content)
 }
- void Page::set_content(const char* value) {
+void Page::set_content(const char* value) {
   
   content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Page.content)
 }
- void Page::set_content(const char* value, size_t size) {
+void Page::set_content(const char* value, size_t size) {
   
   content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Page.content)
 }
- ::std::string* Page::mutable_content() {
+::std::string* Page::mutable_content() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Page.content)
   return content_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Page::release_content() {
+::std::string* Page::release_content() {
   // @@protoc_insertion_point(field_release:google.api.Page.content)
   
   return content_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Page::set_allocated_content(::std::string* content) {
+void Page::set_allocated_content(::std::string* content) {
   if (content != NULL) {
     
   } else {
@@ -1720,6 +1765,9 @@ Page::subpages() const {
   return subpages_;
 }
 
+inline const Page* Page::internal_default_instance() {
+  return &Page_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

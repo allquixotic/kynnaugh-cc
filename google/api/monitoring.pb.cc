@@ -47,14 +47,13 @@ void protobuf_AssignDesc_google_2fapi_2fmonitoring_2eproto() {
   Monitoring_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Monitoring_descriptor_,
-      Monitoring::default_instance_,
+      Monitoring::internal_default_instance(),
       Monitoring_offsets_,
       -1,
       -1,
       -1,
       sizeof(Monitoring),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Monitoring, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Monitoring, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Monitoring, _internal_metadata_));
   Monitoring_MonitoringDestination_descriptor_ = Monitoring_descriptor_->nested_type(0);
   static const int Monitoring_MonitoringDestination_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Monitoring_MonitoringDestination, monitored_resource_),
@@ -63,20 +62,19 @@ void protobuf_AssignDesc_google_2fapi_2fmonitoring_2eproto() {
   Monitoring_MonitoringDestination_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Monitoring_MonitoringDestination_descriptor_,
-      Monitoring_MonitoringDestination::default_instance_,
+      Monitoring_MonitoringDestination::internal_default_instance(),
       Monitoring_MonitoringDestination_offsets_,
       -1,
       -1,
       -1,
       sizeof(Monitoring_MonitoringDestination),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Monitoring_MonitoringDestination, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Monitoring_MonitoringDestination, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Monitoring_MonitoringDestination, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fmonitoring_2eproto);
 }
@@ -85,28 +83,40 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Monitoring_descriptor_, &Monitoring::default_instance());
+      Monitoring_descriptor_, Monitoring::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Monitoring_MonitoringDestination_descriptor_, &Monitoring_MonitoringDestination::default_instance());
+      Monitoring_MonitoringDestination_descriptor_, Monitoring_MonitoringDestination::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fmonitoring_2eproto() {
-  delete Monitoring::default_instance_;
+  Monitoring_default_instance_.Shutdown();
   delete Monitoring_reflection_;
-  delete Monitoring_MonitoringDestination::default_instance_;
+  Monitoring_MonitoringDestination_default_instance_.Shutdown();
   delete Monitoring_MonitoringDestination_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  Monitoring_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Monitoring_MonitoringDestination_default_instance_.DefaultConstruct();
+  Monitoring_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Monitoring_MonitoringDestination_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\033google/api/monitoring.proto\022\ngoogle.ap"
     "i\032\034google/api/annotations.proto\"\354\001\n\nMoni"
@@ -115,24 +125,37 @@ void protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto() {
     "ion\022K\n\025consumer_destinations\030\002 \003(\0132,.goo"
     "gle.api.Monitoring.MonitoringDestination"
     "\032D\n\025MonitoringDestination\022\032\n\022monitored_r"
-    "esource\030\001 \001(\t\022\017\n\007metrics\030\002 \003(\tB*\n\016com.go"
-    "ogle.apiB\017MonitoringProtoP\001\242\002\004GAPIb\006prot"
-    "o3", 362);
+    "esource\030\001 \001(\t\022\017\n\007metrics\030\002 \003(\tBq\n\016com.go"
+    "ogle.apiB\017MonitoringProtoP\001ZEgoogle.gola"
+    "ng.org/genproto/googleapis/api/serviceco"
+    "nfig;serviceconfig\242\002\004GAPIb\006proto3", 433);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/monitoring.proto", &protobuf_RegisterTypes);
-  Monitoring::default_instance_ = new Monitoring();
-  Monitoring_MonitoringDestination::default_instance_ = new Monitoring_MonitoringDestination();
-  Monitoring::default_instance_->InitAsDefaultInstance();
-  Monitoring_MonitoringDestination::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fmonitoring_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fmonitoring_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fmonitoring_2eproto() {
     protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fmonitoring_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -143,27 +166,25 @@ const int Monitoring_MonitoringDestination::kMetricsFieldNumber;
 
 Monitoring_MonitoringDestination::Monitoring_MonitoringDestination()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Monitoring.MonitoringDestination)
 }
 
 void Monitoring_MonitoringDestination::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Monitoring_MonitoringDestination::Monitoring_MonitoringDestination(const Monitoring_MonitoringDestination& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Monitoring.MonitoringDestination)
 }
 
 void Monitoring_MonitoringDestination::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   monitored_resource_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Monitoring_MonitoringDestination::~Monitoring_MonitoringDestination() {
@@ -173,8 +194,6 @@ Monitoring_MonitoringDestination::~Monitoring_MonitoringDestination() {
 
 void Monitoring_MonitoringDestination::SharedDtor() {
   monitored_resource_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Monitoring_MonitoringDestination::SetCachedSize(int size) const {
@@ -188,11 +207,11 @@ const ::google::protobuf::Descriptor* Monitoring_MonitoringDestination::descript
 }
 
 const Monitoring_MonitoringDestination& Monitoring_MonitoringDestination::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto();
+  return *internal_default_instance();
 }
 
-Monitoring_MonitoringDestination* Monitoring_MonitoringDestination::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Monitoring_MonitoringDestination> Monitoring_MonitoringDestination_default_instance_;
 
 Monitoring_MonitoringDestination* Monitoring_MonitoringDestination::New(::google::protobuf::Arena* arena) const {
   Monitoring_MonitoringDestination* n = new Monitoring_MonitoringDestination;
@@ -302,6 +321,7 @@ void Monitoring_MonitoringDestination::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Monitoring_MonitoringDestination::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Monitoring.MonitoringDestination)
   // optional string monitored_resource = 1;
   if (this->monitored_resource().size() > 0) {
@@ -328,9 +348,9 @@ void Monitoring_MonitoringDestination::SerializeWithCachedSizes(
   return target;
 }
 
-int Monitoring_MonitoringDestination::ByteSize() const {
+size_t Monitoring_MonitoringDestination::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Monitoring.MonitoringDestination)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string monitored_resource = 1;
   if (this->monitored_resource().size() > 0) {
@@ -340,24 +360,24 @@ int Monitoring_MonitoringDestination::ByteSize() const {
   }
 
   // repeated string metrics = 2;
-  total_size += 1 * this->metrics_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->metrics_size());
   for (int i = 0; i < this->metrics_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->metrics(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Monitoring_MonitoringDestination::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Monitoring.MonitoringDestination)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Monitoring_MonitoringDestination* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Monitoring_MonitoringDestination* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Monitoring_MonitoringDestination>(
           &from);
   if (source == NULL) {
@@ -365,16 +385,22 @@ void Monitoring_MonitoringDestination::MergeFrom(const ::google::protobuf::Messa
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Monitoring.MonitoringDestination)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Monitoring_MonitoringDestination::MergeFrom(const Monitoring_MonitoringDestination& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Monitoring.MonitoringDestination)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  metrics_.MergeFrom(from.metrics_);
+}
+
+void Monitoring_MonitoringDestination::UnsafeMergeFrom(const Monitoring_MonitoringDestination& from) {
+  GOOGLE_DCHECK(&from != this);
+  metrics_.UnsafeMergeFrom(from.metrics_);
   if (from.monitored_resource().size() > 0) {
 
     monitored_resource_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.monitored_resource_);
@@ -392,7 +418,7 @@ void Monitoring_MonitoringDestination::CopyFrom(const Monitoring_MonitoringDesti
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Monitoring.MonitoringDestination)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Monitoring_MonitoringDestination::IsInitialized() const {
@@ -429,24 +455,23 @@ const int Monitoring::kConsumerDestinationsFieldNumber;
 
 Monitoring::Monitoring()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Monitoring)
 }
 
 void Monitoring::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Monitoring::Monitoring(const Monitoring& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Monitoring)
 }
 
 void Monitoring::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -456,8 +481,6 @@ Monitoring::~Monitoring() {
 }
 
 void Monitoring::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void Monitoring::SetCachedSize(int size) const {
@@ -471,11 +494,11 @@ const ::google::protobuf::Descriptor* Monitoring::descriptor() {
 }
 
 const Monitoring& Monitoring::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto();
+  return *internal_default_instance();
 }
 
-Monitoring* Monitoring::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Monitoring> Monitoring_default_instance_;
 
 Monitoring* Monitoring::New(::google::protobuf::Arena* arena) const {
   Monitoring* n = new Monitoring;
@@ -574,6 +597,7 @@ void Monitoring::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Monitoring::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Monitoring)
   // repeated .google.api.Monitoring.MonitoringDestination producer_destinations = 1;
   for (unsigned int i = 0, n = this->producer_destinations_size(); i < n; i++) {
@@ -593,38 +617,43 @@ void Monitoring::SerializeWithCachedSizes(
   return target;
 }
 
-int Monitoring::ByteSize() const {
+size_t Monitoring::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Monitoring)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.api.Monitoring.MonitoringDestination producer_destinations = 1;
-  total_size += 1 * this->producer_destinations_size();
-  for (int i = 0; i < this->producer_destinations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->producer_destinations(i));
+  {
+    unsigned int count = this->producer_destinations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->producer_destinations(i));
+    }
   }
 
   // repeated .google.api.Monitoring.MonitoringDestination consumer_destinations = 2;
-  total_size += 1 * this->consumer_destinations_size();
-  for (int i = 0; i < this->consumer_destinations_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->consumer_destinations(i));
+  {
+    unsigned int count = this->consumer_destinations_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->consumer_destinations(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Monitoring::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Monitoring)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Monitoring* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Monitoring* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Monitoring>(
           &from);
   if (source == NULL) {
@@ -632,15 +661,21 @@ void Monitoring::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Monitoring)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Monitoring::MergeFrom(const Monitoring& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Monitoring)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Monitoring::UnsafeMergeFrom(const Monitoring& from) {
+  GOOGLE_DCHECK(&from != this);
   producer_destinations_.MergeFrom(from.producer_destinations_);
   consumer_destinations_.MergeFrom(from.consumer_destinations_);
 }
@@ -656,7 +691,7 @@ void Monitoring::CopyFrom(const Monitoring& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Monitoring)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Monitoring::IsInitialized() const {
@@ -690,37 +725,37 @@ void Monitoring::InternalSwap(Monitoring* other) {
 void Monitoring_MonitoringDestination::clear_monitored_resource() {
   monitored_resource_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Monitoring_MonitoringDestination::monitored_resource() const {
+const ::std::string& Monitoring_MonitoringDestination::monitored_resource() const {
   // @@protoc_insertion_point(field_get:google.api.Monitoring.MonitoringDestination.monitored_resource)
   return monitored_resource_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Monitoring_MonitoringDestination::set_monitored_resource(const ::std::string& value) {
+void Monitoring_MonitoringDestination::set_monitored_resource(const ::std::string& value) {
   
   monitored_resource_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.Monitoring.MonitoringDestination.monitored_resource)
 }
- void Monitoring_MonitoringDestination::set_monitored_resource(const char* value) {
+void Monitoring_MonitoringDestination::set_monitored_resource(const char* value) {
   
   monitored_resource_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.Monitoring.MonitoringDestination.monitored_resource)
 }
- void Monitoring_MonitoringDestination::set_monitored_resource(const char* value, size_t size) {
+void Monitoring_MonitoringDestination::set_monitored_resource(const char* value, size_t size) {
   
   monitored_resource_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.Monitoring.MonitoringDestination.monitored_resource)
 }
- ::std::string* Monitoring_MonitoringDestination::mutable_monitored_resource() {
+::std::string* Monitoring_MonitoringDestination::mutable_monitored_resource() {
   
   // @@protoc_insertion_point(field_mutable:google.api.Monitoring.MonitoringDestination.monitored_resource)
   return monitored_resource_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Monitoring_MonitoringDestination::release_monitored_resource() {
+::std::string* Monitoring_MonitoringDestination::release_monitored_resource() {
   // @@protoc_insertion_point(field_release:google.api.Monitoring.MonitoringDestination.monitored_resource)
   
   return monitored_resource_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Monitoring_MonitoringDestination::set_allocated_monitored_resource(::std::string* monitored_resource) {
+void Monitoring_MonitoringDestination::set_allocated_monitored_resource(::std::string* monitored_resource) {
   if (monitored_resource != NULL) {
     
   } else {
@@ -737,54 +772,57 @@ int Monitoring_MonitoringDestination::metrics_size() const {
 void Monitoring_MonitoringDestination::clear_metrics() {
   metrics_.Clear();
 }
- const ::std::string& Monitoring_MonitoringDestination::metrics(int index) const {
+const ::std::string& Monitoring_MonitoringDestination::metrics(int index) const {
   // @@protoc_insertion_point(field_get:google.api.Monitoring.MonitoringDestination.metrics)
   return metrics_.Get(index);
 }
- ::std::string* Monitoring_MonitoringDestination::mutable_metrics(int index) {
+::std::string* Monitoring_MonitoringDestination::mutable_metrics(int index) {
   // @@protoc_insertion_point(field_mutable:google.api.Monitoring.MonitoringDestination.metrics)
   return metrics_.Mutable(index);
 }
- void Monitoring_MonitoringDestination::set_metrics(int index, const ::std::string& value) {
+void Monitoring_MonitoringDestination::set_metrics(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.api.Monitoring.MonitoringDestination.metrics)
   metrics_.Mutable(index)->assign(value);
 }
- void Monitoring_MonitoringDestination::set_metrics(int index, const char* value) {
+void Monitoring_MonitoringDestination::set_metrics(int index, const char* value) {
   metrics_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.api.Monitoring.MonitoringDestination.metrics)
 }
- void Monitoring_MonitoringDestination::set_metrics(int index, const char* value, size_t size) {
+void Monitoring_MonitoringDestination::set_metrics(int index, const char* value, size_t size) {
   metrics_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.api.Monitoring.MonitoringDestination.metrics)
 }
- ::std::string* Monitoring_MonitoringDestination::add_metrics() {
+::std::string* Monitoring_MonitoringDestination::add_metrics() {
   // @@protoc_insertion_point(field_add_mutable:google.api.Monitoring.MonitoringDestination.metrics)
   return metrics_.Add();
 }
- void Monitoring_MonitoringDestination::add_metrics(const ::std::string& value) {
+void Monitoring_MonitoringDestination::add_metrics(const ::std::string& value) {
   metrics_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.api.Monitoring.MonitoringDestination.metrics)
 }
- void Monitoring_MonitoringDestination::add_metrics(const char* value) {
+void Monitoring_MonitoringDestination::add_metrics(const char* value) {
   metrics_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.api.Monitoring.MonitoringDestination.metrics)
 }
- void Monitoring_MonitoringDestination::add_metrics(const char* value, size_t size) {
+void Monitoring_MonitoringDestination::add_metrics(const char* value, size_t size) {
   metrics_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.api.Monitoring.MonitoringDestination.metrics)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 Monitoring_MonitoringDestination::metrics() const {
   // @@protoc_insertion_point(field_list:google.api.Monitoring.MonitoringDestination.metrics)
   return metrics_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 Monitoring_MonitoringDestination::mutable_metrics() {
   // @@protoc_insertion_point(field_mutable_list:google.api.Monitoring.MonitoringDestination.metrics)
   return &metrics_;
 }
 
+inline const Monitoring_MonitoringDestination* Monitoring_MonitoringDestination::internal_default_instance() {
+  return &Monitoring_MonitoringDestination_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Monitoring
@@ -849,6 +887,9 @@ Monitoring::consumer_destinations() const {
   return consumer_destinations_;
 }
 
+inline const Monitoring* Monitoring::internal_default_instance() {
+  return &Monitoring_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

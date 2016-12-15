@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -42,7 +43,7 @@ namespace google {
 namespace genomics {
 namespace v1 {
 
-class StreamingReadService GRPC_FINAL {
+class StreamingReadService final {
  public:
   class StubInterface {
    public:
@@ -59,7 +60,7 @@ class StreamingReadService GRPC_FINAL {
     virtual ::grpc::ClientReaderInterface< ::google::genomics::v1::StreamReadsResponse>* StreamReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamReadsRequest& request) = 0;
     virtual ::grpc::ClientAsyncReaderInterface< ::google::genomics::v1::StreamReadsResponse>* AsyncStreamReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamReadsRequest& request, ::grpc::CompletionQueue* cq, void* tag) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
     std::unique_ptr< ::grpc::ClientReader< ::google::genomics::v1::StreamReadsResponse>> StreamReads(::grpc::ClientContext* context, const ::google::genomics::v1::StreamReadsRequest& request) {
@@ -71,8 +72,8 @@ class StreamingReadService GRPC_FINAL {
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientReader< ::google::genomics::v1::StreamReadsResponse>* StreamReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamReadsRequest& request) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReader< ::google::genomics::v1::StreamReadsResponse>* AsyncStreamReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamReadsRequest& request, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
+    ::grpc::ClientReader< ::google::genomics::v1::StreamReadsResponse>* StreamReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamReadsRequest& request) override;
+    ::grpc::ClientAsyncReader< ::google::genomics::v1::StreamReadsResponse>* AsyncStreamReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::StreamReadsRequest& request, ::grpc::CompletionQueue* cq, void* tag) override;
     const ::grpc::RpcMethod rpcmethod_StreamReads_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -93,11 +94,11 @@ class StreamingReadService GRPC_FINAL {
     WithAsyncMethod_StreamReads() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_StreamReads() GRPC_OVERRIDE {
+    ~WithAsyncMethod_StreamReads() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StreamReads(::grpc::ServerContext* context, const ::google::genomics::v1::StreamReadsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamReadsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status StreamReads(::grpc::ServerContext* context, const ::google::genomics::v1::StreamReadsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamReadsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -114,19 +115,42 @@ class StreamingReadService GRPC_FINAL {
     WithGenericMethod_StreamReads() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_StreamReads() GRPC_OVERRIDE {
+    ~WithGenericMethod_StreamReads() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StreamReads(::grpc::ServerContext* context, const ::google::genomics::v1::StreamReadsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamReadsResponse>* writer) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status StreamReads(::grpc::ServerContext* context, const ::google::genomics::v1::StreamReadsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamReadsResponse>* writer) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  typedef Service StreamedUnaryService;
+  template <class BaseClass>
+  class WithSplitStreamingMethod_StreamReads : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithSplitStreamingMethod_StreamReads() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::SplitServerStreamingHandler< ::google::genomics::v1::StreamReadsRequest, ::google::genomics::v1::StreamReadsResponse>(std::bind(&WithSplitStreamingMethod_StreamReads<BaseClass>::StreamedStreamReads, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithSplitStreamingMethod_StreamReads() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status StreamReads(::grpc::ServerContext* context, const ::google::genomics::v1::StreamReadsRequest* request, ::grpc::ServerWriter< ::google::genomics::v1::StreamReadsResponse>* writer) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with split streamed
+    virtual ::grpc::Status StreamedStreamReads(::grpc::ServerContext* context, ::grpc::ServerSplitStreamer< ::google::genomics::v1::StreamReadsRequest,::google::genomics::v1::StreamReadsResponse>* server_split_streamer) = 0;
+  };
+  typedef WithSplitStreamingMethod_StreamReads<Service > SplitStreamedService;
+  typedef WithSplitStreamingMethod_StreamReads<Service > StreamedService;
 };
 
 // The Readstore. A data store for DNA sequencing Reads.
-class ReadServiceV1 GRPC_FINAL {
+class ReadServiceV1 final {
  public:
   class StubInterface {
    public:
@@ -263,52 +287,52 @@ class ReadServiceV1 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::genomics::v1::ListCoverageBucketsResponse>* AsyncListCoverageBucketsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::genomics::v1::SearchReadsResponse>* AsyncSearchReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ImportReadGroupSets(::grpc::ClientContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status ImportReadGroupSets(::grpc::ClientContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncImportReadGroupSets(::grpc::ClientContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncImportReadGroupSetsRaw(context, request, cq));
     }
-    ::grpc::Status ExportReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status ExportReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncExportReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncExportReadGroupSetRaw(context, request, cq));
     }
-    ::grpc::Status SearchReadGroupSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest& request, ::google::genomics::v1::SearchReadGroupSetsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchReadGroupSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest& request, ::google::genomics::v1::SearchReadGroupSetsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadGroupSetsResponse>> AsyncSearchReadGroupSets(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadGroupSetsResponse>>(AsyncSearchReadGroupSetsRaw(context, request, cq));
     }
-    ::grpc::Status UpdateReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest& request, ::google::genomics::v1::ReadGroupSet* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest& request, ::google::genomics::v1::ReadGroupSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>> AsyncUpdateReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>>(AsyncUpdateReadGroupSetRaw(context, request, cq));
     }
-    ::grpc::Status DeleteReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteReadGroupSetRaw(context, request, cq));
     }
-    ::grpc::Status GetReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetReadGroupSetRequest& request, ::google::genomics::v1::ReadGroupSet* response) GRPC_OVERRIDE;
+    ::grpc::Status GetReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetReadGroupSetRequest& request, ::google::genomics::v1::ReadGroupSet* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>> AsyncGetReadGroupSet(::grpc::ClientContext* context, const ::google::genomics::v1::GetReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>>(AsyncGetReadGroupSetRaw(context, request, cq));
     }
-    ::grpc::Status ListCoverageBuckets(::grpc::ClientContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest& request, ::google::genomics::v1::ListCoverageBucketsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListCoverageBuckets(::grpc::ClientContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest& request, ::google::genomics::v1::ListCoverageBucketsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListCoverageBucketsResponse>> AsyncListCoverageBuckets(::grpc::ClientContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListCoverageBucketsResponse>>(AsyncListCoverageBucketsRaw(context, request, cq));
     }
-    ::grpc::Status SearchReads(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadsRequest& request, ::google::genomics::v1::SearchReadsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SearchReads(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadsRequest& request, ::google::genomics::v1::SearchReadsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadsResponse>> AsyncSearchReads(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadsResponse>>(AsyncSearchReadsRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncImportReadGroupSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncExportReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadGroupSetsResponse>* AsyncSearchReadGroupSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>* AsyncUpdateReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>* AsyncGetReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListCoverageBucketsResponse>* AsyncListCoverageBucketsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadsResponse>* AsyncSearchReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncImportReadGroupSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncExportReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadGroupSetsResponse>* AsyncSearchReadGroupSetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>* AsyncUpdateReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ReadGroupSet>* AsyncGetReadGroupSetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetReadGroupSetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListCoverageBucketsResponse>* AsyncListCoverageBucketsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::SearchReadsResponse>* AsyncSearchReadsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::SearchReadsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ImportReadGroupSets_;
     const ::grpc::RpcMethod rpcmethod_ExportReadGroupSet_;
     const ::grpc::RpcMethod rpcmethod_SearchReadGroupSets_;
@@ -431,11 +455,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_ImportReadGroupSets() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ImportReadGroupSets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ImportReadGroupSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ImportReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ImportReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -451,11 +475,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_ExportReadGroupSet() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_ExportReadGroupSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ExportReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ExportReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ExportReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -471,11 +495,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchReadGroupSets() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_SearchReadGroupSets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchReadGroupSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest* request, ::google::genomics::v1::SearchReadGroupSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest* request, ::google::genomics::v1::SearchReadGroupSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -491,11 +515,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_UpdateReadGroupSet() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateReadGroupSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -511,11 +535,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_DeleteReadGroupSet() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteReadGroupSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -531,11 +555,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetReadGroupSet() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_GetReadGroupSet() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -551,11 +575,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_ListCoverageBuckets() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_ListCoverageBuckets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListCoverageBuckets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListCoverageBuckets(::grpc::ServerContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest* request, ::google::genomics::v1::ListCoverageBucketsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListCoverageBuckets(::grpc::ServerContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest* request, ::google::genomics::v1::ListCoverageBucketsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -571,11 +595,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithAsyncMethod_SearchReads() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_SearchReads() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SearchReads() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReads(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadsRequest* request, ::google::genomics::v1::SearchReadsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReads(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadsRequest* request, ::google::genomics::v1::SearchReadsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -592,11 +616,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_ImportReadGroupSets() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ImportReadGroupSets() GRPC_OVERRIDE {
+    ~WithGenericMethod_ImportReadGroupSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ImportReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ImportReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -609,11 +633,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_ExportReadGroupSet() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_ExportReadGroupSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_ExportReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ExportReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ExportReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -626,11 +650,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchReadGroupSets() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_SearchReadGroupSets() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchReadGroupSets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest* request, ::google::genomics::v1::SearchReadGroupSetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest* request, ::google::genomics::v1::SearchReadGroupSetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -643,11 +667,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_UpdateReadGroupSet() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateReadGroupSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -660,11 +684,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_DeleteReadGroupSet() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteReadGroupSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -677,11 +701,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_GetReadGroupSet() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_GetReadGroupSet() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetReadGroupSet() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -694,11 +718,11 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_ListCoverageBuckets() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_ListCoverageBuckets() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListCoverageBuckets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListCoverageBuckets(::grpc::ServerContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest* request, ::google::genomics::v1::ListCoverageBucketsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListCoverageBuckets(::grpc::ServerContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest* request, ::google::genomics::v1::ListCoverageBucketsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -711,15 +735,178 @@ class ReadServiceV1 GRPC_FINAL {
     WithGenericMethod_SearchReads() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_SearchReads() GRPC_OVERRIDE {
+    ~WithGenericMethod_SearchReads() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SearchReads(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadsRequest* request, ::google::genomics::v1::SearchReadsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SearchReads(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadsRequest* request, ::google::genomics::v1::SearchReadsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ImportReadGroupSets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ImportReadGroupSets() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::ImportReadGroupSetsRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_ImportReadGroupSets<BaseClass>::StreamedImportReadGroupSets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ImportReadGroupSets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ImportReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::ImportReadGroupSetsRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedImportReadGroupSets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::ImportReadGroupSetsRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ExportReadGroupSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ExportReadGroupSet() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::ExportReadGroupSetRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_ExportReadGroupSet<BaseClass>::StreamedExportReadGroupSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ExportReadGroupSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ExportReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::ExportReadGroupSetRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedExportReadGroupSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::ExportReadGroupSetRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchReadGroupSets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchReadGroupSets() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchReadGroupSetsRequest, ::google::genomics::v1::SearchReadGroupSetsResponse>(std::bind(&WithStreamedUnaryMethod_SearchReadGroupSets<BaseClass>::StreamedSearchReadGroupSets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchReadGroupSets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchReadGroupSets(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadGroupSetsRequest* request, ::google::genomics::v1::SearchReadGroupSetsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchReadGroupSets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchReadGroupSetsRequest,::google::genomics::v1::SearchReadGroupSetsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateReadGroupSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateReadGroupSet() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UpdateReadGroupSetRequest, ::google::genomics::v1::ReadGroupSet>(std::bind(&WithStreamedUnaryMethod_UpdateReadGroupSet<BaseClass>::StreamedUpdateReadGroupSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateReadGroupSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateReadGroupSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UpdateReadGroupSetRequest,::google::genomics::v1::ReadGroupSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteReadGroupSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteReadGroupSet() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::DeleteReadGroupSetRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteReadGroupSet<BaseClass>::StreamedDeleteReadGroupSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteReadGroupSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteReadGroupSetRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteReadGroupSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::DeleteReadGroupSetRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetReadGroupSet : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetReadGroupSet() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetReadGroupSetRequest, ::google::genomics::v1::ReadGroupSet>(std::bind(&WithStreamedUnaryMethod_GetReadGroupSet<BaseClass>::StreamedGetReadGroupSet, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetReadGroupSet() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetReadGroupSet(::grpc::ServerContext* context, const ::google::genomics::v1::GetReadGroupSetRequest* request, ::google::genomics::v1::ReadGroupSet* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetReadGroupSet(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetReadGroupSetRequest,::google::genomics::v1::ReadGroupSet>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListCoverageBuckets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListCoverageBuckets() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::ListCoverageBucketsRequest, ::google::genomics::v1::ListCoverageBucketsResponse>(std::bind(&WithStreamedUnaryMethod_ListCoverageBuckets<BaseClass>::StreamedListCoverageBuckets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListCoverageBuckets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListCoverageBuckets(::grpc::ServerContext* context, const ::google::genomics::v1::ListCoverageBucketsRequest* request, ::google::genomics::v1::ListCoverageBucketsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListCoverageBuckets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::ListCoverageBucketsRequest,::google::genomics::v1::ListCoverageBucketsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SearchReads : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SearchReads() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::SearchReadsRequest, ::google::genomics::v1::SearchReadsResponse>(std::bind(&WithStreamedUnaryMethod_SearchReads<BaseClass>::StreamedSearchReads, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SearchReads() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SearchReads(::grpc::ServerContext* context, const ::google::genomics::v1::SearchReadsRequest* request, ::google::genomics::v1::SearchReadsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSearchReads(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::SearchReadsRequest,::google::genomics::v1::SearchReadsResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ImportReadGroupSets<WithStreamedUnaryMethod_ExportReadGroupSet<WithStreamedUnaryMethod_SearchReadGroupSets<WithStreamedUnaryMethod_UpdateReadGroupSet<WithStreamedUnaryMethod_DeleteReadGroupSet<WithStreamedUnaryMethod_GetReadGroupSet<WithStreamedUnaryMethod_ListCoverageBuckets<WithStreamedUnaryMethod_SearchReads<Service > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ImportReadGroupSets<WithStreamedUnaryMethod_ExportReadGroupSet<WithStreamedUnaryMethod_SearchReadGroupSets<WithStreamedUnaryMethod_UpdateReadGroupSet<WithStreamedUnaryMethod_DeleteReadGroupSet<WithStreamedUnaryMethod_GetReadGroupSet<WithStreamedUnaryMethod_ListCoverageBuckets<WithStreamedUnaryMethod_SearchReads<Service > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

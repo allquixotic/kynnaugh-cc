@@ -77,14 +77,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   Reference_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Reference_descriptor_,
-      Reference::default_instance_,
+      Reference::internal_default_instance(),
       Reference_offsets_,
       -1,
       -1,
       -1,
       sizeof(Reference),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Reference, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Reference, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Reference, _internal_metadata_));
   ReferenceSet_descriptor_ = file->message_type(1);
   static const int ReferenceSet_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReferenceSet, id_),
@@ -99,14 +98,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   ReferenceSet_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ReferenceSet_descriptor_,
-      ReferenceSet::default_instance_,
+      ReferenceSet::internal_default_instance(),
       ReferenceSet_offsets_,
       -1,
       -1,
       -1,
       sizeof(ReferenceSet),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReferenceSet, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReferenceSet, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReferenceSet, _internal_metadata_));
   SearchReferenceSetsRequest_descriptor_ = file->message_type(2);
   static const int SearchReferenceSetsRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsRequest, md5checksums_),
@@ -118,14 +116,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   SearchReferenceSetsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SearchReferenceSetsRequest_descriptor_,
-      SearchReferenceSetsRequest::default_instance_,
+      SearchReferenceSetsRequest::internal_default_instance(),
       SearchReferenceSetsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(SearchReferenceSetsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsRequest, _internal_metadata_));
   SearchReferenceSetsResponse_descriptor_ = file->message_type(3);
   static const int SearchReferenceSetsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsResponse, reference_sets_),
@@ -134,14 +131,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   SearchReferenceSetsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SearchReferenceSetsResponse_descriptor_,
-      SearchReferenceSetsResponse::default_instance_,
+      SearchReferenceSetsResponse::internal_default_instance(),
       SearchReferenceSetsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(SearchReferenceSetsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferenceSetsResponse, _internal_metadata_));
   GetReferenceSetRequest_descriptor_ = file->message_type(4);
   static const int GetReferenceSetRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceSetRequest, reference_set_id_),
@@ -149,14 +145,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   GetReferenceSetRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetReferenceSetRequest_descriptor_,
-      GetReferenceSetRequest::default_instance_,
+      GetReferenceSetRequest::internal_default_instance(),
       GetReferenceSetRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetReferenceSetRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceSetRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceSetRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceSetRequest, _internal_metadata_));
   SearchReferencesRequest_descriptor_ = file->message_type(5);
   static const int SearchReferencesRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesRequest, md5checksums_),
@@ -168,14 +163,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   SearchReferencesRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SearchReferencesRequest_descriptor_,
-      SearchReferencesRequest::default_instance_,
+      SearchReferencesRequest::internal_default_instance(),
       SearchReferencesRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(SearchReferencesRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesRequest, _internal_metadata_));
   SearchReferencesResponse_descriptor_ = file->message_type(6);
   static const int SearchReferencesResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesResponse, references_),
@@ -184,14 +178,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   SearchReferencesResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SearchReferencesResponse_descriptor_,
-      SearchReferencesResponse::default_instance_,
+      SearchReferencesResponse::internal_default_instance(),
       SearchReferencesResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(SearchReferencesResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReferencesResponse, _internal_metadata_));
   GetReferenceRequest_descriptor_ = file->message_type(7);
   static const int GetReferenceRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceRequest, reference_id_),
@@ -199,14 +192,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   GetReferenceRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetReferenceRequest_descriptor_,
-      GetReferenceRequest::default_instance_,
+      GetReferenceRequest::internal_default_instance(),
       GetReferenceRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetReferenceRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReferenceRequest, _internal_metadata_));
   ListBasesRequest_descriptor_ = file->message_type(8);
   static const int ListBasesRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesRequest, reference_id_),
@@ -218,14 +210,13 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   ListBasesRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListBasesRequest_descriptor_,
-      ListBasesRequest::default_instance_,
+      ListBasesRequest::internal_default_instance(),
       ListBasesRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListBasesRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesRequest, _internal_metadata_));
   ListBasesResponse_descriptor_ = file->message_type(9);
   static const int ListBasesResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesResponse, offset_),
@@ -235,20 +226,19 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
   ListBasesResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListBasesResponse_descriptor_,
-      ListBasesResponse::default_instance_,
+      ListBasesResponse::internal_default_instance(),
       ListBasesResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListBasesResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBasesResponse, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fgenomics_2fv1_2freferences_2eproto);
 }
@@ -257,60 +247,97 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Reference_descriptor_, &Reference::default_instance());
+      Reference_descriptor_, Reference::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ReferenceSet_descriptor_, &ReferenceSet::default_instance());
+      ReferenceSet_descriptor_, ReferenceSet::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SearchReferenceSetsRequest_descriptor_, &SearchReferenceSetsRequest::default_instance());
+      SearchReferenceSetsRequest_descriptor_, SearchReferenceSetsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SearchReferenceSetsResponse_descriptor_, &SearchReferenceSetsResponse::default_instance());
+      SearchReferenceSetsResponse_descriptor_, SearchReferenceSetsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetReferenceSetRequest_descriptor_, &GetReferenceSetRequest::default_instance());
+      GetReferenceSetRequest_descriptor_, GetReferenceSetRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SearchReferencesRequest_descriptor_, &SearchReferencesRequest::default_instance());
+      SearchReferencesRequest_descriptor_, SearchReferencesRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SearchReferencesResponse_descriptor_, &SearchReferencesResponse::default_instance());
+      SearchReferencesResponse_descriptor_, SearchReferencesResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetReferenceRequest_descriptor_, &GetReferenceRequest::default_instance());
+      GetReferenceRequest_descriptor_, GetReferenceRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListBasesRequest_descriptor_, &ListBasesRequest::default_instance());
+      ListBasesRequest_descriptor_, ListBasesRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListBasesResponse_descriptor_, &ListBasesResponse::default_instance());
+      ListBasesResponse_descriptor_, ListBasesResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freferences_2eproto() {
-  delete Reference::default_instance_;
+  Reference_default_instance_.Shutdown();
   delete Reference_reflection_;
-  delete ReferenceSet::default_instance_;
+  ReferenceSet_default_instance_.Shutdown();
   delete ReferenceSet_reflection_;
-  delete SearchReferenceSetsRequest::default_instance_;
+  SearchReferenceSetsRequest_default_instance_.Shutdown();
   delete SearchReferenceSetsRequest_reflection_;
-  delete SearchReferenceSetsResponse::default_instance_;
+  SearchReferenceSetsResponse_default_instance_.Shutdown();
   delete SearchReferenceSetsResponse_reflection_;
-  delete GetReferenceSetRequest::default_instance_;
+  GetReferenceSetRequest_default_instance_.Shutdown();
   delete GetReferenceSetRequest_reflection_;
-  delete SearchReferencesRequest::default_instance_;
+  SearchReferencesRequest_default_instance_.Shutdown();
   delete SearchReferencesRequest_reflection_;
-  delete SearchReferencesResponse::default_instance_;
+  SearchReferencesResponse_default_instance_.Shutdown();
   delete SearchReferencesResponse_reflection_;
-  delete GetReferenceRequest::default_instance_;
+  GetReferenceRequest_default_instance_.Shutdown();
   delete GetReferenceRequest_reflection_;
-  delete ListBasesRequest::default_instance_;
+  ListBasesRequest_default_instance_.Shutdown();
   delete ListBasesRequest_reflection_;
-  delete ListBasesResponse::default_instance_;
+  ListBasesResponse_default_instance_.Shutdown();
   delete ListBasesResponse_reflection_;
 }
 
-void protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Reference_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ReferenceSet_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReferenceSetsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReferenceSetsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetReferenceSetRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReferencesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReferencesResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetReferenceRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListBasesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListBasesResponse_default_instance_.DefaultConstruct();
+  Reference_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ReferenceSet_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SearchReferenceSetsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SearchReferenceSetsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetReferenceSetRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SearchReferencesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SearchReferencesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetReferenceRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListBasesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListBasesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto_once_);
+void protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n#google/genomics/v1/references.proto\022\022g"
     "oogle.genomics.v1\032\034google/api/annotation"
@@ -360,39 +387,37 @@ void protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
     "ses\022$.google.genomics.v1.ListBasesReques"
     "t\032%.google.genomics.v1.ListBasesResponse"
     "\"+\202\323\344\223\002%\022#/v1/references/{reference_id}/"
-    "basesB.\n\026com.google.genomics.v1B\017Referen"
-    "cesProtoP\001\370\001\001b\006proto3", 1981);
+    "basesBj\n\026com.google.genomics.v1B\017Referen"
+    "cesProtoP\001Z:google.golang.org/genproto/g"
+    "oogleapis/genomics/v1;genomics\370\001\001b\006proto"
+    "3", 2041);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/genomics/v1/references.proto", &protobuf_RegisterTypes);
-  Reference::default_instance_ = new Reference();
-  ReferenceSet::default_instance_ = new ReferenceSet();
-  SearchReferenceSetsRequest::default_instance_ = new SearchReferenceSetsRequest();
-  SearchReferenceSetsResponse::default_instance_ = new SearchReferenceSetsResponse();
-  GetReferenceSetRequest::default_instance_ = new GetReferenceSetRequest();
-  SearchReferencesRequest::default_instance_ = new SearchReferencesRequest();
-  SearchReferencesResponse::default_instance_ = new SearchReferencesResponse();
-  GetReferenceRequest::default_instance_ = new GetReferenceRequest();
-  ListBasesRequest::default_instance_ = new ListBasesRequest();
-  ListBasesResponse::default_instance_ = new ListBasesResponse();
-  Reference::default_instance_->InitAsDefaultInstance();
-  ReferenceSet::default_instance_->InitAsDefaultInstance();
-  SearchReferenceSetsRequest::default_instance_->InitAsDefaultInstance();
-  SearchReferenceSetsResponse::default_instance_->InitAsDefaultInstance();
-  GetReferenceSetRequest::default_instance_->InitAsDefaultInstance();
-  SearchReferencesRequest::default_instance_->InitAsDefaultInstance();
-  SearchReferencesResponse::default_instance_->InitAsDefaultInstance();
-  GetReferenceRequest::default_instance_->InitAsDefaultInstance();
-  ListBasesRequest::default_instance_->InitAsDefaultInstance();
-  ListBasesResponse::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fgenomics_2fv1_2freferences_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto_once_);
+void protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto_once_,
+                 &protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fgenomics_2fv1_2freferences_2eproto {
   StaticDescriptorInitializer_google_2fgenomics_2fv1_2freferences_2eproto() {
     protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
   }
 } static_descriptor_initializer_google_2fgenomics_2fv1_2freferences_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -408,41 +433,41 @@ const int Reference::kNcbiTaxonIdFieldNumber;
 
 Reference::Reference()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.Reference)
 }
-
 Reference::Reference(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   source_accessions_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.Reference)
 }
 
 void Reference::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Reference::Reference(const Reference& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.Reference)
 }
 
 void Reference::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  length_ = GOOGLE_LONGLONG(0);
   md5checksum_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   source_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ncbi_taxon_id_ = 0;
+  ::memset(&length_, 0, reinterpret_cast<char*>(&ncbi_taxon_id_) -
+    reinterpret_cast<char*>(&length_) + sizeof(ncbi_taxon_id_));
+  _cached_size_ = 0;
 }
 
 Reference::~Reference() {
@@ -451,16 +476,15 @@ Reference::~Reference() {
 }
 
 void Reference::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  md5checksum_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  source_uri_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  md5checksum_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  source_uri_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void Reference::ArenaDtor(void* object) {
@@ -480,11 +504,11 @@ const ::google::protobuf::Descriptor* Reference::descriptor() {
 }
 
 const Reference& Reference::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-Reference* Reference::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Reference> Reference_default_instance_;
 
 Reference* Reference::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Reference>(arena);
@@ -492,12 +516,31 @@ Reference* Reference::New(::google::protobuf::Arena* arena) const {
 
 void Reference::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.Reference)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Reference, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Reference*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(length_, ncbi_taxon_id_);
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  length_ = GOOGLE_LONGLONG(0);
   md5checksum_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   source_uri_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  ncbi_taxon_id_ = 0;
+
+#undef ZR_HELPER_
+#undef ZR_
+
   source_accessions_.Clear();
 }
 
@@ -531,10 +574,10 @@ bool Reference::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_length:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &length_)));
-
         } else {
           goto handle_unusual;
         }
@@ -616,10 +659,10 @@ bool Reference::MergePartialFromCodedStream(
       case 7: {
         if (tag == 56) {
          parse_ncbi_taxon_id:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &ncbi_taxon_id_)));
-
         } else {
           goto handle_unusual;
         }
@@ -716,6 +759,7 @@ void Reference::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Reference::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.Reference)
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -785,9 +829,9 @@ void Reference::SerializeWithCachedSizes(
   return target;
 }
 
-int Reference::ByteSize() const {
+size_t Reference::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.Reference)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -832,24 +876,24 @@ int Reference::ByteSize() const {
   }
 
   // repeated string source_accessions = 6;
-  total_size += 1 * this->source_accessions_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->source_accessions_size());
   for (int i = 0; i < this->source_accessions_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->source_accessions(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Reference::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.Reference)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Reference* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Reference* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Reference>(
           &from);
   if (source == NULL) {
@@ -857,16 +901,22 @@ void Reference::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.Reference)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Reference::MergeFrom(const Reference& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.Reference)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  source_accessions_.MergeFrom(from.source_accessions_);
+}
+
+void Reference::UnsafeMergeFrom(const Reference& from) {
+  GOOGLE_DCHECK(&from != this);
+  source_accessions_.UnsafeMergeFrom(from.source_accessions_);
   if (from.id().size() > 0) {
     set_id(from.id());
   }
@@ -898,7 +948,7 @@ void Reference::CopyFrom(const Reference& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.Reference)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Reference::IsInitialized() const {
@@ -912,7 +962,7 @@ void Reference::Swap(Reference* other) {
     InternalSwap(other);
   } else {
     Reference temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -949,46 +999,46 @@ void Reference::InternalSwap(Reference* other) {
 void Reference::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Reference::id() const {
+const ::std::string& Reference::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Reference.id)
   return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Reference::set_id(const ::std::string& value) {
+void Reference::set_id(const ::std::string& value) {
   
   id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.Reference.id)
 }
- void Reference::set_id(const char* value) {
+void Reference::set_id(const char* value) {
   
   id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.Reference.id)
 }
- void Reference::set_id(const char* value,
+void Reference::set_id(const char* value,
     size_t size) {
   
   id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.Reference.id)
 }
- ::std::string* Reference::mutable_id() {
+::std::string* Reference::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.Reference.id)
   return id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::release_id() {
+::std::string* Reference::release_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.Reference.id)
   
   return id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::unsafe_arena_release_id() {
+::std::string* Reference::unsafe_arena_release_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.Reference.id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Reference::set_allocated_id(::std::string* id) {
+void Reference::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -998,7 +1048,7 @@ void Reference::clear_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.Reference.id)
 }
- void Reference::unsafe_arena_set_allocated_id(
+void Reference::unsafe_arena_set_allocated_id(
     ::std::string* id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (id != NULL) {
@@ -1015,11 +1065,11 @@ void Reference::clear_id() {
 void Reference::clear_length() {
   length_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 Reference::length() const {
+::google::protobuf::int64 Reference::length() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Reference.length)
   return length_;
 }
- void Reference::set_length(::google::protobuf::int64 value) {
+void Reference::set_length(::google::protobuf::int64 value) {
   
   length_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.Reference.length)
@@ -1029,46 +1079,46 @@ void Reference::clear_length() {
 void Reference::clear_md5checksum() {
   md5checksum_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Reference::md5checksum() const {
+const ::std::string& Reference::md5checksum() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Reference.md5checksum)
   return md5checksum_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Reference::set_md5checksum(const ::std::string& value) {
+void Reference::set_md5checksum(const ::std::string& value) {
   
   md5checksum_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.Reference.md5checksum)
 }
- void Reference::set_md5checksum(const char* value) {
+void Reference::set_md5checksum(const char* value) {
   
   md5checksum_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.Reference.md5checksum)
 }
- void Reference::set_md5checksum(const char* value,
+void Reference::set_md5checksum(const char* value,
     size_t size) {
   
   md5checksum_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.Reference.md5checksum)
 }
- ::std::string* Reference::mutable_md5checksum() {
+::std::string* Reference::mutable_md5checksum() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.Reference.md5checksum)
   return md5checksum_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::release_md5checksum() {
+::std::string* Reference::release_md5checksum() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.Reference.md5checksum)
   
   return md5checksum_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::unsafe_arena_release_md5checksum() {
+::std::string* Reference::unsafe_arena_release_md5checksum() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.Reference.md5checksum)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return md5checksum_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Reference::set_allocated_md5checksum(::std::string* md5checksum) {
+void Reference::set_allocated_md5checksum(::std::string* md5checksum) {
   if (md5checksum != NULL) {
     
   } else {
@@ -1078,7 +1128,7 @@ void Reference::clear_md5checksum() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.Reference.md5checksum)
 }
- void Reference::unsafe_arena_set_allocated_md5checksum(
+void Reference::unsafe_arena_set_allocated_md5checksum(
     ::std::string* md5checksum) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (md5checksum != NULL) {
@@ -1095,46 +1145,46 @@ void Reference::clear_md5checksum() {
 void Reference::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Reference::name() const {
+const ::std::string& Reference::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Reference.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Reference::set_name(const ::std::string& value) {
+void Reference::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.Reference.name)
 }
- void Reference::set_name(const char* value) {
+void Reference::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.Reference.name)
 }
- void Reference::set_name(const char* value,
+void Reference::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.Reference.name)
 }
- ::std::string* Reference::mutable_name() {
+::std::string* Reference::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.Reference.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::release_name() {
+::std::string* Reference::release_name() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.Reference.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::unsafe_arena_release_name() {
+::std::string* Reference::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.Reference.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Reference::set_allocated_name(::std::string* name) {
+void Reference::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1144,7 +1194,7 @@ void Reference::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.Reference.name)
 }
- void Reference::unsafe_arena_set_allocated_name(
+void Reference::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -1161,46 +1211,46 @@ void Reference::clear_name() {
 void Reference::clear_source_uri() {
   source_uri_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Reference::source_uri() const {
+const ::std::string& Reference::source_uri() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Reference.source_uri)
   return source_uri_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Reference::set_source_uri(const ::std::string& value) {
+void Reference::set_source_uri(const ::std::string& value) {
   
   source_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.Reference.source_uri)
 }
- void Reference::set_source_uri(const char* value) {
+void Reference::set_source_uri(const char* value) {
   
   source_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.Reference.source_uri)
 }
- void Reference::set_source_uri(const char* value,
+void Reference::set_source_uri(const char* value,
     size_t size) {
   
   source_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.Reference.source_uri)
 }
- ::std::string* Reference::mutable_source_uri() {
+::std::string* Reference::mutable_source_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.Reference.source_uri)
   return source_uri_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::release_source_uri() {
+::std::string* Reference::release_source_uri() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.Reference.source_uri)
   
   return source_uri_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Reference::unsafe_arena_release_source_uri() {
+::std::string* Reference::unsafe_arena_release_source_uri() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.Reference.source_uri)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return source_uri_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Reference::set_allocated_source_uri(::std::string* source_uri) {
+void Reference::set_allocated_source_uri(::std::string* source_uri) {
   if (source_uri != NULL) {
     
   } else {
@@ -1210,7 +1260,7 @@ void Reference::clear_source_uri() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.Reference.source_uri)
 }
- void Reference::unsafe_arena_set_allocated_source_uri(
+void Reference::unsafe_arena_set_allocated_source_uri(
     ::std::string* source_uri) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (source_uri != NULL) {
@@ -1230,49 +1280,49 @@ int Reference::source_accessions_size() const {
 void Reference::clear_source_accessions() {
   source_accessions_.Clear();
 }
- const ::std::string& Reference::source_accessions(int index) const {
+const ::std::string& Reference::source_accessions(int index) const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Reference.source_accessions)
   return source_accessions_.Get(index);
 }
- ::std::string* Reference::mutable_source_accessions(int index) {
+::std::string* Reference::mutable_source_accessions(int index) {
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.Reference.source_accessions)
   return source_accessions_.Mutable(index);
 }
- void Reference::set_source_accessions(int index, const ::std::string& value) {
+void Reference::set_source_accessions(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Reference.source_accessions)
   source_accessions_.Mutable(index)->assign(value);
 }
- void Reference::set_source_accessions(int index, const char* value) {
+void Reference::set_source_accessions(int index, const char* value) {
   source_accessions_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.Reference.source_accessions)
 }
- void Reference::set_source_accessions(int index, const char* value, size_t size) {
+void Reference::set_source_accessions(int index, const char* value, size_t size) {
   source_accessions_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.Reference.source_accessions)
 }
- ::std::string* Reference::add_source_accessions() {
+::std::string* Reference::add_source_accessions() {
   // @@protoc_insertion_point(field_add_mutable:google.genomics.v1.Reference.source_accessions)
   return source_accessions_.Add();
 }
- void Reference::add_source_accessions(const ::std::string& value) {
+void Reference::add_source_accessions(const ::std::string& value) {
   source_accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.genomics.v1.Reference.source_accessions)
 }
- void Reference::add_source_accessions(const char* value) {
+void Reference::add_source_accessions(const char* value) {
   source_accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.genomics.v1.Reference.source_accessions)
 }
- void Reference::add_source_accessions(const char* value, size_t size) {
+void Reference::add_source_accessions(const char* value, size_t size) {
   source_accessions_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.genomics.v1.Reference.source_accessions)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 Reference::source_accessions() const {
   // @@protoc_insertion_point(field_list:google.genomics.v1.Reference.source_accessions)
   return source_accessions_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 Reference::mutable_source_accessions() {
   // @@protoc_insertion_point(field_mutable_list:google.genomics.v1.Reference.source_accessions)
   return &source_accessions_;
@@ -1282,16 +1332,19 @@ Reference::mutable_source_accessions() {
 void Reference::clear_ncbi_taxon_id() {
   ncbi_taxon_id_ = 0;
 }
- ::google::protobuf::int32 Reference::ncbi_taxon_id() const {
+::google::protobuf::int32 Reference::ncbi_taxon_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Reference.ncbi_taxon_id)
   return ncbi_taxon_id_;
 }
- void Reference::set_ncbi_taxon_id(::google::protobuf::int32 value) {
+void Reference::set_ncbi_taxon_id(::google::protobuf::int32 value) {
   
   ncbi_taxon_id_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.Reference.ncbi_taxon_id)
 }
 
+inline const Reference* Reference::internal_default_instance() {
+  return &Reference_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1309,42 +1362,42 @@ const int ReferenceSet::kSourceAccessionsFieldNumber;
 
 ReferenceSet::ReferenceSet()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ReferenceSet)
 }
-
 ReferenceSet::ReferenceSet(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   reference_ids_(arena),
   source_accessions_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ReferenceSet)
 }
 
 void ReferenceSet::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ReferenceSet::ReferenceSet(const ReferenceSet& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ReferenceSet)
 }
 
 void ReferenceSet::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   md5checksum_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ncbi_taxon_id_ = 0;
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   assembly_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   source_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ncbi_taxon_id_ = 0;
+  _cached_size_ = 0;
 }
 
 ReferenceSet::~ReferenceSet() {
@@ -1353,17 +1406,16 @@ ReferenceSet::~ReferenceSet() {
 }
 
 void ReferenceSet::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  md5checksum_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  description_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  assembly_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  source_uri_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  md5checksum_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  description_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  assembly_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  source_uri_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ReferenceSet::ArenaDtor(void* object) {
@@ -1383,11 +1435,11 @@ const ::google::protobuf::Descriptor* ReferenceSet::descriptor() {
 }
 
 const ReferenceSet& ReferenceSet::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-ReferenceSet* ReferenceSet::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ReferenceSet> ReferenceSet_default_instance_;
 
 ReferenceSet* ReferenceSet::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ReferenceSet>(arena);
@@ -1471,10 +1523,10 @@ bool ReferenceSet::MergePartialFromCodedStream(
       case 4: {
         if (tag == 32) {
          parse_ncbi_taxon_id:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &ncbi_taxon_id_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1656,6 +1708,7 @@ void ReferenceSet::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ReferenceSet::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.ReferenceSet)
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -1741,9 +1794,9 @@ void ReferenceSet::SerializeWithCachedSizes(
   return target;
 }
 
-int ReferenceSet::ByteSize() const {
+size_t ReferenceSet::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.ReferenceSet)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -1788,31 +1841,32 @@ int ReferenceSet::ByteSize() const {
   }
 
   // repeated string reference_ids = 2;
-  total_size += 1 * this->reference_ids_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->reference_ids_size());
   for (int i = 0; i < this->reference_ids_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->reference_ids(i));
   }
 
   // repeated string source_accessions = 8;
-  total_size += 1 * this->source_accessions_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->source_accessions_size());
   for (int i = 0; i < this->source_accessions_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->source_accessions(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ReferenceSet::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ReferenceSet)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ReferenceSet* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ReferenceSet* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReferenceSet>(
           &from);
   if (source == NULL) {
@@ -1820,17 +1874,23 @@ void ReferenceSet::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ReferenceSet)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReferenceSet::MergeFrom(const ReferenceSet& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ReferenceSet)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  reference_ids_.MergeFrom(from.reference_ids_);
-  source_accessions_.MergeFrom(from.source_accessions_);
+}
+
+void ReferenceSet::UnsafeMergeFrom(const ReferenceSet& from) {
+  GOOGLE_DCHECK(&from != this);
+  reference_ids_.UnsafeMergeFrom(from.reference_ids_);
+  source_accessions_.UnsafeMergeFrom(from.source_accessions_);
   if (from.id().size() > 0) {
     set_id(from.id());
   }
@@ -1862,7 +1922,7 @@ void ReferenceSet::CopyFrom(const ReferenceSet& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ReferenceSet)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReferenceSet::IsInitialized() const {
@@ -1876,7 +1936,7 @@ void ReferenceSet::Swap(ReferenceSet* other) {
     InternalSwap(other);
   } else {
     ReferenceSet temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1914,46 +1974,46 @@ void ReferenceSet::InternalSwap(ReferenceSet* other) {
 void ReferenceSet::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ReferenceSet::id() const {
+const ::std::string& ReferenceSet::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.id)
   return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReferenceSet::set_id(const ::std::string& value) {
+void ReferenceSet::set_id(const ::std::string& value) {
   
   id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.id)
 }
- void ReferenceSet::set_id(const char* value) {
+void ReferenceSet::set_id(const char* value) {
   
   id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ReferenceSet.id)
 }
- void ReferenceSet::set_id(const char* value,
+void ReferenceSet::set_id(const char* value,
     size_t size) {
   
   id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ReferenceSet.id)
 }
- ::std::string* ReferenceSet::mutable_id() {
+::std::string* ReferenceSet::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ReferenceSet.id)
   return id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::release_id() {
+::std::string* ReferenceSet::release_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ReferenceSet.id)
   
   return id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::unsafe_arena_release_id() {
+::std::string* ReferenceSet::unsafe_arena_release_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ReferenceSet.id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ReferenceSet::set_allocated_id(::std::string* id) {
+void ReferenceSet::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -1963,7 +2023,7 @@ void ReferenceSet::clear_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ReferenceSet.id)
 }
- void ReferenceSet::unsafe_arena_set_allocated_id(
+void ReferenceSet::unsafe_arena_set_allocated_id(
     ::std::string* id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (id != NULL) {
@@ -1983,49 +2043,49 @@ int ReferenceSet::reference_ids_size() const {
 void ReferenceSet::clear_reference_ids() {
   reference_ids_.Clear();
 }
- const ::std::string& ReferenceSet::reference_ids(int index) const {
+const ::std::string& ReferenceSet::reference_ids(int index) const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.reference_ids)
   return reference_ids_.Get(index);
 }
- ::std::string* ReferenceSet::mutable_reference_ids(int index) {
+::std::string* ReferenceSet::mutable_reference_ids(int index) {
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ReferenceSet.reference_ids)
   return reference_ids_.Mutable(index);
 }
- void ReferenceSet::set_reference_ids(int index, const ::std::string& value) {
+void ReferenceSet::set_reference_ids(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.reference_ids)
   reference_ids_.Mutable(index)->assign(value);
 }
- void ReferenceSet::set_reference_ids(int index, const char* value) {
+void ReferenceSet::set_reference_ids(int index, const char* value) {
   reference_ids_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ReferenceSet.reference_ids)
 }
- void ReferenceSet::set_reference_ids(int index, const char* value, size_t size) {
+void ReferenceSet::set_reference_ids(int index, const char* value, size_t size) {
   reference_ids_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ReferenceSet.reference_ids)
 }
- ::std::string* ReferenceSet::add_reference_ids() {
+::std::string* ReferenceSet::add_reference_ids() {
   // @@protoc_insertion_point(field_add_mutable:google.genomics.v1.ReferenceSet.reference_ids)
   return reference_ids_.Add();
 }
- void ReferenceSet::add_reference_ids(const ::std::string& value) {
+void ReferenceSet::add_reference_ids(const ::std::string& value) {
   reference_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.genomics.v1.ReferenceSet.reference_ids)
 }
- void ReferenceSet::add_reference_ids(const char* value) {
+void ReferenceSet::add_reference_ids(const char* value) {
   reference_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.genomics.v1.ReferenceSet.reference_ids)
 }
- void ReferenceSet::add_reference_ids(const char* value, size_t size) {
+void ReferenceSet::add_reference_ids(const char* value, size_t size) {
   reference_ids_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.genomics.v1.ReferenceSet.reference_ids)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 ReferenceSet::reference_ids() const {
   // @@protoc_insertion_point(field_list:google.genomics.v1.ReferenceSet.reference_ids)
   return reference_ids_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 ReferenceSet::mutable_reference_ids() {
   // @@protoc_insertion_point(field_mutable_list:google.genomics.v1.ReferenceSet.reference_ids)
   return &reference_ids_;
@@ -2035,46 +2095,46 @@ ReferenceSet::mutable_reference_ids() {
 void ReferenceSet::clear_md5checksum() {
   md5checksum_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ReferenceSet::md5checksum() const {
+const ::std::string& ReferenceSet::md5checksum() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.md5checksum)
   return md5checksum_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReferenceSet::set_md5checksum(const ::std::string& value) {
+void ReferenceSet::set_md5checksum(const ::std::string& value) {
   
   md5checksum_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.md5checksum)
 }
- void ReferenceSet::set_md5checksum(const char* value) {
+void ReferenceSet::set_md5checksum(const char* value) {
   
   md5checksum_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ReferenceSet.md5checksum)
 }
- void ReferenceSet::set_md5checksum(const char* value,
+void ReferenceSet::set_md5checksum(const char* value,
     size_t size) {
   
   md5checksum_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ReferenceSet.md5checksum)
 }
- ::std::string* ReferenceSet::mutable_md5checksum() {
+::std::string* ReferenceSet::mutable_md5checksum() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ReferenceSet.md5checksum)
   return md5checksum_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::release_md5checksum() {
+::std::string* ReferenceSet::release_md5checksum() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ReferenceSet.md5checksum)
   
   return md5checksum_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::unsafe_arena_release_md5checksum() {
+::std::string* ReferenceSet::unsafe_arena_release_md5checksum() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ReferenceSet.md5checksum)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return md5checksum_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ReferenceSet::set_allocated_md5checksum(::std::string* md5checksum) {
+void ReferenceSet::set_allocated_md5checksum(::std::string* md5checksum) {
   if (md5checksum != NULL) {
     
   } else {
@@ -2084,7 +2144,7 @@ void ReferenceSet::clear_md5checksum() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ReferenceSet.md5checksum)
 }
- void ReferenceSet::unsafe_arena_set_allocated_md5checksum(
+void ReferenceSet::unsafe_arena_set_allocated_md5checksum(
     ::std::string* md5checksum) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (md5checksum != NULL) {
@@ -2101,11 +2161,11 @@ void ReferenceSet::clear_md5checksum() {
 void ReferenceSet::clear_ncbi_taxon_id() {
   ncbi_taxon_id_ = 0;
 }
- ::google::protobuf::int32 ReferenceSet::ncbi_taxon_id() const {
+::google::protobuf::int32 ReferenceSet::ncbi_taxon_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.ncbi_taxon_id)
   return ncbi_taxon_id_;
 }
- void ReferenceSet::set_ncbi_taxon_id(::google::protobuf::int32 value) {
+void ReferenceSet::set_ncbi_taxon_id(::google::protobuf::int32 value) {
   
   ncbi_taxon_id_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.ncbi_taxon_id)
@@ -2115,46 +2175,46 @@ void ReferenceSet::clear_ncbi_taxon_id() {
 void ReferenceSet::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ReferenceSet::description() const {
+const ::std::string& ReferenceSet::description() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.description)
   return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReferenceSet::set_description(const ::std::string& value) {
+void ReferenceSet::set_description(const ::std::string& value) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.description)
 }
- void ReferenceSet::set_description(const char* value) {
+void ReferenceSet::set_description(const char* value) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ReferenceSet.description)
 }
- void ReferenceSet::set_description(const char* value,
+void ReferenceSet::set_description(const char* value,
     size_t size) {
   
   description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ReferenceSet.description)
 }
- ::std::string* ReferenceSet::mutable_description() {
+::std::string* ReferenceSet::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ReferenceSet.description)
   return description_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::release_description() {
+::std::string* ReferenceSet::release_description() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ReferenceSet.description)
   
   return description_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::unsafe_arena_release_description() {
+::std::string* ReferenceSet::unsafe_arena_release_description() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ReferenceSet.description)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return description_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ReferenceSet::set_allocated_description(::std::string* description) {
+void ReferenceSet::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -2164,7 +2224,7 @@ void ReferenceSet::clear_description() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ReferenceSet.description)
 }
- void ReferenceSet::unsafe_arena_set_allocated_description(
+void ReferenceSet::unsafe_arena_set_allocated_description(
     ::std::string* description) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (description != NULL) {
@@ -2181,46 +2241,46 @@ void ReferenceSet::clear_description() {
 void ReferenceSet::clear_assembly_id() {
   assembly_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ReferenceSet::assembly_id() const {
+const ::std::string& ReferenceSet::assembly_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.assembly_id)
   return assembly_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReferenceSet::set_assembly_id(const ::std::string& value) {
+void ReferenceSet::set_assembly_id(const ::std::string& value) {
   
   assembly_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.assembly_id)
 }
- void ReferenceSet::set_assembly_id(const char* value) {
+void ReferenceSet::set_assembly_id(const char* value) {
   
   assembly_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ReferenceSet.assembly_id)
 }
- void ReferenceSet::set_assembly_id(const char* value,
+void ReferenceSet::set_assembly_id(const char* value,
     size_t size) {
   
   assembly_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ReferenceSet.assembly_id)
 }
- ::std::string* ReferenceSet::mutable_assembly_id() {
+::std::string* ReferenceSet::mutable_assembly_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ReferenceSet.assembly_id)
   return assembly_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::release_assembly_id() {
+::std::string* ReferenceSet::release_assembly_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ReferenceSet.assembly_id)
   
   return assembly_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::unsafe_arena_release_assembly_id() {
+::std::string* ReferenceSet::unsafe_arena_release_assembly_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ReferenceSet.assembly_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return assembly_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ReferenceSet::set_allocated_assembly_id(::std::string* assembly_id) {
+void ReferenceSet::set_allocated_assembly_id(::std::string* assembly_id) {
   if (assembly_id != NULL) {
     
   } else {
@@ -2230,7 +2290,7 @@ void ReferenceSet::clear_assembly_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ReferenceSet.assembly_id)
 }
- void ReferenceSet::unsafe_arena_set_allocated_assembly_id(
+void ReferenceSet::unsafe_arena_set_allocated_assembly_id(
     ::std::string* assembly_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (assembly_id != NULL) {
@@ -2247,46 +2307,46 @@ void ReferenceSet::clear_assembly_id() {
 void ReferenceSet::clear_source_uri() {
   source_uri_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ReferenceSet::source_uri() const {
+const ::std::string& ReferenceSet::source_uri() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.source_uri)
   return source_uri_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReferenceSet::set_source_uri(const ::std::string& value) {
+void ReferenceSet::set_source_uri(const ::std::string& value) {
   
   source_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.source_uri)
 }
- void ReferenceSet::set_source_uri(const char* value) {
+void ReferenceSet::set_source_uri(const char* value) {
   
   source_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ReferenceSet.source_uri)
 }
- void ReferenceSet::set_source_uri(const char* value,
+void ReferenceSet::set_source_uri(const char* value,
     size_t size) {
   
   source_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ReferenceSet.source_uri)
 }
- ::std::string* ReferenceSet::mutable_source_uri() {
+::std::string* ReferenceSet::mutable_source_uri() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ReferenceSet.source_uri)
   return source_uri_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::release_source_uri() {
+::std::string* ReferenceSet::release_source_uri() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ReferenceSet.source_uri)
   
   return source_uri_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReferenceSet::unsafe_arena_release_source_uri() {
+::std::string* ReferenceSet::unsafe_arena_release_source_uri() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ReferenceSet.source_uri)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return source_uri_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ReferenceSet::set_allocated_source_uri(::std::string* source_uri) {
+void ReferenceSet::set_allocated_source_uri(::std::string* source_uri) {
   if (source_uri != NULL) {
     
   } else {
@@ -2296,7 +2356,7 @@ void ReferenceSet::clear_source_uri() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ReferenceSet.source_uri)
 }
- void ReferenceSet::unsafe_arena_set_allocated_source_uri(
+void ReferenceSet::unsafe_arena_set_allocated_source_uri(
     ::std::string* source_uri) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (source_uri != NULL) {
@@ -2316,54 +2376,57 @@ int ReferenceSet::source_accessions_size() const {
 void ReferenceSet::clear_source_accessions() {
   source_accessions_.Clear();
 }
- const ::std::string& ReferenceSet::source_accessions(int index) const {
+const ::std::string& ReferenceSet::source_accessions(int index) const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceSet.source_accessions)
   return source_accessions_.Get(index);
 }
- ::std::string* ReferenceSet::mutable_source_accessions(int index) {
+::std::string* ReferenceSet::mutable_source_accessions(int index) {
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ReferenceSet.source_accessions)
   return source_accessions_.Mutable(index);
 }
- void ReferenceSet::set_source_accessions(int index, const ::std::string& value) {
+void ReferenceSet::set_source_accessions(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceSet.source_accessions)
   source_accessions_.Mutable(index)->assign(value);
 }
- void ReferenceSet::set_source_accessions(int index, const char* value) {
+void ReferenceSet::set_source_accessions(int index, const char* value) {
   source_accessions_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ReferenceSet.source_accessions)
 }
- void ReferenceSet::set_source_accessions(int index, const char* value, size_t size) {
+void ReferenceSet::set_source_accessions(int index, const char* value, size_t size) {
   source_accessions_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ReferenceSet.source_accessions)
 }
- ::std::string* ReferenceSet::add_source_accessions() {
+::std::string* ReferenceSet::add_source_accessions() {
   // @@protoc_insertion_point(field_add_mutable:google.genomics.v1.ReferenceSet.source_accessions)
   return source_accessions_.Add();
 }
- void ReferenceSet::add_source_accessions(const ::std::string& value) {
+void ReferenceSet::add_source_accessions(const ::std::string& value) {
   source_accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.genomics.v1.ReferenceSet.source_accessions)
 }
- void ReferenceSet::add_source_accessions(const char* value) {
+void ReferenceSet::add_source_accessions(const char* value) {
   source_accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.genomics.v1.ReferenceSet.source_accessions)
 }
- void ReferenceSet::add_source_accessions(const char* value, size_t size) {
+void ReferenceSet::add_source_accessions(const char* value, size_t size) {
   source_accessions_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.genomics.v1.ReferenceSet.source_accessions)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 ReferenceSet::source_accessions() const {
   // @@protoc_insertion_point(field_list:google.genomics.v1.ReferenceSet.source_accessions)
   return source_accessions_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 ReferenceSet::mutable_source_accessions() {
   // @@protoc_insertion_point(field_mutable_list:google.genomics.v1.ReferenceSet.source_accessions)
   return &source_accessions_;
 }
 
+inline const ReferenceSet* ReferenceSet::internal_default_instance() {
+  return &ReferenceSet_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2378,39 +2441,39 @@ const int SearchReferenceSetsRequest::kPageSizeFieldNumber;
 
 SearchReferenceSetsRequest::SearchReferenceSetsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReferenceSetsRequest)
 }
-
 SearchReferenceSetsRequest::SearchReferenceSetsRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   md5checksums_(arena),
   accessions_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReferenceSetsRequest)
 }
 
 void SearchReferenceSetsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SearchReferenceSetsRequest::SearchReferenceSetsRequest(const SearchReferenceSetsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReferenceSetsRequest)
 }
 
 void SearchReferenceSetsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   assembly_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 SearchReferenceSetsRequest::~SearchReferenceSetsRequest() {
@@ -2419,14 +2482,13 @@ SearchReferenceSetsRequest::~SearchReferenceSetsRequest() {
 }
 
 void SearchReferenceSetsRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  assembly_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  assembly_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void SearchReferenceSetsRequest::ArenaDtor(void* object) {
@@ -2446,11 +2508,11 @@ const ::google::protobuf::Descriptor* SearchReferenceSetsRequest::descriptor() {
 }
 
 const SearchReferenceSetsRequest& SearchReferenceSetsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-SearchReferenceSetsRequest* SearchReferenceSetsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SearchReferenceSetsRequest> SearchReferenceSetsRequest_default_instance_;
 
 SearchReferenceSetsRequest* SearchReferenceSetsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReferenceSetsRequest>(arena);
@@ -2551,10 +2613,10 @@ bool SearchReferenceSetsRequest::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -2636,6 +2698,7 @@ void SearchReferenceSetsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SearchReferenceSetsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.SearchReferenceSetsRequest)
   // repeated string md5checksums = 1;
   for (int i = 0; i < this->md5checksums_size(); i++) {
@@ -2688,9 +2751,9 @@ void SearchReferenceSetsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int SearchReferenceSetsRequest::ByteSize() const {
+size_t SearchReferenceSetsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReferenceSetsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string assembly_id = 3;
   if (this->assembly_id().size() > 0) {
@@ -2714,31 +2777,32 @@ int SearchReferenceSetsRequest::ByteSize() const {
   }
 
   // repeated string md5checksums = 1;
-  total_size += 1 * this->md5checksums_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->md5checksums_size());
   for (int i = 0; i < this->md5checksums_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->md5checksums(i));
   }
 
   // repeated string accessions = 2;
-  total_size += 1 * this->accessions_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->accessions_size());
   for (int i = 0; i < this->accessions_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->accessions(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SearchReferenceSetsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReferenceSetsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SearchReferenceSetsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SearchReferenceSetsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReferenceSetsRequest>(
           &from);
   if (source == NULL) {
@@ -2746,17 +2810,23 @@ void SearchReferenceSetsRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReferenceSetsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReferenceSetsRequest::MergeFrom(const SearchReferenceSetsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReferenceSetsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  md5checksums_.MergeFrom(from.md5checksums_);
-  accessions_.MergeFrom(from.accessions_);
+}
+
+void SearchReferenceSetsRequest::UnsafeMergeFrom(const SearchReferenceSetsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  md5checksums_.UnsafeMergeFrom(from.md5checksums_);
+  accessions_.UnsafeMergeFrom(from.accessions_);
   if (from.assembly_id().size() > 0) {
     set_assembly_id(from.assembly_id());
   }
@@ -2779,7 +2849,7 @@ void SearchReferenceSetsRequest::CopyFrom(const SearchReferenceSetsRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReferenceSetsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReferenceSetsRequest::IsInitialized() const {
@@ -2793,7 +2863,7 @@ void SearchReferenceSetsRequest::Swap(SearchReferenceSetsRequest* other) {
     InternalSwap(other);
   } else {
     SearchReferenceSetsRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -2831,49 +2901,49 @@ int SearchReferenceSetsRequest::md5checksums_size() const {
 void SearchReferenceSetsRequest::clear_md5checksums() {
   md5checksums_.Clear();
 }
- const ::std::string& SearchReferenceSetsRequest::md5checksums(int index) const {
+const ::std::string& SearchReferenceSetsRequest::md5checksums(int index) const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
   return md5checksums_.Get(index);
 }
- ::std::string* SearchReferenceSetsRequest::mutable_md5checksums(int index) {
+::std::string* SearchReferenceSetsRequest::mutable_md5checksums(int index) {
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
   return md5checksums_.Mutable(index);
 }
- void SearchReferenceSetsRequest::set_md5checksums(int index, const ::std::string& value) {
+void SearchReferenceSetsRequest::set_md5checksums(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
   md5checksums_.Mutable(index)->assign(value);
 }
- void SearchReferenceSetsRequest::set_md5checksums(int index, const char* value) {
+void SearchReferenceSetsRequest::set_md5checksums(int index, const char* value) {
   md5checksums_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
 }
- void SearchReferenceSetsRequest::set_md5checksums(int index, const char* value, size_t size) {
+void SearchReferenceSetsRequest::set_md5checksums(int index, const char* value, size_t size) {
   md5checksums_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
 }
- ::std::string* SearchReferenceSetsRequest::add_md5checksums() {
+::std::string* SearchReferenceSetsRequest::add_md5checksums() {
   // @@protoc_insertion_point(field_add_mutable:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
   return md5checksums_.Add();
 }
- void SearchReferenceSetsRequest::add_md5checksums(const ::std::string& value) {
+void SearchReferenceSetsRequest::add_md5checksums(const ::std::string& value) {
   md5checksums_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
 }
- void SearchReferenceSetsRequest::add_md5checksums(const char* value) {
+void SearchReferenceSetsRequest::add_md5checksums(const char* value) {
   md5checksums_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
 }
- void SearchReferenceSetsRequest::add_md5checksums(const char* value, size_t size) {
+void SearchReferenceSetsRequest::add_md5checksums(const char* value, size_t size) {
   md5checksums_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SearchReferenceSetsRequest::md5checksums() const {
   // @@protoc_insertion_point(field_list:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
   return md5checksums_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SearchReferenceSetsRequest::mutable_md5checksums() {
   // @@protoc_insertion_point(field_mutable_list:google.genomics.v1.SearchReferenceSetsRequest.md5checksums)
   return &md5checksums_;
@@ -2886,49 +2956,49 @@ int SearchReferenceSetsRequest::accessions_size() const {
 void SearchReferenceSetsRequest::clear_accessions() {
   accessions_.Clear();
 }
- const ::std::string& SearchReferenceSetsRequest::accessions(int index) const {
+const ::std::string& SearchReferenceSetsRequest::accessions(int index) const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferenceSetsRequest.accessions)
   return accessions_.Get(index);
 }
- ::std::string* SearchReferenceSetsRequest::mutable_accessions(int index) {
+::std::string* SearchReferenceSetsRequest::mutable_accessions(int index) {
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferenceSetsRequest.accessions)
   return accessions_.Mutable(index);
 }
- void SearchReferenceSetsRequest::set_accessions(int index, const ::std::string& value) {
+void SearchReferenceSetsRequest::set_accessions(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferenceSetsRequest.accessions)
   accessions_.Mutable(index)->assign(value);
 }
- void SearchReferenceSetsRequest::set_accessions(int index, const char* value) {
+void SearchReferenceSetsRequest::set_accessions(int index, const char* value) {
   accessions_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferenceSetsRequest.accessions)
 }
- void SearchReferenceSetsRequest::set_accessions(int index, const char* value, size_t size) {
+void SearchReferenceSetsRequest::set_accessions(int index, const char* value, size_t size) {
   accessions_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferenceSetsRequest.accessions)
 }
- ::std::string* SearchReferenceSetsRequest::add_accessions() {
+::std::string* SearchReferenceSetsRequest::add_accessions() {
   // @@protoc_insertion_point(field_add_mutable:google.genomics.v1.SearchReferenceSetsRequest.accessions)
   return accessions_.Add();
 }
- void SearchReferenceSetsRequest::add_accessions(const ::std::string& value) {
+void SearchReferenceSetsRequest::add_accessions(const ::std::string& value) {
   accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.genomics.v1.SearchReferenceSetsRequest.accessions)
 }
- void SearchReferenceSetsRequest::add_accessions(const char* value) {
+void SearchReferenceSetsRequest::add_accessions(const char* value) {
   accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.genomics.v1.SearchReferenceSetsRequest.accessions)
 }
- void SearchReferenceSetsRequest::add_accessions(const char* value, size_t size) {
+void SearchReferenceSetsRequest::add_accessions(const char* value, size_t size) {
   accessions_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.genomics.v1.SearchReferenceSetsRequest.accessions)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SearchReferenceSetsRequest::accessions() const {
   // @@protoc_insertion_point(field_list:google.genomics.v1.SearchReferenceSetsRequest.accessions)
   return accessions_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SearchReferenceSetsRequest::mutable_accessions() {
   // @@protoc_insertion_point(field_mutable_list:google.genomics.v1.SearchReferenceSetsRequest.accessions)
   return &accessions_;
@@ -2938,46 +3008,46 @@ SearchReferenceSetsRequest::mutable_accessions() {
 void SearchReferenceSetsRequest::clear_assembly_id() {
   assembly_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SearchReferenceSetsRequest::assembly_id() const {
+const ::std::string& SearchReferenceSetsRequest::assembly_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
   return assembly_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SearchReferenceSetsRequest::set_assembly_id(const ::std::string& value) {
+void SearchReferenceSetsRequest::set_assembly_id(const ::std::string& value) {
   
   assembly_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
 }
- void SearchReferenceSetsRequest::set_assembly_id(const char* value) {
+void SearchReferenceSetsRequest::set_assembly_id(const char* value) {
   
   assembly_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
 }
- void SearchReferenceSetsRequest::set_assembly_id(const char* value,
+void SearchReferenceSetsRequest::set_assembly_id(const char* value,
     size_t size) {
   
   assembly_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
 }
- ::std::string* SearchReferenceSetsRequest::mutable_assembly_id() {
+::std::string* SearchReferenceSetsRequest::mutable_assembly_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
   return assembly_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferenceSetsRequest::release_assembly_id() {
+::std::string* SearchReferenceSetsRequest::release_assembly_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
   
   return assembly_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferenceSetsRequest::unsafe_arena_release_assembly_id() {
+::std::string* SearchReferenceSetsRequest::unsafe_arena_release_assembly_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return assembly_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SearchReferenceSetsRequest::set_allocated_assembly_id(::std::string* assembly_id) {
+void SearchReferenceSetsRequest::set_allocated_assembly_id(::std::string* assembly_id) {
   if (assembly_id != NULL) {
     
   } else {
@@ -2987,7 +3057,7 @@ void SearchReferenceSetsRequest::clear_assembly_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.SearchReferenceSetsRequest.assembly_id)
 }
- void SearchReferenceSetsRequest::unsafe_arena_set_allocated_assembly_id(
+void SearchReferenceSetsRequest::unsafe_arena_set_allocated_assembly_id(
     ::std::string* assembly_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (assembly_id != NULL) {
@@ -3004,46 +3074,46 @@ void SearchReferenceSetsRequest::clear_assembly_id() {
 void SearchReferenceSetsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SearchReferenceSetsRequest::page_token() const {
+const ::std::string& SearchReferenceSetsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferenceSetsRequest.page_token)
   return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SearchReferenceSetsRequest::set_page_token(const ::std::string& value) {
+void SearchReferenceSetsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferenceSetsRequest.page_token)
 }
- void SearchReferenceSetsRequest::set_page_token(const char* value) {
+void SearchReferenceSetsRequest::set_page_token(const char* value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferenceSetsRequest.page_token)
 }
- void SearchReferenceSetsRequest::set_page_token(const char* value,
+void SearchReferenceSetsRequest::set_page_token(const char* value,
     size_t size) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferenceSetsRequest.page_token)
 }
- ::std::string* SearchReferenceSetsRequest::mutable_page_token() {
+::std::string* SearchReferenceSetsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferenceSetsRequest.page_token)
   return page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferenceSetsRequest::release_page_token() {
+::std::string* SearchReferenceSetsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.SearchReferenceSetsRequest.page_token)
   
   return page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferenceSetsRequest::unsafe_arena_release_page_token() {
+::std::string* SearchReferenceSetsRequest::unsafe_arena_release_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.SearchReferenceSetsRequest.page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SearchReferenceSetsRequest::set_allocated_page_token(::std::string* page_token) {
+void SearchReferenceSetsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -3053,7 +3123,7 @@ void SearchReferenceSetsRequest::clear_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.SearchReferenceSetsRequest.page_token)
 }
- void SearchReferenceSetsRequest::unsafe_arena_set_allocated_page_token(
+void SearchReferenceSetsRequest::unsafe_arena_set_allocated_page_token(
     ::std::string* page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (page_token != NULL) {
@@ -3070,16 +3140,19 @@ void SearchReferenceSetsRequest::clear_page_token() {
 void SearchReferenceSetsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 SearchReferenceSetsRequest::page_size() const {
+::google::protobuf::int32 SearchReferenceSetsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferenceSetsRequest.page_size)
   return page_size_;
 }
- void SearchReferenceSetsRequest::set_page_size(::google::protobuf::int32 value) {
+void SearchReferenceSetsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferenceSetsRequest.page_size)
 }
 
+inline const SearchReferenceSetsRequest* SearchReferenceSetsRequest::internal_default_instance() {
+  return &SearchReferenceSetsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3091,36 +3164,36 @@ const int SearchReferenceSetsResponse::kNextPageTokenFieldNumber;
 
 SearchReferenceSetsResponse::SearchReferenceSetsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReferenceSetsResponse)
 }
-
 SearchReferenceSetsResponse::SearchReferenceSetsResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   reference_sets_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReferenceSetsResponse)
 }
 
 void SearchReferenceSetsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SearchReferenceSetsResponse::SearchReferenceSetsResponse(const SearchReferenceSetsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReferenceSetsResponse)
 }
 
 void SearchReferenceSetsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 SearchReferenceSetsResponse::~SearchReferenceSetsResponse() {
@@ -3129,13 +3202,12 @@ SearchReferenceSetsResponse::~SearchReferenceSetsResponse() {
 }
 
 void SearchReferenceSetsResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void SearchReferenceSetsResponse::ArenaDtor(void* object) {
@@ -3155,11 +3227,11 @@ const ::google::protobuf::Descriptor* SearchReferenceSetsResponse::descriptor() 
 }
 
 const SearchReferenceSetsResponse& SearchReferenceSetsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-SearchReferenceSetsResponse* SearchReferenceSetsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SearchReferenceSetsResponse> SearchReferenceSetsResponse_default_instance_;
 
 SearchReferenceSetsResponse* SearchReferenceSetsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReferenceSetsResponse>(arena);
@@ -3259,6 +3331,7 @@ void SearchReferenceSetsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SearchReferenceSetsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.SearchReferenceSetsResponse)
   // repeated .google.genomics.v1.ReferenceSet reference_sets = 1;
   for (unsigned int i = 0, n = this->reference_sets_size(); i < n; i++) {
@@ -3282,9 +3355,9 @@ void SearchReferenceSetsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int SearchReferenceSetsResponse::ByteSize() const {
+size_t SearchReferenceSetsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReferenceSetsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -3294,25 +3367,27 @@ int SearchReferenceSetsResponse::ByteSize() const {
   }
 
   // repeated .google.genomics.v1.ReferenceSet reference_sets = 1;
-  total_size += 1 * this->reference_sets_size();
-  for (int i = 0; i < this->reference_sets_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->reference_sets(i));
+  {
+    unsigned int count = this->reference_sets_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->reference_sets(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SearchReferenceSetsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReferenceSetsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SearchReferenceSetsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SearchReferenceSetsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReferenceSetsResponse>(
           &from);
   if (source == NULL) {
@@ -3320,15 +3395,21 @@ void SearchReferenceSetsResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReferenceSetsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReferenceSetsResponse::MergeFrom(const SearchReferenceSetsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReferenceSetsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SearchReferenceSetsResponse::UnsafeMergeFrom(const SearchReferenceSetsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   reference_sets_.MergeFrom(from.reference_sets_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -3346,7 +3427,7 @@ void SearchReferenceSetsResponse::CopyFrom(const SearchReferenceSetsResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReferenceSetsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReferenceSetsResponse::IsInitialized() const {
@@ -3360,7 +3441,7 @@ void SearchReferenceSetsResponse::Swap(SearchReferenceSetsResponse* other) {
     InternalSwap(other);
   } else {
     SearchReferenceSetsResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3422,46 +3503,46 @@ SearchReferenceSetsResponse::reference_sets() const {
 void SearchReferenceSetsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SearchReferenceSetsResponse::next_page_token() const {
+const ::std::string& SearchReferenceSetsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
   return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SearchReferenceSetsResponse::set_next_page_token(const ::std::string& value) {
+void SearchReferenceSetsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
 }
- void SearchReferenceSetsResponse::set_next_page_token(const char* value) {
+void SearchReferenceSetsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
 }
- void SearchReferenceSetsResponse::set_next_page_token(const char* value,
+void SearchReferenceSetsResponse::set_next_page_token(const char* value,
     size_t size) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
 }
- ::std::string* SearchReferenceSetsResponse::mutable_next_page_token() {
+::std::string* SearchReferenceSetsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
   return next_page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferenceSetsResponse::release_next_page_token() {
+::std::string* SearchReferenceSetsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
   
   return next_page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferenceSetsResponse::unsafe_arena_release_next_page_token() {
+::std::string* SearchReferenceSetsResponse::unsafe_arena_release_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return next_page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SearchReferenceSetsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void SearchReferenceSetsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -3471,7 +3552,7 @@ void SearchReferenceSetsResponse::clear_next_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
 }
- void SearchReferenceSetsResponse::unsafe_arena_set_allocated_next_page_token(
+void SearchReferenceSetsResponse::unsafe_arena_set_allocated_next_page_token(
     ::std::string* next_page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (next_page_token != NULL) {
@@ -3484,6 +3565,9 @@ void SearchReferenceSetsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReferenceSetsResponse.next_page_token)
 }
 
+inline const SearchReferenceSetsResponse* SearchReferenceSetsResponse::internal_default_instance() {
+  return &SearchReferenceSetsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3494,35 +3578,35 @@ const int GetReferenceSetRequest::kReferenceSetIdFieldNumber;
 
 GetReferenceSetRequest::GetReferenceSetRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.GetReferenceSetRequest)
 }
-
 GetReferenceSetRequest::GetReferenceSetRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.GetReferenceSetRequest)
 }
 
 void GetReferenceSetRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetReferenceSetRequest::GetReferenceSetRequest(const GetReferenceSetRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.GetReferenceSetRequest)
 }
 
 void GetReferenceSetRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   reference_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetReferenceSetRequest::~GetReferenceSetRequest() {
@@ -3531,13 +3615,12 @@ GetReferenceSetRequest::~GetReferenceSetRequest() {
 }
 
 void GetReferenceSetRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  reference_set_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  reference_set_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void GetReferenceSetRequest::ArenaDtor(void* object) {
@@ -3557,11 +3640,11 @@ const ::google::protobuf::Descriptor* GetReferenceSetRequest::descriptor() {
 }
 
 const GetReferenceSetRequest& GetReferenceSetRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-GetReferenceSetRequest* GetReferenceSetRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetReferenceSetRequest> GetReferenceSetRequest_default_instance_;
 
 GetReferenceSetRequest* GetReferenceSetRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetReferenceSetRequest>(arena);
@@ -3637,6 +3720,7 @@ void GetReferenceSetRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetReferenceSetRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.GetReferenceSetRequest)
   // optional string reference_set_id = 1;
   if (this->reference_set_id().size() > 0) {
@@ -3653,9 +3737,9 @@ void GetReferenceSetRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetReferenceSetRequest::ByteSize() const {
+size_t GetReferenceSetRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.GetReferenceSetRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string reference_set_id = 1;
   if (this->reference_set_id().size() > 0) {
@@ -3664,18 +3748,17 @@ int GetReferenceSetRequest::ByteSize() const {
         this->reference_set_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetReferenceSetRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.GetReferenceSetRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetReferenceSetRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetReferenceSetRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetReferenceSetRequest>(
           &from);
   if (source == NULL) {
@@ -3683,15 +3766,21 @@ void GetReferenceSetRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.GetReferenceSetRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetReferenceSetRequest::MergeFrom(const GetReferenceSetRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.GetReferenceSetRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetReferenceSetRequest::UnsafeMergeFrom(const GetReferenceSetRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.reference_set_id().size() > 0) {
     set_reference_set_id(from.reference_set_id());
   }
@@ -3708,7 +3797,7 @@ void GetReferenceSetRequest::CopyFrom(const GetReferenceSetRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.GetReferenceSetRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetReferenceSetRequest::IsInitialized() const {
@@ -3722,7 +3811,7 @@ void GetReferenceSetRequest::Swap(GetReferenceSetRequest* other) {
     InternalSwap(other);
   } else {
     GetReferenceSetRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3753,46 +3842,46 @@ void GetReferenceSetRequest::InternalSwap(GetReferenceSetRequest* other) {
 void GetReferenceSetRequest::clear_reference_set_id() {
   reference_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& GetReferenceSetRequest::reference_set_id() const {
+const ::std::string& GetReferenceSetRequest::reference_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
   return reference_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetReferenceSetRequest::set_reference_set_id(const ::std::string& value) {
+void GetReferenceSetRequest::set_reference_set_id(const ::std::string& value) {
   
   reference_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
 }
- void GetReferenceSetRequest::set_reference_set_id(const char* value) {
+void GetReferenceSetRequest::set_reference_set_id(const char* value) {
   
   reference_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
 }
- void GetReferenceSetRequest::set_reference_set_id(const char* value,
+void GetReferenceSetRequest::set_reference_set_id(const char* value,
     size_t size) {
   
   reference_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
 }
- ::std::string* GetReferenceSetRequest::mutable_reference_set_id() {
+::std::string* GetReferenceSetRequest::mutable_reference_set_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
   return reference_set_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetReferenceSetRequest::release_reference_set_id() {
+::std::string* GetReferenceSetRequest::release_reference_set_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
   
   return reference_set_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetReferenceSetRequest::unsafe_arena_release_reference_set_id() {
+::std::string* GetReferenceSetRequest::unsafe_arena_release_reference_set_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return reference_set_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void GetReferenceSetRequest::set_allocated_reference_set_id(::std::string* reference_set_id) {
+void GetReferenceSetRequest::set_allocated_reference_set_id(::std::string* reference_set_id) {
   if (reference_set_id != NULL) {
     
   } else {
@@ -3802,7 +3891,7 @@ void GetReferenceSetRequest::clear_reference_set_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
 }
- void GetReferenceSetRequest::unsafe_arena_set_allocated_reference_set_id(
+void GetReferenceSetRequest::unsafe_arena_set_allocated_reference_set_id(
     ::std::string* reference_set_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (reference_set_id != NULL) {
@@ -3815,6 +3904,9 @@ void GetReferenceSetRequest::clear_reference_set_id() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.GetReferenceSetRequest.reference_set_id)
 }
 
+inline const GetReferenceSetRequest* GetReferenceSetRequest::internal_default_instance() {
+  return &GetReferenceSetRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3829,39 +3921,39 @@ const int SearchReferencesRequest::kPageSizeFieldNumber;
 
 SearchReferencesRequest::SearchReferencesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReferencesRequest)
 }
-
 SearchReferencesRequest::SearchReferencesRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   md5checksums_(arena),
   accessions_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReferencesRequest)
 }
 
 void SearchReferencesRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SearchReferencesRequest::SearchReferencesRequest(const SearchReferencesRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReferencesRequest)
 }
 
 void SearchReferencesRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   reference_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 SearchReferencesRequest::~SearchReferencesRequest() {
@@ -3870,14 +3962,13 @@ SearchReferencesRequest::~SearchReferencesRequest() {
 }
 
 void SearchReferencesRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  reference_set_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  reference_set_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void SearchReferencesRequest::ArenaDtor(void* object) {
@@ -3897,11 +3988,11 @@ const ::google::protobuf::Descriptor* SearchReferencesRequest::descriptor() {
 }
 
 const SearchReferencesRequest& SearchReferencesRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-SearchReferencesRequest* SearchReferencesRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SearchReferencesRequest> SearchReferencesRequest_default_instance_;
 
 SearchReferencesRequest* SearchReferencesRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReferencesRequest>(arena);
@@ -4002,10 +4093,10 @@ bool SearchReferencesRequest::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4087,6 +4178,7 @@ void SearchReferencesRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SearchReferencesRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.SearchReferencesRequest)
   // repeated string md5checksums = 1;
   for (int i = 0; i < this->md5checksums_size(); i++) {
@@ -4139,9 +4231,9 @@ void SearchReferencesRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int SearchReferencesRequest::ByteSize() const {
+size_t SearchReferencesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReferencesRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string reference_set_id = 3;
   if (this->reference_set_id().size() > 0) {
@@ -4165,31 +4257,32 @@ int SearchReferencesRequest::ByteSize() const {
   }
 
   // repeated string md5checksums = 1;
-  total_size += 1 * this->md5checksums_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->md5checksums_size());
   for (int i = 0; i < this->md5checksums_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->md5checksums(i));
   }
 
   // repeated string accessions = 2;
-  total_size += 1 * this->accessions_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->accessions_size());
   for (int i = 0; i < this->accessions_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->accessions(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SearchReferencesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReferencesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SearchReferencesRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SearchReferencesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReferencesRequest>(
           &from);
   if (source == NULL) {
@@ -4197,17 +4290,23 @@ void SearchReferencesRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReferencesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReferencesRequest::MergeFrom(const SearchReferencesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReferencesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  md5checksums_.MergeFrom(from.md5checksums_);
-  accessions_.MergeFrom(from.accessions_);
+}
+
+void SearchReferencesRequest::UnsafeMergeFrom(const SearchReferencesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  md5checksums_.UnsafeMergeFrom(from.md5checksums_);
+  accessions_.UnsafeMergeFrom(from.accessions_);
   if (from.reference_set_id().size() > 0) {
     set_reference_set_id(from.reference_set_id());
   }
@@ -4230,7 +4329,7 @@ void SearchReferencesRequest::CopyFrom(const SearchReferencesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReferencesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReferencesRequest::IsInitialized() const {
@@ -4244,7 +4343,7 @@ void SearchReferencesRequest::Swap(SearchReferencesRequest* other) {
     InternalSwap(other);
   } else {
     SearchReferencesRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4282,49 +4381,49 @@ int SearchReferencesRequest::md5checksums_size() const {
 void SearchReferencesRequest::clear_md5checksums() {
   md5checksums_.Clear();
 }
- const ::std::string& SearchReferencesRequest::md5checksums(int index) const {
+const ::std::string& SearchReferencesRequest::md5checksums(int index) const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferencesRequest.md5checksums)
   return md5checksums_.Get(index);
 }
- ::std::string* SearchReferencesRequest::mutable_md5checksums(int index) {
+::std::string* SearchReferencesRequest::mutable_md5checksums(int index) {
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferencesRequest.md5checksums)
   return md5checksums_.Mutable(index);
 }
- void SearchReferencesRequest::set_md5checksums(int index, const ::std::string& value) {
+void SearchReferencesRequest::set_md5checksums(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferencesRequest.md5checksums)
   md5checksums_.Mutable(index)->assign(value);
 }
- void SearchReferencesRequest::set_md5checksums(int index, const char* value) {
+void SearchReferencesRequest::set_md5checksums(int index, const char* value) {
   md5checksums_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferencesRequest.md5checksums)
 }
- void SearchReferencesRequest::set_md5checksums(int index, const char* value, size_t size) {
+void SearchReferencesRequest::set_md5checksums(int index, const char* value, size_t size) {
   md5checksums_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferencesRequest.md5checksums)
 }
- ::std::string* SearchReferencesRequest::add_md5checksums() {
+::std::string* SearchReferencesRequest::add_md5checksums() {
   // @@protoc_insertion_point(field_add_mutable:google.genomics.v1.SearchReferencesRequest.md5checksums)
   return md5checksums_.Add();
 }
- void SearchReferencesRequest::add_md5checksums(const ::std::string& value) {
+void SearchReferencesRequest::add_md5checksums(const ::std::string& value) {
   md5checksums_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.genomics.v1.SearchReferencesRequest.md5checksums)
 }
- void SearchReferencesRequest::add_md5checksums(const char* value) {
+void SearchReferencesRequest::add_md5checksums(const char* value) {
   md5checksums_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.genomics.v1.SearchReferencesRequest.md5checksums)
 }
- void SearchReferencesRequest::add_md5checksums(const char* value, size_t size) {
+void SearchReferencesRequest::add_md5checksums(const char* value, size_t size) {
   md5checksums_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.genomics.v1.SearchReferencesRequest.md5checksums)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SearchReferencesRequest::md5checksums() const {
   // @@protoc_insertion_point(field_list:google.genomics.v1.SearchReferencesRequest.md5checksums)
   return md5checksums_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SearchReferencesRequest::mutable_md5checksums() {
   // @@protoc_insertion_point(field_mutable_list:google.genomics.v1.SearchReferencesRequest.md5checksums)
   return &md5checksums_;
@@ -4337,49 +4436,49 @@ int SearchReferencesRequest::accessions_size() const {
 void SearchReferencesRequest::clear_accessions() {
   accessions_.Clear();
 }
- const ::std::string& SearchReferencesRequest::accessions(int index) const {
+const ::std::string& SearchReferencesRequest::accessions(int index) const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferencesRequest.accessions)
   return accessions_.Get(index);
 }
- ::std::string* SearchReferencesRequest::mutable_accessions(int index) {
+::std::string* SearchReferencesRequest::mutable_accessions(int index) {
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferencesRequest.accessions)
   return accessions_.Mutable(index);
 }
- void SearchReferencesRequest::set_accessions(int index, const ::std::string& value) {
+void SearchReferencesRequest::set_accessions(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferencesRequest.accessions)
   accessions_.Mutable(index)->assign(value);
 }
- void SearchReferencesRequest::set_accessions(int index, const char* value) {
+void SearchReferencesRequest::set_accessions(int index, const char* value) {
   accessions_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferencesRequest.accessions)
 }
- void SearchReferencesRequest::set_accessions(int index, const char* value, size_t size) {
+void SearchReferencesRequest::set_accessions(int index, const char* value, size_t size) {
   accessions_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferencesRequest.accessions)
 }
- ::std::string* SearchReferencesRequest::add_accessions() {
+::std::string* SearchReferencesRequest::add_accessions() {
   // @@protoc_insertion_point(field_add_mutable:google.genomics.v1.SearchReferencesRequest.accessions)
   return accessions_.Add();
 }
- void SearchReferencesRequest::add_accessions(const ::std::string& value) {
+void SearchReferencesRequest::add_accessions(const ::std::string& value) {
   accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.genomics.v1.SearchReferencesRequest.accessions)
 }
- void SearchReferencesRequest::add_accessions(const char* value) {
+void SearchReferencesRequest::add_accessions(const char* value) {
   accessions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.genomics.v1.SearchReferencesRequest.accessions)
 }
- void SearchReferencesRequest::add_accessions(const char* value, size_t size) {
+void SearchReferencesRequest::add_accessions(const char* value, size_t size) {
   accessions_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.genomics.v1.SearchReferencesRequest.accessions)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 SearchReferencesRequest::accessions() const {
   // @@protoc_insertion_point(field_list:google.genomics.v1.SearchReferencesRequest.accessions)
   return accessions_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 SearchReferencesRequest::mutable_accessions() {
   // @@protoc_insertion_point(field_mutable_list:google.genomics.v1.SearchReferencesRequest.accessions)
   return &accessions_;
@@ -4389,46 +4488,46 @@ SearchReferencesRequest::mutable_accessions() {
 void SearchReferencesRequest::clear_reference_set_id() {
   reference_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SearchReferencesRequest::reference_set_id() const {
+const ::std::string& SearchReferencesRequest::reference_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferencesRequest.reference_set_id)
   return reference_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SearchReferencesRequest::set_reference_set_id(const ::std::string& value) {
+void SearchReferencesRequest::set_reference_set_id(const ::std::string& value) {
   
   reference_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferencesRequest.reference_set_id)
 }
- void SearchReferencesRequest::set_reference_set_id(const char* value) {
+void SearchReferencesRequest::set_reference_set_id(const char* value) {
   
   reference_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferencesRequest.reference_set_id)
 }
- void SearchReferencesRequest::set_reference_set_id(const char* value,
+void SearchReferencesRequest::set_reference_set_id(const char* value,
     size_t size) {
   
   reference_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferencesRequest.reference_set_id)
 }
- ::std::string* SearchReferencesRequest::mutable_reference_set_id() {
+::std::string* SearchReferencesRequest::mutable_reference_set_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferencesRequest.reference_set_id)
   return reference_set_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferencesRequest::release_reference_set_id() {
+::std::string* SearchReferencesRequest::release_reference_set_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.SearchReferencesRequest.reference_set_id)
   
   return reference_set_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferencesRequest::unsafe_arena_release_reference_set_id() {
+::std::string* SearchReferencesRequest::unsafe_arena_release_reference_set_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.SearchReferencesRequest.reference_set_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return reference_set_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SearchReferencesRequest::set_allocated_reference_set_id(::std::string* reference_set_id) {
+void SearchReferencesRequest::set_allocated_reference_set_id(::std::string* reference_set_id) {
   if (reference_set_id != NULL) {
     
   } else {
@@ -4438,7 +4537,7 @@ void SearchReferencesRequest::clear_reference_set_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.SearchReferencesRequest.reference_set_id)
 }
- void SearchReferencesRequest::unsafe_arena_set_allocated_reference_set_id(
+void SearchReferencesRequest::unsafe_arena_set_allocated_reference_set_id(
     ::std::string* reference_set_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (reference_set_id != NULL) {
@@ -4455,46 +4554,46 @@ void SearchReferencesRequest::clear_reference_set_id() {
 void SearchReferencesRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SearchReferencesRequest::page_token() const {
+const ::std::string& SearchReferencesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferencesRequest.page_token)
   return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SearchReferencesRequest::set_page_token(const ::std::string& value) {
+void SearchReferencesRequest::set_page_token(const ::std::string& value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferencesRequest.page_token)
 }
- void SearchReferencesRequest::set_page_token(const char* value) {
+void SearchReferencesRequest::set_page_token(const char* value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferencesRequest.page_token)
 }
- void SearchReferencesRequest::set_page_token(const char* value,
+void SearchReferencesRequest::set_page_token(const char* value,
     size_t size) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferencesRequest.page_token)
 }
- ::std::string* SearchReferencesRequest::mutable_page_token() {
+::std::string* SearchReferencesRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferencesRequest.page_token)
   return page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferencesRequest::release_page_token() {
+::std::string* SearchReferencesRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.SearchReferencesRequest.page_token)
   
   return page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferencesRequest::unsafe_arena_release_page_token() {
+::std::string* SearchReferencesRequest::unsafe_arena_release_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.SearchReferencesRequest.page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SearchReferencesRequest::set_allocated_page_token(::std::string* page_token) {
+void SearchReferencesRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -4504,7 +4603,7 @@ void SearchReferencesRequest::clear_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.SearchReferencesRequest.page_token)
 }
- void SearchReferencesRequest::unsafe_arena_set_allocated_page_token(
+void SearchReferencesRequest::unsafe_arena_set_allocated_page_token(
     ::std::string* page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (page_token != NULL) {
@@ -4521,16 +4620,19 @@ void SearchReferencesRequest::clear_page_token() {
 void SearchReferencesRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 SearchReferencesRequest::page_size() const {
+::google::protobuf::int32 SearchReferencesRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferencesRequest.page_size)
   return page_size_;
 }
- void SearchReferencesRequest::set_page_size(::google::protobuf::int32 value) {
+void SearchReferencesRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferencesRequest.page_size)
 }
 
+inline const SearchReferencesRequest* SearchReferencesRequest::internal_default_instance() {
+  return &SearchReferencesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4542,36 +4644,36 @@ const int SearchReferencesResponse::kNextPageTokenFieldNumber;
 
 SearchReferencesResponse::SearchReferencesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReferencesResponse)
 }
-
 SearchReferencesResponse::SearchReferencesResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   references_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReferencesResponse)
 }
 
 void SearchReferencesResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SearchReferencesResponse::SearchReferencesResponse(const SearchReferencesResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReferencesResponse)
 }
 
 void SearchReferencesResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 SearchReferencesResponse::~SearchReferencesResponse() {
@@ -4580,13 +4682,12 @@ SearchReferencesResponse::~SearchReferencesResponse() {
 }
 
 void SearchReferencesResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void SearchReferencesResponse::ArenaDtor(void* object) {
@@ -4606,11 +4707,11 @@ const ::google::protobuf::Descriptor* SearchReferencesResponse::descriptor() {
 }
 
 const SearchReferencesResponse& SearchReferencesResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-SearchReferencesResponse* SearchReferencesResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SearchReferencesResponse> SearchReferencesResponse_default_instance_;
 
 SearchReferencesResponse* SearchReferencesResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReferencesResponse>(arena);
@@ -4710,6 +4811,7 @@ void SearchReferencesResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SearchReferencesResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.SearchReferencesResponse)
   // repeated .google.genomics.v1.Reference references = 1;
   for (unsigned int i = 0, n = this->references_size(); i < n; i++) {
@@ -4733,9 +4835,9 @@ void SearchReferencesResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int SearchReferencesResponse::ByteSize() const {
+size_t SearchReferencesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReferencesResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -4745,25 +4847,27 @@ int SearchReferencesResponse::ByteSize() const {
   }
 
   // repeated .google.genomics.v1.Reference references = 1;
-  total_size += 1 * this->references_size();
-  for (int i = 0; i < this->references_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->references(i));
+  {
+    unsigned int count = this->references_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->references(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SearchReferencesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReferencesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SearchReferencesResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SearchReferencesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReferencesResponse>(
           &from);
   if (source == NULL) {
@@ -4771,15 +4875,21 @@ void SearchReferencesResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReferencesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReferencesResponse::MergeFrom(const SearchReferencesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReferencesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SearchReferencesResponse::UnsafeMergeFrom(const SearchReferencesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   references_.MergeFrom(from.references_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -4797,7 +4907,7 @@ void SearchReferencesResponse::CopyFrom(const SearchReferencesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReferencesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReferencesResponse::IsInitialized() const {
@@ -4811,7 +4921,7 @@ void SearchReferencesResponse::Swap(SearchReferencesResponse* other) {
     InternalSwap(other);
   } else {
     SearchReferencesResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4873,46 +4983,46 @@ SearchReferencesResponse::references() const {
 void SearchReferencesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& SearchReferencesResponse::next_page_token() const {
+const ::std::string& SearchReferencesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReferencesResponse.next_page_token)
   return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SearchReferencesResponse::set_next_page_token(const ::std::string& value) {
+void SearchReferencesResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReferencesResponse.next_page_token)
 }
- void SearchReferencesResponse::set_next_page_token(const char* value) {
+void SearchReferencesResponse::set_next_page_token(const char* value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.SearchReferencesResponse.next_page_token)
 }
- void SearchReferencesResponse::set_next_page_token(const char* value,
+void SearchReferencesResponse::set_next_page_token(const char* value,
     size_t size) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.SearchReferencesResponse.next_page_token)
 }
- ::std::string* SearchReferencesResponse::mutable_next_page_token() {
+::std::string* SearchReferencesResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.SearchReferencesResponse.next_page_token)
   return next_page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferencesResponse::release_next_page_token() {
+::std::string* SearchReferencesResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.SearchReferencesResponse.next_page_token)
   
   return next_page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* SearchReferencesResponse::unsafe_arena_release_next_page_token() {
+::std::string* SearchReferencesResponse::unsafe_arena_release_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.SearchReferencesResponse.next_page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return next_page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void SearchReferencesResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void SearchReferencesResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -4922,7 +5032,7 @@ void SearchReferencesResponse::clear_next_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.SearchReferencesResponse.next_page_token)
 }
- void SearchReferencesResponse::unsafe_arena_set_allocated_next_page_token(
+void SearchReferencesResponse::unsafe_arena_set_allocated_next_page_token(
     ::std::string* next_page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (next_page_token != NULL) {
@@ -4935,6 +5045,9 @@ void SearchReferencesResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReferencesResponse.next_page_token)
 }
 
+inline const SearchReferencesResponse* SearchReferencesResponse::internal_default_instance() {
+  return &SearchReferencesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4945,35 +5058,35 @@ const int GetReferenceRequest::kReferenceIdFieldNumber;
 
 GetReferenceRequest::GetReferenceRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.GetReferenceRequest)
 }
-
 GetReferenceRequest::GetReferenceRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.GetReferenceRequest)
 }
 
 void GetReferenceRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetReferenceRequest::GetReferenceRequest(const GetReferenceRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.GetReferenceRequest)
 }
 
 void GetReferenceRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   reference_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetReferenceRequest::~GetReferenceRequest() {
@@ -4982,13 +5095,12 @@ GetReferenceRequest::~GetReferenceRequest() {
 }
 
 void GetReferenceRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  reference_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  reference_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void GetReferenceRequest::ArenaDtor(void* object) {
@@ -5008,11 +5120,11 @@ const ::google::protobuf::Descriptor* GetReferenceRequest::descriptor() {
 }
 
 const GetReferenceRequest& GetReferenceRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-GetReferenceRequest* GetReferenceRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetReferenceRequest> GetReferenceRequest_default_instance_;
 
 GetReferenceRequest* GetReferenceRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetReferenceRequest>(arena);
@@ -5088,6 +5200,7 @@ void GetReferenceRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetReferenceRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.GetReferenceRequest)
   // optional string reference_id = 1;
   if (this->reference_id().size() > 0) {
@@ -5104,9 +5217,9 @@ void GetReferenceRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetReferenceRequest::ByteSize() const {
+size_t GetReferenceRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.GetReferenceRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string reference_id = 1;
   if (this->reference_id().size() > 0) {
@@ -5115,18 +5228,17 @@ int GetReferenceRequest::ByteSize() const {
         this->reference_id());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetReferenceRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.GetReferenceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetReferenceRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetReferenceRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetReferenceRequest>(
           &from);
   if (source == NULL) {
@@ -5134,15 +5246,21 @@ void GetReferenceRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.GetReferenceRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetReferenceRequest::MergeFrom(const GetReferenceRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.GetReferenceRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetReferenceRequest::UnsafeMergeFrom(const GetReferenceRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.reference_id().size() > 0) {
     set_reference_id(from.reference_id());
   }
@@ -5159,7 +5277,7 @@ void GetReferenceRequest::CopyFrom(const GetReferenceRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.GetReferenceRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetReferenceRequest::IsInitialized() const {
@@ -5173,7 +5291,7 @@ void GetReferenceRequest::Swap(GetReferenceRequest* other) {
     InternalSwap(other);
   } else {
     GetReferenceRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -5204,46 +5322,46 @@ void GetReferenceRequest::InternalSwap(GetReferenceRequest* other) {
 void GetReferenceRequest::clear_reference_id() {
   reference_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& GetReferenceRequest::reference_id() const {
+const ::std::string& GetReferenceRequest::reference_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.GetReferenceRequest.reference_id)
   return reference_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetReferenceRequest::set_reference_id(const ::std::string& value) {
+void GetReferenceRequest::set_reference_id(const ::std::string& value) {
   
   reference_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.GetReferenceRequest.reference_id)
 }
- void GetReferenceRequest::set_reference_id(const char* value) {
+void GetReferenceRequest::set_reference_id(const char* value) {
   
   reference_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.GetReferenceRequest.reference_id)
 }
- void GetReferenceRequest::set_reference_id(const char* value,
+void GetReferenceRequest::set_reference_id(const char* value,
     size_t size) {
   
   reference_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.GetReferenceRequest.reference_id)
 }
- ::std::string* GetReferenceRequest::mutable_reference_id() {
+::std::string* GetReferenceRequest::mutable_reference_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.GetReferenceRequest.reference_id)
   return reference_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetReferenceRequest::release_reference_id() {
+::std::string* GetReferenceRequest::release_reference_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.GetReferenceRequest.reference_id)
   
   return reference_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetReferenceRequest::unsafe_arena_release_reference_id() {
+::std::string* GetReferenceRequest::unsafe_arena_release_reference_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.GetReferenceRequest.reference_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return reference_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void GetReferenceRequest::set_allocated_reference_id(::std::string* reference_id) {
+void GetReferenceRequest::set_allocated_reference_id(::std::string* reference_id) {
   if (reference_id != NULL) {
     
   } else {
@@ -5253,7 +5371,7 @@ void GetReferenceRequest::clear_reference_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.GetReferenceRequest.reference_id)
 }
- void GetReferenceRequest::unsafe_arena_set_allocated_reference_id(
+void GetReferenceRequest::unsafe_arena_set_allocated_reference_id(
     ::std::string* reference_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (reference_id != NULL) {
@@ -5266,6 +5384,9 @@ void GetReferenceRequest::clear_reference_id() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.GetReferenceRequest.reference_id)
 }
 
+inline const GetReferenceRequest* GetReferenceRequest::internal_default_instance() {
+  return &GetReferenceRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5280,39 +5401,38 @@ const int ListBasesRequest::kPageSizeFieldNumber;
 
 ListBasesRequest::ListBasesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ListBasesRequest)
 }
-
 ListBasesRequest::ListBasesRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ListBasesRequest)
 }
 
 void ListBasesRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListBasesRequest::ListBasesRequest(const ListBasesRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ListBasesRequest)
 }
 
 void ListBasesRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   reference_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  start_ = GOOGLE_LONGLONG(0);
-  end_ = GOOGLE_LONGLONG(0);
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
+  ::memset(&start_, 0, reinterpret_cast<char*>(&page_size_) -
+    reinterpret_cast<char*>(&start_) + sizeof(page_size_));
+  _cached_size_ = 0;
 }
 
 ListBasesRequest::~ListBasesRequest() {
@@ -5321,14 +5441,13 @@ ListBasesRequest::~ListBasesRequest() {
 }
 
 void ListBasesRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  reference_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  reference_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListBasesRequest::ArenaDtor(void* object) {
@@ -5348,11 +5467,11 @@ const ::google::protobuf::Descriptor* ListBasesRequest::descriptor() {
 }
 
 const ListBasesRequest& ListBasesRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-ListBasesRequest* ListBasesRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListBasesRequest> ListBasesRequest_default_instance_;
 
 ListBasesRequest* ListBasesRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListBasesRequest>(arena);
@@ -5372,14 +5491,13 @@ void ListBasesRequest::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
-  ZR_(start_, end_);
+  ZR_(start_, page_size_);
   reference_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_size_ = 0;
 
 #undef ZR_HELPER_
 #undef ZR_
@@ -5416,10 +5534,10 @@ bool ListBasesRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_start:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &start_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5431,10 +5549,10 @@ bool ListBasesRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_end:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &end_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5463,10 +5581,10 @@ bool ListBasesRequest::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5538,6 +5656,7 @@ void ListBasesRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListBasesRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.ListBasesRequest)
   // optional string reference_id = 1;
   if (this->reference_id().size() > 0) {
@@ -5580,9 +5699,9 @@ void ListBasesRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListBasesRequest::ByteSize() const {
+size_t ListBasesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.ListBasesRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string reference_id = 1;
   if (this->reference_id().size() > 0) {
@@ -5619,18 +5738,17 @@ int ListBasesRequest::ByteSize() const {
         this->page_size());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListBasesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ListBasesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListBasesRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListBasesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListBasesRequest>(
           &from);
   if (source == NULL) {
@@ -5638,15 +5756,21 @@ void ListBasesRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ListBasesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListBasesRequest::MergeFrom(const ListBasesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ListBasesRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListBasesRequest::UnsafeMergeFrom(const ListBasesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.reference_id().size() > 0) {
     set_reference_id(from.reference_id());
   }
@@ -5675,7 +5799,7 @@ void ListBasesRequest::CopyFrom(const ListBasesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ListBasesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListBasesRequest::IsInitialized() const {
@@ -5689,7 +5813,7 @@ void ListBasesRequest::Swap(ListBasesRequest* other) {
     InternalSwap(other);
   } else {
     ListBasesRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -5724,46 +5848,46 @@ void ListBasesRequest::InternalSwap(ListBasesRequest* other) {
 void ListBasesRequest::clear_reference_id() {
   reference_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListBasesRequest::reference_id() const {
+const ::std::string& ListBasesRequest::reference_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesRequest.reference_id)
   return reference_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBasesRequest::set_reference_id(const ::std::string& value) {
+void ListBasesRequest::set_reference_id(const ::std::string& value) {
   
   reference_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesRequest.reference_id)
 }
- void ListBasesRequest::set_reference_id(const char* value) {
+void ListBasesRequest::set_reference_id(const char* value) {
   
   reference_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ListBasesRequest.reference_id)
 }
- void ListBasesRequest::set_reference_id(const char* value,
+void ListBasesRequest::set_reference_id(const char* value,
     size_t size) {
   
   reference_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ListBasesRequest.reference_id)
 }
- ::std::string* ListBasesRequest::mutable_reference_id() {
+::std::string* ListBasesRequest::mutable_reference_id() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ListBasesRequest.reference_id)
   return reference_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesRequest::release_reference_id() {
+::std::string* ListBasesRequest::release_reference_id() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ListBasesRequest.reference_id)
   
   return reference_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesRequest::unsafe_arena_release_reference_id() {
+::std::string* ListBasesRequest::unsafe_arena_release_reference_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ListBasesRequest.reference_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return reference_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListBasesRequest::set_allocated_reference_id(::std::string* reference_id) {
+void ListBasesRequest::set_allocated_reference_id(::std::string* reference_id) {
   if (reference_id != NULL) {
     
   } else {
@@ -5773,7 +5897,7 @@ void ListBasesRequest::clear_reference_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ListBasesRequest.reference_id)
 }
- void ListBasesRequest::unsafe_arena_set_allocated_reference_id(
+void ListBasesRequest::unsafe_arena_set_allocated_reference_id(
     ::std::string* reference_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (reference_id != NULL) {
@@ -5790,11 +5914,11 @@ void ListBasesRequest::clear_reference_id() {
 void ListBasesRequest::clear_start() {
   start_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 ListBasesRequest::start() const {
+::google::protobuf::int64 ListBasesRequest::start() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesRequest.start)
   return start_;
 }
- void ListBasesRequest::set_start(::google::protobuf::int64 value) {
+void ListBasesRequest::set_start(::google::protobuf::int64 value) {
   
   start_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesRequest.start)
@@ -5804,11 +5928,11 @@ void ListBasesRequest::clear_start() {
 void ListBasesRequest::clear_end() {
   end_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 ListBasesRequest::end() const {
+::google::protobuf::int64 ListBasesRequest::end() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesRequest.end)
   return end_;
 }
- void ListBasesRequest::set_end(::google::protobuf::int64 value) {
+void ListBasesRequest::set_end(::google::protobuf::int64 value) {
   
   end_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesRequest.end)
@@ -5818,46 +5942,46 @@ void ListBasesRequest::clear_end() {
 void ListBasesRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListBasesRequest::page_token() const {
+const ::std::string& ListBasesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesRequest.page_token)
   return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBasesRequest::set_page_token(const ::std::string& value) {
+void ListBasesRequest::set_page_token(const ::std::string& value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesRequest.page_token)
 }
- void ListBasesRequest::set_page_token(const char* value) {
+void ListBasesRequest::set_page_token(const char* value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ListBasesRequest.page_token)
 }
- void ListBasesRequest::set_page_token(const char* value,
+void ListBasesRequest::set_page_token(const char* value,
     size_t size) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ListBasesRequest.page_token)
 }
- ::std::string* ListBasesRequest::mutable_page_token() {
+::std::string* ListBasesRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ListBasesRequest.page_token)
   return page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesRequest::release_page_token() {
+::std::string* ListBasesRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ListBasesRequest.page_token)
   
   return page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesRequest::unsafe_arena_release_page_token() {
+::std::string* ListBasesRequest::unsafe_arena_release_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ListBasesRequest.page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListBasesRequest::set_allocated_page_token(::std::string* page_token) {
+void ListBasesRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -5867,7 +5991,7 @@ void ListBasesRequest::clear_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ListBasesRequest.page_token)
 }
- void ListBasesRequest::unsafe_arena_set_allocated_page_token(
+void ListBasesRequest::unsafe_arena_set_allocated_page_token(
     ::std::string* page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (page_token != NULL) {
@@ -5884,16 +6008,19 @@ void ListBasesRequest::clear_page_token() {
 void ListBasesRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListBasesRequest::page_size() const {
+::google::protobuf::int32 ListBasesRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesRequest.page_size)
   return page_size_;
 }
- void ListBasesRequest::set_page_size(::google::protobuf::int32 value) {
+void ListBasesRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesRequest.page_size)
 }
 
+inline const ListBasesRequest* ListBasesRequest::internal_default_instance() {
+  return &ListBasesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5906,37 +6033,37 @@ const int ListBasesResponse::kNextPageTokenFieldNumber;
 
 ListBasesResponse::ListBasesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ListBasesResponse)
 }
-
 ListBasesResponse::ListBasesResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ListBasesResponse)
 }
 
 void ListBasesResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListBasesResponse::ListBasesResponse(const ListBasesResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ListBasesResponse)
 }
 
 void ListBasesResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  offset_ = GOOGLE_LONGLONG(0);
   sequence_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  offset_ = GOOGLE_LONGLONG(0);
+  _cached_size_ = 0;
 }
 
 ListBasesResponse::~ListBasesResponse() {
@@ -5945,14 +6072,13 @@ ListBasesResponse::~ListBasesResponse() {
 }
 
 void ListBasesResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  sequence_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  sequence_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListBasesResponse::ArenaDtor(void* object) {
@@ -5972,11 +6098,11 @@ const ::google::protobuf::Descriptor* ListBasesResponse::descriptor() {
 }
 
 const ListBasesResponse& ListBasesResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2freferences_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2freferences_2eproto();
+  return *internal_default_instance();
 }
 
-ListBasesResponse* ListBasesResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListBasesResponse> ListBasesResponse_default_instance_;
 
 ListBasesResponse* ListBasesResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListBasesResponse>(arena);
@@ -6002,10 +6128,10 @@ bool ListBasesResponse::MergePartialFromCodedStream(
       // optional int64 offset = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &offset_)));
-
         } else {
           goto handle_unusual;
         }
@@ -6101,6 +6227,7 @@ void ListBasesResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListBasesResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.ListBasesResponse)
   // optional int64 offset = 1;
   if (this->offset() != 0) {
@@ -6133,9 +6260,9 @@ void ListBasesResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListBasesResponse::ByteSize() const {
+size_t ListBasesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.ListBasesResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int64 offset = 1;
   if (this->offset() != 0) {
@@ -6158,18 +6285,17 @@ int ListBasesResponse::ByteSize() const {
         this->next_page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListBasesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ListBasesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListBasesResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListBasesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListBasesResponse>(
           &from);
   if (source == NULL) {
@@ -6177,15 +6303,21 @@ void ListBasesResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ListBasesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListBasesResponse::MergeFrom(const ListBasesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ListBasesResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListBasesResponse::UnsafeMergeFrom(const ListBasesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.offset() != 0) {
     set_offset(from.offset());
   }
@@ -6208,7 +6340,7 @@ void ListBasesResponse::CopyFrom(const ListBasesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ListBasesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListBasesResponse::IsInitialized() const {
@@ -6222,7 +6354,7 @@ void ListBasesResponse::Swap(ListBasesResponse* other) {
     InternalSwap(other);
   } else {
     ListBasesResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -6255,11 +6387,11 @@ void ListBasesResponse::InternalSwap(ListBasesResponse* other) {
 void ListBasesResponse::clear_offset() {
   offset_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 ListBasesResponse::offset() const {
+::google::protobuf::int64 ListBasesResponse::offset() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesResponse.offset)
   return offset_;
 }
- void ListBasesResponse::set_offset(::google::protobuf::int64 value) {
+void ListBasesResponse::set_offset(::google::protobuf::int64 value) {
   
   offset_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesResponse.offset)
@@ -6269,46 +6401,46 @@ void ListBasesResponse::clear_offset() {
 void ListBasesResponse::clear_sequence() {
   sequence_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListBasesResponse::sequence() const {
+const ::std::string& ListBasesResponse::sequence() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesResponse.sequence)
   return sequence_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBasesResponse::set_sequence(const ::std::string& value) {
+void ListBasesResponse::set_sequence(const ::std::string& value) {
   
   sequence_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesResponse.sequence)
 }
- void ListBasesResponse::set_sequence(const char* value) {
+void ListBasesResponse::set_sequence(const char* value) {
   
   sequence_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ListBasesResponse.sequence)
 }
- void ListBasesResponse::set_sequence(const char* value,
+void ListBasesResponse::set_sequence(const char* value,
     size_t size) {
   
   sequence_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ListBasesResponse.sequence)
 }
- ::std::string* ListBasesResponse::mutable_sequence() {
+::std::string* ListBasesResponse::mutable_sequence() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ListBasesResponse.sequence)
   return sequence_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesResponse::release_sequence() {
+::std::string* ListBasesResponse::release_sequence() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ListBasesResponse.sequence)
   
   return sequence_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesResponse::unsafe_arena_release_sequence() {
+::std::string* ListBasesResponse::unsafe_arena_release_sequence() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ListBasesResponse.sequence)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return sequence_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListBasesResponse::set_allocated_sequence(::std::string* sequence) {
+void ListBasesResponse::set_allocated_sequence(::std::string* sequence) {
   if (sequence != NULL) {
     
   } else {
@@ -6318,7 +6450,7 @@ void ListBasesResponse::clear_sequence() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ListBasesResponse.sequence)
 }
- void ListBasesResponse::unsafe_arena_set_allocated_sequence(
+void ListBasesResponse::unsafe_arena_set_allocated_sequence(
     ::std::string* sequence) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (sequence != NULL) {
@@ -6335,46 +6467,46 @@ void ListBasesResponse::clear_sequence() {
 void ListBasesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListBasesResponse::next_page_token() const {
+const ::std::string& ListBasesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListBasesResponse.next_page_token)
   return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListBasesResponse::set_next_page_token(const ::std::string& value) {
+void ListBasesResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListBasesResponse.next_page_token)
 }
- void ListBasesResponse::set_next_page_token(const char* value) {
+void ListBasesResponse::set_next_page_token(const char* value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.ListBasesResponse.next_page_token)
 }
- void ListBasesResponse::set_next_page_token(const char* value,
+void ListBasesResponse::set_next_page_token(const char* value,
     size_t size) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.ListBasesResponse.next_page_token)
 }
- ::std::string* ListBasesResponse::mutable_next_page_token() {
+::std::string* ListBasesResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.ListBasesResponse.next_page_token)
   return next_page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesResponse::release_next_page_token() {
+::std::string* ListBasesResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.ListBasesResponse.next_page_token)
   
   return next_page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListBasesResponse::unsafe_arena_release_next_page_token() {
+::std::string* ListBasesResponse::unsafe_arena_release_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.ListBasesResponse.next_page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return next_page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListBasesResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListBasesResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -6384,7 +6516,7 @@ void ListBasesResponse::clear_next_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ListBasesResponse.next_page_token)
 }
- void ListBasesResponse::unsafe_arena_set_allocated_next_page_token(
+void ListBasesResponse::unsafe_arena_set_allocated_next_page_token(
     ::std::string* next_page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (next_page_token != NULL) {
@@ -6397,6 +6529,9 @@ void ListBasesResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListBasesResponse.next_page_token)
 }
 
+inline const ListBasesResponse* ListBasesResponse::internal_default_instance() {
+  return &ListBasesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

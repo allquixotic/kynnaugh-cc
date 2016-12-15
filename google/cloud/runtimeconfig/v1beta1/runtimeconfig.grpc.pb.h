@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -53,7 +54,7 @@ namespace v1beta1 {
 // name can be prefix of another.
 // Config objects represent logical containers for variables, e.g. flags,
 // passwords, etc.
-class RuntimeConfigManager GRPC_FINAL {
+class RuntimeConfigManager final {
  public:
   class StubInterface {
    public:
@@ -179,87 +180,87 @@ class RuntimeConfigManager GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncCreateWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListConfigs(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest& request, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListConfigs(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest& request, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse>> AsyncListConfigs(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse>>(AsyncListConfigsRaw(context, request, cq));
     }
-    ::grpc::Status GetConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest& request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_OVERRIDE;
+    ::grpc::Status GetConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest& request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>> AsyncGetConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>>(AsyncGetConfigRaw(context, request, cq));
     }
-    ::grpc::Status CreateConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest& request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest& request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>> AsyncCreateConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>>(AsyncCreateConfigRaw(context, request, cq));
     }
-    ::grpc::Status UpdateConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest& request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest& request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>> AsyncUpdateConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>>(AsyncUpdateConfigRaw(context, request, cq));
     }
-    ::grpc::Status DeleteConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteConfig(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteConfigRaw(context, request, cq));
     }
-    ::grpc::Status ListVariables(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest& request, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListVariables(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest& request, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse>> AsyncListVariables(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse>>(AsyncListVariablesRaw(context, request, cq));
     }
-    ::grpc::Status GetVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_OVERRIDE;
+    ::grpc::Status GetVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>> AsyncGetVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>>(AsyncGetVariableRaw(context, request, cq));
     }
-    ::grpc::Status WatchVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_OVERRIDE;
+    ::grpc::Status WatchVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>> AsyncWatchVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>>(AsyncWatchVariableRaw(context, request, cq));
     }
-    ::grpc::Status CreateVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>> AsyncCreateVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>>(AsyncCreateVariableRaw(context, request, cq));
     }
-    ::grpc::Status UpdateVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest& request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>> AsyncUpdateVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>>(AsyncUpdateVariableRaw(context, request, cq));
     }
-    ::grpc::Status DeleteVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteVariable(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteVariableRaw(context, request, cq));
     }
-    ::grpc::Status ListWaiters(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest& request, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListWaiters(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest& request, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse>> AsyncListWaiters(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse>>(AsyncListWaitersRaw(context, request, cq));
     }
-    ::grpc::Status GetWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest& request, ::google::cloud::runtimeconfig::v1beta1::Waiter* response) GRPC_OVERRIDE;
+    ::grpc::Status GetWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest& request, ::google::cloud::runtimeconfig::v1beta1::Waiter* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Waiter>> AsyncGetWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Waiter>>(AsyncGetWaiterRaw(context, request, cq));
     }
-    ::grpc::Status CreateWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateWaiterRaw(context, request, cq));
     }
-    ::grpc::Status DeleteWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteWaiter(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteWaiterRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse>* AsyncListConfigsRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* AsyncGetConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* AsyncCreateConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* AsyncUpdateConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse>* AsyncListVariablesRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncGetVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncWatchVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncCreateVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncUpdateVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse>* AsyncListWaitersRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Waiter>* AsyncGetWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse>* AsyncListConfigsRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* AsyncGetConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* AsyncCreateConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* AsyncUpdateConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteConfigRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse>* AsyncListVariablesRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncGetVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncWatchVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncCreateVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Variable>* AsyncUpdateVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteVariableRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse>* AsyncListWaitersRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::runtimeconfig::v1beta1::Waiter>* AsyncGetWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteWaiterRaw(::grpc::ClientContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListConfigs_;
     const ::grpc::RpcMethod rpcmethod_GetConfig_;
     const ::grpc::RpcMethod rpcmethod_CreateConfig_;
@@ -350,11 +351,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_ListConfigs() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListConfigs() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListConfigs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListConfigs(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListConfigs(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -370,11 +371,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_GetConfig() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -390,11 +391,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_CreateConfig() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -410,11 +411,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_UpdateConfig() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -430,11 +431,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_DeleteConfig() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -450,11 +451,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_ListVariables() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_ListVariables() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListVariables() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListVariables(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListVariables(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -470,11 +471,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_GetVariable() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_GetVariable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -490,11 +491,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_WatchVariable() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_WatchVariable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_WatchVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status WatchVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status WatchVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -510,11 +511,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_CreateVariable() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_CreateVariable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -530,11 +531,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_UpdateVariable() {
       ::grpc::Service::MarkMethodAsync(9);
     }
-    ~WithAsyncMethod_UpdateVariable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -550,11 +551,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_DeleteVariable() {
       ::grpc::Service::MarkMethodAsync(10);
     }
-    ~WithAsyncMethod_DeleteVariable() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -570,11 +571,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_ListWaiters() {
       ::grpc::Service::MarkMethodAsync(11);
     }
-    ~WithAsyncMethod_ListWaiters() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListWaiters() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListWaiters(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListWaiters(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -590,11 +591,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_GetWaiter() {
       ::grpc::Service::MarkMethodAsync(12);
     }
-    ~WithAsyncMethod_GetWaiter() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetWaiter() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest* request, ::google::cloud::runtimeconfig::v1beta1::Waiter* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest* request, ::google::cloud::runtimeconfig::v1beta1::Waiter* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -610,11 +611,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_CreateWaiter() {
       ::grpc::Service::MarkMethodAsync(13);
     }
-    ~WithAsyncMethod_CreateWaiter() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateWaiter() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -630,11 +631,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithAsyncMethod_DeleteWaiter() {
       ::grpc::Service::MarkMethodAsync(14);
     }
-    ~WithAsyncMethod_DeleteWaiter() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteWaiter() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -651,11 +652,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_ListConfigs() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListConfigs() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListConfigs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListConfigs(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListConfigs(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -668,11 +669,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_GetConfig() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -685,11 +686,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_CreateConfig() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -702,11 +703,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_UpdateConfig() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -719,11 +720,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_DeleteConfig() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -736,11 +737,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_ListVariables() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_ListVariables() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListVariables() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListVariables(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListVariables(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -753,11 +754,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_GetVariable() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_GetVariable() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -770,11 +771,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_WatchVariable() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_WatchVariable() GRPC_OVERRIDE {
+    ~WithGenericMethod_WatchVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status WatchVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status WatchVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -787,11 +788,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_CreateVariable() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_CreateVariable() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -804,11 +805,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_UpdateVariable() {
       ::grpc::Service::MarkMethodGeneric(9);
     }
-    ~WithGenericMethod_UpdateVariable() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -821,11 +822,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_DeleteVariable() {
       ::grpc::Service::MarkMethodGeneric(10);
     }
-    ~WithGenericMethod_DeleteVariable() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteVariable() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -838,11 +839,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_ListWaiters() {
       ::grpc::Service::MarkMethodGeneric(11);
     }
-    ~WithGenericMethod_ListWaiters() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListWaiters() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListWaiters(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListWaiters(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -855,11 +856,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_GetWaiter() {
       ::grpc::Service::MarkMethodGeneric(12);
     }
-    ~WithGenericMethod_GetWaiter() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetWaiter() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest* request, ::google::cloud::runtimeconfig::v1beta1::Waiter* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest* request, ::google::cloud::runtimeconfig::v1beta1::Waiter* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -872,11 +873,11 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_CreateWaiter() {
       ::grpc::Service::MarkMethodGeneric(13);
     }
-    ~WithGenericMethod_CreateWaiter() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateWaiter() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -889,15 +890,318 @@ class RuntimeConfigManager GRPC_FINAL {
     WithGenericMethod_DeleteWaiter() {
       ::grpc::Service::MarkMethodGeneric(14);
     }
-    ~WithGenericMethod_DeleteWaiter() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteWaiter() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListConfigs : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListConfigs() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse>(std::bind(&WithStreamedUnaryMethod_ListConfigs<BaseClass>::StreamedListConfigs, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListConfigs() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListConfigs(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListConfigs(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::ListConfigsRequest,::google::cloud::runtimeconfig::v1beta1::ListConfigsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetConfig() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>(std::bind(&WithStreamedUnaryMethod_GetConfig<BaseClass>::StreamedGetConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::GetConfigRequest,::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateConfig() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>(std::bind(&WithStreamedUnaryMethod_CreateConfig<BaseClass>::StreamedCreateConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::CreateConfigRequest,::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateConfig() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>(std::bind(&WithStreamedUnaryMethod_UpdateConfig<BaseClass>::StreamedUpdateConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest* request, ::google::cloud::runtimeconfig::v1beta1::RuntimeConfig* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::UpdateConfigRequest,::google::cloud::runtimeconfig::v1beta1::RuntimeConfig>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteConfig() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteConfig<BaseClass>::StreamedDeleteConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteConfig(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::DeleteConfigRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListVariables : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListVariables() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse>(std::bind(&WithStreamedUnaryMethod_ListVariables<BaseClass>::StreamedListVariables, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListVariables() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListVariables(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListVariables(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::ListVariablesRequest,::google::cloud::runtimeconfig::v1beta1::ListVariablesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetVariable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetVariable() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest, ::google::cloud::runtimeconfig::v1beta1::Variable>(std::bind(&WithStreamedUnaryMethod_GetVariable<BaseClass>::StreamedGetVariable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetVariable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetVariable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::GetVariableRequest,::google::cloud::runtimeconfig::v1beta1::Variable>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_WatchVariable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_WatchVariable() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest, ::google::cloud::runtimeconfig::v1beta1::Variable>(std::bind(&WithStreamedUnaryMethod_WatchVariable<BaseClass>::StreamedWatchVariable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_WatchVariable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status WatchVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedWatchVariable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::WatchVariableRequest,::google::cloud::runtimeconfig::v1beta1::Variable>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateVariable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateVariable() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest, ::google::cloud::runtimeconfig::v1beta1::Variable>(std::bind(&WithStreamedUnaryMethod_CreateVariable<BaseClass>::StreamedCreateVariable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateVariable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateVariable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::CreateVariableRequest,::google::cloud::runtimeconfig::v1beta1::Variable>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateVariable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateVariable() {
+      ::grpc::Service::MarkMethodStreamed(9,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest, ::google::cloud::runtimeconfig::v1beta1::Variable>(std::bind(&WithStreamedUnaryMethod_UpdateVariable<BaseClass>::StreamedUpdateVariable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateVariable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest* request, ::google::cloud::runtimeconfig::v1beta1::Variable* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateVariable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::UpdateVariableRequest,::google::cloud::runtimeconfig::v1beta1::Variable>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteVariable : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteVariable() {
+      ::grpc::Service::MarkMethodStreamed(10,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteVariable<BaseClass>::StreamedDeleteVariable, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteVariable() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteVariable(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteVariable(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::DeleteVariableRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListWaiters : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListWaiters() {
+      ::grpc::Service::MarkMethodStreamed(11,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse>(std::bind(&WithStreamedUnaryMethod_ListWaiters<BaseClass>::StreamedListWaiters, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListWaiters() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListWaiters(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest* request, ::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListWaiters(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::ListWaitersRequest,::google::cloud::runtimeconfig::v1beta1::ListWaitersResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetWaiter : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetWaiter() {
+      ::grpc::Service::MarkMethodStreamed(12,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest, ::google::cloud::runtimeconfig::v1beta1::Waiter>(std::bind(&WithStreamedUnaryMethod_GetWaiter<BaseClass>::StreamedGetWaiter, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetWaiter() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest* request, ::google::cloud::runtimeconfig::v1beta1::Waiter* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetWaiter(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::GetWaiterRequest,::google::cloud::runtimeconfig::v1beta1::Waiter>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateWaiter : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateWaiter() {
+      ::grpc::Service::MarkMethodStreamed(13,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateWaiter<BaseClass>::StreamedCreateWaiter, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateWaiter() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateWaiter(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::CreateWaiterRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteWaiter : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteWaiter() {
+      ::grpc::Service::MarkMethodStreamed(14,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteWaiter<BaseClass>::StreamedDeleteWaiter, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteWaiter() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteWaiter(::grpc::ServerContext* context, const ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteWaiter(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::runtimeconfig::v1beta1::DeleteWaiterRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListConfigs<WithStreamedUnaryMethod_GetConfig<WithStreamedUnaryMethod_CreateConfig<WithStreamedUnaryMethod_UpdateConfig<WithStreamedUnaryMethod_DeleteConfig<WithStreamedUnaryMethod_ListVariables<WithStreamedUnaryMethod_GetVariable<WithStreamedUnaryMethod_WatchVariable<WithStreamedUnaryMethod_CreateVariable<WithStreamedUnaryMethod_UpdateVariable<WithStreamedUnaryMethod_DeleteVariable<WithStreamedUnaryMethod_ListWaiters<WithStreamedUnaryMethod_GetWaiter<WithStreamedUnaryMethod_CreateWaiter<WithStreamedUnaryMethod_DeleteWaiter<Service > > > > > > > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListConfigs<WithStreamedUnaryMethod_GetConfig<WithStreamedUnaryMethod_CreateConfig<WithStreamedUnaryMethod_UpdateConfig<WithStreamedUnaryMethod_DeleteConfig<WithStreamedUnaryMethod_ListVariables<WithStreamedUnaryMethod_GetVariable<WithStreamedUnaryMethod_WatchVariable<WithStreamedUnaryMethod_CreateVariable<WithStreamedUnaryMethod_UpdateVariable<WithStreamedUnaryMethod_DeleteVariable<WithStreamedUnaryMethod_ListWaiters<WithStreamedUnaryMethod_GetWaiter<WithStreamedUnaryMethod_CreateWaiter<WithStreamedUnaryMethod_DeleteWaiter<Service > > > > > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1beta1

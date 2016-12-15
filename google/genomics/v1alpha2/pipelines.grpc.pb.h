@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -43,7 +44,7 @@ namespace genomics {
 namespace v1alpha2 {
 
 // A service for running genomics pipelines.
-class PipelinesV1Alpha2 GRPC_FINAL {
+class PipelinesV1Alpha2 final {
  public:
   class StubInterface {
    public:
@@ -113,47 +114,47 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::genomics::v1alpha2::ControllerConfig>* AsyncGetControllerConfigRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncSetOperationStatusRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreatePipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest& request, ::google::genomics::v1alpha2::Pipeline* response) GRPC_OVERRIDE;
+    ::grpc::Status CreatePipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest& request, ::google::genomics::v1alpha2::Pipeline* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>> AsyncCreatePipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>>(AsyncCreatePipelineRaw(context, request, cq));
     }
-    ::grpc::Status RunPipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status RunPipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncRunPipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncRunPipelineRaw(context, request, cq));
     }
-    ::grpc::Status GetPipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest& request, ::google::genomics::v1alpha2::Pipeline* response) GRPC_OVERRIDE;
+    ::grpc::Status GetPipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest& request, ::google::genomics::v1alpha2::Pipeline* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>> AsyncGetPipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>>(AsyncGetPipelineRaw(context, request, cq));
     }
-    ::grpc::Status ListPipelines(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest& request, ::google::genomics::v1alpha2::ListPipelinesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListPipelines(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest& request, ::google::genomics::v1alpha2::ListPipelinesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ListPipelinesResponse>> AsyncListPipelines(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ListPipelinesResponse>>(AsyncListPipelinesRaw(context, request, cq));
     }
-    ::grpc::Status DeletePipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeletePipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeletePipeline(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeletePipelineRaw(context, request, cq));
     }
-    ::grpc::Status GetControllerConfig(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest& request, ::google::genomics::v1alpha2::ControllerConfig* response) GRPC_OVERRIDE;
+    ::grpc::Status GetControllerConfig(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest& request, ::google::genomics::v1alpha2::ControllerConfig* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ControllerConfig>> AsyncGetControllerConfig(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ControllerConfig>>(AsyncGetControllerConfigRaw(context, request, cq));
     }
-    ::grpc::Status SetOperationStatus(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status SetOperationStatus(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncSetOperationStatus(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncSetOperationStatusRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>* AsyncCreatePipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncRunPipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>* AsyncGetPipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ListPipelinesResponse>* AsyncListPipelinesRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeletePipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ControllerConfig>* AsyncGetControllerConfigRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncSetOperationStatusRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>* AsyncCreatePipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncRunPipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::Pipeline>* AsyncGetPipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ListPipelinesResponse>* AsyncListPipelinesRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeletePipelineRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1alpha2::ControllerConfig>* AsyncGetControllerConfigRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncSetOperationStatusRaw(::grpc::ClientContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreatePipeline_;
     const ::grpc::RpcMethod rpcmethod_RunPipeline_;
     const ::grpc::RpcMethod rpcmethod_GetPipeline_;
@@ -212,11 +213,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithAsyncMethod_CreatePipeline() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreatePipeline() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreatePipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreatePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreatePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -232,11 +233,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithAsyncMethod_RunPipeline() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_RunPipeline() GRPC_OVERRIDE {
+    ~WithAsyncMethod_RunPipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RunPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RunPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -252,11 +253,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithAsyncMethod_GetPipeline() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_GetPipeline() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetPipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -272,11 +273,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithAsyncMethod_ListPipelines() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_ListPipelines() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListPipelines() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListPipelines(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest* request, ::google::genomics::v1alpha2::ListPipelinesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListPipelines(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest* request, ::google::genomics::v1alpha2::ListPipelinesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -292,11 +293,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithAsyncMethod_DeletePipeline() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeletePipeline() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeletePipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeletePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeletePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -312,11 +313,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithAsyncMethod_GetControllerConfig() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_GetControllerConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetControllerConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetControllerConfig(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest* request, ::google::genomics::v1alpha2::ControllerConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetControllerConfig(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest* request, ::google::genomics::v1alpha2::ControllerConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -332,11 +333,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithAsyncMethod_SetOperationStatus() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_SetOperationStatus() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SetOperationStatus() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetOperationStatus(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetOperationStatus(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -353,11 +354,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithGenericMethod_CreatePipeline() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreatePipeline() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreatePipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreatePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreatePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -370,11 +371,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithGenericMethod_RunPipeline() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_RunPipeline() GRPC_OVERRIDE {
+    ~WithGenericMethod_RunPipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RunPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RunPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -387,11 +388,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithGenericMethod_GetPipeline() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_GetPipeline() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetPipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -404,11 +405,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithGenericMethod_ListPipelines() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_ListPipelines() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListPipelines() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListPipelines(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest* request, ::google::genomics::v1alpha2::ListPipelinesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListPipelines(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest* request, ::google::genomics::v1alpha2::ListPipelinesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -421,11 +422,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithGenericMethod_DeletePipeline() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeletePipeline() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeletePipeline() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeletePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeletePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -438,11 +439,11 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithGenericMethod_GetControllerConfig() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_GetControllerConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetControllerConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetControllerConfig(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest* request, ::google::genomics::v1alpha2::ControllerConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetControllerConfig(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest* request, ::google::genomics::v1alpha2::ControllerConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -455,15 +456,158 @@ class PipelinesV1Alpha2 GRPC_FINAL {
     WithGenericMethod_SetOperationStatus() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_SetOperationStatus() GRPC_OVERRIDE {
+    ~WithGenericMethod_SetOperationStatus() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetOperationStatus(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetOperationStatus(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreatePipeline : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreatePipeline() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1alpha2::CreatePipelineRequest, ::google::genomics::v1alpha2::Pipeline>(std::bind(&WithStreamedUnaryMethod_CreatePipeline<BaseClass>::StreamedCreatePipeline, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreatePipeline() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreatePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::CreatePipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreatePipeline(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1alpha2::CreatePipelineRequest,::google::genomics::v1alpha2::Pipeline>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_RunPipeline : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_RunPipeline() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1alpha2::RunPipelineRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_RunPipeline<BaseClass>::StreamedRunPipeline, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_RunPipeline() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status RunPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::RunPipelineRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedRunPipeline(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1alpha2::RunPipelineRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetPipeline : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetPipeline() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1alpha2::GetPipelineRequest, ::google::genomics::v1alpha2::Pipeline>(std::bind(&WithStreamedUnaryMethod_GetPipeline<BaseClass>::StreamedGetPipeline, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetPipeline() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetPipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetPipelineRequest* request, ::google::genomics::v1alpha2::Pipeline* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetPipeline(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1alpha2::GetPipelineRequest,::google::genomics::v1alpha2::Pipeline>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListPipelines : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListPipelines() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1alpha2::ListPipelinesRequest, ::google::genomics::v1alpha2::ListPipelinesResponse>(std::bind(&WithStreamedUnaryMethod_ListPipelines<BaseClass>::StreamedListPipelines, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListPipelines() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListPipelines(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::ListPipelinesRequest* request, ::google::genomics::v1alpha2::ListPipelinesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListPipelines(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1alpha2::ListPipelinesRequest,::google::genomics::v1alpha2::ListPipelinesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeletePipeline : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeletePipeline() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1alpha2::DeletePipelineRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeletePipeline<BaseClass>::StreamedDeletePipeline, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeletePipeline() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeletePipeline(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::DeletePipelineRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeletePipeline(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1alpha2::DeletePipelineRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetControllerConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetControllerConfig() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1alpha2::GetControllerConfigRequest, ::google::genomics::v1alpha2::ControllerConfig>(std::bind(&WithStreamedUnaryMethod_GetControllerConfig<BaseClass>::StreamedGetControllerConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetControllerConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetControllerConfig(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::GetControllerConfigRequest* request, ::google::genomics::v1alpha2::ControllerConfig* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetControllerConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1alpha2::GetControllerConfigRequest,::google::genomics::v1alpha2::ControllerConfig>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SetOperationStatus : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SetOperationStatus() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1alpha2::SetOperationStatusRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_SetOperationStatus<BaseClass>::StreamedSetOperationStatus, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SetOperationStatus() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SetOperationStatus(::grpc::ServerContext* context, const ::google::genomics::v1alpha2::SetOperationStatusRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSetOperationStatus(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1alpha2::SetOperationStatusRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreatePipeline<WithStreamedUnaryMethod_RunPipeline<WithStreamedUnaryMethod_GetPipeline<WithStreamedUnaryMethod_ListPipelines<WithStreamedUnaryMethod_DeletePipeline<WithStreamedUnaryMethod_GetControllerConfig<WithStreamedUnaryMethod_SetOperationStatus<Service > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreatePipeline<WithStreamedUnaryMethod_RunPipeline<WithStreamedUnaryMethod_GetPipeline<WithStreamedUnaryMethod_ListPipelines<WithStreamedUnaryMethod_DeletePipeline<WithStreamedUnaryMethod_GetControllerConfig<WithStreamedUnaryMethod_SetOperationStatus<Service > > > > > > > StreamedService;
 };
 
 }  // namespace v1alpha2

@@ -45,20 +45,19 @@ void protobuf_AssignDesc_google_2frpc_2fstatus_2eproto() {
   Status_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Status_descriptor_,
-      Status::default_instance_,
+      Status::internal_default_instance(),
       Status_offsets_,
       -1,
       -1,
       -1,
       sizeof(Status),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Status, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Status, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Status, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2frpc_2fstatus_2eproto);
 }
@@ -67,24 +66,34 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Status_descriptor_, &Status::default_instance());
+      Status_descriptor_, Status::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2frpc_2fstatus_2eproto() {
-  delete Status::default_instance_;
+  Status_default_instance_.Shutdown();
   delete Status_reflection_;
 }
 
-void protobuf_AddDesc_google_2frpc_2fstatus_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2frpc_2fstatus_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2frpc_2fstatus_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fany_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fany_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Status_default_instance_.DefaultConstruct();
+  Status_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2frpc_2fstatus_2eproto_once_);
+void protobuf_InitDefaults_google_2frpc_2fstatus_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2frpc_2fstatus_2eproto_once_,
+                 &protobuf_InitDefaults_google_2frpc_2fstatus_2eproto_impl);
+}
+void protobuf_AddDesc_google_2frpc_2fstatus_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\027google/rpc/status.proto\022\ngoogle.rpc\032\031g"
     "oogle/protobuf/any.proto\"N\n\006Status\022\014\n\004co"
@@ -95,17 +104,31 @@ void protobuf_AddDesc_google_2frpc_2fstatus_2eproto() {
     "b\006proto3", 248);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/rpc/status.proto", &protobuf_RegisterTypes);
-  Status::default_instance_ = new Status();
-  Status::default_instance_->InitAsDefaultInstance();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fany_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2frpc_2fstatus_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2frpc_2fstatus_2eproto_once_);
+void protobuf_AddDesc_google_2frpc_2fstatus_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2frpc_2fstatus_2eproto_once_,
+                 &protobuf_AddDesc_google_2frpc_2fstatus_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2frpc_2fstatus_2eproto {
   StaticDescriptorInitializer_google_2frpc_2fstatus_2eproto() {
     protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
   }
 } static_descriptor_initializer_google_2frpc_2fstatus_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -117,28 +140,26 @@ const int Status::kDetailsFieldNumber;
 
 Status::Status()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.rpc.Status)
 }
 
 void Status::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Status::Status(const Status& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.rpc.Status)
 }
 
 void Status::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  code_ = 0;
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  code_ = 0;
+  _cached_size_ = 0;
 }
 
 Status::~Status() {
@@ -148,8 +169,6 @@ Status::~Status() {
 
 void Status::SharedDtor() {
   message_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Status::SetCachedSize(int size) const {
@@ -163,11 +182,11 @@ const ::google::protobuf::Descriptor* Status::descriptor() {
 }
 
 const Status& Status::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2frpc_2fstatus_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
+  return *internal_default_instance();
 }
 
-Status* Status::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Status> Status_default_instance_;
 
 Status* Status::New(::google::protobuf::Arena* arena) const {
   Status* n = new Status;
@@ -197,10 +216,10 @@ bool Status::MergePartialFromCodedStream(
       // optional int32 code = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &code_)));
-
         } else {
           goto handle_unusual;
         }
@@ -292,6 +311,7 @@ void Status::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Status::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.rpc.Status)
   // optional int32 code = 1;
   if (this->code() != 0) {
@@ -320,9 +340,9 @@ void Status::SerializeWithCachedSizes(
   return target;
 }
 
-int Status::ByteSize() const {
+size_t Status::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.rpc.Status)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 code = 1;
   if (this->code() != 0) {
@@ -339,25 +359,27 @@ int Status::ByteSize() const {
   }
 
   // repeated .google.protobuf.Any details = 3;
-  total_size += 1 * this->details_size();
-  for (int i = 0; i < this->details_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->details(i));
+  {
+    unsigned int count = this->details_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->details(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Status::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.rpc.Status)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Status* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Status* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Status>(
           &from);
   if (source == NULL) {
@@ -365,15 +387,21 @@ void Status::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.rpc.Status)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Status::MergeFrom(const Status& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.rpc.Status)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Status::UnsafeMergeFrom(const Status& from) {
+  GOOGLE_DCHECK(&from != this);
   details_.MergeFrom(from.details_);
   if (from.code() != 0) {
     set_code(from.code());
@@ -395,7 +423,7 @@ void Status::CopyFrom(const Status& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.rpc.Status)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Status::IsInitialized() const {
@@ -430,11 +458,11 @@ void Status::InternalSwap(Status* other) {
 void Status::clear_code() {
   code_ = 0;
 }
- ::google::protobuf::int32 Status::code() const {
+::google::protobuf::int32 Status::code() const {
   // @@protoc_insertion_point(field_get:google.rpc.Status.code)
   return code_;
 }
- void Status::set_code(::google::protobuf::int32 value) {
+void Status::set_code(::google::protobuf::int32 value) {
   
   code_ = value;
   // @@protoc_insertion_point(field_set:google.rpc.Status.code)
@@ -444,37 +472,37 @@ void Status::clear_code() {
 void Status::clear_message() {
   message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Status::message() const {
+const ::std::string& Status::message() const {
   // @@protoc_insertion_point(field_get:google.rpc.Status.message)
   return message_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Status::set_message(const ::std::string& value) {
+void Status::set_message(const ::std::string& value) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.rpc.Status.message)
 }
- void Status::set_message(const char* value) {
+void Status::set_message(const char* value) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.rpc.Status.message)
 }
- void Status::set_message(const char* value, size_t size) {
+void Status::set_message(const char* value, size_t size) {
   
   message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.rpc.Status.message)
 }
- ::std::string* Status::mutable_message() {
+::std::string* Status::mutable_message() {
   
   // @@protoc_insertion_point(field_mutable:google.rpc.Status.message)
   return message_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Status::release_message() {
+::std::string* Status::release_message() {
   // @@protoc_insertion_point(field_release:google.rpc.Status.message)
   
   return message_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Status::set_allocated_message(::std::string* message) {
+void Status::set_allocated_message(::std::string* message) {
   if (message != NULL) {
     
   } else {
@@ -514,6 +542,9 @@ Status::details() const {
   return details_;
 }
 
+inline const Status* Status::internal_default_instance() {
+  return &Status_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

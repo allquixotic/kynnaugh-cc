@@ -64,7 +64,7 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
   TypedValue_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       TypedValue_descriptor_,
-      TypedValue::default_instance_,
+      TypedValue::internal_default_instance(),
       TypedValue_offsets_,
       -1,
       -1,
@@ -72,8 +72,7 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
       TypedValue_default_oneof_instance_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _oneof_case_[0]),
       sizeof(TypedValue),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _internal_metadata_));
   TimeInterval_descriptor_ = file->message_type(1);
   static const int TimeInterval_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, end_time_),
@@ -82,14 +81,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
   TimeInterval_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       TimeInterval_descriptor_,
-      TimeInterval::default_instance_,
+      TimeInterval::internal_default_instance(),
       TimeInterval_offsets_,
       -1,
       -1,
       -1,
       sizeof(TimeInterval),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, _internal_metadata_));
   Aggregation_descriptor_ = file->message_type(2);
   static const int Aggregation_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, alignment_period_),
@@ -100,14 +98,13 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
   Aggregation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Aggregation_descriptor_,
-      Aggregation::default_instance_,
+      Aggregation::internal_default_instance(),
       Aggregation_offsets_,
       -1,
       -1,
       -1,
       sizeof(Aggregation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, _internal_metadata_));
   Aggregation_Aligner_descriptor_ = Aggregation_descriptor_->enum_type(0);
   Aggregation_Reducer_descriptor_ = Aggregation_descriptor_->enum_type(1);
 }
@@ -115,7 +112,7 @@ void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto);
 }
@@ -124,35 +121,51 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      TypedValue_descriptor_, &TypedValue::default_instance());
+      TypedValue_descriptor_, TypedValue::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      TimeInterval_descriptor_, &TimeInterval::default_instance());
+      TimeInterval_descriptor_, TimeInterval::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Aggregation_descriptor_, &Aggregation::default_instance());
+      Aggregation_descriptor_, Aggregation::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fcommon_2eproto() {
-  delete TypedValue::default_instance_;
+  TypedValue_default_instance_.Shutdown();
   delete TypedValue_default_oneof_instance_;
   delete TypedValue_reflection_;
-  delete TimeInterval::default_instance_;
+  TimeInterval_default_instance_.Shutdown();
   delete TimeInterval_reflection_;
-  delete Aggregation::default_instance_;
+  Aggregation_default_instance_.Shutdown();
   delete Aggregation_reflection_;
 }
 
-void protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fdistribution_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  TypedValue_default_instance_.DefaultConstruct();
+  TypedValue_default_oneof_instance_ = new TypedValueOneofInstance();
+  TimeInterval_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Aggregation_default_instance_.DefaultConstruct();
+  TypedValue_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TimeInterval_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Aggregation_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_once_);
+void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n!google/monitoring/v3/common.proto\022\024goo"
     "gle.monitoring.v3\032\035google/api/distributi"
@@ -186,27 +199,40 @@ void protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
     "DUCE_COUNT_TRUE\020\007\022\030\n\024REDUCE_FRACTION_TRU"
     "E\020\010\022\030\n\024REDUCE_PERCENTILE_99\020\t\022\030\n\024REDUCE_"
     "PERCENTILE_95\020\n\022\030\n\024REDUCE_PERCENTILE_50\020"
-    "\013\022\030\n\024REDUCE_PERCENTILE_05\020\014BF\n\030com.googl"
-    "e.monitoring.v3B\013CommonProtoP\001\252\002\032Google."
-    "Cloud.Monitoring.V3b\006proto3", 1387);
+    "\013\022\030\n\024REDUCE_PERCENTILE_05\020\014B\206\001\n\030com.goog"
+    "le.monitoring.v3B\013CommonProtoP\001Z>google."
+    "golang.org/genproto/googleapis/monitorin"
+    "g/v3;monitoring\252\002\032Google.Cloud.Monitorin"
+    "g.V3b\006proto3", 1452);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/monitoring/v3/common.proto", &protobuf_RegisterTypes);
-  TypedValue::default_instance_ = new TypedValue();
-  TypedValue_default_oneof_instance_ = new TypedValueOneofInstance();
-  TimeInterval::default_instance_ = new TimeInterval();
-  Aggregation::default_instance_ = new Aggregation();
-  TypedValue::default_instance_->InitAsDefaultInstance();
-  TimeInterval::default_instance_->InitAsDefaultInstance();
-  Aggregation::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fdistribution_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fduration_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fcommon_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto_once_);
+void protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto_once_,
+                 &protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fcommon_2eproto {
   StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fcommon_2eproto() {
     protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
   }
 } static_descriptor_initializer_google_2fmonitoring_2fv3_2fcommon_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -220,32 +246,31 @@ const int TypedValue::kDistributionValueFieldNumber;
 
 TypedValue::TypedValue()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.TypedValue)
 }
 
 void TypedValue::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
   TypedValue_default_oneof_instance_->bool_value_ = false;
   TypedValue_default_oneof_instance_->int64_value_ = GOOGLE_LONGLONG(0);
   TypedValue_default_oneof_instance_->double_value_ = 0;
   TypedValue_default_oneof_instance_->string_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  TypedValue_default_oneof_instance_->distribution_value_ = const_cast< ::google::api::Distribution*>(&::google::api::Distribution::default_instance());
+  TypedValue_default_oneof_instance_->distribution_value_ = const_cast< ::google::api::Distribution*>(
+      ::google::api::Distribution::internal_default_instance());
 }
 
 TypedValue::TypedValue(const TypedValue& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.TypedValue)
 }
 
 void TypedValue::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   clear_has_value();
+  _cached_size_ = 0;
 }
 
 TypedValue::~TypedValue() {
@@ -256,8 +281,6 @@ TypedValue::~TypedValue() {
 void TypedValue::SharedDtor() {
   if (has_value()) {
     clear_value();
-  }
-  if (this != default_instance_) {
   }
 }
 
@@ -272,11 +295,11 @@ const ::google::protobuf::Descriptor* TypedValue::descriptor() {
 }
 
 const TypedValue& TypedValue::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
+  return *internal_default_instance();
 }
 
-TypedValue* TypedValue::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<TypedValue> TypedValue_default_instance_;
 
 TypedValue* TypedValue::New(::google::protobuf::Arena* arena) const {
   TypedValue* n = new TypedValue;
@@ -288,7 +311,7 @@ TypedValue* TypedValue::New(::google::protobuf::Arena* arena) const {
 
 void TypedValue::clear_value() {
 // @@protoc_insertion_point(one_of_clear_start:google.monitoring.v3.TypedValue)
-  switch(value_case()) {
+  switch (value_case()) {
     case kBoolValue: {
       // No need to clear
       break;
@@ -343,14 +366,13 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(16)) goto parse_int64_value;
+        goto after_distribution_value;
         break;
       }
 
       // optional int64 int64_value = 2;
       case 2: {
         if (tag == 16) {
-         parse_int64_value:
           clear_value();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -359,14 +381,13 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(25)) goto parse_double_value;
+        goto after_distribution_value;
         break;
       }
 
       // optional double double_value = 3;
       case 3: {
         if (tag == 25) {
-         parse_double_value:
           clear_value();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -375,14 +396,13 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(34)) goto parse_string_value;
+        goto after_distribution_value;
         break;
       }
 
       // optional string string_value = 4;
       case 4: {
         if (tag == 34) {
-         parse_string_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_string_value()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -405,6 +425,7 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_distribution_value:
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -469,6 +490,7 @@ void TypedValue::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* TypedValue::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.TypedValue)
   // optional bool bool_value = 1;
   if (has_bool_value()) {
@@ -507,9 +529,9 @@ void TypedValue::SerializeWithCachedSizes(
   return target;
 }
 
-int TypedValue::ByteSize() const {
+size_t TypedValue::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.TypedValue)
-  int total_size = 0;
+  size_t total_size = 0;
 
   switch (value_case()) {
     // optional bool bool_value = 1;
@@ -547,18 +569,17 @@ int TypedValue::ByteSize() const {
       break;
     }
   }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void TypedValue::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.TypedValue)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const TypedValue* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const TypedValue* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TypedValue>(
           &from);
   if (source == NULL) {
@@ -566,15 +587,21 @@ void TypedValue::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.TypedValue)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TypedValue::MergeFrom(const TypedValue& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.TypedValue)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void TypedValue::UnsafeMergeFrom(const TypedValue& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.value_case()) {
     case kBoolValue: {
       set_bool_value(from.bool_value());
@@ -613,7 +640,7 @@ void TypedValue::CopyFrom(const TypedValue& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.TypedValue)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TypedValue::IsInitialized() const {
@@ -656,14 +683,14 @@ void TypedValue::clear_bool_value() {
     clear_has_value();
   }
 }
- bool TypedValue::bool_value() const {
+bool TypedValue::bool_value() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.TypedValue.bool_value)
   if (has_bool_value()) {
     return value_.bool_value_;
   }
   return false;
 }
- void TypedValue::set_bool_value(bool value) {
+void TypedValue::set_bool_value(bool value) {
   if (!has_bool_value()) {
     clear_value();
     set_has_bool_value();
@@ -685,14 +712,14 @@ void TypedValue::clear_int64_value() {
     clear_has_value();
   }
 }
- ::google::protobuf::int64 TypedValue::int64_value() const {
+::google::protobuf::int64 TypedValue::int64_value() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.TypedValue.int64_value)
   if (has_int64_value()) {
     return value_.int64_value_;
   }
   return GOOGLE_LONGLONG(0);
 }
- void TypedValue::set_int64_value(::google::protobuf::int64 value) {
+void TypedValue::set_int64_value(::google::protobuf::int64 value) {
   if (!has_int64_value()) {
     clear_value();
     set_has_int64_value();
@@ -714,14 +741,14 @@ void TypedValue::clear_double_value() {
     clear_has_value();
   }
 }
- double TypedValue::double_value() const {
+double TypedValue::double_value() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.TypedValue.double_value)
   if (has_double_value()) {
     return value_.double_value_;
   }
   return 0;
 }
- void TypedValue::set_double_value(double value) {
+void TypedValue::set_double_value(double value) {
   if (!has_double_value()) {
     clear_value();
     set_has_double_value();
@@ -743,14 +770,14 @@ void TypedValue::clear_string_value() {
     clear_has_value();
   }
 }
- const ::std::string& TypedValue::string_value() const {
+const ::std::string& TypedValue::string_value() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.TypedValue.string_value)
   if (has_string_value()) {
     return value_.string_value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
- void TypedValue::set_string_value(const ::std::string& value) {
+void TypedValue::set_string_value(const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.TypedValue.string_value)
   if (!has_string_value()) {
     clear_value();
@@ -760,7 +787,7 @@ void TypedValue::clear_string_value() {
   value_.string_value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.monitoring.v3.TypedValue.string_value)
 }
- void TypedValue::set_string_value(const char* value) {
+void TypedValue::set_string_value(const char* value) {
   if (!has_string_value()) {
     clear_value();
     set_has_string_value();
@@ -770,7 +797,7 @@ void TypedValue::clear_string_value() {
       ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.TypedValue.string_value)
 }
- void TypedValue::set_string_value(const char* value, size_t size) {
+void TypedValue::set_string_value(const char* value, size_t size) {
   if (!has_string_value()) {
     clear_value();
     set_has_string_value();
@@ -780,7 +807,7 @@ void TypedValue::clear_string_value() {
       reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.TypedValue.string_value)
 }
- ::std::string* TypedValue::mutable_string_value() {
+::std::string* TypedValue::mutable_string_value() {
   if (!has_string_value()) {
     clear_value();
     set_has_string_value();
@@ -789,7 +816,7 @@ void TypedValue::clear_string_value() {
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.TypedValue.string_value)
   return value_.string_value_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* TypedValue::release_string_value() {
+::std::string* TypedValue::release_string_value() {
   // @@protoc_insertion_point(field_release:google.monitoring.v3.TypedValue.string_value)
   if (has_string_value()) {
     clear_has_value();
@@ -798,7 +825,7 @@ void TypedValue::clear_string_value() {
     return NULL;
   }
 }
- void TypedValue::set_allocated_string_value(::std::string* string_value) {
+void TypedValue::set_allocated_string_value(::std::string* string_value) {
   if (!has_string_value()) {
     value_.string_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
@@ -868,6 +895,9 @@ void TypedValue::clear_has_value() {
 TypedValue::ValueCase TypedValue::value_case() const {
   return TypedValue::ValueCase(_oneof_case_[0]);
 }
+inline const TypedValue* TypedValue::internal_default_instance() {
+  return &TypedValue_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -879,29 +909,30 @@ const int TimeInterval::kStartTimeFieldNumber;
 
 TimeInterval::TimeInterval()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.TimeInterval)
 }
 
 void TimeInterval::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  end_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  start_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 TimeInterval::TimeInterval(const TimeInterval& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.TimeInterval)
 }
 
 void TimeInterval::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
   end_time_ = NULL;
   start_time_ = NULL;
+  _cached_size_ = 0;
 }
 
 TimeInterval::~TimeInterval() {
@@ -910,7 +941,7 @@ TimeInterval::~TimeInterval() {
 }
 
 void TimeInterval::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &TimeInterval_default_instance_.get()) {
     delete end_time_;
     delete start_time_;
   }
@@ -927,11 +958,11 @@ const ::google::protobuf::Descriptor* TimeInterval::descriptor() {
 }
 
 const TimeInterval& TimeInterval::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
+  return *internal_default_instance();
 }
 
-TimeInterval* TimeInterval::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<TimeInterval> TimeInterval_default_instance_;
 
 TimeInterval* TimeInterval::New(::google::protobuf::Arena* arena) const {
   TimeInterval* n = new TimeInterval;
@@ -1025,6 +1056,7 @@ void TimeInterval::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* TimeInterval::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.TimeInterval)
   // optional .google.protobuf.Timestamp start_time = 1;
   if (this->has_start_time()) {
@@ -1044,9 +1076,9 @@ void TimeInterval::SerializeWithCachedSizes(
   return target;
 }
 
-int TimeInterval::ByteSize() const {
+size_t TimeInterval::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.TimeInterval)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Timestamp end_time = 2;
   if (this->has_end_time()) {
@@ -1062,18 +1094,17 @@ int TimeInterval::ByteSize() const {
         *this->start_time_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void TimeInterval::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.TimeInterval)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const TimeInterval* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const TimeInterval* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TimeInterval>(
           &from);
   if (source == NULL) {
@@ -1081,15 +1112,21 @@ void TimeInterval::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.TimeInterval)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TimeInterval::MergeFrom(const TimeInterval& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.TimeInterval)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void TimeInterval::UnsafeMergeFrom(const TimeInterval& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_end_time()) {
     mutable_end_time()->::google::protobuf::Timestamp::MergeFrom(from.end_time());
   }
@@ -1109,7 +1146,7 @@ void TimeInterval::CopyFrom(const TimeInterval& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.TimeInterval)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TimeInterval::IsInitialized() const {
@@ -1141,7 +1178,7 @@ void TimeInterval::InternalSwap(TimeInterval* other) {
 
 // optional .google.protobuf.Timestamp end_time = 2;
 bool TimeInterval::has_end_time() const {
-  return !_is_default_instance_ && end_time_ != NULL;
+  return this != internal_default_instance() && end_time_ != NULL;
 }
 void TimeInterval::clear_end_time() {
   if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
@@ -1149,7 +1186,8 @@ void TimeInterval::clear_end_time() {
 }
 const ::google::protobuf::Timestamp& TimeInterval::end_time() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.TimeInterval.end_time)
-  return end_time_ != NULL ? *end_time_ : *default_instance_->end_time_;
+  return end_time_ != NULL ? *end_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* TimeInterval::mutable_end_time() {
   
@@ -1184,7 +1222,7 @@ void TimeInterval::set_allocated_end_time(::google::protobuf::Timestamp* end_tim
 
 // optional .google.protobuf.Timestamp start_time = 1;
 bool TimeInterval::has_start_time() const {
-  return !_is_default_instance_ && start_time_ != NULL;
+  return this != internal_default_instance() && start_time_ != NULL;
 }
 void TimeInterval::clear_start_time() {
   if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
@@ -1192,7 +1230,8 @@ void TimeInterval::clear_start_time() {
 }
 const ::google::protobuf::Timestamp& TimeInterval::start_time() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.TimeInterval.start_time)
-  return start_time_ != NULL ? *start_time_ : *default_instance_->start_time_;
+  return start_time_ != NULL ? *start_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* TimeInterval::mutable_start_time() {
   
@@ -1225,6 +1264,9 @@ void TimeInterval::set_allocated_start_time(::google::protobuf::Timestamp* start
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.TimeInterval.start_time)
 }
 
+inline const TimeInterval* TimeInterval::internal_default_instance() {
+  return &TimeInterval_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1234,7 +1276,7 @@ const ::google::protobuf::EnumDescriptor* Aggregation_Aligner_descriptor() {
   return Aggregation_Aligner_descriptor_;
 }
 bool Aggregation_Aligner_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -1285,7 +1327,7 @@ const ::google::protobuf::EnumDescriptor* Aggregation_Reducer_descriptor() {
   return Aggregation_Reducer_descriptor_;
 }
 bool Aggregation_Reducer_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -1332,30 +1374,29 @@ const int Aggregation::kGroupByFieldsFieldNumber;
 
 Aggregation::Aggregation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.Aggregation)
 }
 
 void Aggregation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  alignment_period_ = const_cast< ::google::protobuf::Duration*>(&::google::protobuf::Duration::default_instance());
+  alignment_period_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
 }
 
 Aggregation::Aggregation(const Aggregation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.Aggregation)
 }
 
 void Aggregation::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   alignment_period_ = NULL;
-  per_series_aligner_ = 0;
-  cross_series_reducer_ = 0;
+  ::memset(&per_series_aligner_, 0, reinterpret_cast<char*>(&cross_series_reducer_) -
+    reinterpret_cast<char*>(&per_series_aligner_) + sizeof(cross_series_reducer_));
+  _cached_size_ = 0;
 }
 
 Aggregation::~Aggregation() {
@@ -1364,7 +1405,7 @@ Aggregation::~Aggregation() {
 }
 
 void Aggregation::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &Aggregation_default_instance_.get()) {
     delete alignment_period_;
   }
 }
@@ -1380,11 +1421,11 @@ const ::google::protobuf::Descriptor* Aggregation::descriptor() {
 }
 
 const Aggregation& Aggregation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
+  return *internal_default_instance();
 }
 
-Aggregation* Aggregation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Aggregation> Aggregation_default_instance_;
 
 Aggregation* Aggregation::New(::google::protobuf::Arena* arena) const {
   Aggregation* n = new Aggregation;
@@ -1408,7 +1449,7 @@ void Aggregation::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -1552,6 +1593,7 @@ void Aggregation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Aggregation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.Aggregation)
   // optional .google.protobuf.Duration alignment_period = 1;
   if (this->has_alignment_period()) {
@@ -1586,9 +1628,9 @@ void Aggregation::SerializeWithCachedSizes(
   return target;
 }
 
-int Aggregation::ByteSize() const {
+size_t Aggregation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.Aggregation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.protobuf.Duration alignment_period = 1;
   if (this->has_alignment_period()) {
@@ -1610,24 +1652,24 @@ int Aggregation::ByteSize() const {
   }
 
   // repeated string group_by_fields = 5;
-  total_size += 1 * this->group_by_fields_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->group_by_fields_size());
   for (int i = 0; i < this->group_by_fields_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->group_by_fields(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Aggregation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.Aggregation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Aggregation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Aggregation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Aggregation>(
           &from);
   if (source == NULL) {
@@ -1635,16 +1677,22 @@ void Aggregation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.Aggregation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Aggregation::MergeFrom(const Aggregation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.Aggregation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  group_by_fields_.MergeFrom(from.group_by_fields_);
+}
+
+void Aggregation::UnsafeMergeFrom(const Aggregation& from) {
+  GOOGLE_DCHECK(&from != this);
+  group_by_fields_.UnsafeMergeFrom(from.group_by_fields_);
   if (from.has_alignment_period()) {
     mutable_alignment_period()->::google::protobuf::Duration::MergeFrom(from.alignment_period());
   }
@@ -1667,7 +1715,7 @@ void Aggregation::CopyFrom(const Aggregation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.Aggregation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Aggregation::IsInitialized() const {
@@ -1701,7 +1749,7 @@ void Aggregation::InternalSwap(Aggregation* other) {
 
 // optional .google.protobuf.Duration alignment_period = 1;
 bool Aggregation::has_alignment_period() const {
-  return !_is_default_instance_ && alignment_period_ != NULL;
+  return this != internal_default_instance() && alignment_period_ != NULL;
 }
 void Aggregation::clear_alignment_period() {
   if (GetArenaNoVirtual() == NULL && alignment_period_ != NULL) delete alignment_period_;
@@ -1709,7 +1757,8 @@ void Aggregation::clear_alignment_period() {
 }
 const ::google::protobuf::Duration& Aggregation::alignment_period() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Aggregation.alignment_period)
-  return alignment_period_ != NULL ? *alignment_period_ : *default_instance_->alignment_period_;
+  return alignment_period_ != NULL ? *alignment_period_
+                         : *::google::protobuf::Duration::internal_default_instance();
 }
 ::google::protobuf::Duration* Aggregation::mutable_alignment_period() {
   
@@ -1728,6 +1777,11 @@ const ::google::protobuf::Duration& Aggregation::alignment_period() const {
 }
 void Aggregation::set_allocated_alignment_period(::google::protobuf::Duration* alignment_period) {
   delete alignment_period_;
+  if (alignment_period != NULL && alignment_period->GetArena() != NULL) {
+    ::google::protobuf::Duration* new_alignment_period = new ::google::protobuf::Duration;
+    new_alignment_period->CopyFrom(*alignment_period);
+    alignment_period = new_alignment_period;
+  }
   alignment_period_ = alignment_period;
   if (alignment_period) {
     
@@ -1741,11 +1795,11 @@ void Aggregation::set_allocated_alignment_period(::google::protobuf::Duration* a
 void Aggregation::clear_per_series_aligner() {
   per_series_aligner_ = 0;
 }
- ::google::monitoring::v3::Aggregation_Aligner Aggregation::per_series_aligner() const {
+::google::monitoring::v3::Aggregation_Aligner Aggregation::per_series_aligner() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Aggregation.per_series_aligner)
   return static_cast< ::google::monitoring::v3::Aggregation_Aligner >(per_series_aligner_);
 }
- void Aggregation::set_per_series_aligner(::google::monitoring::v3::Aggregation_Aligner value) {
+void Aggregation::set_per_series_aligner(::google::monitoring::v3::Aggregation_Aligner value) {
   
   per_series_aligner_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Aggregation.per_series_aligner)
@@ -1755,11 +1809,11 @@ void Aggregation::clear_per_series_aligner() {
 void Aggregation::clear_cross_series_reducer() {
   cross_series_reducer_ = 0;
 }
- ::google::monitoring::v3::Aggregation_Reducer Aggregation::cross_series_reducer() const {
+::google::monitoring::v3::Aggregation_Reducer Aggregation::cross_series_reducer() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Aggregation.cross_series_reducer)
   return static_cast< ::google::monitoring::v3::Aggregation_Reducer >(cross_series_reducer_);
 }
- void Aggregation::set_cross_series_reducer(::google::monitoring::v3::Aggregation_Reducer value) {
+void Aggregation::set_cross_series_reducer(::google::monitoring::v3::Aggregation_Reducer value) {
   
   cross_series_reducer_ = value;
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Aggregation.cross_series_reducer)
@@ -1772,54 +1826,57 @@ int Aggregation::group_by_fields_size() const {
 void Aggregation::clear_group_by_fields() {
   group_by_fields_.Clear();
 }
- const ::std::string& Aggregation::group_by_fields(int index) const {
+const ::std::string& Aggregation::group_by_fields(int index) const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.Aggregation.group_by_fields)
   return group_by_fields_.Get(index);
 }
- ::std::string* Aggregation::mutable_group_by_fields(int index) {
+::std::string* Aggregation::mutable_group_by_fields(int index) {
   // @@protoc_insertion_point(field_mutable:google.monitoring.v3.Aggregation.group_by_fields)
   return group_by_fields_.Mutable(index);
 }
- void Aggregation::set_group_by_fields(int index, const ::std::string& value) {
+void Aggregation::set_group_by_fields(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Aggregation.group_by_fields)
   group_by_fields_.Mutable(index)->assign(value);
 }
- void Aggregation::set_group_by_fields(int index, const char* value) {
+void Aggregation::set_group_by_fields(int index, const char* value) {
   group_by_fields_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.monitoring.v3.Aggregation.group_by_fields)
 }
- void Aggregation::set_group_by_fields(int index, const char* value, size_t size) {
+void Aggregation::set_group_by_fields(int index, const char* value, size_t size) {
   group_by_fields_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.monitoring.v3.Aggregation.group_by_fields)
 }
- ::std::string* Aggregation::add_group_by_fields() {
+::std::string* Aggregation::add_group_by_fields() {
   // @@protoc_insertion_point(field_add_mutable:google.monitoring.v3.Aggregation.group_by_fields)
   return group_by_fields_.Add();
 }
- void Aggregation::add_group_by_fields(const ::std::string& value) {
+void Aggregation::add_group_by_fields(const ::std::string& value) {
   group_by_fields_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.monitoring.v3.Aggregation.group_by_fields)
 }
- void Aggregation::add_group_by_fields(const char* value) {
+void Aggregation::add_group_by_fields(const char* value) {
   group_by_fields_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.monitoring.v3.Aggregation.group_by_fields)
 }
- void Aggregation::add_group_by_fields(const char* value, size_t size) {
+void Aggregation::add_group_by_fields(const char* value, size_t size) {
   group_by_fields_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.monitoring.v3.Aggregation.group_by_fields)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 Aggregation::group_by_fields() const {
   // @@protoc_insertion_point(field_list:google.monitoring.v3.Aggregation.group_by_fields)
   return group_by_fields_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 Aggregation::mutable_group_by_fields() {
   // @@protoc_insertion_point(field_mutable_list:google.monitoring.v3.Aggregation.group_by_fields)
   return &group_by_fields_;
 }
 
+inline const Aggregation* Aggregation::internal_default_instance() {
+  return &Aggregation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

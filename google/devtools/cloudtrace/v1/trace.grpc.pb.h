@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -48,7 +49,7 @@ namespace v1 {
 // operation or set of operations for an application. A span is an individual
 // timed event which forms a node of the trace tree. Spans for a single trace
 // may span multiple services.
-class TraceService GRPC_FINAL {
+class TraceService final {
  public:
   class StubInterface {
    public:
@@ -77,27 +78,27 @@ class TraceService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::cloudtrace::v1::Trace>* AsyncGetTraceRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncPatchTracesRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListTraces(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest& request, ::google::devtools::cloudtrace::v1::ListTracesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListTraces(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest& request, ::google::devtools::cloudtrace::v1::ListTracesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::ListTracesResponse>> AsyncListTraces(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::ListTracesResponse>>(AsyncListTracesRaw(context, request, cq));
     }
-    ::grpc::Status GetTrace(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest& request, ::google::devtools::cloudtrace::v1::Trace* response) GRPC_OVERRIDE;
+    ::grpc::Status GetTrace(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest& request, ::google::devtools::cloudtrace::v1::Trace* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::Trace>> AsyncGetTrace(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::Trace>>(AsyncGetTraceRaw(context, request, cq));
     }
-    ::grpc::Status PatchTraces(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status PatchTraces(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncPatchTraces(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncPatchTracesRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::ListTracesResponse>* AsyncListTracesRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::Trace>* AsyncGetTraceRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncPatchTracesRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::ListTracesResponse>* AsyncListTracesRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::cloudtrace::v1::Trace>* AsyncGetTraceRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncPatchTracesRaw(::grpc::ClientContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListTraces_;
     const ::grpc::RpcMethod rpcmethod_GetTrace_;
     const ::grpc::RpcMethod rpcmethod_PatchTraces_;
@@ -127,11 +128,11 @@ class TraceService GRPC_FINAL {
     WithAsyncMethod_ListTraces() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListTraces() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListTraces() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest* request, ::google::devtools::cloudtrace::v1::ListTracesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest* request, ::google::devtools::cloudtrace::v1::ListTracesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -147,11 +148,11 @@ class TraceService GRPC_FINAL {
     WithAsyncMethod_GetTrace() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetTrace() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetTrace() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTrace(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest* request, ::google::devtools::cloudtrace::v1::Trace* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTrace(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest* request, ::google::devtools::cloudtrace::v1::Trace* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -167,11 +168,11 @@ class TraceService GRPC_FINAL {
     WithAsyncMethod_PatchTraces() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_PatchTraces() GRPC_OVERRIDE {
+    ~WithAsyncMethod_PatchTraces() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PatchTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status PatchTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -188,11 +189,11 @@ class TraceService GRPC_FINAL {
     WithGenericMethod_ListTraces() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListTraces() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListTraces() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest* request, ::google::devtools::cloudtrace::v1::ListTracesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest* request, ::google::devtools::cloudtrace::v1::ListTracesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -205,11 +206,11 @@ class TraceService GRPC_FINAL {
     WithGenericMethod_GetTrace() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetTrace() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetTrace() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetTrace(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest* request, ::google::devtools::cloudtrace::v1::Trace* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetTrace(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest* request, ::google::devtools::cloudtrace::v1::Trace* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -222,15 +223,78 @@ class TraceService GRPC_FINAL {
     WithGenericMethod_PatchTraces() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_PatchTraces() GRPC_OVERRIDE {
+    ~WithGenericMethod_PatchTraces() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status PatchTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status PatchTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListTraces : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListTraces() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudtrace::v1::ListTracesRequest, ::google::devtools::cloudtrace::v1::ListTracesResponse>(std::bind(&WithStreamedUnaryMethod_ListTraces<BaseClass>::StreamedListTraces, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListTraces() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::ListTracesRequest* request, ::google::devtools::cloudtrace::v1::ListTracesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListTraces(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudtrace::v1::ListTracesRequest,::google::devtools::cloudtrace::v1::ListTracesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetTrace : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetTrace() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudtrace::v1::GetTraceRequest, ::google::devtools::cloudtrace::v1::Trace>(std::bind(&WithStreamedUnaryMethod_GetTrace<BaseClass>::StreamedGetTrace, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetTrace() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetTrace(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::GetTraceRequest* request, ::google::devtools::cloudtrace::v1::Trace* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetTrace(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudtrace::v1::GetTraceRequest,::google::devtools::cloudtrace::v1::Trace>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_PatchTraces : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_PatchTraces() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::cloudtrace::v1::PatchTracesRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_PatchTraces<BaseClass>::StreamedPatchTraces, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_PatchTraces() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status PatchTraces(::grpc::ServerContext* context, const ::google::devtools::cloudtrace::v1::PatchTracesRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedPatchTraces(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::cloudtrace::v1::PatchTracesRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListTraces<WithStreamedUnaryMethod_GetTrace<WithStreamedUnaryMethod_PatchTraces<Service > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListTraces<WithStreamedUnaryMethod_GetTrace<WithStreamedUnaryMethod_PatchTraces<Service > > > StreamedService;
 };
 
 }  // namespace v1

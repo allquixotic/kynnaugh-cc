@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -49,7 +50,7 @@ namespace v1beta3 {
 // input keys sets the project ID (if not already set) to the project ID from
 // the request.
 //
-class Datastore GRPC_FINAL {
+class Datastore final {
  public:
   class StubInterface {
    public:
@@ -94,42 +95,42 @@ class Datastore GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::datastore::v1beta3::RollbackResponse>* AsyncRollbackRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RollbackRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::datastore::v1beta3::AllocateIdsResponse>* AsyncAllocateIdsRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status Lookup(::grpc::ClientContext* context, const ::google::datastore::v1beta3::LookupRequest& request, ::google::datastore::v1beta3::LookupResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status Lookup(::grpc::ClientContext* context, const ::google::datastore::v1beta3::LookupRequest& request, ::google::datastore::v1beta3::LookupResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::LookupResponse>> AsyncLookup(::grpc::ClientContext* context, const ::google::datastore::v1beta3::LookupRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::LookupResponse>>(AsyncLookupRaw(context, request, cq));
     }
-    ::grpc::Status RunQuery(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RunQueryRequest& request, ::google::datastore::v1beta3::RunQueryResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status RunQuery(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RunQueryRequest& request, ::google::datastore::v1beta3::RunQueryResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RunQueryResponse>> AsyncRunQuery(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RunQueryRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RunQueryResponse>>(AsyncRunQueryRaw(context, request, cq));
     }
-    ::grpc::Status BeginTransaction(::grpc::ClientContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest& request, ::google::datastore::v1beta3::BeginTransactionResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status BeginTransaction(::grpc::ClientContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest& request, ::google::datastore::v1beta3::BeginTransactionResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::BeginTransactionResponse>> AsyncBeginTransaction(::grpc::ClientContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::BeginTransactionResponse>>(AsyncBeginTransactionRaw(context, request, cq));
     }
-    ::grpc::Status Commit(::grpc::ClientContext* context, const ::google::datastore::v1beta3::CommitRequest& request, ::google::datastore::v1beta3::CommitResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status Commit(::grpc::ClientContext* context, const ::google::datastore::v1beta3::CommitRequest& request, ::google::datastore::v1beta3::CommitResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::CommitResponse>> AsyncCommit(::grpc::ClientContext* context, const ::google::datastore::v1beta3::CommitRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::CommitResponse>>(AsyncCommitRaw(context, request, cq));
     }
-    ::grpc::Status Rollback(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RollbackRequest& request, ::google::datastore::v1beta3::RollbackResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status Rollback(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RollbackRequest& request, ::google::datastore::v1beta3::RollbackResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RollbackResponse>> AsyncRollback(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RollbackRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RollbackResponse>>(AsyncRollbackRaw(context, request, cq));
     }
-    ::grpc::Status AllocateIds(::grpc::ClientContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest& request, ::google::datastore::v1beta3::AllocateIdsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status AllocateIds(::grpc::ClientContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest& request, ::google::datastore::v1beta3::AllocateIdsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::AllocateIdsResponse>> AsyncAllocateIds(::grpc::ClientContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::AllocateIdsResponse>>(AsyncAllocateIdsRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::LookupResponse>* AsyncLookupRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::LookupRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RunQueryResponse>* AsyncRunQueryRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RunQueryRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::BeginTransactionResponse>* AsyncBeginTransactionRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::CommitResponse>* AsyncCommitRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::CommitRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RollbackResponse>* AsyncRollbackRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RollbackRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::AllocateIdsResponse>* AsyncAllocateIdsRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::LookupResponse>* AsyncLookupRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::LookupRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RunQueryResponse>* AsyncRunQueryRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RunQueryRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::BeginTransactionResponse>* AsyncBeginTransactionRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::CommitResponse>* AsyncCommitRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::CommitRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::RollbackResponse>* AsyncRollbackRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::RollbackRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::datastore::v1beta3::AllocateIdsResponse>* AsyncAllocateIdsRaw(::grpc::ClientContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_Lookup_;
     const ::grpc::RpcMethod rpcmethod_RunQuery_;
     const ::grpc::RpcMethod rpcmethod_BeginTransaction_;
@@ -166,11 +167,11 @@ class Datastore GRPC_FINAL {
     WithAsyncMethod_Lookup() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_Lookup() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Lookup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Lookup(::grpc::ServerContext* context, const ::google::datastore::v1beta3::LookupRequest* request, ::google::datastore::v1beta3::LookupResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Lookup(::grpc::ServerContext* context, const ::google::datastore::v1beta3::LookupRequest* request, ::google::datastore::v1beta3::LookupResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -186,11 +187,11 @@ class Datastore GRPC_FINAL {
     WithAsyncMethod_RunQuery() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_RunQuery() GRPC_OVERRIDE {
+    ~WithAsyncMethod_RunQuery() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RunQuery(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RunQueryRequest* request, ::google::datastore::v1beta3::RunQueryResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RunQuery(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RunQueryRequest* request, ::google::datastore::v1beta3::RunQueryResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -206,11 +207,11 @@ class Datastore GRPC_FINAL {
     WithAsyncMethod_BeginTransaction() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_BeginTransaction() GRPC_OVERRIDE {
+    ~WithAsyncMethod_BeginTransaction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BeginTransaction(::grpc::ServerContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest* request, ::google::datastore::v1beta3::BeginTransactionResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BeginTransaction(::grpc::ServerContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest* request, ::google::datastore::v1beta3::BeginTransactionResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -226,11 +227,11 @@ class Datastore GRPC_FINAL {
     WithAsyncMethod_Commit() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_Commit() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Commit() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Commit(::grpc::ServerContext* context, const ::google::datastore::v1beta3::CommitRequest* request, ::google::datastore::v1beta3::CommitResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Commit(::grpc::ServerContext* context, const ::google::datastore::v1beta3::CommitRequest* request, ::google::datastore::v1beta3::CommitResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -246,11 +247,11 @@ class Datastore GRPC_FINAL {
     WithAsyncMethod_Rollback() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_Rollback() GRPC_OVERRIDE {
+    ~WithAsyncMethod_Rollback() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Rollback(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RollbackRequest* request, ::google::datastore::v1beta3::RollbackResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Rollback(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RollbackRequest* request, ::google::datastore::v1beta3::RollbackResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -266,11 +267,11 @@ class Datastore GRPC_FINAL {
     WithAsyncMethod_AllocateIds() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_AllocateIds() GRPC_OVERRIDE {
+    ~WithAsyncMethod_AllocateIds() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status AllocateIds(::grpc::ServerContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest* request, ::google::datastore::v1beta3::AllocateIdsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status AllocateIds(::grpc::ServerContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest* request, ::google::datastore::v1beta3::AllocateIdsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -287,11 +288,11 @@ class Datastore GRPC_FINAL {
     WithGenericMethod_Lookup() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_Lookup() GRPC_OVERRIDE {
+    ~WithGenericMethod_Lookup() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Lookup(::grpc::ServerContext* context, const ::google::datastore::v1beta3::LookupRequest* request, ::google::datastore::v1beta3::LookupResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Lookup(::grpc::ServerContext* context, const ::google::datastore::v1beta3::LookupRequest* request, ::google::datastore::v1beta3::LookupResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -304,11 +305,11 @@ class Datastore GRPC_FINAL {
     WithGenericMethod_RunQuery() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_RunQuery() GRPC_OVERRIDE {
+    ~WithGenericMethod_RunQuery() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RunQuery(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RunQueryRequest* request, ::google::datastore::v1beta3::RunQueryResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RunQuery(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RunQueryRequest* request, ::google::datastore::v1beta3::RunQueryResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -321,11 +322,11 @@ class Datastore GRPC_FINAL {
     WithGenericMethod_BeginTransaction() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_BeginTransaction() GRPC_OVERRIDE {
+    ~WithGenericMethod_BeginTransaction() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status BeginTransaction(::grpc::ServerContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest* request, ::google::datastore::v1beta3::BeginTransactionResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status BeginTransaction(::grpc::ServerContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest* request, ::google::datastore::v1beta3::BeginTransactionResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -338,11 +339,11 @@ class Datastore GRPC_FINAL {
     WithGenericMethod_Commit() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_Commit() GRPC_OVERRIDE {
+    ~WithGenericMethod_Commit() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Commit(::grpc::ServerContext* context, const ::google::datastore::v1beta3::CommitRequest* request, ::google::datastore::v1beta3::CommitResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Commit(::grpc::ServerContext* context, const ::google::datastore::v1beta3::CommitRequest* request, ::google::datastore::v1beta3::CommitResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -355,11 +356,11 @@ class Datastore GRPC_FINAL {
     WithGenericMethod_Rollback() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_Rollback() GRPC_OVERRIDE {
+    ~WithGenericMethod_Rollback() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Rollback(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RollbackRequest* request, ::google::datastore::v1beta3::RollbackResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status Rollback(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RollbackRequest* request, ::google::datastore::v1beta3::RollbackResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -372,15 +373,138 @@ class Datastore GRPC_FINAL {
     WithGenericMethod_AllocateIds() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_AllocateIds() GRPC_OVERRIDE {
+    ~WithGenericMethod_AllocateIds() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status AllocateIds(::grpc::ServerContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest* request, ::google::datastore::v1beta3::AllocateIdsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status AllocateIds(::grpc::ServerContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest* request, ::google::datastore::v1beta3::AllocateIdsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Lookup : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Lookup() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::datastore::v1beta3::LookupRequest, ::google::datastore::v1beta3::LookupResponse>(std::bind(&WithStreamedUnaryMethod_Lookup<BaseClass>::StreamedLookup, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Lookup() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Lookup(::grpc::ServerContext* context, const ::google::datastore::v1beta3::LookupRequest* request, ::google::datastore::v1beta3::LookupResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedLookup(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::datastore::v1beta3::LookupRequest,::google::datastore::v1beta3::LookupResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_RunQuery : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_RunQuery() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::datastore::v1beta3::RunQueryRequest, ::google::datastore::v1beta3::RunQueryResponse>(std::bind(&WithStreamedUnaryMethod_RunQuery<BaseClass>::StreamedRunQuery, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_RunQuery() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status RunQuery(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RunQueryRequest* request, ::google::datastore::v1beta3::RunQueryResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedRunQuery(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::datastore::v1beta3::RunQueryRequest,::google::datastore::v1beta3::RunQueryResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_BeginTransaction : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_BeginTransaction() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::datastore::v1beta3::BeginTransactionRequest, ::google::datastore::v1beta3::BeginTransactionResponse>(std::bind(&WithStreamedUnaryMethod_BeginTransaction<BaseClass>::StreamedBeginTransaction, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_BeginTransaction() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status BeginTransaction(::grpc::ServerContext* context, const ::google::datastore::v1beta3::BeginTransactionRequest* request, ::google::datastore::v1beta3::BeginTransactionResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedBeginTransaction(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::datastore::v1beta3::BeginTransactionRequest,::google::datastore::v1beta3::BeginTransactionResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Commit : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Commit() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::datastore::v1beta3::CommitRequest, ::google::datastore::v1beta3::CommitResponse>(std::bind(&WithStreamedUnaryMethod_Commit<BaseClass>::StreamedCommit, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Commit() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Commit(::grpc::ServerContext* context, const ::google::datastore::v1beta3::CommitRequest* request, ::google::datastore::v1beta3::CommitResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCommit(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::datastore::v1beta3::CommitRequest,::google::datastore::v1beta3::CommitResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_Rollback : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_Rollback() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::datastore::v1beta3::RollbackRequest, ::google::datastore::v1beta3::RollbackResponse>(std::bind(&WithStreamedUnaryMethod_Rollback<BaseClass>::StreamedRollback, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_Rollback() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status Rollback(::grpc::ServerContext* context, const ::google::datastore::v1beta3::RollbackRequest* request, ::google::datastore::v1beta3::RollbackResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedRollback(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::datastore::v1beta3::RollbackRequest,::google::datastore::v1beta3::RollbackResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_AllocateIds : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_AllocateIds() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::datastore::v1beta3::AllocateIdsRequest, ::google::datastore::v1beta3::AllocateIdsResponse>(std::bind(&WithStreamedUnaryMethod_AllocateIds<BaseClass>::StreamedAllocateIds, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_AllocateIds() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status AllocateIds(::grpc::ServerContext* context, const ::google::datastore::v1beta3::AllocateIdsRequest* request, ::google::datastore::v1beta3::AllocateIdsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedAllocateIds(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::datastore::v1beta3::AllocateIdsRequest,::google::datastore::v1beta3::AllocateIdsResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_Lookup<WithStreamedUnaryMethod_RunQuery<WithStreamedUnaryMethod_BeginTransaction<WithStreamedUnaryMethod_Commit<WithStreamedUnaryMethod_Rollback<WithStreamedUnaryMethod_AllocateIds<Service > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_Lookup<WithStreamedUnaryMethod_RunQuery<WithStreamedUnaryMethod_BeginTransaction<WithStreamedUnaryMethod_Commit<WithStreamedUnaryMethod_Rollback<WithStreamedUnaryMethod_AllocateIds<Service > > > > > > StreamedService;
 };
 
 }  // namespace v1beta3

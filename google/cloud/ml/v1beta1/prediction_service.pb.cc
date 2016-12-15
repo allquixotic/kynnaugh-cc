@@ -46,20 +46,19 @@ void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2e
   PredictRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PredictRequest_descriptor_,
-      PredictRequest::default_instance_,
+      PredictRequest::internal_default_instance(),
       PredictRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(PredictRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictRequest, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto);
 }
@@ -68,25 +67,35 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PredictRequest_descriptor_, &PredictRequest::default_instance());
+      PredictRequest_descriptor_, PredictRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto() {
-  delete PredictRequest::default_instance_;
+  PredictRequest_default_instance_.Shutdown();
   delete PredictRequest_reflection_;
 }
 
-void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::api::protobuf_AddDesc_google_2fapi_2fhttpbody_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fhttpbody_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  PredictRequest_default_instance_.DefaultConstruct();
+  PredictRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_once_);
+void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n0google/cloud/ml/v1beta1/prediction_ser"
     "vice.proto\022\027google.cloud.ml.v1beta1\032\034goo"
@@ -96,22 +105,39 @@ void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2epro
     "pBody2\223\001\n\027OnlinePredictionService\022x\n\007Pre"
     "dict\022\'.google.cloud.ml.v1beta1.PredictRe"
     "quest\032\024.google.api.HttpBody\".\202\323\344\223\002(\"#/v1"
-    "beta1/{name=projects/**}:predict:\001*B;\n\037c"
+    "beta1/{name=projects/**}:predict:\001*Bv\n\037c"
     "om.google.cloud.ml.api.v1beta1B\026Predicti"
-    "onServiceProtoP\001b\006proto3", 424);
+    "onServiceProtoP\001Z9google.golang.org/genp"
+    "roto/googleapis/cloud/ml/v1beta1;mlb\006pro"
+    "to3", 483);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/ml/v1beta1/prediction_service.proto", &protobuf_RegisterTypes);
-  PredictRequest::default_instance_ = new PredictRequest();
-  PredictRequest::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fhttpbody_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_once_);
+void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_once_,
+                 &protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto {
   StaticDescriptorInitializer_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto() {
     protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -122,29 +148,28 @@ const int PredictRequest::kHttpBodyFieldNumber;
 
 PredictRequest::PredictRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.PredictRequest)
 }
 
 void PredictRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  http_body_ = const_cast< ::google::api::HttpBody*>(&::google::api::HttpBody::default_instance());
+  http_body_ = const_cast< ::google::api::HttpBody*>(
+      ::google::api::HttpBody::internal_default_instance());
 }
 
 PredictRequest::PredictRequest(const PredictRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.PredictRequest)
 }
 
 void PredictRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   http_body_ = NULL;
+  _cached_size_ = 0;
 }
 
 PredictRequest::~PredictRequest() {
@@ -154,7 +179,7 @@ PredictRequest::~PredictRequest() {
 
 void PredictRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &PredictRequest_default_instance_.get()) {
     delete http_body_;
   }
 }
@@ -170,11 +195,11 @@ const ::google::protobuf::Descriptor* PredictRequest::descriptor() {
 }
 
 const PredictRequest& PredictRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
+  return *internal_default_instance();
 }
 
-PredictRequest* PredictRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PredictRequest> PredictRequest_default_instance_;
 
 PredictRequest* PredictRequest::New(::google::protobuf::Arena* arena) const {
   PredictRequest* n = new PredictRequest;
@@ -275,6 +300,7 @@ void PredictRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PredictRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.PredictRequest)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -298,9 +324,9 @@ void PredictRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int PredictRequest::ByteSize() const {
+size_t PredictRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.PredictRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -316,18 +342,17 @@ int PredictRequest::ByteSize() const {
         *this->http_body_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PredictRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.PredictRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PredictRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PredictRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PredictRequest>(
           &from);
   if (source == NULL) {
@@ -335,15 +360,21 @@ void PredictRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.PredictRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PredictRequest::MergeFrom(const PredictRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.PredictRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void PredictRequest::UnsafeMergeFrom(const PredictRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -364,7 +395,7 @@ void PredictRequest::CopyFrom(const PredictRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.PredictRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PredictRequest::IsInitialized() const {
@@ -398,37 +429,37 @@ void PredictRequest::InternalSwap(PredictRequest* other) {
 void PredictRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& PredictRequest::name() const {
+const ::std::string& PredictRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictRequest.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PredictRequest::set_name(const ::std::string& value) {
+void PredictRequest::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.PredictRequest.name)
 }
- void PredictRequest::set_name(const char* value) {
+void PredictRequest::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.cloud.ml.v1beta1.PredictRequest.name)
 }
- void PredictRequest::set_name(const char* value, size_t size) {
+void PredictRequest::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.cloud.ml.v1beta1.PredictRequest.name)
 }
- ::std::string* PredictRequest::mutable_name() {
+::std::string* PredictRequest::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.cloud.ml.v1beta1.PredictRequest.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* PredictRequest::release_name() {
+::std::string* PredictRequest::release_name() {
   // @@protoc_insertion_point(field_release:google.cloud.ml.v1beta1.PredictRequest.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PredictRequest::set_allocated_name(::std::string* name) {
+void PredictRequest::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -440,7 +471,7 @@ void PredictRequest::clear_name() {
 
 // optional .google.api.HttpBody http_body = 2;
 bool PredictRequest::has_http_body() const {
-  return !_is_default_instance_ && http_body_ != NULL;
+  return this != internal_default_instance() && http_body_ != NULL;
 }
 void PredictRequest::clear_http_body() {
   if (GetArenaNoVirtual() == NULL && http_body_ != NULL) delete http_body_;
@@ -448,7 +479,8 @@ void PredictRequest::clear_http_body() {
 }
 const ::google::api::HttpBody& PredictRequest::http_body() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictRequest.http_body)
-  return http_body_ != NULL ? *http_body_ : *default_instance_->http_body_;
+  return http_body_ != NULL ? *http_body_
+                         : *::google::api::HttpBody::internal_default_instance();
 }
 ::google::api::HttpBody* PredictRequest::mutable_http_body() {
   
@@ -476,6 +508,9 @@ void PredictRequest::set_allocated_http_body(::google::api::HttpBody* http_body)
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.PredictRequest.http_body)
 }
 
+inline const PredictRequest* PredictRequest::internal_default_instance() {
+  return &PredictRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

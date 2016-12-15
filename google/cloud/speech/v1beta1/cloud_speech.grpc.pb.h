@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace speech {
 namespace v1beta1 {
 
 // Service that implements Google Cloud Speech API.
-class Speech GRPC_FINAL {
+class Speech final {
  public:
   class StubInterface {
    public:
@@ -77,14 +78,14 @@ class Speech GRPC_FINAL {
     virtual ::grpc::ClientReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* StreamingRecognizeRaw(::grpc::ClientContext* context) = 0;
     virtual ::grpc::ClientAsyncReaderWriterInterface< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* AsyncStreamingRecognizeRaw(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status SyncRecognize(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest& request, ::google::cloud::speech::v1beta1::SyncRecognizeResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SyncRecognize(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest& request, ::google::cloud::speech::v1beta1::SyncRecognizeResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::speech::v1beta1::SyncRecognizeResponse>> AsyncSyncRecognize(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::speech::v1beta1::SyncRecognizeResponse>>(AsyncSyncRecognizeRaw(context, request, cq));
     }
-    ::grpc::Status AsyncRecognize(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status AsyncRecognize(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncAsyncRecognize(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncAsyncRecognizeRaw(context, request, cq));
     }
@@ -97,10 +98,10 @@ class Speech GRPC_FINAL {
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::speech::v1beta1::SyncRecognizeResponse>* AsyncSyncRecognizeRaw(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncAsyncRecognizeRaw(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* StreamingRecognizeRaw(::grpc::ClientContext* context) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* AsyncStreamingRecognizeRaw(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::speech::v1beta1::SyncRecognizeResponse>* AsyncSyncRecognizeRaw(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncAsyncRecognizeRaw(::grpc::ClientContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* StreamingRecognizeRaw(::grpc::ClientContext* context) override;
+    ::grpc::ClientAsyncReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeRequest, ::google::cloud::speech::v1beta1::StreamingRecognizeResponse>* AsyncStreamingRecognizeRaw(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) override;
     const ::grpc::RpcMethod rpcmethod_SyncRecognize_;
     const ::grpc::RpcMethod rpcmethod_AsyncRecognize_;
     const ::grpc::RpcMethod rpcmethod_StreamingRecognize_;
@@ -131,11 +132,11 @@ class Speech GRPC_FINAL {
     WithAsyncMethod_SyncRecognize() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_SyncRecognize() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SyncRecognize() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest* request, ::google::cloud::speech::v1beta1::SyncRecognizeResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest* request, ::google::cloud::speech::v1beta1::SyncRecognizeResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -151,11 +152,11 @@ class Speech GRPC_FINAL {
     WithAsyncMethod_AsyncRecognize() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_AsyncRecognize() GRPC_OVERRIDE {
+    ~WithAsyncMethod_AsyncRecognize() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status AsyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status AsyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -171,11 +172,11 @@ class Speech GRPC_FINAL {
     WithAsyncMethod_StreamingRecognize() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_StreamingRecognize() GRPC_OVERRIDE {
+    ~WithAsyncMethod_StreamingRecognize() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -192,11 +193,11 @@ class Speech GRPC_FINAL {
     WithGenericMethod_SyncRecognize() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_SyncRecognize() GRPC_OVERRIDE {
+    ~WithGenericMethod_SyncRecognize() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest* request, ::google::cloud::speech::v1beta1::SyncRecognizeResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest* request, ::google::cloud::speech::v1beta1::SyncRecognizeResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -209,11 +210,11 @@ class Speech GRPC_FINAL {
     WithGenericMethod_AsyncRecognize() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_AsyncRecognize() GRPC_OVERRIDE {
+    ~WithGenericMethod_AsyncRecognize() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status AsyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status AsyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -226,15 +227,58 @@ class Speech GRPC_FINAL {
     WithGenericMethod_StreamingRecognize() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_StreamingRecognize() GRPC_OVERRIDE {
+    ~WithGenericMethod_StreamingRecognize() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status StreamingRecognize(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::cloud::speech::v1beta1::StreamingRecognizeResponse, ::google::cloud::speech::v1beta1::StreamingRecognizeRequest>* stream) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SyncRecognize : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SyncRecognize() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::speech::v1beta1::SyncRecognizeRequest, ::google::cloud::speech::v1beta1::SyncRecognizeResponse>(std::bind(&WithStreamedUnaryMethod_SyncRecognize<BaseClass>::StreamedSyncRecognize, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SyncRecognize() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::SyncRecognizeRequest* request, ::google::cloud::speech::v1beta1::SyncRecognizeResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSyncRecognize(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::speech::v1beta1::SyncRecognizeRequest,::google::cloud::speech::v1beta1::SyncRecognizeResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_AsyncRecognize : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_AsyncRecognize() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::speech::v1beta1::AsyncRecognizeRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_AsyncRecognize<BaseClass>::StreamedAsyncRecognize, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_AsyncRecognize() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status AsyncRecognize(::grpc::ServerContext* context, const ::google::cloud::speech::v1beta1::AsyncRecognizeRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedAsyncRecognize(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::speech::v1beta1::AsyncRecognizeRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_SyncRecognize<WithStreamedUnaryMethod_AsyncRecognize<Service > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_SyncRecognize<WithStreamedUnaryMethod_AsyncRecognize<Service > > StreamedService;
 };
 
 }  // namespace v1beta1

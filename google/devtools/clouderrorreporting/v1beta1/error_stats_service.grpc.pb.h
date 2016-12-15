@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -45,7 +46,7 @@ namespace v1beta1 {
 
 // An API for retrieving and managing error statistics as well as data for
 // individual events.
-class ErrorStatsService GRPC_FINAL {
+class ErrorStatsService final {
  public:
   class StubInterface {
    public:
@@ -70,27 +71,27 @@ class ErrorStatsService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse>* AsyncListEventsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse>* AsyncDeleteEventsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListGroupStats(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListGroupStats(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse>> AsyncListGroupStats(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse>>(AsyncListGroupStatsRaw(context, request, cq));
     }
-    ::grpc::Status ListEvents(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListEvents(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse>> AsyncListEvents(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse>>(AsyncListEventsRaw(context, request, cq));
     }
-    ::grpc::Status DeleteEvents(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest& request, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteEvents(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest& request, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse>> AsyncDeleteEvents(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse>>(AsyncDeleteEventsRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse>* AsyncListGroupStatsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse>* AsyncListEventsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse>* AsyncDeleteEventsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse>* AsyncListGroupStatsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse>* AsyncListEventsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse>* AsyncDeleteEventsRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListGroupStats_;
     const ::grpc::RpcMethod rpcmethod_ListEvents_;
     const ::grpc::RpcMethod rpcmethod_DeleteEvents_;
@@ -116,11 +117,11 @@ class ErrorStatsService GRPC_FINAL {
     WithAsyncMethod_ListGroupStats() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListGroupStats() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListGroupStats() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListGroupStats(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListGroupStats(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -136,11 +137,11 @@ class ErrorStatsService GRPC_FINAL {
     WithAsyncMethod_ListEvents() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_ListEvents() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListEvents() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -156,11 +157,11 @@ class ErrorStatsService GRPC_FINAL {
     WithAsyncMethod_DeleteEvents() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_DeleteEvents() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteEvents() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -177,11 +178,11 @@ class ErrorStatsService GRPC_FINAL {
     WithGenericMethod_ListGroupStats() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListGroupStats() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListGroupStats() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListGroupStats(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListGroupStats(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -194,11 +195,11 @@ class ErrorStatsService GRPC_FINAL {
     WithGenericMethod_ListEvents() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_ListEvents() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListEvents() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -211,15 +212,78 @@ class ErrorStatsService GRPC_FINAL {
     WithGenericMethod_DeleteEvents() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_DeleteEvents() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteEvents() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListGroupStats : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListGroupStats() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse>(std::bind(&WithStreamedUnaryMethod_ListGroupStats<BaseClass>::StreamedListGroupStats, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListGroupStats() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListGroupStats(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListGroupStats(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsRequest,::google::devtools::clouderrorreporting::v1beta1::ListGroupStatsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListEvents : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListEvents() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse>(std::bind(&WithStreamedUnaryMethod_ListEvents<BaseClass>::StreamedListEvents, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListEvents() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListEvents(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouderrorreporting::v1beta1::ListEventsRequest,::google::devtools::clouderrorreporting::v1beta1::ListEventsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteEvents : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteEvents() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse>(std::bind(&WithStreamedUnaryMethod_DeleteEvents<BaseClass>::StreamedDeleteEvents, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteEvents() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteEvents(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest* request, ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteEvents(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouderrorreporting::v1beta1::DeleteEventsRequest,::google::devtools::clouderrorreporting::v1beta1::DeleteEventsResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListGroupStats<WithStreamedUnaryMethod_ListEvents<WithStreamedUnaryMethod_DeleteEvents<Service > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListGroupStats<WithStreamedUnaryMethod_ListEvents<WithStreamedUnaryMethod_DeleteEvents<Service > > > StreamedService;
 };
 
 }  // namespace v1beta1

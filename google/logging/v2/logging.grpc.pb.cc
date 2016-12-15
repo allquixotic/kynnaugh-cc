@@ -22,6 +22,7 @@ static const char* LoggingServiceV2_method_names[] = {
   "/google.logging.v2.LoggingServiceV2/WriteLogEntries",
   "/google.logging.v2.LoggingServiceV2/ListLogEntries",
   "/google.logging.v2.LoggingServiceV2/ListMonitoredResourceDescriptors",
+  "/google.logging.v2.LoggingServiceV2/ListLogs",
 };
 
 std::unique_ptr< LoggingServiceV2::Stub> LoggingServiceV2::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -34,6 +35,7 @@ LoggingServiceV2::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& c
   , rpcmethod_WriteLogEntries_(LoggingServiceV2_method_names[1], ::grpc::RpcMethod::NORMAL_RPC, channel)
   , rpcmethod_ListLogEntries_(LoggingServiceV2_method_names[2], ::grpc::RpcMethod::NORMAL_RPC, channel)
   , rpcmethod_ListMonitoredResourceDescriptors_(LoggingServiceV2_method_names[3], ::grpc::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_ListLogs_(LoggingServiceV2_method_names[4], ::grpc::RpcMethod::NORMAL_RPC, channel)
   {}
 
 ::grpc::Status LoggingServiceV2::Stub::DeleteLog(::grpc::ClientContext* context, const ::google::logging::v2::DeleteLogRequest& request, ::google::protobuf::Empty* response) {
@@ -68,6 +70,14 @@ LoggingServiceV2::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& c
   return new ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListMonitoredResourceDescriptorsResponse>(channel_.get(), cq, rpcmethod_ListMonitoredResourceDescriptors_, context, request);
 }
 
+::grpc::Status LoggingServiceV2::Stub::ListLogs(::grpc::ClientContext* context, const ::google::logging::v2::ListLogsRequest& request, ::google::logging::v2::ListLogsResponse* response) {
+  return ::grpc::BlockingUnaryCall(channel_.get(), rpcmethod_ListLogs_, context, request, response);
+}
+
+::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListLogsResponse>* LoggingServiceV2::Stub::AsyncListLogsRaw(::grpc::ClientContext* context, const ::google::logging::v2::ListLogsRequest& request, ::grpc::CompletionQueue* cq) {
+  return new ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListLogsResponse>(channel_.get(), cq, rpcmethod_ListLogs_, context, request);
+}
+
 LoggingServiceV2::Service::Service() {
   (void)LoggingServiceV2_method_names;
   AddMethod(new ::grpc::RpcServiceMethod(
@@ -90,6 +100,11 @@ LoggingServiceV2::Service::Service() {
       ::grpc::RpcMethod::NORMAL_RPC,
       new ::grpc::RpcMethodHandler< LoggingServiceV2::Service, ::google::logging::v2::ListMonitoredResourceDescriptorsRequest, ::google::logging::v2::ListMonitoredResourceDescriptorsResponse>(
           std::mem_fn(&LoggingServiceV2::Service::ListMonitoredResourceDescriptors), this)));
+  AddMethod(new ::grpc::RpcServiceMethod(
+      LoggingServiceV2_method_names[4],
+      ::grpc::RpcMethod::NORMAL_RPC,
+      new ::grpc::RpcMethodHandler< LoggingServiceV2::Service, ::google::logging::v2::ListLogsRequest, ::google::logging::v2::ListLogsResponse>(
+          std::mem_fn(&LoggingServiceV2::Service::ListLogs), this)));
 }
 
 LoggingServiceV2::Service::~Service() {
@@ -117,6 +132,13 @@ LoggingServiceV2::Service::~Service() {
 }
 
 ::grpc::Status LoggingServiceV2::Service::ListMonitoredResourceDescriptors(::grpc::ServerContext* context, const ::google::logging::v2::ListMonitoredResourceDescriptorsRequest* request, ::google::logging::v2::ListMonitoredResourceDescriptorsResponse* response) {
+  (void) context;
+  (void) request;
+  (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+::grpc::Status LoggingServiceV2::Service::ListLogs(::grpc::ServerContext* context, const ::google::logging::v2::ListLogsRequest* request, ::google::logging::v2::ListLogsResponse* response) {
   (void) context;
   (void) request;
   (void) response;

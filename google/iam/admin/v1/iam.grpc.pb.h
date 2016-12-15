@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -59,7 +60,7 @@ namespace v1 {
 // Using `-` as a wildcard for the project will infer the project from
 // the account. The `account` value can be the `email` address or the
 // `unique_id` of the service account.
-class IAM GRPC_FINAL {
+class IAM final {
  public:
   class StubInterface {
    public:
@@ -162,82 +163,82 @@ class IAM GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::iam::v1::TestIamPermissionsResponse>* AsyncTestIamPermissionsRaw(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::iam::admin::v1::QueryGrantableRolesResponse>* AsyncQueryGrantableRolesRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListServiceAccounts(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest& request, ::google::iam::admin::v1::ListServiceAccountsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListServiceAccounts(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest& request, ::google::iam::admin::v1::ListServiceAccountsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountsResponse>> AsyncListServiceAccounts(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountsResponse>>(AsyncListServiceAccountsRaw(context, request, cq));
     }
-    ::grpc::Status GetServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest& request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_OVERRIDE;
+    ::grpc::Status GetServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest& request, ::google::iam::admin::v1::ServiceAccount* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>> AsyncGetServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>>(AsyncGetServiceAccountRaw(context, request, cq));
     }
-    ::grpc::Status CreateServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest& request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest& request, ::google::iam::admin::v1::ServiceAccount* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>> AsyncCreateServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>>(AsyncCreateServiceAccountRaw(context, request, cq));
     }
-    ::grpc::Status UpdateServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::ServiceAccount& request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::ServiceAccount& request, ::google::iam::admin::v1::ServiceAccount* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>> AsyncUpdateServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::ServiceAccount& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>>(AsyncUpdateServiceAccountRaw(context, request, cq));
     }
-    ::grpc::Status DeleteServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteServiceAccount(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteServiceAccountRaw(context, request, cq));
     }
-    ::grpc::Status ListServiceAccountKeys(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest& request, ::google::iam::admin::v1::ListServiceAccountKeysResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListServiceAccountKeys(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest& request, ::google::iam::admin::v1::ListServiceAccountKeysResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountKeysResponse>> AsyncListServiceAccountKeys(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountKeysResponse>>(AsyncListServiceAccountKeysRaw(context, request, cq));
     }
-    ::grpc::Status GetServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest& request, ::google::iam::admin::v1::ServiceAccountKey* response) GRPC_OVERRIDE;
+    ::grpc::Status GetServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest& request, ::google::iam::admin::v1::ServiceAccountKey* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>> AsyncGetServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>>(AsyncGetServiceAccountKeyRaw(context, request, cq));
     }
-    ::grpc::Status CreateServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest& request, ::google::iam::admin::v1::ServiceAccountKey* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest& request, ::google::iam::admin::v1::ServiceAccountKey* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>> AsyncCreateServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>>(AsyncCreateServiceAccountKeyRaw(context, request, cq));
     }
-    ::grpc::Status DeleteServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteServiceAccountKey(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteServiceAccountKeyRaw(context, request, cq));
     }
-    ::grpc::Status SignBlob(::grpc::ClientContext* context, const ::google::iam::admin::v1::SignBlobRequest& request, ::google::iam::admin::v1::SignBlobResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status SignBlob(::grpc::ClientContext* context, const ::google::iam::admin::v1::SignBlobRequest& request, ::google::iam::admin::v1::SignBlobResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::SignBlobResponse>> AsyncSignBlob(::grpc::ClientContext* context, const ::google::iam::admin::v1::SignBlobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::SignBlobResponse>>(AsyncSignBlobRaw(context, request, cq));
     }
-    ::grpc::Status GetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::google::iam::v1::Policy* response) GRPC_OVERRIDE;
+    ::grpc::Status GetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::google::iam::v1::Policy* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>> AsyncGetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>>(AsyncGetIamPolicyRaw(context, request, cq));
     }
-    ::grpc::Status SetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::google::iam::v1::Policy* response) GRPC_OVERRIDE;
+    ::grpc::Status SetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::google::iam::v1::Policy* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>> AsyncSetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>>(AsyncSetIamPolicyRaw(context, request, cq));
     }
-    ::grpc::Status TestIamPermissions(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::google::iam::v1::TestIamPermissionsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status TestIamPermissions(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::google::iam::v1::TestIamPermissionsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>> AsyncTestIamPermissions(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>>(AsyncTestIamPermissionsRaw(context, request, cq));
     }
-    ::grpc::Status QueryGrantableRoles(::grpc::ClientContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest& request, ::google::iam::admin::v1::QueryGrantableRolesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status QueryGrantableRoles(::grpc::ClientContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest& request, ::google::iam::admin::v1::QueryGrantableRolesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::QueryGrantableRolesResponse>> AsyncQueryGrantableRoles(::grpc::ClientContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::QueryGrantableRolesResponse>>(AsyncQueryGrantableRolesRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountsResponse>* AsyncListServiceAccountsRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>* AsyncGetServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>* AsyncCreateServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>* AsyncUpdateServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::ServiceAccount& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountKeysResponse>* AsyncListServiceAccountKeysRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>* AsyncGetServiceAccountKeyRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>* AsyncCreateServiceAccountKeyRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteServiceAccountKeyRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::SignBlobResponse>* AsyncSignBlobRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::SignBlobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncGetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncSetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>* AsyncTestIamPermissionsRaw(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::QueryGrantableRolesResponse>* AsyncQueryGrantableRolesRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountsResponse>* AsyncListServiceAccountsRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>* AsyncGetServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>* AsyncCreateServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccount>* AsyncUpdateServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::ServiceAccount& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteServiceAccountRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ListServiceAccountKeysResponse>* AsyncListServiceAccountKeysRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>* AsyncGetServiceAccountKeyRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::ServiceAccountKey>* AsyncCreateServiceAccountKeyRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteServiceAccountKeyRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::SignBlobResponse>* AsyncSignBlobRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::SignBlobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncGetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncSetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>* AsyncTestIamPermissionsRaw(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::admin::v1::QueryGrantableRolesResponse>* AsyncQueryGrantableRolesRaw(::grpc::ClientContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListServiceAccounts_;
     const ::grpc::RpcMethod rpcmethod_GetServiceAccount_;
     const ::grpc::RpcMethod rpcmethod_CreateServiceAccount_;
@@ -308,11 +309,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_ListServiceAccounts() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListServiceAccounts() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListServiceAccounts() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceAccounts(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest* request, ::google::iam::admin::v1::ListServiceAccountsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceAccounts(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest* request, ::google::iam::admin::v1::ListServiceAccountsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -328,11 +329,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_GetServiceAccount() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetServiceAccount() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -348,11 +349,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_CreateServiceAccount() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateServiceAccount() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -368,11 +369,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_UpdateServiceAccount() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateServiceAccount() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::ServiceAccount* request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::ServiceAccount* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -388,11 +389,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_DeleteServiceAccount() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteServiceAccount() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -408,11 +409,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_ListServiceAccountKeys() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_ListServiceAccountKeys() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListServiceAccountKeys() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceAccountKeys(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest* request, ::google::iam::admin::v1::ListServiceAccountKeysResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceAccountKeys(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest* request, ::google::iam::admin::v1::ListServiceAccountKeysResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -428,11 +429,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_GetServiceAccountKey() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_GetServiceAccountKey() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetServiceAccountKey() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -448,11 +449,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_CreateServiceAccountKey() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_CreateServiceAccountKey() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateServiceAccountKey() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -468,11 +469,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_DeleteServiceAccountKey() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_DeleteServiceAccountKey() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteServiceAccountKey() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -488,11 +489,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_SignBlob() {
       ::grpc::Service::MarkMethodAsync(9);
     }
-    ~WithAsyncMethod_SignBlob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SignBlob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SignBlob(::grpc::ServerContext* context, const ::google::iam::admin::v1::SignBlobRequest* request, ::google::iam::admin::v1::SignBlobResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SignBlob(::grpc::ServerContext* context, const ::google::iam::admin::v1::SignBlobRequest* request, ::google::iam::admin::v1::SignBlobResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -508,11 +509,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_GetIamPolicy() {
       ::grpc::Service::MarkMethodAsync(10);
     }
-    ~WithAsyncMethod_GetIamPolicy() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -528,11 +529,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_SetIamPolicy() {
       ::grpc::Service::MarkMethodAsync(11);
     }
-    ~WithAsyncMethod_SetIamPolicy() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -548,11 +549,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_TestIamPermissions() {
       ::grpc::Service::MarkMethodAsync(12);
     }
-    ~WithAsyncMethod_TestIamPermissions() GRPC_OVERRIDE {
+    ~WithAsyncMethod_TestIamPermissions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -568,11 +569,11 @@ class IAM GRPC_FINAL {
     WithAsyncMethod_QueryGrantableRoles() {
       ::grpc::Service::MarkMethodAsync(13);
     }
-    ~WithAsyncMethod_QueryGrantableRoles() GRPC_OVERRIDE {
+    ~WithAsyncMethod_QueryGrantableRoles() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status QueryGrantableRoles(::grpc::ServerContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest* request, ::google::iam::admin::v1::QueryGrantableRolesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status QueryGrantableRoles(::grpc::ServerContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest* request, ::google::iam::admin::v1::QueryGrantableRolesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -589,11 +590,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_ListServiceAccounts() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListServiceAccounts() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListServiceAccounts() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceAccounts(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest* request, ::google::iam::admin::v1::ListServiceAccountsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceAccounts(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest* request, ::google::iam::admin::v1::ListServiceAccountsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -606,11 +607,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_GetServiceAccount() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetServiceAccount() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -623,11 +624,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_CreateServiceAccount() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateServiceAccount() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -640,11 +641,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_UpdateServiceAccount() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateServiceAccount() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::ServiceAccount* request, ::google::iam::admin::v1::ServiceAccount* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::ServiceAccount* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -657,11 +658,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_DeleteServiceAccount() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteServiceAccount() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteServiceAccount() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -674,11 +675,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_ListServiceAccountKeys() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_ListServiceAccountKeys() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListServiceAccountKeys() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServiceAccountKeys(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest* request, ::google::iam::admin::v1::ListServiceAccountKeysResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServiceAccountKeys(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest* request, ::google::iam::admin::v1::ListServiceAccountKeysResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -691,11 +692,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_GetServiceAccountKey() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_GetServiceAccountKey() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetServiceAccountKey() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -708,11 +709,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_CreateServiceAccountKey() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_CreateServiceAccountKey() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateServiceAccountKey() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -725,11 +726,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_DeleteServiceAccountKey() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_DeleteServiceAccountKey() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteServiceAccountKey() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -742,11 +743,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_SignBlob() {
       ::grpc::Service::MarkMethodGeneric(9);
     }
-    ~WithGenericMethod_SignBlob() GRPC_OVERRIDE {
+    ~WithGenericMethod_SignBlob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SignBlob(::grpc::ServerContext* context, const ::google::iam::admin::v1::SignBlobRequest* request, ::google::iam::admin::v1::SignBlobResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SignBlob(::grpc::ServerContext* context, const ::google::iam::admin::v1::SignBlobRequest* request, ::google::iam::admin::v1::SignBlobResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -759,11 +760,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_GetIamPolicy() {
       ::grpc::Service::MarkMethodGeneric(10);
     }
-    ~WithGenericMethod_GetIamPolicy() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -776,11 +777,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_SetIamPolicy() {
       ::grpc::Service::MarkMethodGeneric(11);
     }
-    ~WithGenericMethod_SetIamPolicy() GRPC_OVERRIDE {
+    ~WithGenericMethod_SetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -793,11 +794,11 @@ class IAM GRPC_FINAL {
     WithGenericMethod_TestIamPermissions() {
       ::grpc::Service::MarkMethodGeneric(12);
     }
-    ~WithGenericMethod_TestIamPermissions() GRPC_OVERRIDE {
+    ~WithGenericMethod_TestIamPermissions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -810,15 +811,298 @@ class IAM GRPC_FINAL {
     WithGenericMethod_QueryGrantableRoles() {
       ::grpc::Service::MarkMethodGeneric(13);
     }
-    ~WithGenericMethod_QueryGrantableRoles() GRPC_OVERRIDE {
+    ~WithGenericMethod_QueryGrantableRoles() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status QueryGrantableRoles(::grpc::ServerContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest* request, ::google::iam::admin::v1::QueryGrantableRolesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status QueryGrantableRoles(::grpc::ServerContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest* request, ::google::iam::admin::v1::QueryGrantableRolesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListServiceAccounts : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListServiceAccounts() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::ListServiceAccountsRequest, ::google::iam::admin::v1::ListServiceAccountsResponse>(std::bind(&WithStreamedUnaryMethod_ListServiceAccounts<BaseClass>::StreamedListServiceAccounts, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListServiceAccounts() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListServiceAccounts(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountsRequest* request, ::google::iam::admin::v1::ListServiceAccountsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListServiceAccounts(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::ListServiceAccountsRequest,::google::iam::admin::v1::ListServiceAccountsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetServiceAccount : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetServiceAccount() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::GetServiceAccountRequest, ::google::iam::admin::v1::ServiceAccount>(std::bind(&WithStreamedUnaryMethod_GetServiceAccount<BaseClass>::StreamedGetServiceAccount, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetServiceAccount() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetServiceAccount(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::GetServiceAccountRequest,::google::iam::admin::v1::ServiceAccount>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateServiceAccount : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateServiceAccount() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::CreateServiceAccountRequest, ::google::iam::admin::v1::ServiceAccount>(std::bind(&WithStreamedUnaryMethod_CreateServiceAccount<BaseClass>::StreamedCreateServiceAccount, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateServiceAccount() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountRequest* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateServiceAccount(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::CreateServiceAccountRequest,::google::iam::admin::v1::ServiceAccount>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateServiceAccount : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateServiceAccount() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::ServiceAccount, ::google::iam::admin::v1::ServiceAccount>(std::bind(&WithStreamedUnaryMethod_UpdateServiceAccount<BaseClass>::StreamedUpdateServiceAccount, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateServiceAccount() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::ServiceAccount* request, ::google::iam::admin::v1::ServiceAccount* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateServiceAccount(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::ServiceAccount,::google::iam::admin::v1::ServiceAccount>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteServiceAccount : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteServiceAccount() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::DeleteServiceAccountRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteServiceAccount<BaseClass>::StreamedDeleteServiceAccount, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteServiceAccount() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteServiceAccount(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteServiceAccount(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::DeleteServiceAccountRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListServiceAccountKeys : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListServiceAccountKeys() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::ListServiceAccountKeysRequest, ::google::iam::admin::v1::ListServiceAccountKeysResponse>(std::bind(&WithStreamedUnaryMethod_ListServiceAccountKeys<BaseClass>::StreamedListServiceAccountKeys, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListServiceAccountKeys() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListServiceAccountKeys(::grpc::ServerContext* context, const ::google::iam::admin::v1::ListServiceAccountKeysRequest* request, ::google::iam::admin::v1::ListServiceAccountKeysResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListServiceAccountKeys(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::ListServiceAccountKeysRequest,::google::iam::admin::v1::ListServiceAccountKeysResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetServiceAccountKey : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetServiceAccountKey() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::GetServiceAccountKeyRequest, ::google::iam::admin::v1::ServiceAccountKey>(std::bind(&WithStreamedUnaryMethod_GetServiceAccountKey<BaseClass>::StreamedGetServiceAccountKey, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetServiceAccountKey() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::GetServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetServiceAccountKey(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::GetServiceAccountKeyRequest,::google::iam::admin::v1::ServiceAccountKey>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateServiceAccountKey : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateServiceAccountKey() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::CreateServiceAccountKeyRequest, ::google::iam::admin::v1::ServiceAccountKey>(std::bind(&WithStreamedUnaryMethod_CreateServiceAccountKey<BaseClass>::StreamedCreateServiceAccountKey, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateServiceAccountKey() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::CreateServiceAccountKeyRequest* request, ::google::iam::admin::v1::ServiceAccountKey* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateServiceAccountKey(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::CreateServiceAccountKeyRequest,::google::iam::admin::v1::ServiceAccountKey>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteServiceAccountKey : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteServiceAccountKey() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::DeleteServiceAccountKeyRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteServiceAccountKey<BaseClass>::StreamedDeleteServiceAccountKey, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteServiceAccountKey() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteServiceAccountKey(::grpc::ServerContext* context, const ::google::iam::admin::v1::DeleteServiceAccountKeyRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteServiceAccountKey(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::DeleteServiceAccountKeyRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SignBlob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SignBlob() {
+      ::grpc::Service::MarkMethodStreamed(9,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::SignBlobRequest, ::google::iam::admin::v1::SignBlobResponse>(std::bind(&WithStreamedUnaryMethod_SignBlob<BaseClass>::StreamedSignBlob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SignBlob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SignBlob(::grpc::ServerContext* context, const ::google::iam::admin::v1::SignBlobRequest* request, ::google::iam::admin::v1::SignBlobResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSignBlob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::SignBlobRequest,::google::iam::admin::v1::SignBlobResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetIamPolicy : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetIamPolicy() {
+      ::grpc::Service::MarkMethodStreamed(10,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::v1::GetIamPolicyRequest, ::google::iam::v1::Policy>(std::bind(&WithStreamedUnaryMethod_GetIamPolicy<BaseClass>::StreamedGetIamPolicy, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetIamPolicy() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetIamPolicy(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::v1::GetIamPolicyRequest,::google::iam::v1::Policy>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SetIamPolicy : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SetIamPolicy() {
+      ::grpc::Service::MarkMethodStreamed(11,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::v1::SetIamPolicyRequest, ::google::iam::v1::Policy>(std::bind(&WithStreamedUnaryMethod_SetIamPolicy<BaseClass>::StreamedSetIamPolicy, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SetIamPolicy() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSetIamPolicy(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::v1::SetIamPolicyRequest,::google::iam::v1::Policy>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_TestIamPermissions : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_TestIamPermissions() {
+      ::grpc::Service::MarkMethodStreamed(12,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::v1::TestIamPermissionsRequest, ::google::iam::v1::TestIamPermissionsResponse>(std::bind(&WithStreamedUnaryMethod_TestIamPermissions<BaseClass>::StreamedTestIamPermissions, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_TestIamPermissions() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedTestIamPermissions(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::v1::TestIamPermissionsRequest,::google::iam::v1::TestIamPermissionsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_QueryGrantableRoles : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_QueryGrantableRoles() {
+      ::grpc::Service::MarkMethodStreamed(13,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::admin::v1::QueryGrantableRolesRequest, ::google::iam::admin::v1::QueryGrantableRolesResponse>(std::bind(&WithStreamedUnaryMethod_QueryGrantableRoles<BaseClass>::StreamedQueryGrantableRoles, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_QueryGrantableRoles() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status QueryGrantableRoles(::grpc::ServerContext* context, const ::google::iam::admin::v1::QueryGrantableRolesRequest* request, ::google::iam::admin::v1::QueryGrantableRolesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedQueryGrantableRoles(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::admin::v1::QueryGrantableRolesRequest,::google::iam::admin::v1::QueryGrantableRolesResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListServiceAccounts<WithStreamedUnaryMethod_GetServiceAccount<WithStreamedUnaryMethod_CreateServiceAccount<WithStreamedUnaryMethod_UpdateServiceAccount<WithStreamedUnaryMethod_DeleteServiceAccount<WithStreamedUnaryMethod_ListServiceAccountKeys<WithStreamedUnaryMethod_GetServiceAccountKey<WithStreamedUnaryMethod_CreateServiceAccountKey<WithStreamedUnaryMethod_DeleteServiceAccountKey<WithStreamedUnaryMethod_SignBlob<WithStreamedUnaryMethod_GetIamPolicy<WithStreamedUnaryMethod_SetIamPolicy<WithStreamedUnaryMethod_TestIamPermissions<WithStreamedUnaryMethod_QueryGrantableRoles<Service > > > > > > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListServiceAccounts<WithStreamedUnaryMethod_GetServiceAccount<WithStreamedUnaryMethod_CreateServiceAccount<WithStreamedUnaryMethod_UpdateServiceAccount<WithStreamedUnaryMethod_DeleteServiceAccount<WithStreamedUnaryMethod_ListServiceAccountKeys<WithStreamedUnaryMethod_GetServiceAccountKey<WithStreamedUnaryMethod_CreateServiceAccountKey<WithStreamedUnaryMethod_DeleteServiceAccountKey<WithStreamedUnaryMethod_SignBlob<WithStreamedUnaryMethod_GetIamPolicy<WithStreamedUnaryMethod_SetIamPolicy<WithStreamedUnaryMethod_TestIamPermissions<WithStreamedUnaryMethod_QueryGrantableRoles<Service > > > > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

@@ -47,21 +47,20 @@ void protobuf_AssignDesc_google_2fgenomics_2fv1_2fcigar_2eproto() {
   CigarUnit_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       CigarUnit_descriptor_,
-      CigarUnit::default_instance_,
+      CigarUnit::internal_default_instance(),
       CigarUnit_offsets_,
       -1,
       -1,
       -1,
       sizeof(CigarUnit),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CigarUnit, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CigarUnit, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CigarUnit, _internal_metadata_));
   CigarUnit_Operation_descriptor_ = CigarUnit_descriptor_->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fgenomics_2fv1_2fcigar_2eproto);
 }
@@ -70,24 +69,34 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      CigarUnit_descriptor_, &CigarUnit::default_instance());
+      CigarUnit_descriptor_, CigarUnit::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fcigar_2eproto() {
-  delete CigarUnit::default_instance_;
+  CigarUnit_default_instance_.Shutdown();
   delete CigarUnit_reflection_;
 }
 
-void protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  CigarUnit_default_instance_.DefaultConstruct();
+  CigarUnit_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto_once_);
+void protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\036google/genomics/v1/cigar.proto\022\022google"
     ".genomics.v1\032\034google/api/annotations.pro"
@@ -98,21 +107,37 @@ void protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto() {
     "SPECIFIED\020\000\022\023\n\017ALIGNMENT_MATCH\020\001\022\n\n\006INSE"
     "RT\020\002\022\n\n\006DELETE\020\003\022\010\n\004SKIP\020\004\022\r\n\tCLIP_SOFT\020"
     "\005\022\r\n\tCLIP_HARD\020\006\022\007\n\003PAD\020\007\022\022\n\016SEQUENCE_MA"
-    "TCH\020\010\022\025\n\021SEQUENCE_MISMATCH\020\tB)\n\026com.goog"
-    "le.genomics.v1B\nCigarProtoP\001\370\001\001b\006proto3", 439);
+    "TCH\020\010\022\025\n\021SEQUENCE_MISMATCH\020\tBe\n\026com.goog"
+    "le.genomics.v1B\nCigarProtoP\001Z:google.gol"
+    "ang.org/genproto/googleapis/genomics/v1;"
+    "genomics\370\001\001b\006proto3", 499);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/genomics/v1/cigar.proto", &protobuf_RegisterTypes);
-  CigarUnit::default_instance_ = new CigarUnit();
-  CigarUnit::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fgenomics_2fv1_2fcigar_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto_once_);
+void protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto_once_,
+                 &protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fgenomics_2fv1_2fcigar_2eproto {
   StaticDescriptorInitializer_google_2fgenomics_2fv1_2fcigar_2eproto() {
     protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto();
   }
 } static_descriptor_initializer_google_2fgenomics_2fv1_2fcigar_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -121,7 +146,7 @@ const ::google::protobuf::EnumDescriptor* CigarUnit_Operation_descriptor() {
   return CigarUnit_Operation_descriptor_;
 }
 bool CigarUnit_Operation_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -161,37 +186,37 @@ const int CigarUnit::kReferenceSequenceFieldNumber;
 
 CigarUnit::CigarUnit()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.CigarUnit)
 }
-
 CigarUnit::CigarUnit(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.CigarUnit)
 }
 
 void CigarUnit::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 CigarUnit::CigarUnit(const CigarUnit& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.CigarUnit)
 }
 
 void CigarUnit::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  operation_ = 0;
-  operation_length_ = GOOGLE_LONGLONG(0);
   reference_sequence_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&operation_length_, 0, reinterpret_cast<char*>(&operation_) -
+    reinterpret_cast<char*>(&operation_length_) + sizeof(operation_));
+  _cached_size_ = 0;
 }
 
 CigarUnit::~CigarUnit() {
@@ -200,13 +225,12 @@ CigarUnit::~CigarUnit() {
 }
 
 void CigarUnit::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  reference_sequence_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  reference_sequence_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void CigarUnit::ArenaDtor(void* object) {
@@ -226,11 +250,11 @@ const ::google::protobuf::Descriptor* CigarUnit::descriptor() {
 }
 
 const CigarUnit& CigarUnit::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fgenomics_2fv1_2fcigar_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fgenomics_2fv1_2fcigar_2eproto();
+  return *internal_default_instance();
 }
 
-CigarUnit* CigarUnit::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<CigarUnit> CigarUnit_default_instance_;
 
 CigarUnit* CigarUnit::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<CigarUnit>(arena);
@@ -238,9 +262,28 @@ CigarUnit* CigarUnit::New(::google::protobuf::Arena* arena) const {
 
 void CigarUnit::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.CigarUnit)
-  operation_ = 0;
-  operation_length_ = GOOGLE_LONGLONG(0);
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(CigarUnit, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<CigarUnit*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(operation_length_, operation_);
   reference_sequence_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool CigarUnit::MergePartialFromCodedStream(
@@ -272,10 +315,10 @@ bool CigarUnit::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_operation_length:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &operation_length_)));
-
         } else {
           goto handle_unusual;
         }
@@ -350,6 +393,7 @@ void CigarUnit::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* CigarUnit::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.CigarUnit)
   // optional .google.genomics.v1.CigarUnit.Operation operation = 1;
   if (this->operation() != 0) {
@@ -377,9 +421,9 @@ void CigarUnit::SerializeWithCachedSizes(
   return target;
 }
 
-int CigarUnit::ByteSize() const {
+size_t CigarUnit::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.CigarUnit)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.genomics.v1.CigarUnit.Operation operation = 1;
   if (this->operation() != 0) {
@@ -401,18 +445,17 @@ int CigarUnit::ByteSize() const {
         this->reference_sequence());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void CigarUnit::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.CigarUnit)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const CigarUnit* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const CigarUnit* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CigarUnit>(
           &from);
   if (source == NULL) {
@@ -420,15 +463,21 @@ void CigarUnit::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.CigarUnit)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CigarUnit::MergeFrom(const CigarUnit& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.CigarUnit)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CigarUnit::UnsafeMergeFrom(const CigarUnit& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.operation() != 0) {
     set_operation(from.operation());
   }
@@ -451,7 +500,7 @@ void CigarUnit::CopyFrom(const CigarUnit& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.CigarUnit)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CigarUnit::IsInitialized() const {
@@ -465,7 +514,7 @@ void CigarUnit::Swap(CigarUnit* other) {
     InternalSwap(other);
   } else {
     CigarUnit temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -498,11 +547,11 @@ void CigarUnit::InternalSwap(CigarUnit* other) {
 void CigarUnit::clear_operation() {
   operation_ = 0;
 }
- ::google::genomics::v1::CigarUnit_Operation CigarUnit::operation() const {
+::google::genomics::v1::CigarUnit_Operation CigarUnit::operation() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.CigarUnit.operation)
   return static_cast< ::google::genomics::v1::CigarUnit_Operation >(operation_);
 }
- void CigarUnit::set_operation(::google::genomics::v1::CigarUnit_Operation value) {
+void CigarUnit::set_operation(::google::genomics::v1::CigarUnit_Operation value) {
   
   operation_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.CigarUnit.operation)
@@ -512,11 +561,11 @@ void CigarUnit::clear_operation() {
 void CigarUnit::clear_operation_length() {
   operation_length_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 CigarUnit::operation_length() const {
+::google::protobuf::int64 CigarUnit::operation_length() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.CigarUnit.operation_length)
   return operation_length_;
 }
- void CigarUnit::set_operation_length(::google::protobuf::int64 value) {
+void CigarUnit::set_operation_length(::google::protobuf::int64 value) {
   
   operation_length_ = value;
   // @@protoc_insertion_point(field_set:google.genomics.v1.CigarUnit.operation_length)
@@ -526,46 +575,46 @@ void CigarUnit::clear_operation_length() {
 void CigarUnit::clear_reference_sequence() {
   reference_sequence_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& CigarUnit::reference_sequence() const {
+const ::std::string& CigarUnit::reference_sequence() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.CigarUnit.reference_sequence)
   return reference_sequence_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void CigarUnit::set_reference_sequence(const ::std::string& value) {
+void CigarUnit::set_reference_sequence(const ::std::string& value) {
   
   reference_sequence_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.genomics.v1.CigarUnit.reference_sequence)
 }
- void CigarUnit::set_reference_sequence(const char* value) {
+void CigarUnit::set_reference_sequence(const char* value) {
   
   reference_sequence_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.genomics.v1.CigarUnit.reference_sequence)
 }
- void CigarUnit::set_reference_sequence(const char* value,
+void CigarUnit::set_reference_sequence(const char* value,
     size_t size) {
   
   reference_sequence_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.genomics.v1.CigarUnit.reference_sequence)
 }
- ::std::string* CigarUnit::mutable_reference_sequence() {
+::std::string* CigarUnit::mutable_reference_sequence() {
   
   // @@protoc_insertion_point(field_mutable:google.genomics.v1.CigarUnit.reference_sequence)
   return reference_sequence_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CigarUnit::release_reference_sequence() {
+::std::string* CigarUnit::release_reference_sequence() {
   // @@protoc_insertion_point(field_release:google.genomics.v1.CigarUnit.reference_sequence)
   
   return reference_sequence_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* CigarUnit::unsafe_arena_release_reference_sequence() {
+::std::string* CigarUnit::unsafe_arena_release_reference_sequence() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.genomics.v1.CigarUnit.reference_sequence)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return reference_sequence_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void CigarUnit::set_allocated_reference_sequence(::std::string* reference_sequence) {
+void CigarUnit::set_allocated_reference_sequence(::std::string* reference_sequence) {
   if (reference_sequence != NULL) {
     
   } else {
@@ -575,7 +624,7 @@ void CigarUnit::clear_reference_sequence() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.CigarUnit.reference_sequence)
 }
- void CigarUnit::unsafe_arena_set_allocated_reference_sequence(
+void CigarUnit::unsafe_arena_set_allocated_reference_sequence(
     ::std::string* reference_sequence) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (reference_sequence != NULL) {
@@ -588,6 +637,9 @@ void CigarUnit::clear_reference_sequence() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.CigarUnit.reference_sequence)
 }
 
+inline const CigarUnit* CigarUnit::internal_default_instance() {
+  return &CigarUnit_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -43,7 +44,7 @@ namespace container {
 namespace v1 {
 
 // Google Container Engine Cluster Manager v1
-class ClusterManager GRPC_FINAL {
+class ClusterManager final {
  public:
   class StubInterface {
    public:
@@ -118,52 +119,52 @@ class ClusterManager GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::container::v1::Operation>* AsyncGetOperationRaw(::grpc::ClientContext* context, const ::google::container::v1::GetOperationRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::container::v1::ServerConfig>* AsyncGetServerConfigRaw(::grpc::ClientContext* context, const ::google::container::v1::GetServerConfigRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListClusters(::grpc::ClientContext* context, const ::google::container::v1::ListClustersRequest& request, ::google::container::v1::ListClustersResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListClusters(::grpc::ClientContext* context, const ::google::container::v1::ListClustersRequest& request, ::google::container::v1::ListClustersResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListClustersResponse>> AsyncListClusters(::grpc::ClientContext* context, const ::google::container::v1::ListClustersRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListClustersResponse>>(AsyncListClustersRaw(context, request, cq));
     }
-    ::grpc::Status GetCluster(::grpc::ClientContext* context, const ::google::container::v1::GetClusterRequest& request, ::google::container::v1::Cluster* response) GRPC_OVERRIDE;
+    ::grpc::Status GetCluster(::grpc::ClientContext* context, const ::google::container::v1::GetClusterRequest& request, ::google::container::v1::Cluster* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Cluster>> AsyncGetCluster(::grpc::ClientContext* context, const ::google::container::v1::GetClusterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Cluster>>(AsyncGetClusterRaw(context, request, cq));
     }
-    ::grpc::Status CreateCluster(::grpc::ClientContext* context, const ::google::container::v1::CreateClusterRequest& request, ::google::container::v1::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateCluster(::grpc::ClientContext* context, const ::google::container::v1::CreateClusterRequest& request, ::google::container::v1::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>> AsyncCreateCluster(::grpc::ClientContext* context, const ::google::container::v1::CreateClusterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>>(AsyncCreateClusterRaw(context, request, cq));
     }
-    ::grpc::Status UpdateCluster(::grpc::ClientContext* context, const ::google::container::v1::UpdateClusterRequest& request, ::google::container::v1::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateCluster(::grpc::ClientContext* context, const ::google::container::v1::UpdateClusterRequest& request, ::google::container::v1::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>> AsyncUpdateCluster(::grpc::ClientContext* context, const ::google::container::v1::UpdateClusterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>>(AsyncUpdateClusterRaw(context, request, cq));
     }
-    ::grpc::Status DeleteCluster(::grpc::ClientContext* context, const ::google::container::v1::DeleteClusterRequest& request, ::google::container::v1::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteCluster(::grpc::ClientContext* context, const ::google::container::v1::DeleteClusterRequest& request, ::google::container::v1::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>> AsyncDeleteCluster(::grpc::ClientContext* context, const ::google::container::v1::DeleteClusterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>>(AsyncDeleteClusterRaw(context, request, cq));
     }
-    ::grpc::Status ListOperations(::grpc::ClientContext* context, const ::google::container::v1::ListOperationsRequest& request, ::google::container::v1::ListOperationsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListOperations(::grpc::ClientContext* context, const ::google::container::v1::ListOperationsRequest& request, ::google::container::v1::ListOperationsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListOperationsResponse>> AsyncListOperations(::grpc::ClientContext* context, const ::google::container::v1::ListOperationsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListOperationsResponse>>(AsyncListOperationsRaw(context, request, cq));
     }
-    ::grpc::Status GetOperation(::grpc::ClientContext* context, const ::google::container::v1::GetOperationRequest& request, ::google::container::v1::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status GetOperation(::grpc::ClientContext* context, const ::google::container::v1::GetOperationRequest& request, ::google::container::v1::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>> AsyncGetOperation(::grpc::ClientContext* context, const ::google::container::v1::GetOperationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>>(AsyncGetOperationRaw(context, request, cq));
     }
-    ::grpc::Status GetServerConfig(::grpc::ClientContext* context, const ::google::container::v1::GetServerConfigRequest& request, ::google::container::v1::ServerConfig* response) GRPC_OVERRIDE;
+    ::grpc::Status GetServerConfig(::grpc::ClientContext* context, const ::google::container::v1::GetServerConfigRequest& request, ::google::container::v1::ServerConfig* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::ServerConfig>> AsyncGetServerConfig(::grpc::ClientContext* context, const ::google::container::v1::GetServerConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::container::v1::ServerConfig>>(AsyncGetServerConfigRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListClustersResponse>* AsyncListClustersRaw(::grpc::ClientContext* context, const ::google::container::v1::ListClustersRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Cluster>* AsyncGetClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::GetClusterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncCreateClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::CreateClusterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncUpdateClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::UpdateClusterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncDeleteClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::DeleteClusterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListOperationsResponse>* AsyncListOperationsRaw(::grpc::ClientContext* context, const ::google::container::v1::ListOperationsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncGetOperationRaw(::grpc::ClientContext* context, const ::google::container::v1::GetOperationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::container::v1::ServerConfig>* AsyncGetServerConfigRaw(::grpc::ClientContext* context, const ::google::container::v1::GetServerConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListClustersResponse>* AsyncListClustersRaw(::grpc::ClientContext* context, const ::google::container::v1::ListClustersRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Cluster>* AsyncGetClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::GetClusterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncCreateClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::CreateClusterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncUpdateClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::UpdateClusterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncDeleteClusterRaw(::grpc::ClientContext* context, const ::google::container::v1::DeleteClusterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::ListOperationsResponse>* AsyncListOperationsRaw(::grpc::ClientContext* context, const ::google::container::v1::ListOperationsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::Operation>* AsyncGetOperationRaw(::grpc::ClientContext* context, const ::google::container::v1::GetOperationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::container::v1::ServerConfig>* AsyncGetServerConfigRaw(::grpc::ClientContext* context, const ::google::container::v1::GetServerConfigRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListClusters_;
     const ::grpc::RpcMethod rpcmethod_GetCluster_;
     const ::grpc::RpcMethod rpcmethod_CreateCluster_;
@@ -224,11 +225,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_ListClusters() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListClusters() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListClusters() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::container::v1::ListClustersRequest* request, ::google::container::v1::ListClustersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::container::v1::ListClustersRequest* request, ::google::container::v1::ListClustersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -244,11 +245,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_GetCluster() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::container::v1::GetClusterRequest* request, ::google::container::v1::Cluster* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::container::v1::GetClusterRequest* request, ::google::container::v1::Cluster* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -264,11 +265,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_CreateCluster() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::container::v1::CreateClusterRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::container::v1::CreateClusterRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -284,11 +285,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_UpdateCluster() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::container::v1::UpdateClusterRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::container::v1::UpdateClusterRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -304,11 +305,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_DeleteCluster() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::container::v1::DeleteClusterRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::container::v1::DeleteClusterRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -324,11 +325,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_ListOperations() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_ListOperations() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListOperations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::container::v1::ListOperationsRequest* request, ::google::container::v1::ListOperationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::container::v1::ListOperationsRequest* request, ::google::container::v1::ListOperationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -344,11 +345,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_GetOperation() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_GetOperation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::container::v1::GetOperationRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::container::v1::GetOperationRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -364,11 +365,11 @@ class ClusterManager GRPC_FINAL {
     WithAsyncMethod_GetServerConfig() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_GetServerConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetServerConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServerConfig(::grpc::ServerContext* context, const ::google::container::v1::GetServerConfigRequest* request, ::google::container::v1::ServerConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServerConfig(::grpc::ServerContext* context, const ::google::container::v1::GetServerConfigRequest* request, ::google::container::v1::ServerConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -385,11 +386,11 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_ListClusters() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListClusters() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListClusters() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::container::v1::ListClustersRequest* request, ::google::container::v1::ListClustersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::container::v1::ListClustersRequest* request, ::google::container::v1::ListClustersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -402,11 +403,11 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_GetCluster() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::container::v1::GetClusterRequest* request, ::google::container::v1::Cluster* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::container::v1::GetClusterRequest* request, ::google::container::v1::Cluster* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -419,11 +420,11 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_CreateCluster() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::container::v1::CreateClusterRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::container::v1::CreateClusterRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -436,11 +437,11 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_UpdateCluster() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::container::v1::UpdateClusterRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::container::v1::UpdateClusterRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -453,11 +454,11 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_DeleteCluster() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::container::v1::DeleteClusterRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::container::v1::DeleteClusterRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -470,11 +471,11 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_ListOperations() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_ListOperations() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListOperations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::container::v1::ListOperationsRequest* request, ::google::container::v1::ListOperationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::container::v1::ListOperationsRequest* request, ::google::container::v1::ListOperationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -487,11 +488,11 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_GetOperation() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_GetOperation() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::container::v1::GetOperationRequest* request, ::google::container::v1::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::container::v1::GetOperationRequest* request, ::google::container::v1::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -504,15 +505,178 @@ class ClusterManager GRPC_FINAL {
     WithGenericMethod_GetServerConfig() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_GetServerConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetServerConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetServerConfig(::grpc::ServerContext* context, const ::google::container::v1::GetServerConfigRequest* request, ::google::container::v1::ServerConfig* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetServerConfig(::grpc::ServerContext* context, const ::google::container::v1::GetServerConfigRequest* request, ::google::container::v1::ServerConfig* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListClusters : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListClusters() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::ListClustersRequest, ::google::container::v1::ListClustersResponse>(std::bind(&WithStreamedUnaryMethod_ListClusters<BaseClass>::StreamedListClusters, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListClusters() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::container::v1::ListClustersRequest* request, ::google::container::v1::ListClustersResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListClusters(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::ListClustersRequest,::google::container::v1::ListClustersResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetCluster() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::GetClusterRequest, ::google::container::v1::Cluster>(std::bind(&WithStreamedUnaryMethod_GetCluster<BaseClass>::StreamedGetCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::container::v1::GetClusterRequest* request, ::google::container::v1::Cluster* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::GetClusterRequest,::google::container::v1::Cluster>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateCluster() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::CreateClusterRequest, ::google::container::v1::Operation>(std::bind(&WithStreamedUnaryMethod_CreateCluster<BaseClass>::StreamedCreateCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::container::v1::CreateClusterRequest* request, ::google::container::v1::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::CreateClusterRequest,::google::container::v1::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateCluster() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::UpdateClusterRequest, ::google::container::v1::Operation>(std::bind(&WithStreamedUnaryMethod_UpdateCluster<BaseClass>::StreamedUpdateCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::container::v1::UpdateClusterRequest* request, ::google::container::v1::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::UpdateClusterRequest,::google::container::v1::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteCluster() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::DeleteClusterRequest, ::google::container::v1::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteCluster<BaseClass>::StreamedDeleteCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::container::v1::DeleteClusterRequest* request, ::google::container::v1::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::DeleteClusterRequest,::google::container::v1::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListOperations : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListOperations() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::ListOperationsRequest, ::google::container::v1::ListOperationsResponse>(std::bind(&WithStreamedUnaryMethod_ListOperations<BaseClass>::StreamedListOperations, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListOperations() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::container::v1::ListOperationsRequest* request, ::google::container::v1::ListOperationsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListOperations(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::ListOperationsRequest,::google::container::v1::ListOperationsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetOperation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetOperation() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::GetOperationRequest, ::google::container::v1::Operation>(std::bind(&WithStreamedUnaryMethod_GetOperation<BaseClass>::StreamedGetOperation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetOperation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::container::v1::GetOperationRequest* request, ::google::container::v1::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetOperation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::GetOperationRequest,::google::container::v1::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetServerConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetServerConfig() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::container::v1::GetServerConfigRequest, ::google::container::v1::ServerConfig>(std::bind(&WithStreamedUnaryMethod_GetServerConfig<BaseClass>::StreamedGetServerConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetServerConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetServerConfig(::grpc::ServerContext* context, const ::google::container::v1::GetServerConfigRequest* request, ::google::container::v1::ServerConfig* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetServerConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::container::v1::GetServerConfigRequest,::google::container::v1::ServerConfig>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListClusters<WithStreamedUnaryMethod_GetCluster<WithStreamedUnaryMethod_CreateCluster<WithStreamedUnaryMethod_UpdateCluster<WithStreamedUnaryMethod_DeleteCluster<WithStreamedUnaryMethod_ListOperations<WithStreamedUnaryMethod_GetOperation<WithStreamedUnaryMethod_GetServerConfig<Service > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListClusters<WithStreamedUnaryMethod_GetCluster<WithStreamedUnaryMethod_CreateCluster<WithStreamedUnaryMethod_UpdateCluster<WithStreamedUnaryMethod_DeleteCluster<WithStreamedUnaryMethod_ListOperations<WithStreamedUnaryMethod_GetOperation<WithStreamedUnaryMethod_GetServerConfig<Service > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -49,7 +50,7 @@ namespace v1beta1 {
 // Describes the 'job service' to manage training and prediction jobs.
 //
 // Service to create and manage training and batch prediction jobs.
-class JobService GRPC_FINAL {
+class JobService final {
  public:
   class StubInterface {
    public:
@@ -80,32 +81,32 @@ class JobService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::ml::v1beta1::Job>* AsyncGetJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncCancelJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest& request, ::google::cloud::ml::v1beta1::Job* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest& request, ::google::cloud::ml::v1beta1::Job* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>> AsyncCreateJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>>(AsyncCreateJobRaw(context, request, cq));
     }
-    ::grpc::Status ListJobs(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest& request, ::google::cloud::ml::v1beta1::ListJobsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListJobs(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest& request, ::google::cloud::ml::v1beta1::ListJobsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListJobsResponse>> AsyncListJobs(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListJobsResponse>>(AsyncListJobsRaw(context, request, cq));
     }
-    ::grpc::Status GetJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest& request, ::google::cloud::ml::v1beta1::Job* response) GRPC_OVERRIDE;
+    ::grpc::Status GetJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest& request, ::google::cloud::ml::v1beta1::Job* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>> AsyncGetJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>>(AsyncGetJobRaw(context, request, cq));
     }
-    ::grpc::Status CancelJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status CancelJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncCancelJob(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncCancelJobRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>* AsyncCreateJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListJobsResponse>* AsyncListJobsRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>* AsyncGetJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncCancelJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>* AsyncCreateJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::ListJobsResponse>* AsyncListJobsRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::Job>* AsyncGetJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncCancelJobRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateJob_;
     const ::grpc::RpcMethod rpcmethod_ListJobs_;
     const ::grpc::RpcMethod rpcmethod_GetJob_;
@@ -134,11 +135,11 @@ class JobService GRPC_FINAL {
     WithAsyncMethod_CreateJob() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -154,11 +155,11 @@ class JobService GRPC_FINAL {
     WithAsyncMethod_ListJobs() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_ListJobs() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListJobs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest* request, ::google::cloud::ml::v1beta1::ListJobsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest* request, ::google::cloud::ml::v1beta1::ListJobsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -174,11 +175,11 @@ class JobService GRPC_FINAL {
     WithAsyncMethod_GetJob() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_GetJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -194,11 +195,11 @@ class JobService GRPC_FINAL {
     WithAsyncMethod_CancelJob() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_CancelJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CancelJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -215,11 +216,11 @@ class JobService GRPC_FINAL {
     WithGenericMethod_CreateJob() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -232,11 +233,11 @@ class JobService GRPC_FINAL {
     WithGenericMethod_ListJobs() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_ListJobs() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListJobs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest* request, ::google::cloud::ml::v1beta1::ListJobsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest* request, ::google::cloud::ml::v1beta1::ListJobsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -249,11 +250,11 @@ class JobService GRPC_FINAL {
     WithGenericMethod_GetJob() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_GetJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -266,15 +267,98 @@ class JobService GRPC_FINAL {
     WithGenericMethod_CancelJob() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_CancelJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_CancelJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateJob() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::CreateJobRequest, ::google::cloud::ml::v1beta1::Job>(std::bind(&WithStreamedUnaryMethod_CreateJob<BaseClass>::StreamedCreateJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CreateJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::CreateJobRequest,::google::cloud::ml::v1beta1::Job>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListJobs : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListJobs() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::ListJobsRequest, ::google::cloud::ml::v1beta1::ListJobsResponse>(std::bind(&WithStreamedUnaryMethod_ListJobs<BaseClass>::StreamedListJobs, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListJobs() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::ListJobsRequest* request, ::google::cloud::ml::v1beta1::ListJobsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListJobs(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::ListJobsRequest,::google::cloud::ml::v1beta1::ListJobsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetJob() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::GetJobRequest, ::google::cloud::ml::v1beta1::Job>(std::bind(&WithStreamedUnaryMethod_GetJob<BaseClass>::StreamedGetJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetJobRequest* request, ::google::cloud::ml::v1beta1::Job* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::GetJobRequest,::google::cloud::ml::v1beta1::Job>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CancelJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CancelJob() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::CancelJobRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_CancelJob<BaseClass>::StreamedCancelJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CancelJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::CancelJobRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCancelJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::CancelJobRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateJob<WithStreamedUnaryMethod_ListJobs<WithStreamedUnaryMethod_GetJob<WithStreamedUnaryMethod_CancelJob<Service > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateJob<WithStreamedUnaryMethod_ListJobs<WithStreamedUnaryMethod_GetJob<WithStreamedUnaryMethod_CancelJob<Service > > > > StreamedService;
 };
 
 }  // namespace v1beta1

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace clouderrorreporting {
 namespace v1beta1 {
 
 // An API for reporting error events.
-class ReportErrorsService GRPC_FINAL {
+class ReportErrorsService final {
  public:
   class StubInterface {
    public:
@@ -64,17 +65,17 @@ class ReportErrorsService GRPC_FINAL {
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse>* AsyncReportErrorEventRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ReportErrorEvent(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ReportErrorEvent(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest& request, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse>> AsyncReportErrorEvent(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse>>(AsyncReportErrorEventRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse>* AsyncReportErrorEventRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse>* AsyncReportErrorEventRaw(::grpc::ClientContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ReportErrorEvent_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -101,11 +102,11 @@ class ReportErrorsService GRPC_FINAL {
     WithAsyncMethod_ReportErrorEvent() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ReportErrorEvent() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ReportErrorEvent() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ReportErrorEvent(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ReportErrorEvent(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -122,15 +123,38 @@ class ReportErrorsService GRPC_FINAL {
     WithGenericMethod_ReportErrorEvent() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ReportErrorEvent() GRPC_OVERRIDE {
+    ~WithGenericMethod_ReportErrorEvent() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ReportErrorEvent(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ReportErrorEvent(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ReportErrorEvent : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ReportErrorEvent() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse>(std::bind(&WithStreamedUnaryMethod_ReportErrorEvent<BaseClass>::StreamedReportErrorEvent, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ReportErrorEvent() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ReportErrorEvent(::grpc::ServerContext* context, const ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest* request, ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedReportErrorEvent(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventRequest,::google::devtools::clouderrorreporting::v1beta1::ReportErrorEventResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ReportErrorEvent<Service > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ReportErrorEvent<Service > StreamedService;
 };
 
 }  // namespace v1beta1

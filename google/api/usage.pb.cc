@@ -40,21 +40,21 @@ void protobuf_AssignDesc_google_2fapi_2fusage_2eproto() {
       "google/api/usage.proto");
   GOOGLE_CHECK(file != NULL);
   Usage_descriptor_ = file->message_type(0);
-  static const int Usage_offsets_[2] = {
+  static const int Usage_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Usage, requirements_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Usage, rules_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Usage, producer_notification_channel_),
   };
   Usage_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Usage_descriptor_,
-      Usage::default_instance_,
+      Usage::internal_default_instance(),
       Usage_offsets_,
       -1,
       -1,
       -1,
       sizeof(Usage),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Usage, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Usage, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Usage, _internal_metadata_));
   UsageRule_descriptor_ = file->message_type(1);
   static const int UsageRule_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UsageRule, selector_),
@@ -63,20 +63,19 @@ void protobuf_AssignDesc_google_2fapi_2fusage_2eproto() {
   UsageRule_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       UsageRule_descriptor_,
-      UsageRule::default_instance_,
+      UsageRule::internal_default_instance(),
       UsageRule_offsets_,
       -1,
       -1,
       -1,
       sizeof(UsageRule),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UsageRule, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UsageRule, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UsageRule, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fusage_2eproto);
 }
@@ -85,45 +84,62 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Usage_descriptor_, &Usage::default_instance());
+      Usage_descriptor_, Usage::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      UsageRule_descriptor_, &UsageRule::default_instance());
+      UsageRule_descriptor_, UsageRule::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fusage_2eproto() {
-  delete Usage::default_instance_;
+  Usage_default_instance_.Shutdown();
   delete Usage_reflection_;
-  delete UsageRule::default_instance_;
+  UsageRule_default_instance_.Shutdown();
   delete UsageRule_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fusage_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fusage_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fusage_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Usage_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UsageRule_default_instance_.DefaultConstruct();
+  Usage_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UsageRule_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fusage_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fusage_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fusage_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fusage_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fusage_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fusage_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\026google/api/usage.proto\022\ngoogle.api\032\034go"
-    "ogle/api/annotations.proto\"C\n\005Usage\022\024\n\014r"
+    "ogle/api/annotations.proto\"j\n\005Usage\022\024\n\014r"
     "equirements\030\001 \003(\t\022$\n\005rules\030\006 \003(\0132\025.googl"
-    "e.api.UsageRule\"\?\n\tUsageRule\022\020\n\010selector"
-    "\030\001 \001(\t\022 \n\030allow_unregistered_calls\030\002 \001(\010"
-    "B%\n\016com.google.apiB\nUsageProtoP\001\242\002\004GAPIb"
-    "\006proto3", 247);
+    "e.api.UsageRule\022%\n\035producer_notification"
+    "_channel\030\007 \001(\t\"\?\n\tUsageRule\022\020\n\010selector\030"
+    "\001 \001(\t\022 \n\030allow_unregistered_calls\030\002 \001(\010B"
+    "l\n\016com.google.apiB\nUsageProtoP\001ZEgoogle."
+    "golang.org/genproto/googleapis/api/servi"
+    "ceconfig;serviceconfig\242\002\004GAPIb\006proto3", 357);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/usage.proto", &protobuf_RegisterTypes);
-  Usage::default_instance_ = new Usage();
-  UsageRule::default_instance_ = new UsageRule();
-  Usage::default_instance_->InitAsDefaultInstance();
-  UsageRule::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fusage_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fusage_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fusage_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fusage_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fusage_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fusage_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fusage_2eproto() {
@@ -131,34 +147,44 @@ struct StaticDescriptorInitializer_google_2fapi_2fusage_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fusage_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Usage::kRequirementsFieldNumber;
 const int Usage::kRulesFieldNumber;
+const int Usage::kProducerNotificationChannelFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Usage::Usage()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fusage_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Usage)
 }
 
 void Usage::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Usage::Usage(const Usage& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Usage)
 }
 
 void Usage::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
+  producer_notification_channel_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _cached_size_ = 0;
 }
 
@@ -168,8 +194,7 @@ Usage::~Usage() {
 }
 
 void Usage::SharedDtor() {
-  if (this != default_instance_) {
-  }
+  producer_notification_channel_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void Usage::SetCachedSize(int size) const {
@@ -183,11 +208,11 @@ const ::google::protobuf::Descriptor* Usage::descriptor() {
 }
 
 const Usage& Usage::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fusage_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fusage_2eproto();
+  return *internal_default_instance();
 }
 
-Usage* Usage::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Usage> Usage_default_instance_;
 
 Usage* Usage::New(::google::protobuf::Arena* arena) const {
   Usage* n = new Usage;
@@ -199,6 +224,7 @@ Usage* Usage::New(::google::protobuf::Arena* arena) const {
 
 void Usage::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.Usage)
+  producer_notification_channel_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   requirements_.Clear();
   rules_.Clear();
 }
@@ -245,6 +271,23 @@ bool Usage::MergePartialFromCodedStream(
         }
         if (input->ExpectTag(50)) goto parse_loop_rules;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(58)) goto parse_producer_notification_channel;
+        break;
+      }
+
+      // optional string producer_notification_channel = 7;
+      case 7: {
+        if (tag == 58) {
+         parse_producer_notification_channel:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_producer_notification_channel()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->producer_notification_channel().data(), this->producer_notification_channel().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.api.Usage.producer_notification_channel"));
+        } else {
+          goto handle_unusual;
+        }
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -289,11 +332,22 @@ void Usage::SerializeWithCachedSizes(
       6, this->rules(i), output);
   }
 
+  // optional string producer_notification_channel = 7;
+  if (this->producer_notification_channel().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->producer_notification_channel().data(), this->producer_notification_channel().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.api.Usage.producer_notification_channel");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      7, this->producer_notification_channel(), output);
+  }
+
   // @@protoc_insertion_point(serialize_end:google.api.Usage)
 }
 
 ::google::protobuf::uint8* Usage::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Usage)
   // repeated string requirements = 1;
   for (int i = 0; i < this->requirements_size(); i++) {
@@ -312,41 +366,62 @@ void Usage::SerializeWithCachedSizes(
         6, this->rules(i), false, target);
   }
 
+  // optional string producer_notification_channel = 7;
+  if (this->producer_notification_channel().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->producer_notification_channel().data(), this->producer_notification_channel().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.api.Usage.producer_notification_channel");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        7, this->producer_notification_channel(), target);
+  }
+
   // @@protoc_insertion_point(serialize_to_array_end:google.api.Usage)
   return target;
 }
 
-int Usage::ByteSize() const {
+size_t Usage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Usage)
-  int total_size = 0;
+  size_t total_size = 0;
+
+  // optional string producer_notification_channel = 7;
+  if (this->producer_notification_channel().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->producer_notification_channel());
+  }
 
   // repeated string requirements = 1;
-  total_size += 1 * this->requirements_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->requirements_size());
   for (int i = 0; i < this->requirements_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->requirements(i));
   }
 
   // repeated .google.api.UsageRule rules = 6;
-  total_size += 1 * this->rules_size();
-  for (int i = 0; i < this->rules_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->rules(i));
+  {
+    unsigned int count = this->rules_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->rules(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Usage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Usage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Usage* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Usage* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Usage>(
           &from);
   if (source == NULL) {
@@ -354,17 +429,27 @@ void Usage::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Usage)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Usage::MergeFrom(const Usage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Usage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  requirements_.MergeFrom(from.requirements_);
+}
+
+void Usage::UnsafeMergeFrom(const Usage& from) {
+  GOOGLE_DCHECK(&from != this);
+  requirements_.UnsafeMergeFrom(from.requirements_);
   rules_.MergeFrom(from.rules_);
+  if (from.producer_notification_channel().size() > 0) {
+
+    producer_notification_channel_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.producer_notification_channel_);
+  }
 }
 
 void Usage::CopyFrom(const ::google::protobuf::Message& from) {
@@ -378,7 +463,7 @@ void Usage::CopyFrom(const Usage& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Usage)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Usage::IsInitialized() const {
@@ -393,6 +478,7 @@ void Usage::Swap(Usage* other) {
 void Usage::InternalSwap(Usage* other) {
   requirements_.UnsafeArenaSwap(&other->requirements_);
   rules_.UnsafeArenaSwap(&other->rules_);
+  producer_notification_channel_.Swap(&other->producer_notification_channel_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
@@ -415,49 +501,49 @@ int Usage::requirements_size() const {
 void Usage::clear_requirements() {
   requirements_.Clear();
 }
- const ::std::string& Usage::requirements(int index) const {
+const ::std::string& Usage::requirements(int index) const {
   // @@protoc_insertion_point(field_get:google.api.Usage.requirements)
   return requirements_.Get(index);
 }
- ::std::string* Usage::mutable_requirements(int index) {
+::std::string* Usage::mutable_requirements(int index) {
   // @@protoc_insertion_point(field_mutable:google.api.Usage.requirements)
   return requirements_.Mutable(index);
 }
- void Usage::set_requirements(int index, const ::std::string& value) {
+void Usage::set_requirements(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.api.Usage.requirements)
   requirements_.Mutable(index)->assign(value);
 }
- void Usage::set_requirements(int index, const char* value) {
+void Usage::set_requirements(int index, const char* value) {
   requirements_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.api.Usage.requirements)
 }
- void Usage::set_requirements(int index, const char* value, size_t size) {
+void Usage::set_requirements(int index, const char* value, size_t size) {
   requirements_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.api.Usage.requirements)
 }
- ::std::string* Usage::add_requirements() {
+::std::string* Usage::add_requirements() {
   // @@protoc_insertion_point(field_add_mutable:google.api.Usage.requirements)
   return requirements_.Add();
 }
- void Usage::add_requirements(const ::std::string& value) {
+void Usage::add_requirements(const ::std::string& value) {
   requirements_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.api.Usage.requirements)
 }
- void Usage::add_requirements(const char* value) {
+void Usage::add_requirements(const char* value) {
   requirements_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.api.Usage.requirements)
 }
- void Usage::add_requirements(const char* value, size_t size) {
+void Usage::add_requirements(const char* value, size_t size) {
   requirements_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.api.Usage.requirements)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 Usage::requirements() const {
   // @@protoc_insertion_point(field_list:google.api.Usage.requirements)
   return requirements_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 Usage::mutable_requirements() {
   // @@protoc_insertion_point(field_mutable_list:google.api.Usage.requirements)
   return &requirements_;
@@ -493,6 +579,53 @@ Usage::rules() const {
   return rules_;
 }
 
+// optional string producer_notification_channel = 7;
+void Usage::clear_producer_notification_channel() {
+  producer_notification_channel_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Usage::producer_notification_channel() const {
+  // @@protoc_insertion_point(field_get:google.api.Usage.producer_notification_channel)
+  return producer_notification_channel_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Usage::set_producer_notification_channel(const ::std::string& value) {
+  
+  producer_notification_channel_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.api.Usage.producer_notification_channel)
+}
+void Usage::set_producer_notification_channel(const char* value) {
+  
+  producer_notification_channel_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.api.Usage.producer_notification_channel)
+}
+void Usage::set_producer_notification_channel(const char* value, size_t size) {
+  
+  producer_notification_channel_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.api.Usage.producer_notification_channel)
+}
+::std::string* Usage::mutable_producer_notification_channel() {
+  
+  // @@protoc_insertion_point(field_mutable:google.api.Usage.producer_notification_channel)
+  return producer_notification_channel_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Usage::release_producer_notification_channel() {
+  // @@protoc_insertion_point(field_release:google.api.Usage.producer_notification_channel)
+  
+  return producer_notification_channel_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Usage::set_allocated_producer_notification_channel(::std::string* producer_notification_channel) {
+  if (producer_notification_channel != NULL) {
+    
+  } else {
+    
+  }
+  producer_notification_channel_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), producer_notification_channel);
+  // @@protoc_insertion_point(field_set_allocated:google.api.Usage.producer_notification_channel)
+}
+
+inline const Usage* Usage::internal_default_instance() {
+  return &Usage_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -504,28 +637,26 @@ const int UsageRule::kAllowUnregisteredCallsFieldNumber;
 
 UsageRule::UsageRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fusage_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.UsageRule)
 }
 
 void UsageRule::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 UsageRule::UsageRule(const UsageRule& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.UsageRule)
 }
 
 void UsageRule::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   allow_unregistered_calls_ = false;
+  _cached_size_ = 0;
 }
 
 UsageRule::~UsageRule() {
@@ -535,8 +666,6 @@ UsageRule::~UsageRule() {
 
 void UsageRule::SharedDtor() {
   selector_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void UsageRule::SetCachedSize(int size) const {
@@ -550,11 +679,11 @@ const ::google::protobuf::Descriptor* UsageRule::descriptor() {
 }
 
 const UsageRule& UsageRule::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fusage_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fusage_2eproto();
+  return *internal_default_instance();
 }
 
-UsageRule* UsageRule::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<UsageRule> UsageRule_default_instance_;
 
 UsageRule* UsageRule::New(::google::protobuf::Arena* arena) const {
   UsageRule* n = new UsageRule;
@@ -600,10 +729,10 @@ bool UsageRule::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_allow_unregistered_calls:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &allow_unregistered_calls_)));
-
         } else {
           goto handle_unusual;
         }
@@ -655,6 +784,7 @@ void UsageRule::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* UsageRule::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.UsageRule)
   // optional string selector = 1;
   if (this->selector().size() > 0) {
@@ -676,9 +806,9 @@ void UsageRule::SerializeWithCachedSizes(
   return target;
 }
 
-int UsageRule::ByteSize() const {
+size_t UsageRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.UsageRule)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string selector = 1;
   if (this->selector().size() > 0) {
@@ -692,18 +822,17 @@ int UsageRule::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void UsageRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.UsageRule)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const UsageRule* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const UsageRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UsageRule>(
           &from);
   if (source == NULL) {
@@ -711,15 +840,21 @@ void UsageRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.UsageRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UsageRule::MergeFrom(const UsageRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.UsageRule)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void UsageRule::UnsafeMergeFrom(const UsageRule& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.selector().size() > 0) {
 
     selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
@@ -740,7 +875,7 @@ void UsageRule::CopyFrom(const UsageRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.UsageRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UsageRule::IsInitialized() const {
@@ -774,37 +909,37 @@ void UsageRule::InternalSwap(UsageRule* other) {
 void UsageRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& UsageRule::selector() const {
+const ::std::string& UsageRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.UsageRule.selector)
   return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UsageRule::set_selector(const ::std::string& value) {
+void UsageRule::set_selector(const ::std::string& value) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.UsageRule.selector)
 }
- void UsageRule::set_selector(const char* value) {
+void UsageRule::set_selector(const char* value) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.UsageRule.selector)
 }
- void UsageRule::set_selector(const char* value, size_t size) {
+void UsageRule::set_selector(const char* value, size_t size) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.UsageRule.selector)
 }
- ::std::string* UsageRule::mutable_selector() {
+::std::string* UsageRule::mutable_selector() {
   
   // @@protoc_insertion_point(field_mutable:google.api.UsageRule.selector)
   return selector_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* UsageRule::release_selector() {
+::std::string* UsageRule::release_selector() {
   // @@protoc_insertion_point(field_release:google.api.UsageRule.selector)
   
   return selector_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void UsageRule::set_allocated_selector(::std::string* selector) {
+void UsageRule::set_allocated_selector(::std::string* selector) {
   if (selector != NULL) {
     
   } else {
@@ -818,16 +953,19 @@ void UsageRule::clear_selector() {
 void UsageRule::clear_allow_unregistered_calls() {
   allow_unregistered_calls_ = false;
 }
- bool UsageRule::allow_unregistered_calls() const {
+bool UsageRule::allow_unregistered_calls() const {
   // @@protoc_insertion_point(field_get:google.api.UsageRule.allow_unregistered_calls)
   return allow_unregistered_calls_;
 }
- void UsageRule::set_allow_unregistered_calls(bool value) {
+void UsageRule::set_allow_unregistered_calls(bool value) {
   
   allow_unregistered_calls_ = value;
   // @@protoc_insertion_point(field_set:google.api.UsageRule.allow_unregistered_calls)
 }
 
+inline const UsageRule* UsageRule::internal_default_instance() {
+  return &UsageRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

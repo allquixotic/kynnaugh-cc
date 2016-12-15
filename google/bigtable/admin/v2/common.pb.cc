@@ -42,7 +42,7 @@ void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto);
 }
@@ -57,28 +57,43 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
 }
 
-void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_once_);
+void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n%google/bigtable/admin/v2/common.proto\022"
     "\030google.bigtable.admin.v2\032\034google/api/an"
     "notations.proto\032\037google/protobuf/timesta"
     "mp.proto*=\n\013StorageType\022\034\n\030STORAGE_TYPE_"
-    "UNSPECIFIED\020\000\022\007\n\003SSD\020\001\022\007\n\003HDD\020\002B-\n\034com.g"
-    "oogle.bigtable.admin.v2B\013CommonProtoP\001b\006"
-    "proto3", 246);
+    "UNSPECIFIED\020\000\022\007\n\003SSD\020\001\022\007\n\003HDD\020\002Bl\n\034com.g"
+    "oogle.bigtable.admin.v2B\013CommonProtoP\001Z="
+    "google.golang.org/genproto/googleapis/bi"
+    "gtable/admin/v2;adminb\006proto3", 309);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/bigtable/admin/v2/common.proto", &protobuf_RegisterTypes);
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_once_);
+void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_once_,
+                 &protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto {
   StaticDescriptorInitializer_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
@@ -90,7 +105,7 @@ const ::google::protobuf::EnumDescriptor* StorageType_descriptor() {
   return StorageType_descriptor_;
 }
 bool StorageType_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:

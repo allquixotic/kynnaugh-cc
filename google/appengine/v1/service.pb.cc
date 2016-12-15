@@ -51,14 +51,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fservice_2eproto() {
   Service_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Service_descriptor_,
-      Service::default_instance_,
+      Service::internal_default_instance(),
       Service_offsets_,
       -1,
       -1,
       -1,
       sizeof(Service),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Service, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Service, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Service, _internal_metadata_));
   TrafficSplit_descriptor_ = file->message_type(1);
   static const int TrafficSplit_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrafficSplit, shard_by_),
@@ -67,14 +66,13 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fservice_2eproto() {
   TrafficSplit_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       TrafficSplit_descriptor_,
-      TrafficSplit::default_instance_,
+      TrafficSplit::internal_default_instance(),
       TrafficSplit_offsets_,
       -1,
       -1,
       -1,
       sizeof(TrafficSplit),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrafficSplit, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrafficSplit, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrafficSplit, _internal_metadata_));
   TrafficSplit_AllocationsEntry_descriptor_ = TrafficSplit_descriptor_->nested_type(0);
   TrafficSplit_ShardBy_descriptor_ = TrafficSplit_descriptor_->enum_type(0);
 }
@@ -82,7 +80,7 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2fservice_2eproto() {
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fappengine_2fv1_2fservice_2eproto);
 }
@@ -91,9 +89,9 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Service_descriptor_, &Service::default_instance());
+      Service_descriptor_, Service::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      TrafficSplit_descriptor_, &TrafficSplit::default_instance());
+      TrafficSplit_descriptor_, TrafficSplit::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         TrafficSplit_AllocationsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -108,20 +106,33 @@ void protobuf_RegisterTypes(const ::std::string&) {
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fappengine_2fv1_2fservice_2eproto() {
-  delete Service::default_instance_;
+  Service_default_instance_.Shutdown();
   delete Service_reflection_;
-  delete TrafficSplit::default_instance_;
+  TrafficSplit_default_instance_.Shutdown();
   delete TrafficSplit_reflection_;
 }
 
-void protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Service_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  TrafficSplit_default_instance_.DefaultConstruct();
+  Service_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TrafficSplit_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto_once_);
+void protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n!google/appengine/v1/service.proto\022\023goo"
     "gle.appengine.v1\032\034google/api/annotations"
@@ -133,23 +144,37 @@ void protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto() {
     "e.appengine.v1.TrafficSplit.AllocationsE"
     "ntry\0322\n\020AllocationsEntry\022\013\n\003key\030\001 \001(\t\022\r\n"
     "\005value\030\002 \001(\001:\0028\001\".\n\007ShardBy\022\017\n\013UNSPECIFI"
-    "ED\020\000\022\n\n\006COOKIE\020\001\022\006\n\002IP\020\002B)\n\027com.google.a"
-    "ppengine.v1B\014ServiceProtoP\001b\006proto3", 475);
+    "ED\020\000\022\n\n\006COOKIE\020\001\022\006\n\002IP\020\002Bg\n\027com.google.a"
+    "ppengine.v1B\014ServiceProtoP\001Z<google.gola"
+    "ng.org/genproto/googleapis/appengine/v1;"
+    "appengineb\006proto3", 537);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/appengine/v1/service.proto", &protobuf_RegisterTypes);
-  Service::default_instance_ = new Service();
-  TrafficSplit::default_instance_ = new TrafficSplit();
-  Service::default_instance_->InitAsDefaultInstance();
-  TrafficSplit::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fappengine_2fv1_2fservice_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto_once_);
+void protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto_once_,
+                 &protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fappengine_2fv1_2fservice_2eproto {
   StaticDescriptorInitializer_google_2fappengine_2fv1_2fservice_2eproto() {
     protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fappengine_2fv1_2fservice_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -161,30 +186,29 @@ const int Service::kSplitFieldNumber;
 
 Service::Service()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Service)
 }
 
 void Service::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  split_ = const_cast< ::google::appengine::v1::TrafficSplit*>(&::google::appengine::v1::TrafficSplit::default_instance());
+  split_ = const_cast< ::google::appengine::v1::TrafficSplit*>(
+      ::google::appengine::v1::TrafficSplit::internal_default_instance());
 }
 
 Service::Service(const Service& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Service)
 }
 
 void Service::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   split_ = NULL;
+  _cached_size_ = 0;
 }
 
 Service::~Service() {
@@ -195,7 +219,7 @@ Service::~Service() {
 void Service::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &Service_default_instance_.get()) {
     delete split_;
   }
 }
@@ -211,11 +235,11 @@ const ::google::protobuf::Descriptor* Service::descriptor() {
 }
 
 const Service& Service::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto();
+  return *internal_default_instance();
 }
 
-Service* Service::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Service> Service_default_instance_;
 
 Service* Service::New(::google::protobuf::Arena* arena) const {
   Service* n = new Service;
@@ -344,6 +368,7 @@ void Service::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Service::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.Service)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -378,9 +403,9 @@ void Service::SerializeWithCachedSizes(
   return target;
 }
 
-int Service::ByteSize() const {
+size_t Service::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Service)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -403,18 +428,17 @@ int Service::ByteSize() const {
         *this->split_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Service::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Service)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Service* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Service* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Service>(
           &from);
   if (source == NULL) {
@@ -422,15 +446,21 @@ void Service::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Service)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Service::MergeFrom(const Service& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Service)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Service::UnsafeMergeFrom(const Service& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -455,7 +485,7 @@ void Service::CopyFrom(const Service& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Service)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Service::IsInitialized() const {
@@ -490,37 +520,37 @@ void Service::InternalSwap(Service* other) {
 void Service::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Service::name() const {
+const ::std::string& Service::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Service.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Service::set_name(const ::std::string& value) {
+void Service::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Service.name)
 }
- void Service::set_name(const char* value) {
+void Service::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Service.name)
 }
- void Service::set_name(const char* value, size_t size) {
+void Service::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Service.name)
 }
- ::std::string* Service::mutable_name() {
+::std::string* Service::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Service.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Service::release_name() {
+::std::string* Service::release_name() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Service.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Service::set_allocated_name(::std::string* name) {
+void Service::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -534,37 +564,37 @@ void Service::clear_name() {
 void Service::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Service::id() const {
+const ::std::string& Service::id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Service.id)
   return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Service::set_id(const ::std::string& value) {
+void Service::set_id(const ::std::string& value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Service.id)
 }
- void Service::set_id(const char* value) {
+void Service::set_id(const char* value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Service.id)
 }
- void Service::set_id(const char* value, size_t size) {
+void Service::set_id(const char* value, size_t size) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Service.id)
 }
- ::std::string* Service::mutable_id() {
+::std::string* Service::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Service.id)
   return id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Service::release_id() {
+::std::string* Service::release_id() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Service.id)
   
   return id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Service::set_allocated_id(::std::string* id) {
+void Service::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -576,7 +606,7 @@ void Service::clear_id() {
 
 // optional .google.appengine.v1.TrafficSplit split = 3;
 bool Service::has_split() const {
-  return !_is_default_instance_ && split_ != NULL;
+  return this != internal_default_instance() && split_ != NULL;
 }
 void Service::clear_split() {
   if (GetArenaNoVirtual() == NULL && split_ != NULL) delete split_;
@@ -584,7 +614,8 @@ void Service::clear_split() {
 }
 const ::google::appengine::v1::TrafficSplit& Service::split() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Service.split)
-  return split_ != NULL ? *split_ : *default_instance_->split_;
+  return split_ != NULL ? *split_
+                         : *::google::appengine::v1::TrafficSplit::internal_default_instance();
 }
 ::google::appengine::v1::TrafficSplit* Service::mutable_split() {
   
@@ -612,6 +643,9 @@ void Service::set_allocated_split(::google::appengine::v1::TrafficSplit* split) 
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Service.split)
 }
 
+inline const Service* Service::internal_default_instance() {
+  return &Service_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -621,7 +655,7 @@ const ::google::protobuf::EnumDescriptor* TrafficSplit_ShardBy_descriptor() {
   return TrafficSplit_ShardBy_descriptor_;
 }
 bool TrafficSplit_ShardBy_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -646,31 +680,29 @@ const int TrafficSplit::kAllocationsFieldNumber;
 
 TrafficSplit::TrafficSplit()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.TrafficSplit)
 }
 
 void TrafficSplit::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 TrafficSplit::TrafficSplit(const TrafficSplit& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.TrafficSplit)
 }
 
 void TrafficSplit::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  shard_by_ = 0;
   allocations_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   allocations_.SetEntryDescriptor(
       &::google::appengine::v1::TrafficSplit_AllocationsEntry_descriptor_);
+  shard_by_ = 0;
+  _cached_size_ = 0;
 }
 
 TrafficSplit::~TrafficSplit() {
@@ -679,8 +711,6 @@ TrafficSplit::~TrafficSplit() {
 }
 
 void TrafficSplit::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void TrafficSplit::SetCachedSize(int size) const {
@@ -694,11 +724,11 @@ const ::google::protobuf::Descriptor* TrafficSplit::descriptor() {
 }
 
 const TrafficSplit& TrafficSplit::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto();
+  return *internal_default_instance();
 }
 
-TrafficSplit* TrafficSplit::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<TrafficSplit> TrafficSplit_default_instance_;
 
 TrafficSplit* TrafficSplit::New(::google::protobuf::Arena* arena) const {
   TrafficSplit* n = new TrafficSplit;
@@ -850,6 +880,7 @@ void TrafficSplit::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* TrafficSplit::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.TrafficSplit)
   // optional .google.appengine.v1.TrafficSplit.ShardBy shard_by = 1;
   if (this->shard_by() != 0) {
@@ -914,9 +945,9 @@ void TrafficSplit::SerializeWithCachedSizes(
   return target;
 }
 
-int TrafficSplit::ByteSize() const {
+size_t TrafficSplit::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.TrafficSplit)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional .google.appengine.v1.TrafficSplit.ShardBy shard_by = 1;
   if (this->shard_by() != 0) {
@@ -925,7 +956,8 @@ int TrafficSplit::ByteSize() const {
   }
 
   // map<string, double> allocations = 2;
-  total_size += 1 * this->allocations_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->allocations_size());
   {
     ::google::protobuf::scoped_ptr<TrafficSplit_AllocationsEntry> entry;
     for (::google::protobuf::Map< ::std::string, double >::const_iterator
@@ -937,18 +969,17 @@ int TrafficSplit::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void TrafficSplit::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.TrafficSplit)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const TrafficSplit* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const TrafficSplit* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TrafficSplit>(
           &from);
   if (source == NULL) {
@@ -956,15 +987,21 @@ void TrafficSplit::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.TrafficSplit)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TrafficSplit::MergeFrom(const TrafficSplit& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.TrafficSplit)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void TrafficSplit::UnsafeMergeFrom(const TrafficSplit& from) {
+  GOOGLE_DCHECK(&from != this);
   allocations_.MergeFrom(from.allocations_);
   if (from.shard_by() != 0) {
     set_shard_by(from.shard_by());
@@ -982,7 +1019,7 @@ void TrafficSplit::CopyFrom(const TrafficSplit& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.TrafficSplit)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TrafficSplit::IsInitialized() const {
@@ -1016,11 +1053,11 @@ void TrafficSplit::InternalSwap(TrafficSplit* other) {
 void TrafficSplit::clear_shard_by() {
   shard_by_ = 0;
 }
- ::google::appengine::v1::TrafficSplit_ShardBy TrafficSplit::shard_by() const {
+::google::appengine::v1::TrafficSplit_ShardBy TrafficSplit::shard_by() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.TrafficSplit.shard_by)
   return static_cast< ::google::appengine::v1::TrafficSplit_ShardBy >(shard_by_);
 }
- void TrafficSplit::set_shard_by(::google::appengine::v1::TrafficSplit_ShardBy value) {
+void TrafficSplit::set_shard_by(::google::appengine::v1::TrafficSplit_ShardBy value) {
   
   shard_by_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.TrafficSplit.shard_by)
@@ -1044,6 +1081,9 @@ TrafficSplit::mutable_allocations() {
   return allocations_.MutableMap();
 }
 
+inline const TrafficSplit* TrafficSplit::internal_default_instance() {
+  return &TrafficSplit_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

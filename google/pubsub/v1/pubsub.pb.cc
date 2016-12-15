@@ -91,6 +91,12 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* AcknowledgeRequest_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   AcknowledgeRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* StreamingPullRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  StreamingPullRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* StreamingPullResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  StreamingPullResponse_reflection_ = NULL;
 
 }  // namespace
 
@@ -109,14 +115,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   Topic_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Topic_descriptor_,
-      Topic::default_instance_,
+      Topic::internal_default_instance(),
       Topic_offsets_,
       -1,
       -1,
       -1,
       sizeof(Topic),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Topic, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Topic, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Topic, _internal_metadata_));
   PubsubMessage_descriptor_ = file->message_type(1);
   static const int PubsubMessage_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PubsubMessage, data_),
@@ -127,14 +132,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   PubsubMessage_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PubsubMessage_descriptor_,
-      PubsubMessage::default_instance_,
+      PubsubMessage::internal_default_instance(),
       PubsubMessage_offsets_,
       -1,
       -1,
       -1,
       sizeof(PubsubMessage),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PubsubMessage, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PubsubMessage, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PubsubMessage, _internal_metadata_));
   PubsubMessage_AttributesEntry_descriptor_ = PubsubMessage_descriptor_->nested_type(0);
   GetTopicRequest_descriptor_ = file->message_type(2);
   static const int GetTopicRequest_offsets_[1] = {
@@ -143,14 +147,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   GetTopicRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetTopicRequest_descriptor_,
-      GetTopicRequest::default_instance_,
+      GetTopicRequest::internal_default_instance(),
       GetTopicRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetTopicRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetTopicRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetTopicRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetTopicRequest, _internal_metadata_));
   PublishRequest_descriptor_ = file->message_type(3);
   static const int PublishRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishRequest, topic_),
@@ -159,14 +162,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   PublishRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PublishRequest_descriptor_,
-      PublishRequest::default_instance_,
+      PublishRequest::internal_default_instance(),
       PublishRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(PublishRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishRequest, _internal_metadata_));
   PublishResponse_descriptor_ = file->message_type(4);
   static const int PublishResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishResponse, message_ids_),
@@ -174,14 +176,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   PublishResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PublishResponse_descriptor_,
-      PublishResponse::default_instance_,
+      PublishResponse::internal_default_instance(),
       PublishResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(PublishResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PublishResponse, _internal_metadata_));
   ListTopicsRequest_descriptor_ = file->message_type(5);
   static const int ListTopicsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsRequest, project_),
@@ -191,14 +192,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ListTopicsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListTopicsRequest_descriptor_,
-      ListTopicsRequest::default_instance_,
+      ListTopicsRequest::internal_default_instance(),
       ListTopicsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListTopicsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsRequest, _internal_metadata_));
   ListTopicsResponse_descriptor_ = file->message_type(6);
   static const int ListTopicsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsResponse, topics_),
@@ -207,14 +207,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ListTopicsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListTopicsResponse_descriptor_,
-      ListTopicsResponse::default_instance_,
+      ListTopicsResponse::internal_default_instance(),
       ListTopicsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListTopicsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicsResponse, _internal_metadata_));
   ListTopicSubscriptionsRequest_descriptor_ = file->message_type(7);
   static const int ListTopicSubscriptionsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsRequest, topic_),
@@ -224,14 +223,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ListTopicSubscriptionsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListTopicSubscriptionsRequest_descriptor_,
-      ListTopicSubscriptionsRequest::default_instance_,
+      ListTopicSubscriptionsRequest::internal_default_instance(),
       ListTopicSubscriptionsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListTopicSubscriptionsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsRequest, _internal_metadata_));
   ListTopicSubscriptionsResponse_descriptor_ = file->message_type(8);
   static const int ListTopicSubscriptionsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsResponse, subscriptions_),
@@ -240,14 +238,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ListTopicSubscriptionsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListTopicSubscriptionsResponse_descriptor_,
-      ListTopicSubscriptionsResponse::default_instance_,
+      ListTopicSubscriptionsResponse::internal_default_instance(),
       ListTopicSubscriptionsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListTopicSubscriptionsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTopicSubscriptionsResponse, _internal_metadata_));
   DeleteTopicRequest_descriptor_ = file->message_type(9);
   static const int DeleteTopicRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteTopicRequest, topic_),
@@ -255,14 +252,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   DeleteTopicRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteTopicRequest_descriptor_,
-      DeleteTopicRequest::default_instance_,
+      DeleteTopicRequest::internal_default_instance(),
       DeleteTopicRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteTopicRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteTopicRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteTopicRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteTopicRequest, _internal_metadata_));
   Subscription_descriptor_ = file->message_type(10);
   static const int Subscription_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Subscription, name_),
@@ -273,14 +269,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   Subscription_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Subscription_descriptor_,
-      Subscription::default_instance_,
+      Subscription::internal_default_instance(),
       Subscription_offsets_,
       -1,
       -1,
       -1,
       sizeof(Subscription),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Subscription, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Subscription, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Subscription, _internal_metadata_));
   PushConfig_descriptor_ = file->message_type(11);
   static const int PushConfig_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PushConfig, push_endpoint_),
@@ -289,14 +284,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   PushConfig_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PushConfig_descriptor_,
-      PushConfig::default_instance_,
+      PushConfig::internal_default_instance(),
       PushConfig_offsets_,
       -1,
       -1,
       -1,
       sizeof(PushConfig),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PushConfig, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PushConfig, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PushConfig, _internal_metadata_));
   PushConfig_AttributesEntry_descriptor_ = PushConfig_descriptor_->nested_type(0);
   ReceivedMessage_descriptor_ = file->message_type(12);
   static const int ReceivedMessage_offsets_[2] = {
@@ -306,14 +300,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ReceivedMessage_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ReceivedMessage_descriptor_,
-      ReceivedMessage::default_instance_,
+      ReceivedMessage::internal_default_instance(),
       ReceivedMessage_offsets_,
       -1,
       -1,
       -1,
       sizeof(ReceivedMessage),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReceivedMessage, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReceivedMessage, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReceivedMessage, _internal_metadata_));
   GetSubscriptionRequest_descriptor_ = file->message_type(13);
   static const int GetSubscriptionRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetSubscriptionRequest, subscription_),
@@ -321,14 +314,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   GetSubscriptionRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       GetSubscriptionRequest_descriptor_,
-      GetSubscriptionRequest::default_instance_,
+      GetSubscriptionRequest::internal_default_instance(),
       GetSubscriptionRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(GetSubscriptionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetSubscriptionRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetSubscriptionRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetSubscriptionRequest, _internal_metadata_));
   ListSubscriptionsRequest_descriptor_ = file->message_type(14);
   static const int ListSubscriptionsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsRequest, project_),
@@ -338,14 +330,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ListSubscriptionsRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListSubscriptionsRequest_descriptor_,
-      ListSubscriptionsRequest::default_instance_,
+      ListSubscriptionsRequest::internal_default_instance(),
       ListSubscriptionsRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListSubscriptionsRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsRequest, _internal_metadata_));
   ListSubscriptionsResponse_descriptor_ = file->message_type(15);
   static const int ListSubscriptionsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsResponse, subscriptions_),
@@ -354,14 +345,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ListSubscriptionsResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ListSubscriptionsResponse_descriptor_,
-      ListSubscriptionsResponse::default_instance_,
+      ListSubscriptionsResponse::internal_default_instance(),
       ListSubscriptionsResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(ListSubscriptionsResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSubscriptionsResponse, _internal_metadata_));
   DeleteSubscriptionRequest_descriptor_ = file->message_type(16);
   static const int DeleteSubscriptionRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteSubscriptionRequest, subscription_),
@@ -369,14 +359,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   DeleteSubscriptionRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       DeleteSubscriptionRequest_descriptor_,
-      DeleteSubscriptionRequest::default_instance_,
+      DeleteSubscriptionRequest::internal_default_instance(),
       DeleteSubscriptionRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(DeleteSubscriptionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteSubscriptionRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteSubscriptionRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteSubscriptionRequest, _internal_metadata_));
   ModifyPushConfigRequest_descriptor_ = file->message_type(17);
   static const int ModifyPushConfigRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyPushConfigRequest, subscription_),
@@ -385,14 +374,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ModifyPushConfigRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ModifyPushConfigRequest_descriptor_,
-      ModifyPushConfigRequest::default_instance_,
+      ModifyPushConfigRequest::internal_default_instance(),
       ModifyPushConfigRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ModifyPushConfigRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyPushConfigRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyPushConfigRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyPushConfigRequest, _internal_metadata_));
   PullRequest_descriptor_ = file->message_type(18);
   static const int PullRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullRequest, subscription_),
@@ -402,14 +390,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   PullRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PullRequest_descriptor_,
-      PullRequest::default_instance_,
+      PullRequest::internal_default_instance(),
       PullRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(PullRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullRequest, _internal_metadata_));
   PullResponse_descriptor_ = file->message_type(19);
   static const int PullResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullResponse, received_messages_),
@@ -417,14 +404,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   PullResponse_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       PullResponse_descriptor_,
-      PullResponse::default_instance_,
+      PullResponse::internal_default_instance(),
       PullResponse_offsets_,
       -1,
       -1,
       -1,
       sizeof(PullResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullResponse, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullResponse, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PullResponse, _internal_metadata_));
   ModifyAckDeadlineRequest_descriptor_ = file->message_type(20);
   static const int ModifyAckDeadlineRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyAckDeadlineRequest, subscription_),
@@ -434,14 +420,13 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   ModifyAckDeadlineRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       ModifyAckDeadlineRequest_descriptor_,
-      ModifyAckDeadlineRequest::default_instance_,
+      ModifyAckDeadlineRequest::internal_default_instance(),
       ModifyAckDeadlineRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(ModifyAckDeadlineRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyAckDeadlineRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyAckDeadlineRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ModifyAckDeadlineRequest, _internal_metadata_));
   AcknowledgeRequest_descriptor_ = file->message_type(21);
   static const int AcknowledgeRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AcknowledgeRequest, subscription_),
@@ -450,20 +435,51 @@ void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
   AcknowledgeRequest_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       AcknowledgeRequest_descriptor_,
-      AcknowledgeRequest::default_instance_,
+      AcknowledgeRequest::internal_default_instance(),
       AcknowledgeRequest_offsets_,
       -1,
       -1,
       -1,
       sizeof(AcknowledgeRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AcknowledgeRequest, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AcknowledgeRequest, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AcknowledgeRequest, _internal_metadata_));
+  StreamingPullRequest_descriptor_ = file->message_type(22);
+  static const int StreamingPullRequest_offsets_[5] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullRequest, subscription_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullRequest, ack_ids_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullRequest, modify_deadline_seconds_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullRequest, modify_deadline_ack_ids_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullRequest, stream_ack_deadline_seconds_),
+  };
+  StreamingPullRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      StreamingPullRequest_descriptor_,
+      StreamingPullRequest::internal_default_instance(),
+      StreamingPullRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(StreamingPullRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullRequest, _internal_metadata_));
+  StreamingPullResponse_descriptor_ = file->message_type(23);
+  static const int StreamingPullResponse_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullResponse, received_messages_),
+  };
+  StreamingPullResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      StreamingPullResponse_descriptor_,
+      StreamingPullResponse::internal_default_instance(),
+      StreamingPullResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(StreamingPullResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamingPullResponse, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto);
 }
@@ -472,9 +488,9 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Topic_descriptor_, &Topic::default_instance());
+      Topic_descriptor_, Topic::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PubsubMessage_descriptor_, &PubsubMessage::default_instance());
+      PubsubMessage_descriptor_, PubsubMessage::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         PubsubMessage_AttributesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -485,25 +501,25 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 PubsubMessage_AttributesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetTopicRequest_descriptor_, &GetTopicRequest::default_instance());
+      GetTopicRequest_descriptor_, GetTopicRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PublishRequest_descriptor_, &PublishRequest::default_instance());
+      PublishRequest_descriptor_, PublishRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PublishResponse_descriptor_, &PublishResponse::default_instance());
+      PublishResponse_descriptor_, PublishResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListTopicsRequest_descriptor_, &ListTopicsRequest::default_instance());
+      ListTopicsRequest_descriptor_, ListTopicsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListTopicsResponse_descriptor_, &ListTopicsResponse::default_instance());
+      ListTopicsResponse_descriptor_, ListTopicsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListTopicSubscriptionsRequest_descriptor_, &ListTopicSubscriptionsRequest::default_instance());
+      ListTopicSubscriptionsRequest_descriptor_, ListTopicSubscriptionsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListTopicSubscriptionsResponse_descriptor_, &ListTopicSubscriptionsResponse::default_instance());
+      ListTopicSubscriptionsResponse_descriptor_, ListTopicSubscriptionsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteTopicRequest_descriptor_, &DeleteTopicRequest::default_instance());
+      DeleteTopicRequest_descriptor_, DeleteTopicRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Subscription_descriptor_, &Subscription::default_instance());
+      Subscription_descriptor_, Subscription::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PushConfig_descriptor_, &PushConfig::default_instance());
+      PushConfig_descriptor_, PushConfig::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         PushConfig_AttributesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -514,86 +530,172 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 PushConfig_AttributesEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ReceivedMessage_descriptor_, &ReceivedMessage::default_instance());
+      ReceivedMessage_descriptor_, ReceivedMessage::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      GetSubscriptionRequest_descriptor_, &GetSubscriptionRequest::default_instance());
+      GetSubscriptionRequest_descriptor_, GetSubscriptionRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListSubscriptionsRequest_descriptor_, &ListSubscriptionsRequest::default_instance());
+      ListSubscriptionsRequest_descriptor_, ListSubscriptionsRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ListSubscriptionsResponse_descriptor_, &ListSubscriptionsResponse::default_instance());
+      ListSubscriptionsResponse_descriptor_, ListSubscriptionsResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      DeleteSubscriptionRequest_descriptor_, &DeleteSubscriptionRequest::default_instance());
+      DeleteSubscriptionRequest_descriptor_, DeleteSubscriptionRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ModifyPushConfigRequest_descriptor_, &ModifyPushConfigRequest::default_instance());
+      ModifyPushConfigRequest_descriptor_, ModifyPushConfigRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PullRequest_descriptor_, &PullRequest::default_instance());
+      PullRequest_descriptor_, PullRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      PullResponse_descriptor_, &PullResponse::default_instance());
+      PullResponse_descriptor_, PullResponse::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      ModifyAckDeadlineRequest_descriptor_, &ModifyAckDeadlineRequest::default_instance());
+      ModifyAckDeadlineRequest_descriptor_, ModifyAckDeadlineRequest::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      AcknowledgeRequest_descriptor_, &AcknowledgeRequest::default_instance());
+      AcknowledgeRequest_descriptor_, AcknowledgeRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      StreamingPullRequest_descriptor_, StreamingPullRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      StreamingPullResponse_descriptor_, StreamingPullResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto() {
-  delete Topic::default_instance_;
+  Topic_default_instance_.Shutdown();
   delete Topic_reflection_;
-  delete PubsubMessage::default_instance_;
+  PubsubMessage_default_instance_.Shutdown();
   delete PubsubMessage_reflection_;
-  delete GetTopicRequest::default_instance_;
+  GetTopicRequest_default_instance_.Shutdown();
   delete GetTopicRequest_reflection_;
-  delete PublishRequest::default_instance_;
+  PublishRequest_default_instance_.Shutdown();
   delete PublishRequest_reflection_;
-  delete PublishResponse::default_instance_;
+  PublishResponse_default_instance_.Shutdown();
   delete PublishResponse_reflection_;
-  delete ListTopicsRequest::default_instance_;
+  ListTopicsRequest_default_instance_.Shutdown();
   delete ListTopicsRequest_reflection_;
-  delete ListTopicsResponse::default_instance_;
+  ListTopicsResponse_default_instance_.Shutdown();
   delete ListTopicsResponse_reflection_;
-  delete ListTopicSubscriptionsRequest::default_instance_;
+  ListTopicSubscriptionsRequest_default_instance_.Shutdown();
   delete ListTopicSubscriptionsRequest_reflection_;
-  delete ListTopicSubscriptionsResponse::default_instance_;
+  ListTopicSubscriptionsResponse_default_instance_.Shutdown();
   delete ListTopicSubscriptionsResponse_reflection_;
-  delete DeleteTopicRequest::default_instance_;
+  DeleteTopicRequest_default_instance_.Shutdown();
   delete DeleteTopicRequest_reflection_;
-  delete Subscription::default_instance_;
+  Subscription_default_instance_.Shutdown();
   delete Subscription_reflection_;
-  delete PushConfig::default_instance_;
+  PushConfig_default_instance_.Shutdown();
   delete PushConfig_reflection_;
-  delete ReceivedMessage::default_instance_;
+  ReceivedMessage_default_instance_.Shutdown();
   delete ReceivedMessage_reflection_;
-  delete GetSubscriptionRequest::default_instance_;
+  GetSubscriptionRequest_default_instance_.Shutdown();
   delete GetSubscriptionRequest_reflection_;
-  delete ListSubscriptionsRequest::default_instance_;
+  ListSubscriptionsRequest_default_instance_.Shutdown();
   delete ListSubscriptionsRequest_reflection_;
-  delete ListSubscriptionsResponse::default_instance_;
+  ListSubscriptionsResponse_default_instance_.Shutdown();
   delete ListSubscriptionsResponse_reflection_;
-  delete DeleteSubscriptionRequest::default_instance_;
+  DeleteSubscriptionRequest_default_instance_.Shutdown();
   delete DeleteSubscriptionRequest_reflection_;
-  delete ModifyPushConfigRequest::default_instance_;
+  ModifyPushConfigRequest_default_instance_.Shutdown();
   delete ModifyPushConfigRequest_reflection_;
-  delete PullRequest::default_instance_;
+  PullRequest_default_instance_.Shutdown();
   delete PullRequest_reflection_;
-  delete PullResponse::default_instance_;
+  PullResponse_default_instance_.Shutdown();
   delete PullResponse_reflection_;
-  delete ModifyAckDeadlineRequest::default_instance_;
+  ModifyAckDeadlineRequest_default_instance_.Shutdown();
   delete ModifyAckDeadlineRequest_reflection_;
-  delete AcknowledgeRequest::default_instance_;
+  AcknowledgeRequest_default_instance_.Shutdown();
   delete AcknowledgeRequest_reflection_;
+  StreamingPullRequest_default_instance_.Shutdown();
+  delete StreamingPullRequest_reflection_;
+  StreamingPullResponse_default_instance_.Shutdown();
+  delete StreamingPullResponse_reflection_;
 }
 
-void protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Topic_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PubsubMessage_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ::google::protobuf::internal::GetEmptyString();
+  GetTopicRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PublishRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PublishResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTopicsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTopicsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTopicSubscriptionsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTopicSubscriptionsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteTopicRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Subscription_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PushConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ReceivedMessage_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetSubscriptionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListSubscriptionsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListSubscriptionsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteSubscriptionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ModifyPushConfigRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PullRequest_default_instance_.DefaultConstruct();
+  PullResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ModifyAckDeadlineRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AcknowledgeRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  StreamingPullRequest_default_instance_.DefaultConstruct();
+  StreamingPullResponse_default_instance_.DefaultConstruct();
+  Topic_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PubsubMessage_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetTopicRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PublishRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PublishResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTopicsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTopicsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTopicSubscriptionsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTopicSubscriptionsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteTopicRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Subscription_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PushConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ReceivedMessage_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetSubscriptionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListSubscriptionsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListSubscriptionsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteSubscriptionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ModifyPushConfigRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PullRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PullResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ModifyAckDeadlineRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AcknowledgeRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamingPullRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamingPullResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_once_);
+void protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\035google/pubsub/v1/pubsub.proto\022\020google."
     "pubsub.v1\032\034google/api/annotations.proto\032"
@@ -644,115 +746,99 @@ void protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
     "\n\030ModifyAckDeadlineRequest\022\024\n\014subscripti"
     "on\030\001 \001(\t\022\017\n\007ack_ids\030\004 \003(\t\022\034\n\024ack_deadlin"
     "e_seconds\030\003 \001(\005\";\n\022AcknowledgeRequest\022\024\n"
-    "\014subscription\030\001 \001(\t\022\017\n\007ack_ids\030\002 \003(\t2\300\t\n"
-    "\nSubscriber\022\206\001\n\022CreateSubscription\022\036.goo"
-    "gle.pubsub.v1.Subscription\032\036.google.pubs"
-    "ub.v1.Subscription\"0\202\323\344\223\002*\032%/v1/{name=pr"
-    "ojects/*/subscriptions/*}:\001*\022\222\001\n\017GetSubs"
-    "cription\022(.google.pubsub.v1.GetSubscript"
-    "ionRequest\032\036.google.pubsub.v1.Subscripti"
-    "on\"5\202\323\344\223\002/\022-/v1/{subscription=projects/*"
-    "/subscriptions/*}\022\234\001\n\021ListSubscriptions\022"
-    "*.google.pubsub.v1.ListSubscriptionsRequ"
-    "est\032+.google.pubsub.v1.ListSubscriptions"
-    "Response\".\202\323\344\223\002(\022&/v1/{project=projects/"
-    "*}/subscriptions\022\220\001\n\022DeleteSubscription\022"
-    "+.google.pubsub.v1.DeleteSubscriptionReq"
-    "uest\032\026.google.protobuf.Empty\"5\202\323\344\223\002/*-/v"
-    "1/{subscription=projects/*/subscriptions"
-    "/*}\022\243\001\n\021ModifyAckDeadline\022*.google.pubsu"
-    "b.v1.ModifyAckDeadlineRequest\032\026.google.p"
-    "rotobuf.Empty\"J\202\323\344\223\002D\"\?/v1/{subscription"
-    "=projects/*/subscriptions/*}:modifyAckDe"
-    "adline:\001*\022\221\001\n\013Acknowledge\022$.google.pubsu"
-    "b.v1.AcknowledgeRequest\032\026.google.protobu"
-    "f.Empty\"D\202\323\344\223\002>\"9/v1/{subscription=proje"
-    "cts/*/subscriptions/*}:acknowledge:\001*\022\204\001"
-    "\n\004Pull\022\035.google.pubsub.v1.PullRequest\032\036."
-    "google.pubsub.v1.PullResponse\"=\202\323\344\223\0027\"2/"
-    "v1/{subscription=projects/*/subscription"
-    "s/*}:pull:\001*\022\240\001\n\020ModifyPushConfig\022).goog"
-    "le.pubsub.v1.ModifyPushConfigRequest\032\026.g"
-    "oogle.protobuf.Empty\"I\202\323\344\223\002C\">/v1/{subsc"
-    "ription=projects/*/subscriptions/*}:modi"
-    "fyPushConfig:\001*2\233\006\n\tPublisher\022j\n\013CreateT"
-    "opic\022\027.google.pubsub.v1.Topic\032\027.google.p"
-    "ubsub.v1.Topic\")\202\323\344\223\002#\032\036/v1/{name=projec"
-    "ts/*/topics/*}:\001*\022\202\001\n\007Publish\022 .google.p"
-    "ubsub.v1.PublishRequest\032!.google.pubsub."
-    "v1.PublishResponse\"2\202\323\344\223\002,\"\'/v1/{topic=p"
-    "rojects/*/topics/*}:publish:\001*\022o\n\010GetTop"
-    "ic\022!.google.pubsub.v1.GetTopicRequest\032\027."
-    "google.pubsub.v1.Topic\"\'\202\323\344\223\002!\022\037/v1/{top"
-    "ic=projects/*/topics/*}\022\200\001\n\nListTopics\022#"
-    ".google.pubsub.v1.ListTopicsRequest\032$.go"
-    "ogle.pubsub.v1.ListTopicsResponse\"\'\202\323\344\223\002"
-    "!\022\037/v1/{project=projects/*}/topics\022\262\001\n\026L"
-    "istTopicSubscriptions\022/.google.pubsub.v1"
-    ".ListTopicSubscriptionsRequest\0320.google."
-    "pubsub.v1.ListTopicSubscriptionsResponse"
-    "\"5\202\323\344\223\002/\022-/v1/{topic=projects/*/topics/*"
-    "}/subscriptions\022t\n\013DeleteTopic\022$.google."
-    "pubsub.v1.DeleteTopicRequest\032\026.google.pr"
-    "otobuf.Empty\"\'\202\323\344\223\002!*\037/v1/{topic=project"
-    "s/*/topics/*}BA\n\024com.google.pubsub.v1B\013P"
-    "ubsubProtoP\001\370\001\001\252\002\026Google.Cloud.PubSub.V1"
-    "b\006proto3", 4088);
+    "\014subscription\030\001 \001(\t\022\017\n\007ack_ids\030\002 \003(\t\"\244\001\n"
+    "\024StreamingPullRequest\022\024\n\014subscription\030\001 "
+    "\001(\t\022\017\n\007ack_ids\030\002 \003(\t\022\037\n\027modify_deadline_"
+    "seconds\030\003 \003(\005\022\037\n\027modify_deadline_ack_ids"
+    "\030\004 \003(\t\022#\n\033stream_ack_deadline_seconds\030\005 "
+    "\001(\005\"U\n\025StreamingPullResponse\022<\n\021received"
+    "_messages\030\001 \003(\0132!.google.pubsub.v1.Recei"
+    "vedMessage2\246\n\n\nSubscriber\022\206\001\n\022CreateSubs"
+    "cription\022\036.google.pubsub.v1.Subscription"
+    "\032\036.google.pubsub.v1.Subscription\"0\202\323\344\223\002*"
+    "\032%/v1/{name=projects/*/subscriptions/*}:"
+    "\001*\022\222\001\n\017GetSubscription\022(.google.pubsub.v"
+    "1.GetSubscriptionRequest\032\036.google.pubsub"
+    ".v1.Subscription\"5\202\323\344\223\002/\022-/v1/{subscript"
+    "ion=projects/*/subscriptions/*}\022\234\001\n\021List"
+    "Subscriptions\022*.google.pubsub.v1.ListSub"
+    "scriptionsRequest\032+.google.pubsub.v1.Lis"
+    "tSubscriptionsResponse\".\202\323\344\223\002(\022&/v1/{pro"
+    "ject=projects/*}/subscriptions\022\220\001\n\022Delet"
+    "eSubscription\022+.google.pubsub.v1.DeleteS"
+    "ubscriptionRequest\032\026.google.protobuf.Emp"
+    "ty\"5\202\323\344\223\002/*-/v1/{subscription=projects/*"
+    "/subscriptions/*}\022\243\001\n\021ModifyAckDeadline\022"
+    "*.google.pubsub.v1.ModifyAckDeadlineRequ"
+    "est\032\026.google.protobuf.Empty\"J\202\323\344\223\002D\"\?/v1"
+    "/{subscription=projects/*/subscriptions/"
+    "*}:modifyAckDeadline:\001*\022\221\001\n\013Acknowledge\022"
+    "$.google.pubsub.v1.AcknowledgeRequest\032\026."
+    "google.protobuf.Empty\"D\202\323\344\223\002>\"9/v1/{subs"
+    "cription=projects/*/subscriptions/*}:ack"
+    "nowledge:\001*\022\204\001\n\004Pull\022\035.google.pubsub.v1."
+    "PullRequest\032\036.google.pubsub.v1.PullRespo"
+    "nse\"=\202\323\344\223\0027\"2/v1/{subscription=projects/"
+    "*/subscriptions/*}:pull:\001*\022d\n\rStreamingP"
+    "ull\022&.google.pubsub.v1.StreamingPullRequ"
+    "est\032\'.google.pubsub.v1.StreamingPullResp"
+    "onse(\0010\001\022\240\001\n\020ModifyPushConfig\022).google.p"
+    "ubsub.v1.ModifyPushConfigRequest\032\026.googl"
+    "e.protobuf.Empty\"I\202\323\344\223\002C\">/v1/{subscript"
+    "ion=projects/*/subscriptions/*}:modifyPu"
+    "shConfig:\001*2\233\006\n\tPublisher\022j\n\013CreateTopic"
+    "\022\027.google.pubsub.v1.Topic\032\027.google.pubsu"
+    "b.v1.Topic\")\202\323\344\223\002#\032\036/v1/{name=projects/*"
+    "/topics/*}:\001*\022\202\001\n\007Publish\022 .google.pubsu"
+    "b.v1.PublishRequest\032!.google.pubsub.v1.P"
+    "ublishResponse\"2\202\323\344\223\002,\"\'/v1/{topic=proje"
+    "cts/*/topics/*}:publish:\001*\022o\n\010GetTopic\022!"
+    ".google.pubsub.v1.GetTopicRequest\032\027.goog"
+    "le.pubsub.v1.Topic\"\'\202\323\344\223\002!\022\037/v1/{topic=p"
+    "rojects/*/topics/*}\022\200\001\n\nListTopics\022#.goo"
+    "gle.pubsub.v1.ListTopicsRequest\032$.google"
+    ".pubsub.v1.ListTopicsResponse\"\'\202\323\344\223\002!\022\037/"
+    "v1/{project=projects/*}/topics\022\262\001\n\026ListT"
+    "opicSubscriptions\022/.google.pubsub.v1.Lis"
+    "tTopicSubscriptionsRequest\0320.google.pubs"
+    "ub.v1.ListTopicSubscriptionsResponse\"5\202\323"
+    "\344\223\002/\022-/v1/{topic=projects/*/topics/*}/su"
+    "bscriptions\022t\n\013DeleteTopic\022$.google.pubs"
+    "ub.v1.DeleteTopicRequest\032\026.google.protob"
+    "uf.Empty\"\'\202\323\344\223\002!*\037/v1/{topic=projects/*/"
+    "topics/*}By\n\024com.google.pubsub.v1B\013Pubsu"
+    "bProtoP\001Z6google.golang.org/genproto/goo"
+    "gleapis/pubsub/v1;pubsub\370\001\001\252\002\026Google.Clo"
+    "ud.PubSub.V1b\006proto3", 4500);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/pubsub/v1/pubsub.proto", &protobuf_RegisterTypes);
-  Topic::default_instance_ = new Topic();
-  PubsubMessage::default_instance_ = new PubsubMessage();
-  GetTopicRequest::default_instance_ = new GetTopicRequest();
-  PublishRequest::default_instance_ = new PublishRequest();
-  PublishResponse::default_instance_ = new PublishResponse();
-  ListTopicsRequest::default_instance_ = new ListTopicsRequest();
-  ListTopicsResponse::default_instance_ = new ListTopicsResponse();
-  ListTopicSubscriptionsRequest::default_instance_ = new ListTopicSubscriptionsRequest();
-  ListTopicSubscriptionsResponse::default_instance_ = new ListTopicSubscriptionsResponse();
-  DeleteTopicRequest::default_instance_ = new DeleteTopicRequest();
-  Subscription::default_instance_ = new Subscription();
-  PushConfig::default_instance_ = new PushConfig();
-  ReceivedMessage::default_instance_ = new ReceivedMessage();
-  GetSubscriptionRequest::default_instance_ = new GetSubscriptionRequest();
-  ListSubscriptionsRequest::default_instance_ = new ListSubscriptionsRequest();
-  ListSubscriptionsResponse::default_instance_ = new ListSubscriptionsResponse();
-  DeleteSubscriptionRequest::default_instance_ = new DeleteSubscriptionRequest();
-  ModifyPushConfigRequest::default_instance_ = new ModifyPushConfigRequest();
-  PullRequest::default_instance_ = new PullRequest();
-  PullResponse::default_instance_ = new PullResponse();
-  ModifyAckDeadlineRequest::default_instance_ = new ModifyAckDeadlineRequest();
-  AcknowledgeRequest::default_instance_ = new AcknowledgeRequest();
-  Topic::default_instance_->InitAsDefaultInstance();
-  PubsubMessage::default_instance_->InitAsDefaultInstance();
-  GetTopicRequest::default_instance_->InitAsDefaultInstance();
-  PublishRequest::default_instance_->InitAsDefaultInstance();
-  PublishResponse::default_instance_->InitAsDefaultInstance();
-  ListTopicsRequest::default_instance_->InitAsDefaultInstance();
-  ListTopicsResponse::default_instance_->InitAsDefaultInstance();
-  ListTopicSubscriptionsRequest::default_instance_->InitAsDefaultInstance();
-  ListTopicSubscriptionsResponse::default_instance_->InitAsDefaultInstance();
-  DeleteTopicRequest::default_instance_->InitAsDefaultInstance();
-  Subscription::default_instance_->InitAsDefaultInstance();
-  PushConfig::default_instance_->InitAsDefaultInstance();
-  ReceivedMessage::default_instance_->InitAsDefaultInstance();
-  GetSubscriptionRequest::default_instance_->InitAsDefaultInstance();
-  ListSubscriptionsRequest::default_instance_->InitAsDefaultInstance();
-  ListSubscriptionsResponse::default_instance_->InitAsDefaultInstance();
-  DeleteSubscriptionRequest::default_instance_->InitAsDefaultInstance();
-  ModifyPushConfigRequest::default_instance_->InitAsDefaultInstance();
-  PullRequest::default_instance_->InitAsDefaultInstance();
-  PullResponse::default_instance_->InitAsDefaultInstance();
-  ModifyAckDeadlineRequest::default_instance_->InitAsDefaultInstance();
-  AcknowledgeRequest::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fempty_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_once_);
+void protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_once_,
+                 &protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fpubsub_2fv1_2fpubsub_2eproto {
   StaticDescriptorInitializer_google_2fpubsub_2fv1_2fpubsub_2eproto() {
     protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   }
 } static_descriptor_initializer_google_2fpubsub_2fv1_2fpubsub_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -762,35 +848,35 @@ const int Topic::kNameFieldNumber;
 
 Topic::Topic()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.Topic)
 }
-
 Topic::Topic(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.Topic)
 }
 
 void Topic::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Topic::Topic(const Topic& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.Topic)
 }
 
 void Topic::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Topic::~Topic() {
@@ -799,13 +885,12 @@ Topic::~Topic() {
 }
 
 void Topic::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void Topic::ArenaDtor(void* object) {
@@ -825,11 +910,11 @@ const ::google::protobuf::Descriptor* Topic::descriptor() {
 }
 
 const Topic& Topic::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-Topic* Topic::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Topic> Topic_default_instance_;
 
 Topic* Topic::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Topic>(arena);
@@ -905,6 +990,7 @@ void Topic::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Topic::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.Topic)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -921,9 +1007,9 @@ void Topic::SerializeWithCachedSizes(
   return target;
 }
 
-int Topic::ByteSize() const {
+size_t Topic::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.Topic)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -932,18 +1018,17 @@ int Topic::ByteSize() const {
         this->name());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Topic::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.Topic)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Topic* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Topic* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Topic>(
           &from);
   if (source == NULL) {
@@ -951,15 +1036,21 @@ void Topic::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.Topic)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Topic::MergeFrom(const Topic& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.Topic)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Topic::UnsafeMergeFrom(const Topic& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -976,7 +1067,7 @@ void Topic::CopyFrom(const Topic& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.Topic)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Topic::IsInitialized() const {
@@ -990,7 +1081,7 @@ void Topic::Swap(Topic* other) {
     InternalSwap(other);
   } else {
     Topic temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1021,46 +1112,46 @@ void Topic::InternalSwap(Topic* other) {
 void Topic::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Topic::name() const {
+const ::std::string& Topic::name() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Topic.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Topic::set_name(const ::std::string& value) {
+void Topic::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.Topic.name)
 }
- void Topic::set_name(const char* value) {
+void Topic::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.Topic.name)
 }
- void Topic::set_name(const char* value,
+void Topic::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.Topic.name)
 }
- ::std::string* Topic::mutable_name() {
+::std::string* Topic::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.Topic.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Topic::release_name() {
+::std::string* Topic::release_name() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.Topic.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Topic::unsafe_arena_release_name() {
+::std::string* Topic::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.Topic.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Topic::set_allocated_name(::std::string* name) {
+void Topic::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1070,7 +1161,7 @@ void Topic::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.Topic.name)
 }
- void Topic::unsafe_arena_set_allocated_name(
+void Topic::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -1083,6 +1174,9 @@ void Topic::clear_name() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.Topic.name)
 }
 
+inline const Topic* Topic::internal_default_instance() {
+  return &Topic_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1095,8 +1189,7 @@ void PubsubMessage::_slow_mutable_publish_time() {
   if (publish_time_ == NULL) {
     return NULL;
   } else {
-    ::google::protobuf::Timestamp* temp = new ::google::protobuf::Timestamp;
-    temp->MergeFrom(*publish_time_);
+    ::google::protobuf::Timestamp* temp = new ::google::protobuf::Timestamp(*publish_time_);
     publish_time_ = NULL;
     return temp;
   }
@@ -1144,43 +1237,44 @@ const int PubsubMessage::kPublishTimeFieldNumber;
 
 PubsubMessage::PubsubMessage()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.PubsubMessage)
 }
-
 PubsubMessage::PubsubMessage(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   attributes_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.PubsubMessage)
 }
 
 void PubsubMessage::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  publish_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  publish_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 PubsubMessage::PubsubMessage(const PubsubMessage& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.PubsubMessage)
 }
 
 void PubsubMessage::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   attributes_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   attributes_.SetEntryDescriptor(
       &::google::pubsub::v1::PubsubMessage_AttributesEntry_descriptor_);
+  data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   message_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   publish_time_ = NULL;
+  _cached_size_ = 0;
 }
 
 PubsubMessage::~PubsubMessage() {
@@ -1189,13 +1283,14 @@ PubsubMessage::~PubsubMessage() {
 }
 
 void PubsubMessage::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  data_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  message_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  data_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  message_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &PubsubMessage_default_instance_.get()) {
     delete publish_time_;
   }
 }
@@ -1217,11 +1312,11 @@ const ::google::protobuf::Descriptor* PubsubMessage::descriptor() {
 }
 
 const PubsubMessage& PubsubMessage::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-PubsubMessage* PubsubMessage::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PubsubMessage> PubsubMessage_default_instance_;
 
 PubsubMessage* PubsubMessage::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<PubsubMessage>(arena);
@@ -1429,6 +1524,7 @@ void PubsubMessage::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PubsubMessage::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.PubsubMessage)
   // optional bytes data = 1;
   if (this->data().size() > 0) {
@@ -1522,9 +1618,9 @@ void PubsubMessage::SerializeWithCachedSizes(
   return target;
 }
 
-int PubsubMessage::ByteSize() const {
+size_t PubsubMessage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.PubsubMessage)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional bytes data = 1;
   if (this->data().size() > 0) {
@@ -1548,7 +1644,8 @@ int PubsubMessage::ByteSize() const {
   }
 
   // map<string, string> attributes = 2;
-  total_size += 1 * this->attributes_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->attributes_size());
   {
     ::google::protobuf::scoped_ptr<PubsubMessage_AttributesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -1566,18 +1663,17 @@ int PubsubMessage::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PubsubMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.PubsubMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PubsubMessage* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PubsubMessage* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PubsubMessage>(
           &from);
   if (source == NULL) {
@@ -1585,15 +1681,21 @@ void PubsubMessage::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.PubsubMessage)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PubsubMessage::MergeFrom(const PubsubMessage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.PubsubMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void PubsubMessage::UnsafeMergeFrom(const PubsubMessage& from) {
+  GOOGLE_DCHECK(&from != this);
   attributes_.MergeFrom(from.attributes_);
   if (from.data().size() > 0) {
     set_data(from.data());
@@ -1617,7 +1719,7 @@ void PubsubMessage::CopyFrom(const PubsubMessage& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.PubsubMessage)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PubsubMessage::IsInitialized() const {
@@ -1631,7 +1733,7 @@ void PubsubMessage::Swap(PubsubMessage* other) {
     InternalSwap(other);
   } else {
     PubsubMessage temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -1665,46 +1767,46 @@ void PubsubMessage::InternalSwap(PubsubMessage* other) {
 void PubsubMessage::clear_data() {
   data_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& PubsubMessage::data() const {
+const ::std::string& PubsubMessage::data() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PubsubMessage.data)
   return data_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PubsubMessage::set_data(const ::std::string& value) {
+void PubsubMessage::set_data(const ::std::string& value) {
   
   data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PubsubMessage.data)
 }
- void PubsubMessage::set_data(const char* value) {
+void PubsubMessage::set_data(const char* value) {
   
   data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.PubsubMessage.data)
 }
- void PubsubMessage::set_data(const void* value,
+void PubsubMessage::set_data(const void* value,
     size_t size) {
   
   data_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.PubsubMessage.data)
 }
- ::std::string* PubsubMessage::mutable_data() {
+::std::string* PubsubMessage::mutable_data() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.PubsubMessage.data)
   return data_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PubsubMessage::release_data() {
+::std::string* PubsubMessage::release_data() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.PubsubMessage.data)
   
   return data_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PubsubMessage::unsafe_arena_release_data() {
+::std::string* PubsubMessage::unsafe_arena_release_data() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.PubsubMessage.data)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return data_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void PubsubMessage::set_allocated_data(::std::string* data) {
+void PubsubMessage::set_allocated_data(::std::string* data) {
   if (data != NULL) {
     
   } else {
@@ -1714,7 +1816,7 @@ void PubsubMessage::clear_data() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.PubsubMessage.data)
 }
- void PubsubMessage::unsafe_arena_set_allocated_data(
+void PubsubMessage::unsafe_arena_set_allocated_data(
     ::std::string* data) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (data != NULL) {
@@ -1749,46 +1851,46 @@ PubsubMessage::mutable_attributes() {
 void PubsubMessage::clear_message_id() {
   message_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& PubsubMessage::message_id() const {
+const ::std::string& PubsubMessage::message_id() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PubsubMessage.message_id)
   return message_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PubsubMessage::set_message_id(const ::std::string& value) {
+void PubsubMessage::set_message_id(const ::std::string& value) {
   
   message_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PubsubMessage.message_id)
 }
- void PubsubMessage::set_message_id(const char* value) {
+void PubsubMessage::set_message_id(const char* value) {
   
   message_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.PubsubMessage.message_id)
 }
- void PubsubMessage::set_message_id(const char* value,
+void PubsubMessage::set_message_id(const char* value,
     size_t size) {
   
   message_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.PubsubMessage.message_id)
 }
- ::std::string* PubsubMessage::mutable_message_id() {
+::std::string* PubsubMessage::mutable_message_id() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.PubsubMessage.message_id)
   return message_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PubsubMessage::release_message_id() {
+::std::string* PubsubMessage::release_message_id() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.PubsubMessage.message_id)
   
   return message_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PubsubMessage::unsafe_arena_release_message_id() {
+::std::string* PubsubMessage::unsafe_arena_release_message_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.PubsubMessage.message_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return message_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void PubsubMessage::set_allocated_message_id(::std::string* message_id) {
+void PubsubMessage::set_allocated_message_id(::std::string* message_id) {
   if (message_id != NULL) {
     
   } else {
@@ -1798,7 +1900,7 @@ void PubsubMessage::clear_message_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.PubsubMessage.message_id)
 }
- void PubsubMessage::unsafe_arena_set_allocated_message_id(
+void PubsubMessage::unsafe_arena_set_allocated_message_id(
     ::std::string* message_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (message_id != NULL) {
@@ -1813,7 +1915,7 @@ void PubsubMessage::clear_message_id() {
 
 // optional .google.protobuf.Timestamp publish_time = 4;
 bool PubsubMessage::has_publish_time() const {
-  return !_is_default_instance_ && publish_time_ != NULL;
+  return this != internal_default_instance() && publish_time_ != NULL;
 }
 void PubsubMessage::clear_publish_time() {
   if (GetArenaNoVirtual() == NULL && publish_time_ != NULL) delete publish_time_;
@@ -1821,7 +1923,8 @@ void PubsubMessage::clear_publish_time() {
 }
 const ::google::protobuf::Timestamp& PubsubMessage::publish_time() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PubsubMessage.publish_time)
-  return publish_time_ != NULL ? *publish_time_ : *default_instance_->publish_time_;
+  return publish_time_ != NULL ? *publish_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* PubsubMessage::mutable_publish_time() {
   
@@ -1859,6 +1962,9 @@ const ::google::protobuf::Timestamp& PubsubMessage::publish_time() const {
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.PubsubMessage.publish_time)
 }
 
+inline const PubsubMessage* PubsubMessage::internal_default_instance() {
+  return &PubsubMessage_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1869,35 +1975,35 @@ const int GetTopicRequest::kTopicFieldNumber;
 
 GetTopicRequest::GetTopicRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.GetTopicRequest)
 }
-
 GetTopicRequest::GetTopicRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.GetTopicRequest)
 }
 
 void GetTopicRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetTopicRequest::GetTopicRequest(const GetTopicRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.GetTopicRequest)
 }
 
 void GetTopicRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   topic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetTopicRequest::~GetTopicRequest() {
@@ -1906,13 +2012,12 @@ GetTopicRequest::~GetTopicRequest() {
 }
 
 void GetTopicRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void GetTopicRequest::ArenaDtor(void* object) {
@@ -1932,11 +2037,11 @@ const ::google::protobuf::Descriptor* GetTopicRequest::descriptor() {
 }
 
 const GetTopicRequest& GetTopicRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-GetTopicRequest* GetTopicRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetTopicRequest> GetTopicRequest_default_instance_;
 
 GetTopicRequest* GetTopicRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetTopicRequest>(arena);
@@ -2012,6 +2117,7 @@ void GetTopicRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetTopicRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.GetTopicRequest)
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -2028,9 +2134,9 @@ void GetTopicRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetTopicRequest::ByteSize() const {
+size_t GetTopicRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.GetTopicRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -2039,18 +2145,17 @@ int GetTopicRequest::ByteSize() const {
         this->topic());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetTopicRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.GetTopicRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetTopicRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetTopicRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetTopicRequest>(
           &from);
   if (source == NULL) {
@@ -2058,15 +2163,21 @@ void GetTopicRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.GetTopicRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetTopicRequest::MergeFrom(const GetTopicRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.GetTopicRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetTopicRequest::UnsafeMergeFrom(const GetTopicRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.topic().size() > 0) {
     set_topic(from.topic());
   }
@@ -2083,7 +2194,7 @@ void GetTopicRequest::CopyFrom(const GetTopicRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.GetTopicRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetTopicRequest::IsInitialized() const {
@@ -2097,7 +2208,7 @@ void GetTopicRequest::Swap(GetTopicRequest* other) {
     InternalSwap(other);
   } else {
     GetTopicRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -2128,46 +2239,46 @@ void GetTopicRequest::InternalSwap(GetTopicRequest* other) {
 void GetTopicRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& GetTopicRequest::topic() const {
+const ::std::string& GetTopicRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.GetTopicRequest.topic)
   return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetTopicRequest::set_topic(const ::std::string& value) {
+void GetTopicRequest::set_topic(const ::std::string& value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.GetTopicRequest.topic)
 }
- void GetTopicRequest::set_topic(const char* value) {
+void GetTopicRequest::set_topic(const char* value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.GetTopicRequest.topic)
 }
- void GetTopicRequest::set_topic(const char* value,
+void GetTopicRequest::set_topic(const char* value,
     size_t size) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.GetTopicRequest.topic)
 }
- ::std::string* GetTopicRequest::mutable_topic() {
+::std::string* GetTopicRequest::mutable_topic() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.GetTopicRequest.topic)
   return topic_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetTopicRequest::release_topic() {
+::std::string* GetTopicRequest::release_topic() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.GetTopicRequest.topic)
   
   return topic_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetTopicRequest::unsafe_arena_release_topic() {
+::std::string* GetTopicRequest::unsafe_arena_release_topic() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.GetTopicRequest.topic)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return topic_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void GetTopicRequest::set_allocated_topic(::std::string* topic) {
+void GetTopicRequest::set_allocated_topic(::std::string* topic) {
   if (topic != NULL) {
     
   } else {
@@ -2177,7 +2288,7 @@ void GetTopicRequest::clear_topic() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.GetTopicRequest.topic)
 }
- void GetTopicRequest::unsafe_arena_set_allocated_topic(
+void GetTopicRequest::unsafe_arena_set_allocated_topic(
     ::std::string* topic) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (topic != NULL) {
@@ -2190,6 +2301,9 @@ void GetTopicRequest::clear_topic() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.GetTopicRequest.topic)
 }
 
+inline const GetTopicRequest* GetTopicRequest::internal_default_instance() {
+  return &GetTopicRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2201,36 +2315,36 @@ const int PublishRequest::kMessagesFieldNumber;
 
 PublishRequest::PublishRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.PublishRequest)
 }
-
 PublishRequest::PublishRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   messages_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.PublishRequest)
 }
 
 void PublishRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 PublishRequest::PublishRequest(const PublishRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.PublishRequest)
 }
 
 void PublishRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   topic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 PublishRequest::~PublishRequest() {
@@ -2239,13 +2353,12 @@ PublishRequest::~PublishRequest() {
 }
 
 void PublishRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void PublishRequest::ArenaDtor(void* object) {
@@ -2265,11 +2378,11 @@ const ::google::protobuf::Descriptor* PublishRequest::descriptor() {
 }
 
 const PublishRequest& PublishRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-PublishRequest* PublishRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PublishRequest> PublishRequest_default_instance_;
 
 PublishRequest* PublishRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<PublishRequest>(arena);
@@ -2369,6 +2482,7 @@ void PublishRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PublishRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.PublishRequest)
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -2392,9 +2506,9 @@ void PublishRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int PublishRequest::ByteSize() const {
+size_t PublishRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.PublishRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -2404,25 +2518,27 @@ int PublishRequest::ByteSize() const {
   }
 
   // repeated .google.pubsub.v1.PubsubMessage messages = 2;
-  total_size += 1 * this->messages_size();
-  for (int i = 0; i < this->messages_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->messages(i));
+  {
+    unsigned int count = this->messages_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->messages(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PublishRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.PublishRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PublishRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PublishRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PublishRequest>(
           &from);
   if (source == NULL) {
@@ -2430,15 +2546,21 @@ void PublishRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.PublishRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PublishRequest::MergeFrom(const PublishRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.PublishRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void PublishRequest::UnsafeMergeFrom(const PublishRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   messages_.MergeFrom(from.messages_);
   if (from.topic().size() > 0) {
     set_topic(from.topic());
@@ -2456,7 +2578,7 @@ void PublishRequest::CopyFrom(const PublishRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.PublishRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PublishRequest::IsInitialized() const {
@@ -2470,7 +2592,7 @@ void PublishRequest::Swap(PublishRequest* other) {
     InternalSwap(other);
   } else {
     PublishRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -2502,46 +2624,46 @@ void PublishRequest::InternalSwap(PublishRequest* other) {
 void PublishRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& PublishRequest::topic() const {
+const ::std::string& PublishRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PublishRequest.topic)
   return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PublishRequest::set_topic(const ::std::string& value) {
+void PublishRequest::set_topic(const ::std::string& value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PublishRequest.topic)
 }
- void PublishRequest::set_topic(const char* value) {
+void PublishRequest::set_topic(const char* value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.PublishRequest.topic)
 }
- void PublishRequest::set_topic(const char* value,
+void PublishRequest::set_topic(const char* value,
     size_t size) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.PublishRequest.topic)
 }
- ::std::string* PublishRequest::mutable_topic() {
+::std::string* PublishRequest::mutable_topic() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.PublishRequest.topic)
   return topic_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PublishRequest::release_topic() {
+::std::string* PublishRequest::release_topic() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.PublishRequest.topic)
   
   return topic_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PublishRequest::unsafe_arena_release_topic() {
+::std::string* PublishRequest::unsafe_arena_release_topic() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.PublishRequest.topic)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return topic_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void PublishRequest::set_allocated_topic(::std::string* topic) {
+void PublishRequest::set_allocated_topic(::std::string* topic) {
   if (topic != NULL) {
     
   } else {
@@ -2551,7 +2673,7 @@ void PublishRequest::clear_topic() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.PublishRequest.topic)
 }
- void PublishRequest::unsafe_arena_set_allocated_topic(
+void PublishRequest::unsafe_arena_set_allocated_topic(
     ::std::string* topic) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (topic != NULL) {
@@ -2594,6 +2716,9 @@ PublishRequest::messages() const {
   return messages_;
 }
 
+inline const PublishRequest* PublishRequest::internal_default_instance() {
+  return &PublishRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2604,34 +2729,34 @@ const int PublishResponse::kMessageIdsFieldNumber;
 
 PublishResponse::PublishResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.PublishResponse)
 }
-
 PublishResponse::PublishResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   message_ids_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.PublishResponse)
 }
 
 void PublishResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 PublishResponse::PublishResponse(const PublishResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.PublishResponse)
 }
 
 void PublishResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
 }
 
@@ -2641,12 +2766,11 @@ PublishResponse::~PublishResponse() {
 }
 
 void PublishResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void PublishResponse::ArenaDtor(void* object) {
@@ -2666,11 +2790,11 @@ const ::google::protobuf::Descriptor* PublishResponse::descriptor() {
 }
 
 const PublishResponse& PublishResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-PublishResponse* PublishResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PublishResponse> PublishResponse_default_instance_;
 
 PublishResponse* PublishResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<PublishResponse>(arena);
@@ -2749,6 +2873,7 @@ void PublishResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PublishResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.PublishResponse)
   // repeated string message_ids = 1;
   for (int i = 0; i < this->message_ids_size(); i++) {
@@ -2764,29 +2889,29 @@ void PublishResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int PublishResponse::ByteSize() const {
+size_t PublishResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.PublishResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated string message_ids = 1;
-  total_size += 1 * this->message_ids_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->message_ids_size());
   for (int i = 0; i < this->message_ids_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->message_ids(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PublishResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.PublishResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PublishResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PublishResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PublishResponse>(
           &from);
   if (source == NULL) {
@@ -2794,16 +2919,22 @@ void PublishResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.PublishResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PublishResponse::MergeFrom(const PublishResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.PublishResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  message_ids_.MergeFrom(from.message_ids_);
+}
+
+void PublishResponse::UnsafeMergeFrom(const PublishResponse& from) {
+  GOOGLE_DCHECK(&from != this);
+  message_ids_.UnsafeMergeFrom(from.message_ids_);
 }
 
 void PublishResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2817,7 +2948,7 @@ void PublishResponse::CopyFrom(const PublishResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.PublishResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PublishResponse::IsInitialized() const {
@@ -2831,7 +2962,7 @@ void PublishResponse::Swap(PublishResponse* other) {
     InternalSwap(other);
   } else {
     PublishResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -2865,54 +2996,57 @@ int PublishResponse::message_ids_size() const {
 void PublishResponse::clear_message_ids() {
   message_ids_.Clear();
 }
- const ::std::string& PublishResponse::message_ids(int index) const {
+const ::std::string& PublishResponse::message_ids(int index) const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PublishResponse.message_ids)
   return message_ids_.Get(index);
 }
- ::std::string* PublishResponse::mutable_message_ids(int index) {
+::std::string* PublishResponse::mutable_message_ids(int index) {
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.PublishResponse.message_ids)
   return message_ids_.Mutable(index);
 }
- void PublishResponse::set_message_ids(int index, const ::std::string& value) {
+void PublishResponse::set_message_ids(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PublishResponse.message_ids)
   message_ids_.Mutable(index)->assign(value);
 }
- void PublishResponse::set_message_ids(int index, const char* value) {
+void PublishResponse::set_message_ids(int index, const char* value) {
   message_ids_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.PublishResponse.message_ids)
 }
- void PublishResponse::set_message_ids(int index, const char* value, size_t size) {
+void PublishResponse::set_message_ids(int index, const char* value, size_t size) {
   message_ids_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.PublishResponse.message_ids)
 }
- ::std::string* PublishResponse::add_message_ids() {
+::std::string* PublishResponse::add_message_ids() {
   // @@protoc_insertion_point(field_add_mutable:google.pubsub.v1.PublishResponse.message_ids)
   return message_ids_.Add();
 }
- void PublishResponse::add_message_ids(const ::std::string& value) {
+void PublishResponse::add_message_ids(const ::std::string& value) {
   message_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.pubsub.v1.PublishResponse.message_ids)
 }
- void PublishResponse::add_message_ids(const char* value) {
+void PublishResponse::add_message_ids(const char* value) {
   message_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.pubsub.v1.PublishResponse.message_ids)
 }
- void PublishResponse::add_message_ids(const char* value, size_t size) {
+void PublishResponse::add_message_ids(const char* value, size_t size) {
   message_ids_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.pubsub.v1.PublishResponse.message_ids)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 PublishResponse::message_ids() const {
   // @@protoc_insertion_point(field_list:google.pubsub.v1.PublishResponse.message_ids)
   return message_ids_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 PublishResponse::mutable_message_ids() {
   // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.PublishResponse.message_ids)
   return &message_ids_;
 }
 
+inline const PublishResponse* PublishResponse::internal_default_instance() {
+  return &PublishResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2925,37 +3059,37 @@ const int ListTopicsRequest::kPageTokenFieldNumber;
 
 ListTopicsRequest::ListTopicsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ListTopicsRequest)
 }
-
 ListTopicsRequest::ListTopicsRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ListTopicsRequest)
 }
 
 void ListTopicsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListTopicsRequest::ListTopicsRequest(const ListTopicsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ListTopicsRequest)
 }
 
 void ListTopicsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListTopicsRequest::~ListTopicsRequest() {
@@ -2964,14 +3098,13 @@ ListTopicsRequest::~ListTopicsRequest() {
 }
 
 void ListTopicsRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  project_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  project_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListTopicsRequest::ArenaDtor(void* object) {
@@ -2991,11 +3124,11 @@ const ::google::protobuf::Descriptor* ListTopicsRequest::descriptor() {
 }
 
 const ListTopicsRequest& ListTopicsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ListTopicsRequest* ListTopicsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListTopicsRequest> ListTopicsRequest_default_instance_;
 
 ListTopicsRequest* ListTopicsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListTopicsRequest>(arena);
@@ -3038,10 +3171,10 @@ bool ListTopicsRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3120,6 +3253,7 @@ void ListTopicsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListTopicsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ListTopicsRequest)
   // optional string project = 1;
   if (this->project().size() > 0) {
@@ -3152,9 +3286,9 @@ void ListTopicsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListTopicsRequest::ByteSize() const {
+size_t ListTopicsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ListTopicsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project = 1;
   if (this->project().size() > 0) {
@@ -3177,18 +3311,17 @@ int ListTopicsRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListTopicsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ListTopicsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListTopicsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListTopicsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTopicsRequest>(
           &from);
   if (source == NULL) {
@@ -3196,15 +3329,21 @@ void ListTopicsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ListTopicsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTopicsRequest::MergeFrom(const ListTopicsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ListTopicsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListTopicsRequest::UnsafeMergeFrom(const ListTopicsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project().size() > 0) {
     set_project(from.project());
   }
@@ -3227,7 +3366,7 @@ void ListTopicsRequest::CopyFrom(const ListTopicsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ListTopicsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTopicsRequest::IsInitialized() const {
@@ -3241,7 +3380,7 @@ void ListTopicsRequest::Swap(ListTopicsRequest* other) {
     InternalSwap(other);
   } else {
     ListTopicsRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3274,46 +3413,46 @@ void ListTopicsRequest::InternalSwap(ListTopicsRequest* other) {
 void ListTopicsRequest::clear_project() {
   project_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListTopicsRequest::project() const {
+const ::std::string& ListTopicsRequest::project() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicsRequest.project)
   return project_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListTopicsRequest::set_project(const ::std::string& value) {
+void ListTopicsRequest::set_project(const ::std::string& value) {
   
   project_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicsRequest.project)
 }
- void ListTopicsRequest::set_project(const char* value) {
+void ListTopicsRequest::set_project(const char* value) {
   
   project_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListTopicsRequest.project)
 }
- void ListTopicsRequest::set_project(const char* value,
+void ListTopicsRequest::set_project(const char* value,
     size_t size) {
   
   project_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListTopicsRequest.project)
 }
- ::std::string* ListTopicsRequest::mutable_project() {
+::std::string* ListTopicsRequest::mutable_project() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListTopicsRequest.project)
   return project_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicsRequest::release_project() {
+::std::string* ListTopicsRequest::release_project() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListTopicsRequest.project)
   
   return project_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicsRequest::unsafe_arena_release_project() {
+::std::string* ListTopicsRequest::unsafe_arena_release_project() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListTopicsRequest.project)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return project_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListTopicsRequest::set_allocated_project(::std::string* project) {
+void ListTopicsRequest::set_allocated_project(::std::string* project) {
   if (project != NULL) {
     
   } else {
@@ -3323,7 +3462,7 @@ void ListTopicsRequest::clear_project() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListTopicsRequest.project)
 }
- void ListTopicsRequest::unsafe_arena_set_allocated_project(
+void ListTopicsRequest::unsafe_arena_set_allocated_project(
     ::std::string* project) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (project != NULL) {
@@ -3340,11 +3479,11 @@ void ListTopicsRequest::clear_project() {
 void ListTopicsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListTopicsRequest::page_size() const {
+::google::protobuf::int32 ListTopicsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicsRequest.page_size)
   return page_size_;
 }
- void ListTopicsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListTopicsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicsRequest.page_size)
@@ -3354,46 +3493,46 @@ void ListTopicsRequest::clear_page_size() {
 void ListTopicsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListTopicsRequest::page_token() const {
+const ::std::string& ListTopicsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicsRequest.page_token)
   return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListTopicsRequest::set_page_token(const ::std::string& value) {
+void ListTopicsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicsRequest.page_token)
 }
- void ListTopicsRequest::set_page_token(const char* value) {
+void ListTopicsRequest::set_page_token(const char* value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListTopicsRequest.page_token)
 }
- void ListTopicsRequest::set_page_token(const char* value,
+void ListTopicsRequest::set_page_token(const char* value,
     size_t size) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListTopicsRequest.page_token)
 }
- ::std::string* ListTopicsRequest::mutable_page_token() {
+::std::string* ListTopicsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListTopicsRequest.page_token)
   return page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicsRequest::release_page_token() {
+::std::string* ListTopicsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListTopicsRequest.page_token)
   
   return page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicsRequest::unsafe_arena_release_page_token() {
+::std::string* ListTopicsRequest::unsafe_arena_release_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListTopicsRequest.page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListTopicsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListTopicsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -3403,7 +3542,7 @@ void ListTopicsRequest::clear_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListTopicsRequest.page_token)
 }
- void ListTopicsRequest::unsafe_arena_set_allocated_page_token(
+void ListTopicsRequest::unsafe_arena_set_allocated_page_token(
     ::std::string* page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (page_token != NULL) {
@@ -3416,6 +3555,9 @@ void ListTopicsRequest::clear_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicsRequest.page_token)
 }
 
+inline const ListTopicsRequest* ListTopicsRequest::internal_default_instance() {
+  return &ListTopicsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3427,36 +3569,36 @@ const int ListTopicsResponse::kNextPageTokenFieldNumber;
 
 ListTopicsResponse::ListTopicsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ListTopicsResponse)
 }
-
 ListTopicsResponse::ListTopicsResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   topics_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ListTopicsResponse)
 }
 
 void ListTopicsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListTopicsResponse::ListTopicsResponse(const ListTopicsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ListTopicsResponse)
 }
 
 void ListTopicsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListTopicsResponse::~ListTopicsResponse() {
@@ -3465,13 +3607,12 @@ ListTopicsResponse::~ListTopicsResponse() {
 }
 
 void ListTopicsResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListTopicsResponse::ArenaDtor(void* object) {
@@ -3491,11 +3632,11 @@ const ::google::protobuf::Descriptor* ListTopicsResponse::descriptor() {
 }
 
 const ListTopicsResponse& ListTopicsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ListTopicsResponse* ListTopicsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListTopicsResponse> ListTopicsResponse_default_instance_;
 
 ListTopicsResponse* ListTopicsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListTopicsResponse>(arena);
@@ -3595,6 +3736,7 @@ void ListTopicsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListTopicsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ListTopicsResponse)
   // repeated .google.pubsub.v1.Topic topics = 1;
   for (unsigned int i = 0, n = this->topics_size(); i < n; i++) {
@@ -3618,9 +3760,9 @@ void ListTopicsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListTopicsResponse::ByteSize() const {
+size_t ListTopicsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ListTopicsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -3630,25 +3772,27 @@ int ListTopicsResponse::ByteSize() const {
   }
 
   // repeated .google.pubsub.v1.Topic topics = 1;
-  total_size += 1 * this->topics_size();
-  for (int i = 0; i < this->topics_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->topics(i));
+  {
+    unsigned int count = this->topics_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->topics(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListTopicsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ListTopicsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListTopicsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListTopicsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTopicsResponse>(
           &from);
   if (source == NULL) {
@@ -3656,15 +3800,21 @@ void ListTopicsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ListTopicsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTopicsResponse::MergeFrom(const ListTopicsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ListTopicsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListTopicsResponse::UnsafeMergeFrom(const ListTopicsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   topics_.MergeFrom(from.topics_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -3682,7 +3832,7 @@ void ListTopicsResponse::CopyFrom(const ListTopicsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ListTopicsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTopicsResponse::IsInitialized() const {
@@ -3696,7 +3846,7 @@ void ListTopicsResponse::Swap(ListTopicsResponse* other) {
     InternalSwap(other);
   } else {
     ListTopicsResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -3758,46 +3908,46 @@ ListTopicsResponse::topics() const {
 void ListTopicsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListTopicsResponse::next_page_token() const {
+const ::std::string& ListTopicsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicsResponse.next_page_token)
   return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListTopicsResponse::set_next_page_token(const ::std::string& value) {
+void ListTopicsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicsResponse.next_page_token)
 }
- void ListTopicsResponse::set_next_page_token(const char* value) {
+void ListTopicsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListTopicsResponse.next_page_token)
 }
- void ListTopicsResponse::set_next_page_token(const char* value,
+void ListTopicsResponse::set_next_page_token(const char* value,
     size_t size) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListTopicsResponse.next_page_token)
 }
- ::std::string* ListTopicsResponse::mutable_next_page_token() {
+::std::string* ListTopicsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListTopicsResponse.next_page_token)
   return next_page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicsResponse::release_next_page_token() {
+::std::string* ListTopicsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListTopicsResponse.next_page_token)
   
   return next_page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicsResponse::unsafe_arena_release_next_page_token() {
+::std::string* ListTopicsResponse::unsafe_arena_release_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListTopicsResponse.next_page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return next_page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListTopicsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListTopicsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -3807,7 +3957,7 @@ void ListTopicsResponse::clear_next_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListTopicsResponse.next_page_token)
 }
- void ListTopicsResponse::unsafe_arena_set_allocated_next_page_token(
+void ListTopicsResponse::unsafe_arena_set_allocated_next_page_token(
     ::std::string* next_page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (next_page_token != NULL) {
@@ -3820,6 +3970,9 @@ void ListTopicsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicsResponse.next_page_token)
 }
 
+inline const ListTopicsResponse* ListTopicsResponse::internal_default_instance() {
+  return &ListTopicsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3832,37 +3985,37 @@ const int ListTopicSubscriptionsRequest::kPageTokenFieldNumber;
 
 ListTopicSubscriptionsRequest::ListTopicSubscriptionsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ListTopicSubscriptionsRequest)
 }
-
 ListTopicSubscriptionsRequest::ListTopicSubscriptionsRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ListTopicSubscriptionsRequest)
 }
 
 void ListTopicSubscriptionsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListTopicSubscriptionsRequest::ListTopicSubscriptionsRequest(const ListTopicSubscriptionsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ListTopicSubscriptionsRequest)
 }
 
 void ListTopicSubscriptionsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   topic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListTopicSubscriptionsRequest::~ListTopicSubscriptionsRequest() {
@@ -3871,14 +4024,13 @@ ListTopicSubscriptionsRequest::~ListTopicSubscriptionsRequest() {
 }
 
 void ListTopicSubscriptionsRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListTopicSubscriptionsRequest::ArenaDtor(void* object) {
@@ -3898,11 +4050,11 @@ const ::google::protobuf::Descriptor* ListTopicSubscriptionsRequest::descriptor(
 }
 
 const ListTopicSubscriptionsRequest& ListTopicSubscriptionsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ListTopicSubscriptionsRequest* ListTopicSubscriptionsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListTopicSubscriptionsRequest> ListTopicSubscriptionsRequest_default_instance_;
 
 ListTopicSubscriptionsRequest* ListTopicSubscriptionsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListTopicSubscriptionsRequest>(arena);
@@ -3945,10 +4097,10 @@ bool ListTopicSubscriptionsRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4027,6 +4179,7 @@ void ListTopicSubscriptionsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListTopicSubscriptionsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ListTopicSubscriptionsRequest)
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -4059,9 +4212,9 @@ void ListTopicSubscriptionsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListTopicSubscriptionsRequest::ByteSize() const {
+size_t ListTopicSubscriptionsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ListTopicSubscriptionsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -4084,18 +4237,17 @@ int ListTopicSubscriptionsRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListTopicSubscriptionsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ListTopicSubscriptionsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListTopicSubscriptionsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListTopicSubscriptionsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTopicSubscriptionsRequest>(
           &from);
   if (source == NULL) {
@@ -4103,15 +4255,21 @@ void ListTopicSubscriptionsRequest::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ListTopicSubscriptionsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTopicSubscriptionsRequest::MergeFrom(const ListTopicSubscriptionsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ListTopicSubscriptionsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListTopicSubscriptionsRequest::UnsafeMergeFrom(const ListTopicSubscriptionsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.topic().size() > 0) {
     set_topic(from.topic());
   }
@@ -4134,7 +4292,7 @@ void ListTopicSubscriptionsRequest::CopyFrom(const ListTopicSubscriptionsRequest
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ListTopicSubscriptionsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTopicSubscriptionsRequest::IsInitialized() const {
@@ -4148,7 +4306,7 @@ void ListTopicSubscriptionsRequest::Swap(ListTopicSubscriptionsRequest* other) {
     InternalSwap(other);
   } else {
     ListTopicSubscriptionsRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4181,46 +4339,46 @@ void ListTopicSubscriptionsRequest::InternalSwap(ListTopicSubscriptionsRequest* 
 void ListTopicSubscriptionsRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListTopicSubscriptionsRequest::topic() const {
+const ::std::string& ListTopicSubscriptionsRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
   return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListTopicSubscriptionsRequest::set_topic(const ::std::string& value) {
+void ListTopicSubscriptionsRequest::set_topic(const ::std::string& value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
 }
- void ListTopicSubscriptionsRequest::set_topic(const char* value) {
+void ListTopicSubscriptionsRequest::set_topic(const char* value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
 }
- void ListTopicSubscriptionsRequest::set_topic(const char* value,
+void ListTopicSubscriptionsRequest::set_topic(const char* value,
     size_t size) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
 }
- ::std::string* ListTopicSubscriptionsRequest::mutable_topic() {
+::std::string* ListTopicSubscriptionsRequest::mutable_topic() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
   return topic_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicSubscriptionsRequest::release_topic() {
+::std::string* ListTopicSubscriptionsRequest::release_topic() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
   
   return topic_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicSubscriptionsRequest::unsafe_arena_release_topic() {
+::std::string* ListTopicSubscriptionsRequest::unsafe_arena_release_topic() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return topic_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListTopicSubscriptionsRequest::set_allocated_topic(::std::string* topic) {
+void ListTopicSubscriptionsRequest::set_allocated_topic(::std::string* topic) {
   if (topic != NULL) {
     
   } else {
@@ -4230,7 +4388,7 @@ void ListTopicSubscriptionsRequest::clear_topic() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
 }
- void ListTopicSubscriptionsRequest::unsafe_arena_set_allocated_topic(
+void ListTopicSubscriptionsRequest::unsafe_arena_set_allocated_topic(
     ::std::string* topic) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (topic != NULL) {
@@ -4247,11 +4405,11 @@ void ListTopicSubscriptionsRequest::clear_topic() {
 void ListTopicSubscriptionsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListTopicSubscriptionsRequest::page_size() const {
+::google::protobuf::int32 ListTopicSubscriptionsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsRequest.page_size)
   return page_size_;
 }
- void ListTopicSubscriptionsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListTopicSubscriptionsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicSubscriptionsRequest.page_size)
@@ -4261,46 +4419,46 @@ void ListTopicSubscriptionsRequest::clear_page_size() {
 void ListTopicSubscriptionsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListTopicSubscriptionsRequest::page_token() const {
+const ::std::string& ListTopicSubscriptionsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
   return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListTopicSubscriptionsRequest::set_page_token(const ::std::string& value) {
+void ListTopicSubscriptionsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
 }
- void ListTopicSubscriptionsRequest::set_page_token(const char* value) {
+void ListTopicSubscriptionsRequest::set_page_token(const char* value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
 }
- void ListTopicSubscriptionsRequest::set_page_token(const char* value,
+void ListTopicSubscriptionsRequest::set_page_token(const char* value,
     size_t size) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
 }
- ::std::string* ListTopicSubscriptionsRequest::mutable_page_token() {
+::std::string* ListTopicSubscriptionsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
   return page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicSubscriptionsRequest::release_page_token() {
+::std::string* ListTopicSubscriptionsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
   
   return page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicSubscriptionsRequest::unsafe_arena_release_page_token() {
+::std::string* ListTopicSubscriptionsRequest::unsafe_arena_release_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListTopicSubscriptionsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListTopicSubscriptionsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -4310,7 +4468,7 @@ void ListTopicSubscriptionsRequest::clear_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
 }
- void ListTopicSubscriptionsRequest::unsafe_arena_set_allocated_page_token(
+void ListTopicSubscriptionsRequest::unsafe_arena_set_allocated_page_token(
     ::std::string* page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (page_token != NULL) {
@@ -4323,6 +4481,9 @@ void ListTopicSubscriptionsRequest::clear_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
 }
 
+inline const ListTopicSubscriptionsRequest* ListTopicSubscriptionsRequest::internal_default_instance() {
+  return &ListTopicSubscriptionsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4334,36 +4495,36 @@ const int ListTopicSubscriptionsResponse::kNextPageTokenFieldNumber;
 
 ListTopicSubscriptionsResponse::ListTopicSubscriptionsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ListTopicSubscriptionsResponse)
 }
-
 ListTopicSubscriptionsResponse::ListTopicSubscriptionsResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   subscriptions_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ListTopicSubscriptionsResponse)
 }
 
 void ListTopicSubscriptionsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListTopicSubscriptionsResponse::ListTopicSubscriptionsResponse(const ListTopicSubscriptionsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ListTopicSubscriptionsResponse)
 }
 
 void ListTopicSubscriptionsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListTopicSubscriptionsResponse::~ListTopicSubscriptionsResponse() {
@@ -4372,13 +4533,12 @@ ListTopicSubscriptionsResponse::~ListTopicSubscriptionsResponse() {
 }
 
 void ListTopicSubscriptionsResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListTopicSubscriptionsResponse::ArenaDtor(void* object) {
@@ -4398,11 +4558,11 @@ const ::google::protobuf::Descriptor* ListTopicSubscriptionsResponse::descriptor
 }
 
 const ListTopicSubscriptionsResponse& ListTopicSubscriptionsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ListTopicSubscriptionsResponse* ListTopicSubscriptionsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListTopicSubscriptionsResponse> ListTopicSubscriptionsResponse_default_instance_;
 
 ListTopicSubscriptionsResponse* ListTopicSubscriptionsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListTopicSubscriptionsResponse>(arena);
@@ -4509,6 +4669,7 @@ void ListTopicSubscriptionsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListTopicSubscriptionsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ListTopicSubscriptionsResponse)
   // repeated string subscriptions = 1;
   for (int i = 0; i < this->subscriptions_size(); i++) {
@@ -4535,9 +4696,9 @@ void ListTopicSubscriptionsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListTopicSubscriptionsResponse::ByteSize() const {
+size_t ListTopicSubscriptionsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ListTopicSubscriptionsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -4547,24 +4708,24 @@ int ListTopicSubscriptionsResponse::ByteSize() const {
   }
 
   // repeated string subscriptions = 1;
-  total_size += 1 * this->subscriptions_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->subscriptions_size());
   for (int i = 0; i < this->subscriptions_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->subscriptions(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListTopicSubscriptionsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ListTopicSubscriptionsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListTopicSubscriptionsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListTopicSubscriptionsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTopicSubscriptionsResponse>(
           &from);
   if (source == NULL) {
@@ -4572,16 +4733,22 @@ void ListTopicSubscriptionsResponse::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ListTopicSubscriptionsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTopicSubscriptionsResponse::MergeFrom(const ListTopicSubscriptionsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ListTopicSubscriptionsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  subscriptions_.MergeFrom(from.subscriptions_);
+}
+
+void ListTopicSubscriptionsResponse::UnsafeMergeFrom(const ListTopicSubscriptionsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
+  subscriptions_.UnsafeMergeFrom(from.subscriptions_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
   }
@@ -4598,7 +4765,7 @@ void ListTopicSubscriptionsResponse::CopyFrom(const ListTopicSubscriptionsRespon
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ListTopicSubscriptionsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTopicSubscriptionsResponse::IsInitialized() const {
@@ -4612,7 +4779,7 @@ void ListTopicSubscriptionsResponse::Swap(ListTopicSubscriptionsResponse* other)
     InternalSwap(other);
   } else {
     ListTopicSubscriptionsResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -4647,49 +4814,49 @@ int ListTopicSubscriptionsResponse::subscriptions_size() const {
 void ListTopicSubscriptionsResponse::clear_subscriptions() {
   subscriptions_.Clear();
 }
- const ::std::string& ListTopicSubscriptionsResponse::subscriptions(int index) const {
+const ::std::string& ListTopicSubscriptionsResponse::subscriptions(int index) const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
   return subscriptions_.Get(index);
 }
- ::std::string* ListTopicSubscriptionsResponse::mutable_subscriptions(int index) {
+::std::string* ListTopicSubscriptionsResponse::mutable_subscriptions(int index) {
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
   return subscriptions_.Mutable(index);
 }
- void ListTopicSubscriptionsResponse::set_subscriptions(int index, const ::std::string& value) {
+void ListTopicSubscriptionsResponse::set_subscriptions(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
   subscriptions_.Mutable(index)->assign(value);
 }
- void ListTopicSubscriptionsResponse::set_subscriptions(int index, const char* value) {
+void ListTopicSubscriptionsResponse::set_subscriptions(int index, const char* value) {
   subscriptions_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
 }
- void ListTopicSubscriptionsResponse::set_subscriptions(int index, const char* value, size_t size) {
+void ListTopicSubscriptionsResponse::set_subscriptions(int index, const char* value, size_t size) {
   subscriptions_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
 }
- ::std::string* ListTopicSubscriptionsResponse::add_subscriptions() {
+::std::string* ListTopicSubscriptionsResponse::add_subscriptions() {
   // @@protoc_insertion_point(field_add_mutable:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
   return subscriptions_.Add();
 }
- void ListTopicSubscriptionsResponse::add_subscriptions(const ::std::string& value) {
+void ListTopicSubscriptionsResponse::add_subscriptions(const ::std::string& value) {
   subscriptions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
 }
- void ListTopicSubscriptionsResponse::add_subscriptions(const char* value) {
+void ListTopicSubscriptionsResponse::add_subscriptions(const char* value) {
   subscriptions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
 }
- void ListTopicSubscriptionsResponse::add_subscriptions(const char* value, size_t size) {
+void ListTopicSubscriptionsResponse::add_subscriptions(const char* value, size_t size) {
   subscriptions_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 ListTopicSubscriptionsResponse::subscriptions() const {
   // @@protoc_insertion_point(field_list:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
   return subscriptions_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 ListTopicSubscriptionsResponse::mutable_subscriptions() {
   // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.ListTopicSubscriptionsResponse.subscriptions)
   return &subscriptions_;
@@ -4699,46 +4866,46 @@ ListTopicSubscriptionsResponse::mutable_subscriptions() {
 void ListTopicSubscriptionsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListTopicSubscriptionsResponse::next_page_token() const {
+const ::std::string& ListTopicSubscriptionsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
   return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListTopicSubscriptionsResponse::set_next_page_token(const ::std::string& value) {
+void ListTopicSubscriptionsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
 }
- void ListTopicSubscriptionsResponse::set_next_page_token(const char* value) {
+void ListTopicSubscriptionsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
 }
- void ListTopicSubscriptionsResponse::set_next_page_token(const char* value,
+void ListTopicSubscriptionsResponse::set_next_page_token(const char* value,
     size_t size) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
 }
- ::std::string* ListTopicSubscriptionsResponse::mutable_next_page_token() {
+::std::string* ListTopicSubscriptionsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
   return next_page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicSubscriptionsResponse::release_next_page_token() {
+::std::string* ListTopicSubscriptionsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
   
   return next_page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListTopicSubscriptionsResponse::unsafe_arena_release_next_page_token() {
+::std::string* ListTopicSubscriptionsResponse::unsafe_arena_release_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return next_page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListTopicSubscriptionsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListTopicSubscriptionsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -4748,7 +4915,7 @@ void ListTopicSubscriptionsResponse::clear_next_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
 }
- void ListTopicSubscriptionsResponse::unsafe_arena_set_allocated_next_page_token(
+void ListTopicSubscriptionsResponse::unsafe_arena_set_allocated_next_page_token(
     ::std::string* next_page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (next_page_token != NULL) {
@@ -4761,6 +4928,9 @@ void ListTopicSubscriptionsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
 }
 
+inline const ListTopicSubscriptionsResponse* ListTopicSubscriptionsResponse::internal_default_instance() {
+  return &ListTopicSubscriptionsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4771,35 +4941,35 @@ const int DeleteTopicRequest::kTopicFieldNumber;
 
 DeleteTopicRequest::DeleteTopicRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.DeleteTopicRequest)
 }
-
 DeleteTopicRequest::DeleteTopicRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.DeleteTopicRequest)
 }
 
 void DeleteTopicRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteTopicRequest::DeleteTopicRequest(const DeleteTopicRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.DeleteTopicRequest)
 }
 
 void DeleteTopicRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   topic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteTopicRequest::~DeleteTopicRequest() {
@@ -4808,13 +4978,12 @@ DeleteTopicRequest::~DeleteTopicRequest() {
 }
 
 void DeleteTopicRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void DeleteTopicRequest::ArenaDtor(void* object) {
@@ -4834,11 +5003,11 @@ const ::google::protobuf::Descriptor* DeleteTopicRequest::descriptor() {
 }
 
 const DeleteTopicRequest& DeleteTopicRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteTopicRequest* DeleteTopicRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteTopicRequest> DeleteTopicRequest_default_instance_;
 
 DeleteTopicRequest* DeleteTopicRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<DeleteTopicRequest>(arena);
@@ -4914,6 +5083,7 @@ void DeleteTopicRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteTopicRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.DeleteTopicRequest)
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -4930,9 +5100,9 @@ void DeleteTopicRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteTopicRequest::ByteSize() const {
+size_t DeleteTopicRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.DeleteTopicRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string topic = 1;
   if (this->topic().size() > 0) {
@@ -4941,18 +5111,17 @@ int DeleteTopicRequest::ByteSize() const {
         this->topic());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteTopicRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.DeleteTopicRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteTopicRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteTopicRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteTopicRequest>(
           &from);
   if (source == NULL) {
@@ -4960,15 +5129,21 @@ void DeleteTopicRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.DeleteTopicRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteTopicRequest::MergeFrom(const DeleteTopicRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.DeleteTopicRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteTopicRequest::UnsafeMergeFrom(const DeleteTopicRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.topic().size() > 0) {
     set_topic(from.topic());
   }
@@ -4985,7 +5160,7 @@ void DeleteTopicRequest::CopyFrom(const DeleteTopicRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.DeleteTopicRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteTopicRequest::IsInitialized() const {
@@ -4999,7 +5174,7 @@ void DeleteTopicRequest::Swap(DeleteTopicRequest* other) {
     InternalSwap(other);
   } else {
     DeleteTopicRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -5030,46 +5205,46 @@ void DeleteTopicRequest::InternalSwap(DeleteTopicRequest* other) {
 void DeleteTopicRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& DeleteTopicRequest::topic() const {
+const ::std::string& DeleteTopicRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.DeleteTopicRequest.topic)
   return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteTopicRequest::set_topic(const ::std::string& value) {
+void DeleteTopicRequest::set_topic(const ::std::string& value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.DeleteTopicRequest.topic)
 }
- void DeleteTopicRequest::set_topic(const char* value) {
+void DeleteTopicRequest::set_topic(const char* value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.DeleteTopicRequest.topic)
 }
- void DeleteTopicRequest::set_topic(const char* value,
+void DeleteTopicRequest::set_topic(const char* value,
     size_t size) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.DeleteTopicRequest.topic)
 }
- ::std::string* DeleteTopicRequest::mutable_topic() {
+::std::string* DeleteTopicRequest::mutable_topic() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.DeleteTopicRequest.topic)
   return topic_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteTopicRequest::release_topic() {
+::std::string* DeleteTopicRequest::release_topic() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.DeleteTopicRequest.topic)
   
   return topic_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteTopicRequest::unsafe_arena_release_topic() {
+::std::string* DeleteTopicRequest::unsafe_arena_release_topic() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.DeleteTopicRequest.topic)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return topic_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void DeleteTopicRequest::set_allocated_topic(::std::string* topic) {
+void DeleteTopicRequest::set_allocated_topic(::std::string* topic) {
   if (topic != NULL) {
     
   } else {
@@ -5079,7 +5254,7 @@ void DeleteTopicRequest::clear_topic() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.DeleteTopicRequest.topic)
 }
- void DeleteTopicRequest::unsafe_arena_set_allocated_topic(
+void DeleteTopicRequest::unsafe_arena_set_allocated_topic(
     ::std::string* topic) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (topic != NULL) {
@@ -5092,6 +5267,9 @@ void DeleteTopicRequest::clear_topic() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.DeleteTopicRequest.topic)
 }
 
+inline const DeleteTopicRequest* DeleteTopicRequest::internal_default_instance() {
+  return &DeleteTopicRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5104,8 +5282,7 @@ void Subscription::_slow_mutable_push_config() {
   if (push_config_ == NULL) {
     return NULL;
   } else {
-    ::google::pubsub::v1::PushConfig* temp = new ::google::pubsub::v1::PushConfig;
-    temp->MergeFrom(*push_config_);
+    ::google::pubsub::v1::PushConfig* temp = new ::google::pubsub::v1::PushConfig(*push_config_);
     push_config_ = NULL;
     return temp;
   }
@@ -5153,39 +5330,40 @@ const int Subscription::kAckDeadlineSecondsFieldNumber;
 
 Subscription::Subscription()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.Subscription)
 }
-
 Subscription::Subscription(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.Subscription)
 }
 
 void Subscription::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  push_config_ = const_cast< ::google::pubsub::v1::PushConfig*>(&::google::pubsub::v1::PushConfig::default_instance());
+  push_config_ = const_cast< ::google::pubsub::v1::PushConfig*>(
+      ::google::pubsub::v1::PushConfig::internal_default_instance());
 }
 
 Subscription::Subscription(const Subscription& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.Subscription)
 }
 
 void Subscription::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   topic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   push_config_ = NULL;
   ack_deadline_seconds_ = 0;
+  _cached_size_ = 0;
 }
 
 Subscription::~Subscription() {
@@ -5194,13 +5372,14 @@ Subscription::~Subscription() {
 }
 
 void Subscription::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  topic_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &Subscription_default_instance_.get()) {
     delete push_config_;
   }
 }
@@ -5222,11 +5401,11 @@ const ::google::protobuf::Descriptor* Subscription::descriptor() {
 }
 
 const Subscription& Subscription::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-Subscription* Subscription::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Subscription> Subscription_default_instance_;
 
 Subscription* Subscription::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Subscription>(arena);
@@ -5301,10 +5480,10 @@ bool Subscription::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_ack_deadline_seconds:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &ack_deadline_seconds_)));
-
         } else {
           goto handle_unusual;
         }
@@ -5372,6 +5551,7 @@ void Subscription::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Subscription::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.Subscription)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -5411,9 +5591,9 @@ void Subscription::SerializeWithCachedSizes(
   return target;
 }
 
-int Subscription::ByteSize() const {
+size_t Subscription::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.Subscription)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -5443,18 +5623,17 @@ int Subscription::ByteSize() const {
         this->ack_deadline_seconds());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Subscription::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.Subscription)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Subscription* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Subscription* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Subscription>(
           &from);
   if (source == NULL) {
@@ -5462,15 +5641,21 @@ void Subscription::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.Subscription)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Subscription::MergeFrom(const Subscription& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.Subscription)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Subscription::UnsafeMergeFrom(const Subscription& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -5496,7 +5681,7 @@ void Subscription::CopyFrom(const Subscription& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.Subscription)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Subscription::IsInitialized() const {
@@ -5510,7 +5695,7 @@ void Subscription::Swap(Subscription* other) {
     InternalSwap(other);
   } else {
     Subscription temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -5544,46 +5729,46 @@ void Subscription::InternalSwap(Subscription* other) {
 void Subscription::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Subscription::name() const {
+const ::std::string& Subscription::name() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Subscription.name)
   return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Subscription::set_name(const ::std::string& value) {
+void Subscription::set_name(const ::std::string& value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.Subscription.name)
 }
- void Subscription::set_name(const char* value) {
+void Subscription::set_name(const char* value) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.Subscription.name)
 }
- void Subscription::set_name(const char* value,
+void Subscription::set_name(const char* value,
     size_t size) {
   
   name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.Subscription.name)
 }
- ::std::string* Subscription::mutable_name() {
+::std::string* Subscription::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.Subscription.name)
   return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Subscription::release_name() {
+::std::string* Subscription::release_name() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.Subscription.name)
   
   return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Subscription::unsafe_arena_release_name() {
+::std::string* Subscription::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.Subscription.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Subscription::set_allocated_name(::std::string* name) {
+void Subscription::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -5593,7 +5778,7 @@ void Subscription::clear_name() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.Subscription.name)
 }
- void Subscription::unsafe_arena_set_allocated_name(
+void Subscription::unsafe_arena_set_allocated_name(
     ::std::string* name) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (name != NULL) {
@@ -5610,46 +5795,46 @@ void Subscription::clear_name() {
 void Subscription::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Subscription::topic() const {
+const ::std::string& Subscription::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Subscription.topic)
   return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Subscription::set_topic(const ::std::string& value) {
+void Subscription::set_topic(const ::std::string& value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.Subscription.topic)
 }
- void Subscription::set_topic(const char* value) {
+void Subscription::set_topic(const char* value) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.Subscription.topic)
 }
- void Subscription::set_topic(const char* value,
+void Subscription::set_topic(const char* value,
     size_t size) {
   
   topic_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.Subscription.topic)
 }
- ::std::string* Subscription::mutable_topic() {
+::std::string* Subscription::mutable_topic() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.Subscription.topic)
   return topic_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Subscription::release_topic() {
+::std::string* Subscription::release_topic() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.Subscription.topic)
   
   return topic_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Subscription::unsafe_arena_release_topic() {
+::std::string* Subscription::unsafe_arena_release_topic() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.Subscription.topic)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return topic_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Subscription::set_allocated_topic(::std::string* topic) {
+void Subscription::set_allocated_topic(::std::string* topic) {
   if (topic != NULL) {
     
   } else {
@@ -5659,7 +5844,7 @@ void Subscription::clear_topic() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.Subscription.topic)
 }
- void Subscription::unsafe_arena_set_allocated_topic(
+void Subscription::unsafe_arena_set_allocated_topic(
     ::std::string* topic) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (topic != NULL) {
@@ -5674,7 +5859,7 @@ void Subscription::clear_topic() {
 
 // optional .google.pubsub.v1.PushConfig push_config = 4;
 bool Subscription::has_push_config() const {
-  return !_is_default_instance_ && push_config_ != NULL;
+  return this != internal_default_instance() && push_config_ != NULL;
 }
 void Subscription::clear_push_config() {
   if (GetArenaNoVirtual() == NULL && push_config_ != NULL) delete push_config_;
@@ -5682,7 +5867,8 @@ void Subscription::clear_push_config() {
 }
 const ::google::pubsub::v1::PushConfig& Subscription::push_config() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Subscription.push_config)
-  return push_config_ != NULL ? *push_config_ : *default_instance_->push_config_;
+  return push_config_ != NULL ? *push_config_
+                         : *::google::pubsub::v1::PushConfig::internal_default_instance();
 }
 ::google::pubsub::v1::PushConfig* Subscription::mutable_push_config() {
   
@@ -5724,16 +5910,19 @@ const ::google::pubsub::v1::PushConfig& Subscription::push_config() const {
 void Subscription::clear_ack_deadline_seconds() {
   ack_deadline_seconds_ = 0;
 }
- ::google::protobuf::int32 Subscription::ack_deadline_seconds() const {
+::google::protobuf::int32 Subscription::ack_deadline_seconds() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Subscription.ack_deadline_seconds)
   return ack_deadline_seconds_;
 }
- void Subscription::set_ack_deadline_seconds(::google::protobuf::int32 value) {
+void Subscription::set_ack_deadline_seconds(::google::protobuf::int32 value) {
   
   ack_deadline_seconds_ = value;
   // @@protoc_insertion_point(field_set:google.pubsub.v1.Subscription.ack_deadline_seconds)
 }
 
+inline const Subscription* Subscription::internal_default_instance() {
+  return &Subscription_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5745,40 +5934,40 @@ const int PushConfig::kAttributesFieldNumber;
 
 PushConfig::PushConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.PushConfig)
 }
-
 PushConfig::PushConfig(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   attributes_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.PushConfig)
 }
 
 void PushConfig::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 PushConfig::PushConfig(const PushConfig& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.PushConfig)
 }
 
 void PushConfig::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  push_endpoint_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   attributes_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   attributes_.SetEntryDescriptor(
       &::google::pubsub::v1::PushConfig_AttributesEntry_descriptor_);
+  push_endpoint_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 PushConfig::~PushConfig() {
@@ -5787,13 +5976,12 @@ PushConfig::~PushConfig() {
 }
 
 void PushConfig::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  push_endpoint_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  push_endpoint_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void PushConfig::ArenaDtor(void* object) {
@@ -5813,11 +6001,11 @@ const ::google::protobuf::Descriptor* PushConfig::descriptor() {
 }
 
 const PushConfig& PushConfig::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-PushConfig* PushConfig::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PushConfig> PushConfig_default_instance_;
 
 PushConfig* PushConfig::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<PushConfig>(arena);
@@ -5984,6 +6172,7 @@ void PushConfig::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PushConfig::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.PushConfig)
   // optional string push_endpoint = 1;
   if (this->push_endpoint().size() > 0) {
@@ -6063,9 +6252,9 @@ void PushConfig::SerializeWithCachedSizes(
   return target;
 }
 
-int PushConfig::ByteSize() const {
+size_t PushConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.PushConfig)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string push_endpoint = 1;
   if (this->push_endpoint().size() > 0) {
@@ -6075,7 +6264,8 @@ int PushConfig::ByteSize() const {
   }
 
   // map<string, string> attributes = 2;
-  total_size += 1 * this->attributes_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->attributes_size());
   {
     ::google::protobuf::scoped_ptr<PushConfig_AttributesEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -6093,18 +6283,17 @@ int PushConfig::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PushConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.PushConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PushConfig* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PushConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PushConfig>(
           &from);
   if (source == NULL) {
@@ -6112,15 +6301,21 @@ void PushConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.PushConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PushConfig::MergeFrom(const PushConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.PushConfig)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void PushConfig::UnsafeMergeFrom(const PushConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   attributes_.MergeFrom(from.attributes_);
   if (from.push_endpoint().size() > 0) {
     set_push_endpoint(from.push_endpoint());
@@ -6138,7 +6333,7 @@ void PushConfig::CopyFrom(const PushConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.PushConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PushConfig::IsInitialized() const {
@@ -6152,7 +6347,7 @@ void PushConfig::Swap(PushConfig* other) {
     InternalSwap(other);
   } else {
     PushConfig temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -6184,46 +6379,46 @@ void PushConfig::InternalSwap(PushConfig* other) {
 void PushConfig::clear_push_endpoint() {
   push_endpoint_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& PushConfig::push_endpoint() const {
+const ::std::string& PushConfig::push_endpoint() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PushConfig.push_endpoint)
   return push_endpoint_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PushConfig::set_push_endpoint(const ::std::string& value) {
+void PushConfig::set_push_endpoint(const ::std::string& value) {
   
   push_endpoint_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PushConfig.push_endpoint)
 }
- void PushConfig::set_push_endpoint(const char* value) {
+void PushConfig::set_push_endpoint(const char* value) {
   
   push_endpoint_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.PushConfig.push_endpoint)
 }
- void PushConfig::set_push_endpoint(const char* value,
+void PushConfig::set_push_endpoint(const char* value,
     size_t size) {
   
   push_endpoint_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.PushConfig.push_endpoint)
 }
- ::std::string* PushConfig::mutable_push_endpoint() {
+::std::string* PushConfig::mutable_push_endpoint() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.PushConfig.push_endpoint)
   return push_endpoint_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PushConfig::release_push_endpoint() {
+::std::string* PushConfig::release_push_endpoint() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.PushConfig.push_endpoint)
   
   return push_endpoint_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PushConfig::unsafe_arena_release_push_endpoint() {
+::std::string* PushConfig::unsafe_arena_release_push_endpoint() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.PushConfig.push_endpoint)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return push_endpoint_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void PushConfig::set_allocated_push_endpoint(::std::string* push_endpoint) {
+void PushConfig::set_allocated_push_endpoint(::std::string* push_endpoint) {
   if (push_endpoint != NULL) {
     
   } else {
@@ -6233,7 +6428,7 @@ void PushConfig::clear_push_endpoint() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.PushConfig.push_endpoint)
 }
- void PushConfig::unsafe_arena_set_allocated_push_endpoint(
+void PushConfig::unsafe_arena_set_allocated_push_endpoint(
     ::std::string* push_endpoint) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (push_endpoint != NULL) {
@@ -6264,6 +6459,9 @@ PushConfig::mutable_attributes() {
   return attributes_.MutableMap();
 }
 
+inline const PushConfig* PushConfig::internal_default_instance() {
+  return &PushConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6276,8 +6474,7 @@ void ReceivedMessage::_slow_mutable_message() {
   if (message_ == NULL) {
     return NULL;
   } else {
-    ::google::pubsub::v1::PubsubMessage* temp = new ::google::pubsub::v1::PubsubMessage;
-    temp->MergeFrom(*message_);
+    ::google::pubsub::v1::PubsubMessage* temp = new ::google::pubsub::v1::PubsubMessage(*message_);
     message_ = NULL;
     return temp;
   }
@@ -6323,37 +6520,38 @@ const int ReceivedMessage::kMessageFieldNumber;
 
 ReceivedMessage::ReceivedMessage()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ReceivedMessage)
 }
-
 ReceivedMessage::ReceivedMessage(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ReceivedMessage)
 }
 
 void ReceivedMessage::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  message_ = const_cast< ::google::pubsub::v1::PubsubMessage*>(&::google::pubsub::v1::PubsubMessage::default_instance());
+  message_ = const_cast< ::google::pubsub::v1::PubsubMessage*>(
+      ::google::pubsub::v1::PubsubMessage::internal_default_instance());
 }
 
 ReceivedMessage::ReceivedMessage(const ReceivedMessage& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ReceivedMessage)
 }
 
 void ReceivedMessage::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   ack_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   message_ = NULL;
+  _cached_size_ = 0;
 }
 
 ReceivedMessage::~ReceivedMessage() {
@@ -6362,12 +6560,13 @@ ReceivedMessage::~ReceivedMessage() {
 }
 
 void ReceivedMessage::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  ack_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  ack_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &ReceivedMessage_default_instance_.get()) {
     delete message_;
   }
 }
@@ -6389,11 +6588,11 @@ const ::google::protobuf::Descriptor* ReceivedMessage::descriptor() {
 }
 
 const ReceivedMessage& ReceivedMessage::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ReceivedMessage* ReceivedMessage::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ReceivedMessage> ReceivedMessage_default_instance_;
 
 ReceivedMessage* ReceivedMessage::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ReceivedMessage>(arena);
@@ -6490,6 +6689,7 @@ void ReceivedMessage::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ReceivedMessage::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ReceivedMessage)
   // optional string ack_id = 1;
   if (this->ack_id().size() > 0) {
@@ -6513,9 +6713,9 @@ void ReceivedMessage::SerializeWithCachedSizes(
   return target;
 }
 
-int ReceivedMessage::ByteSize() const {
+size_t ReceivedMessage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ReceivedMessage)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string ack_id = 1;
   if (this->ack_id().size() > 0) {
@@ -6531,18 +6731,17 @@ int ReceivedMessage::ByteSize() const {
         *this->message_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ReceivedMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ReceivedMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ReceivedMessage* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ReceivedMessage* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReceivedMessage>(
           &from);
   if (source == NULL) {
@@ -6550,15 +6749,21 @@ void ReceivedMessage::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ReceivedMessage)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReceivedMessage::MergeFrom(const ReceivedMessage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ReceivedMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ReceivedMessage::UnsafeMergeFrom(const ReceivedMessage& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.ack_id().size() > 0) {
     set_ack_id(from.ack_id());
   }
@@ -6578,7 +6783,7 @@ void ReceivedMessage::CopyFrom(const ReceivedMessage& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ReceivedMessage)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReceivedMessage::IsInitialized() const {
@@ -6592,7 +6797,7 @@ void ReceivedMessage::Swap(ReceivedMessage* other) {
     InternalSwap(other);
   } else {
     ReceivedMessage temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -6624,46 +6829,46 @@ void ReceivedMessage::InternalSwap(ReceivedMessage* other) {
 void ReceivedMessage::clear_ack_id() {
   ack_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ReceivedMessage::ack_id() const {
+const ::std::string& ReceivedMessage::ack_id() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ReceivedMessage.ack_id)
   return ack_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ReceivedMessage::set_ack_id(const ::std::string& value) {
+void ReceivedMessage::set_ack_id(const ::std::string& value) {
   
   ack_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ReceivedMessage.ack_id)
 }
- void ReceivedMessage::set_ack_id(const char* value) {
+void ReceivedMessage::set_ack_id(const char* value) {
   
   ack_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ReceivedMessage.ack_id)
 }
- void ReceivedMessage::set_ack_id(const char* value,
+void ReceivedMessage::set_ack_id(const char* value,
     size_t size) {
   
   ack_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ReceivedMessage.ack_id)
 }
- ::std::string* ReceivedMessage::mutable_ack_id() {
+::std::string* ReceivedMessage::mutable_ack_id() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ReceivedMessage.ack_id)
   return ack_id_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReceivedMessage::release_ack_id() {
+::std::string* ReceivedMessage::release_ack_id() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ReceivedMessage.ack_id)
   
   return ack_id_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ReceivedMessage::unsafe_arena_release_ack_id() {
+::std::string* ReceivedMessage::unsafe_arena_release_ack_id() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ReceivedMessage.ack_id)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return ack_id_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ReceivedMessage::set_allocated_ack_id(::std::string* ack_id) {
+void ReceivedMessage::set_allocated_ack_id(::std::string* ack_id) {
   if (ack_id != NULL) {
     
   } else {
@@ -6673,7 +6878,7 @@ void ReceivedMessage::clear_ack_id() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ReceivedMessage.ack_id)
 }
- void ReceivedMessage::unsafe_arena_set_allocated_ack_id(
+void ReceivedMessage::unsafe_arena_set_allocated_ack_id(
     ::std::string* ack_id) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (ack_id != NULL) {
@@ -6688,7 +6893,7 @@ void ReceivedMessage::clear_ack_id() {
 
 // optional .google.pubsub.v1.PubsubMessage message = 2;
 bool ReceivedMessage::has_message() const {
-  return !_is_default_instance_ && message_ != NULL;
+  return this != internal_default_instance() && message_ != NULL;
 }
 void ReceivedMessage::clear_message() {
   if (GetArenaNoVirtual() == NULL && message_ != NULL) delete message_;
@@ -6696,7 +6901,8 @@ void ReceivedMessage::clear_message() {
 }
 const ::google::pubsub::v1::PubsubMessage& ReceivedMessage::message() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ReceivedMessage.message)
-  return message_ != NULL ? *message_ : *default_instance_->message_;
+  return message_ != NULL ? *message_
+                         : *::google::pubsub::v1::PubsubMessage::internal_default_instance();
 }
 ::google::pubsub::v1::PubsubMessage* ReceivedMessage::mutable_message() {
   
@@ -6734,6 +6940,9 @@ const ::google::pubsub::v1::PubsubMessage& ReceivedMessage::message() const {
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ReceivedMessage.message)
 }
 
+inline const ReceivedMessage* ReceivedMessage::internal_default_instance() {
+  return &ReceivedMessage_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6744,35 +6953,35 @@ const int GetSubscriptionRequest::kSubscriptionFieldNumber;
 
 GetSubscriptionRequest::GetSubscriptionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.GetSubscriptionRequest)
 }
-
 GetSubscriptionRequest::GetSubscriptionRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.GetSubscriptionRequest)
 }
 
 void GetSubscriptionRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 GetSubscriptionRequest::GetSubscriptionRequest(const GetSubscriptionRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.GetSubscriptionRequest)
 }
 
 void GetSubscriptionRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   subscription_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 GetSubscriptionRequest::~GetSubscriptionRequest() {
@@ -6781,13 +6990,12 @@ GetSubscriptionRequest::~GetSubscriptionRequest() {
 }
 
 void GetSubscriptionRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void GetSubscriptionRequest::ArenaDtor(void* object) {
@@ -6807,11 +7015,11 @@ const ::google::protobuf::Descriptor* GetSubscriptionRequest::descriptor() {
 }
 
 const GetSubscriptionRequest& GetSubscriptionRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-GetSubscriptionRequest* GetSubscriptionRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<GetSubscriptionRequest> GetSubscriptionRequest_default_instance_;
 
 GetSubscriptionRequest* GetSubscriptionRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetSubscriptionRequest>(arena);
@@ -6887,6 +7095,7 @@ void GetSubscriptionRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* GetSubscriptionRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.GetSubscriptionRequest)
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -6903,9 +7112,9 @@ void GetSubscriptionRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int GetSubscriptionRequest::ByteSize() const {
+size_t GetSubscriptionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.GetSubscriptionRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -6914,18 +7123,17 @@ int GetSubscriptionRequest::ByteSize() const {
         this->subscription());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void GetSubscriptionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.GetSubscriptionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const GetSubscriptionRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const GetSubscriptionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetSubscriptionRequest>(
           &from);
   if (source == NULL) {
@@ -6933,15 +7141,21 @@ void GetSubscriptionRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.GetSubscriptionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetSubscriptionRequest::MergeFrom(const GetSubscriptionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.GetSubscriptionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void GetSubscriptionRequest::UnsafeMergeFrom(const GetSubscriptionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.subscription().size() > 0) {
     set_subscription(from.subscription());
   }
@@ -6958,7 +7172,7 @@ void GetSubscriptionRequest::CopyFrom(const GetSubscriptionRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.GetSubscriptionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetSubscriptionRequest::IsInitialized() const {
@@ -6972,7 +7186,7 @@ void GetSubscriptionRequest::Swap(GetSubscriptionRequest* other) {
     InternalSwap(other);
   } else {
     GetSubscriptionRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7003,46 +7217,46 @@ void GetSubscriptionRequest::InternalSwap(GetSubscriptionRequest* other) {
 void GetSubscriptionRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& GetSubscriptionRequest::subscription() const {
+const ::std::string& GetSubscriptionRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.GetSubscriptionRequest.subscription)
   return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void GetSubscriptionRequest::set_subscription(const ::std::string& value) {
+void GetSubscriptionRequest::set_subscription(const ::std::string& value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.GetSubscriptionRequest.subscription)
 }
- void GetSubscriptionRequest::set_subscription(const char* value) {
+void GetSubscriptionRequest::set_subscription(const char* value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.GetSubscriptionRequest.subscription)
 }
- void GetSubscriptionRequest::set_subscription(const char* value,
+void GetSubscriptionRequest::set_subscription(const char* value,
     size_t size) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.GetSubscriptionRequest.subscription)
 }
- ::std::string* GetSubscriptionRequest::mutable_subscription() {
+::std::string* GetSubscriptionRequest::mutable_subscription() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.GetSubscriptionRequest.subscription)
   return subscription_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetSubscriptionRequest::release_subscription() {
+::std::string* GetSubscriptionRequest::release_subscription() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.GetSubscriptionRequest.subscription)
   
   return subscription_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* GetSubscriptionRequest::unsafe_arena_release_subscription() {
+::std::string* GetSubscriptionRequest::unsafe_arena_release_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.GetSubscriptionRequest.subscription)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return subscription_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void GetSubscriptionRequest::set_allocated_subscription(::std::string* subscription) {
+void GetSubscriptionRequest::set_allocated_subscription(::std::string* subscription) {
   if (subscription != NULL) {
     
   } else {
@@ -7052,7 +7266,7 @@ void GetSubscriptionRequest::clear_subscription() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.GetSubscriptionRequest.subscription)
 }
- void GetSubscriptionRequest::unsafe_arena_set_allocated_subscription(
+void GetSubscriptionRequest::unsafe_arena_set_allocated_subscription(
     ::std::string* subscription) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (subscription != NULL) {
@@ -7065,6 +7279,9 @@ void GetSubscriptionRequest::clear_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.GetSubscriptionRequest.subscription)
 }
 
+inline const GetSubscriptionRequest* GetSubscriptionRequest::internal_default_instance() {
+  return &GetSubscriptionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7077,37 +7294,37 @@ const int ListSubscriptionsRequest::kPageTokenFieldNumber;
 
 ListSubscriptionsRequest::ListSubscriptionsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ListSubscriptionsRequest)
 }
-
 ListSubscriptionsRequest::ListSubscriptionsRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ListSubscriptionsRequest)
 }
 
 void ListSubscriptionsRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListSubscriptionsRequest::ListSubscriptionsRequest(const ListSubscriptionsRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ListSubscriptionsRequest)
 }
 
 void ListSubscriptionsRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   project_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_size_ = 0;
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  page_size_ = 0;
+  _cached_size_ = 0;
 }
 
 ListSubscriptionsRequest::~ListSubscriptionsRequest() {
@@ -7116,14 +7333,13 @@ ListSubscriptionsRequest::~ListSubscriptionsRequest() {
 }
 
 void ListSubscriptionsRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  project_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  project_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListSubscriptionsRequest::ArenaDtor(void* object) {
@@ -7143,11 +7359,11 @@ const ::google::protobuf::Descriptor* ListSubscriptionsRequest::descriptor() {
 }
 
 const ListSubscriptionsRequest& ListSubscriptionsRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ListSubscriptionsRequest* ListSubscriptionsRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListSubscriptionsRequest> ListSubscriptionsRequest_default_instance_;
 
 ListSubscriptionsRequest* ListSubscriptionsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListSubscriptionsRequest>(arena);
@@ -7190,10 +7406,10 @@ bool ListSubscriptionsRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_page_size:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &page_size_)));
-
         } else {
           goto handle_unusual;
         }
@@ -7272,6 +7488,7 @@ void ListSubscriptionsRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListSubscriptionsRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ListSubscriptionsRequest)
   // optional string project = 1;
   if (this->project().size() > 0) {
@@ -7304,9 +7521,9 @@ void ListSubscriptionsRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ListSubscriptionsRequest::ByteSize() const {
+size_t ListSubscriptionsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ListSubscriptionsRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string project = 1;
   if (this->project().size() > 0) {
@@ -7329,18 +7546,17 @@ int ListSubscriptionsRequest::ByteSize() const {
         this->page_token());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListSubscriptionsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ListSubscriptionsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListSubscriptionsRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListSubscriptionsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListSubscriptionsRequest>(
           &from);
   if (source == NULL) {
@@ -7348,15 +7564,21 @@ void ListSubscriptionsRequest::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ListSubscriptionsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListSubscriptionsRequest::MergeFrom(const ListSubscriptionsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ListSubscriptionsRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListSubscriptionsRequest::UnsafeMergeFrom(const ListSubscriptionsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project().size() > 0) {
     set_project(from.project());
   }
@@ -7379,7 +7601,7 @@ void ListSubscriptionsRequest::CopyFrom(const ListSubscriptionsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ListSubscriptionsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListSubscriptionsRequest::IsInitialized() const {
@@ -7393,7 +7615,7 @@ void ListSubscriptionsRequest::Swap(ListSubscriptionsRequest* other) {
     InternalSwap(other);
   } else {
     ListSubscriptionsRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7426,46 +7648,46 @@ void ListSubscriptionsRequest::InternalSwap(ListSubscriptionsRequest* other) {
 void ListSubscriptionsRequest::clear_project() {
   project_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListSubscriptionsRequest::project() const {
+const ::std::string& ListSubscriptionsRequest::project() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListSubscriptionsRequest.project)
   return project_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListSubscriptionsRequest::set_project(const ::std::string& value) {
+void ListSubscriptionsRequest::set_project(const ::std::string& value) {
   
   project_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListSubscriptionsRequest.project)
 }
- void ListSubscriptionsRequest::set_project(const char* value) {
+void ListSubscriptionsRequest::set_project(const char* value) {
   
   project_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListSubscriptionsRequest.project)
 }
- void ListSubscriptionsRequest::set_project(const char* value,
+void ListSubscriptionsRequest::set_project(const char* value,
     size_t size) {
   
   project_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListSubscriptionsRequest.project)
 }
- ::std::string* ListSubscriptionsRequest::mutable_project() {
+::std::string* ListSubscriptionsRequest::mutable_project() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListSubscriptionsRequest.project)
   return project_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListSubscriptionsRequest::release_project() {
+::std::string* ListSubscriptionsRequest::release_project() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListSubscriptionsRequest.project)
   
   return project_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListSubscriptionsRequest::unsafe_arena_release_project() {
+::std::string* ListSubscriptionsRequest::unsafe_arena_release_project() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListSubscriptionsRequest.project)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return project_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListSubscriptionsRequest::set_allocated_project(::std::string* project) {
+void ListSubscriptionsRequest::set_allocated_project(::std::string* project) {
   if (project != NULL) {
     
   } else {
@@ -7475,7 +7697,7 @@ void ListSubscriptionsRequest::clear_project() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListSubscriptionsRequest.project)
 }
- void ListSubscriptionsRequest::unsafe_arena_set_allocated_project(
+void ListSubscriptionsRequest::unsafe_arena_set_allocated_project(
     ::std::string* project) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (project != NULL) {
@@ -7492,11 +7714,11 @@ void ListSubscriptionsRequest::clear_project() {
 void ListSubscriptionsRequest::clear_page_size() {
   page_size_ = 0;
 }
- ::google::protobuf::int32 ListSubscriptionsRequest::page_size() const {
+::google::protobuf::int32 ListSubscriptionsRequest::page_size() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListSubscriptionsRequest.page_size)
   return page_size_;
 }
- void ListSubscriptionsRequest::set_page_size(::google::protobuf::int32 value) {
+void ListSubscriptionsRequest::set_page_size(::google::protobuf::int32 value) {
   
   page_size_ = value;
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListSubscriptionsRequest.page_size)
@@ -7506,46 +7728,46 @@ void ListSubscriptionsRequest::clear_page_size() {
 void ListSubscriptionsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListSubscriptionsRequest::page_token() const {
+const ::std::string& ListSubscriptionsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListSubscriptionsRequest.page_token)
   return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListSubscriptionsRequest::set_page_token(const ::std::string& value) {
+void ListSubscriptionsRequest::set_page_token(const ::std::string& value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListSubscriptionsRequest.page_token)
 }
- void ListSubscriptionsRequest::set_page_token(const char* value) {
+void ListSubscriptionsRequest::set_page_token(const char* value) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListSubscriptionsRequest.page_token)
 }
- void ListSubscriptionsRequest::set_page_token(const char* value,
+void ListSubscriptionsRequest::set_page_token(const char* value,
     size_t size) {
   
   page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListSubscriptionsRequest.page_token)
 }
- ::std::string* ListSubscriptionsRequest::mutable_page_token() {
+::std::string* ListSubscriptionsRequest::mutable_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListSubscriptionsRequest.page_token)
   return page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListSubscriptionsRequest::release_page_token() {
+::std::string* ListSubscriptionsRequest::release_page_token() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListSubscriptionsRequest.page_token)
   
   return page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListSubscriptionsRequest::unsafe_arena_release_page_token() {
+::std::string* ListSubscriptionsRequest::unsafe_arena_release_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListSubscriptionsRequest.page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListSubscriptionsRequest::set_allocated_page_token(::std::string* page_token) {
+void ListSubscriptionsRequest::set_allocated_page_token(::std::string* page_token) {
   if (page_token != NULL) {
     
   } else {
@@ -7555,7 +7777,7 @@ void ListSubscriptionsRequest::clear_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListSubscriptionsRequest.page_token)
 }
- void ListSubscriptionsRequest::unsafe_arena_set_allocated_page_token(
+void ListSubscriptionsRequest::unsafe_arena_set_allocated_page_token(
     ::std::string* page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (page_token != NULL) {
@@ -7568,6 +7790,9 @@ void ListSubscriptionsRequest::clear_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListSubscriptionsRequest.page_token)
 }
 
+inline const ListSubscriptionsRequest* ListSubscriptionsRequest::internal_default_instance() {
+  return &ListSubscriptionsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7579,36 +7804,36 @@ const int ListSubscriptionsResponse::kNextPageTokenFieldNumber;
 
 ListSubscriptionsResponse::ListSubscriptionsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ListSubscriptionsResponse)
 }
-
 ListSubscriptionsResponse::ListSubscriptionsResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   subscriptions_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ListSubscriptionsResponse)
 }
 
 void ListSubscriptionsResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ListSubscriptionsResponse::ListSubscriptionsResponse(const ListSubscriptionsResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ListSubscriptionsResponse)
 }
 
 void ListSubscriptionsResponse::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 ListSubscriptionsResponse::~ListSubscriptionsResponse() {
@@ -7617,13 +7842,12 @@ ListSubscriptionsResponse::~ListSubscriptionsResponse() {
 }
 
 void ListSubscriptionsResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  next_page_token_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ListSubscriptionsResponse::ArenaDtor(void* object) {
@@ -7643,11 +7867,11 @@ const ::google::protobuf::Descriptor* ListSubscriptionsResponse::descriptor() {
 }
 
 const ListSubscriptionsResponse& ListSubscriptionsResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ListSubscriptionsResponse* ListSubscriptionsResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ListSubscriptionsResponse> ListSubscriptionsResponse_default_instance_;
 
 ListSubscriptionsResponse* ListSubscriptionsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListSubscriptionsResponse>(arena);
@@ -7747,6 +7971,7 @@ void ListSubscriptionsResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ListSubscriptionsResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ListSubscriptionsResponse)
   // repeated .google.pubsub.v1.Subscription subscriptions = 1;
   for (unsigned int i = 0, n = this->subscriptions_size(); i < n; i++) {
@@ -7770,9 +7995,9 @@ void ListSubscriptionsResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int ListSubscriptionsResponse::ByteSize() const {
+size_t ListSubscriptionsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ListSubscriptionsResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
@@ -7782,25 +8007,27 @@ int ListSubscriptionsResponse::ByteSize() const {
   }
 
   // repeated .google.pubsub.v1.Subscription subscriptions = 1;
-  total_size += 1 * this->subscriptions_size();
-  for (int i = 0; i < this->subscriptions_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->subscriptions(i));
+  {
+    unsigned int count = this->subscriptions_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->subscriptions(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ListSubscriptionsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ListSubscriptionsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ListSubscriptionsResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ListSubscriptionsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListSubscriptionsResponse>(
           &from);
   if (source == NULL) {
@@ -7808,15 +8035,21 @@ void ListSubscriptionsResponse::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ListSubscriptionsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListSubscriptionsResponse::MergeFrom(const ListSubscriptionsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ListSubscriptionsResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListSubscriptionsResponse::UnsafeMergeFrom(const ListSubscriptionsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   subscriptions_.MergeFrom(from.subscriptions_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -7834,7 +8067,7 @@ void ListSubscriptionsResponse::CopyFrom(const ListSubscriptionsResponse& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ListSubscriptionsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListSubscriptionsResponse::IsInitialized() const {
@@ -7848,7 +8081,7 @@ void ListSubscriptionsResponse::Swap(ListSubscriptionsResponse* other) {
     InternalSwap(other);
   } else {
     ListSubscriptionsResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -7910,46 +8143,46 @@ ListSubscriptionsResponse::subscriptions() const {
 void ListSubscriptionsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ListSubscriptionsResponse::next_page_token() const {
+const ::std::string& ListSubscriptionsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
   return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ListSubscriptionsResponse::set_next_page_token(const ::std::string& value) {
+void ListSubscriptionsResponse::set_next_page_token(const ::std::string& value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
 }
- void ListSubscriptionsResponse::set_next_page_token(const char* value) {
+void ListSubscriptionsResponse::set_next_page_token(const char* value) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
 }
- void ListSubscriptionsResponse::set_next_page_token(const char* value,
+void ListSubscriptionsResponse::set_next_page_token(const char* value,
     size_t size) {
   
   next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
 }
- ::std::string* ListSubscriptionsResponse::mutable_next_page_token() {
+::std::string* ListSubscriptionsResponse::mutable_next_page_token() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
   return next_page_token_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListSubscriptionsResponse::release_next_page_token() {
+::std::string* ListSubscriptionsResponse::release_next_page_token() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
   
   return next_page_token_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ListSubscriptionsResponse::unsafe_arena_release_next_page_token() {
+::std::string* ListSubscriptionsResponse::unsafe_arena_release_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return next_page_token_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ListSubscriptionsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
+void ListSubscriptionsResponse::set_allocated_next_page_token(::std::string* next_page_token) {
   if (next_page_token != NULL) {
     
   } else {
@@ -7959,7 +8192,7 @@ void ListSubscriptionsResponse::clear_next_page_token() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
 }
- void ListSubscriptionsResponse::unsafe_arena_set_allocated_next_page_token(
+void ListSubscriptionsResponse::unsafe_arena_set_allocated_next_page_token(
     ::std::string* next_page_token) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (next_page_token != NULL) {
@@ -7972,6 +8205,9 @@ void ListSubscriptionsResponse::clear_next_page_token() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
 }
 
+inline const ListSubscriptionsResponse* ListSubscriptionsResponse::internal_default_instance() {
+  return &ListSubscriptionsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7982,35 +8218,35 @@ const int DeleteSubscriptionRequest::kSubscriptionFieldNumber;
 
 DeleteSubscriptionRequest::DeleteSubscriptionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.DeleteSubscriptionRequest)
 }
-
 DeleteSubscriptionRequest::DeleteSubscriptionRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.DeleteSubscriptionRequest)
 }
 
 void DeleteSubscriptionRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 DeleteSubscriptionRequest::DeleteSubscriptionRequest(const DeleteSubscriptionRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.DeleteSubscriptionRequest)
 }
 
 void DeleteSubscriptionRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   subscription_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 DeleteSubscriptionRequest::~DeleteSubscriptionRequest() {
@@ -8019,13 +8255,12 @@ DeleteSubscriptionRequest::~DeleteSubscriptionRequest() {
 }
 
 void DeleteSubscriptionRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void DeleteSubscriptionRequest::ArenaDtor(void* object) {
@@ -8045,11 +8280,11 @@ const ::google::protobuf::Descriptor* DeleteSubscriptionRequest::descriptor() {
 }
 
 const DeleteSubscriptionRequest& DeleteSubscriptionRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-DeleteSubscriptionRequest* DeleteSubscriptionRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<DeleteSubscriptionRequest> DeleteSubscriptionRequest_default_instance_;
 
 DeleteSubscriptionRequest* DeleteSubscriptionRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<DeleteSubscriptionRequest>(arena);
@@ -8125,6 +8360,7 @@ void DeleteSubscriptionRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* DeleteSubscriptionRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.DeleteSubscriptionRequest)
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -8141,9 +8377,9 @@ void DeleteSubscriptionRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int DeleteSubscriptionRequest::ByteSize() const {
+size_t DeleteSubscriptionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.DeleteSubscriptionRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -8152,18 +8388,17 @@ int DeleteSubscriptionRequest::ByteSize() const {
         this->subscription());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void DeleteSubscriptionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.DeleteSubscriptionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const DeleteSubscriptionRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const DeleteSubscriptionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteSubscriptionRequest>(
           &from);
   if (source == NULL) {
@@ -8171,15 +8406,21 @@ void DeleteSubscriptionRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.DeleteSubscriptionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteSubscriptionRequest::MergeFrom(const DeleteSubscriptionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.DeleteSubscriptionRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void DeleteSubscriptionRequest::UnsafeMergeFrom(const DeleteSubscriptionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.subscription().size() > 0) {
     set_subscription(from.subscription());
   }
@@ -8196,7 +8437,7 @@ void DeleteSubscriptionRequest::CopyFrom(const DeleteSubscriptionRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.DeleteSubscriptionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteSubscriptionRequest::IsInitialized() const {
@@ -8210,7 +8451,7 @@ void DeleteSubscriptionRequest::Swap(DeleteSubscriptionRequest* other) {
     InternalSwap(other);
   } else {
     DeleteSubscriptionRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -8241,46 +8482,46 @@ void DeleteSubscriptionRequest::InternalSwap(DeleteSubscriptionRequest* other) {
 void DeleteSubscriptionRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& DeleteSubscriptionRequest::subscription() const {
+const ::std::string& DeleteSubscriptionRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
   return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void DeleteSubscriptionRequest::set_subscription(const ::std::string& value) {
+void DeleteSubscriptionRequest::set_subscription(const ::std::string& value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
 }
- void DeleteSubscriptionRequest::set_subscription(const char* value) {
+void DeleteSubscriptionRequest::set_subscription(const char* value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
 }
- void DeleteSubscriptionRequest::set_subscription(const char* value,
+void DeleteSubscriptionRequest::set_subscription(const char* value,
     size_t size) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
 }
- ::std::string* DeleteSubscriptionRequest::mutable_subscription() {
+::std::string* DeleteSubscriptionRequest::mutable_subscription() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
   return subscription_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteSubscriptionRequest::release_subscription() {
+::std::string* DeleteSubscriptionRequest::release_subscription() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
   
   return subscription_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* DeleteSubscriptionRequest::unsafe_arena_release_subscription() {
+::std::string* DeleteSubscriptionRequest::unsafe_arena_release_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return subscription_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void DeleteSubscriptionRequest::set_allocated_subscription(::std::string* subscription) {
+void DeleteSubscriptionRequest::set_allocated_subscription(::std::string* subscription) {
   if (subscription != NULL) {
     
   } else {
@@ -8290,7 +8531,7 @@ void DeleteSubscriptionRequest::clear_subscription() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
 }
- void DeleteSubscriptionRequest::unsafe_arena_set_allocated_subscription(
+void DeleteSubscriptionRequest::unsafe_arena_set_allocated_subscription(
     ::std::string* subscription) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (subscription != NULL) {
@@ -8303,6 +8544,9 @@ void DeleteSubscriptionRequest::clear_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
 }
 
+inline const DeleteSubscriptionRequest* DeleteSubscriptionRequest::internal_default_instance() {
+  return &DeleteSubscriptionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8315,8 +8559,7 @@ void ModifyPushConfigRequest::_slow_mutable_push_config() {
   if (push_config_ == NULL) {
     return NULL;
   } else {
-    ::google::pubsub::v1::PushConfig* temp = new ::google::pubsub::v1::PushConfig;
-    temp->MergeFrom(*push_config_);
+    ::google::pubsub::v1::PushConfig* temp = new ::google::pubsub::v1::PushConfig(*push_config_);
     push_config_ = NULL;
     return temp;
   }
@@ -8362,37 +8605,38 @@ const int ModifyPushConfigRequest::kPushConfigFieldNumber;
 
 ModifyPushConfigRequest::ModifyPushConfigRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ModifyPushConfigRequest)
 }
-
 ModifyPushConfigRequest::ModifyPushConfigRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ModifyPushConfigRequest)
 }
 
 void ModifyPushConfigRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  push_config_ = const_cast< ::google::pubsub::v1::PushConfig*>(&::google::pubsub::v1::PushConfig::default_instance());
+  push_config_ = const_cast< ::google::pubsub::v1::PushConfig*>(
+      ::google::pubsub::v1::PushConfig::internal_default_instance());
 }
 
 ModifyPushConfigRequest::ModifyPushConfigRequest(const ModifyPushConfigRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ModifyPushConfigRequest)
 }
 
 void ModifyPushConfigRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   subscription_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   push_config_ = NULL;
+  _cached_size_ = 0;
 }
 
 ModifyPushConfigRequest::~ModifyPushConfigRequest() {
@@ -8401,12 +8645,13 @@ ModifyPushConfigRequest::~ModifyPushConfigRequest() {
 }
 
 void ModifyPushConfigRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
+  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  if (this != &ModifyPushConfigRequest_default_instance_.get()) {
     delete push_config_;
   }
 }
@@ -8428,11 +8673,11 @@ const ::google::protobuf::Descriptor* ModifyPushConfigRequest::descriptor() {
 }
 
 const ModifyPushConfigRequest& ModifyPushConfigRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ModifyPushConfigRequest* ModifyPushConfigRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ModifyPushConfigRequest> ModifyPushConfigRequest_default_instance_;
 
 ModifyPushConfigRequest* ModifyPushConfigRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ModifyPushConfigRequest>(arena);
@@ -8529,6 +8774,7 @@ void ModifyPushConfigRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ModifyPushConfigRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ModifyPushConfigRequest)
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -8552,9 +8798,9 @@ void ModifyPushConfigRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ModifyPushConfigRequest::ByteSize() const {
+size_t ModifyPushConfigRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ModifyPushConfigRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -8570,18 +8816,17 @@ int ModifyPushConfigRequest::ByteSize() const {
         *this->push_config_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ModifyPushConfigRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ModifyPushConfigRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ModifyPushConfigRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ModifyPushConfigRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ModifyPushConfigRequest>(
           &from);
   if (source == NULL) {
@@ -8589,15 +8834,21 @@ void ModifyPushConfigRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ModifyPushConfigRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ModifyPushConfigRequest::MergeFrom(const ModifyPushConfigRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ModifyPushConfigRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ModifyPushConfigRequest::UnsafeMergeFrom(const ModifyPushConfigRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.subscription().size() > 0) {
     set_subscription(from.subscription());
   }
@@ -8617,7 +8868,7 @@ void ModifyPushConfigRequest::CopyFrom(const ModifyPushConfigRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ModifyPushConfigRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ModifyPushConfigRequest::IsInitialized() const {
@@ -8631,7 +8882,7 @@ void ModifyPushConfigRequest::Swap(ModifyPushConfigRequest* other) {
     InternalSwap(other);
   } else {
     ModifyPushConfigRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -8663,46 +8914,46 @@ void ModifyPushConfigRequest::InternalSwap(ModifyPushConfigRequest* other) {
 void ModifyPushConfigRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ModifyPushConfigRequest::subscription() const {
+const ::std::string& ModifyPushConfigRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ModifyPushConfigRequest.subscription)
   return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ModifyPushConfigRequest::set_subscription(const ::std::string& value) {
+void ModifyPushConfigRequest::set_subscription(const ::std::string& value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ModifyPushConfigRequest.subscription)
 }
- void ModifyPushConfigRequest::set_subscription(const char* value) {
+void ModifyPushConfigRequest::set_subscription(const char* value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ModifyPushConfigRequest.subscription)
 }
- void ModifyPushConfigRequest::set_subscription(const char* value,
+void ModifyPushConfigRequest::set_subscription(const char* value,
     size_t size) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ModifyPushConfigRequest.subscription)
 }
- ::std::string* ModifyPushConfigRequest::mutable_subscription() {
+::std::string* ModifyPushConfigRequest::mutable_subscription() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ModifyPushConfigRequest.subscription)
   return subscription_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ModifyPushConfigRequest::release_subscription() {
+::std::string* ModifyPushConfigRequest::release_subscription() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ModifyPushConfigRequest.subscription)
   
   return subscription_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ModifyPushConfigRequest::unsafe_arena_release_subscription() {
+::std::string* ModifyPushConfigRequest::unsafe_arena_release_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ModifyPushConfigRequest.subscription)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return subscription_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ModifyPushConfigRequest::set_allocated_subscription(::std::string* subscription) {
+void ModifyPushConfigRequest::set_allocated_subscription(::std::string* subscription) {
   if (subscription != NULL) {
     
   } else {
@@ -8712,7 +8963,7 @@ void ModifyPushConfigRequest::clear_subscription() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ModifyPushConfigRequest.subscription)
 }
- void ModifyPushConfigRequest::unsafe_arena_set_allocated_subscription(
+void ModifyPushConfigRequest::unsafe_arena_set_allocated_subscription(
     ::std::string* subscription) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (subscription != NULL) {
@@ -8727,7 +8978,7 @@ void ModifyPushConfigRequest::clear_subscription() {
 
 // optional .google.pubsub.v1.PushConfig push_config = 2;
 bool ModifyPushConfigRequest::has_push_config() const {
-  return !_is_default_instance_ && push_config_ != NULL;
+  return this != internal_default_instance() && push_config_ != NULL;
 }
 void ModifyPushConfigRequest::clear_push_config() {
   if (GetArenaNoVirtual() == NULL && push_config_ != NULL) delete push_config_;
@@ -8735,7 +8986,8 @@ void ModifyPushConfigRequest::clear_push_config() {
 }
 const ::google::pubsub::v1::PushConfig& ModifyPushConfigRequest::push_config() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ModifyPushConfigRequest.push_config)
-  return push_config_ != NULL ? *push_config_ : *default_instance_->push_config_;
+  return push_config_ != NULL ? *push_config_
+                         : *::google::pubsub::v1::PushConfig::internal_default_instance();
 }
 ::google::pubsub::v1::PushConfig* ModifyPushConfigRequest::mutable_push_config() {
   
@@ -8773,6 +9025,9 @@ const ::google::pubsub::v1::PushConfig& ModifyPushConfigRequest::push_config() c
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ModifyPushConfigRequest.push_config)
 }
 
+inline const ModifyPushConfigRequest* ModifyPushConfigRequest::internal_default_instance() {
+  return &ModifyPushConfigRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8785,37 +9040,37 @@ const int PullRequest::kMaxMessagesFieldNumber;
 
 PullRequest::PullRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.PullRequest)
 }
-
 PullRequest::PullRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.PullRequest)
 }
 
 void PullRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 PullRequest::PullRequest(const PullRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.PullRequest)
 }
 
 void PullRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   subscription_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  return_immediately_ = false;
-  max_messages_ = 0;
+  ::memset(&return_immediately_, 0, reinterpret_cast<char*>(&max_messages_) -
+    reinterpret_cast<char*>(&return_immediately_) + sizeof(max_messages_));
+  _cached_size_ = 0;
 }
 
 PullRequest::~PullRequest() {
@@ -8824,13 +9079,12 @@ PullRequest::~PullRequest() {
 }
 
 void PullRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void PullRequest::ArenaDtor(void* object) {
@@ -8850,11 +9104,11 @@ const ::google::protobuf::Descriptor* PullRequest::descriptor() {
 }
 
 const PullRequest& PullRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-PullRequest* PullRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PullRequest> PullRequest_default_instance_;
 
 PullRequest* PullRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<PullRequest>(arena);
@@ -8874,7 +9128,7 @@ void PullRequest::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -8916,10 +9170,10 @@ bool PullRequest::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_return_immediately:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &return_immediately_)));
-
         } else {
           goto handle_unusual;
         }
@@ -8931,10 +9185,10 @@ bool PullRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_max_messages:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &max_messages_)));
-
         } else {
           goto handle_unusual;
         }
@@ -8991,6 +9245,7 @@ void PullRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PullRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.PullRequest)
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -9017,9 +9272,9 @@ void PullRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int PullRequest::ByteSize() const {
+size_t PullRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.PullRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -9040,18 +9295,17 @@ int PullRequest::ByteSize() const {
         this->max_messages());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PullRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.PullRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PullRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PullRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PullRequest>(
           &from);
   if (source == NULL) {
@@ -9059,15 +9313,21 @@ void PullRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.PullRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PullRequest::MergeFrom(const PullRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.PullRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void PullRequest::UnsafeMergeFrom(const PullRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.subscription().size() > 0) {
     set_subscription(from.subscription());
   }
@@ -9090,7 +9350,7 @@ void PullRequest::CopyFrom(const PullRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.PullRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PullRequest::IsInitialized() const {
@@ -9104,7 +9364,7 @@ void PullRequest::Swap(PullRequest* other) {
     InternalSwap(other);
   } else {
     PullRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -9137,46 +9397,46 @@ void PullRequest::InternalSwap(PullRequest* other) {
 void PullRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& PullRequest::subscription() const {
+const ::std::string& PullRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PullRequest.subscription)
   return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void PullRequest::set_subscription(const ::std::string& value) {
+void PullRequest::set_subscription(const ::std::string& value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PullRequest.subscription)
 }
- void PullRequest::set_subscription(const char* value) {
+void PullRequest::set_subscription(const char* value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.PullRequest.subscription)
 }
- void PullRequest::set_subscription(const char* value,
+void PullRequest::set_subscription(const char* value,
     size_t size) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.PullRequest.subscription)
 }
- ::std::string* PullRequest::mutable_subscription() {
+::std::string* PullRequest::mutable_subscription() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.PullRequest.subscription)
   return subscription_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PullRequest::release_subscription() {
+::std::string* PullRequest::release_subscription() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.PullRequest.subscription)
   
   return subscription_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* PullRequest::unsafe_arena_release_subscription() {
+::std::string* PullRequest::unsafe_arena_release_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.PullRequest.subscription)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return subscription_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void PullRequest::set_allocated_subscription(::std::string* subscription) {
+void PullRequest::set_allocated_subscription(::std::string* subscription) {
   if (subscription != NULL) {
     
   } else {
@@ -9186,7 +9446,7 @@ void PullRequest::clear_subscription() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.PullRequest.subscription)
 }
- void PullRequest::unsafe_arena_set_allocated_subscription(
+void PullRequest::unsafe_arena_set_allocated_subscription(
     ::std::string* subscription) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (subscription != NULL) {
@@ -9203,11 +9463,11 @@ void PullRequest::clear_subscription() {
 void PullRequest::clear_return_immediately() {
   return_immediately_ = false;
 }
- bool PullRequest::return_immediately() const {
+bool PullRequest::return_immediately() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PullRequest.return_immediately)
   return return_immediately_;
 }
- void PullRequest::set_return_immediately(bool value) {
+void PullRequest::set_return_immediately(bool value) {
   
   return_immediately_ = value;
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PullRequest.return_immediately)
@@ -9217,16 +9477,19 @@ void PullRequest::clear_return_immediately() {
 void PullRequest::clear_max_messages() {
   max_messages_ = 0;
 }
- ::google::protobuf::int32 PullRequest::max_messages() const {
+::google::protobuf::int32 PullRequest::max_messages() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PullRequest.max_messages)
   return max_messages_;
 }
- void PullRequest::set_max_messages(::google::protobuf::int32 value) {
+void PullRequest::set_max_messages(::google::protobuf::int32 value) {
   
   max_messages_ = value;
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PullRequest.max_messages)
 }
 
+inline const PullRequest* PullRequest::internal_default_instance() {
+  return &PullRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9237,33 +9500,34 @@ const int PullResponse::kReceivedMessagesFieldNumber;
 
 PullResponse::PullResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.PullResponse)
 }
-
 PullResponse::PullResponse(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   received_messages_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.PullResponse)
 }
 
 void PullResponse::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 PullResponse::PullResponse(const PullResponse& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.PullResponse)
 }
 
 void PullResponse::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -9273,12 +9537,11 @@ PullResponse::~PullResponse() {
 }
 
 void PullResponse::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  if (this != default_instance_) {
-  }
 }
 
 void PullResponse::ArenaDtor(void* object) {
@@ -9298,11 +9561,11 @@ const ::google::protobuf::Descriptor* PullResponse::descriptor() {
 }
 
 const PullResponse& PullResponse::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-PullResponse* PullResponse::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<PullResponse> PullResponse_default_instance_;
 
 PullResponse* PullResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<PullResponse>(arena);
@@ -9374,6 +9637,7 @@ void PullResponse::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* PullResponse::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.PullResponse)
   // repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;
   for (unsigned int i = 0, n = this->received_messages_size(); i < n; i++) {
@@ -9386,30 +9650,32 @@ void PullResponse::SerializeWithCachedSizes(
   return target;
 }
 
-int PullResponse::ByteSize() const {
+size_t PullResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.PullResponse)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;
-  total_size += 1 * this->received_messages_size();
-  for (int i = 0; i < this->received_messages_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->received_messages(i));
+  {
+    unsigned int count = this->received_messages_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->received_messages(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void PullResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.PullResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const PullResponse* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PullResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PullResponse>(
           &from);
   if (source == NULL) {
@@ -9417,15 +9683,21 @@ void PullResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.PullResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PullResponse::MergeFrom(const PullResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.PullResponse)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void PullResponse::UnsafeMergeFrom(const PullResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   received_messages_.MergeFrom(from.received_messages_);
 }
 
@@ -9440,7 +9712,7 @@ void PullResponse::CopyFrom(const PullResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.PullResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PullResponse::IsInitialized() const {
@@ -9454,7 +9726,7 @@ void PullResponse::Swap(PullResponse* other) {
     InternalSwap(other);
   } else {
     PullResponse temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -9511,6 +9783,9 @@ PullResponse::received_messages() const {
   return received_messages_;
 }
 
+inline const PullResponse* PullResponse::internal_default_instance() {
+  return &PullResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9523,37 +9798,37 @@ const int ModifyAckDeadlineRequest::kAckDeadlineSecondsFieldNumber;
 
 ModifyAckDeadlineRequest::ModifyAckDeadlineRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.ModifyAckDeadlineRequest)
 }
-
 ModifyAckDeadlineRequest::ModifyAckDeadlineRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   ack_ids_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.ModifyAckDeadlineRequest)
 }
 
 void ModifyAckDeadlineRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 ModifyAckDeadlineRequest::ModifyAckDeadlineRequest(const ModifyAckDeadlineRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.ModifyAckDeadlineRequest)
 }
 
 void ModifyAckDeadlineRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   subscription_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ack_deadline_seconds_ = 0;
+  _cached_size_ = 0;
 }
 
 ModifyAckDeadlineRequest::~ModifyAckDeadlineRequest() {
@@ -9562,13 +9837,12 @@ ModifyAckDeadlineRequest::~ModifyAckDeadlineRequest() {
 }
 
 void ModifyAckDeadlineRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void ModifyAckDeadlineRequest::ArenaDtor(void* object) {
@@ -9588,11 +9862,11 @@ const ::google::protobuf::Descriptor* ModifyAckDeadlineRequest::descriptor() {
 }
 
 const ModifyAckDeadlineRequest& ModifyAckDeadlineRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-ModifyAckDeadlineRequest* ModifyAckDeadlineRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<ModifyAckDeadlineRequest> ModifyAckDeadlineRequest_default_instance_;
 
 ModifyAckDeadlineRequest* ModifyAckDeadlineRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ModifyAckDeadlineRequest>(arena);
@@ -9635,10 +9909,10 @@ bool ModifyAckDeadlineRequest::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_ack_deadline_seconds:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &ack_deadline_seconds_)));
-
         } else {
           goto handle_unusual;
         }
@@ -9719,6 +9993,7 @@ void ModifyAckDeadlineRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* ModifyAckDeadlineRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.ModifyAckDeadlineRequest)
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -9750,9 +10025,9 @@ void ModifyAckDeadlineRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int ModifyAckDeadlineRequest::ByteSize() const {
+size_t ModifyAckDeadlineRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.ModifyAckDeadlineRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -9769,24 +10044,24 @@ int ModifyAckDeadlineRequest::ByteSize() const {
   }
 
   // repeated string ack_ids = 4;
-  total_size += 1 * this->ack_ids_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->ack_ids_size());
   for (int i = 0; i < this->ack_ids_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->ack_ids(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void ModifyAckDeadlineRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.ModifyAckDeadlineRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const ModifyAckDeadlineRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const ModifyAckDeadlineRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ModifyAckDeadlineRequest>(
           &from);
   if (source == NULL) {
@@ -9794,16 +10069,22 @@ void ModifyAckDeadlineRequest::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.ModifyAckDeadlineRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ModifyAckDeadlineRequest::MergeFrom(const ModifyAckDeadlineRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.ModifyAckDeadlineRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  ack_ids_.MergeFrom(from.ack_ids_);
+}
+
+void ModifyAckDeadlineRequest::UnsafeMergeFrom(const ModifyAckDeadlineRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  ack_ids_.UnsafeMergeFrom(from.ack_ids_);
   if (from.subscription().size() > 0) {
     set_subscription(from.subscription());
   }
@@ -9823,7 +10104,7 @@ void ModifyAckDeadlineRequest::CopyFrom(const ModifyAckDeadlineRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.ModifyAckDeadlineRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ModifyAckDeadlineRequest::IsInitialized() const {
@@ -9837,7 +10118,7 @@ void ModifyAckDeadlineRequest::Swap(ModifyAckDeadlineRequest* other) {
     InternalSwap(other);
   } else {
     ModifyAckDeadlineRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -9870,46 +10151,46 @@ void ModifyAckDeadlineRequest::InternalSwap(ModifyAckDeadlineRequest* other) {
 void ModifyAckDeadlineRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& ModifyAckDeadlineRequest::subscription() const {
+const ::std::string& ModifyAckDeadlineRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
   return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void ModifyAckDeadlineRequest::set_subscription(const ::std::string& value) {
+void ModifyAckDeadlineRequest::set_subscription(const ::std::string& value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
 }
- void ModifyAckDeadlineRequest::set_subscription(const char* value) {
+void ModifyAckDeadlineRequest::set_subscription(const char* value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
 }
- void ModifyAckDeadlineRequest::set_subscription(const char* value,
+void ModifyAckDeadlineRequest::set_subscription(const char* value,
     size_t size) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
 }
- ::std::string* ModifyAckDeadlineRequest::mutable_subscription() {
+::std::string* ModifyAckDeadlineRequest::mutable_subscription() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
   return subscription_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ModifyAckDeadlineRequest::release_subscription() {
+::std::string* ModifyAckDeadlineRequest::release_subscription() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
   
   return subscription_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* ModifyAckDeadlineRequest::unsafe_arena_release_subscription() {
+::std::string* ModifyAckDeadlineRequest::unsafe_arena_release_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return subscription_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void ModifyAckDeadlineRequest::set_allocated_subscription(::std::string* subscription) {
+void ModifyAckDeadlineRequest::set_allocated_subscription(::std::string* subscription) {
   if (subscription != NULL) {
     
   } else {
@@ -9919,7 +10200,7 @@ void ModifyAckDeadlineRequest::clear_subscription() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
 }
- void ModifyAckDeadlineRequest::unsafe_arena_set_allocated_subscription(
+void ModifyAckDeadlineRequest::unsafe_arena_set_allocated_subscription(
     ::std::string* subscription) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (subscription != NULL) {
@@ -9939,49 +10220,49 @@ int ModifyAckDeadlineRequest::ack_ids_size() const {
 void ModifyAckDeadlineRequest::clear_ack_ids() {
   ack_ids_.Clear();
 }
- const ::std::string& ModifyAckDeadlineRequest::ack_ids(int index) const {
+const ::std::string& ModifyAckDeadlineRequest::ack_ids(int index) const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
   return ack_ids_.Get(index);
 }
- ::std::string* ModifyAckDeadlineRequest::mutable_ack_ids(int index) {
+::std::string* ModifyAckDeadlineRequest::mutable_ack_ids(int index) {
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
   return ack_ids_.Mutable(index);
 }
- void ModifyAckDeadlineRequest::set_ack_ids(int index, const ::std::string& value) {
+void ModifyAckDeadlineRequest::set_ack_ids(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
   ack_ids_.Mutable(index)->assign(value);
 }
- void ModifyAckDeadlineRequest::set_ack_ids(int index, const char* value) {
+void ModifyAckDeadlineRequest::set_ack_ids(int index, const char* value) {
   ack_ids_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
 }
- void ModifyAckDeadlineRequest::set_ack_ids(int index, const char* value, size_t size) {
+void ModifyAckDeadlineRequest::set_ack_ids(int index, const char* value, size_t size) {
   ack_ids_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
 }
- ::std::string* ModifyAckDeadlineRequest::add_ack_ids() {
+::std::string* ModifyAckDeadlineRequest::add_ack_ids() {
   // @@protoc_insertion_point(field_add_mutable:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
   return ack_ids_.Add();
 }
- void ModifyAckDeadlineRequest::add_ack_ids(const ::std::string& value) {
+void ModifyAckDeadlineRequest::add_ack_ids(const ::std::string& value) {
   ack_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
 }
- void ModifyAckDeadlineRequest::add_ack_ids(const char* value) {
+void ModifyAckDeadlineRequest::add_ack_ids(const char* value) {
   ack_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
 }
- void ModifyAckDeadlineRequest::add_ack_ids(const char* value, size_t size) {
+void ModifyAckDeadlineRequest::add_ack_ids(const char* value, size_t size) {
   ack_ids_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 ModifyAckDeadlineRequest::ack_ids() const {
   // @@protoc_insertion_point(field_list:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
   return ack_ids_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 ModifyAckDeadlineRequest::mutable_ack_ids() {
   // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.ModifyAckDeadlineRequest.ack_ids)
   return &ack_ids_;
@@ -9991,16 +10272,19 @@ ModifyAckDeadlineRequest::mutable_ack_ids() {
 void ModifyAckDeadlineRequest::clear_ack_deadline_seconds() {
   ack_deadline_seconds_ = 0;
 }
- ::google::protobuf::int32 ModifyAckDeadlineRequest::ack_deadline_seconds() const {
+::google::protobuf::int32 ModifyAckDeadlineRequest::ack_deadline_seconds() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ModifyAckDeadlineRequest.ack_deadline_seconds)
   return ack_deadline_seconds_;
 }
- void ModifyAckDeadlineRequest::set_ack_deadline_seconds(::google::protobuf::int32 value) {
+void ModifyAckDeadlineRequest::set_ack_deadline_seconds(::google::protobuf::int32 value) {
   
   ack_deadline_seconds_ = value;
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ModifyAckDeadlineRequest.ack_deadline_seconds)
 }
 
+inline const ModifyAckDeadlineRequest* ModifyAckDeadlineRequest::internal_default_instance() {
+  return &ModifyAckDeadlineRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -10012,36 +10296,36 @@ const int AcknowledgeRequest::kAckIdsFieldNumber;
 
 AcknowledgeRequest::AcknowledgeRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.pubsub.v1.AcknowledgeRequest)
 }
-
 AcknowledgeRequest::AcknowledgeRequest(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   ack_ids_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.AcknowledgeRequest)
 }
 
 void AcknowledgeRequest::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 AcknowledgeRequest::AcknowledgeRequest(const AcknowledgeRequest& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.AcknowledgeRequest)
 }
 
 void AcknowledgeRequest::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   subscription_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 AcknowledgeRequest::~AcknowledgeRequest() {
@@ -10050,13 +10334,12 @@ AcknowledgeRequest::~AcknowledgeRequest() {
 }
 
 void AcknowledgeRequest::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void AcknowledgeRequest::ArenaDtor(void* object) {
@@ -10076,11 +10359,11 @@ const ::google::protobuf::Descriptor* AcknowledgeRequest::descriptor() {
 }
 
 const AcknowledgeRequest& AcknowledgeRequest::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
 }
 
-AcknowledgeRequest* AcknowledgeRequest::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<AcknowledgeRequest> AcknowledgeRequest_default_instance_;
 
 AcknowledgeRequest* AcknowledgeRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<AcknowledgeRequest>(arena);
@@ -10186,6 +10469,7 @@ void AcknowledgeRequest::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* AcknowledgeRequest::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.AcknowledgeRequest)
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -10212,9 +10496,9 @@ void AcknowledgeRequest::SerializeWithCachedSizes(
   return target;
 }
 
-int AcknowledgeRequest::ByteSize() const {
+size_t AcknowledgeRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.AcknowledgeRequest)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string subscription = 1;
   if (this->subscription().size() > 0) {
@@ -10224,24 +10508,24 @@ int AcknowledgeRequest::ByteSize() const {
   }
 
   // repeated string ack_ids = 2;
-  total_size += 1 * this->ack_ids_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->ack_ids_size());
   for (int i = 0; i < this->ack_ids_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->ack_ids(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void AcknowledgeRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.AcknowledgeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const AcknowledgeRequest* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const AcknowledgeRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AcknowledgeRequest>(
           &from);
   if (source == NULL) {
@@ -10249,16 +10533,22 @@ void AcknowledgeRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.AcknowledgeRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AcknowledgeRequest::MergeFrom(const AcknowledgeRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.AcknowledgeRequest)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  ack_ids_.MergeFrom(from.ack_ids_);
+}
+
+void AcknowledgeRequest::UnsafeMergeFrom(const AcknowledgeRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  ack_ids_.UnsafeMergeFrom(from.ack_ids_);
   if (from.subscription().size() > 0) {
     set_subscription(from.subscription());
   }
@@ -10275,7 +10565,7 @@ void AcknowledgeRequest::CopyFrom(const AcknowledgeRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.AcknowledgeRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AcknowledgeRequest::IsInitialized() const {
@@ -10289,7 +10579,7 @@ void AcknowledgeRequest::Swap(AcknowledgeRequest* other) {
     InternalSwap(other);
   } else {
     AcknowledgeRequest temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -10321,46 +10611,46 @@ void AcknowledgeRequest::InternalSwap(AcknowledgeRequest* other) {
 void AcknowledgeRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& AcknowledgeRequest::subscription() const {
+const ::std::string& AcknowledgeRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.AcknowledgeRequest.subscription)
   return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void AcknowledgeRequest::set_subscription(const ::std::string& value) {
+void AcknowledgeRequest::set_subscription(const ::std::string& value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.pubsub.v1.AcknowledgeRequest.subscription)
 }
- void AcknowledgeRequest::set_subscription(const char* value) {
+void AcknowledgeRequest::set_subscription(const char* value) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.AcknowledgeRequest.subscription)
 }
- void AcknowledgeRequest::set_subscription(const char* value,
+void AcknowledgeRequest::set_subscription(const char* value,
     size_t size) {
   
   subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.AcknowledgeRequest.subscription)
 }
- ::std::string* AcknowledgeRequest::mutable_subscription() {
+::std::string* AcknowledgeRequest::mutable_subscription() {
   
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.AcknowledgeRequest.subscription)
   return subscription_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* AcknowledgeRequest::release_subscription() {
+::std::string* AcknowledgeRequest::release_subscription() {
   // @@protoc_insertion_point(field_release:google.pubsub.v1.AcknowledgeRequest.subscription)
   
   return subscription_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* AcknowledgeRequest::unsafe_arena_release_subscription() {
+::std::string* AcknowledgeRequest::unsafe_arena_release_subscription() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.AcknowledgeRequest.subscription)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return subscription_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void AcknowledgeRequest::set_allocated_subscription(::std::string* subscription) {
+void AcknowledgeRequest::set_allocated_subscription(::std::string* subscription) {
   if (subscription != NULL) {
     
   } else {
@@ -10370,7 +10660,7 @@ void AcknowledgeRequest::clear_subscription() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.AcknowledgeRequest.subscription)
 }
- void AcknowledgeRequest::unsafe_arena_set_allocated_subscription(
+void AcknowledgeRequest::unsafe_arena_set_allocated_subscription(
     ::std::string* subscription) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (subscription != NULL) {
@@ -10390,54 +10680,1055 @@ int AcknowledgeRequest::ack_ids_size() const {
 void AcknowledgeRequest::clear_ack_ids() {
   ack_ids_.Clear();
 }
- const ::std::string& AcknowledgeRequest::ack_ids(int index) const {
+const ::std::string& AcknowledgeRequest::ack_ids(int index) const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.AcknowledgeRequest.ack_ids)
   return ack_ids_.Get(index);
 }
- ::std::string* AcknowledgeRequest::mutable_ack_ids(int index) {
+::std::string* AcknowledgeRequest::mutable_ack_ids(int index) {
   // @@protoc_insertion_point(field_mutable:google.pubsub.v1.AcknowledgeRequest.ack_ids)
   return ack_ids_.Mutable(index);
 }
- void AcknowledgeRequest::set_ack_ids(int index, const ::std::string& value) {
+void AcknowledgeRequest::set_ack_ids(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.pubsub.v1.AcknowledgeRequest.ack_ids)
   ack_ids_.Mutable(index)->assign(value);
 }
- void AcknowledgeRequest::set_ack_ids(int index, const char* value) {
+void AcknowledgeRequest::set_ack_ids(int index, const char* value) {
   ack_ids_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.pubsub.v1.AcknowledgeRequest.ack_ids)
 }
- void AcknowledgeRequest::set_ack_ids(int index, const char* value, size_t size) {
+void AcknowledgeRequest::set_ack_ids(int index, const char* value, size_t size) {
   ack_ids_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.AcknowledgeRequest.ack_ids)
 }
- ::std::string* AcknowledgeRequest::add_ack_ids() {
+::std::string* AcknowledgeRequest::add_ack_ids() {
   // @@protoc_insertion_point(field_add_mutable:google.pubsub.v1.AcknowledgeRequest.ack_ids)
   return ack_ids_.Add();
 }
- void AcknowledgeRequest::add_ack_ids(const ::std::string& value) {
+void AcknowledgeRequest::add_ack_ids(const ::std::string& value) {
   ack_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.pubsub.v1.AcknowledgeRequest.ack_ids)
 }
- void AcknowledgeRequest::add_ack_ids(const char* value) {
+void AcknowledgeRequest::add_ack_ids(const char* value) {
   ack_ids_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.pubsub.v1.AcknowledgeRequest.ack_ids)
 }
- void AcknowledgeRequest::add_ack_ids(const char* value, size_t size) {
+void AcknowledgeRequest::add_ack_ids(const char* value, size_t size) {
   ack_ids_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.pubsub.v1.AcknowledgeRequest.ack_ids)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 AcknowledgeRequest::ack_ids() const {
   // @@protoc_insertion_point(field_list:google.pubsub.v1.AcknowledgeRequest.ack_ids)
   return ack_ids_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 AcknowledgeRequest::mutable_ack_ids() {
   // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.AcknowledgeRequest.ack_ids)
   return &ack_ids_;
 }
 
+inline const AcknowledgeRequest* AcknowledgeRequest::internal_default_instance() {
+  return &AcknowledgeRequest_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int StreamingPullRequest::kSubscriptionFieldNumber;
+const int StreamingPullRequest::kAckIdsFieldNumber;
+const int StreamingPullRequest::kModifyDeadlineSecondsFieldNumber;
+const int StreamingPullRequest::kModifyDeadlineAckIdsFieldNumber;
+const int StreamingPullRequest::kStreamAckDeadlineSecondsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+StreamingPullRequest::StreamingPullRequest()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.pubsub.v1.StreamingPullRequest)
+}
+StreamingPullRequest::StreamingPullRequest(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  ack_ids_(arena),
+  modify_deadline_seconds_(arena),
+  modify_deadline_ack_ids_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.StreamingPullRequest)
+}
+
+void StreamingPullRequest::InitAsDefaultInstance() {
+}
+
+StreamingPullRequest::StreamingPullRequest(const StreamingPullRequest& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.StreamingPullRequest)
+}
+
+void StreamingPullRequest::SharedCtor() {
+  subscription_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  stream_ack_deadline_seconds_ = 0;
+  _cached_size_ = 0;
+}
+
+StreamingPullRequest::~StreamingPullRequest() {
+  // @@protoc_insertion_point(destructor:google.pubsub.v1.StreamingPullRequest)
+  SharedDtor();
+}
+
+void StreamingPullRequest::SharedDtor() {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
+    return;
+  }
+
+  subscription_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+}
+
+void StreamingPullRequest::ArenaDtor(void* object) {
+  StreamingPullRequest* _this = reinterpret_cast< StreamingPullRequest* >(object);
+  (void)_this;
+}
+void StreamingPullRequest::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void StreamingPullRequest::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* StreamingPullRequest::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return StreamingPullRequest_descriptor_;
+}
+
+const StreamingPullRequest& StreamingPullRequest::default_instance() {
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<StreamingPullRequest> StreamingPullRequest_default_instance_;
+
+StreamingPullRequest* StreamingPullRequest::New(::google::protobuf::Arena* arena) const {
+  return ::google::protobuf::Arena::CreateMessage<StreamingPullRequest>(arena);
+}
+
+void StreamingPullRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.pubsub.v1.StreamingPullRequest)
+  subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  stream_ack_deadline_seconds_ = 0;
+  ack_ids_.Clear();
+  modify_deadline_seconds_.Clear();
+  modify_deadline_ack_ids_.Clear();
+}
+
+bool StreamingPullRequest::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.pubsub.v1.StreamingPullRequest)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional string subscription = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_subscription()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->subscription().data(), this->subscription().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.pubsub.v1.StreamingPullRequest.subscription"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_ack_ids;
+        break;
+      }
+
+      // repeated string ack_ids = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_ack_ids:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_ack_ids()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->ack_ids(this->ack_ids_size() - 1).data(),
+            this->ack_ids(this->ack_ids_size() - 1).length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.pubsub.v1.StreamingPullRequest.ack_ids"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_ack_ids;
+        if (input->ExpectTag(26)) goto parse_modify_deadline_seconds;
+        break;
+      }
+
+      // repeated int32 modify_deadline_seconds = 3;
+      case 3: {
+        if (tag == 26) {
+         parse_modify_deadline_seconds:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, this->mutable_modify_deadline_seconds())));
+        } else if (tag == 24) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 1, 26, input, this->mutable_modify_deadline_seconds())));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(34)) goto parse_modify_deadline_ack_ids;
+        break;
+      }
+
+      // repeated string modify_deadline_ack_ids = 4;
+      case 4: {
+        if (tag == 34) {
+         parse_modify_deadline_ack_ids:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_modify_deadline_ack_ids()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->modify_deadline_ack_ids(this->modify_deadline_ack_ids_size() - 1).data(),
+            this->modify_deadline_ack_ids(this->modify_deadline_ack_ids_size() - 1).length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(34)) goto parse_modify_deadline_ack_ids;
+        if (input->ExpectTag(40)) goto parse_stream_ack_deadline_seconds;
+        break;
+      }
+
+      // optional int32 stream_ack_deadline_seconds = 5;
+      case 5: {
+        if (tag == 40) {
+         parse_stream_ack_deadline_seconds:
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &stream_ack_deadline_seconds_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.pubsub.v1.StreamingPullRequest)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.pubsub.v1.StreamingPullRequest)
+  return false;
+#undef DO_
+}
+
+void StreamingPullRequest::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.pubsub.v1.StreamingPullRequest)
+  // optional string subscription = 1;
+  if (this->subscription().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->subscription().data(), this->subscription().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.pubsub.v1.StreamingPullRequest.subscription");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->subscription(), output);
+  }
+
+  // repeated string ack_ids = 2;
+  for (int i = 0; i < this->ack_ids_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->ack_ids(i).data(), this->ack_ids(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.pubsub.v1.StreamingPullRequest.ack_ids");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      2, this->ack_ids(i), output);
+  }
+
+  // repeated int32 modify_deadline_seconds = 3;
+  if (this->modify_deadline_seconds_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(3, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_modify_deadline_seconds_cached_byte_size_);
+  }
+  for (int i = 0; i < this->modify_deadline_seconds_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32NoTag(
+      this->modify_deadline_seconds(i), output);
+  }
+
+  // repeated string modify_deadline_ack_ids = 4;
+  for (int i = 0; i < this->modify_deadline_ack_ids_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->modify_deadline_ack_ids(i).data(), this->modify_deadline_ack_ids(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      4, this->modify_deadline_ack_ids(i), output);
+  }
+
+  // optional int32 stream_ack_deadline_seconds = 5;
+  if (this->stream_ack_deadline_seconds() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(5, this->stream_ack_deadline_seconds(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.pubsub.v1.StreamingPullRequest)
+}
+
+::google::protobuf::uint8* StreamingPullRequest::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.StreamingPullRequest)
+  // optional string subscription = 1;
+  if (this->subscription().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->subscription().data(), this->subscription().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.pubsub.v1.StreamingPullRequest.subscription");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->subscription(), target);
+  }
+
+  // repeated string ack_ids = 2;
+  for (int i = 0; i < this->ack_ids_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->ack_ids(i).data(), this->ack_ids(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.pubsub.v1.StreamingPullRequest.ack_ids");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(2, this->ack_ids(i), target);
+  }
+
+  // repeated int32 modify_deadline_seconds = 3;
+  if (this->modify_deadline_seconds_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      3,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+      _modify_deadline_seconds_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->modify_deadline_seconds_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt32NoTagToArray(this->modify_deadline_seconds(i), target);
+  }
+
+  // repeated string modify_deadline_ack_ids = 4;
+  for (int i = 0; i < this->modify_deadline_ack_ids_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->modify_deadline_ack_ids(i).data(), this->modify_deadline_ack_ids(i).length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(4, this->modify_deadline_ack_ids(i), target);
+  }
+
+  // optional int32 stream_ack_deadline_seconds = 5;
+  if (this->stream_ack_deadline_seconds() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(5, this->stream_ack_deadline_seconds(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.pubsub.v1.StreamingPullRequest)
+  return target;
+}
+
+size_t StreamingPullRequest::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.StreamingPullRequest)
+  size_t total_size = 0;
+
+  // optional string subscription = 1;
+  if (this->subscription().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->subscription());
+  }
+
+  // optional int32 stream_ack_deadline_seconds = 5;
+  if (this->stream_ack_deadline_seconds() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->stream_ack_deadline_seconds());
+  }
+
+  // repeated string ack_ids = 2;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->ack_ids_size());
+  for (int i = 0; i < this->ack_ids_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->ack_ids(i));
+  }
+
+  // repeated int32 modify_deadline_seconds = 3;
+  {
+    size_t data_size = 0;
+    unsigned int count = this->modify_deadline_seconds_size();
+    for (unsigned int i = 0; i < count; i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::
+        Int32Size(this->modify_deadline_seconds(i));
+    }
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _modify_deadline_seconds_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  // repeated string modify_deadline_ack_ids = 4;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->modify_deadline_ack_ids_size());
+  for (int i = 0; i < this->modify_deadline_ack_ids_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->modify_deadline_ack_ids(i));
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void StreamingPullRequest::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.StreamingPullRequest)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StreamingPullRequest* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const StreamingPullRequest>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.pubsub.v1.StreamingPullRequest)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.StreamingPullRequest)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void StreamingPullRequest::MergeFrom(const StreamingPullRequest& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.StreamingPullRequest)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void StreamingPullRequest::UnsafeMergeFrom(const StreamingPullRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  ack_ids_.UnsafeMergeFrom(from.ack_ids_);
+  modify_deadline_seconds_.UnsafeMergeFrom(from.modify_deadline_seconds_);
+  modify_deadline_ack_ids_.UnsafeMergeFrom(from.modify_deadline_ack_ids_);
+  if (from.subscription().size() > 0) {
+    set_subscription(from.subscription());
+  }
+  if (from.stream_ack_deadline_seconds() != 0) {
+    set_stream_ack_deadline_seconds(from.stream_ack_deadline_seconds());
+  }
+}
+
+void StreamingPullRequest::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.pubsub.v1.StreamingPullRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void StreamingPullRequest::CopyFrom(const StreamingPullRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.StreamingPullRequest)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool StreamingPullRequest::IsInitialized() const {
+
+  return true;
+}
+
+void StreamingPullRequest::Swap(StreamingPullRequest* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    StreamingPullRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
+  }
+}
+void StreamingPullRequest::UnsafeArenaSwap(StreamingPullRequest* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void StreamingPullRequest::InternalSwap(StreamingPullRequest* other) {
+  subscription_.Swap(&other->subscription_);
+  ack_ids_.UnsafeArenaSwap(&other->ack_ids_);
+  modify_deadline_seconds_.UnsafeArenaSwap(&other->modify_deadline_seconds_);
+  modify_deadline_ack_ids_.UnsafeArenaSwap(&other->modify_deadline_ack_ids_);
+  std::swap(stream_ack_deadline_seconds_, other->stream_ack_deadline_seconds_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata StreamingPullRequest::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = StreamingPullRequest_descriptor_;
+  metadata.reflection = StreamingPullRequest_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// StreamingPullRequest
+
+// optional string subscription = 1;
+void StreamingPullRequest::clear_subscription() {
+  subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+const ::std::string& StreamingPullRequest::subscription() const {
+  // @@protoc_insertion_point(field_get:google.pubsub.v1.StreamingPullRequest.subscription)
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void StreamingPullRequest::set_subscription(const ::std::string& value) {
+  
+  subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:google.pubsub.v1.StreamingPullRequest.subscription)
+}
+void StreamingPullRequest::set_subscription(const char* value) {
+  
+  subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:google.pubsub.v1.StreamingPullRequest.subscription)
+}
+void StreamingPullRequest::set_subscription(const char* value,
+    size_t size) {
+  
+  subscription_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.StreamingPullRequest.subscription)
+}
+::std::string* StreamingPullRequest::mutable_subscription() {
+  
+  // @@protoc_insertion_point(field_mutable:google.pubsub.v1.StreamingPullRequest.subscription)
+  return subscription_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+::std::string* StreamingPullRequest::release_subscription() {
+  // @@protoc_insertion_point(field_release:google.pubsub.v1.StreamingPullRequest.subscription)
+  
+  return subscription_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+::std::string* StreamingPullRequest::unsafe_arena_release_subscription() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:google.pubsub.v1.StreamingPullRequest.subscription)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return subscription_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+void StreamingPullRequest::set_allocated_subscription(::std::string* subscription) {
+  if (subscription != NULL) {
+    
+  } else {
+    
+  }
+  subscription_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), subscription,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.StreamingPullRequest.subscription)
+}
+void StreamingPullRequest::unsafe_arena_set_allocated_subscription(
+    ::std::string* subscription) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (subscription != NULL) {
+    
+  } else {
+    
+  }
+  subscription_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      subscription, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.StreamingPullRequest.subscription)
+}
+
+// repeated string ack_ids = 2;
+int StreamingPullRequest::ack_ids_size() const {
+  return ack_ids_.size();
+}
+void StreamingPullRequest::clear_ack_ids() {
+  ack_ids_.Clear();
+}
+const ::std::string& StreamingPullRequest::ack_ids(int index) const {
+  // @@protoc_insertion_point(field_get:google.pubsub.v1.StreamingPullRequest.ack_ids)
+  return ack_ids_.Get(index);
+}
+::std::string* StreamingPullRequest::mutable_ack_ids(int index) {
+  // @@protoc_insertion_point(field_mutable:google.pubsub.v1.StreamingPullRequest.ack_ids)
+  return ack_ids_.Mutable(index);
+}
+void StreamingPullRequest::set_ack_ids(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:google.pubsub.v1.StreamingPullRequest.ack_ids)
+  ack_ids_.Mutable(index)->assign(value);
+}
+void StreamingPullRequest::set_ack_ids(int index, const char* value) {
+  ack_ids_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:google.pubsub.v1.StreamingPullRequest.ack_ids)
+}
+void StreamingPullRequest::set_ack_ids(int index, const char* value, size_t size) {
+  ack_ids_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.StreamingPullRequest.ack_ids)
+}
+::std::string* StreamingPullRequest::add_ack_ids() {
+  // @@protoc_insertion_point(field_add_mutable:google.pubsub.v1.StreamingPullRequest.ack_ids)
+  return ack_ids_.Add();
+}
+void StreamingPullRequest::add_ack_ids(const ::std::string& value) {
+  ack_ids_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:google.pubsub.v1.StreamingPullRequest.ack_ids)
+}
+void StreamingPullRequest::add_ack_ids(const char* value) {
+  ack_ids_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:google.pubsub.v1.StreamingPullRequest.ack_ids)
+}
+void StreamingPullRequest::add_ack_ids(const char* value, size_t size) {
+  ack_ids_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:google.pubsub.v1.StreamingPullRequest.ack_ids)
+}
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
+StreamingPullRequest::ack_ids() const {
+  // @@protoc_insertion_point(field_list:google.pubsub.v1.StreamingPullRequest.ack_ids)
+  return ack_ids_;
+}
+::google::protobuf::RepeatedPtrField< ::std::string>*
+StreamingPullRequest::mutable_ack_ids() {
+  // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.StreamingPullRequest.ack_ids)
+  return &ack_ids_;
+}
+
+// repeated int32 modify_deadline_seconds = 3;
+int StreamingPullRequest::modify_deadline_seconds_size() const {
+  return modify_deadline_seconds_.size();
+}
+void StreamingPullRequest::clear_modify_deadline_seconds() {
+  modify_deadline_seconds_.Clear();
+}
+::google::protobuf::int32 StreamingPullRequest::modify_deadline_seconds(int index) const {
+  // @@protoc_insertion_point(field_get:google.pubsub.v1.StreamingPullRequest.modify_deadline_seconds)
+  return modify_deadline_seconds_.Get(index);
+}
+void StreamingPullRequest::set_modify_deadline_seconds(int index, ::google::protobuf::int32 value) {
+  modify_deadline_seconds_.Set(index, value);
+  // @@protoc_insertion_point(field_set:google.pubsub.v1.StreamingPullRequest.modify_deadline_seconds)
+}
+void StreamingPullRequest::add_modify_deadline_seconds(::google::protobuf::int32 value) {
+  modify_deadline_seconds_.Add(value);
+  // @@protoc_insertion_point(field_add:google.pubsub.v1.StreamingPullRequest.modify_deadline_seconds)
+}
+const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+StreamingPullRequest::modify_deadline_seconds() const {
+  // @@protoc_insertion_point(field_list:google.pubsub.v1.StreamingPullRequest.modify_deadline_seconds)
+  return modify_deadline_seconds_;
+}
+::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+StreamingPullRequest::mutable_modify_deadline_seconds() {
+  // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.StreamingPullRequest.modify_deadline_seconds)
+  return &modify_deadline_seconds_;
+}
+
+// repeated string modify_deadline_ack_ids = 4;
+int StreamingPullRequest::modify_deadline_ack_ids_size() const {
+  return modify_deadline_ack_ids_.size();
+}
+void StreamingPullRequest::clear_modify_deadline_ack_ids() {
+  modify_deadline_ack_ids_.Clear();
+}
+const ::std::string& StreamingPullRequest::modify_deadline_ack_ids(int index) const {
+  // @@protoc_insertion_point(field_get:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+  return modify_deadline_ack_ids_.Get(index);
+}
+::std::string* StreamingPullRequest::mutable_modify_deadline_ack_ids(int index) {
+  // @@protoc_insertion_point(field_mutable:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+  return modify_deadline_ack_ids_.Mutable(index);
+}
+void StreamingPullRequest::set_modify_deadline_ack_ids(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+  modify_deadline_ack_ids_.Mutable(index)->assign(value);
+}
+void StreamingPullRequest::set_modify_deadline_ack_ids(int index, const char* value) {
+  modify_deadline_ack_ids_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+}
+void StreamingPullRequest::set_modify_deadline_ack_ids(int index, const char* value, size_t size) {
+  modify_deadline_ack_ids_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+}
+::std::string* StreamingPullRequest::add_modify_deadline_ack_ids() {
+  // @@protoc_insertion_point(field_add_mutable:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+  return modify_deadline_ack_ids_.Add();
+}
+void StreamingPullRequest::add_modify_deadline_ack_ids(const ::std::string& value) {
+  modify_deadline_ack_ids_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+}
+void StreamingPullRequest::add_modify_deadline_ack_ids(const char* value) {
+  modify_deadline_ack_ids_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+}
+void StreamingPullRequest::add_modify_deadline_ack_ids(const char* value, size_t size) {
+  modify_deadline_ack_ids_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+}
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
+StreamingPullRequest::modify_deadline_ack_ids() const {
+  // @@protoc_insertion_point(field_list:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+  return modify_deadline_ack_ids_;
+}
+::google::protobuf::RepeatedPtrField< ::std::string>*
+StreamingPullRequest::mutable_modify_deadline_ack_ids() {
+  // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.StreamingPullRequest.modify_deadline_ack_ids)
+  return &modify_deadline_ack_ids_;
+}
+
+// optional int32 stream_ack_deadline_seconds = 5;
+void StreamingPullRequest::clear_stream_ack_deadline_seconds() {
+  stream_ack_deadline_seconds_ = 0;
+}
+::google::protobuf::int32 StreamingPullRequest::stream_ack_deadline_seconds() const {
+  // @@protoc_insertion_point(field_get:google.pubsub.v1.StreamingPullRequest.stream_ack_deadline_seconds)
+  return stream_ack_deadline_seconds_;
+}
+void StreamingPullRequest::set_stream_ack_deadline_seconds(::google::protobuf::int32 value) {
+  
+  stream_ack_deadline_seconds_ = value;
+  // @@protoc_insertion_point(field_set:google.pubsub.v1.StreamingPullRequest.stream_ack_deadline_seconds)
+}
+
+inline const StreamingPullRequest* StreamingPullRequest::internal_default_instance() {
+  return &StreamingPullRequest_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int StreamingPullResponse::kReceivedMessagesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+StreamingPullResponse::StreamingPullResponse()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.pubsub.v1.StreamingPullResponse)
+}
+StreamingPullResponse::StreamingPullResponse(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  received_messages_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:google.pubsub.v1.StreamingPullResponse)
+}
+
+void StreamingPullResponse::InitAsDefaultInstance() {
+}
+
+StreamingPullResponse::StreamingPullResponse(const StreamingPullResponse& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.pubsub.v1.StreamingPullResponse)
+}
+
+void StreamingPullResponse::SharedCtor() {
+  _cached_size_ = 0;
+}
+
+StreamingPullResponse::~StreamingPullResponse() {
+  // @@protoc_insertion_point(destructor:google.pubsub.v1.StreamingPullResponse)
+  SharedDtor();
+}
+
+void StreamingPullResponse::SharedDtor() {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
+    return;
+  }
+
+}
+
+void StreamingPullResponse::ArenaDtor(void* object) {
+  StreamingPullResponse* _this = reinterpret_cast< StreamingPullResponse* >(object);
+  (void)_this;
+}
+void StreamingPullResponse::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void StreamingPullResponse::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* StreamingPullResponse::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return StreamingPullResponse_descriptor_;
+}
+
+const StreamingPullResponse& StreamingPullResponse::default_instance() {
+  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<StreamingPullResponse> StreamingPullResponse_default_instance_;
+
+StreamingPullResponse* StreamingPullResponse::New(::google::protobuf::Arena* arena) const {
+  return ::google::protobuf::Arena::CreateMessage<StreamingPullResponse>(arena);
+}
+
+void StreamingPullResponse::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.pubsub.v1.StreamingPullResponse)
+  received_messages_.Clear();
+}
+
+bool StreamingPullResponse::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.pubsub.v1.StreamingPullResponse)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_received_messages:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+                input, add_received_messages()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(10)) goto parse_loop_received_messages;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.pubsub.v1.StreamingPullResponse)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.pubsub.v1.StreamingPullResponse)
+  return false;
+#undef DO_
+}
+
+void StreamingPullResponse::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.pubsub.v1.StreamingPullResponse)
+  // repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;
+  for (unsigned int i = 0, n = this->received_messages_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->received_messages(i), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.pubsub.v1.StreamingPullResponse)
+}
+
+::google::protobuf::uint8* StreamingPullResponse::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.pubsub.v1.StreamingPullResponse)
+  // repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;
+  for (unsigned int i = 0, n = this->received_messages_size(); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        1, this->received_messages(i), false, target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.pubsub.v1.StreamingPullResponse)
+  return target;
+}
+
+size_t StreamingPullResponse::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.pubsub.v1.StreamingPullResponse)
+  size_t total_size = 0;
+
+  // repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;
+  {
+    unsigned int count = this->received_messages_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->received_messages(i));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void StreamingPullResponse::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.pubsub.v1.StreamingPullResponse)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StreamingPullResponse* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const StreamingPullResponse>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.pubsub.v1.StreamingPullResponse)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.pubsub.v1.StreamingPullResponse)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void StreamingPullResponse::MergeFrom(const StreamingPullResponse& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.pubsub.v1.StreamingPullResponse)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void StreamingPullResponse::UnsafeMergeFrom(const StreamingPullResponse& from) {
+  GOOGLE_DCHECK(&from != this);
+  received_messages_.MergeFrom(from.received_messages_);
+}
+
+void StreamingPullResponse::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.pubsub.v1.StreamingPullResponse)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void StreamingPullResponse::CopyFrom(const StreamingPullResponse& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.pubsub.v1.StreamingPullResponse)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool StreamingPullResponse::IsInitialized() const {
+
+  return true;
+}
+
+void StreamingPullResponse::Swap(StreamingPullResponse* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    StreamingPullResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
+  }
+}
+void StreamingPullResponse::UnsafeArenaSwap(StreamingPullResponse* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void StreamingPullResponse::InternalSwap(StreamingPullResponse* other) {
+  received_messages_.UnsafeArenaSwap(&other->received_messages_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata StreamingPullResponse::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = StreamingPullResponse_descriptor_;
+  metadata.reflection = StreamingPullResponse_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// StreamingPullResponse
+
+// repeated .google.pubsub.v1.ReceivedMessage received_messages = 1;
+int StreamingPullResponse::received_messages_size() const {
+  return received_messages_.size();
+}
+void StreamingPullResponse::clear_received_messages() {
+  received_messages_.Clear();
+}
+const ::google::pubsub::v1::ReceivedMessage& StreamingPullResponse::received_messages(int index) const {
+  // @@protoc_insertion_point(field_get:google.pubsub.v1.StreamingPullResponse.received_messages)
+  return received_messages_.Get(index);
+}
+::google::pubsub::v1::ReceivedMessage* StreamingPullResponse::mutable_received_messages(int index) {
+  // @@protoc_insertion_point(field_mutable:google.pubsub.v1.StreamingPullResponse.received_messages)
+  return received_messages_.Mutable(index);
+}
+::google::pubsub::v1::ReceivedMessage* StreamingPullResponse::add_received_messages() {
+  // @@protoc_insertion_point(field_add:google.pubsub.v1.StreamingPullResponse.received_messages)
+  return received_messages_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::google::pubsub::v1::ReceivedMessage >*
+StreamingPullResponse::mutable_received_messages() {
+  // @@protoc_insertion_point(field_mutable_list:google.pubsub.v1.StreamingPullResponse.received_messages)
+  return &received_messages_;
+}
+const ::google::protobuf::RepeatedPtrField< ::google::pubsub::v1::ReceivedMessage >&
+StreamingPullResponse::received_messages() const {
+  // @@protoc_insertion_point(field_list:google.pubsub.v1.StreamingPullResponse.received_messages)
+  return received_messages_;
+}
+
+inline const StreamingPullResponse* StreamingPullResponse::internal_default_instance() {
+  return &StreamingPullResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

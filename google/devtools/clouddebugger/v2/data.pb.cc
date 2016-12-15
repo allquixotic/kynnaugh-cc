@@ -69,14 +69,13 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto()
   FormatMessage_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       FormatMessage_descriptor_,
-      FormatMessage::default_instance_,
+      FormatMessage::internal_default_instance(),
       FormatMessage_offsets_,
       -1,
       -1,
       -1,
       sizeof(FormatMessage),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FormatMessage, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FormatMessage, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FormatMessage, _internal_metadata_));
   StatusMessage_descriptor_ = file->message_type(1);
   static const int StatusMessage_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StatusMessage, is_error_),
@@ -86,14 +85,13 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto()
   StatusMessage_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StatusMessage_descriptor_,
-      StatusMessage::default_instance_,
+      StatusMessage::internal_default_instance(),
       StatusMessage_offsets_,
       -1,
       -1,
       -1,
       sizeof(StatusMessage),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StatusMessage, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StatusMessage, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StatusMessage, _internal_metadata_));
   StatusMessage_Reference_descriptor_ = StatusMessage_descriptor_->enum_type(0);
   SourceLocation_descriptor_ = file->message_type(2);
   static const int SourceLocation_offsets_[2] = {
@@ -103,14 +101,13 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto()
   SourceLocation_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SourceLocation_descriptor_,
-      SourceLocation::default_instance_,
+      SourceLocation::internal_default_instance(),
       SourceLocation_offsets_,
       -1,
       -1,
       -1,
       sizeof(SourceLocation),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceLocation, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceLocation, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceLocation, _internal_metadata_));
   Variable_descriptor_ = file->message_type(3);
   static const int Variable_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Variable, name_),
@@ -123,14 +120,13 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto()
   Variable_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Variable_descriptor_,
-      Variable::default_instance_,
+      Variable::internal_default_instance(),
       Variable_offsets_,
       -1,
       -1,
       -1,
       sizeof(Variable),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Variable, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Variable, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Variable, _internal_metadata_));
   StackFrame_descriptor_ = file->message_type(4);
   static const int StackFrame_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackFrame, function_),
@@ -141,14 +137,13 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto()
   StackFrame_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       StackFrame_descriptor_,
-      StackFrame::default_instance_,
+      StackFrame::internal_default_instance(),
       StackFrame_offsets_,
       -1,
       -1,
       -1,
       sizeof(StackFrame),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackFrame, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackFrame, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StackFrame, _internal_metadata_));
   Breakpoint_descriptor_ = file->message_type(5);
   static const int Breakpoint_offsets_[16] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Breakpoint, id_),
@@ -171,14 +166,13 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto()
   Breakpoint_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Breakpoint_descriptor_,
-      Breakpoint::default_instance_,
+      Breakpoint::internal_default_instance(),
       Breakpoint_offsets_,
       -1,
       -1,
       -1,
       sizeof(Breakpoint),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Breakpoint, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Breakpoint, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Breakpoint, _internal_metadata_));
   Breakpoint_LabelsEntry_descriptor_ = Breakpoint_descriptor_->nested_type(0);
   Breakpoint_Action_descriptor_ = Breakpoint_descriptor_->enum_type(0);
   Breakpoint_LogLevel_descriptor_ = Breakpoint_descriptor_->enum_type(1);
@@ -199,21 +193,20 @@ void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto()
   Debuggee_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Debuggee_descriptor_,
-      Debuggee::default_instance_,
+      Debuggee::internal_default_instance(),
       Debuggee_offsets_,
       -1,
       -1,
       -1,
       sizeof(Debuggee),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Debuggee, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Debuggee, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Debuggee, _internal_metadata_));
   Debuggee_LabelsEntry_descriptor_ = Debuggee_descriptor_->nested_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto);
 }
@@ -222,17 +215,17 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      FormatMessage_descriptor_, &FormatMessage::default_instance());
+      FormatMessage_descriptor_, FormatMessage::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StatusMessage_descriptor_, &StatusMessage::default_instance());
+      StatusMessage_descriptor_, StatusMessage::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SourceLocation_descriptor_, &SourceLocation::default_instance());
+      SourceLocation_descriptor_, SourceLocation::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Variable_descriptor_, &Variable::default_instance());
+      Variable_descriptor_, Variable::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      StackFrame_descriptor_, &StackFrame::default_instance());
+      StackFrame_descriptor_, StackFrame::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Breakpoint_descriptor_, &Breakpoint::default_instance());
+      Breakpoint_descriptor_, Breakpoint::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         Breakpoint_LabelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -243,7 +236,7 @@ void protobuf_RegisterTypes(const ::std::string&) {
             0>::CreateDefaultInstance(
                 Breakpoint_LabelsEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Debuggee_descriptor_, &Debuggee::default_instance());
+      Debuggee_descriptor_, Debuggee::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
         Debuggee_LabelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
@@ -258,33 +251,60 @@ void protobuf_RegisterTypes(const ::std::string&) {
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto() {
-  delete FormatMessage::default_instance_;
+  FormatMessage_default_instance_.Shutdown();
   delete FormatMessage_reflection_;
-  delete StatusMessage::default_instance_;
+  StatusMessage_default_instance_.Shutdown();
   delete StatusMessage_reflection_;
-  delete SourceLocation::default_instance_;
+  SourceLocation_default_instance_.Shutdown();
   delete SourceLocation_reflection_;
-  delete Variable::default_instance_;
+  Variable_default_instance_.Shutdown();
   delete Variable_reflection_;
-  delete StackFrame::default_instance_;
+  StackFrame_default_instance_.Shutdown();
   delete StackFrame_reflection_;
-  delete Breakpoint::default_instance_;
+  Breakpoint_default_instance_.Shutdown();
   delete Breakpoint_reflection_;
-  delete Debuggee::default_instance_;
+  Debuggee_default_instance_.Shutdown();
   delete Debuggee_reflection_;
 }
 
-void protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::devtools::source::v1::protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fwrappers_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::devtools::source::v1::protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fwrappers_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  FormatMessage_default_instance_.DefaultConstruct();
+  StatusMessage_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SourceLocation_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Variable_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  StackFrame_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Breakpoint_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Debuggee_default_instance_.DefaultConstruct();
+  FormatMessage_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StatusMessage_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SourceLocation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Variable_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StackFrame_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Breakpoint_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Debuggee_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_once_);
+void protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n+google/devtools/clouddebugger/v2/data."
     "proto\022 google.devtools.clouddebugger.v2\032"
@@ -349,33 +369,40 @@ void protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto() {
     "t\022F\n\006labels\030\013 \003(\01326.google.devtools.clou"
     "ddebugger.v2.Debuggee.LabelsEntry\032-\n\013Lab"
     "elsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001"
-    "B3\n$com.google.devtools.clouddebugger.v2"
-    "B\tDataProtoP\001b\006proto3", 2581);
+    "B\202\001\n$com.google.devtools.clouddebugger.v"
+    "2B\tDataProtoP\001ZMgoogle.golang.org/genpro"
+    "to/googleapis/devtools/clouddebugger/v2;"
+    "clouddebuggerb\006proto3", 2661);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/devtools/clouddebugger/v2/data.proto", &protobuf_RegisterTypes);
-  FormatMessage::default_instance_ = new FormatMessage();
-  StatusMessage::default_instance_ = new StatusMessage();
-  SourceLocation::default_instance_ = new SourceLocation();
-  Variable::default_instance_ = new Variable();
-  StackFrame::default_instance_ = new StackFrame();
-  Breakpoint::default_instance_ = new Breakpoint();
-  Debuggee::default_instance_ = new Debuggee();
-  FormatMessage::default_instance_->InitAsDefaultInstance();
-  StatusMessage::default_instance_->InitAsDefaultInstance();
-  SourceLocation::default_instance_->InitAsDefaultInstance();
-  Variable::default_instance_->InitAsDefaultInstance();
-  StackFrame::default_instance_->InitAsDefaultInstance();
-  Breakpoint::default_instance_->InitAsDefaultInstance();
-  Debuggee::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::devtools::source::v1::protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2fwrappers_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_once_);
+void protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_once_,
+                 &protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto {
   StaticDescriptorInitializer_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto() {
     protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   }
 } static_descriptor_initializer_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -386,27 +413,25 @@ const int FormatMessage::kParametersFieldNumber;
 
 FormatMessage::FormatMessage()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.FormatMessage)
 }
 
 void FormatMessage::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 FormatMessage::FormatMessage(const FormatMessage& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.FormatMessage)
 }
 
 void FormatMessage::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   format_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 FormatMessage::~FormatMessage() {
@@ -416,8 +441,6 @@ FormatMessage::~FormatMessage() {
 
 void FormatMessage::SharedDtor() {
   format_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void FormatMessage::SetCachedSize(int size) const {
@@ -431,11 +454,11 @@ const ::google::protobuf::Descriptor* FormatMessage::descriptor() {
 }
 
 const FormatMessage& FormatMessage::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
+  return *internal_default_instance();
 }
 
-FormatMessage* FormatMessage::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<FormatMessage> FormatMessage_default_instance_;
 
 FormatMessage* FormatMessage::New(::google::protobuf::Arena* arena) const {
   FormatMessage* n = new FormatMessage;
@@ -545,6 +568,7 @@ void FormatMessage::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* FormatMessage::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.FormatMessage)
   // optional string format = 1;
   if (this->format().size() > 0) {
@@ -571,9 +595,9 @@ void FormatMessage::SerializeWithCachedSizes(
   return target;
 }
 
-int FormatMessage::ByteSize() const {
+size_t FormatMessage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.FormatMessage)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string format = 1;
   if (this->format().size() > 0) {
@@ -583,24 +607,24 @@ int FormatMessage::ByteSize() const {
   }
 
   // repeated string parameters = 2;
-  total_size += 1 * this->parameters_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->parameters_size());
   for (int i = 0; i < this->parameters_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->parameters(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void FormatMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.FormatMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const FormatMessage* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const FormatMessage* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const FormatMessage>(
           &from);
   if (source == NULL) {
@@ -608,16 +632,22 @@ void FormatMessage::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.FormatMessage)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void FormatMessage::MergeFrom(const FormatMessage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.FormatMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  parameters_.MergeFrom(from.parameters_);
+}
+
+void FormatMessage::UnsafeMergeFrom(const FormatMessage& from) {
+  GOOGLE_DCHECK(&from != this);
+  parameters_.UnsafeMergeFrom(from.parameters_);
   if (from.format().size() > 0) {
 
     format_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.format_);
@@ -635,7 +665,7 @@ void FormatMessage::CopyFrom(const FormatMessage& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.FormatMessage)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool FormatMessage::IsInitialized() const {
@@ -669,37 +699,37 @@ void FormatMessage::InternalSwap(FormatMessage* other) {
 void FormatMessage::clear_format() {
   format_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& FormatMessage::format() const {
+const ::std::string& FormatMessage::format() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.FormatMessage.format)
   return format_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void FormatMessage::set_format(const ::std::string& value) {
+void FormatMessage::set_format(const ::std::string& value) {
   
   format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.FormatMessage.format)
 }
- void FormatMessage::set_format(const char* value) {
+void FormatMessage::set_format(const char* value) {
   
   format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.FormatMessage.format)
 }
- void FormatMessage::set_format(const char* value, size_t size) {
+void FormatMessage::set_format(const char* value, size_t size) {
   
   format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.FormatMessage.format)
 }
- ::std::string* FormatMessage::mutable_format() {
+::std::string* FormatMessage::mutable_format() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.FormatMessage.format)
   return format_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* FormatMessage::release_format() {
+::std::string* FormatMessage::release_format() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.FormatMessage.format)
   
   return format_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void FormatMessage::set_allocated_format(::std::string* format) {
+void FormatMessage::set_allocated_format(::std::string* format) {
   if (format != NULL) {
     
   } else {
@@ -716,54 +746,57 @@ int FormatMessage::parameters_size() const {
 void FormatMessage::clear_parameters() {
   parameters_.Clear();
 }
- const ::std::string& FormatMessage::parameters(int index) const {
+const ::std::string& FormatMessage::parameters(int index) const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.FormatMessage.parameters)
   return parameters_.Get(index);
 }
- ::std::string* FormatMessage::mutable_parameters(int index) {
+::std::string* FormatMessage::mutable_parameters(int index) {
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.FormatMessage.parameters)
   return parameters_.Mutable(index);
 }
- void FormatMessage::set_parameters(int index, const ::std::string& value) {
+void FormatMessage::set_parameters(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.FormatMessage.parameters)
   parameters_.Mutable(index)->assign(value);
 }
- void FormatMessage::set_parameters(int index, const char* value) {
+void FormatMessage::set_parameters(int index, const char* value) {
   parameters_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.FormatMessage.parameters)
 }
- void FormatMessage::set_parameters(int index, const char* value, size_t size) {
+void FormatMessage::set_parameters(int index, const char* value, size_t size) {
   parameters_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.FormatMessage.parameters)
 }
- ::std::string* FormatMessage::add_parameters() {
+::std::string* FormatMessage::add_parameters() {
   // @@protoc_insertion_point(field_add_mutable:google.devtools.clouddebugger.v2.FormatMessage.parameters)
   return parameters_.Add();
 }
- void FormatMessage::add_parameters(const ::std::string& value) {
+void FormatMessage::add_parameters(const ::std::string& value) {
   parameters_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.devtools.clouddebugger.v2.FormatMessage.parameters)
 }
- void FormatMessage::add_parameters(const char* value) {
+void FormatMessage::add_parameters(const char* value) {
   parameters_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.devtools.clouddebugger.v2.FormatMessage.parameters)
 }
- void FormatMessage::add_parameters(const char* value, size_t size) {
+void FormatMessage::add_parameters(const char* value, size_t size) {
   parameters_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.devtools.clouddebugger.v2.FormatMessage.parameters)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 FormatMessage::parameters() const {
   // @@protoc_insertion_point(field_list:google.devtools.clouddebugger.v2.FormatMessage.parameters)
   return parameters_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 FormatMessage::mutable_parameters() {
   // @@protoc_insertion_point(field_mutable_list:google.devtools.clouddebugger.v2.FormatMessage.parameters)
   return &parameters_;
 }
 
+inline const FormatMessage* FormatMessage::internal_default_instance() {
+  return &FormatMessage_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -773,7 +806,7 @@ const ::google::protobuf::EnumDescriptor* StatusMessage_Reference_descriptor() {
   return StatusMessage_Reference_descriptor_;
 }
 bool StatusMessage_Reference_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 3:
     case 4:
@@ -805,29 +838,29 @@ const int StatusMessage::kDescriptionFieldNumber;
 
 StatusMessage::StatusMessage()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.StatusMessage)
 }
 
 void StatusMessage::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  description_ = const_cast< ::google::devtools::clouddebugger::v2::FormatMessage*>(&::google::devtools::clouddebugger::v2::FormatMessage::default_instance());
+  description_ = const_cast< ::google::devtools::clouddebugger::v2::FormatMessage*>(
+      ::google::devtools::clouddebugger::v2::FormatMessage::internal_default_instance());
 }
 
 StatusMessage::StatusMessage(const StatusMessage& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.StatusMessage)
 }
 
 void StatusMessage::SharedCtor() {
-    _is_default_instance_ = false;
-  _cached_size_ = 0;
-  is_error_ = false;
-  refers_to_ = 0;
   description_ = NULL;
+  ::memset(&is_error_, 0, reinterpret_cast<char*>(&refers_to_) -
+    reinterpret_cast<char*>(&is_error_) + sizeof(refers_to_));
+  _cached_size_ = 0;
 }
 
 StatusMessage::~StatusMessage() {
@@ -836,7 +869,7 @@ StatusMessage::~StatusMessage() {
 }
 
 void StatusMessage::SharedDtor() {
-  if (this != default_instance_) {
+  if (this != &StatusMessage_default_instance_.get()) {
     delete description_;
   }
 }
@@ -852,11 +885,11 @@ const ::google::protobuf::Descriptor* StatusMessage::descriptor() {
 }
 
 const StatusMessage& StatusMessage::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
+  return *internal_default_instance();
 }
 
-StatusMessage* StatusMessage::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StatusMessage> StatusMessage_default_instance_;
 
 StatusMessage* StatusMessage::New(::google::protobuf::Arena* arena) const {
   StatusMessage* n = new StatusMessage;
@@ -880,7 +913,7 @@ void StatusMessage::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -906,10 +939,10 @@ bool StatusMessage::MergePartialFromCodedStream(
       // optional bool is_error = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_error_)));
-
         } else {
           goto handle_unusual;
         }
@@ -992,6 +1025,7 @@ void StatusMessage::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StatusMessage::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.StatusMessage)
   // optional bool is_error = 1;
   if (this->is_error() != 0) {
@@ -1015,9 +1049,9 @@ void StatusMessage::SerializeWithCachedSizes(
   return target;
 }
 
-int StatusMessage::ByteSize() const {
+size_t StatusMessage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.StatusMessage)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional bool is_error = 1;
   if (this->is_error() != 0) {
@@ -1037,18 +1071,17 @@ int StatusMessage::ByteSize() const {
         *this->description_);
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StatusMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.StatusMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StatusMessage* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StatusMessage* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StatusMessage>(
           &from);
   if (source == NULL) {
@@ -1056,15 +1089,21 @@ void StatusMessage::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.StatusMessage)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StatusMessage::MergeFrom(const StatusMessage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.StatusMessage)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StatusMessage::UnsafeMergeFrom(const StatusMessage& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.is_error() != 0) {
     set_is_error(from.is_error());
   }
@@ -1087,7 +1126,7 @@ void StatusMessage::CopyFrom(const StatusMessage& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.StatusMessage)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StatusMessage::IsInitialized() const {
@@ -1122,11 +1161,11 @@ void StatusMessage::InternalSwap(StatusMessage* other) {
 void StatusMessage::clear_is_error() {
   is_error_ = false;
 }
- bool StatusMessage::is_error() const {
+bool StatusMessage::is_error() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.StatusMessage.is_error)
   return is_error_;
 }
- void StatusMessage::set_is_error(bool value) {
+void StatusMessage::set_is_error(bool value) {
   
   is_error_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.StatusMessage.is_error)
@@ -1136,11 +1175,11 @@ void StatusMessage::clear_is_error() {
 void StatusMessage::clear_refers_to() {
   refers_to_ = 0;
 }
- ::google::devtools::clouddebugger::v2::StatusMessage_Reference StatusMessage::refers_to() const {
+::google::devtools::clouddebugger::v2::StatusMessage_Reference StatusMessage::refers_to() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.StatusMessage.refers_to)
   return static_cast< ::google::devtools::clouddebugger::v2::StatusMessage_Reference >(refers_to_);
 }
- void StatusMessage::set_refers_to(::google::devtools::clouddebugger::v2::StatusMessage_Reference value) {
+void StatusMessage::set_refers_to(::google::devtools::clouddebugger::v2::StatusMessage_Reference value) {
   
   refers_to_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.StatusMessage.refers_to)
@@ -1148,7 +1187,7 @@ void StatusMessage::clear_refers_to() {
 
 // optional .google.devtools.clouddebugger.v2.FormatMessage description = 3;
 bool StatusMessage::has_description() const {
-  return !_is_default_instance_ && description_ != NULL;
+  return this != internal_default_instance() && description_ != NULL;
 }
 void StatusMessage::clear_description() {
   if (GetArenaNoVirtual() == NULL && description_ != NULL) delete description_;
@@ -1156,7 +1195,8 @@ void StatusMessage::clear_description() {
 }
 const ::google::devtools::clouddebugger::v2::FormatMessage& StatusMessage::description() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.StatusMessage.description)
-  return description_ != NULL ? *description_ : *default_instance_->description_;
+  return description_ != NULL ? *description_
+                         : *::google::devtools::clouddebugger::v2::FormatMessage::internal_default_instance();
 }
 ::google::devtools::clouddebugger::v2::FormatMessage* StatusMessage::mutable_description() {
   
@@ -1184,6 +1224,9 @@ void StatusMessage::set_allocated_description(::google::devtools::clouddebugger:
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.StatusMessage.description)
 }
 
+inline const StatusMessage* StatusMessage::internal_default_instance() {
+  return &StatusMessage_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1195,28 +1238,26 @@ const int SourceLocation::kLineFieldNumber;
 
 SourceLocation::SourceLocation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.SourceLocation)
 }
 
 void SourceLocation::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SourceLocation::SourceLocation(const SourceLocation& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.SourceLocation)
 }
 
 void SourceLocation::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   line_ = 0;
+  _cached_size_ = 0;
 }
 
 SourceLocation::~SourceLocation() {
@@ -1226,8 +1267,6 @@ SourceLocation::~SourceLocation() {
 
 void SourceLocation::SharedDtor() {
   path_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void SourceLocation::SetCachedSize(int size) const {
@@ -1241,11 +1280,11 @@ const ::google::protobuf::Descriptor* SourceLocation::descriptor() {
 }
 
 const SourceLocation& SourceLocation::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
+  return *internal_default_instance();
 }
 
-SourceLocation* SourceLocation::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SourceLocation> SourceLocation_default_instance_;
 
 SourceLocation* SourceLocation::New(::google::protobuf::Arena* arena) const {
   SourceLocation* n = new SourceLocation;
@@ -1291,10 +1330,10 @@ bool SourceLocation::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_line:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &line_)));
-
         } else {
           goto handle_unusual;
         }
@@ -1346,6 +1385,7 @@ void SourceLocation::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SourceLocation::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.SourceLocation)
   // optional string path = 1;
   if (this->path().size() > 0) {
@@ -1367,9 +1407,9 @@ void SourceLocation::SerializeWithCachedSizes(
   return target;
 }
 
-int SourceLocation::ByteSize() const {
+size_t SourceLocation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.SourceLocation)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string path = 1;
   if (this->path().size() > 0) {
@@ -1385,18 +1425,17 @@ int SourceLocation::ByteSize() const {
         this->line());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SourceLocation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.SourceLocation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SourceLocation* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SourceLocation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SourceLocation>(
           &from);
   if (source == NULL) {
@@ -1404,15 +1443,21 @@ void SourceLocation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.SourceLocation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SourceLocation::MergeFrom(const SourceLocation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.SourceLocation)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SourceLocation::UnsafeMergeFrom(const SourceLocation& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.path().size() > 0) {
 
     path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.path_);
@@ -1433,7 +1478,7 @@ void SourceLocation::CopyFrom(const SourceLocation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.SourceLocation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SourceLocation::IsInitialized() const {
@@ -1467,37 +1512,37 @@ void SourceLocation::InternalSwap(SourceLocation* other) {
 void SourceLocation::clear_path() {
   path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SourceLocation::path() const {
+const ::std::string& SourceLocation::path() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.SourceLocation.path)
   return path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceLocation::set_path(const ::std::string& value) {
+void SourceLocation::set_path(const ::std::string& value) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.SourceLocation.path)
 }
- void SourceLocation::set_path(const char* value) {
+void SourceLocation::set_path(const char* value) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.SourceLocation.path)
 }
- void SourceLocation::set_path(const char* value, size_t size) {
+void SourceLocation::set_path(const char* value, size_t size) {
   
   path_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.SourceLocation.path)
 }
- ::std::string* SourceLocation::mutable_path() {
+::std::string* SourceLocation::mutable_path() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.SourceLocation.path)
   return path_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SourceLocation::release_path() {
+::std::string* SourceLocation::release_path() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.SourceLocation.path)
   
   return path_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SourceLocation::set_allocated_path(::std::string* path) {
+void SourceLocation::set_allocated_path(::std::string* path) {
   if (path != NULL) {
     
   } else {
@@ -1511,16 +1556,19 @@ void SourceLocation::clear_path() {
 void SourceLocation::clear_line() {
   line_ = 0;
 }
- ::google::protobuf::int32 SourceLocation::line() const {
+::google::protobuf::int32 SourceLocation::line() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.SourceLocation.line)
   return line_;
 }
- void SourceLocation::set_line(::google::protobuf::int32 value) {
+void SourceLocation::set_line(::google::protobuf::int32 value) {
   
   line_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.SourceLocation.line)
 }
 
+inline const SourceLocation* SourceLocation::internal_default_instance() {
+  return &SourceLocation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1536,33 +1584,33 @@ const int Variable::kStatusFieldNumber;
 
 Variable::Variable()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.Variable)
 }
 
 void Variable::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  var_table_index_ = const_cast< ::google::protobuf::Int32Value*>(&::google::protobuf::Int32Value::default_instance());
-  status_ = const_cast< ::google::devtools::clouddebugger::v2::StatusMessage*>(&::google::devtools::clouddebugger::v2::StatusMessage::default_instance());
+  var_table_index_ = const_cast< ::google::protobuf::Int32Value*>(
+      ::google::protobuf::Int32Value::internal_default_instance());
+  status_ = const_cast< ::google::devtools::clouddebugger::v2::StatusMessage*>(
+      ::google::devtools::clouddebugger::v2::StatusMessage::internal_default_instance());
 }
 
 Variable::Variable(const Variable& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.Variable)
 }
 
 void Variable::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   var_table_index_ = NULL;
   status_ = NULL;
+  _cached_size_ = 0;
 }
 
 Variable::~Variable() {
@@ -1574,7 +1622,7 @@ void Variable::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &Variable_default_instance_.get()) {
     delete var_table_index_;
     delete status_;
   }
@@ -1591,11 +1639,11 @@ const ::google::protobuf::Descriptor* Variable::descriptor() {
 }
 
 const Variable& Variable::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
+  return *internal_default_instance();
 }
 
-Variable* Variable::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Variable> Variable_default_instance_;
 
 Variable* Variable::New(::google::protobuf::Arena* arena) const {
   Variable* n = new Variable;
@@ -1797,6 +1845,7 @@ void Variable::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Variable::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.Variable)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1856,9 +1905,9 @@ void Variable::SerializeWithCachedSizes(
   return target;
 }
 
-int Variable::ByteSize() const {
+size_t Variable::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.Variable)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1896,25 +1945,27 @@ int Variable::ByteSize() const {
   }
 
   // repeated .google.devtools.clouddebugger.v2.Variable members = 3;
-  total_size += 1 * this->members_size();
-  for (int i = 0; i < this->members_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->members(i));
+  {
+    unsigned int count = this->members_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->members(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Variable::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.Variable)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Variable* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Variable* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Variable>(
           &from);
   if (source == NULL) {
@@ -1922,15 +1973,21 @@ void Variable::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.Variable)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Variable::MergeFrom(const Variable& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.Variable)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Variable::UnsafeMergeFrom(const Variable& from) {
+  GOOGLE_DCHECK(&from != this);
   members_.MergeFrom(from.members_);
   if (from.name().size() > 0) {
 
@@ -1963,7 +2020,7 @@ void Variable::CopyFrom(const Variable& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.Variable)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Variable::IsInitialized() const {
@@ -2001,37 +2058,37 @@ void Variable::InternalSwap(Variable* other) {
 void Variable::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Variable::name() const {
+const ::std::string& Variable::name() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Variable.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Variable::set_name(const ::std::string& value) {
+void Variable::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Variable.name)
 }
- void Variable::set_name(const char* value) {
+void Variable::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Variable.name)
 }
- void Variable::set_name(const char* value, size_t size) {
+void Variable::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Variable.name)
 }
- ::std::string* Variable::mutable_name() {
+::std::string* Variable::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Variable.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Variable::release_name() {
+::std::string* Variable::release_name() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Variable.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Variable::set_allocated_name(::std::string* name) {
+void Variable::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -2045,37 +2102,37 @@ void Variable::clear_name() {
 void Variable::clear_value() {
   value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Variable::value() const {
+const ::std::string& Variable::value() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Variable.value)
   return value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Variable::set_value(const ::std::string& value) {
+void Variable::set_value(const ::std::string& value) {
   
   value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Variable.value)
 }
- void Variable::set_value(const char* value) {
+void Variable::set_value(const char* value) {
   
   value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Variable.value)
 }
- void Variable::set_value(const char* value, size_t size) {
+void Variable::set_value(const char* value, size_t size) {
   
   value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Variable.value)
 }
- ::std::string* Variable::mutable_value() {
+::std::string* Variable::mutable_value() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Variable.value)
   return value_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Variable::release_value() {
+::std::string* Variable::release_value() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Variable.value)
   
   return value_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Variable::set_allocated_value(::std::string* value) {
+void Variable::set_allocated_value(::std::string* value) {
   if (value != NULL) {
     
   } else {
@@ -2089,37 +2146,37 @@ void Variable::clear_value() {
 void Variable::clear_type() {
   type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Variable::type() const {
+const ::std::string& Variable::type() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Variable.type)
   return type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Variable::set_type(const ::std::string& value) {
+void Variable::set_type(const ::std::string& value) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Variable.type)
 }
- void Variable::set_type(const char* value) {
+void Variable::set_type(const char* value) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Variable.type)
 }
- void Variable::set_type(const char* value, size_t size) {
+void Variable::set_type(const char* value, size_t size) {
   
   type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Variable.type)
 }
- ::std::string* Variable::mutable_type() {
+::std::string* Variable::mutable_type() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Variable.type)
   return type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Variable::release_type() {
+::std::string* Variable::release_type() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Variable.type)
   
   return type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Variable::set_allocated_type(::std::string* type) {
+void Variable::set_allocated_type(::std::string* type) {
   if (type != NULL) {
     
   } else {
@@ -2161,7 +2218,7 @@ Variable::members() const {
 
 // optional .google.protobuf.Int32Value var_table_index = 4;
 bool Variable::has_var_table_index() const {
-  return !_is_default_instance_ && var_table_index_ != NULL;
+  return this != internal_default_instance() && var_table_index_ != NULL;
 }
 void Variable::clear_var_table_index() {
   if (GetArenaNoVirtual() == NULL && var_table_index_ != NULL) delete var_table_index_;
@@ -2169,7 +2226,8 @@ void Variable::clear_var_table_index() {
 }
 const ::google::protobuf::Int32Value& Variable::var_table_index() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Variable.var_table_index)
-  return var_table_index_ != NULL ? *var_table_index_ : *default_instance_->var_table_index_;
+  return var_table_index_ != NULL ? *var_table_index_
+                         : *::google::protobuf::Int32Value::internal_default_instance();
 }
 ::google::protobuf::Int32Value* Variable::mutable_var_table_index() {
   
@@ -2204,7 +2262,7 @@ void Variable::set_allocated_var_table_index(::google::protobuf::Int32Value* var
 
 // optional .google.devtools.clouddebugger.v2.StatusMessage status = 5;
 bool Variable::has_status() const {
-  return !_is_default_instance_ && status_ != NULL;
+  return this != internal_default_instance() && status_ != NULL;
 }
 void Variable::clear_status() {
   if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
@@ -2212,7 +2270,8 @@ void Variable::clear_status() {
 }
 const ::google::devtools::clouddebugger::v2::StatusMessage& Variable::status() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Variable.status)
-  return status_ != NULL ? *status_ : *default_instance_->status_;
+  return status_ != NULL ? *status_
+                         : *::google::devtools::clouddebugger::v2::StatusMessage::internal_default_instance();
 }
 ::google::devtools::clouddebugger::v2::StatusMessage* Variable::mutable_status() {
   
@@ -2240,6 +2299,9 @@ void Variable::set_allocated_status(::google::devtools::clouddebugger::v2::Statu
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.Variable.status)
 }
 
+inline const Variable* Variable::internal_default_instance() {
+  return &Variable_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2253,29 +2315,28 @@ const int StackFrame::kLocalsFieldNumber;
 
 StackFrame::StackFrame()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.StackFrame)
 }
 
 void StackFrame::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  location_ = const_cast< ::google::devtools::clouddebugger::v2::SourceLocation*>(&::google::devtools::clouddebugger::v2::SourceLocation::default_instance());
+  location_ = const_cast< ::google::devtools::clouddebugger::v2::SourceLocation*>(
+      ::google::devtools::clouddebugger::v2::SourceLocation::internal_default_instance());
 }
 
 StackFrame::StackFrame(const StackFrame& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.StackFrame)
 }
 
 void StackFrame::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   function_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   location_ = NULL;
+  _cached_size_ = 0;
 }
 
 StackFrame::~StackFrame() {
@@ -2285,7 +2346,7 @@ StackFrame::~StackFrame() {
 
 void StackFrame::SharedDtor() {
   function_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &StackFrame_default_instance_.get()) {
     delete location_;
   }
 }
@@ -2301,11 +2362,11 @@ const ::google::protobuf::Descriptor* StackFrame::descriptor() {
 }
 
 const StackFrame& StackFrame::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
+  return *internal_default_instance();
 }
 
-StackFrame* StackFrame::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<StackFrame> StackFrame_default_instance_;
 
 StackFrame* StackFrame::New(::google::protobuf::Arena* arena) const {
   StackFrame* n = new StackFrame;
@@ -2453,6 +2514,7 @@ void StackFrame::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* StackFrame::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.StackFrame)
   // optional string function = 1;
   if (this->function().size() > 0) {
@@ -2490,9 +2552,9 @@ void StackFrame::SerializeWithCachedSizes(
   return target;
 }
 
-int StackFrame::ByteSize() const {
+size_t StackFrame::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.StackFrame)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string function = 1;
   if (this->function().size() > 0) {
@@ -2509,33 +2571,38 @@ int StackFrame::ByteSize() const {
   }
 
   // repeated .google.devtools.clouddebugger.v2.Variable arguments = 3;
-  total_size += 1 * this->arguments_size();
-  for (int i = 0; i < this->arguments_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->arguments(i));
+  {
+    unsigned int count = this->arguments_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->arguments(i));
+    }
   }
 
   // repeated .google.devtools.clouddebugger.v2.Variable locals = 4;
-  total_size += 1 * this->locals_size();
-  for (int i = 0; i < this->locals_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->locals(i));
+  {
+    unsigned int count = this->locals_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->locals(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void StackFrame::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.StackFrame)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const StackFrame* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const StackFrame* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StackFrame>(
           &from);
   if (source == NULL) {
@@ -2543,15 +2610,21 @@ void StackFrame::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.StackFrame)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StackFrame::MergeFrom(const StackFrame& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.StackFrame)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void StackFrame::UnsafeMergeFrom(const StackFrame& from) {
+  GOOGLE_DCHECK(&from != this);
   arguments_.MergeFrom(from.arguments_);
   locals_.MergeFrom(from.locals_);
   if (from.function().size() > 0) {
@@ -2574,7 +2647,7 @@ void StackFrame::CopyFrom(const StackFrame& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.StackFrame)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StackFrame::IsInitialized() const {
@@ -2610,37 +2683,37 @@ void StackFrame::InternalSwap(StackFrame* other) {
 void StackFrame::clear_function() {
   function_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& StackFrame::function() const {
+const ::std::string& StackFrame::function() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.StackFrame.function)
   return function_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackFrame::set_function(const ::std::string& value) {
+void StackFrame::set_function(const ::std::string& value) {
   
   function_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.StackFrame.function)
 }
- void StackFrame::set_function(const char* value) {
+void StackFrame::set_function(const char* value) {
   
   function_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.StackFrame.function)
 }
- void StackFrame::set_function(const char* value, size_t size) {
+void StackFrame::set_function(const char* value, size_t size) {
   
   function_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.StackFrame.function)
 }
- ::std::string* StackFrame::mutable_function() {
+::std::string* StackFrame::mutable_function() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.StackFrame.function)
   return function_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* StackFrame::release_function() {
+::std::string* StackFrame::release_function() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.StackFrame.function)
   
   return function_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void StackFrame::set_allocated_function(::std::string* function) {
+void StackFrame::set_allocated_function(::std::string* function) {
   if (function != NULL) {
     
   } else {
@@ -2652,7 +2725,7 @@ void StackFrame::clear_function() {
 
 // optional .google.devtools.clouddebugger.v2.SourceLocation location = 2;
 bool StackFrame::has_location() const {
-  return !_is_default_instance_ && location_ != NULL;
+  return this != internal_default_instance() && location_ != NULL;
 }
 void StackFrame::clear_location() {
   if (GetArenaNoVirtual() == NULL && location_ != NULL) delete location_;
@@ -2660,7 +2733,8 @@ void StackFrame::clear_location() {
 }
 const ::google::devtools::clouddebugger::v2::SourceLocation& StackFrame::location() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.StackFrame.location)
-  return location_ != NULL ? *location_ : *default_instance_->location_;
+  return location_ != NULL ? *location_
+                         : *::google::devtools::clouddebugger::v2::SourceLocation::internal_default_instance();
 }
 ::google::devtools::clouddebugger::v2::SourceLocation* StackFrame::mutable_location() {
   
@@ -2748,6 +2822,9 @@ StackFrame::locals() const {
   return locals_;
 }
 
+inline const StackFrame* StackFrame::internal_default_instance() {
+  return &StackFrame_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2757,7 +2834,7 @@ const ::google::protobuf::EnumDescriptor* Breakpoint_Action_descriptor() {
   return Breakpoint_Action_descriptor_;
 }
 bool Breakpoint_Action_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
       return true;
@@ -2778,7 +2855,7 @@ const ::google::protobuf::EnumDescriptor* Breakpoint_LogLevel_descriptor() {
   return Breakpoint_LogLevel_descriptor_;
 }
 bool Breakpoint_LogLevel_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -2817,45 +2894,46 @@ const int Breakpoint::kLabelsFieldNumber;
 
 Breakpoint::Breakpoint()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.Breakpoint)
 }
 
 void Breakpoint::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  location_ = const_cast< ::google::devtools::clouddebugger::v2::SourceLocation*>(&::google::devtools::clouddebugger::v2::SourceLocation::default_instance());
-  create_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  final_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
-  status_ = const_cast< ::google::devtools::clouddebugger::v2::StatusMessage*>(&::google::devtools::clouddebugger::v2::StatusMessage::default_instance());
+  location_ = const_cast< ::google::devtools::clouddebugger::v2::SourceLocation*>(
+      ::google::devtools::clouddebugger::v2::SourceLocation::internal_default_instance());
+  create_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  final_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  status_ = const_cast< ::google::devtools::clouddebugger::v2::StatusMessage*>(
+      ::google::devtools::clouddebugger::v2::StatusMessage::internal_default_instance());
 }
 
 Breakpoint::Breakpoint(const Breakpoint& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.Breakpoint)
 }
 
 void Breakpoint::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  action_ = 0;
-  location_ = NULL;
-  condition_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  log_message_format_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  log_level_ = 0;
-  is_final_state_ = false;
-  create_time_ = NULL;
-  final_time_ = NULL;
-  user_email_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  status_ = NULL;
   labels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   labels_.SetEntryDescriptor(
       &::google::devtools::clouddebugger::v2::Breakpoint_LabelsEntry_descriptor_);
+  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  condition_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  log_message_format_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  user_email_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  location_ = NULL;
+  create_time_ = NULL;
+  final_time_ = NULL;
+  status_ = NULL;
+  ::memset(&action_, 0, reinterpret_cast<char*>(&is_final_state_) -
+    reinterpret_cast<char*>(&action_) + sizeof(is_final_state_));
+  _cached_size_ = 0;
 }
 
 Breakpoint::~Breakpoint() {
@@ -2868,7 +2946,7 @@ void Breakpoint::SharedDtor() {
   condition_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   log_message_format_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   user_email_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &Breakpoint_default_instance_.get()) {
     delete location_;
     delete create_time_;
     delete final_time_;
@@ -2887,11 +2965,11 @@ const ::google::protobuf::Descriptor* Breakpoint::descriptor() {
 }
 
 const Breakpoint& Breakpoint::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
+  return *internal_default_instance();
 }
 
-Breakpoint* Breakpoint::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Breakpoint> Breakpoint_default_instance_;
 
 Breakpoint* Breakpoint::New(::google::protobuf::Arena* arena) const {
   Breakpoint* n = new Breakpoint;
@@ -2915,17 +2993,16 @@ void Breakpoint::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
-  ZR_(action_, log_level_);
+  ZR_(action_, is_final_state_);
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (GetArenaNoVirtual() == NULL && location_ != NULL) delete location_;
   location_ = NULL;
   condition_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   log_message_format_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  is_final_state_ = false;
   if (GetArenaNoVirtual() == NULL && create_time_ != NULL) delete create_time_;
   create_time_ = NULL;
   if (GetArenaNoVirtual() == NULL && final_time_ != NULL) delete final_time_;
@@ -3023,10 +3100,10 @@ bool Breakpoint::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_is_final_state:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_final_state_)));
-
         } else {
           goto handle_unusual;
         }
@@ -3410,6 +3487,7 @@ void Breakpoint::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Breakpoint::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.Breakpoint)
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -3592,9 +3670,9 @@ void Breakpoint::SerializeWithCachedSizes(
   return target;
 }
 
-int Breakpoint::ByteSize() const {
+size_t Breakpoint::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.Breakpoint)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -3670,38 +3748,49 @@ int Breakpoint::ByteSize() const {
   }
 
   // repeated string expressions = 4;
-  total_size += 1 * this->expressions_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->expressions_size());
   for (int i = 0; i < this->expressions_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->expressions(i));
   }
 
   // repeated .google.devtools.clouddebugger.v2.StackFrame stack_frames = 7;
-  total_size += 1 * this->stack_frames_size();
-  for (int i = 0; i < this->stack_frames_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->stack_frames(i));
+  {
+    unsigned int count = this->stack_frames_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->stack_frames(i));
+    }
   }
 
   // repeated .google.devtools.clouddebugger.v2.Variable evaluated_expressions = 8;
-  total_size += 1 * this->evaluated_expressions_size();
-  for (int i = 0; i < this->evaluated_expressions_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->evaluated_expressions(i));
+  {
+    unsigned int count = this->evaluated_expressions_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->evaluated_expressions(i));
+    }
   }
 
   // repeated .google.devtools.clouddebugger.v2.Variable variable_table = 9;
-  total_size += 1 * this->variable_table_size();
-  for (int i = 0; i < this->variable_table_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->variable_table(i));
+  {
+    unsigned int count = this->variable_table_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->variable_table(i));
+    }
   }
 
   // map<string, string> labels = 17;
-  total_size += 2 * this->labels_size();
+  total_size += 2 *
+      ::google::protobuf::internal::FromIntSize(this->labels_size());
   {
     ::google::protobuf::scoped_ptr<Breakpoint_LabelsEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -3713,18 +3802,17 @@ int Breakpoint::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Breakpoint::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.Breakpoint)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Breakpoint* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Breakpoint* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Breakpoint>(
           &from);
   if (source == NULL) {
@@ -3732,16 +3820,22 @@ void Breakpoint::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.Breakpoint)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Breakpoint::MergeFrom(const Breakpoint& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.Breakpoint)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  expressions_.MergeFrom(from.expressions_);
+}
+
+void Breakpoint::UnsafeMergeFrom(const Breakpoint& from) {
+  GOOGLE_DCHECK(&from != this);
+  expressions_.UnsafeMergeFrom(from.expressions_);
   stack_frames_.MergeFrom(from.stack_frames_);
   evaluated_expressions_.MergeFrom(from.evaluated_expressions_);
   variable_table_.MergeFrom(from.variable_table_);
@@ -3796,7 +3890,7 @@ void Breakpoint::CopyFrom(const Breakpoint& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.Breakpoint)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Breakpoint::IsInitialized() const {
@@ -3844,37 +3938,37 @@ void Breakpoint::InternalSwap(Breakpoint* other) {
 void Breakpoint::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Breakpoint::id() const {
+const ::std::string& Breakpoint::id() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.id)
   return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_id(const ::std::string& value) {
+void Breakpoint::set_id(const ::std::string& value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.id)
 }
- void Breakpoint::set_id(const char* value) {
+void Breakpoint::set_id(const char* value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Breakpoint.id)
 }
- void Breakpoint::set_id(const char* value, size_t size) {
+void Breakpoint::set_id(const char* value, size_t size) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Breakpoint.id)
 }
- ::std::string* Breakpoint::mutable_id() {
+::std::string* Breakpoint::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Breakpoint.id)
   return id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Breakpoint::release_id() {
+::std::string* Breakpoint::release_id() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Breakpoint.id)
   
   return id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_allocated_id(::std::string* id) {
+void Breakpoint::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -3888,11 +3982,11 @@ void Breakpoint::clear_id() {
 void Breakpoint::clear_action() {
   action_ = 0;
 }
- ::google::devtools::clouddebugger::v2::Breakpoint_Action Breakpoint::action() const {
+::google::devtools::clouddebugger::v2::Breakpoint_Action Breakpoint::action() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.action)
   return static_cast< ::google::devtools::clouddebugger::v2::Breakpoint_Action >(action_);
 }
- void Breakpoint::set_action(::google::devtools::clouddebugger::v2::Breakpoint_Action value) {
+void Breakpoint::set_action(::google::devtools::clouddebugger::v2::Breakpoint_Action value) {
   
   action_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.action)
@@ -3900,7 +3994,7 @@ void Breakpoint::clear_action() {
 
 // optional .google.devtools.clouddebugger.v2.SourceLocation location = 2;
 bool Breakpoint::has_location() const {
-  return !_is_default_instance_ && location_ != NULL;
+  return this != internal_default_instance() && location_ != NULL;
 }
 void Breakpoint::clear_location() {
   if (GetArenaNoVirtual() == NULL && location_ != NULL) delete location_;
@@ -3908,7 +4002,8 @@ void Breakpoint::clear_location() {
 }
 const ::google::devtools::clouddebugger::v2::SourceLocation& Breakpoint::location() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.location)
-  return location_ != NULL ? *location_ : *default_instance_->location_;
+  return location_ != NULL ? *location_
+                         : *::google::devtools::clouddebugger::v2::SourceLocation::internal_default_instance();
 }
 ::google::devtools::clouddebugger::v2::SourceLocation* Breakpoint::mutable_location() {
   
@@ -3940,37 +4035,37 @@ void Breakpoint::set_allocated_location(::google::devtools::clouddebugger::v2::S
 void Breakpoint::clear_condition() {
   condition_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Breakpoint::condition() const {
+const ::std::string& Breakpoint::condition() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.condition)
   return condition_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_condition(const ::std::string& value) {
+void Breakpoint::set_condition(const ::std::string& value) {
   
   condition_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.condition)
 }
- void Breakpoint::set_condition(const char* value) {
+void Breakpoint::set_condition(const char* value) {
   
   condition_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Breakpoint.condition)
 }
- void Breakpoint::set_condition(const char* value, size_t size) {
+void Breakpoint::set_condition(const char* value, size_t size) {
   
   condition_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Breakpoint.condition)
 }
- ::std::string* Breakpoint::mutable_condition() {
+::std::string* Breakpoint::mutable_condition() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Breakpoint.condition)
   return condition_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Breakpoint::release_condition() {
+::std::string* Breakpoint::release_condition() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Breakpoint.condition)
   
   return condition_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_allocated_condition(::std::string* condition) {
+void Breakpoint::set_allocated_condition(::std::string* condition) {
   if (condition != NULL) {
     
   } else {
@@ -3987,49 +4082,49 @@ int Breakpoint::expressions_size() const {
 void Breakpoint::clear_expressions() {
   expressions_.Clear();
 }
- const ::std::string& Breakpoint::expressions(int index) const {
+const ::std::string& Breakpoint::expressions(int index) const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.expressions)
   return expressions_.Get(index);
 }
- ::std::string* Breakpoint::mutable_expressions(int index) {
+::std::string* Breakpoint::mutable_expressions(int index) {
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Breakpoint.expressions)
   return expressions_.Mutable(index);
 }
- void Breakpoint::set_expressions(int index, const ::std::string& value) {
+void Breakpoint::set_expressions(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.expressions)
   expressions_.Mutable(index)->assign(value);
 }
- void Breakpoint::set_expressions(int index, const char* value) {
+void Breakpoint::set_expressions(int index, const char* value) {
   expressions_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Breakpoint.expressions)
 }
- void Breakpoint::set_expressions(int index, const char* value, size_t size) {
+void Breakpoint::set_expressions(int index, const char* value, size_t size) {
   expressions_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Breakpoint.expressions)
 }
- ::std::string* Breakpoint::add_expressions() {
+::std::string* Breakpoint::add_expressions() {
   // @@protoc_insertion_point(field_add_mutable:google.devtools.clouddebugger.v2.Breakpoint.expressions)
   return expressions_.Add();
 }
- void Breakpoint::add_expressions(const ::std::string& value) {
+void Breakpoint::add_expressions(const ::std::string& value) {
   expressions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.devtools.clouddebugger.v2.Breakpoint.expressions)
 }
- void Breakpoint::add_expressions(const char* value) {
+void Breakpoint::add_expressions(const char* value) {
   expressions_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.devtools.clouddebugger.v2.Breakpoint.expressions)
 }
- void Breakpoint::add_expressions(const char* value, size_t size) {
+void Breakpoint::add_expressions(const char* value, size_t size) {
   expressions_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.devtools.clouddebugger.v2.Breakpoint.expressions)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 Breakpoint::expressions() const {
   // @@protoc_insertion_point(field_list:google.devtools.clouddebugger.v2.Breakpoint.expressions)
   return expressions_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 Breakpoint::mutable_expressions() {
   // @@protoc_insertion_point(field_mutable_list:google.devtools.clouddebugger.v2.Breakpoint.expressions)
   return &expressions_;
@@ -4039,37 +4134,37 @@ Breakpoint::mutable_expressions() {
 void Breakpoint::clear_log_message_format() {
   log_message_format_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Breakpoint::log_message_format() const {
+const ::std::string& Breakpoint::log_message_format() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.log_message_format)
   return log_message_format_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_log_message_format(const ::std::string& value) {
+void Breakpoint::set_log_message_format(const ::std::string& value) {
   
   log_message_format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.log_message_format)
 }
- void Breakpoint::set_log_message_format(const char* value) {
+void Breakpoint::set_log_message_format(const char* value) {
   
   log_message_format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Breakpoint.log_message_format)
 }
- void Breakpoint::set_log_message_format(const char* value, size_t size) {
+void Breakpoint::set_log_message_format(const char* value, size_t size) {
   
   log_message_format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Breakpoint.log_message_format)
 }
- ::std::string* Breakpoint::mutable_log_message_format() {
+::std::string* Breakpoint::mutable_log_message_format() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Breakpoint.log_message_format)
   return log_message_format_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Breakpoint::release_log_message_format() {
+::std::string* Breakpoint::release_log_message_format() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Breakpoint.log_message_format)
   
   return log_message_format_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_allocated_log_message_format(::std::string* log_message_format) {
+void Breakpoint::set_allocated_log_message_format(::std::string* log_message_format) {
   if (log_message_format != NULL) {
     
   } else {
@@ -4083,11 +4178,11 @@ void Breakpoint::clear_log_message_format() {
 void Breakpoint::clear_log_level() {
   log_level_ = 0;
 }
- ::google::devtools::clouddebugger::v2::Breakpoint_LogLevel Breakpoint::log_level() const {
+::google::devtools::clouddebugger::v2::Breakpoint_LogLevel Breakpoint::log_level() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.log_level)
   return static_cast< ::google::devtools::clouddebugger::v2::Breakpoint_LogLevel >(log_level_);
 }
- void Breakpoint::set_log_level(::google::devtools::clouddebugger::v2::Breakpoint_LogLevel value) {
+void Breakpoint::set_log_level(::google::devtools::clouddebugger::v2::Breakpoint_LogLevel value) {
   
   log_level_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.log_level)
@@ -4097,11 +4192,11 @@ void Breakpoint::clear_log_level() {
 void Breakpoint::clear_is_final_state() {
   is_final_state_ = false;
 }
- bool Breakpoint::is_final_state() const {
+bool Breakpoint::is_final_state() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.is_final_state)
   return is_final_state_;
 }
- void Breakpoint::set_is_final_state(bool value) {
+void Breakpoint::set_is_final_state(bool value) {
   
   is_final_state_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.is_final_state)
@@ -4109,7 +4204,7 @@ void Breakpoint::clear_is_final_state() {
 
 // optional .google.protobuf.Timestamp create_time = 11;
 bool Breakpoint::has_create_time() const {
-  return !_is_default_instance_ && create_time_ != NULL;
+  return this != internal_default_instance() && create_time_ != NULL;
 }
 void Breakpoint::clear_create_time() {
   if (GetArenaNoVirtual() == NULL && create_time_ != NULL) delete create_time_;
@@ -4117,7 +4212,8 @@ void Breakpoint::clear_create_time() {
 }
 const ::google::protobuf::Timestamp& Breakpoint::create_time() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.create_time)
-  return create_time_ != NULL ? *create_time_ : *default_instance_->create_time_;
+  return create_time_ != NULL ? *create_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Breakpoint::mutable_create_time() {
   
@@ -4152,7 +4248,7 @@ void Breakpoint::set_allocated_create_time(::google::protobuf::Timestamp* create
 
 // optional .google.protobuf.Timestamp final_time = 12;
 bool Breakpoint::has_final_time() const {
-  return !_is_default_instance_ && final_time_ != NULL;
+  return this != internal_default_instance() && final_time_ != NULL;
 }
 void Breakpoint::clear_final_time() {
   if (GetArenaNoVirtual() == NULL && final_time_ != NULL) delete final_time_;
@@ -4160,7 +4256,8 @@ void Breakpoint::clear_final_time() {
 }
 const ::google::protobuf::Timestamp& Breakpoint::final_time() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.final_time)
-  return final_time_ != NULL ? *final_time_ : *default_instance_->final_time_;
+  return final_time_ != NULL ? *final_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Breakpoint::mutable_final_time() {
   
@@ -4197,37 +4294,37 @@ void Breakpoint::set_allocated_final_time(::google::protobuf::Timestamp* final_t
 void Breakpoint::clear_user_email() {
   user_email_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Breakpoint::user_email() const {
+const ::std::string& Breakpoint::user_email() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.user_email)
   return user_email_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_user_email(const ::std::string& value) {
+void Breakpoint::set_user_email(const ::std::string& value) {
   
   user_email_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Breakpoint.user_email)
 }
- void Breakpoint::set_user_email(const char* value) {
+void Breakpoint::set_user_email(const char* value) {
   
   user_email_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Breakpoint.user_email)
 }
- void Breakpoint::set_user_email(const char* value, size_t size) {
+void Breakpoint::set_user_email(const char* value, size_t size) {
   
   user_email_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Breakpoint.user_email)
 }
- ::std::string* Breakpoint::mutable_user_email() {
+::std::string* Breakpoint::mutable_user_email() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Breakpoint.user_email)
   return user_email_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Breakpoint::release_user_email() {
+::std::string* Breakpoint::release_user_email() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Breakpoint.user_email)
   
   return user_email_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Breakpoint::set_allocated_user_email(::std::string* user_email) {
+void Breakpoint::set_allocated_user_email(::std::string* user_email) {
   if (user_email != NULL) {
     
   } else {
@@ -4239,7 +4336,7 @@ void Breakpoint::clear_user_email() {
 
 // optional .google.devtools.clouddebugger.v2.StatusMessage status = 10;
 bool Breakpoint::has_status() const {
-  return !_is_default_instance_ && status_ != NULL;
+  return this != internal_default_instance() && status_ != NULL;
 }
 void Breakpoint::clear_status() {
   if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
@@ -4247,7 +4344,8 @@ void Breakpoint::clear_status() {
 }
 const ::google::devtools::clouddebugger::v2::StatusMessage& Breakpoint::status() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Breakpoint.status)
-  return status_ != NULL ? *status_ : *default_instance_->status_;
+  return status_ != NULL ? *status_
+                         : *::google::devtools::clouddebugger::v2::StatusMessage::internal_default_instance();
 }
 ::google::devtools::clouddebugger::v2::StatusMessage* Breakpoint::mutable_status() {
   
@@ -4383,6 +4481,9 @@ Breakpoint::mutable_labels() {
   return labels_.MutableMap();
 }
 
+inline const Breakpoint* Breakpoint::internal_default_instance() {
+  return &Breakpoint_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4403,39 +4504,38 @@ const int Debuggee::kLabelsFieldNumber;
 
 Debuggee::Debuggee()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.Debuggee)
 }
 
 void Debuggee::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  status_ = const_cast< ::google::devtools::clouddebugger::v2::StatusMessage*>(&::google::devtools::clouddebugger::v2::StatusMessage::default_instance());
+  status_ = const_cast< ::google::devtools::clouddebugger::v2::StatusMessage*>(
+      ::google::devtools::clouddebugger::v2::StatusMessage::internal_default_instance());
 }
 
 Debuggee::Debuggee(const Debuggee& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.Debuggee)
 }
 
 void Debuggee::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  project_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  uniquifier_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  is_inactive_ = false;
-  agent_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  is_disabled_ = false;
-  status_ = NULL;
   labels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   labels_.SetEntryDescriptor(
       &::google::devtools::clouddebugger::v2::Debuggee_LabelsEntry_descriptor_);
+  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  project_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  uniquifier_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  agent_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  status_ = NULL;
+  ::memset(&is_inactive_, 0, reinterpret_cast<char*>(&is_disabled_) -
+    reinterpret_cast<char*>(&is_inactive_) + sizeof(is_disabled_));
+  _cached_size_ = 0;
 }
 
 Debuggee::~Debuggee() {
@@ -4449,7 +4549,7 @@ void Debuggee::SharedDtor() {
   uniquifier_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   agent_version_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &Debuggee_default_instance_.get()) {
     delete status_;
   }
 }
@@ -4465,11 +4565,11 @@ const ::google::protobuf::Descriptor* Debuggee::descriptor() {
 }
 
 const Debuggee& Debuggee::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
+  return *internal_default_instance();
 }
 
-Debuggee* Debuggee::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Debuggee> Debuggee_default_instance_;
 
 Debuggee* Debuggee::New(::google::protobuf::Arena* arena) const {
   Debuggee* n = new Debuggee;
@@ -4493,7 +4593,7 @@ void Debuggee::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -4595,10 +4695,10 @@ bool Debuggee::MergePartialFromCodedStream(
       case 5: {
         if (tag == 40) {
          parse_is_inactive:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_inactive_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4627,10 +4727,10 @@ bool Debuggee::MergePartialFromCodedStream(
       case 7: {
         if (tag == 56) {
          parse_is_disabled:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_disabled_)));
-
         } else {
           goto handle_unusual;
         }
@@ -4874,6 +4974,7 @@ void Debuggee::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Debuggee::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.Debuggee)
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -5022,9 +5123,9 @@ void Debuggee::SerializeWithCachedSizes(
   return target;
 }
 
-int Debuggee::ByteSize() const {
+size_t Debuggee::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.Debuggee)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string id = 1;
   if (this->id().size() > 0) {
@@ -5079,23 +5180,30 @@ int Debuggee::ByteSize() const {
   }
 
   // repeated .google.devtools.source.v1.SourceContext source_contexts = 9;
-  total_size += 1 * this->source_contexts_size();
-  for (int i = 0; i < this->source_contexts_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->source_contexts(i));
+  {
+    unsigned int count = this->source_contexts_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->source_contexts(i));
+    }
   }
 
   // repeated .google.devtools.source.v1.ExtendedSourceContext ext_source_contexts = 13;
-  total_size += 1 * this->ext_source_contexts_size();
-  for (int i = 0; i < this->ext_source_contexts_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->ext_source_contexts(i));
+  {
+    unsigned int count = this->ext_source_contexts_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->ext_source_contexts(i));
+    }
   }
 
   // map<string, string> labels = 11;
-  total_size += 1 * this->labels_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->labels_size());
   {
     ::google::protobuf::scoped_ptr<Debuggee_LabelsEntry> entry;
     for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
@@ -5107,18 +5215,17 @@ int Debuggee::ByteSize() const {
     }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Debuggee::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.Debuggee)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Debuggee* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Debuggee* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Debuggee>(
           &from);
   if (source == NULL) {
@@ -5126,15 +5233,21 @@ void Debuggee::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.Debuggee)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Debuggee::MergeFrom(const Debuggee& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.Debuggee)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Debuggee::UnsafeMergeFrom(const Debuggee& from) {
+  GOOGLE_DCHECK(&from != this);
   source_contexts_.MergeFrom(from.source_contexts_);
   ext_source_contexts_.MergeFrom(from.ext_source_contexts_);
   labels_.MergeFrom(from.labels_);
@@ -5180,7 +5293,7 @@ void Debuggee::CopyFrom(const Debuggee& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.Debuggee)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Debuggee::IsInitialized() const {
@@ -5223,37 +5336,37 @@ void Debuggee::InternalSwap(Debuggee* other) {
 void Debuggee::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Debuggee::id() const {
+const ::std::string& Debuggee::id() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.id)
   return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_id(const ::std::string& value) {
+void Debuggee::set_id(const ::std::string& value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Debuggee.id)
 }
- void Debuggee::set_id(const char* value) {
+void Debuggee::set_id(const char* value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Debuggee.id)
 }
- void Debuggee::set_id(const char* value, size_t size) {
+void Debuggee::set_id(const char* value, size_t size) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Debuggee.id)
 }
- ::std::string* Debuggee::mutable_id() {
+::std::string* Debuggee::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Debuggee.id)
   return id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Debuggee::release_id() {
+::std::string* Debuggee::release_id() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Debuggee.id)
   
   return id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_allocated_id(::std::string* id) {
+void Debuggee::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -5267,37 +5380,37 @@ void Debuggee::clear_id() {
 void Debuggee::clear_project() {
   project_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Debuggee::project() const {
+const ::std::string& Debuggee::project() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.project)
   return project_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_project(const ::std::string& value) {
+void Debuggee::set_project(const ::std::string& value) {
   
   project_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Debuggee.project)
 }
- void Debuggee::set_project(const char* value) {
+void Debuggee::set_project(const char* value) {
   
   project_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Debuggee.project)
 }
- void Debuggee::set_project(const char* value, size_t size) {
+void Debuggee::set_project(const char* value, size_t size) {
   
   project_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Debuggee.project)
 }
- ::std::string* Debuggee::mutable_project() {
+::std::string* Debuggee::mutable_project() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Debuggee.project)
   return project_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Debuggee::release_project() {
+::std::string* Debuggee::release_project() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Debuggee.project)
   
   return project_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_allocated_project(::std::string* project) {
+void Debuggee::set_allocated_project(::std::string* project) {
   if (project != NULL) {
     
   } else {
@@ -5311,37 +5424,37 @@ void Debuggee::clear_project() {
 void Debuggee::clear_uniquifier() {
   uniquifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Debuggee::uniquifier() const {
+const ::std::string& Debuggee::uniquifier() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.uniquifier)
   return uniquifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_uniquifier(const ::std::string& value) {
+void Debuggee::set_uniquifier(const ::std::string& value) {
   
   uniquifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Debuggee.uniquifier)
 }
- void Debuggee::set_uniquifier(const char* value) {
+void Debuggee::set_uniquifier(const char* value) {
   
   uniquifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Debuggee.uniquifier)
 }
- void Debuggee::set_uniquifier(const char* value, size_t size) {
+void Debuggee::set_uniquifier(const char* value, size_t size) {
   
   uniquifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Debuggee.uniquifier)
 }
- ::std::string* Debuggee::mutable_uniquifier() {
+::std::string* Debuggee::mutable_uniquifier() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Debuggee.uniquifier)
   return uniquifier_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Debuggee::release_uniquifier() {
+::std::string* Debuggee::release_uniquifier() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Debuggee.uniquifier)
   
   return uniquifier_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_allocated_uniquifier(::std::string* uniquifier) {
+void Debuggee::set_allocated_uniquifier(::std::string* uniquifier) {
   if (uniquifier != NULL) {
     
   } else {
@@ -5355,37 +5468,37 @@ void Debuggee::clear_uniquifier() {
 void Debuggee::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Debuggee::description() const {
+const ::std::string& Debuggee::description() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.description)
   return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_description(const ::std::string& value) {
+void Debuggee::set_description(const ::std::string& value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Debuggee.description)
 }
- void Debuggee::set_description(const char* value) {
+void Debuggee::set_description(const char* value) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Debuggee.description)
 }
- void Debuggee::set_description(const char* value, size_t size) {
+void Debuggee::set_description(const char* value, size_t size) {
   
   description_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Debuggee.description)
 }
- ::std::string* Debuggee::mutable_description() {
+::std::string* Debuggee::mutable_description() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Debuggee.description)
   return description_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Debuggee::release_description() {
+::std::string* Debuggee::release_description() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Debuggee.description)
   
   return description_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_allocated_description(::std::string* description) {
+void Debuggee::set_allocated_description(::std::string* description) {
   if (description != NULL) {
     
   } else {
@@ -5399,11 +5512,11 @@ void Debuggee::clear_description() {
 void Debuggee::clear_is_inactive() {
   is_inactive_ = false;
 }
- bool Debuggee::is_inactive() const {
+bool Debuggee::is_inactive() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.is_inactive)
   return is_inactive_;
 }
- void Debuggee::set_is_inactive(bool value) {
+void Debuggee::set_is_inactive(bool value) {
   
   is_inactive_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Debuggee.is_inactive)
@@ -5413,37 +5526,37 @@ void Debuggee::clear_is_inactive() {
 void Debuggee::clear_agent_version() {
   agent_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Debuggee::agent_version() const {
+const ::std::string& Debuggee::agent_version() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.agent_version)
   return agent_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_agent_version(const ::std::string& value) {
+void Debuggee::set_agent_version(const ::std::string& value) {
   
   agent_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Debuggee.agent_version)
 }
- void Debuggee::set_agent_version(const char* value) {
+void Debuggee::set_agent_version(const char* value) {
   
   agent_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.devtools.clouddebugger.v2.Debuggee.agent_version)
 }
- void Debuggee::set_agent_version(const char* value, size_t size) {
+void Debuggee::set_agent_version(const char* value, size_t size) {
   
   agent_version_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.devtools.clouddebugger.v2.Debuggee.agent_version)
 }
- ::std::string* Debuggee::mutable_agent_version() {
+::std::string* Debuggee::mutable_agent_version() {
   
   // @@protoc_insertion_point(field_mutable:google.devtools.clouddebugger.v2.Debuggee.agent_version)
   return agent_version_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Debuggee::release_agent_version() {
+::std::string* Debuggee::release_agent_version() {
   // @@protoc_insertion_point(field_release:google.devtools.clouddebugger.v2.Debuggee.agent_version)
   
   return agent_version_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Debuggee::set_allocated_agent_version(::std::string* agent_version) {
+void Debuggee::set_allocated_agent_version(::std::string* agent_version) {
   if (agent_version != NULL) {
     
   } else {
@@ -5457,11 +5570,11 @@ void Debuggee::clear_agent_version() {
 void Debuggee::clear_is_disabled() {
   is_disabled_ = false;
 }
- bool Debuggee::is_disabled() const {
+bool Debuggee::is_disabled() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.is_disabled)
   return is_disabled_;
 }
- void Debuggee::set_is_disabled(bool value) {
+void Debuggee::set_is_disabled(bool value) {
   
   is_disabled_ = value;
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.Debuggee.is_disabled)
@@ -5469,7 +5582,7 @@ void Debuggee::clear_is_disabled() {
 
 // optional .google.devtools.clouddebugger.v2.StatusMessage status = 8;
 bool Debuggee::has_status() const {
-  return !_is_default_instance_ && status_ != NULL;
+  return this != internal_default_instance() && status_ != NULL;
 }
 void Debuggee::clear_status() {
   if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
@@ -5477,7 +5590,8 @@ void Debuggee::clear_status() {
 }
 const ::google::devtools::clouddebugger::v2::StatusMessage& Debuggee::status() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.Debuggee.status)
-  return status_ != NULL ? *status_ : *default_instance_->status_;
+  return status_ != NULL ? *status_
+                         : *::google::devtools::clouddebugger::v2::StatusMessage::internal_default_instance();
 }
 ::google::devtools::clouddebugger::v2::StatusMessage* Debuggee::mutable_status() {
   
@@ -5583,6 +5697,9 @@ Debuggee::mutable_labels() {
   return labels_.MutableMap();
 }
 
+inline const Debuggee* Debuggee::internal_default_instance() {
+  return &Debuggee_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

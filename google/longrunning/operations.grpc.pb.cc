@@ -17,10 +17,10 @@ namespace google {
 namespace longrunning {
 
 static const char* Operations_method_names[] = {
-  "/google.longrunning.Operations/GetOperation",
   "/google.longrunning.Operations/ListOperations",
-  "/google.longrunning.Operations/CancelOperation",
+  "/google.longrunning.Operations/GetOperation",
   "/google.longrunning.Operations/DeleteOperation",
+  "/google.longrunning.Operations/CancelOperation",
 };
 
 std::unique_ptr< Operations::Stub> Operations::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -29,19 +29,11 @@ std::unique_ptr< Operations::Stub> Operations::NewStub(const std::shared_ptr< ::
 }
 
 Operations::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel)
-  : channel_(channel), rpcmethod_GetOperation_(Operations_method_names[0], ::grpc::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_ListOperations_(Operations_method_names[1], ::grpc::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_CancelOperation_(Operations_method_names[2], ::grpc::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_DeleteOperation_(Operations_method_names[3], ::grpc::RpcMethod::NORMAL_RPC, channel)
+  : channel_(channel), rpcmethod_ListOperations_(Operations_method_names[0], ::grpc::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_GetOperation_(Operations_method_names[1], ::grpc::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_DeleteOperation_(Operations_method_names[2], ::grpc::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_CancelOperation_(Operations_method_names[3], ::grpc::RpcMethod::NORMAL_RPC, channel)
   {}
-
-::grpc::Status Operations::Stub::GetOperation(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::google::longrunning::Operation* response) {
-  return ::grpc::BlockingUnaryCall(channel_.get(), rpcmethod_GetOperation_, context, request, response);
-}
-
-::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* Operations::Stub::AsyncGetOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::grpc::CompletionQueue* cq) {
-  return new ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>(channel_.get(), cq, rpcmethod_GetOperation_, context, request);
-}
 
 ::grpc::Status Operations::Stub::ListOperations(::grpc::ClientContext* context, const ::google::longrunning::ListOperationsRequest& request, ::google::longrunning::ListOperationsResponse* response) {
   return ::grpc::BlockingUnaryCall(channel_.get(), rpcmethod_ListOperations_, context, request, response);
@@ -51,12 +43,12 @@ Operations::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel
   return new ::grpc::ClientAsyncResponseReader< ::google::longrunning::ListOperationsResponse>(channel_.get(), cq, rpcmethod_ListOperations_, context, request);
 }
 
-::grpc::Status Operations::Stub::CancelOperation(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::google::protobuf::Empty* response) {
-  return ::grpc::BlockingUnaryCall(channel_.get(), rpcmethod_CancelOperation_, context, request, response);
+::grpc::Status Operations::Stub::GetOperation(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::google::longrunning::Operation* response) {
+  return ::grpc::BlockingUnaryCall(channel_.get(), rpcmethod_GetOperation_, context, request, response);
 }
 
-::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* Operations::Stub::AsyncCancelOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::grpc::CompletionQueue* cq) {
-  return new ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>(channel_.get(), cq, rpcmethod_CancelOperation_, context, request);
+::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* Operations::Stub::AsyncGetOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::grpc::CompletionQueue* cq) {
+  return new ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>(channel_.get(), cq, rpcmethod_GetOperation_, context, request);
 }
 
 ::grpc::Status Operations::Stub::DeleteOperation(::grpc::ClientContext* context, const ::google::longrunning::DeleteOperationRequest& request, ::google::protobuf::Empty* response) {
@@ -67,38 +59,39 @@ Operations::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel
   return new ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>(channel_.get(), cq, rpcmethod_DeleteOperation_, context, request);
 }
 
+::grpc::Status Operations::Stub::CancelOperation(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::google::protobuf::Empty* response) {
+  return ::grpc::BlockingUnaryCall(channel_.get(), rpcmethod_CancelOperation_, context, request, response);
+}
+
+::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* Operations::Stub::AsyncCancelOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::grpc::CompletionQueue* cq) {
+  return new ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>(channel_.get(), cq, rpcmethod_CancelOperation_, context, request);
+}
+
 Operations::Service::Service() {
   (void)Operations_method_names;
   AddMethod(new ::grpc::RpcServiceMethod(
       Operations_method_names[0],
       ::grpc::RpcMethod::NORMAL_RPC,
-      new ::grpc::RpcMethodHandler< Operations::Service, ::google::longrunning::GetOperationRequest, ::google::longrunning::Operation>(
-          std::mem_fn(&Operations::Service::GetOperation), this)));
-  AddMethod(new ::grpc::RpcServiceMethod(
-      Operations_method_names[1],
-      ::grpc::RpcMethod::NORMAL_RPC,
       new ::grpc::RpcMethodHandler< Operations::Service, ::google::longrunning::ListOperationsRequest, ::google::longrunning::ListOperationsResponse>(
           std::mem_fn(&Operations::Service::ListOperations), this)));
   AddMethod(new ::grpc::RpcServiceMethod(
-      Operations_method_names[2],
+      Operations_method_names[1],
       ::grpc::RpcMethod::NORMAL_RPC,
-      new ::grpc::RpcMethodHandler< Operations::Service, ::google::longrunning::CancelOperationRequest, ::google::protobuf::Empty>(
-          std::mem_fn(&Operations::Service::CancelOperation), this)));
+      new ::grpc::RpcMethodHandler< Operations::Service, ::google::longrunning::GetOperationRequest, ::google::longrunning::Operation>(
+          std::mem_fn(&Operations::Service::GetOperation), this)));
   AddMethod(new ::grpc::RpcServiceMethod(
-      Operations_method_names[3],
+      Operations_method_names[2],
       ::grpc::RpcMethod::NORMAL_RPC,
       new ::grpc::RpcMethodHandler< Operations::Service, ::google::longrunning::DeleteOperationRequest, ::google::protobuf::Empty>(
           std::mem_fn(&Operations::Service::DeleteOperation), this)));
+  AddMethod(new ::grpc::RpcServiceMethod(
+      Operations_method_names[3],
+      ::grpc::RpcMethod::NORMAL_RPC,
+      new ::grpc::RpcMethodHandler< Operations::Service, ::google::longrunning::CancelOperationRequest, ::google::protobuf::Empty>(
+          std::mem_fn(&Operations::Service::CancelOperation), this)));
 }
 
 Operations::Service::~Service() {
-}
-
-::grpc::Status Operations::Service::GetOperation(::grpc::ServerContext* context, const ::google::longrunning::GetOperationRequest* request, ::google::longrunning::Operation* response) {
-  (void) context;
-  (void) request;
-  (void) response;
-  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
 ::grpc::Status Operations::Service::ListOperations(::grpc::ServerContext* context, const ::google::longrunning::ListOperationsRequest* request, ::google::longrunning::ListOperationsResponse* response) {
@@ -108,7 +101,7 @@ Operations::Service::~Service() {
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status Operations::Service::CancelOperation(::grpc::ServerContext* context, const ::google::longrunning::CancelOperationRequest* request, ::google::protobuf::Empty* response) {
+::grpc::Status Operations::Service::GetOperation(::grpc::ServerContext* context, const ::google::longrunning::GetOperationRequest* request, ::google::longrunning::Operation* response) {
   (void) context;
   (void) request;
   (void) response;
@@ -116,6 +109,13 @@ Operations::Service::~Service() {
 }
 
 ::grpc::Status Operations::Service::DeleteOperation(::grpc::ServerContext* context, const ::google::longrunning::DeleteOperationRequest* request, ::google::protobuf::Empty* response) {
+  (void) context;
+  (void) request;
+  (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+::grpc::Status Operations::Service::CancelOperation(::grpc::ServerContext* context, const ::google::longrunning::CancelOperationRequest* request, ::google::protobuf::Empty* response) {
   (void) context;
   (void) request;
   (void) response;

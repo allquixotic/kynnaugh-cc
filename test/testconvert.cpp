@@ -15,7 +15,7 @@ You should have received a copy of the Apache License, version 2.0
 along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.0>.
 */
 
-#include <test_convert.h>
+#include <testconvert.h>
 #include <iostream>
 #include <QGst/Parse>
 #include <QGst/Message>

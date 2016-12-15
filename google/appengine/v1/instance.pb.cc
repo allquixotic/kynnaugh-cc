@@ -59,21 +59,20 @@ void protobuf_AssignDesc_google_2fappengine_2fv1_2finstance_2eproto() {
   Instance_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Instance_descriptor_,
-      Instance::default_instance_,
+      Instance::internal_default_instance(),
       Instance_offsets_,
       -1,
       -1,
       -1,
       sizeof(Instance),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, _internal_metadata_));
   Instance_Availability_descriptor_ = Instance_descriptor_->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fappengine_2fv1_2finstance_2eproto);
 }
@@ -82,25 +81,35 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Instance_descriptor_, &Instance::default_instance());
+      Instance_descriptor_, Instance::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fappengine_2fv1_2finstance_2eproto() {
-  delete Instance::default_instance_;
+  Instance_default_instance_.Shutdown();
   delete Instance_reflection_;
 }
 
-void protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Instance_default_instance_.DefaultConstruct();
+  Instance_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto_once_);
+void protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\"google/appengine/v1/instance.proto\022\023go"
     "ogle.appengine.v1\032\034google/api/annotation"
@@ -115,22 +124,38 @@ void protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto() {
     "(\002\022\027\n\017average_latency\030\014 \001(\005\022\024\n\014memory_us"
     "age\030\r \001(\003\022\021\n\tvm_status\030\016 \001(\t\022\030\n\020vm_debug"
     "_enabled\030\017 \001(\010\":\n\014Availability\022\017\n\013UNSPEC"
-    "IFIED\020\000\022\014\n\010RESIDENT\020\001\022\013\n\007DYNAMIC\020\002B*\n\027co"
-    "m.google.appengine.v1B\rInstanceProtoP\001b\006"
-    "proto3", 606);
+    "IFIED\020\000\022\014\n\010RESIDENT\020\001\022\013\n\007DYNAMIC\020\002Bh\n\027co"
+    "m.google.appengine.v1B\rInstanceProtoP\001Z<"
+    "google.golang.org/genproto/googleapis/ap"
+    "pengine/v1;appengineb\006proto3", 668);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/appengine/v1/instance.proto", &protobuf_RegisterTypes);
-  Instance::default_instance_ = new Instance();
-  Instance::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::protobuf_AddDesc_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fappengine_2fv1_2finstance_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto_once_);
+void protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto_once_,
+                 &protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fappengine_2fv1_2finstance_2eproto {
   StaticDescriptorInitializer_google_2fappengine_2fv1_2finstance_2eproto() {
     protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto();
   }
 } static_descriptor_initializer_google_2fappengine_2fv1_2finstance_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -139,7 +164,7 @@ const ::google::protobuf::EnumDescriptor* Instance_Availability_descriptor() {
   return Instance_Availability_descriptor_;
 }
 bool Instance_Availability_IsValid(int value) {
-  switch(value) {
+  switch (value) {
     case 0:
     case 1:
     case 2:
@@ -177,42 +202,36 @@ const int Instance::kVmDebugEnabledFieldNumber;
 
 Instance::Instance()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Instance)
 }
 
 void Instance::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
-  start_time_ = const_cast< ::google::protobuf::Timestamp*>(&::google::protobuf::Timestamp::default_instance());
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
 }
 
 Instance::Instance(const Instance& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Instance)
 }
 
 void Instance::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   app_engine_release_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  availability_ = 0;
   vm_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   vm_zone_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   vm_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  start_time_ = NULL;
-  requests_ = 0;
-  errors_ = 0;
-  qps_ = 0;
-  average_latency_ = 0;
-  memory_usage_ = GOOGLE_LONGLONG(0);
   vm_status_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  vm_debug_enabled_ = false;
+  start_time_ = NULL;
+  ::memset(&availability_, 0, reinterpret_cast<char*>(&vm_debug_enabled_) -
+    reinterpret_cast<char*>(&availability_) + sizeof(vm_debug_enabled_));
+  _cached_size_ = 0;
 }
 
 Instance::~Instance() {
@@ -228,7 +247,7 @@ void Instance::SharedDtor() {
   vm_zone_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   vm_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   vm_status_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
+  if (this != &Instance_default_instance_.get()) {
     delete start_time_;
   }
 }
@@ -244,11 +263,11 @@ const ::google::protobuf::Descriptor* Instance::descriptor() {
 }
 
 const Instance& Instance::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fappengine_2fv1_2finstance_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fappengine_2fv1_2finstance_2eproto();
+  return *internal_default_instance();
 }
 
-Instance* Instance::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Instance> Instance_default_instance_;
 
 Instance* Instance::New(::google::protobuf::Arena* arena) const {
   Instance* n = new Instance;
@@ -272,7 +291,7 @@ void Instance::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -285,8 +304,7 @@ void Instance::Clear() {
   vm_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
   start_time_ = NULL;
-  ZR_(errors_, vm_debug_enabled_);
-  requests_ = 0;
+  ZR_(requests_, vm_debug_enabled_);
   vm_status_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 
 #undef ZR_HELPER_
@@ -438,10 +456,10 @@ bool Instance::MergePartialFromCodedStream(
       case 9: {
         if (tag == 72) {
          parse_requests:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &requests_)));
-
         } else {
           goto handle_unusual;
         }
@@ -453,10 +471,10 @@ bool Instance::MergePartialFromCodedStream(
       case 10: {
         if (tag == 80) {
          parse_errors:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &errors_)));
-
         } else {
           goto handle_unusual;
         }
@@ -468,10 +486,10 @@ bool Instance::MergePartialFromCodedStream(
       case 11: {
         if (tag == 93) {
          parse_qps:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, &qps_)));
-
         } else {
           goto handle_unusual;
         }
@@ -483,10 +501,10 @@ bool Instance::MergePartialFromCodedStream(
       case 12: {
         if (tag == 96) {
          parse_average_latency:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &average_latency_)));
-
         } else {
           goto handle_unusual;
         }
@@ -498,10 +516,10 @@ bool Instance::MergePartialFromCodedStream(
       case 13: {
         if (tag == 104) {
          parse_memory_usage:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &memory_usage_)));
-
         } else {
           goto handle_unusual;
         }
@@ -530,10 +548,10 @@ bool Instance::MergePartialFromCodedStream(
       case 15: {
         if (tag == 120) {
          parse_vm_debug_enabled:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &vm_debug_enabled_)));
-
         } else {
           goto handle_unusual;
         }
@@ -682,6 +700,7 @@ void Instance::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Instance::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.Instance)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -807,9 +826,9 @@ void Instance::SerializeWithCachedSizes(
   return target;
 }
 
-int Instance::ByteSize() const {
+size_t Instance::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Instance)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -911,18 +930,17 @@ int Instance::ByteSize() const {
     total_size += 1 + 1;
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Instance::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Instance)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Instance* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Instance* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Instance>(
           &from);
   if (source == NULL) {
@@ -930,15 +948,21 @@ void Instance::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Instance)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Instance::MergeFrom(const Instance& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Instance)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Instance::UnsafeMergeFrom(const Instance& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1004,7 +1028,7 @@ void Instance::CopyFrom(const Instance& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Instance)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Instance::IsInitialized() const {
@@ -1051,37 +1075,37 @@ void Instance::InternalSwap(Instance* other) {
 void Instance::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Instance::name() const {
+const ::std::string& Instance::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_name(const ::std::string& value) {
+void Instance::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.name)
 }
- void Instance::set_name(const char* value) {
+void Instance::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Instance.name)
 }
- void Instance::set_name(const char* value, size_t size) {
+void Instance::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Instance.name)
 }
- ::std::string* Instance::mutable_name() {
+::std::string* Instance::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Instance.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Instance::release_name() {
+::std::string* Instance::release_name() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Instance.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_allocated_name(::std::string* name) {
+void Instance::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1095,37 +1119,37 @@ void Instance::clear_name() {
 void Instance::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Instance::id() const {
+const ::std::string& Instance::id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.id)
   return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_id(const ::std::string& value) {
+void Instance::set_id(const ::std::string& value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.id)
 }
- void Instance::set_id(const char* value) {
+void Instance::set_id(const char* value) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Instance.id)
 }
- void Instance::set_id(const char* value, size_t size) {
+void Instance::set_id(const char* value, size_t size) {
   
   id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Instance.id)
 }
- ::std::string* Instance::mutable_id() {
+::std::string* Instance::mutable_id() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Instance.id)
   return id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Instance::release_id() {
+::std::string* Instance::release_id() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Instance.id)
   
   return id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_allocated_id(::std::string* id) {
+void Instance::set_allocated_id(::std::string* id) {
   if (id != NULL) {
     
   } else {
@@ -1139,37 +1163,37 @@ void Instance::clear_id() {
 void Instance::clear_app_engine_release() {
   app_engine_release_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Instance::app_engine_release() const {
+const ::std::string& Instance::app_engine_release() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.app_engine_release)
   return app_engine_release_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_app_engine_release(const ::std::string& value) {
+void Instance::set_app_engine_release(const ::std::string& value) {
   
   app_engine_release_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.app_engine_release)
 }
- void Instance::set_app_engine_release(const char* value) {
+void Instance::set_app_engine_release(const char* value) {
   
   app_engine_release_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Instance.app_engine_release)
 }
- void Instance::set_app_engine_release(const char* value, size_t size) {
+void Instance::set_app_engine_release(const char* value, size_t size) {
   
   app_engine_release_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Instance.app_engine_release)
 }
- ::std::string* Instance::mutable_app_engine_release() {
+::std::string* Instance::mutable_app_engine_release() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Instance.app_engine_release)
   return app_engine_release_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Instance::release_app_engine_release() {
+::std::string* Instance::release_app_engine_release() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Instance.app_engine_release)
   
   return app_engine_release_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_allocated_app_engine_release(::std::string* app_engine_release) {
+void Instance::set_allocated_app_engine_release(::std::string* app_engine_release) {
   if (app_engine_release != NULL) {
     
   } else {
@@ -1183,11 +1207,11 @@ void Instance::clear_app_engine_release() {
 void Instance::clear_availability() {
   availability_ = 0;
 }
- ::google::appengine::v1::Instance_Availability Instance::availability() const {
+::google::appengine::v1::Instance_Availability Instance::availability() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.availability)
   return static_cast< ::google::appengine::v1::Instance_Availability >(availability_);
 }
- void Instance::set_availability(::google::appengine::v1::Instance_Availability value) {
+void Instance::set_availability(::google::appengine::v1::Instance_Availability value) {
   
   availability_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.availability)
@@ -1197,37 +1221,37 @@ void Instance::clear_availability() {
 void Instance::clear_vm_name() {
   vm_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Instance::vm_name() const {
+const ::std::string& Instance::vm_name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.vm_name)
   return vm_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_vm_name(const ::std::string& value) {
+void Instance::set_vm_name(const ::std::string& value) {
   
   vm_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.vm_name)
 }
- void Instance::set_vm_name(const char* value) {
+void Instance::set_vm_name(const char* value) {
   
   vm_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Instance.vm_name)
 }
- void Instance::set_vm_name(const char* value, size_t size) {
+void Instance::set_vm_name(const char* value, size_t size) {
   
   vm_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Instance.vm_name)
 }
- ::std::string* Instance::mutable_vm_name() {
+::std::string* Instance::mutable_vm_name() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Instance.vm_name)
   return vm_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Instance::release_vm_name() {
+::std::string* Instance::release_vm_name() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Instance.vm_name)
   
   return vm_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_allocated_vm_name(::std::string* vm_name) {
+void Instance::set_allocated_vm_name(::std::string* vm_name) {
   if (vm_name != NULL) {
     
   } else {
@@ -1241,37 +1265,37 @@ void Instance::clear_vm_name() {
 void Instance::clear_vm_zone_name() {
   vm_zone_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Instance::vm_zone_name() const {
+const ::std::string& Instance::vm_zone_name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.vm_zone_name)
   return vm_zone_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_vm_zone_name(const ::std::string& value) {
+void Instance::set_vm_zone_name(const ::std::string& value) {
   
   vm_zone_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.vm_zone_name)
 }
- void Instance::set_vm_zone_name(const char* value) {
+void Instance::set_vm_zone_name(const char* value) {
   
   vm_zone_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Instance.vm_zone_name)
 }
- void Instance::set_vm_zone_name(const char* value, size_t size) {
+void Instance::set_vm_zone_name(const char* value, size_t size) {
   
   vm_zone_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Instance.vm_zone_name)
 }
- ::std::string* Instance::mutable_vm_zone_name() {
+::std::string* Instance::mutable_vm_zone_name() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Instance.vm_zone_name)
   return vm_zone_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Instance::release_vm_zone_name() {
+::std::string* Instance::release_vm_zone_name() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Instance.vm_zone_name)
   
   return vm_zone_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_allocated_vm_zone_name(::std::string* vm_zone_name) {
+void Instance::set_allocated_vm_zone_name(::std::string* vm_zone_name) {
   if (vm_zone_name != NULL) {
     
   } else {
@@ -1285,37 +1309,37 @@ void Instance::clear_vm_zone_name() {
 void Instance::clear_vm_id() {
   vm_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Instance::vm_id() const {
+const ::std::string& Instance::vm_id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.vm_id)
   return vm_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_vm_id(const ::std::string& value) {
+void Instance::set_vm_id(const ::std::string& value) {
   
   vm_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.vm_id)
 }
- void Instance::set_vm_id(const char* value) {
+void Instance::set_vm_id(const char* value) {
   
   vm_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Instance.vm_id)
 }
- void Instance::set_vm_id(const char* value, size_t size) {
+void Instance::set_vm_id(const char* value, size_t size) {
   
   vm_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Instance.vm_id)
 }
- ::std::string* Instance::mutable_vm_id() {
+::std::string* Instance::mutable_vm_id() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Instance.vm_id)
   return vm_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Instance::release_vm_id() {
+::std::string* Instance::release_vm_id() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Instance.vm_id)
   
   return vm_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_allocated_vm_id(::std::string* vm_id) {
+void Instance::set_allocated_vm_id(::std::string* vm_id) {
   if (vm_id != NULL) {
     
   } else {
@@ -1327,7 +1351,7 @@ void Instance::clear_vm_id() {
 
 // optional .google.protobuf.Timestamp start_time = 8;
 bool Instance::has_start_time() const {
-  return !_is_default_instance_ && start_time_ != NULL;
+  return this != internal_default_instance() && start_time_ != NULL;
 }
 void Instance::clear_start_time() {
   if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
@@ -1335,7 +1359,8 @@ void Instance::clear_start_time() {
 }
 const ::google::protobuf::Timestamp& Instance::start_time() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.start_time)
-  return start_time_ != NULL ? *start_time_ : *default_instance_->start_time_;
+  return start_time_ != NULL ? *start_time_
+                         : *::google::protobuf::Timestamp::internal_default_instance();
 }
 ::google::protobuf::Timestamp* Instance::mutable_start_time() {
   
@@ -1372,11 +1397,11 @@ void Instance::set_allocated_start_time(::google::protobuf::Timestamp* start_tim
 void Instance::clear_requests() {
   requests_ = 0;
 }
- ::google::protobuf::int32 Instance::requests() const {
+::google::protobuf::int32 Instance::requests() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.requests)
   return requests_;
 }
- void Instance::set_requests(::google::protobuf::int32 value) {
+void Instance::set_requests(::google::protobuf::int32 value) {
   
   requests_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.requests)
@@ -1386,11 +1411,11 @@ void Instance::clear_requests() {
 void Instance::clear_errors() {
   errors_ = 0;
 }
- ::google::protobuf::int32 Instance::errors() const {
+::google::protobuf::int32 Instance::errors() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.errors)
   return errors_;
 }
- void Instance::set_errors(::google::protobuf::int32 value) {
+void Instance::set_errors(::google::protobuf::int32 value) {
   
   errors_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.errors)
@@ -1400,11 +1425,11 @@ void Instance::clear_errors() {
 void Instance::clear_qps() {
   qps_ = 0;
 }
- float Instance::qps() const {
+float Instance::qps() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.qps)
   return qps_;
 }
- void Instance::set_qps(float value) {
+void Instance::set_qps(float value) {
   
   qps_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.qps)
@@ -1414,11 +1439,11 @@ void Instance::clear_qps() {
 void Instance::clear_average_latency() {
   average_latency_ = 0;
 }
- ::google::protobuf::int32 Instance::average_latency() const {
+::google::protobuf::int32 Instance::average_latency() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.average_latency)
   return average_latency_;
 }
- void Instance::set_average_latency(::google::protobuf::int32 value) {
+void Instance::set_average_latency(::google::protobuf::int32 value) {
   
   average_latency_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.average_latency)
@@ -1428,11 +1453,11 @@ void Instance::clear_average_latency() {
 void Instance::clear_memory_usage() {
   memory_usage_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 Instance::memory_usage() const {
+::google::protobuf::int64 Instance::memory_usage() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.memory_usage)
   return memory_usage_;
 }
- void Instance::set_memory_usage(::google::protobuf::int64 value) {
+void Instance::set_memory_usage(::google::protobuf::int64 value) {
   
   memory_usage_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.memory_usage)
@@ -1442,37 +1467,37 @@ void Instance::clear_memory_usage() {
 void Instance::clear_vm_status() {
   vm_status_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Instance::vm_status() const {
+const ::std::string& Instance::vm_status() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.vm_status)
   return vm_status_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_vm_status(const ::std::string& value) {
+void Instance::set_vm_status(const ::std::string& value) {
   
   vm_status_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.vm_status)
 }
- void Instance::set_vm_status(const char* value) {
+void Instance::set_vm_status(const char* value) {
   
   vm_status_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.appengine.v1.Instance.vm_status)
 }
- void Instance::set_vm_status(const char* value, size_t size) {
+void Instance::set_vm_status(const char* value, size_t size) {
   
   vm_status_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.appengine.v1.Instance.vm_status)
 }
- ::std::string* Instance::mutable_vm_status() {
+::std::string* Instance::mutable_vm_status() {
   
   // @@protoc_insertion_point(field_mutable:google.appengine.v1.Instance.vm_status)
   return vm_status_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Instance::release_vm_status() {
+::std::string* Instance::release_vm_status() {
   // @@protoc_insertion_point(field_release:google.appengine.v1.Instance.vm_status)
   
   return vm_status_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Instance::set_allocated_vm_status(::std::string* vm_status) {
+void Instance::set_allocated_vm_status(::std::string* vm_status) {
   if (vm_status != NULL) {
     
   } else {
@@ -1486,16 +1511,19 @@ void Instance::clear_vm_status() {
 void Instance::clear_vm_debug_enabled() {
   vm_debug_enabled_ = false;
 }
- bool Instance::vm_debug_enabled() const {
+bool Instance::vm_debug_enabled() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Instance.vm_debug_enabled)
   return vm_debug_enabled_;
 }
- void Instance::set_vm_debug_enabled(bool value) {
+void Instance::set_vm_debug_enabled(bool value) {
   
   vm_debug_enabled_ = value;
   // @@protoc_insertion_point(field_set:google.appengine.v1.Instance.vm_debug_enabled)
 }
 
+inline const Instance* Instance::internal_default_instance() {
+  return &Instance_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

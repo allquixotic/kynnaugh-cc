@@ -49,14 +49,13 @@ void protobuf_AssignDesc_google_2fapi_2fsystem_5fparameter_2eproto() {
   SystemParameters_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SystemParameters_descriptor_,
-      SystemParameters::default_instance_,
+      SystemParameters::internal_default_instance(),
       SystemParameters_offsets_,
       -1,
       -1,
       -1,
       sizeof(SystemParameters),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameters, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameters, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameters, _internal_metadata_));
   SystemParameterRule_descriptor_ = file->message_type(1);
   static const int SystemParameterRule_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameterRule, selector_),
@@ -65,14 +64,13 @@ void protobuf_AssignDesc_google_2fapi_2fsystem_5fparameter_2eproto() {
   SystemParameterRule_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SystemParameterRule_descriptor_,
-      SystemParameterRule::default_instance_,
+      SystemParameterRule::internal_default_instance(),
       SystemParameterRule_offsets_,
       -1,
       -1,
       -1,
       sizeof(SystemParameterRule),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameterRule, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameterRule, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameterRule, _internal_metadata_));
   SystemParameter_descriptor_ = file->message_type(2);
   static const int SystemParameter_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameter, name_),
@@ -82,20 +80,19 @@ void protobuf_AssignDesc_google_2fapi_2fsystem_5fparameter_2eproto() {
   SystemParameter_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       SystemParameter_descriptor_,
-      SystemParameter::default_instance_,
+      SystemParameter::internal_default_instance(),
       SystemParameter_offsets_,
       -1,
       -1,
       -1,
       sizeof(SystemParameter),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameter, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameter, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SystemParameter, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fapi_2fsystem_5fparameter_2eproto);
 }
@@ -104,31 +101,46 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SystemParameters_descriptor_, &SystemParameters::default_instance());
+      SystemParameters_descriptor_, SystemParameters::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SystemParameterRule_descriptor_, &SystemParameterRule::default_instance());
+      SystemParameterRule_descriptor_, SystemParameterRule::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      SystemParameter_descriptor_, &SystemParameter::default_instance());
+      SystemParameter_descriptor_, SystemParameter::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fsystem_5fparameter_2eproto() {
-  delete SystemParameters::default_instance_;
+  SystemParameters_default_instance_.Shutdown();
   delete SystemParameters_reflection_;
-  delete SystemParameterRule::default_instance_;
+  SystemParameterRule_default_instance_.Shutdown();
   delete SystemParameterRule_reflection_;
-  delete SystemParameter::default_instance_;
+  SystemParameter_default_instance_.Shutdown();
   delete SystemParameter_reflection_;
 }
 
-void protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  SystemParameters_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SystemParameterRule_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SystemParameter_default_instance_.DefaultConstruct();
+  SystemParameters_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SystemParameterRule_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SystemParameter_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto_once_);
+void protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n!google/api/system_parameter.proto\022\ngoo"
     "gle.api\"B\n\020SystemParameters\022.\n\005rules\030\001 \003"
@@ -137,25 +149,36 @@ void protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto() {
     "parameters\030\002 \003(\0132\033.google.api.SystemPara"
     "meter\"Q\n\017SystemParameter\022\014\n\004name\030\001 \001(\t\022\023"
     "\n\013http_header\030\002 \001(\t\022\033\n\023url_query_paramet"
-    "er\030\003 \001(\tB/\n\016com.google.apiB\024SystemParame"
-    "terProtoP\001\242\002\004GAPIb\006proto3", 345);
+    "er\030\003 \001(\tBv\n\016com.google.apiB\024SystemParame"
+    "terProtoP\001ZEgoogle.golang.org/genproto/g"
+    "oogleapis/api/serviceconfig;serviceconfi"
+    "g\242\002\004GAPIb\006proto3", 416);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/system_parameter.proto", &protobuf_RegisterTypes);
-  SystemParameters::default_instance_ = new SystemParameters();
-  SystemParameterRule::default_instance_ = new SystemParameterRule();
-  SystemParameter::default_instance_ = new SystemParameter();
-  SystemParameters::default_instance_->InitAsDefaultInstance();
-  SystemParameterRule::default_instance_->InitAsDefaultInstance();
-  SystemParameter::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fsystem_5fparameter_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto_once_);
+void protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto_once_,
+                 &protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fapi_2fsystem_5fparameter_2eproto {
   StaticDescriptorInitializer_google_2fapi_2fsystem_5fparameter_2eproto() {
     protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2fsystem_5fparameter_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -165,24 +188,23 @@ const int SystemParameters::kRulesFieldNumber;
 
 SystemParameters::SystemParameters()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.SystemParameters)
 }
 
 void SystemParameters::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SystemParameters::SystemParameters(const SystemParameters& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.SystemParameters)
 }
 
 void SystemParameters::SharedCtor() {
-    _is_default_instance_ = false;
   _cached_size_ = 0;
 }
 
@@ -192,8 +214,6 @@ SystemParameters::~SystemParameters() {
 }
 
 void SystemParameters::SharedDtor() {
-  if (this != default_instance_) {
-  }
 }
 
 void SystemParameters::SetCachedSize(int size) const {
@@ -207,11 +227,11 @@ const ::google::protobuf::Descriptor* SystemParameters::descriptor() {
 }
 
 const SystemParameters& SystemParameters::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto();
+  return *internal_default_instance();
 }
 
-SystemParameters* SystemParameters::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SystemParameters> SystemParameters_default_instance_;
 
 SystemParameters* SystemParameters::New(::google::protobuf::Arena* arena) const {
   SystemParameters* n = new SystemParameters;
@@ -287,6 +307,7 @@ void SystemParameters::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SystemParameters::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.SystemParameters)
   // repeated .google.api.SystemParameterRule rules = 1;
   for (unsigned int i = 0, n = this->rules_size(); i < n; i++) {
@@ -299,30 +320,32 @@ void SystemParameters::SerializeWithCachedSizes(
   return target;
 }
 
-int SystemParameters::ByteSize() const {
+size_t SystemParameters::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.SystemParameters)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // repeated .google.api.SystemParameterRule rules = 1;
-  total_size += 1 * this->rules_size();
-  for (int i = 0; i < this->rules_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->rules(i));
+  {
+    unsigned int count = this->rules_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->rules(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SystemParameters::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.SystemParameters)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SystemParameters* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SystemParameters* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SystemParameters>(
           &from);
   if (source == NULL) {
@@ -330,15 +353,21 @@ void SystemParameters::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.SystemParameters)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SystemParameters::MergeFrom(const SystemParameters& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.SystemParameters)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SystemParameters::UnsafeMergeFrom(const SystemParameters& from) {
+  GOOGLE_DCHECK(&from != this);
   rules_.MergeFrom(from.rules_);
 }
 
@@ -353,7 +382,7 @@ void SystemParameters::CopyFrom(const SystemParameters& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.SystemParameters)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SystemParameters::IsInitialized() const {
@@ -412,6 +441,9 @@ SystemParameters::rules() const {
   return rules_;
 }
 
+inline const SystemParameters* SystemParameters::internal_default_instance() {
+  return &SystemParameters_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -423,27 +455,25 @@ const int SystemParameterRule::kParametersFieldNumber;
 
 SystemParameterRule::SystemParameterRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.SystemParameterRule)
 }
 
 void SystemParameterRule::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SystemParameterRule::SystemParameterRule(const SystemParameterRule& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.SystemParameterRule)
 }
 
 void SystemParameterRule::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 SystemParameterRule::~SystemParameterRule() {
@@ -453,8 +483,6 @@ SystemParameterRule::~SystemParameterRule() {
 
 void SystemParameterRule::SharedDtor() {
   selector_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void SystemParameterRule::SetCachedSize(int size) const {
@@ -468,11 +496,11 @@ const ::google::protobuf::Descriptor* SystemParameterRule::descriptor() {
 }
 
 const SystemParameterRule& SystemParameterRule::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto();
+  return *internal_default_instance();
 }
 
-SystemParameterRule* SystemParameterRule::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SystemParameterRule> SystemParameterRule_default_instance_;
 
 SystemParameterRule* SystemParameterRule::New(::google::protobuf::Arena* arena) const {
   SystemParameterRule* n = new SystemParameterRule;
@@ -576,6 +604,7 @@ void SystemParameterRule::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SystemParameterRule::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.SystemParameterRule)
   // optional string selector = 1;
   if (this->selector().size() > 0) {
@@ -599,9 +628,9 @@ void SystemParameterRule::SerializeWithCachedSizes(
   return target;
 }
 
-int SystemParameterRule::ByteSize() const {
+size_t SystemParameterRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.SystemParameterRule)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string selector = 1;
   if (this->selector().size() > 0) {
@@ -611,25 +640,27 @@ int SystemParameterRule::ByteSize() const {
   }
 
   // repeated .google.api.SystemParameter parameters = 2;
-  total_size += 1 * this->parameters_size();
-  for (int i = 0; i < this->parameters_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->parameters(i));
+  {
+    unsigned int count = this->parameters_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->parameters(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SystemParameterRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.SystemParameterRule)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SystemParameterRule* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SystemParameterRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SystemParameterRule>(
           &from);
   if (source == NULL) {
@@ -637,15 +668,21 @@ void SystemParameterRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.SystemParameterRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SystemParameterRule::MergeFrom(const SystemParameterRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.SystemParameterRule)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SystemParameterRule::UnsafeMergeFrom(const SystemParameterRule& from) {
+  GOOGLE_DCHECK(&from != this);
   parameters_.MergeFrom(from.parameters_);
   if (from.selector().size() > 0) {
 
@@ -664,7 +701,7 @@ void SystemParameterRule::CopyFrom(const SystemParameterRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.SystemParameterRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SystemParameterRule::IsInitialized() const {
@@ -698,37 +735,37 @@ void SystemParameterRule::InternalSwap(SystemParameterRule* other) {
 void SystemParameterRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SystemParameterRule::selector() const {
+const ::std::string& SystemParameterRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.SystemParameterRule.selector)
   return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameterRule::set_selector(const ::std::string& value) {
+void SystemParameterRule::set_selector(const ::std::string& value) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.SystemParameterRule.selector)
 }
- void SystemParameterRule::set_selector(const char* value) {
+void SystemParameterRule::set_selector(const char* value) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.SystemParameterRule.selector)
 }
- void SystemParameterRule::set_selector(const char* value, size_t size) {
+void SystemParameterRule::set_selector(const char* value, size_t size) {
   
   selector_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.SystemParameterRule.selector)
 }
- ::std::string* SystemParameterRule::mutable_selector() {
+::std::string* SystemParameterRule::mutable_selector() {
   
   // @@protoc_insertion_point(field_mutable:google.api.SystemParameterRule.selector)
   return selector_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SystemParameterRule::release_selector() {
+::std::string* SystemParameterRule::release_selector() {
   // @@protoc_insertion_point(field_release:google.api.SystemParameterRule.selector)
   
   return selector_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameterRule::set_allocated_selector(::std::string* selector) {
+void SystemParameterRule::set_allocated_selector(::std::string* selector) {
   if (selector != NULL) {
     
   } else {
@@ -768,6 +805,9 @@ SystemParameterRule::parameters() const {
   return parameters_;
 }
 
+inline const SystemParameterRule* SystemParameterRule::internal_default_instance() {
+  return &SystemParameterRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -780,29 +820,27 @@ const int SystemParameter::kUrlQueryParameterFieldNumber;
 
 SystemParameter::SystemParameter()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.SystemParameter)
 }
 
 void SystemParameter::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 SystemParameter::SystemParameter(const SystemParameter& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.SystemParameter)
 }
 
 void SystemParameter::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   http_header_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   url_query_parameter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 SystemParameter::~SystemParameter() {
@@ -814,8 +852,6 @@ void SystemParameter::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   http_header_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   url_query_parameter_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void SystemParameter::SetCachedSize(int size) const {
@@ -829,11 +865,11 @@ const ::google::protobuf::Descriptor* SystemParameter::descriptor() {
 }
 
 const SystemParameter& SystemParameter::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fapi_2fsystem_5fparameter_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fapi_2fsystem_5fparameter_2eproto();
+  return *internal_default_instance();
 }
 
-SystemParameter* SystemParameter::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<SystemParameter> SystemParameter_default_instance_;
 
 SystemParameter* SystemParameter::New(::google::protobuf::Arena* arena) const {
   SystemParameter* n = new SystemParameter;
@@ -969,6 +1005,7 @@ void SystemParameter::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* SystemParameter::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.SystemParameter)
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1007,9 +1044,9 @@ void SystemParameter::SerializeWithCachedSizes(
   return target;
 }
 
-int SystemParameter::ByteSize() const {
+size_t SystemParameter::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.SystemParameter)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string name = 1;
   if (this->name().size() > 0) {
@@ -1032,18 +1069,17 @@ int SystemParameter::ByteSize() const {
         this->url_query_parameter());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void SystemParameter::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.SystemParameter)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const SystemParameter* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const SystemParameter* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SystemParameter>(
           &from);
   if (source == NULL) {
@@ -1051,15 +1087,21 @@ void SystemParameter::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.SystemParameter)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SystemParameter::MergeFrom(const SystemParameter& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.SystemParameter)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void SystemParameter::UnsafeMergeFrom(const SystemParameter& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1085,7 +1127,7 @@ void SystemParameter::CopyFrom(const SystemParameter& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.SystemParameter)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SystemParameter::IsInitialized() const {
@@ -1120,37 +1162,37 @@ void SystemParameter::InternalSwap(SystemParameter* other) {
 void SystemParameter::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SystemParameter::name() const {
+const ::std::string& SystemParameter::name() const {
   // @@protoc_insertion_point(field_get:google.api.SystemParameter.name)
   return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameter::set_name(const ::std::string& value) {
+void SystemParameter::set_name(const ::std::string& value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.SystemParameter.name)
 }
- void SystemParameter::set_name(const char* value) {
+void SystemParameter::set_name(const char* value) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.SystemParameter.name)
 }
- void SystemParameter::set_name(const char* value, size_t size) {
+void SystemParameter::set_name(const char* value, size_t size) {
   
   name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.SystemParameter.name)
 }
- ::std::string* SystemParameter::mutable_name() {
+::std::string* SystemParameter::mutable_name() {
   
   // @@protoc_insertion_point(field_mutable:google.api.SystemParameter.name)
   return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SystemParameter::release_name() {
+::std::string* SystemParameter::release_name() {
   // @@protoc_insertion_point(field_release:google.api.SystemParameter.name)
   
   return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameter::set_allocated_name(::std::string* name) {
+void SystemParameter::set_allocated_name(::std::string* name) {
   if (name != NULL) {
     
   } else {
@@ -1164,37 +1206,37 @@ void SystemParameter::clear_name() {
 void SystemParameter::clear_http_header() {
   http_header_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SystemParameter::http_header() const {
+const ::std::string& SystemParameter::http_header() const {
   // @@protoc_insertion_point(field_get:google.api.SystemParameter.http_header)
   return http_header_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameter::set_http_header(const ::std::string& value) {
+void SystemParameter::set_http_header(const ::std::string& value) {
   
   http_header_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.SystemParameter.http_header)
 }
- void SystemParameter::set_http_header(const char* value) {
+void SystemParameter::set_http_header(const char* value) {
   
   http_header_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.SystemParameter.http_header)
 }
- void SystemParameter::set_http_header(const char* value, size_t size) {
+void SystemParameter::set_http_header(const char* value, size_t size) {
   
   http_header_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.SystemParameter.http_header)
 }
- ::std::string* SystemParameter::mutable_http_header() {
+::std::string* SystemParameter::mutable_http_header() {
   
   // @@protoc_insertion_point(field_mutable:google.api.SystemParameter.http_header)
   return http_header_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SystemParameter::release_http_header() {
+::std::string* SystemParameter::release_http_header() {
   // @@protoc_insertion_point(field_release:google.api.SystemParameter.http_header)
   
   return http_header_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameter::set_allocated_http_header(::std::string* http_header) {
+void SystemParameter::set_allocated_http_header(::std::string* http_header) {
   if (http_header != NULL) {
     
   } else {
@@ -1208,37 +1250,37 @@ void SystemParameter::clear_http_header() {
 void SystemParameter::clear_url_query_parameter() {
   url_query_parameter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& SystemParameter::url_query_parameter() const {
+const ::std::string& SystemParameter::url_query_parameter() const {
   // @@protoc_insertion_point(field_get:google.api.SystemParameter.url_query_parameter)
   return url_query_parameter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameter::set_url_query_parameter(const ::std::string& value) {
+void SystemParameter::set_url_query_parameter(const ::std::string& value) {
   
   url_query_parameter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.api.SystemParameter.url_query_parameter)
 }
- void SystemParameter::set_url_query_parameter(const char* value) {
+void SystemParameter::set_url_query_parameter(const char* value) {
   
   url_query_parameter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.api.SystemParameter.url_query_parameter)
 }
- void SystemParameter::set_url_query_parameter(const char* value, size_t size) {
+void SystemParameter::set_url_query_parameter(const char* value, size_t size) {
   
   url_query_parameter_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.api.SystemParameter.url_query_parameter)
 }
- ::std::string* SystemParameter::mutable_url_query_parameter() {
+::std::string* SystemParameter::mutable_url_query_parameter() {
   
   // @@protoc_insertion_point(field_mutable:google.api.SystemParameter.url_query_parameter)
   return url_query_parameter_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* SystemParameter::release_url_query_parameter() {
+::std::string* SystemParameter::release_url_query_parameter() {
   // @@protoc_insertion_point(field_release:google.api.SystemParameter.url_query_parameter)
   
   return url_query_parameter_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void SystemParameter::set_allocated_url_query_parameter(::std::string* url_query_parameter) {
+void SystemParameter::set_allocated_url_query_parameter(::std::string* url_query_parameter) {
   if (url_query_parameter != NULL) {
     
   } else {
@@ -1248,6 +1290,9 @@ void SystemParameter::clear_url_query_parameter() {
   // @@protoc_insertion_point(field_set_allocated:google.api.SystemParameter.url_query_parameter)
 }
 
+inline const SystemParameter* SystemParameter::internal_default_instance() {
+  return &SystemParameter_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

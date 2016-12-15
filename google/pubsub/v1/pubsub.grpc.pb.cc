@@ -25,6 +25,7 @@ static const char* Subscriber_method_names[] = {
   "/google.pubsub.v1.Subscriber/ModifyAckDeadline",
   "/google.pubsub.v1.Subscriber/Acknowledge",
   "/google.pubsub.v1.Subscriber/Pull",
+  "/google.pubsub.v1.Subscriber/StreamingPull",
   "/google.pubsub.v1.Subscriber/ModifyPushConfig",
 };
 
@@ -41,7 +42,8 @@ Subscriber::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel
   , rpcmethod_ModifyAckDeadline_(Subscriber_method_names[4], ::grpc::RpcMethod::NORMAL_RPC, channel)
   , rpcmethod_Acknowledge_(Subscriber_method_names[5], ::grpc::RpcMethod::NORMAL_RPC, channel)
   , rpcmethod_Pull_(Subscriber_method_names[6], ::grpc::RpcMethod::NORMAL_RPC, channel)
-  , rpcmethod_ModifyPushConfig_(Subscriber_method_names[7], ::grpc::RpcMethod::NORMAL_RPC, channel)
+  , rpcmethod_StreamingPull_(Subscriber_method_names[7], ::grpc::RpcMethod::BIDI_STREAMING, channel)
+  , rpcmethod_ModifyPushConfig_(Subscriber_method_names[8], ::grpc::RpcMethod::NORMAL_RPC, channel)
   {}
 
 ::grpc::Status Subscriber::Stub::CreateSubscription(::grpc::ClientContext* context, const ::google::pubsub::v1::Subscription& request, ::google::pubsub::v1::Subscription* response) {
@@ -100,6 +102,14 @@ Subscriber::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel
   return new ::grpc::ClientAsyncResponseReader< ::google::pubsub::v1::PullResponse>(channel_.get(), cq, rpcmethod_Pull_, context, request);
 }
 
+::grpc::ClientReaderWriter< ::google::pubsub::v1::StreamingPullRequest, ::google::pubsub::v1::StreamingPullResponse>* Subscriber::Stub::StreamingPullRaw(::grpc::ClientContext* context) {
+  return new ::grpc::ClientReaderWriter< ::google::pubsub::v1::StreamingPullRequest, ::google::pubsub::v1::StreamingPullResponse>(channel_.get(), rpcmethod_StreamingPull_, context);
+}
+
+::grpc::ClientAsyncReaderWriter< ::google::pubsub::v1::StreamingPullRequest, ::google::pubsub::v1::StreamingPullResponse>* Subscriber::Stub::AsyncStreamingPullRaw(::grpc::ClientContext* context, ::grpc::CompletionQueue* cq, void* tag) {
+  return new ::grpc::ClientAsyncReaderWriter< ::google::pubsub::v1::StreamingPullRequest, ::google::pubsub::v1::StreamingPullResponse>(channel_.get(), cq, rpcmethod_StreamingPull_, context, tag);
+}
+
 ::grpc::Status Subscriber::Stub::ModifyPushConfig(::grpc::ClientContext* context, const ::google::pubsub::v1::ModifyPushConfigRequest& request, ::google::protobuf::Empty* response) {
   return ::grpc::BlockingUnaryCall(channel_.get(), rpcmethod_ModifyPushConfig_, context, request, response);
 }
@@ -147,6 +157,11 @@ Subscriber::Service::Service() {
           std::mem_fn(&Subscriber::Service::Pull), this)));
   AddMethod(new ::grpc::RpcServiceMethod(
       Subscriber_method_names[7],
+      ::grpc::RpcMethod::BIDI_STREAMING,
+      new ::grpc::BidiStreamingHandler< Subscriber::Service, ::google::pubsub::v1::StreamingPullRequest, ::google::pubsub::v1::StreamingPullResponse>(
+          std::mem_fn(&Subscriber::Service::StreamingPull), this)));
+  AddMethod(new ::grpc::RpcServiceMethod(
+      Subscriber_method_names[8],
       ::grpc::RpcMethod::NORMAL_RPC,
       new ::grpc::RpcMethodHandler< Subscriber::Service, ::google::pubsub::v1::ModifyPushConfigRequest, ::google::protobuf::Empty>(
           std::mem_fn(&Subscriber::Service::ModifyPushConfig), this)));
@@ -201,6 +216,12 @@ Subscriber::Service::~Service() {
   (void) context;
   (void) request;
   (void) response;
+  return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+}
+
+::grpc::Status Subscriber::Service::StreamingPull(::grpc::ServerContext* context, ::grpc::ServerReaderWriter< ::google::pubsub::v1::StreamingPullResponse, ::google::pubsub::v1::StreamingPullRequest>* stream) {
+  (void) context;
+  (void) stream;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 

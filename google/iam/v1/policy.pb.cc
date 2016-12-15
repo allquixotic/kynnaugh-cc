@@ -29,6 +29,13 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* Binding_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   Binding_reflection_ = NULL;
+const ::google::protobuf::Descriptor* PolicyDelta_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PolicyDelta_reflection_ = NULL;
+const ::google::protobuf::Descriptor* BindingDelta_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  BindingDelta_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* BindingDelta_Action_descriptor_ = NULL;
 
 }  // namespace
 
@@ -49,14 +56,13 @@ void protobuf_AssignDesc_google_2fiam_2fv1_2fpolicy_2eproto() {
   Policy_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Policy_descriptor_,
-      Policy::default_instance_,
+      Policy::internal_default_instance(),
       Policy_offsets_,
       -1,
       -1,
       -1,
       sizeof(Policy),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Policy, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Policy, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Policy, _internal_metadata_));
   Binding_descriptor_ = file->message_type(1);
   static const int Binding_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Binding, role_),
@@ -65,20 +71,50 @@ void protobuf_AssignDesc_google_2fiam_2fv1_2fpolicy_2eproto() {
   Binding_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Binding_descriptor_,
-      Binding::default_instance_,
+      Binding::internal_default_instance(),
       Binding_offsets_,
       -1,
       -1,
       -1,
       sizeof(Binding),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Binding, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Binding, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Binding, _internal_metadata_));
+  PolicyDelta_descriptor_ = file->message_type(2);
+  static const int PolicyDelta_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PolicyDelta, binding_deltas_),
+  };
+  PolicyDelta_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PolicyDelta_descriptor_,
+      PolicyDelta::internal_default_instance(),
+      PolicyDelta_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(PolicyDelta),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PolicyDelta, _internal_metadata_));
+  BindingDelta_descriptor_ = file->message_type(3);
+  static const int BindingDelta_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BindingDelta, action_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BindingDelta, role_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BindingDelta, member_),
+  };
+  BindingDelta_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      BindingDelta_descriptor_,
+      BindingDelta::internal_default_instance(),
+      BindingDelta_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(BindingDelta),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BindingDelta, _internal_metadata_));
+  BindingDelta_Action_descriptor_ = BindingDelta_descriptor_->enum_type(0);
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2fiam_2fv1_2fpolicy_2eproto);
 }
@@ -87,51 +123,96 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Policy_descriptor_, &Policy::default_instance());
+      Policy_descriptor_, Policy::internal_default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Binding_descriptor_, &Binding::default_instance());
+      Binding_descriptor_, Binding::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PolicyDelta_descriptor_, PolicyDelta::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      BindingDelta_descriptor_, BindingDelta::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fiam_2fv1_2fpolicy_2eproto() {
-  delete Policy::default_instance_;
+  Policy_default_instance_.Shutdown();
   delete Policy_reflection_;
-  delete Binding::default_instance_;
+  Binding_default_instance_.Shutdown();
   delete Binding_reflection_;
+  PolicyDelta_default_instance_.Shutdown();
+  delete PolicyDelta_reflection_;
+  BindingDelta_default_instance_.Shutdown();
+  delete BindingDelta_reflection_;
 }
 
-void protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
+  ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
+  ::google::protobuf::internal::GetEmptyString();
+  Policy_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Binding_default_instance_.DefaultConstruct();
+  PolicyDelta_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  BindingDelta_default_instance_.DefaultConstruct();
+  Policy_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Binding_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PolicyDelta_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BindingDelta_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto_once_);
+void protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto_impl);
+}
+void protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\032google/iam/v1/policy.proto\022\rgoogle.iam"
     ".v1\032\034google/api/annotations.proto\"Q\n\006Pol"
     "icy\022\017\n\007version\030\001 \001(\005\022(\n\010bindings\030\004 \003(\0132\026"
     ".google.iam.v1.Binding\022\014\n\004etag\030\003 \001(\014\"(\n\007"
-    "Binding\022\014\n\004role\030\001 \001(\t\022\017\n\007members\030\002 \003(\tB;"
-    "\n\021com.google.iam.v1B\013PolicyProtoP\001\370\001\001\252\002\023"
-    "Google.Cloud.Iam.V1b\006proto3", 267);
+    "Binding\022\014\n\004role\030\001 \001(\t\022\017\n\007members\030\002 \003(\t\"B"
+    "\n\013PolicyDelta\0223\n\016binding_deltas\030\001 \003(\0132\033."
+    "google.iam.v1.BindingDelta\"\227\001\n\014BindingDe"
+    "lta\0222\n\006action\030\001 \001(\0162\".google.iam.v1.Bind"
+    "ingDelta.Action\022\014\n\004role\030\002 \001(\t\022\016\n\006member\030"
+    "\003 \001(\t\"5\n\006Action\022\026\n\022ACTION_UNSPECIFIED\020\000\022"
+    "\007\n\003ADD\020\001\022\n\n\006REMOVE\020\002Bm\n\021com.google.iam.v"
+    "1B\013PolicyProtoP\001Z0google.golang.org/genp"
+    "roto/googleapis/iam/v1;iam\370\001\001\252\002\023Google.C"
+    "loud.Iam.V1b\006proto3", 539);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/iam/v1/policy.proto", &protobuf_RegisterTypes);
-  Policy::default_instance_ = new Policy();
-  Binding::default_instance_ = new Binding();
-  Policy::default_instance_->InitAsDefaultInstance();
-  Binding::default_instance_->InitAsDefaultInstance();
+  ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fiam_2fv1_2fpolicy_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto_once_);
+void protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto_once_,
+                 &protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2fiam_2fv1_2fpolicy_2eproto {
   StaticDescriptorInitializer_google_2fiam_2fv1_2fpolicy_2eproto() {
     protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto();
   }
 } static_descriptor_initializer_google_2fiam_2fv1_2fpolicy_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -143,37 +224,37 @@ const int Policy::kEtagFieldNumber;
 
 Policy::Policy()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.v1.Policy)
 }
-
 Policy::Policy(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   bindings_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.v1.Policy)
 }
 
 void Policy::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Policy::Policy(const Policy& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.v1.Policy)
 }
 
 void Policy::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
-  version_ = 0;
   etag_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  version_ = 0;
+  _cached_size_ = 0;
 }
 
 Policy::~Policy() {
@@ -182,13 +263,12 @@ Policy::~Policy() {
 }
 
 void Policy::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  etag_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  etag_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void Policy::ArenaDtor(void* object) {
@@ -208,11 +288,11 @@ const ::google::protobuf::Descriptor* Policy::descriptor() {
 }
 
 const Policy& Policy::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+  return *internal_default_instance();
 }
 
-Policy* Policy::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Policy> Policy_default_instance_;
 
 Policy* Policy::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Policy>(arena);
@@ -238,10 +318,10 @@ bool Policy::MergePartialFromCodedStream(
       // optional int32 version = 1;
       case 1: {
         if (tag == 8) {
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &version_)));
-
         } else {
           goto handle_unusual;
         }
@@ -325,6 +405,7 @@ void Policy::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Policy::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.v1.Policy)
   // optional int32 version = 1;
   if (this->version() != 0) {
@@ -349,9 +430,9 @@ void Policy::SerializeWithCachedSizes(
   return target;
 }
 
-int Policy::ByteSize() const {
+size_t Policy::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.v1.Policy)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional int32 version = 1;
   if (this->version() != 0) {
@@ -368,25 +449,27 @@ int Policy::ByteSize() const {
   }
 
   // repeated .google.iam.v1.Binding bindings = 4;
-  total_size += 1 * this->bindings_size();
-  for (int i = 0; i < this->bindings_size(); i++) {
-    total_size +=
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        this->bindings(i));
+  {
+    unsigned int count = this->bindings_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->bindings(i));
+    }
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Policy::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.Policy)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Policy* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Policy* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Policy>(
           &from);
   if (source == NULL) {
@@ -394,15 +477,21 @@ void Policy::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.Policy)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Policy::MergeFrom(const Policy& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.Policy)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Policy::UnsafeMergeFrom(const Policy& from) {
+  GOOGLE_DCHECK(&from != this);
   bindings_.MergeFrom(from.bindings_);
   if (from.version() != 0) {
     set_version(from.version());
@@ -423,7 +512,7 @@ void Policy::CopyFrom(const Policy& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.Policy)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Policy::IsInitialized() const {
@@ -437,7 +526,7 @@ void Policy::Swap(Policy* other) {
     InternalSwap(other);
   } else {
     Policy temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -470,11 +559,11 @@ void Policy::InternalSwap(Policy* other) {
 void Policy::clear_version() {
   version_ = 0;
 }
- ::google::protobuf::int32 Policy::version() const {
+::google::protobuf::int32 Policy::version() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.Policy.version)
   return version_;
 }
- void Policy::set_version(::google::protobuf::int32 value) {
+void Policy::set_version(::google::protobuf::int32 value) {
   
   version_ = value;
   // @@protoc_insertion_point(field_set:google.iam.v1.Policy.version)
@@ -514,46 +603,46 @@ Policy::bindings() const {
 void Policy::clear_etag() {
   etag_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Policy::etag() const {
+const ::std::string& Policy::etag() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.Policy.etag)
   return etag_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Policy::set_etag(const ::std::string& value) {
+void Policy::set_etag(const ::std::string& value) {
   
   etag_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.v1.Policy.etag)
 }
- void Policy::set_etag(const char* value) {
+void Policy::set_etag(const char* value) {
   
   etag_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.v1.Policy.etag)
 }
- void Policy::set_etag(const void* value,
+void Policy::set_etag(const void* value,
     size_t size) {
   
   etag_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.v1.Policy.etag)
 }
- ::std::string* Policy::mutable_etag() {
+::std::string* Policy::mutable_etag() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.v1.Policy.etag)
   return etag_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Policy::release_etag() {
+::std::string* Policy::release_etag() {
   // @@protoc_insertion_point(field_release:google.iam.v1.Policy.etag)
   
   return etag_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Policy::unsafe_arena_release_etag() {
+::std::string* Policy::unsafe_arena_release_etag() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.v1.Policy.etag)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return etag_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Policy::set_allocated_etag(::std::string* etag) {
+void Policy::set_allocated_etag(::std::string* etag) {
   if (etag != NULL) {
     
   } else {
@@ -563,7 +652,7 @@ void Policy::clear_etag() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.v1.Policy.etag)
 }
- void Policy::unsafe_arena_set_allocated_etag(
+void Policy::unsafe_arena_set_allocated_etag(
     ::std::string* etag) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (etag != NULL) {
@@ -576,6 +665,9 @@ void Policy::clear_etag() {
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.v1.Policy.etag)
 }
 
+inline const Policy* Policy::internal_default_instance() {
+  return &Policy_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -587,36 +679,36 @@ const int Binding::kMembersFieldNumber;
 
 Binding::Binding()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.v1.Binding)
 }
-
 Binding::Binding(::google::protobuf::Arena* arena)
   : ::google::protobuf::Message(),
   _internal_metadata_(arena),
   members_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.v1.Binding)
 }
 
 void Binding::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Binding::Binding(const Binding& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.v1.Binding)
 }
 
 void Binding::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   role_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _cached_size_ = 0;
 }
 
 Binding::~Binding() {
@@ -625,13 +717,12 @@ Binding::~Binding() {
 }
 
 void Binding::SharedDtor() {
-  if (GetArenaNoVirtual() != NULL) {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
     return;
   }
 
-  role_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (this != default_instance_) {
-  }
+  role_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
 }
 
 void Binding::ArenaDtor(void* object) {
@@ -651,11 +742,11 @@ const ::google::protobuf::Descriptor* Binding::descriptor() {
 }
 
 const Binding& Binding::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+  return *internal_default_instance();
 }
 
-Binding* Binding::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Binding> Binding_default_instance_;
 
 Binding* Binding::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Binding>(arena);
@@ -761,6 +852,7 @@ void Binding::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Binding::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.v1.Binding)
   // optional string role = 1;
   if (this->role().size() > 0) {
@@ -787,9 +879,9 @@ void Binding::SerializeWithCachedSizes(
   return target;
 }
 
-int Binding::ByteSize() const {
+size_t Binding::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.v1.Binding)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string role = 1;
   if (this->role().size() > 0) {
@@ -799,24 +891,24 @@ int Binding::ByteSize() const {
   }
 
   // repeated string members = 2;
-  total_size += 1 * this->members_size();
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->members_size());
   for (int i = 0; i < this->members_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->members(i));
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Binding::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.Binding)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Binding* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Binding* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Binding>(
           &from);
   if (source == NULL) {
@@ -824,16 +916,22 @@ void Binding::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.Binding)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Binding::MergeFrom(const Binding& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.Binding)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  members_.MergeFrom(from.members_);
+}
+
+void Binding::UnsafeMergeFrom(const Binding& from) {
+  GOOGLE_DCHECK(&from != this);
+  members_.UnsafeMergeFrom(from.members_);
   if (from.role().size() > 0) {
     set_role(from.role());
   }
@@ -850,7 +948,7 @@ void Binding::CopyFrom(const Binding& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.Binding)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Binding::IsInitialized() const {
@@ -864,7 +962,7 @@ void Binding::Swap(Binding* other) {
     InternalSwap(other);
   } else {
     Binding temp;
-    temp.MergeFrom(*this);
+    temp.UnsafeMergeFrom(*this);
     CopyFrom(*other);
     other->CopyFrom(temp);
   }
@@ -896,46 +994,46 @@ void Binding::InternalSwap(Binding* other) {
 void Binding::clear_role() {
   role_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- const ::std::string& Binding::role() const {
+const ::std::string& Binding::role() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.Binding.role)
   return role_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Binding::set_role(const ::std::string& value) {
+void Binding::set_role(const ::std::string& value) {
   
   role_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:google.iam.v1.Binding.role)
 }
- void Binding::set_role(const char* value) {
+void Binding::set_role(const char* value) {
   
   role_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:google.iam.v1.Binding.role)
 }
- void Binding::set_role(const char* value,
+void Binding::set_role(const char* value,
     size_t size) {
   
   role_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:google.iam.v1.Binding.role)
 }
- ::std::string* Binding::mutable_role() {
+::std::string* Binding::mutable_role() {
   
   // @@protoc_insertion_point(field_mutable:google.iam.v1.Binding.role)
   return role_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Binding::release_role() {
+::std::string* Binding::release_role() {
   // @@protoc_insertion_point(field_release:google.iam.v1.Binding.role)
   
   return role_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
- ::std::string* Binding::unsafe_arena_release_role() {
+::std::string* Binding::unsafe_arena_release_role() {
   // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.v1.Binding.role)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   
   return role_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
- void Binding::set_allocated_role(::std::string* role) {
+void Binding::set_allocated_role(::std::string* role) {
   if (role != NULL) {
     
   } else {
@@ -945,7 +1043,7 @@ void Binding::clear_role() {
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:google.iam.v1.Binding.role)
 }
- void Binding::unsafe_arena_set_allocated_role(
+void Binding::unsafe_arena_set_allocated_role(
     ::std::string* role) {
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
   if (role != NULL) {
@@ -965,54 +1063,889 @@ int Binding::members_size() const {
 void Binding::clear_members() {
   members_.Clear();
 }
- const ::std::string& Binding::members(int index) const {
+const ::std::string& Binding::members(int index) const {
   // @@protoc_insertion_point(field_get:google.iam.v1.Binding.members)
   return members_.Get(index);
 }
- ::std::string* Binding::mutable_members(int index) {
+::std::string* Binding::mutable_members(int index) {
   // @@protoc_insertion_point(field_mutable:google.iam.v1.Binding.members)
   return members_.Mutable(index);
 }
- void Binding::set_members(int index, const ::std::string& value) {
+void Binding::set_members(int index, const ::std::string& value) {
   // @@protoc_insertion_point(field_set:google.iam.v1.Binding.members)
   members_.Mutable(index)->assign(value);
 }
- void Binding::set_members(int index, const char* value) {
+void Binding::set_members(int index, const char* value) {
   members_.Mutable(index)->assign(value);
   // @@protoc_insertion_point(field_set_char:google.iam.v1.Binding.members)
 }
- void Binding::set_members(int index, const char* value, size_t size) {
+void Binding::set_members(int index, const char* value, size_t size) {
   members_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_set_pointer:google.iam.v1.Binding.members)
 }
- ::std::string* Binding::add_members() {
+::std::string* Binding::add_members() {
   // @@protoc_insertion_point(field_add_mutable:google.iam.v1.Binding.members)
   return members_.Add();
 }
- void Binding::add_members(const ::std::string& value) {
+void Binding::add_members(const ::std::string& value) {
   members_.Add()->assign(value);
   // @@protoc_insertion_point(field_add:google.iam.v1.Binding.members)
 }
- void Binding::add_members(const char* value) {
+void Binding::add_members(const char* value) {
   members_.Add()->assign(value);
   // @@protoc_insertion_point(field_add_char:google.iam.v1.Binding.members)
 }
- void Binding::add_members(const char* value, size_t size) {
+void Binding::add_members(const char* value, size_t size) {
   members_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:google.iam.v1.Binding.members)
 }
- const ::google::protobuf::RepeatedPtrField< ::std::string>&
+const ::google::protobuf::RepeatedPtrField< ::std::string>&
 Binding::members() const {
   // @@protoc_insertion_point(field_list:google.iam.v1.Binding.members)
   return members_;
 }
- ::google::protobuf::RepeatedPtrField< ::std::string>*
+::google::protobuf::RepeatedPtrField< ::std::string>*
 Binding::mutable_members() {
   // @@protoc_insertion_point(field_mutable_list:google.iam.v1.Binding.members)
   return &members_;
 }
 
+inline const Binding* Binding::internal_default_instance() {
+  return &Binding_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int PolicyDelta::kBindingDeltasFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+PolicyDelta::PolicyDelta()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.iam.v1.PolicyDelta)
+}
+PolicyDelta::PolicyDelta(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena),
+  binding_deltas_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:google.iam.v1.PolicyDelta)
+}
+
+void PolicyDelta::InitAsDefaultInstance() {
+}
+
+PolicyDelta::PolicyDelta(const PolicyDelta& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.iam.v1.PolicyDelta)
+}
+
+void PolicyDelta::SharedCtor() {
+  _cached_size_ = 0;
+}
+
+PolicyDelta::~PolicyDelta() {
+  // @@protoc_insertion_point(destructor:google.iam.v1.PolicyDelta)
+  SharedDtor();
+}
+
+void PolicyDelta::SharedDtor() {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
+    return;
+  }
+
+}
+
+void PolicyDelta::ArenaDtor(void* object) {
+  PolicyDelta* _this = reinterpret_cast< PolicyDelta* >(object);
+  (void)_this;
+}
+void PolicyDelta::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void PolicyDelta::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* PolicyDelta::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return PolicyDelta_descriptor_;
+}
+
+const PolicyDelta& PolicyDelta::default_instance() {
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<PolicyDelta> PolicyDelta_default_instance_;
+
+PolicyDelta* PolicyDelta::New(::google::protobuf::Arena* arena) const {
+  return ::google::protobuf::Arena::CreateMessage<PolicyDelta>(arena);
+}
+
+void PolicyDelta::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.iam.v1.PolicyDelta)
+  binding_deltas_.Clear();
+}
+
+bool PolicyDelta::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.iam.v1.PolicyDelta)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated .google.iam.v1.BindingDelta binding_deltas = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_binding_deltas:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+                input, add_binding_deltas()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(10)) goto parse_loop_binding_deltas;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.iam.v1.PolicyDelta)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.iam.v1.PolicyDelta)
+  return false;
+#undef DO_
+}
+
+void PolicyDelta::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.iam.v1.PolicyDelta)
+  // repeated .google.iam.v1.BindingDelta binding_deltas = 1;
+  for (unsigned int i = 0, n = this->binding_deltas_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, this->binding_deltas(i), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.iam.v1.PolicyDelta)
+}
+
+::google::protobuf::uint8* PolicyDelta::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.iam.v1.PolicyDelta)
+  // repeated .google.iam.v1.BindingDelta binding_deltas = 1;
+  for (unsigned int i = 0, n = this->binding_deltas_size(); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        1, this->binding_deltas(i), false, target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.iam.v1.PolicyDelta)
+  return target;
+}
+
+size_t PolicyDelta::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.iam.v1.PolicyDelta)
+  size_t total_size = 0;
+
+  // repeated .google.iam.v1.BindingDelta binding_deltas = 1;
+  {
+    unsigned int count = this->binding_deltas_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->binding_deltas(i));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void PolicyDelta::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.PolicyDelta)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PolicyDelta* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const PolicyDelta>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.iam.v1.PolicyDelta)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.PolicyDelta)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void PolicyDelta::MergeFrom(const PolicyDelta& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.PolicyDelta)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void PolicyDelta::UnsafeMergeFrom(const PolicyDelta& from) {
+  GOOGLE_DCHECK(&from != this);
+  binding_deltas_.MergeFrom(from.binding_deltas_);
+}
+
+void PolicyDelta::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.iam.v1.PolicyDelta)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void PolicyDelta::CopyFrom(const PolicyDelta& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.PolicyDelta)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool PolicyDelta::IsInitialized() const {
+
+  return true;
+}
+
+void PolicyDelta::Swap(PolicyDelta* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    PolicyDelta temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
+  }
+}
+void PolicyDelta::UnsafeArenaSwap(PolicyDelta* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void PolicyDelta::InternalSwap(PolicyDelta* other) {
+  binding_deltas_.UnsafeArenaSwap(&other->binding_deltas_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata PolicyDelta::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PolicyDelta_descriptor_;
+  metadata.reflection = PolicyDelta_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// PolicyDelta
+
+// repeated .google.iam.v1.BindingDelta binding_deltas = 1;
+int PolicyDelta::binding_deltas_size() const {
+  return binding_deltas_.size();
+}
+void PolicyDelta::clear_binding_deltas() {
+  binding_deltas_.Clear();
+}
+const ::google::iam::v1::BindingDelta& PolicyDelta::binding_deltas(int index) const {
+  // @@protoc_insertion_point(field_get:google.iam.v1.PolicyDelta.binding_deltas)
+  return binding_deltas_.Get(index);
+}
+::google::iam::v1::BindingDelta* PolicyDelta::mutable_binding_deltas(int index) {
+  // @@protoc_insertion_point(field_mutable:google.iam.v1.PolicyDelta.binding_deltas)
+  return binding_deltas_.Mutable(index);
+}
+::google::iam::v1::BindingDelta* PolicyDelta::add_binding_deltas() {
+  // @@protoc_insertion_point(field_add:google.iam.v1.PolicyDelta.binding_deltas)
+  return binding_deltas_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::google::iam::v1::BindingDelta >*
+PolicyDelta::mutable_binding_deltas() {
+  // @@protoc_insertion_point(field_mutable_list:google.iam.v1.PolicyDelta.binding_deltas)
+  return &binding_deltas_;
+}
+const ::google::protobuf::RepeatedPtrField< ::google::iam::v1::BindingDelta >&
+PolicyDelta::binding_deltas() const {
+  // @@protoc_insertion_point(field_list:google.iam.v1.PolicyDelta.binding_deltas)
+  return binding_deltas_;
+}
+
+inline const PolicyDelta* PolicyDelta::internal_default_instance() {
+  return &PolicyDelta_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+const ::google::protobuf::EnumDescriptor* BindingDelta_Action_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return BindingDelta_Action_descriptor_;
+}
+bool BindingDelta_Action_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const BindingDelta_Action BindingDelta::ACTION_UNSPECIFIED;
+const BindingDelta_Action BindingDelta::ADD;
+const BindingDelta_Action BindingDelta::REMOVE;
+const BindingDelta_Action BindingDelta::Action_MIN;
+const BindingDelta_Action BindingDelta::Action_MAX;
+const int BindingDelta::Action_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int BindingDelta::kActionFieldNumber;
+const int BindingDelta::kRoleFieldNumber;
+const int BindingDelta::kMemberFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+BindingDelta::BindingDelta()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.iam.v1.BindingDelta)
+}
+BindingDelta::BindingDelta(::google::protobuf::Arena* arena)
+  : ::google::protobuf::Message(),
+  _internal_metadata_(arena) {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+#endif  // GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:google.iam.v1.BindingDelta)
+}
+
+void BindingDelta::InitAsDefaultInstance() {
+}
+
+BindingDelta::BindingDelta(const BindingDelta& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.iam.v1.BindingDelta)
+}
+
+void BindingDelta::SharedCtor() {
+  role_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  member_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  action_ = 0;
+  _cached_size_ = 0;
+}
+
+BindingDelta::~BindingDelta() {
+  // @@protoc_insertion_point(destructor:google.iam.v1.BindingDelta)
+  SharedDtor();
+}
+
+void BindingDelta::SharedDtor() {
+  ::google::protobuf::Arena* arena = GetArenaNoVirtual();
+  if (arena != NULL) {
+    return;
+  }
+
+  role_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+  member_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+}
+
+void BindingDelta::ArenaDtor(void* object) {
+  BindingDelta* _this = reinterpret_cast< BindingDelta* >(object);
+  (void)_this;
+}
+void BindingDelta::RegisterArenaDtor(::google::protobuf::Arena* arena) {
+}
+void BindingDelta::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* BindingDelta::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return BindingDelta_descriptor_;
+}
+
+const BindingDelta& BindingDelta::default_instance() {
+  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<BindingDelta> BindingDelta_default_instance_;
+
+BindingDelta* BindingDelta::New(::google::protobuf::Arena* arena) const {
+  return ::google::protobuf::Arena::CreateMessage<BindingDelta>(arena);
+}
+
+void BindingDelta::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.iam.v1.BindingDelta)
+  action_ = 0;
+  role_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  member_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+
+bool BindingDelta::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.iam.v1.BindingDelta)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .google.iam.v1.BindingDelta.Action action = 1;
+      case 1: {
+        if (tag == 8) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_action(static_cast< ::google::iam::v1::BindingDelta_Action >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_role;
+        break;
+      }
+
+      // optional string role = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_role:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_role()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->role().data(), this->role().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.iam.v1.BindingDelta.role"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(26)) goto parse_member;
+        break;
+      }
+
+      // optional string member = 3;
+      case 3: {
+        if (tag == 26) {
+         parse_member:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_member()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->member().data(), this->member().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.iam.v1.BindingDelta.member"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.iam.v1.BindingDelta)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.iam.v1.BindingDelta)
+  return false;
+#undef DO_
+}
+
+void BindingDelta::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.iam.v1.BindingDelta)
+  // optional .google.iam.v1.BindingDelta.Action action = 1;
+  if (this->action() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->action(), output);
+  }
+
+  // optional string role = 2;
+  if (this->role().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->role().data(), this->role().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.iam.v1.BindingDelta.role");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->role(), output);
+  }
+
+  // optional string member = 3;
+  if (this->member().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->member().data(), this->member().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.iam.v1.BindingDelta.member");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->member(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.iam.v1.BindingDelta)
+}
+
+::google::protobuf::uint8* BindingDelta::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.iam.v1.BindingDelta)
+  // optional .google.iam.v1.BindingDelta.Action action = 1;
+  if (this->action() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->action(), target);
+  }
+
+  // optional string role = 2;
+  if (this->role().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->role().data(), this->role().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.iam.v1.BindingDelta.role");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->role(), target);
+  }
+
+  // optional string member = 3;
+  if (this->member().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->member().data(), this->member().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.iam.v1.BindingDelta.member");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->member(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.iam.v1.BindingDelta)
+  return target;
+}
+
+size_t BindingDelta::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.iam.v1.BindingDelta)
+  size_t total_size = 0;
+
+  // optional .google.iam.v1.BindingDelta.Action action = 1;
+  if (this->action() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->action());
+  }
+
+  // optional string role = 2;
+  if (this->role().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->role());
+  }
+
+  // optional string member = 3;
+  if (this->member().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->member());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void BindingDelta::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.BindingDelta)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const BindingDelta* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const BindingDelta>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.iam.v1.BindingDelta)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.BindingDelta)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void BindingDelta::MergeFrom(const BindingDelta& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.BindingDelta)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void BindingDelta::UnsafeMergeFrom(const BindingDelta& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.action() != 0) {
+    set_action(from.action());
+  }
+  if (from.role().size() > 0) {
+    set_role(from.role());
+  }
+  if (from.member().size() > 0) {
+    set_member(from.member());
+  }
+}
+
+void BindingDelta::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.iam.v1.BindingDelta)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void BindingDelta::CopyFrom(const BindingDelta& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.BindingDelta)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool BindingDelta::IsInitialized() const {
+
+  return true;
+}
+
+void BindingDelta::Swap(BindingDelta* other) {
+  if (other == this) return;
+  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
+    InternalSwap(other);
+  } else {
+    BindingDelta temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
+  }
+}
+void BindingDelta::UnsafeArenaSwap(BindingDelta* other) {
+  if (other == this) return;
+  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
+  InternalSwap(other);
+}
+void BindingDelta::InternalSwap(BindingDelta* other) {
+  std::swap(action_, other->action_);
+  role_.Swap(&other->role_);
+  member_.Swap(&other->member_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata BindingDelta::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = BindingDelta_descriptor_;
+  metadata.reflection = BindingDelta_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// BindingDelta
+
+// optional .google.iam.v1.BindingDelta.Action action = 1;
+void BindingDelta::clear_action() {
+  action_ = 0;
+}
+::google::iam::v1::BindingDelta_Action BindingDelta::action() const {
+  // @@protoc_insertion_point(field_get:google.iam.v1.BindingDelta.action)
+  return static_cast< ::google::iam::v1::BindingDelta_Action >(action_);
+}
+void BindingDelta::set_action(::google::iam::v1::BindingDelta_Action value) {
+  
+  action_ = value;
+  // @@protoc_insertion_point(field_set:google.iam.v1.BindingDelta.action)
+}
+
+// optional string role = 2;
+void BindingDelta::clear_role() {
+  role_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+const ::std::string& BindingDelta::role() const {
+  // @@protoc_insertion_point(field_get:google.iam.v1.BindingDelta.role)
+  return role_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void BindingDelta::set_role(const ::std::string& value) {
+  
+  role_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:google.iam.v1.BindingDelta.role)
+}
+void BindingDelta::set_role(const char* value) {
+  
+  role_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:google.iam.v1.BindingDelta.role)
+}
+void BindingDelta::set_role(const char* value,
+    size_t size) {
+  
+  role_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:google.iam.v1.BindingDelta.role)
+}
+::std::string* BindingDelta::mutable_role() {
+  
+  // @@protoc_insertion_point(field_mutable:google.iam.v1.BindingDelta.role)
+  return role_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+::std::string* BindingDelta::release_role() {
+  // @@protoc_insertion_point(field_release:google.iam.v1.BindingDelta.role)
+  
+  return role_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+::std::string* BindingDelta::unsafe_arena_release_role() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.v1.BindingDelta.role)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return role_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+void BindingDelta::set_allocated_role(::std::string* role) {
+  if (role != NULL) {
+    
+  } else {
+    
+  }
+  role_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), role,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:google.iam.v1.BindingDelta.role)
+}
+void BindingDelta::unsafe_arena_set_allocated_role(
+    ::std::string* role) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (role != NULL) {
+    
+  } else {
+    
+  }
+  role_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      role, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.v1.BindingDelta.role)
+}
+
+// optional string member = 3;
+void BindingDelta::clear_member() {
+  member_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+const ::std::string& BindingDelta::member() const {
+  // @@protoc_insertion_point(field_get:google.iam.v1.BindingDelta.member)
+  return member_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void BindingDelta::set_member(const ::std::string& value) {
+  
+  member_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set:google.iam.v1.BindingDelta.member)
+}
+void BindingDelta::set_member(const char* value) {
+  
+  member_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+              GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_char:google.iam.v1.BindingDelta.member)
+}
+void BindingDelta::set_member(const char* value,
+    size_t size) {
+  
+  member_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_pointer:google.iam.v1.BindingDelta.member)
+}
+::std::string* BindingDelta::mutable_member() {
+  
+  // @@protoc_insertion_point(field_mutable:google.iam.v1.BindingDelta.member)
+  return member_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+::std::string* BindingDelta::release_member() {
+  // @@protoc_insertion_point(field_release:google.iam.v1.BindingDelta.member)
+  
+  return member_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+}
+::std::string* BindingDelta::unsafe_arena_release_member() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:google.iam.v1.BindingDelta.member)
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  
+  return member_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      GetArenaNoVirtual());
+}
+void BindingDelta::set_allocated_member(::std::string* member) {
+  if (member != NULL) {
+    
+  } else {
+    
+  }
+  member_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), member,
+      GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_set_allocated:google.iam.v1.BindingDelta.member)
+}
+void BindingDelta::unsafe_arena_set_allocated_member(
+    ::std::string* member) {
+  GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
+  if (member != NULL) {
+    
+  } else {
+    
+  }
+  member_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      member, GetArenaNoVirtual());
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.v1.BindingDelta.member)
+}
+
+inline const BindingDelta* BindingDelta::internal_default_instance() {
+  return &BindingDelta_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

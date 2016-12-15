@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace ml {
 namespace v1beta1 {
 
 // Allows retrieving project related information.
-class ProjectManagementService GRPC_FINAL {
+class ProjectManagementService final {
  public:
   class StubInterface {
    public:
@@ -60,17 +61,17 @@ class ProjectManagementService GRPC_FINAL {
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::ml::v1beta1::GetConfigResponse>* AsyncGetConfigRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status GetConfig(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest& request, ::google::cloud::ml::v1beta1::GetConfigResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status GetConfig(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest& request, ::google::cloud::ml::v1beta1::GetConfigResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::GetConfigResponse>> AsyncGetConfig(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::GetConfigResponse>>(AsyncGetConfigRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::GetConfigResponse>* AsyncGetConfigRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::ml::v1beta1::GetConfigResponse>* AsyncGetConfigRaw(::grpc::ClientContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_GetConfig_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -93,11 +94,11 @@ class ProjectManagementService GRPC_FINAL {
     WithAsyncMethod_GetConfig() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_GetConfig() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest* request, ::google::cloud::ml::v1beta1::GetConfigResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest* request, ::google::cloud::ml::v1beta1::GetConfigResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -114,15 +115,38 @@ class ProjectManagementService GRPC_FINAL {
     WithGenericMethod_GetConfig() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_GetConfig() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetConfig() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest* request, ::google::cloud::ml::v1beta1::GetConfigResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest* request, ::google::cloud::ml::v1beta1::GetConfigResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetConfig : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetConfig() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::ml::v1beta1::GetConfigRequest, ::google::cloud::ml::v1beta1::GetConfigResponse>(std::bind(&WithStreamedUnaryMethod_GetConfig<BaseClass>::StreamedGetConfig, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetConfig() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetConfig(::grpc::ServerContext* context, const ::google::cloud::ml::v1beta1::GetConfigRequest* request, ::google::cloud::ml::v1beta1::GetConfigResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetConfig(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::ml::v1beta1::GetConfigRequest,::google::cloud::ml::v1beta1::GetConfigResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_GetConfig<Service > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_GetConfig<Service > StreamedService;
 };
 
 }  // namespace v1beta1

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace dataproc {
 namespace v1 {
 
 // The JobController provides methods to manage jobs.
-class JobController GRPC_FINAL {
+class JobController final {
  public:
   class StubInterface {
    public:
@@ -85,37 +86,37 @@ class JobController GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::cloud::dataproc::v1::Job>* AsyncCancelJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status SubmitJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest& request, ::google::cloud::dataproc::v1::Job* response) GRPC_OVERRIDE;
+    ::grpc::Status SubmitJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest& request, ::google::cloud::dataproc::v1::Job* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>> AsyncSubmitJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>>(AsyncSubmitJobRaw(context, request, cq));
     }
-    ::grpc::Status GetJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::GetJobRequest& request, ::google::cloud::dataproc::v1::Job* response) GRPC_OVERRIDE;
+    ::grpc::Status GetJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::GetJobRequest& request, ::google::cloud::dataproc::v1::Job* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>> AsyncGetJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::GetJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>>(AsyncGetJobRaw(context, request, cq));
     }
-    ::grpc::Status ListJobs(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest& request, ::google::cloud::dataproc::v1::ListJobsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListJobs(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest& request, ::google::cloud::dataproc::v1::ListJobsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::ListJobsResponse>> AsyncListJobs(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::ListJobsResponse>>(AsyncListJobsRaw(context, request, cq));
     }
-    ::grpc::Status CancelJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest& request, ::google::cloud::dataproc::v1::Job* response) GRPC_OVERRIDE;
+    ::grpc::Status CancelJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest& request, ::google::cloud::dataproc::v1::Job* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>> AsyncCancelJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>>(AsyncCancelJobRaw(context, request, cq));
     }
-    ::grpc::Status DeleteJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteJob(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteJobRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>* AsyncSubmitJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>* AsyncGetJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::GetJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::ListJobsResponse>* AsyncListJobsRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>* AsyncCancelJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>* AsyncSubmitJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>* AsyncGetJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::GetJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::ListJobsResponse>* AsyncListJobsRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::cloud::dataproc::v1::Job>* AsyncCancelJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteJobRaw(::grpc::ClientContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_SubmitJob_;
     const ::grpc::RpcMethod rpcmethod_GetJob_;
     const ::grpc::RpcMethod rpcmethod_ListJobs_;
@@ -151,11 +152,11 @@ class JobController GRPC_FINAL {
     WithAsyncMethod_SubmitJob() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_SubmitJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SubmitJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SubmitJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest* request, ::google::cloud::dataproc::v1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SubmitJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -171,11 +172,11 @@ class JobController GRPC_FINAL {
     WithAsyncMethod_GetJob() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::GetJobRequest* request, ::google::cloud::dataproc::v1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::GetJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -191,11 +192,11 @@ class JobController GRPC_FINAL {
     WithAsyncMethod_ListJobs() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ListJobs() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListJobs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest* request, ::google::cloud::dataproc::v1::ListJobsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest* request, ::google::cloud::dataproc::v1::ListJobsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -211,11 +212,11 @@ class JobController GRPC_FINAL {
     WithAsyncMethod_CancelJob() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_CancelJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CancelJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest* request, ::google::cloud::dataproc::v1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -231,11 +232,11 @@ class JobController GRPC_FINAL {
     WithAsyncMethod_DeleteJob() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteJob() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -252,11 +253,11 @@ class JobController GRPC_FINAL {
     WithGenericMethod_SubmitJob() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_SubmitJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_SubmitJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SubmitJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest* request, ::google::cloud::dataproc::v1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SubmitJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -269,11 +270,11 @@ class JobController GRPC_FINAL {
     WithGenericMethod_GetJob() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::GetJobRequest* request, ::google::cloud::dataproc::v1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::GetJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -286,11 +287,11 @@ class JobController GRPC_FINAL {
     WithGenericMethod_ListJobs() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ListJobs() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListJobs() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest* request, ::google::cloud::dataproc::v1::ListJobsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest* request, ::google::cloud::dataproc::v1::ListJobsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -303,11 +304,11 @@ class JobController GRPC_FINAL {
     WithGenericMethod_CancelJob() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_CancelJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_CancelJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest* request, ::google::cloud::dataproc::v1::Job* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -320,15 +321,118 @@ class JobController GRPC_FINAL {
     WithGenericMethod_DeleteJob() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteJob() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteJob() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SubmitJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SubmitJob() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::dataproc::v1::SubmitJobRequest, ::google::cloud::dataproc::v1::Job>(std::bind(&WithStreamedUnaryMethod_SubmitJob<BaseClass>::StreamedSubmitJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SubmitJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SubmitJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::SubmitJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSubmitJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::dataproc::v1::SubmitJobRequest,::google::cloud::dataproc::v1::Job>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetJob() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::dataproc::v1::GetJobRequest, ::google::cloud::dataproc::v1::Job>(std::bind(&WithStreamedUnaryMethod_GetJob<BaseClass>::StreamedGetJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::GetJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::dataproc::v1::GetJobRequest,::google::cloud::dataproc::v1::Job>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListJobs : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListJobs() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::dataproc::v1::ListJobsRequest, ::google::cloud::dataproc::v1::ListJobsResponse>(std::bind(&WithStreamedUnaryMethod_ListJobs<BaseClass>::StreamedListJobs, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListJobs() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListJobs(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::ListJobsRequest* request, ::google::cloud::dataproc::v1::ListJobsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListJobs(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::dataproc::v1::ListJobsRequest,::google::cloud::dataproc::v1::ListJobsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CancelJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CancelJob() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::dataproc::v1::CancelJobRequest, ::google::cloud::dataproc::v1::Job>(std::bind(&WithStreamedUnaryMethod_CancelJob<BaseClass>::StreamedCancelJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CancelJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CancelJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::CancelJobRequest* request, ::google::cloud::dataproc::v1::Job* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCancelJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::dataproc::v1::CancelJobRequest,::google::cloud::dataproc::v1::Job>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteJob : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteJob() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::cloud::dataproc::v1::DeleteJobRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteJob<BaseClass>::StreamedDeleteJob, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteJob() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteJob(::grpc::ServerContext* context, const ::google::cloud::dataproc::v1::DeleteJobRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteJob(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::cloud::dataproc::v1::DeleteJobRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_SubmitJob<WithStreamedUnaryMethod_GetJob<WithStreamedUnaryMethod_ListJobs<WithStreamedUnaryMethod_CancelJob<WithStreamedUnaryMethod_DeleteJob<Service > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_SubmitJob<WithStreamedUnaryMethod_GetJob<WithStreamedUnaryMethod_ListJobs<WithStreamedUnaryMethod_CancelJob<WithStreamedUnaryMethod_DeleteJob<Service > > > > > StreamedService;
 };
 
 }  // namespace v1

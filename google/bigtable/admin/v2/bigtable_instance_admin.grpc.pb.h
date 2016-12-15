@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -46,7 +47,7 @@ namespace v2 {
 // Service for creating, configuring, and deleting Cloud Bigtable Instances and
 // Clusters. Provides access to the Instance and Cluster schemas only, not the
 // tables metadata or data stored in those tables.
-class BigtableInstanceAdmin GRPC_FINAL {
+class BigtableInstanceAdmin final {
  public:
   class StubInterface {
    public:
@@ -113,62 +114,62 @@ class BigtableInstanceAdmin GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncUpdateClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Cluster& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateInstanceRaw(context, request, cq));
     }
-    ::grpc::Status GetInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest& request, ::google::bigtable::admin::v2::Instance* response) GRPC_OVERRIDE;
+    ::grpc::Status GetInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest& request, ::google::bigtable::admin::v2::Instance* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>> AsyncGetInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>>(AsyncGetInstanceRaw(context, request, cq));
     }
-    ::grpc::Status ListInstances(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest& request, ::google::bigtable::admin::v2::ListInstancesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListInstances(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest& request, ::google::bigtable::admin::v2::ListInstancesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListInstancesResponse>> AsyncListInstances(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListInstancesResponse>>(AsyncListInstancesRaw(context, request, cq));
     }
-    ::grpc::Status UpdateInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Instance& request, ::google::bigtable::admin::v2::Instance* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Instance& request, ::google::bigtable::admin::v2::Instance* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>> AsyncUpdateInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Instance& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>>(AsyncUpdateInstanceRaw(context, request, cq));
     }
-    ::grpc::Status DeleteInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteInstance(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteInstanceRaw(context, request, cq));
     }
-    ::grpc::Status CreateCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateClusterRaw(context, request, cq));
     }
-    ::grpc::Status GetCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetClusterRequest& request, ::google::bigtable::admin::v2::Cluster* response) GRPC_OVERRIDE;
+    ::grpc::Status GetCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetClusterRequest& request, ::google::bigtable::admin::v2::Cluster* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Cluster>> AsyncGetCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetClusterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Cluster>>(AsyncGetClusterRaw(context, request, cq));
     }
-    ::grpc::Status ListClusters(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListClustersRequest& request, ::google::bigtable::admin::v2::ListClustersResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListClusters(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListClustersRequest& request, ::google::bigtable::admin::v2::ListClustersResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListClustersResponse>> AsyncListClusters(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListClustersRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListClustersResponse>>(AsyncListClustersRaw(context, request, cq));
     }
-    ::grpc::Status UpdateCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Cluster& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Cluster& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncUpdateCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Cluster& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncUpdateClusterRaw(context, request, cq));
     }
-    ::grpc::Status DeleteCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteCluster(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteClusterRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>* AsyncGetInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListInstancesResponse>* AsyncListInstancesRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>* AsyncUpdateInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Instance& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Cluster>* AsyncGetClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetClusterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListClustersResponse>* AsyncListClustersRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListClustersRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Cluster& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>* AsyncGetInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListInstancesResponse>* AsyncListInstancesRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Instance>* AsyncUpdateInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Instance& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteInstanceRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::Cluster>* AsyncGetClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::GetClusterRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::bigtable::admin::v2::ListClustersResponse>* AsyncListClustersRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::ListClustersRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::Cluster& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteClusterRaw(::grpc::ClientContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateInstance_;
     const ::grpc::RpcMethod rpcmethod_GetInstance_;
     const ::grpc::RpcMethod rpcmethod_ListInstances_;
@@ -215,11 +216,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_CreateInstance() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateInstance() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -235,11 +236,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_GetInstance() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetInstance() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest* request, ::google::bigtable::admin::v2::Instance* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest* request, ::google::bigtable::admin::v2::Instance* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -255,11 +256,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_ListInstances() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ListInstances() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListInstances() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest* request, ::google::bigtable::admin::v2::ListInstancesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest* request, ::google::bigtable::admin::v2::ListInstancesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -275,11 +276,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_UpdateInstance() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateInstance() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Instance* request, ::google::bigtable::admin::v2::Instance* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Instance* request, ::google::bigtable::admin::v2::Instance* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -295,11 +296,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_DeleteInstance() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteInstance() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -315,11 +316,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_CreateCluster() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_CreateCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -335,11 +336,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_GetCluster() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_GetCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetClusterRequest* request, ::google::bigtable::admin::v2::Cluster* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetClusterRequest* request, ::google::bigtable::admin::v2::Cluster* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -355,11 +356,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_ListClusters() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_ListClusters() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListClusters() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListClustersRequest* request, ::google::bigtable::admin::v2::ListClustersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListClustersRequest* request, ::google::bigtable::admin::v2::ListClustersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -375,11 +376,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_UpdateCluster() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_UpdateCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Cluster* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Cluster* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -395,11 +396,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithAsyncMethod_DeleteCluster() {
       ::grpc::Service::MarkMethodAsync(9);
     }
-    ~WithAsyncMethod_DeleteCluster() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -416,11 +417,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_CreateInstance() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateInstance() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -433,11 +434,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_GetInstance() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetInstance() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest* request, ::google::bigtable::admin::v2::Instance* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest* request, ::google::bigtable::admin::v2::Instance* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -450,11 +451,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_ListInstances() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ListInstances() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListInstances() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest* request, ::google::bigtable::admin::v2::ListInstancesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest* request, ::google::bigtable::admin::v2::ListInstancesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -467,11 +468,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_UpdateInstance() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateInstance() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Instance* request, ::google::bigtable::admin::v2::Instance* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Instance* request, ::google::bigtable::admin::v2::Instance* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -484,11 +485,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_DeleteInstance() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteInstance() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -501,11 +502,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_CreateCluster() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_CreateCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -518,11 +519,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_GetCluster() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_GetCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetClusterRequest* request, ::google::bigtable::admin::v2::Cluster* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetClusterRequest* request, ::google::bigtable::admin::v2::Cluster* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -535,11 +536,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_ListClusters() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_ListClusters() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListClusters() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListClustersRequest* request, ::google::bigtable::admin::v2::ListClustersResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListClustersRequest* request, ::google::bigtable::admin::v2::ListClustersResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -552,11 +553,11 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_UpdateCluster() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_UpdateCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Cluster* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Cluster* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -569,15 +570,218 @@ class BigtableInstanceAdmin GRPC_FINAL {
     WithGenericMethod_DeleteCluster() {
       ::grpc::Service::MarkMethodGeneric(9);
     }
-    ~WithGenericMethod_DeleteCluster() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteCluster() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateInstance : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateInstance() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::CreateInstanceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateInstance<BaseClass>::StreamedCreateInstance, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateInstance() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateInstanceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateInstance(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::CreateInstanceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetInstance : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetInstance() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::GetInstanceRequest, ::google::bigtable::admin::v2::Instance>(std::bind(&WithStreamedUnaryMethod_GetInstance<BaseClass>::StreamedGetInstance, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetInstance() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetInstanceRequest* request, ::google::bigtable::admin::v2::Instance* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetInstance(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::GetInstanceRequest,::google::bigtable::admin::v2::Instance>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListInstances : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListInstances() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::ListInstancesRequest, ::google::bigtable::admin::v2::ListInstancesResponse>(std::bind(&WithStreamedUnaryMethod_ListInstances<BaseClass>::StreamedListInstances, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListInstances() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListInstancesRequest* request, ::google::bigtable::admin::v2::ListInstancesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListInstances(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::ListInstancesRequest,::google::bigtable::admin::v2::ListInstancesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateInstance : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateInstance() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::Instance, ::google::bigtable::admin::v2::Instance>(std::bind(&WithStreamedUnaryMethod_UpdateInstance<BaseClass>::StreamedUpdateInstance, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateInstance() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Instance* request, ::google::bigtable::admin::v2::Instance* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateInstance(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::Instance,::google::bigtable::admin::v2::Instance>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteInstance : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteInstance() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::DeleteInstanceRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteInstance<BaseClass>::StreamedDeleteInstance, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteInstance() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteInstanceRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteInstance(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::DeleteInstanceRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateCluster() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::CreateClusterRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateCluster<BaseClass>::StreamedCreateCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::CreateClusterRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::CreateClusterRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetCluster() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::GetClusterRequest, ::google::bigtable::admin::v2::Cluster>(std::bind(&WithStreamedUnaryMethod_GetCluster<BaseClass>::StreamedGetCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::GetClusterRequest* request, ::google::bigtable::admin::v2::Cluster* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::GetClusterRequest,::google::bigtable::admin::v2::Cluster>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListClusters : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListClusters() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::ListClustersRequest, ::google::bigtable::admin::v2::ListClustersResponse>(std::bind(&WithStreamedUnaryMethod_ListClusters<BaseClass>::StreamedListClusters, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListClusters() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListClusters(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::ListClustersRequest* request, ::google::bigtable::admin::v2::ListClustersResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListClusters(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::ListClustersRequest,::google::bigtable::admin::v2::ListClustersResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateCluster() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::Cluster, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_UpdateCluster<BaseClass>::StreamedUpdateCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::Cluster* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::Cluster,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteCluster : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteCluster() {
+      ::grpc::Service::MarkMethodStreamed(9,
+        new ::grpc::StreamedUnaryHandler< ::google::bigtable::admin::v2::DeleteClusterRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteCluster<BaseClass>::StreamedDeleteCluster, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteCluster() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteCluster(::grpc::ServerContext* context, const ::google::bigtable::admin::v2::DeleteClusterRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteCluster(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::bigtable::admin::v2::DeleteClusterRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateInstance<WithStreamedUnaryMethod_GetInstance<WithStreamedUnaryMethod_ListInstances<WithStreamedUnaryMethod_UpdateInstance<WithStreamedUnaryMethod_DeleteInstance<WithStreamedUnaryMethod_CreateCluster<WithStreamedUnaryMethod_GetCluster<WithStreamedUnaryMethod_ListClusters<WithStreamedUnaryMethod_UpdateCluster<WithStreamedUnaryMethod_DeleteCluster<Service > > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateInstance<WithStreamedUnaryMethod_GetInstance<WithStreamedUnaryMethod_ListInstances<WithStreamedUnaryMethod_UpdateInstance<WithStreamedUnaryMethod_DeleteInstance<WithStreamedUnaryMethod_CreateCluster<WithStreamedUnaryMethod_GetCluster<WithStreamedUnaryMethod_ListClusters<WithStreamedUnaryMethod_UpdateCluster<WithStreamedUnaryMethod_DeleteCluster<Service > > > > > > > > > > StreamedService;
 };
 
 }  // namespace v2

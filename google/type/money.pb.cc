@@ -45,20 +45,19 @@ void protobuf_AssignDesc_google_2ftype_2fmoney_2eproto() {
   Money_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
       Money_descriptor_,
-      Money::default_instance_,
+      Money::internal_default_instance(),
       Money_offsets_,
       -1,
       -1,
       -1,
       sizeof(Money),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Money, _internal_metadata_),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Money, _is_default_instance_));
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Money, _internal_metadata_));
 }
 
 namespace {
 
 GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
-inline void protobuf_AssignDescriptorsOnce() {
+void protobuf_AssignDescriptorsOnce() {
   ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
                  &protobuf_AssignDesc_google_2ftype_2fmoney_2eproto);
 }
@@ -67,41 +66,66 @@ void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      Money_descriptor_, &Money::default_instance());
+      Money_descriptor_, Money::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2ftype_2fmoney_2eproto() {
-  delete Money::default_instance_;
+  Money_default_instance_.Shutdown();
   delete Money_reflection_;
 }
 
-void protobuf_AddDesc_google_2ftype_2fmoney_2eproto() GOOGLE_ATTRIBUTE_COLD;
-void protobuf_AddDesc_google_2ftype_2fmoney_2eproto() {
-  static bool already_here = false;
-  if (already_here) return;
-  already_here = true;
+void protobuf_InitDefaults_google_2ftype_2fmoney_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
+  ::google::protobuf::internal::GetEmptyString();
+  Money_default_instance_.DefaultConstruct();
+  Money_default_instance_.get_mutable()->InitAsDefaultInstance();
+}
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2ftype_2fmoney_2eproto_once_);
+void protobuf_InitDefaults_google_2ftype_2fmoney_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2ftype_2fmoney_2eproto_once_,
+                 &protobuf_InitDefaults_google_2ftype_2fmoney_2eproto_impl);
+}
+void protobuf_AddDesc_google_2ftype_2fmoney_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  protobuf_InitDefaults_google_2ftype_2fmoney_2eproto();
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
     "\n\027google/type/money.proto\022\013google.type\"<"
     "\n\005Money\022\025\n\rcurrency_code\030\001 \001(\t\022\r\n\005units\030"
-    "\002 \001(\003\022\r\n\005nanos\030\003 \001(\005B%\n\017com.google.typeB"
-    "\nMoneyProtoP\001\242\002\003GTPb\006proto3", 147);
+    "\002 \001(\003\022\r\n\005nanos\030\003 \001(\005B]\n\017com.google.typeB"
+    "\nMoneyProtoP\001Z6google.golang.org/genprot"
+    "o/googleapis/type/money;money\242\002\003GTPb\006pro"
+    "to3", 203);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/type/money.proto", &protobuf_RegisterTypes);
-  Money::default_instance_ = new Money();
-  Money::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2ftype_2fmoney_2eproto);
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AddDesc_google_2ftype_2fmoney_2eproto_once_);
+void protobuf_AddDesc_google_2ftype_2fmoney_2eproto() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AddDesc_google_2ftype_2fmoney_2eproto_once_,
+                 &protobuf_AddDesc_google_2ftype_2fmoney_2eproto_impl);
+}
 // Force AddDescriptors() to be called at static initialization time.
 struct StaticDescriptorInitializer_google_2ftype_2fmoney_2eproto {
   StaticDescriptorInitializer_google_2ftype_2fmoney_2eproto() {
     protobuf_AddDesc_google_2ftype_2fmoney_2eproto();
   }
 } static_descriptor_initializer_google_2ftype_2fmoney_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -113,29 +137,27 @@ const int Money::kNanosFieldNumber;
 
 Money::Money()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftype_2fmoney_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.type.Money)
 }
 
 void Money::InitAsDefaultInstance() {
-  _is_default_instance_ = true;
 }
 
 Money::Money(const Money& from)
   : ::google::protobuf::Message(),
     _internal_metadata_(NULL) {
   SharedCtor();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.type.Money)
 }
 
 void Money::SharedCtor() {
-    _is_default_instance_ = false;
-  ::google::protobuf::internal::GetEmptyString();
-  _cached_size_ = 0;
   currency_code_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  units_ = GOOGLE_LONGLONG(0);
-  nanos_ = 0;
+  ::memset(&units_, 0, reinterpret_cast<char*>(&nanos_) -
+    reinterpret_cast<char*>(&units_) + sizeof(nanos_));
+  _cached_size_ = 0;
 }
 
 Money::~Money() {
@@ -145,8 +167,6 @@ Money::~Money() {
 
 void Money::SharedDtor() {
   currency_code_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != default_instance_) {
-  }
 }
 
 void Money::SetCachedSize(int size) const {
@@ -160,11 +180,11 @@ const ::google::protobuf::Descriptor* Money::descriptor() {
 }
 
 const Money& Money::default_instance() {
-  if (default_instance_ == NULL) protobuf_AddDesc_google_2ftype_2fmoney_2eproto();
-  return *default_instance_;
+  protobuf_InitDefaults_google_2ftype_2fmoney_2eproto();
+  return *internal_default_instance();
 }
 
-Money* Money::default_instance_ = NULL;
+::google::protobuf::internal::ExplicitlyConstructed<Money> Money_default_instance_;
 
 Money* Money::New(::google::protobuf::Arena* arena) const {
   Money* n = new Money;
@@ -188,7 +208,7 @@ void Money::Clear() {
 #endif
 
 #define ZR_(first, last) do {\
-  ::memset(&first, 0,\
+  ::memset(&(first), 0,\
            ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
 } while (0)
 
@@ -230,10 +250,10 @@ bool Money::MergePartialFromCodedStream(
       case 2: {
         if (tag == 16) {
          parse_units:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &units_)));
-
         } else {
           goto handle_unusual;
         }
@@ -245,10 +265,10 @@ bool Money::MergePartialFromCodedStream(
       case 3: {
         if (tag == 24) {
          parse_nanos:
+
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &nanos_)));
-
         } else {
           goto handle_unusual;
         }
@@ -305,6 +325,7 @@ void Money::SerializeWithCachedSizes(
 
 ::google::protobuf::uint8* Money::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.type.Money)
   // optional string currency_code = 1;
   if (this->currency_code().size() > 0) {
@@ -331,9 +352,9 @@ void Money::SerializeWithCachedSizes(
   return target;
 }
 
-int Money::ByteSize() const {
+size_t Money::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.type.Money)
-  int total_size = 0;
+  size_t total_size = 0;
 
   // optional string currency_code = 1;
   if (this->currency_code().size() > 0) {
@@ -356,18 +377,17 @@ int Money::ByteSize() const {
         this->nanos());
   }
 
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = total_size;
+  _cached_size_ = cached_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Money::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.type.Money)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
-  }
-  const Money* source = 
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Money* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Money>(
           &from);
   if (source == NULL) {
@@ -375,15 +395,21 @@ void Money::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.type.Money)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Money::MergeFrom(const Money& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.type.Money)
-  if (GOOGLE_PREDICT_FALSE(&from == this)) {
-    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void Money::UnsafeMergeFrom(const Money& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.currency_code().size() > 0) {
 
     currency_code_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.currency_code_);
@@ -407,7 +433,7 @@ void Money::CopyFrom(const Money& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.type.Money)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Money::IsInitialized() const {
@@ -442,37 +468,37 @@ void Money::InternalSwap(Money* other) {
 void Money::clear_currency_code() {
   currency_code_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- const ::std::string& Money::currency_code() const {
+const ::std::string& Money::currency_code() const {
   // @@protoc_insertion_point(field_get:google.type.Money.currency_code)
   return currency_code_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Money::set_currency_code(const ::std::string& value) {
+void Money::set_currency_code(const ::std::string& value) {
   
   currency_code_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.type.Money.currency_code)
 }
- void Money::set_currency_code(const char* value) {
+void Money::set_currency_code(const char* value) {
   
   currency_code_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.type.Money.currency_code)
 }
- void Money::set_currency_code(const char* value, size_t size) {
+void Money::set_currency_code(const char* value, size_t size) {
   
   currency_code_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.type.Money.currency_code)
 }
- ::std::string* Money::mutable_currency_code() {
+::std::string* Money::mutable_currency_code() {
   
   // @@protoc_insertion_point(field_mutable:google.type.Money.currency_code)
   return currency_code_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- ::std::string* Money::release_currency_code() {
+::std::string* Money::release_currency_code() {
   // @@protoc_insertion_point(field_release:google.type.Money.currency_code)
   
   return currency_code_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
- void Money::set_allocated_currency_code(::std::string* currency_code) {
+void Money::set_allocated_currency_code(::std::string* currency_code) {
   if (currency_code != NULL) {
     
   } else {
@@ -486,11 +512,11 @@ void Money::clear_currency_code() {
 void Money::clear_units() {
   units_ = GOOGLE_LONGLONG(0);
 }
- ::google::protobuf::int64 Money::units() const {
+::google::protobuf::int64 Money::units() const {
   // @@protoc_insertion_point(field_get:google.type.Money.units)
   return units_;
 }
- void Money::set_units(::google::protobuf::int64 value) {
+void Money::set_units(::google::protobuf::int64 value) {
   
   units_ = value;
   // @@protoc_insertion_point(field_set:google.type.Money.units)
@@ -500,16 +526,19 @@ void Money::clear_units() {
 void Money::clear_nanos() {
   nanos_ = 0;
 }
- ::google::protobuf::int32 Money::nanos() const {
+::google::protobuf::int32 Money::nanos() const {
   // @@protoc_insertion_point(field_get:google.type.Money.nanos)
   return nanos_;
 }
- void Money::set_nanos(::google::protobuf::int32 value) {
+void Money::set_nanos(::google::protobuf::int32 value) {
   
   nanos_ = value;
   // @@protoc_insertion_point(field_set:google.type.Money.nanos)
 }
 
+inline const Money* Money::internal_default_instance() {
+  return &Money_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -44,7 +45,7 @@ namespace v2 {
 
 // Service for configuring sinks used to export log entries outside of
 // Stackdriver Logging.
-class ConfigServiceV2 GRPC_FINAL {
+class ConfigServiceV2 final {
  public:
   class StubInterface {
    public:
@@ -59,17 +60,29 @@ class ConfigServiceV2 GRPC_FINAL {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogSink>> AsyncGetSink(::grpc::ClientContext* context, const ::google::logging::v2::GetSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogSink>>(AsyncGetSinkRaw(context, request, cq));
     }
-    // Creates a sink.
+    // Creates a sink that exports specified log entries to a destination.  The
+    // export of newly-ingested log entries begins immediately, unless the current
+    // time is outside the sink's start and end times or the sink's
+    // `writer_identity` is not permitted to write to the destination.  A sink can
+    // export log entries only from the resource owning the sink.
     virtual ::grpc::Status CreateSink(::grpc::ClientContext* context, const ::google::logging::v2::CreateSinkRequest& request, ::google::logging::v2::LogSink* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogSink>> AsyncCreateSink(::grpc::ClientContext* context, const ::google::logging::v2::CreateSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogSink>>(AsyncCreateSinkRaw(context, request, cq));
     }
-    // Updates or creates a sink.
+    // Updates a sink. If the named sink doesn't exist, then this method is
+    // identical to
+    // [sinks.create](/logging/docs/api/reference/rest/v2/projects.sinks/create).
+    // If the named sink does exist, then this method replaces the following
+    // fields in the existing sink with values from the new sink: `destination`,
+    // `filter`, `output_version_format`, `start_time`, and `end_time`.
+    // The updated filter might also have a new `writer_identity`; see the
+    // `unique_writer_identity` field.
     virtual ::grpc::Status UpdateSink(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::google::logging::v2::LogSink* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogSink>> AsyncUpdateSink(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogSink>>(AsyncUpdateSinkRaw(context, request, cq));
     }
-    // Deletes a sink.
+    // Deletes a sink. If the sink has a unique `writer_identity`, then that
+    // service account is also deleted.
     virtual ::grpc::Status DeleteSink(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::google::protobuf::Empty* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>> AsyncDeleteSink(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>>(AsyncDeleteSinkRaw(context, request, cq));
@@ -81,37 +94,37 @@ class ConfigServiceV2 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::logging::v2::LogSink>* AsyncUpdateSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListSinks(::grpc::ClientContext* context, const ::google::logging::v2::ListSinksRequest& request, ::google::logging::v2::ListSinksResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListSinks(::grpc::ClientContext* context, const ::google::logging::v2::ListSinksRequest& request, ::google::logging::v2::ListSinksResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListSinksResponse>> AsyncListSinks(::grpc::ClientContext* context, const ::google::logging::v2::ListSinksRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListSinksResponse>>(AsyncListSinksRaw(context, request, cq));
     }
-    ::grpc::Status GetSink(::grpc::ClientContext* context, const ::google::logging::v2::GetSinkRequest& request, ::google::logging::v2::LogSink* response) GRPC_OVERRIDE;
+    ::grpc::Status GetSink(::grpc::ClientContext* context, const ::google::logging::v2::GetSinkRequest& request, ::google::logging::v2::LogSink* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>> AsyncGetSink(::grpc::ClientContext* context, const ::google::logging::v2::GetSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>>(AsyncGetSinkRaw(context, request, cq));
     }
-    ::grpc::Status CreateSink(::grpc::ClientContext* context, const ::google::logging::v2::CreateSinkRequest& request, ::google::logging::v2::LogSink* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateSink(::grpc::ClientContext* context, const ::google::logging::v2::CreateSinkRequest& request, ::google::logging::v2::LogSink* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>> AsyncCreateSink(::grpc::ClientContext* context, const ::google::logging::v2::CreateSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>>(AsyncCreateSinkRaw(context, request, cq));
     }
-    ::grpc::Status UpdateSink(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::google::logging::v2::LogSink* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateSink(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::google::logging::v2::LogSink* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>> AsyncUpdateSink(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>>(AsyncUpdateSinkRaw(context, request, cq));
     }
-    ::grpc::Status DeleteSink(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteSink(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteSink(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteSinkRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListSinksResponse>* AsyncListSinksRaw(::grpc::ClientContext* context, const ::google::logging::v2::ListSinksRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>* AsyncGetSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::GetSinkRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>* AsyncCreateSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::CreateSinkRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>* AsyncUpdateSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::ListSinksResponse>* AsyncListSinksRaw(::grpc::ClientContext* context, const ::google::logging::v2::ListSinksRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>* AsyncGetSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::GetSinkRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>* AsyncCreateSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::CreateSinkRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::logging::v2::LogSink>* AsyncUpdateSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::UpdateSinkRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteSinkRaw(::grpc::ClientContext* context, const ::google::logging::v2::DeleteSinkRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListSinks_;
     const ::grpc::RpcMethod rpcmethod_GetSink_;
     const ::grpc::RpcMethod rpcmethod_CreateSink_;
@@ -128,11 +141,23 @@ class ConfigServiceV2 GRPC_FINAL {
     virtual ::grpc::Status ListSinks(::grpc::ServerContext* context, const ::google::logging::v2::ListSinksRequest* request, ::google::logging::v2::ListSinksResponse* response);
     // Gets a sink.
     virtual ::grpc::Status GetSink(::grpc::ServerContext* context, const ::google::logging::v2::GetSinkRequest* request, ::google::logging::v2::LogSink* response);
-    // Creates a sink.
+    // Creates a sink that exports specified log entries to a destination.  The
+    // export of newly-ingested log entries begins immediately, unless the current
+    // time is outside the sink's start and end times or the sink's
+    // `writer_identity` is not permitted to write to the destination.  A sink can
+    // export log entries only from the resource owning the sink.
     virtual ::grpc::Status CreateSink(::grpc::ServerContext* context, const ::google::logging::v2::CreateSinkRequest* request, ::google::logging::v2::LogSink* response);
-    // Updates or creates a sink.
+    // Updates a sink. If the named sink doesn't exist, then this method is
+    // identical to
+    // [sinks.create](/logging/docs/api/reference/rest/v2/projects.sinks/create).
+    // If the named sink does exist, then this method replaces the following
+    // fields in the existing sink with values from the new sink: `destination`,
+    // `filter`, `output_version_format`, `start_time`, and `end_time`.
+    // The updated filter might also have a new `writer_identity`; see the
+    // `unique_writer_identity` field.
     virtual ::grpc::Status UpdateSink(::grpc::ServerContext* context, const ::google::logging::v2::UpdateSinkRequest* request, ::google::logging::v2::LogSink* response);
-    // Deletes a sink.
+    // Deletes a sink. If the sink has a unique `writer_identity`, then that
+    // service account is also deleted.
     virtual ::grpc::Status DeleteSink(::grpc::ServerContext* context, const ::google::logging::v2::DeleteSinkRequest* request, ::google::protobuf::Empty* response);
   };
   template <class BaseClass>
@@ -143,11 +168,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithAsyncMethod_ListSinks() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListSinks() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListSinks() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListSinks(::grpc::ServerContext* context, const ::google::logging::v2::ListSinksRequest* request, ::google::logging::v2::ListSinksResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListSinks(::grpc::ServerContext* context, const ::google::logging::v2::ListSinksRequest* request, ::google::logging::v2::ListSinksResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -163,11 +188,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithAsyncMethod_GetSink() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetSink() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetSink(::grpc::ServerContext* context, const ::google::logging::v2::GetSinkRequest* request, ::google::logging::v2::LogSink* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetSink(::grpc::ServerContext* context, const ::google::logging::v2::GetSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -183,11 +208,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithAsyncMethod_CreateSink() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateSink() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateSink(::grpc::ServerContext* context, const ::google::logging::v2::CreateSinkRequest* request, ::google::logging::v2::LogSink* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateSink(::grpc::ServerContext* context, const ::google::logging::v2::CreateSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -203,11 +228,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithAsyncMethod_UpdateSink() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateSink() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateSink(::grpc::ServerContext* context, const ::google::logging::v2::UpdateSinkRequest* request, ::google::logging::v2::LogSink* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateSink(::grpc::ServerContext* context, const ::google::logging::v2::UpdateSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -223,11 +248,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithAsyncMethod_DeleteSink() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteSink() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteSink(::grpc::ServerContext* context, const ::google::logging::v2::DeleteSinkRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteSink(::grpc::ServerContext* context, const ::google::logging::v2::DeleteSinkRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -244,11 +269,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithGenericMethod_ListSinks() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListSinks() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListSinks() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListSinks(::grpc::ServerContext* context, const ::google::logging::v2::ListSinksRequest* request, ::google::logging::v2::ListSinksResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListSinks(::grpc::ServerContext* context, const ::google::logging::v2::ListSinksRequest* request, ::google::logging::v2::ListSinksResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -261,11 +286,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithGenericMethod_GetSink() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetSink() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetSink(::grpc::ServerContext* context, const ::google::logging::v2::GetSinkRequest* request, ::google::logging::v2::LogSink* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetSink(::grpc::ServerContext* context, const ::google::logging::v2::GetSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -278,11 +303,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithGenericMethod_CreateSink() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateSink() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateSink(::grpc::ServerContext* context, const ::google::logging::v2::CreateSinkRequest* request, ::google::logging::v2::LogSink* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateSink(::grpc::ServerContext* context, const ::google::logging::v2::CreateSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -295,11 +320,11 @@ class ConfigServiceV2 GRPC_FINAL {
     WithGenericMethod_UpdateSink() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateSink() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateSink(::grpc::ServerContext* context, const ::google::logging::v2::UpdateSinkRequest* request, ::google::logging::v2::LogSink* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateSink(::grpc::ServerContext* context, const ::google::logging::v2::UpdateSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -312,15 +337,118 @@ class ConfigServiceV2 GRPC_FINAL {
     WithGenericMethod_DeleteSink() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteSink() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteSink() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteSink(::grpc::ServerContext* context, const ::google::logging::v2::DeleteSinkRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteSink(::grpc::ServerContext* context, const ::google::logging::v2::DeleteSinkRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListSinks : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListSinks() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::ListSinksRequest, ::google::logging::v2::ListSinksResponse>(std::bind(&WithStreamedUnaryMethod_ListSinks<BaseClass>::StreamedListSinks, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListSinks() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListSinks(::grpc::ServerContext* context, const ::google::logging::v2::ListSinksRequest* request, ::google::logging::v2::ListSinksResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListSinks(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::ListSinksRequest,::google::logging::v2::ListSinksResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetSink : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetSink() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::GetSinkRequest, ::google::logging::v2::LogSink>(std::bind(&WithStreamedUnaryMethod_GetSink<BaseClass>::StreamedGetSink, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetSink() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetSink(::grpc::ServerContext* context, const ::google::logging::v2::GetSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetSink(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::GetSinkRequest,::google::logging::v2::LogSink>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateSink : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateSink() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::CreateSinkRequest, ::google::logging::v2::LogSink>(std::bind(&WithStreamedUnaryMethod_CreateSink<BaseClass>::StreamedCreateSink, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateSink() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateSink(::grpc::ServerContext* context, const ::google::logging::v2::CreateSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateSink(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::CreateSinkRequest,::google::logging::v2::LogSink>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateSink : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateSink() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::UpdateSinkRequest, ::google::logging::v2::LogSink>(std::bind(&WithStreamedUnaryMethod_UpdateSink<BaseClass>::StreamedUpdateSink, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateSink() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateSink(::grpc::ServerContext* context, const ::google::logging::v2::UpdateSinkRequest* request, ::google::logging::v2::LogSink* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateSink(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::UpdateSinkRequest,::google::logging::v2::LogSink>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteSink : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteSink() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::logging::v2::DeleteSinkRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteSink<BaseClass>::StreamedDeleteSink, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteSink() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteSink(::grpc::ServerContext* context, const ::google::logging::v2::DeleteSinkRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteSink(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::logging::v2::DeleteSinkRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListSinks<WithStreamedUnaryMethod_GetSink<WithStreamedUnaryMethod_CreateSink<WithStreamedUnaryMethod_UpdateSink<WithStreamedUnaryMethod_DeleteSink<Service > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListSinks<WithStreamedUnaryMethod_GetSink<WithStreamedUnaryMethod_CreateSink<WithStreamedUnaryMethod_UpdateSink<WithStreamedUnaryMethod_DeleteSink<Service > > > > > StreamedService;
 };
 
 }  // namespace v2

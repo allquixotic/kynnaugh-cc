@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -43,7 +44,7 @@ namespace genomics {
 namespace v1 {
 
 // This service manages datasets, which are collections of genomic data.
-class DatasetServiceV1 GRPC_FINAL {
+class DatasetServiceV1 final {
  public:
   class StubInterface {
    public:
@@ -159,57 +160,57 @@ class DatasetServiceV1 GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::iam::v1::Policy>* AsyncGetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::iam::v1::TestIamPermissionsResponse>* AsyncTestIamPermissionsRaw(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListDatasets(::grpc::ClientContext* context, const ::google::genomics::v1::ListDatasetsRequest& request, ::google::genomics::v1::ListDatasetsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListDatasets(::grpc::ClientContext* context, const ::google::genomics::v1::ListDatasetsRequest& request, ::google::genomics::v1::ListDatasetsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListDatasetsResponse>> AsyncListDatasets(::grpc::ClientContext* context, const ::google::genomics::v1::ListDatasetsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListDatasetsResponse>>(AsyncListDatasetsRaw(context, request, cq));
     }
-    ::grpc::Status CreateDataset(::grpc::ClientContext* context, const ::google::genomics::v1::CreateDatasetRequest& request, ::google::genomics::v1::Dataset* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateDataset(::grpc::ClientContext* context, const ::google::genomics::v1::CreateDatasetRequest& request, ::google::genomics::v1::Dataset* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>> AsyncCreateDataset(::grpc::ClientContext* context, const ::google::genomics::v1::CreateDatasetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>>(AsyncCreateDatasetRaw(context, request, cq));
     }
-    ::grpc::Status GetDataset(::grpc::ClientContext* context, const ::google::genomics::v1::GetDatasetRequest& request, ::google::genomics::v1::Dataset* response) GRPC_OVERRIDE;
+    ::grpc::Status GetDataset(::grpc::ClientContext* context, const ::google::genomics::v1::GetDatasetRequest& request, ::google::genomics::v1::Dataset* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>> AsyncGetDataset(::grpc::ClientContext* context, const ::google::genomics::v1::GetDatasetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>>(AsyncGetDatasetRaw(context, request, cq));
     }
-    ::grpc::Status UpdateDataset(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateDatasetRequest& request, ::google::genomics::v1::Dataset* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateDataset(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateDatasetRequest& request, ::google::genomics::v1::Dataset* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>> AsyncUpdateDataset(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateDatasetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>>(AsyncUpdateDatasetRaw(context, request, cq));
     }
-    ::grpc::Status DeleteDataset(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteDatasetRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteDataset(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteDatasetRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteDataset(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteDatasetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteDatasetRaw(context, request, cq));
     }
-    ::grpc::Status UndeleteDataset(::grpc::ClientContext* context, const ::google::genomics::v1::UndeleteDatasetRequest& request, ::google::genomics::v1::Dataset* response) GRPC_OVERRIDE;
+    ::grpc::Status UndeleteDataset(::grpc::ClientContext* context, const ::google::genomics::v1::UndeleteDatasetRequest& request, ::google::genomics::v1::Dataset* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>> AsyncUndeleteDataset(::grpc::ClientContext* context, const ::google::genomics::v1::UndeleteDatasetRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>>(AsyncUndeleteDatasetRaw(context, request, cq));
     }
-    ::grpc::Status SetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::google::iam::v1::Policy* response) GRPC_OVERRIDE;
+    ::grpc::Status SetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::google::iam::v1::Policy* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>> AsyncSetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>>(AsyncSetIamPolicyRaw(context, request, cq));
     }
-    ::grpc::Status GetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::google::iam::v1::Policy* response) GRPC_OVERRIDE;
+    ::grpc::Status GetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::google::iam::v1::Policy* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>> AsyncGetIamPolicy(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>>(AsyncGetIamPolicyRaw(context, request, cq));
     }
-    ::grpc::Status TestIamPermissions(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::google::iam::v1::TestIamPermissionsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status TestIamPermissions(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::google::iam::v1::TestIamPermissionsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>> AsyncTestIamPermissions(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>>(AsyncTestIamPermissionsRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListDatasetsResponse>* AsyncListDatasetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListDatasetsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncCreateDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateDatasetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncGetDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetDatasetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncUpdateDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateDatasetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteDatasetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncUndeleteDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UndeleteDatasetRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncSetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncGetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>* AsyncTestIamPermissionsRaw(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::ListDatasetsResponse>* AsyncListDatasetsRaw(::grpc::ClientContext* context, const ::google::genomics::v1::ListDatasetsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncCreateDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::CreateDatasetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncGetDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::GetDatasetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncUpdateDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UpdateDatasetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::DeleteDatasetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::genomics::v1::Dataset>* AsyncUndeleteDatasetRaw(::grpc::ClientContext* context, const ::google::genomics::v1::UndeleteDatasetRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncSetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::SetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::Policy>* AsyncGetIamPolicyRaw(::grpc::ClientContext* context, const ::google::iam::v1::GetIamPolicyRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::iam::v1::TestIamPermissionsResponse>* AsyncTestIamPermissionsRaw(::grpc::ClientContext* context, const ::google::iam::v1::TestIamPermissionsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListDatasets_;
     const ::grpc::RpcMethod rpcmethod_CreateDataset_;
     const ::grpc::RpcMethod rpcmethod_GetDataset_;
@@ -308,11 +309,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_ListDatasets() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListDatasets() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListDatasets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListDatasets(::grpc::ServerContext* context, const ::google::genomics::v1::ListDatasetsRequest* request, ::google::genomics::v1::ListDatasetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListDatasets(::grpc::ServerContext* context, const ::google::genomics::v1::ListDatasetsRequest* request, ::google::genomics::v1::ListDatasetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -328,11 +329,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_CreateDataset() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_CreateDataset() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::CreateDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::CreateDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -348,11 +349,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetDataset() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_GetDataset() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetDataset(::grpc::ServerContext* context, const ::google::genomics::v1::GetDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetDataset(::grpc::ServerContext* context, const ::google::genomics::v1::GetDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -368,11 +369,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_UpdateDataset() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateDataset() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -388,11 +389,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_DeleteDataset() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteDataset() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteDatasetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteDatasetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -408,11 +409,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_UndeleteDataset() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_UndeleteDataset() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UndeleteDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UndeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UndeleteDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UndeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UndeleteDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -428,11 +429,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_SetIamPolicy() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_SetIamPolicy() GRPC_OVERRIDE {
+    ~WithAsyncMethod_SetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -448,11 +449,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_GetIamPolicy() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_GetIamPolicy() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -468,11 +469,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithAsyncMethod_TestIamPermissions() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_TestIamPermissions() GRPC_OVERRIDE {
+    ~WithAsyncMethod_TestIamPermissions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -489,11 +490,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_ListDatasets() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListDatasets() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListDatasets() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListDatasets(::grpc::ServerContext* context, const ::google::genomics::v1::ListDatasetsRequest* request, ::google::genomics::v1::ListDatasetsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListDatasets(::grpc::ServerContext* context, const ::google::genomics::v1::ListDatasetsRequest* request, ::google::genomics::v1::ListDatasetsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -506,11 +507,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_CreateDataset() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_CreateDataset() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::CreateDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::CreateDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -523,11 +524,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_GetDataset() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_GetDataset() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetDataset(::grpc::ServerContext* context, const ::google::genomics::v1::GetDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetDataset(::grpc::ServerContext* context, const ::google::genomics::v1::GetDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -540,11 +541,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_UpdateDataset() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateDataset() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -557,11 +558,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_DeleteDataset() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteDataset() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteDatasetRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteDatasetRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -574,11 +575,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_UndeleteDataset() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_UndeleteDataset() GRPC_OVERRIDE {
+    ~WithGenericMethod_UndeleteDataset() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UndeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UndeleteDatasetRequest* request, ::google::genomics::v1::Dataset* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UndeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UndeleteDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -591,11 +592,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_SetIamPolicy() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_SetIamPolicy() GRPC_OVERRIDE {
+    ~WithGenericMethod_SetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -608,11 +609,11 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_GetIamPolicy() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_GetIamPolicy() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetIamPolicy() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -625,15 +626,198 @@ class DatasetServiceV1 GRPC_FINAL {
     WithGenericMethod_TestIamPermissions() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_TestIamPermissions() GRPC_OVERRIDE {
+    ~WithGenericMethod_TestIamPermissions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListDatasets : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListDatasets() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::ListDatasetsRequest, ::google::genomics::v1::ListDatasetsResponse>(std::bind(&WithStreamedUnaryMethod_ListDatasets<BaseClass>::StreamedListDatasets, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListDatasets() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListDatasets(::grpc::ServerContext* context, const ::google::genomics::v1::ListDatasetsRequest* request, ::google::genomics::v1::ListDatasetsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListDatasets(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::ListDatasetsRequest,::google::genomics::v1::ListDatasetsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateDataset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateDataset() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::CreateDatasetRequest, ::google::genomics::v1::Dataset>(std::bind(&WithStreamedUnaryMethod_CreateDataset<BaseClass>::StreamedCreateDataset, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateDataset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::CreateDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateDataset(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::CreateDatasetRequest,::google::genomics::v1::Dataset>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetDataset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetDataset() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::GetDatasetRequest, ::google::genomics::v1::Dataset>(std::bind(&WithStreamedUnaryMethod_GetDataset<BaseClass>::StreamedGetDataset, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetDataset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetDataset(::grpc::ServerContext* context, const ::google::genomics::v1::GetDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetDataset(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::GetDatasetRequest,::google::genomics::v1::Dataset>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateDataset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateDataset() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UpdateDatasetRequest, ::google::genomics::v1::Dataset>(std::bind(&WithStreamedUnaryMethod_UpdateDataset<BaseClass>::StreamedUpdateDataset, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateDataset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UpdateDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateDataset(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UpdateDatasetRequest,::google::genomics::v1::Dataset>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteDataset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteDataset() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::DeleteDatasetRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteDataset<BaseClass>::StreamedDeleteDataset, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteDataset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::DeleteDatasetRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteDataset(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::DeleteDatasetRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UndeleteDataset : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UndeleteDataset() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::genomics::v1::UndeleteDatasetRequest, ::google::genomics::v1::Dataset>(std::bind(&WithStreamedUnaryMethod_UndeleteDataset<BaseClass>::StreamedUndeleteDataset, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UndeleteDataset() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UndeleteDataset(::grpc::ServerContext* context, const ::google::genomics::v1::UndeleteDatasetRequest* request, ::google::genomics::v1::Dataset* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUndeleteDataset(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::genomics::v1::UndeleteDatasetRequest,::google::genomics::v1::Dataset>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_SetIamPolicy : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_SetIamPolicy() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::v1::SetIamPolicyRequest, ::google::iam::v1::Policy>(std::bind(&WithStreamedUnaryMethod_SetIamPolicy<BaseClass>::StreamedSetIamPolicy, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_SetIamPolicy() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status SetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::SetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedSetIamPolicy(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::v1::SetIamPolicyRequest,::google::iam::v1::Policy>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetIamPolicy : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetIamPolicy() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::v1::GetIamPolicyRequest, ::google::iam::v1::Policy>(std::bind(&WithStreamedUnaryMethod_GetIamPolicy<BaseClass>::StreamedGetIamPolicy, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetIamPolicy() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetIamPolicy(::grpc::ServerContext* context, const ::google::iam::v1::GetIamPolicyRequest* request, ::google::iam::v1::Policy* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetIamPolicy(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::v1::GetIamPolicyRequest,::google::iam::v1::Policy>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_TestIamPermissions : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_TestIamPermissions() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::iam::v1::TestIamPermissionsRequest, ::google::iam::v1::TestIamPermissionsResponse>(std::bind(&WithStreamedUnaryMethod_TestIamPermissions<BaseClass>::StreamedTestIamPermissions, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_TestIamPermissions() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status TestIamPermissions(::grpc::ServerContext* context, const ::google::iam::v1::TestIamPermissionsRequest* request, ::google::iam::v1::TestIamPermissionsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedTestIamPermissions(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::iam::v1::TestIamPermissionsRequest,::google::iam::v1::TestIamPermissionsResponse>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListDatasets<WithStreamedUnaryMethod_CreateDataset<WithStreamedUnaryMethod_GetDataset<WithStreamedUnaryMethod_UpdateDataset<WithStreamedUnaryMethod_DeleteDataset<WithStreamedUnaryMethod_UndeleteDataset<WithStreamedUnaryMethod_SetIamPolicy<WithStreamedUnaryMethod_GetIamPolicy<WithStreamedUnaryMethod_TestIamPermissions<Service > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListDatasets<WithStreamedUnaryMethod_CreateDataset<WithStreamedUnaryMethod_GetDataset<WithStreamedUnaryMethod_UpdateDataset<WithStreamedUnaryMethod_DeleteDataset<WithStreamedUnaryMethod_UndeleteDataset<WithStreamedUnaryMethod_SetIamPolicy<WithStreamedUnaryMethod_GetIamPolicy<WithStreamedUnaryMethod_TestIamPermissions<Service > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

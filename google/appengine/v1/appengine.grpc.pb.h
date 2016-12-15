@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -43,7 +44,7 @@ namespace appengine {
 namespace v1 {
 
 // Manages instances of a version.
-class Instances GRPC_FINAL {
+class Instances final {
  public:
   class StubInterface {
    public:
@@ -81,32 +82,32 @@ class Instances GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncDeleteInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteInstanceRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncDebugInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DebugInstanceRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListInstances(::grpc::ClientContext* context, const ::google::appengine::v1::ListInstancesRequest& request, ::google::appengine::v1::ListInstancesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListInstances(::grpc::ClientContext* context, const ::google::appengine::v1::ListInstancesRequest& request, ::google::appengine::v1::ListInstancesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListInstancesResponse>> AsyncListInstances(::grpc::ClientContext* context, const ::google::appengine::v1::ListInstancesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListInstancesResponse>>(AsyncListInstancesRaw(context, request, cq));
     }
-    ::grpc::Status GetInstance(::grpc::ClientContext* context, const ::google::appengine::v1::GetInstanceRequest& request, ::google::appengine::v1::Instance* response) GRPC_OVERRIDE;
+    ::grpc::Status GetInstance(::grpc::ClientContext* context, const ::google::appengine::v1::GetInstanceRequest& request, ::google::appengine::v1::Instance* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Instance>> AsyncGetInstance(::grpc::ClientContext* context, const ::google::appengine::v1::GetInstanceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Instance>>(AsyncGetInstanceRaw(context, request, cq));
     }
-    ::grpc::Status DeleteInstance(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteInstanceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteInstance(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteInstanceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDeleteInstance(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteInstanceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDeleteInstanceRaw(context, request, cq));
     }
-    ::grpc::Status DebugInstance(::grpc::ClientContext* context, const ::google::appengine::v1::DebugInstanceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DebugInstance(::grpc::ClientContext* context, const ::google::appengine::v1::DebugInstanceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDebugInstance(::grpc::ClientContext* context, const ::google::appengine::v1::DebugInstanceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDebugInstanceRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListInstancesResponse>* AsyncListInstancesRaw(::grpc::ClientContext* context, const ::google::appengine::v1::ListInstancesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Instance>* AsyncGetInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetInstanceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteInstanceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDebugInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DebugInstanceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListInstancesResponse>* AsyncListInstancesRaw(::grpc::ClientContext* context, const ::google::appengine::v1::ListInstancesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Instance>* AsyncGetInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetInstanceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteInstanceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDebugInstanceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DebugInstanceRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListInstances_;
     const ::grpc::RpcMethod rpcmethod_GetInstance_;
     const ::grpc::RpcMethod rpcmethod_DeleteInstance_;
@@ -142,11 +143,11 @@ class Instances GRPC_FINAL {
     WithAsyncMethod_ListInstances() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListInstances() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListInstances() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::appengine::v1::ListInstancesRequest* request, ::google::appengine::v1::ListInstancesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::appengine::v1::ListInstancesRequest* request, ::google::appengine::v1::ListInstancesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -162,11 +163,11 @@ class Instances GRPC_FINAL {
     WithAsyncMethod_GetInstance() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetInstance() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::appengine::v1::GetInstanceRequest* request, ::google::appengine::v1::Instance* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::appengine::v1::GetInstanceRequest* request, ::google::appengine::v1::Instance* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -182,11 +183,11 @@ class Instances GRPC_FINAL {
     WithAsyncMethod_DeleteInstance() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_DeleteInstance() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteInstanceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteInstanceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -202,11 +203,11 @@ class Instances GRPC_FINAL {
     WithAsyncMethod_DebugInstance() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DebugInstance() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DebugInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DebugInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DebugInstanceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DebugInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DebugInstanceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -223,11 +224,11 @@ class Instances GRPC_FINAL {
     WithGenericMethod_ListInstances() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListInstances() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListInstances() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::appengine::v1::ListInstancesRequest* request, ::google::appengine::v1::ListInstancesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::appengine::v1::ListInstancesRequest* request, ::google::appengine::v1::ListInstancesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -240,11 +241,11 @@ class Instances GRPC_FINAL {
     WithGenericMethod_GetInstance() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetInstance() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::appengine::v1::GetInstanceRequest* request, ::google::appengine::v1::Instance* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::appengine::v1::GetInstanceRequest* request, ::google::appengine::v1::Instance* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -257,11 +258,11 @@ class Instances GRPC_FINAL {
     WithGenericMethod_DeleteInstance() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_DeleteInstance() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteInstanceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteInstanceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -274,19 +275,102 @@ class Instances GRPC_FINAL {
     WithGenericMethod_DebugInstance() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DebugInstance() GRPC_OVERRIDE {
+    ~WithGenericMethod_DebugInstance() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DebugInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DebugInstanceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DebugInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DebugInstanceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListInstances : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListInstances() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::ListInstancesRequest, ::google::appengine::v1::ListInstancesResponse>(std::bind(&WithStreamedUnaryMethod_ListInstances<BaseClass>::StreamedListInstances, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListInstances() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListInstances(::grpc::ServerContext* context, const ::google::appengine::v1::ListInstancesRequest* request, ::google::appengine::v1::ListInstancesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListInstances(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::ListInstancesRequest,::google::appengine::v1::ListInstancesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetInstance : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetInstance() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::GetInstanceRequest, ::google::appengine::v1::Instance>(std::bind(&WithStreamedUnaryMethod_GetInstance<BaseClass>::StreamedGetInstance, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetInstance() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetInstance(::grpc::ServerContext* context, const ::google::appengine::v1::GetInstanceRequest* request, ::google::appengine::v1::Instance* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetInstance(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::GetInstanceRequest,::google::appengine::v1::Instance>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteInstance : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteInstance() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::DeleteInstanceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteInstance<BaseClass>::StreamedDeleteInstance, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteInstance() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteInstanceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteInstance(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::DeleteInstanceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DebugInstance : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DebugInstance() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::DebugInstanceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DebugInstance<BaseClass>::StreamedDebugInstance, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DebugInstance() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DebugInstance(::grpc::ServerContext* context, const ::google::appengine::v1::DebugInstanceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDebugInstance(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::DebugInstanceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListInstances<WithStreamedUnaryMethod_GetInstance<WithStreamedUnaryMethod_DeleteInstance<WithStreamedUnaryMethod_DebugInstance<Service > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListInstances<WithStreamedUnaryMethod_GetInstance<WithStreamedUnaryMethod_DeleteInstance<WithStreamedUnaryMethod_DebugInstance<Service > > > > StreamedService;
 };
 
 // Manages versions of a service.
-class Versions GRPC_FINAL {
+class Versions final {
  public:
   class StubInterface {
    public:
@@ -339,37 +423,37 @@ class Versions GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncUpdateVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateVersionRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncDeleteVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListVersions(::grpc::ClientContext* context, const ::google::appengine::v1::ListVersionsRequest& request, ::google::appengine::v1::ListVersionsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListVersions(::grpc::ClientContext* context, const ::google::appengine::v1::ListVersionsRequest& request, ::google::appengine::v1::ListVersionsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListVersionsResponse>> AsyncListVersions(::grpc::ClientContext* context, const ::google::appengine::v1::ListVersionsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListVersionsResponse>>(AsyncListVersionsRaw(context, request, cq));
     }
-    ::grpc::Status GetVersion(::grpc::ClientContext* context, const ::google::appengine::v1::GetVersionRequest& request, ::google::appengine::v1::Version* response) GRPC_OVERRIDE;
+    ::grpc::Status GetVersion(::grpc::ClientContext* context, const ::google::appengine::v1::GetVersionRequest& request, ::google::appengine::v1::Version* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Version>> AsyncGetVersion(::grpc::ClientContext* context, const ::google::appengine::v1::GetVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Version>>(AsyncGetVersionRaw(context, request, cq));
     }
-    ::grpc::Status CreateVersion(::grpc::ClientContext* context, const ::google::appengine::v1::CreateVersionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateVersion(::grpc::ClientContext* context, const ::google::appengine::v1::CreateVersionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncCreateVersion(::grpc::ClientContext* context, const ::google::appengine::v1::CreateVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncCreateVersionRaw(context, request, cq));
     }
-    ::grpc::Status UpdateVersion(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateVersionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateVersion(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateVersionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncUpdateVersion(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncUpdateVersionRaw(context, request, cq));
     }
-    ::grpc::Status DeleteVersion(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteVersionRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteVersion(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteVersionRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDeleteVersion(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDeleteVersionRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListVersionsResponse>* AsyncListVersionsRaw(::grpc::ClientContext* context, const ::google::appengine::v1::ListVersionsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Version>* AsyncGetVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::CreateVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListVersionsResponse>* AsyncListVersionsRaw(::grpc::ClientContext* context, const ::google::appengine::v1::ListVersionsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Version>* AsyncGetVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetVersionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncCreateVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::CreateVersionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateVersionRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteVersionRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteVersionRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListVersions_;
     const ::grpc::RpcMethod rpcmethod_GetVersion_;
     const ::grpc::RpcMethod rpcmethod_CreateVersion_;
@@ -417,11 +501,11 @@ class Versions GRPC_FINAL {
     WithAsyncMethod_ListVersions() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListVersions() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListVersions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::appengine::v1::ListVersionsRequest* request, ::google::appengine::v1::ListVersionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::appengine::v1::ListVersionsRequest* request, ::google::appengine::v1::ListVersionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -437,11 +521,11 @@ class Versions GRPC_FINAL {
     WithAsyncMethod_GetVersion() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::appengine::v1::GetVersionRequest* request, ::google::appengine::v1::Version* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::appengine::v1::GetVersionRequest* request, ::google::appengine::v1::Version* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -457,11 +541,11 @@ class Versions GRPC_FINAL {
     WithAsyncMethod_CreateVersion() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_CreateVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::CreateVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::CreateVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -477,11 +561,11 @@ class Versions GRPC_FINAL {
     WithAsyncMethod_UpdateVersion() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_UpdateVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -497,11 +581,11 @@ class Versions GRPC_FINAL {
     WithAsyncMethod_DeleteVersion() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_DeleteVersion() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -518,11 +602,11 @@ class Versions GRPC_FINAL {
     WithGenericMethod_ListVersions() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListVersions() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListVersions() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::appengine::v1::ListVersionsRequest* request, ::google::appengine::v1::ListVersionsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::appengine::v1::ListVersionsRequest* request, ::google::appengine::v1::ListVersionsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -535,11 +619,11 @@ class Versions GRPC_FINAL {
     WithGenericMethod_GetVersion() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::appengine::v1::GetVersionRequest* request, ::google::appengine::v1::Version* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::appengine::v1::GetVersionRequest* request, ::google::appengine::v1::Version* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -552,11 +636,11 @@ class Versions GRPC_FINAL {
     WithGenericMethod_CreateVersion() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_CreateVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::CreateVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::CreateVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -569,11 +653,11 @@ class Versions GRPC_FINAL {
     WithGenericMethod_UpdateVersion() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_UpdateVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -586,19 +670,122 @@ class Versions GRPC_FINAL {
     WithGenericMethod_DeleteVersion() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_DeleteVersion() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteVersion() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListVersions : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListVersions() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::ListVersionsRequest, ::google::appengine::v1::ListVersionsResponse>(std::bind(&WithStreamedUnaryMethod_ListVersions<BaseClass>::StreamedListVersions, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListVersions() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListVersions(::grpc::ServerContext* context, const ::google::appengine::v1::ListVersionsRequest* request, ::google::appengine::v1::ListVersionsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListVersions(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::ListVersionsRequest,::google::appengine::v1::ListVersionsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetVersion() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::GetVersionRequest, ::google::appengine::v1::Version>(std::bind(&WithStreamedUnaryMethod_GetVersion<BaseClass>::StreamedGetVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetVersion(::grpc::ServerContext* context, const ::google::appengine::v1::GetVersionRequest* request, ::google::appengine::v1::Version* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::GetVersionRequest,::google::appengine::v1::Version>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateVersion() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::CreateVersionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_CreateVersion<BaseClass>::StreamedCreateVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::CreateVersionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::CreateVersionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateVersion() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::UpdateVersionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_UpdateVersion<BaseClass>::StreamedUpdateVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateVersion(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateVersionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::UpdateVersionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteVersion : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteVersion() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::DeleteVersionRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteVersion<BaseClass>::StreamedDeleteVersion, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteVersion() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteVersion(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteVersionRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteVersion(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::DeleteVersionRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListVersions<WithStreamedUnaryMethod_GetVersion<WithStreamedUnaryMethod_CreateVersion<WithStreamedUnaryMethod_UpdateVersion<WithStreamedUnaryMethod_DeleteVersion<Service > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListVersions<WithStreamedUnaryMethod_GetVersion<WithStreamedUnaryMethod_CreateVersion<WithStreamedUnaryMethod_UpdateVersion<WithStreamedUnaryMethod_DeleteVersion<Service > > > > > StreamedService;
 };
 
 // Manages services of an application.
-class Services GRPC_FINAL {
+class Services final {
  public:
   class StubInterface {
    public:
@@ -629,32 +816,32 @@ class Services GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncUpdateServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateServiceRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncDeleteServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteServiceRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListServices(::grpc::ClientContext* context, const ::google::appengine::v1::ListServicesRequest& request, ::google::appengine::v1::ListServicesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListServices(::grpc::ClientContext* context, const ::google::appengine::v1::ListServicesRequest& request, ::google::appengine::v1::ListServicesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListServicesResponse>> AsyncListServices(::grpc::ClientContext* context, const ::google::appengine::v1::ListServicesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListServicesResponse>>(AsyncListServicesRaw(context, request, cq));
     }
-    ::grpc::Status GetService(::grpc::ClientContext* context, const ::google::appengine::v1::GetServiceRequest& request, ::google::appengine::v1::Service* response) GRPC_OVERRIDE;
+    ::grpc::Status GetService(::grpc::ClientContext* context, const ::google::appengine::v1::GetServiceRequest& request, ::google::appengine::v1::Service* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Service>> AsyncGetService(::grpc::ClientContext* context, const ::google::appengine::v1::GetServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Service>>(AsyncGetServiceRaw(context, request, cq));
     }
-    ::grpc::Status UpdateService(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateServiceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateService(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateServiceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncUpdateService(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncUpdateServiceRaw(context, request, cq));
     }
-    ::grpc::Status DeleteService(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteServiceRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteService(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteServiceRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncDeleteService(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteServiceRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncDeleteServiceRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListServicesResponse>* AsyncListServicesRaw(::grpc::ClientContext* context, const ::google::appengine::v1::ListServicesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Service>* AsyncGetServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteServiceRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::ListServicesResponse>* AsyncListServicesRaw(::grpc::ClientContext* context, const ::google::appengine::v1::ListServicesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Service>* AsyncGetServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetServiceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncUpdateServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::UpdateServiceRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncDeleteServiceRaw(::grpc::ClientContext* context, const ::google::appengine::v1::DeleteServiceRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListServices_;
     const ::grpc::RpcMethod rpcmethod_GetService_;
     const ::grpc::RpcMethod rpcmethod_UpdateService_;
@@ -683,11 +870,11 @@ class Services GRPC_FINAL {
     WithAsyncMethod_ListServices() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListServices() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListServices() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::appengine::v1::ListServicesRequest* request, ::google::appengine::v1::ListServicesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::appengine::v1::ListServicesRequest* request, ::google::appengine::v1::ListServicesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -703,11 +890,11 @@ class Services GRPC_FINAL {
     WithAsyncMethod_GetService() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::appengine::v1::GetServiceRequest* request, ::google::appengine::v1::Service* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::appengine::v1::GetServiceRequest* request, ::google::appengine::v1::Service* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -723,11 +910,11 @@ class Services GRPC_FINAL {
     WithAsyncMethod_UpdateService() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_UpdateService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateService(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateService(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -743,11 +930,11 @@ class Services GRPC_FINAL {
     WithAsyncMethod_DeleteService() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DeleteService() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -764,11 +951,11 @@ class Services GRPC_FINAL {
     WithGenericMethod_ListServices() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListServices() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListServices() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::appengine::v1::ListServicesRequest* request, ::google::appengine::v1::ListServicesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::appengine::v1::ListServicesRequest* request, ::google::appengine::v1::ListServicesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -781,11 +968,11 @@ class Services GRPC_FINAL {
     WithGenericMethod_GetService() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetService() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::appengine::v1::GetServiceRequest* request, ::google::appengine::v1::Service* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::appengine::v1::GetServiceRequest* request, ::google::appengine::v1::Service* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -798,11 +985,11 @@ class Services GRPC_FINAL {
     WithGenericMethod_UpdateService() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_UpdateService() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateService(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateService(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -815,19 +1002,102 @@ class Services GRPC_FINAL {
     WithGenericMethod_DeleteService() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DeleteService() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteService() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListServices : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListServices() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::ListServicesRequest, ::google::appengine::v1::ListServicesResponse>(std::bind(&WithStreamedUnaryMethod_ListServices<BaseClass>::StreamedListServices, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListServices() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListServices(::grpc::ServerContext* context, const ::google::appengine::v1::ListServicesRequest* request, ::google::appengine::v1::ListServicesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListServices(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::ListServicesRequest,::google::appengine::v1::ListServicesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetService() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::GetServiceRequest, ::google::appengine::v1::Service>(std::bind(&WithStreamedUnaryMethod_GetService<BaseClass>::StreamedGetService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetService(::grpc::ServerContext* context, const ::google::appengine::v1::GetServiceRequest* request, ::google::appengine::v1::Service* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::GetServiceRequest,::google::appengine::v1::Service>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateService() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::UpdateServiceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_UpdateService<BaseClass>::StreamedUpdateService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateService(::grpc::ServerContext* context, const ::google::appengine::v1::UpdateServiceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::UpdateServiceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteService : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteService() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::DeleteServiceRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_DeleteService<BaseClass>::StreamedDeleteService, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteService() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteService(::grpc::ServerContext* context, const ::google::appengine::v1::DeleteServiceRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteService(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::DeleteServiceRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListServices<WithStreamedUnaryMethod_GetService<WithStreamedUnaryMethod_UpdateService<WithStreamedUnaryMethod_DeleteService<Service > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListServices<WithStreamedUnaryMethod_GetService<WithStreamedUnaryMethod_UpdateService<WithStreamedUnaryMethod_DeleteService<Service > > > > StreamedService;
 };
 
 // Manages App Engine applications.
-class Applications GRPC_FINAL {
+class Applications final {
  public:
   class StubInterface {
    public:
@@ -849,22 +1119,22 @@ class Applications GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::appengine::v1::Application>* AsyncGetApplicationRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetApplicationRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::longrunning::Operation>* AsyncRepairApplicationRaw(::grpc::ClientContext* context, const ::google::appengine::v1::RepairApplicationRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status GetApplication(::grpc::ClientContext* context, const ::google::appengine::v1::GetApplicationRequest& request, ::google::appengine::v1::Application* response) GRPC_OVERRIDE;
+    ::grpc::Status GetApplication(::grpc::ClientContext* context, const ::google::appengine::v1::GetApplicationRequest& request, ::google::appengine::v1::Application* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Application>> AsyncGetApplication(::grpc::ClientContext* context, const ::google::appengine::v1::GetApplicationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Application>>(AsyncGetApplicationRaw(context, request, cq));
     }
-    ::grpc::Status RepairApplication(::grpc::ClientContext* context, const ::google::appengine::v1::RepairApplicationRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status RepairApplication(::grpc::ClientContext* context, const ::google::appengine::v1::RepairApplicationRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncRepairApplication(::grpc::ClientContext* context, const ::google::appengine::v1::RepairApplicationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncRepairApplicationRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Application>* AsyncGetApplicationRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetApplicationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncRepairApplicationRaw(::grpc::ClientContext* context, const ::google::appengine::v1::RepairApplicationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::appengine::v1::Application>* AsyncGetApplicationRaw(::grpc::ClientContext* context, const ::google::appengine::v1::GetApplicationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncRepairApplicationRaw(::grpc::ClientContext* context, const ::google::appengine::v1::RepairApplicationRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_GetApplication_;
     const ::grpc::RpcMethod rpcmethod_RepairApplication_;
   };
@@ -890,11 +1160,11 @@ class Applications GRPC_FINAL {
     WithAsyncMethod_GetApplication() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_GetApplication() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetApplication() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetApplication(::grpc::ServerContext* context, const ::google::appengine::v1::GetApplicationRequest* request, ::google::appengine::v1::Application* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetApplication(::grpc::ServerContext* context, const ::google::appengine::v1::GetApplicationRequest* request, ::google::appengine::v1::Application* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -910,11 +1180,11 @@ class Applications GRPC_FINAL {
     WithAsyncMethod_RepairApplication() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_RepairApplication() GRPC_OVERRIDE {
+    ~WithAsyncMethod_RepairApplication() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RepairApplication(::grpc::ServerContext* context, const ::google::appengine::v1::RepairApplicationRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RepairApplication(::grpc::ServerContext* context, const ::google::appengine::v1::RepairApplicationRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -931,11 +1201,11 @@ class Applications GRPC_FINAL {
     WithGenericMethod_GetApplication() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_GetApplication() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetApplication() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetApplication(::grpc::ServerContext* context, const ::google::appengine::v1::GetApplicationRequest* request, ::google::appengine::v1::Application* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetApplication(::grpc::ServerContext* context, const ::google::appengine::v1::GetApplicationRequest* request, ::google::appengine::v1::Application* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -948,15 +1218,58 @@ class Applications GRPC_FINAL {
     WithGenericMethod_RepairApplication() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_RepairApplication() GRPC_OVERRIDE {
+    ~WithGenericMethod_RepairApplication() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status RepairApplication(::grpc::ServerContext* context, const ::google::appengine::v1::RepairApplicationRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status RepairApplication(::grpc::ServerContext* context, const ::google::appengine::v1::RepairApplicationRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetApplication : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetApplication() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::GetApplicationRequest, ::google::appengine::v1::Application>(std::bind(&WithStreamedUnaryMethod_GetApplication<BaseClass>::StreamedGetApplication, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetApplication() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetApplication(::grpc::ServerContext* context, const ::google::appengine::v1::GetApplicationRequest* request, ::google::appengine::v1::Application* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetApplication(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::GetApplicationRequest,::google::appengine::v1::Application>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_RepairApplication : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_RepairApplication() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::appengine::v1::RepairApplicationRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_RepairApplication<BaseClass>::StreamedRepairApplication, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_RepairApplication() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status RepairApplication(::grpc::ServerContext* context, const ::google::appengine::v1::RepairApplicationRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedRepairApplication(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::appengine::v1::RepairApplicationRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_GetApplication<WithStreamedUnaryMethod_RepairApplication<Service > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_GetApplication<WithStreamedUnaryMethod_RepairApplication<Service > > StreamedService;
 };
 
 }  // namespace v1
