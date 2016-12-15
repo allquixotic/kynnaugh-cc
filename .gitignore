@@ -67,3 +67,7 @@ CMakeLists.txt.user*
 *.exe
 *.out
 *.app
+
+#Google Cloud credentials
+*.p12
+*.json
