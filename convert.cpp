@@ -50,7 +50,7 @@ convert::convert(QObject *parent)
 }
 
 //Assume `data` contains Signed 16-bit LE PCM samples at 48 kHz
-void convert::convertRawToFlac(QIODevice *dat, qint32 channes)
+QByteArray convert::convertRawToFlac(QIODevice *dat, qint32 channes)
 {
     int i = 0;
     QWriteLocker locker(&lock);
@@ -65,6 +65,7 @@ void convert::convertRawToFlac(QIODevice *dat, qint32 channes)
     CRTF
     thread.wait(); //TODO: Error handling if wait() returns false due to timeout
     CRTF
+    return retval;
 }
 
 void convert::setupPipeline()

@@ -52,15 +52,15 @@ void TestConvert::testConvertGeneric(bool ster)
     BusPtr vroom;
 
     qDebug() << "*=@*=@*=@*=@Before conv.convertRawToFlac() with filename=" << filename;
-    conv.convertRawToFlac(&sourcedata, (stereo ? 2 : 1));
+    QByteArray retval = conv.convertRawToFlac(&sourcedata, (stereo ? 2 : 1));
 
-    qDebug() << "conv.convertRawToFlac() returned; retval has size in bytes=" << conv.retval.size();
+    qDebug() << "conv.convertRawToFlac() returned; retval has size in bytes=" << retval.size();
 
     qDebug() << "Writing data to blah.flac";
     QString uri = "file:///";
     QFile writedata("blah.flac", this);
     writedata.open(QIODevice::WriteOnly);
-    writedata.write(conv.retval.data(), conv.retval.size());
+    writedata.write(retval.data(), retval.size());
     writedata.flush();
     writedata.close();
     qDebug() << "Data written to blah.flac!";

@@ -97,8 +97,7 @@ void sampledef::check()
 
         //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
         QBuffer *buf = new QBuffer(&this->samples, this);
-        conv.convertRawToFlac(buf, this->channels);
-        QByteArray flac = conv.retval;
+        QByteArray flac = conv.convertRawToFlac(buf, this->channels);
 
         QString chatline = rec.recognize(flac.data(), flac.size());
         char *nickname = nullptr;
