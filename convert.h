@@ -33,18 +33,14 @@ class convert : public QObject
 {
     Q_OBJECT
 public:
-    explicit convert(QObject *parent = 0);
+    explicit convert();
     ~convert();
     QByteArray convertRawToFlac(QIODevice *dat, qint32 channes);
-public Q_SLOTS:
-    void threadStart();
 private:
     static QMutex initLock;
     static bool inited;
     void setupPipeline();
     QByteArray retval;
-    QThread *callingThread;
-    QThread thread;
     QReadWriteLock lock;
     QIODevice *data;
     qint32 channels;

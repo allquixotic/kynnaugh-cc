@@ -18,9 +18,11 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include "sampledef.h"
 #include "kynnaugh.h"
 
+speechrec sampledef::rec;
+
 sampledef::sampledef(QObject *parent, quint64 s, anyID c, qint32 chan)
     : QObject(parent), schid(s), clientID(c), channels(chan), key(s, c, chan), lock(QReadWriteLock::Recursive),
-      lastUpdated(), checker(this), timer(0), spoonTooBig(false), conv(this)
+      lastUpdated(), checker(this), timer(0), spoonTooBig(false)
 {
     this->timer.setInterval(500);
     this->timer.setSingleShot(false);
@@ -81,6 +83,7 @@ void sampledef::clear()
 {
     QWriteLocker locker(&lock);
     this->samples.clear();
+    this->spoonTooBig = false;
     QDateTime nul;
     this->lastUpdated = nul;
     this->checker.exit(0);
@@ -96,23 +99,49 @@ void sampledef::check()
         printf("Expired: %d\n", this->clientID);
 
         //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
-        QBuffer *buf = new QBuffer(&this->samples, this);
-        QByteArray flac = conv.convertRawToFlac(buf, this->channels);
-
-        QString chatline = rec.recognize(flac.data(), flac.size());
-        char *nickname = nullptr;
-        struct TS3Functions *ff = ts3func::funcs;
-        ff->getClientVariableAsString(this->schid, this->clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
-        if(nickname != nullptr && qstrlen(nickname) > 0)
+        QBuffer buf(&this->samples, this);
+        if(this->samples.size() == 0)
         {
-            chatline = QString("Speech Recognition! [") + QString(nickname) + QString("]: ") + chatline;
+            qDebug() << "Zero-length samples yet expired?";
         }
         else
         {
-            chatline = QString("Speech Recognition! [UNKNOWN USER]: ") + chatline;
+            convert conv;
+            QByteArray flac = conv.convertRawToFlac(&buf, this->channels);
+            if(flac.size() == 0)
+            {
+                qDebug() << "No FLAC samples returned, yet number of samples was greater than 0!";
+            }
+            else
+            {
+                QString chatline = rec.recognize(flac.data(), flac.size());
+                qDebug() << "Returned from rec.recognize()!";
+                qDebug() << "Saying" << chatline;
+                if(chatline != QString("0BLANK0"))
+                {
+                    char *nickname = nullptr;
+                    struct TS3Functions *ff = ts3func::funcs;
+                    ff->getClientVariableAsString(this->schid, this->clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
+                    if(nickname != nullptr && qstrlen(nickname) > 0)
+                    {
+                        chatline = QString("Speech Recognition! [") + QString(nickname) + QString("]: ") + chatline;
+                    }
+                    else
+                    {
+                        chatline = QString("Speech Recognition! [UNKNOWN USER]: ") + chatline;
+                    }
+                    qDebug() << "Revised chatline=" << chatline;
+                    const std::string stidstring = chatline.toStdString();
+                    char *seestir = new char [stidstring.length() + 1];
+                    std::strcpy(seestir, stidstring.c_str());
+
+                    ff->printMessageToCurrentTab(seestir);
+                    ff->requestSendChannelTextMsg(this->schid, seestir, 1, nullptr);
+                    ff->freeMemory(nickname);
+                    delete[] seestir;
+                }
+            }
         }
-        ff->printMessageToCurrentTab(chatline.toStdString().c_str());
-        ff->freeMemory(nickname);
 
         this->samples.clear();
         this->spoonTooBig = false;

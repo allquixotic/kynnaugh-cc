@@ -28,14 +28,13 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include <gst/gstbuffer.h>
 
 #define SP qDebug() << "convert::setupPipeline()" << i++;
-#define TS qDebug() << "convert::threadStart()" << i++;
 #define CRTF qDebug() << "convert::convertRawToFlac()" << i++;
 
 bool convert::inited = false;
 QMutex convert::initLock;
 
-convert::convert(QObject *parent)
-    : QObject(parent), thread(this), lock(QReadWriteLock::Recursive), data(NULL), channels(0)
+convert::convert()
+    : QObject(nullptr), lock(QReadWriteLock::Recursive), data(NULL), channels(0)
 {
     initLock.lock();
     if(!inited)
@@ -46,24 +45,64 @@ convert::convert(QObject *parent)
     }
     initLock.unlock();
 
-    connect(&thread, &QThread::started, this, &convert::threadStart, Qt::DirectConnection);
 }
 
 //Assume `data` contains Signed 16-bit LE PCM samples at 48 kHz
 QByteArray convert::convertRawToFlac(QIODevice *dat, qint32 channes)
 {
+    retval.clear();
     int i = 0;
     QWriteLocker locker(&lock);
-    this->callingThread = QThread::currentThread();
     this->data = dat;
     this->channels = channes;
     CRTF
-    thread.start(QThread::NormalPriority);
-    this->moveToThread(&thread);
+    setupPipeline();
     CRTF
-    QThread::yieldCurrentThread();
+    if(!this->data->isOpen())
+    {
+        this->data->open(QIODevice::ReadOnly);
+    }
+    QByteArray sourcedata = this->data->readAll();
+    qDebug() << "sourcedata has length " << sourcedata.size();
+    BufferPtr qbuf = Buffer::create(sourcedata.size());
+    GstBuffer *buf = static_cast<GstBuffer*>(qbuf);
+    SamplePtr sam;
+    gst_buffer_fill(buf, 0, static_cast<gconstpointer>(sourcedata.data()), sourcedata.size());
+    qDebug() << "GstBuffer has size " << qbuf->size();
+
+    qDebug() << "Setting state to READY";
+    pipeline->setState(QGst::StateReady);
+    qDebug() << "READY set; setting state to PAUSED";
+    pipeline->setState(QGst::StatePaused);
+    qDebug() << appsrc->pushBuffer(qbuf);
+    qDebug() << "pushed buffer; setting state to PLAYING";
+    pipeline->setState(QGst::StatePlaying);
+    qDebug() << "Set state to PLAYING";
+    appsrc->endOfStream();
+    qDebug() << "Sending EOS";
     CRTF
-    thread.wait(); //TODO: Error handling if wait() returns false due to timeout
+    do
+    {
+        sam = appsink->pullSample();
+        if(!sam.isNull())
+        {
+            BufferPtr bp = sam->buffer();
+            quint32 sz = bp->size();
+            if(sz > 0)
+            {
+                gpointer raw = malloc(sz);
+                if(raw != NULL)
+                {
+                    bp->extract(0, raw, sz);
+                    this->retval.append(static_cast<const char*>(raw), sz);
+                    free(raw);
+                }
+            }
+        }
+    } while(!sam.isNull() && !appsink->isEos());
+    CRTF
+    this->pipeline->setState(QGst::StateReady);
+    qDebug() << "FLAC encoding pipeline state set back to ready because we're done";
     CRTF
     return retval;
 }
@@ -75,6 +114,7 @@ void convert::setupPipeline()
     {
         SP
         PipelinePtr pipe;
+#if 0
         QString pipetext = QString("appsrc name=\"a\""
                                    " caps=\"audio/x-raw,format=S16LE,rate=48000,layout=interleaved,channels=%1\" ! "
                                    "audioconvert name=\"b\" ! "
@@ -83,6 +123,17 @@ void convert::setupPipeline()
                                    "flacenc name=\"d\" !"
                                    "appsink name=\"e\" caps=\"audio/x-flac\" sync=true")
                            .arg(this->channels);
+#endif
+
+        QString pipetext = QString("appsrc name=\"a\""
+                                   " caps=\"audio/x-raw,format=S16LE,rate=48000,layout=interleaved,channels=%1\" ! "
+                                   "audioconvert name=\"b\" ! "
+                                   "audioresample name=\"c\" ! "
+                                   "audio/x-raw,format=S16LE,rate=48000,channels=1,layout=interleaved ! "
+                                   "flacenc name=\"d\" !"
+                                   "appsink name=\"e\" caps=\"audio/x-flac\" sync=true")
+                           .arg(this->channels);
+
         qDebug() << "Pipeline text: " << pipetext;
         pipeline = Parse::launch(pipetext);
         SP
@@ -117,58 +168,3 @@ convert::~convert()
     }
 }
 
-void convert::threadStart()
-{
-    int i = 0;
-    TS
-    setupPipeline();
-    TS
-    if(!this->data->isOpen())
-    {
-        this->data->open(QIODevice::ReadOnly);
-    }
-    QByteArray sourcedata = this->data->readAll();
-    qDebug() << "sourcedata has length " << sourcedata.size();
-    BufferPtr qbuf = Buffer::create(sourcedata.size());
-    GstBuffer *buf = static_cast<GstBuffer*>(qbuf);
-    SamplePtr sam;
-    gst_buffer_fill(buf, 0, static_cast<gconstpointer>(sourcedata.data()), sourcedata.size());
-    qDebug() << "GstBuffer has size " << qbuf->size();
-
-    qDebug() << "Setting state to READY";
-    pipeline->setState(QGst::StateReady);
-    qDebug() << "READY set; setting state to PAUSED";
-    pipeline->setState(QGst::StatePaused);
-    qDebug() << appsrc->pushBuffer(qbuf);
-    qDebug() << "pushed buffer; setting state to PLAYING";
-    pipeline->setState(QGst::StatePlaying);
-    qDebug() << "Set state to PLAYING";
-    appsrc->endOfStream();
-    qDebug() << "Sending EOS";
-    TS
-    do
-    {
-        sam = appsink->pullSample();
-        if(!sam.isNull())
-        {
-            BufferPtr bp = sam->buffer();
-            quint32 sz = bp->size();
-            if(sz > 0)
-            {
-                gpointer raw = malloc(sz);
-                if(raw != NULL)
-                {
-                    TS
-                    bp->extract(0, raw, sz);
-                    this->retval.append(static_cast<const char*>(raw), sz);
-                    free(raw);
-                }
-            }
-        }
-    } while(!sam.isNull() && !appsink->isEos());
-    TS
-    this->thread.quit();
-    this->pipeline->setState(QGst::StateReady);
-    qDebug() << "FLAC encoding pipeline state set back to ready because we're done";
-    this->moveToThread(this->callingThread);
-}   

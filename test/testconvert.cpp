@@ -25,7 +25,6 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include <gst/gstbuffer.h>
 
 TestConvert::TestConvert()
-    : conv(nullptr)
 {
 
 }

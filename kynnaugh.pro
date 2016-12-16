@@ -60,6 +60,7 @@ unix {
     PKGCONFIG += Qt5GStreamerUtils-1.0
     PKGCONFIG += gstreamer-1.0
     PKGCONFIG += grpc++
+    PKGCONFIG += protobuf
 }
 
 

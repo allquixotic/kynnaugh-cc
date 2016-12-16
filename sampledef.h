@@ -43,6 +43,7 @@ public Q_SLOTS:
     void threadFinished();
 
 private:
+    static speechrec rec;
     quint64 schid;
     anyID clientID;
     QByteArray samples;
@@ -52,8 +53,6 @@ private:
     QDateTime lastUpdated;
     QThread checker;
     QTimer timer;
-    convert conv;
-    speechrec rec;
     bool spoonTooBig;
 };
 

@@ -125,6 +125,14 @@ void ts3plugin_shutdown() {
 void ts3plugin_registerPluginID(const char* id) {
     pluginID = new QString(id);
     std::cout << "KYNNAUGH PLUGIN: registerPluginID: " << pluginID << std::endl;
+    if(qEnvironmentVariableIsSet("GOOGLE_APPLICATION_CREDENTIALS"))
+    {
+        std::cout << "KYNNAUGH PLUGIN: GOOGLE_APPLICATION_CREDENTIALS=" << qgetenv("GOOGLE_APPLICATION_CREDENTIALS").constData() << std::endl;
+    }
+    else
+    {
+        std::cerr << "KYNNAUGH PLUGIN: GOOGLE_APPLICATION_CREDENTIALS env var not set!" << std::endl;
+    }
 }
 
 /* Required to release the memory for parameter "data" allocated in ts3plugin_infoData and ts3plugin_initMenus */

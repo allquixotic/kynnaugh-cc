@@ -25,7 +25,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include <grpc++/security/credentials.h>
 #include <grpc++/support/status.h>
 #include <grpc/grpc.h>
-#include <QString>
+#include <QtCore>
 
 class speechrec
 {
@@ -34,11 +34,6 @@ public:
     QString recognize(char* buf, size_t length);
 
 private:
-    std::unique_ptr<google::cloud::speech::v1beta1::Speech::Stub> stub;
-    ::grpc::ClientContext ctx;
-    bool configSubmitted;
-    bool setupConfig();
-
 };
 
 #endif // SPEECHREC_H
