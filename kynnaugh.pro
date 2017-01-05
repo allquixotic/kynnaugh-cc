@@ -54,6 +54,11 @@ win32 {
 #Look for the generated headers in the base repo directory
 INCLUDEPATH += $$PWD
 
+#pkg-config is disabled by default on OS X!
+macx {
+    QT_CONFIG -= no-pkg-config
+}
+
 unix {
     CONFIG += link_pkgconfig
     PKGCONFIG += Qt5GStreamer-1.0
