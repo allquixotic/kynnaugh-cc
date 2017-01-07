@@ -22,6 +22,7 @@ CONFIG += warn_off c++11
 
 DEFINES += KYNNAUGH_LIBRARY
 
+
 win32 {
     DEFINES += "_WIN32_WINNT=0x0600"
     DEFINES += "WINVER=0x0600"
@@ -29,11 +30,6 @@ win32 {
     #Or modify the paths below to where you put them
     LIBS += -LC:\gstreamer\1.0\x86_64\lib -LC:\gstreamer\1.0\x86_64\bin
 
-    #Put your grpc, grpc++, OpenSSL/BoringSSL, zlib, GStreamer, GLib, and QtGStreamer include directories in these paths
-    #Or modify the paths below to where you put them
-    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\Qt5GStreamer
-    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\gstreamer-1.0
-    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include\glib-2.0
     INCLUDEPATH += C:\gstreamer\1.0\x86_64\include
 
     #gRPC / gRPC++ linkage
@@ -47,8 +43,8 @@ win32 {
     #Required by OpenSSL
     LIBS += -lws2_32
 
-    #QtGstreamer linkage
-    LIBS += -lQt5GStreamer-1.0 -lQt5GStreamerUtils-1.0 -lQt5GLib-2.0 -lgstreamer-1.0 -lglib-2.0
+    #libsndfile
+    LIBS += -lsndfile
 }
 
 #Look for the generated headers in the base repo directory
@@ -61,11 +57,9 @@ macx {
 
 unix {
     CONFIG += link_pkgconfig
-    PKGCONFIG += Qt5GStreamer-1.0
-    PKGCONFIG += Qt5GStreamerUtils-1.0
-    PKGCONFIG += gstreamer-1.0
     PKGCONFIG += grpc++
     PKGCONFIG += protobuf
+    PKGCONFIG += sndfile
 }
 
 
@@ -90,7 +84,10 @@ SOURCES += kynnaugh.cpp \
     google/api/http.grpc.pb.cc \
     google/api/http.pb.cc \
     google/api/httpbody.grpc.pb.cc \
-    google/api/httpbody.pb.cc
+    google/api/httpbody.pb.cc \
+    libresample/filterkit.c \
+    libresample/resample.c \
+    libresample/resamplesubs.c
 
 HEADERS += kynnaugh.h\
         kynnaugh_global.h \
@@ -104,7 +101,11 @@ HEADERS += kynnaugh.h\
     teamlog/logtypes.h \
     sampledef.h \
     convert.h \
-    speechrec.h
+    speechrec.h \
+    libresample/filterkit.h \
+    libresample/libresample.h \
+    libresample/resample_defs.h \
+    sndfile/sndfile.h
 
 unix {
     target.path = /usr/lib

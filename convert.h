@@ -19,36 +19,15 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #define CONVERT_H
 
 #include <QtCore>
-#include <QGst/Pipeline>
-#include <QGst/Bin>
-#include <QGst/Element>
-#include <QGst/Utils/ApplicationSink>
-#include <QGst/Utils/ApplicationSource>
-#include <QGst/Init>
-
-using namespace QGst;
-using namespace QGst::Utils;
 
 class convert : public QObject
 {
     Q_OBJECT
 public:
     explicit convert();
-    ~convert();
-    QByteArray convertRawToFlac(QIODevice *dat, qint32 channes);
+    QByteArray convertRawToFlac(QBuffer *dat, qint32 channes);
 private:
-    static QMutex initLock;
-    static bool inited;
-    void setupPipeline();
-    QByteArray retval;
-    QReadWriteLock lock;
-    QIODevice *data;
-    qint32 channels;
-    ElementPtr pipeline;
-    ElementPtr flacenc;
-    ApplicationSource *appsrc;
-    ElementPtr audioconvert;
-    ApplicationSink *appsink;
+    void *resampler;
 };
 
 #endif // CONVERT_H
