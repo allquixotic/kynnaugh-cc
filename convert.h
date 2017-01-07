@@ -6,7 +6,7 @@ it under the terms of the Apache License, version 2.0 as published by
 the Apache Software Foundation, either version 2 of the License, or
 (at your option) any later version.
 
-Foobar is distributed in the hope that it will be useful,
+Kynnaugh-cc is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 Apache License, version 2.0 for more details.
