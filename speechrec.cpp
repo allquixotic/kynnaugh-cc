@@ -38,8 +38,8 @@ QString speechrec::recognize(char *buf, size_t length)
     //Set up configuration parameters
     conf->set_profanity_filter(false);
     conf->set_encoding(RecognitionConfig_AudioEncoding_FLAC);
-    //conf->set_sample_rate(16000);                             //TODO: Consider making dynamic or just passing in the source sample rate (48 kHz by default)
-    conf->set_sample_rate(48000);                             //TODO: Consider making dynamic or just passing in the source sample rate (48 kHz by default)
+    conf->set_sample_rate(16000);                             //TODO: Consider making dynamic or just passing in the source sample rate (48 kHz by default)
+    //conf->set_sample_rate(48000);                             //TODO: Consider making dynamic or just passing in the source sample rate (48 kHz by default)
     conf->set_language_code("en-US");                         //TODO: Recognize another language
     conf->set_max_alternatives(1);
 

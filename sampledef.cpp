@@ -99,7 +99,8 @@ void sampledef::check()
         printf("Expired: %d\n", this->clientID);
 
         //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
-        QBuffer buf(&this->samples, this);
+        QBuffer buf(&this->samples);
+        buf.open(QIODevice::ReadOnly);
         if(this->samples.size() == 0)
         {
             qDebug() << "Zero-length samples yet expired?";
@@ -114,6 +115,7 @@ void sampledef::check()
             }
             else
             {
+                qDebug() << "FLAC contains" << flac.size() << "bytes";
                 QString chatline = rec.recognize(flac.data(), flac.size());
                 qDebug() << "Returned from rec.recognize()!";
                 qDebug() << "Saying" << chatline;

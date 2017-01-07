@@ -59,14 +59,16 @@ QByteArray convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     int inBufferUsed = 0;
     void *resampler = resample_open(1, 0.01, 8);
     float *outBuffer = new float[numMonoSamples * 4]; //Waste lots of memory for fun and profit; why not?
-    int outBufferUsed = resample_process(resampler, 0.25, monoSamples, numMonoSamples, true, &inBufferUsed, outBuffer, numMonoSamples * 4);
+    int outBufferUsed = resample_process(resampler, 1.0 / 3.0, monoSamples, numMonoSamples, true, &inBufferUsed, outBuffer, numMonoSamples * 4);
 
     //Encode in FLAC!
     QBuffer outbuf;
     lazydata laz;
+    outbuf.open(QIODevice::WriteOnly);
     laz.channels = 1;
     laz.dat = &outbuf;
     laz.samplesize = 2;
+
 
     SF_INFO sfi;
     sfi.channels = 1;
