@@ -228,9 +228,7 @@ static sf_count_t vio_write(const void *ptr, sf_count_t count, void *userdata)
     return retval;
 }
 
-//-------------------- SF_VIRTUAL_IO functions that deal with FRAMES
-
-//offset is FRAMES and whence is one of SEEK_SET, SEEK_CUR or SEEK_END
+//offset is BYTES, retval is BYTES, and whence is one of SEEK_SET, SEEK_CUR or SEEK_END
 static sf_count_t vio_seek(sf_count_t offset, int whence, void *userdata)
 {
     dbg::qStdOut() << "vio_seek! offset=" << QString::number(offset) << ", whence=" << QString::number(whence) << "\n";
@@ -254,7 +252,7 @@ static sf_count_t vio_seek(sf_count_t offset, int whence, void *userdata)
     return retval;
 }
 
-//retval is FRAMES (1 frame is 1 sample ("item") per channel)
+//retval is BYTES
 static sf_count_t vio_tell(void *userdata)
 {
     lazydata *p = static_cast<lazydata*>(userdata);
