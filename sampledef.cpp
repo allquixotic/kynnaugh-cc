@@ -101,9 +101,6 @@ void sampledef::check()
         dbg::qStdOut() << "Expired: " << this->clientID << "\n";
 
         //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
-        QByteArray bacopy(this->samples);
-        QBuffer buf(&bacopy);
-        buf.open(QIODevice::ReadOnly);
         if(this->samples.size() == 0)
         {
             dbg::qStdOut() << "Zero-length samples yet expired?\n";
@@ -113,15 +110,14 @@ void sampledef::check()
             //Converting the data to FLAC and then uploading it to Google Cloud Speech and getting a response takes a few seconds.
             //We don't want to block while that's happening; in fact, we're happy to let this go on in the background while we free up
             //the user's VoiceData thread back to TeamSpeak.
+            QByteArray *bacopy = new QByteArray(this->samples);
             QThread *worker = new QThread(nullptr);
-            sdefdata *sdf = new sdefdata(&buf, channels, schid, clientID);
-            buf.moveToThread(worker);
+            sdefdata *sdf = new sdefdata(bacopy, channels, schid, clientID);
             sdf->moveToThread(worker);
             connect(worker, SIGNAL(started()), sdf, SLOT(start()));
             connect(sdf, SIGNAL(finished()), worker, SLOT(quit()));
             connect(sdf, SIGNAL(finished()), sdf, SLOT(deleteLater()));
             connect(sdf, SIGNAL(finished()), worker, SLOT(deleteLater()));
-
             worker->start();
         }
 

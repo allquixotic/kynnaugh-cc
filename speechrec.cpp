@@ -74,13 +74,13 @@ QString speechrec::recognize(char *buf, size_t length)
     {
         if(res.results().size() > 0)
         {
-            dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << res.results().size() << "results!";
+            dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << res.results().size() << "results!\n";
             auto result = res.results(0);
             if(result.alternatives().size() > 0)
             {
-                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << result.alternatives().size() << "alternatives!";
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << result.alternatives().size() << "alternatives!\n";
                 auto alternative = result.alternatives(0);
-                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got alternative 0!";
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got alternative 0!\n";
                 std::string transcript = alternative.transcript();
                 QString confid = QString::number(alternative.confidence());
                 dbg::qStdOut() << "Got transcript = " << transcript.c_str() << "\n";
@@ -89,16 +89,16 @@ QString speechrec::recognize(char *buf, size_t length)
                 {
                     retval += "(confidence: " + confid + ")";
                 }
-                dbg::qStdOut() << "retval=" << retval;
+                dbg::qStdOut() << "retval=" << retval << "\n";
             }
             else
             {
-                dbg::qStdOut() << "KYNNAUGH PLUGIN: res.results(0).alternatives.size() == 0!";
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: res.results(0).alternatives.size() == 0!\n";
             }
         }
         else
         {
-            dbg::qStdOut() << "KYNNAUGH PLUGIN: res.results.size() == 0!";
+            dbg::qStdOut() << "KYNNAUGH PLUGIN: res.results.size() == 0!\n";
         }
     }
     else

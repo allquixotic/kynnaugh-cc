@@ -3,14 +3,14 @@
 #include "ts3_functions.h"
 #include "kynnaugh.h"
 
-sdefdata::sdefdata(QBuffer *b, qint32 chan, quint64 sch, anyID cli) :
-    QObject(nullptr), buf(b), channels(chan), schid(sch), clientID(cli)
+sdefdata::sdefdata(QByteArray *b, qint32 chan, quint64 sch, anyID cli) :
+    QObject(nullptr), byt(b), channels(chan), schid(sch), clientID(cli), buf(b, nullptr)
 {}
 
 void sdefdata::start()
 {
     convert conv;
-    QBuffer *flac = conv.convertRawToFlac(this->buf, this->channels);
+    QBuffer *flac = conv.convertRawToFlac(&this->buf, this->channels);
     if(flac->size() == 0)
     {
         dbg::qStdOut() << "No FLAC samples returned, yet number of samples was greater than 0!\n";
@@ -58,4 +58,9 @@ void sdefdata::start()
 }
 
 sdefdata::~sdefdata()
-{}
+{
+    if(byt)
+    {
+        delete byt;
+    }
+}

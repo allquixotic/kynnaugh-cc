@@ -22,6 +22,8 @@ CONFIG += warn_off c++11
 
 DEFINES += KYNNAUGH_LIBRARY
 
+#Define this if you want the debugging stuff. Otherwise don't. Could be a significant performance hit / disk space wastage so be careful!
+#DEFINES += KYNNAUGH_DEBUG
 
 win32 {
     CONFIG += dll

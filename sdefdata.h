@@ -8,12 +8,14 @@ class sdefdata : public QObject
 {
     Q_OBJECT
 public:
-    QBuffer *buf;
+    sdefdata(QByteArray *b, qint32 chan, quint64 sch, anyID cli);
+    ~sdefdata();
+private:
+    QByteArray *byt;
     qint32 channels;
     quint64 schid;
     anyID clientID;
-    sdefdata(QBuffer *b, qint32 chan, quint64 sch, anyID cli);
-    ~sdefdata();
+    QBuffer buf;
 public Q_SLOTS:
     void start();
 
