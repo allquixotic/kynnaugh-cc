@@ -19,6 +19,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 
 #include "libresample/libresample.h"
 #include "sndfile/sndfile.h"
+#include "dbg.h"
 
 convert::convert()
     : QObject(nullptr)
@@ -42,18 +43,21 @@ public:
 
 //Assume `dat` contains Signed 16-bit LE PCM samples at 48 kHz
 //Returns a FLAC file with Signed 16-bit LE samples at 16 kHz.
-QByteArray convert::convertRawToFlac(QBuffer *dat, qint32 channes)
+QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
 {
     if(dat == nullptr || dat->size() == 0)
     {
-        QByteArray empty;
-        return empty;
+        dbg::qStdOut() << "convert::convertRawToFlac got a NULL or 0-size QBuffer!\n";
+        return nullptr;
     }
+
+        dbg::qStdOut() << "convert::convertRawToFlac got a " << channes << " channel PCM QBuffer with " << dat->size() << " bytes\n";
 
     //short to float and (possibly) stereo to mono conversion step
     float *monoSamples;
     int numMonoSamples = toFloatMono(dat, channes, &monoSamples);
 
+    dbg::qStdOut() << "convert::convertRawToFlac: done toFloatMono and we got " << numMonoSamples << " samples.\n";
 
     //Resample from 48 kHz to 16 kHz
     int inBufferUsed = 0;
@@ -61,18 +65,21 @@ QByteArray convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     float *outBuffer = new float[numMonoSamples * 4]; //Waste lots of memory for fun and profit; why not?
     int outBufferUsed = resample_process(resampler, 1.0 / 3.0, monoSamples, numMonoSamples, true, &inBufferUsed, outBuffer, numMonoSamples * 4);
 
+    dbg::qStdOut() << "convert::convertRawToFlac: done libresample part and it generated " << outBufferUsed << " samples in the outbuffer\n";
+    dbg::qStdOut() << "convert::convertRawToFlac: numMonoSamples/outBufferUsed=" << ((double)((double)numMonoSamples)/((double)outBufferUsed)) << "\n";
+
     //Encode in FLAC!
-    QBuffer outbuf;
+    QBuffer *outbuf = new QBuffer();
     lazydata laz;
-    outbuf.open(QIODevice::WriteOnly);
+    outbuf->open(QIODevice::WriteOnly);
     laz.channels = 1;
-    laz.dat = &outbuf;
+    laz.dat = outbuf;
     laz.samplesize = 2;
 
 
     SF_INFO sfi;
     sfi.channels = 1;
-    sfi.format = SF_FORMAT_FLAC | SF_FORMAT_PCM_16 | SF_ENDIAN_LITTLE;
+    sfi.format = SF_FORMAT_FLAC | SF_FORMAT_PCM_16;
     sfi.samplerate = 16000;
 
     SF_VIRTUAL_IO virt;
@@ -83,12 +90,15 @@ QByteArray convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     virt.tell = &vio_tell;
 
     SNDFILE *hnd = sf_open_virtual(&virt, SFM_WRITE, &sfi, static_cast<void*>(&laz));
-    sf_write_float(hnd, outBuffer, outBufferUsed);
+    sf_count_t writsize = sf_write_float(hnd, outBuffer, outBufferUsed);
+    dbg::qStdOut() << "Wrote " << writsize << " samples into the FLAC encoder.\n";
     sf_close(hnd);
 
     delete[] outBuffer;
 
-    return outbuf.data();
+    dbg::qStdOut() << "convert::convertRawToFlac: returning outbuf with size " << outbuf->size() << " bytes." << "\n";
+
+    return outbuf;
 }
 
 static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval)
@@ -170,6 +180,7 @@ static sf_count_t vio_read(void *ptr, sf_count_t count, void *userdata)
 //count and retval is BYTES
 static sf_count_t vio_write(const void *ptr, sf_count_t count, void *userdata)
 {
+    dbg::qStdOut() << "vio_write() asked to write " << count << " samples.\n";
     lazydata *p = static_cast<lazydata*>(userdata);
     return (sf_count_t) p->dat->write(static_cast<const char*>(ptr), count);
 }

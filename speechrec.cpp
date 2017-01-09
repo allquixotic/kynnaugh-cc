@@ -16,7 +16,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 */
 
 #include "speechrec.h"
-
+#include "dbg.h"
 using namespace ::grpc;
 using namespace ::google::cloud::speech::v1beta1;
 
@@ -27,8 +27,23 @@ speechrec::speechrec()
 
 QString speechrec::recognize(char *buf, size_t length)
 {
-    std::cerr << "Recognize buffer is of length " << length << std::endl;
-    std::unique_ptr<google::cloud::speech::v1beta1::Speech::Stub> stub(Speech::NewStub(CreateChannel("speech.googleapis.com:443", GoogleDefaultCredentials())));
+    dbg::qStdOut() << "Recognize buffer is of length " << length << "\n";
+    std::shared_ptr<ChannelCredentials> creds = GoogleDefaultCredentials();
+    std::shared_ptr<Channel> channel = CreateChannel("speech.googleapis.com", creds);
+    grpc_connectivity_state connstate = channel->GetState(true);
+    if(connstate == GRPC_CHANNEL_SHUTDOWN)
+    {
+        dbg::qStdOut() << "It says GRPC_CHANNEL_SHUTDOWN\n";
+    }
+    else if(connstate == GRPC_CHANNEL_READY)
+    {
+        dbg::qStdOut() << "It says GRPC_CHANNEL_READY\n";
+    }
+    else
+    {
+        dbg::qStdOut() << "It's " << connstate << " connection state\n";
+    }
+    std::unique_ptr<google::cloud::speech::v1beta1::Speech::Stub> stub(Speech::NewStub(channel));
     ::grpc::ClientContext ctx;
     RecognitionConfig *conf = new RecognitionConfig();
     RecognitionAudio *audio = new RecognitionAudio();
@@ -56,34 +71,34 @@ QString speechrec::recognize(char *buf, size_t length)
     {
         if(res.results().size() > 0)
         {
-            qDebug() << "KYNNAUGH PLUGIN: Got" << res.results().size() << "results!";
+            dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << res.results().size() << "results!";
             auto result = res.results(0);
             if(result.alternatives().size() > 0)
             {
-                qDebug() << "KYNNAUGH PLUGIN: Got" << result.alternatives().size() << "alternatives!";
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << result.alternatives().size() << "alternatives!";
                 auto alternative = result.alternatives(0);
-                qDebug() << "KYNNAUGH PLUGIN: Got alternative 0!";
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got alternative 0!";
                 std::string transcript = alternative.transcript();
-                qDebug() << "Got transcript";
-                qDebug() << "transcript=" << transcript.c_str();
+                dbg::qStdOut() << "Got transcript";
+                dbg::qStdOut() << "transcript=" << transcript.c_str();
                 retval = QString::fromStdString(transcript);
-                qDebug() << "retval=" << retval;
+                dbg::qStdOut() << "retval=" << retval;
             }
             else
             {
-                qDebug() << "KYNNAUGH PLUGIN: res.results(0).alternatives.size() == 0!";
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: res.results(0).alternatives.size() == 0!";
             }
         }
         else
         {
-            qDebug() << "KYNNAUGH PLUGIN: res.results.size() == 0!";
+            dbg::qStdOut() << "KYNNAUGH PLUGIN: res.results.size() == 0!";
         }
     }
     else
     {
         retval = "KYNNAUGH PLUGIN ERROR: Can't transcribe audio due to technical issues.";
-        qDebug() << "KYNNAUGH PLUGIN: SyncRecognizeRequest RecognitionAudio error: code="
-                  << rw.error_code() << "message=" << rw.error_message().c_str();
+        dbg::qStdOut() << "KYNNAUGH PLUGIN: SyncRecognizeRequest RecognitionAudio error: code="
+                  << rw.error_code() << " message=" << rw.error_message().c_str() << "\n";
     }
 
     return retval;

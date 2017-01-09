@@ -19,6 +19,7 @@ This file is a derivative work of the example in the Plugin SDK.
 #include <sampledef.h>
 #include <QtCore>
 #include <tuple>
+#include "dbg.h"
 
 #define PLUGIN_API_VERSION 21
 #define PATH_BUFSIZE 512
@@ -91,8 +92,6 @@ int ts3plugin_init() {
     ts3Functions.getConfigPath(configPath, PATH_BUFSIZE);
     ts3Functions.getPluginPath(pluginPath, PATH_BUFSIZE);
 
-    printf("KYNNAUGH PLUGIN: App path: %s\nResources path: %s\nConfig path: %s\nPlugin path: %s\n", appPath, resourcesPath, configPath, pluginPath);
-
     return 0;  /* 0 = success, 1 = failure, -2 = failure but client will not show a "failed to load" warning */
     /* -2 is a very special case and should only be used if a plugin displays a dialog (e.g. overlay) asking the user to disable
      * the plugin again, avoiding the show another dialog by the client telling the user the plugin failed to load.
@@ -102,7 +101,7 @@ int ts3plugin_init() {
 /* Custom code called right before the plugin is unloaded */
 void ts3plugin_shutdown() {
     /* Your plugin cleanup code here */
-    printf("KYNNAUGH PLUGIN: shutdown\n");
+    qWarning("KYNNAUGH PLUGIN: shutdown\n");
 
     /*
      * Note:
@@ -123,16 +122,9 @@ void ts3plugin_shutdown() {
  * Note the passed pluginID parameter is no longer valid after calling this function, so you must copy it and store it in the plugin.
  */
 void ts3plugin_registerPluginID(const char* id) {
+    qInstallMessageHandler(0);
     pluginID = new QString(id);
-    std::cout << "KYNNAUGH PLUGIN: registerPluginID: " << pluginID << std::endl;
-    if(qEnvironmentVariableIsSet("GOOGLE_APPLICATION_CREDENTIALS"))
-    {
-        std::cout << "KYNNAUGH PLUGIN: GOOGLE_APPLICATION_CREDENTIALS=" << qgetenv("GOOGLE_APPLICATION_CREDENTIALS").constData() << std::endl;
-    }
-    else
-    {
-        std::cerr << "KYNNAUGH PLUGIN: GOOGLE_APPLICATION_CREDENTIALS env var not set!" << std::endl;
-    }
+    dbg::qStdOut() << "KYNNAUGH PLUGIN: registerPluginID: " << pluginID;
 }
 
 /* Required to release the memory for parameter "data" allocated in ts3plugin_infoData and ts3plugin_initMenus */
@@ -164,8 +156,7 @@ void ts3plugin_onEditPlaybackVoiceDataEvent(uint64 serverConnectionHandlerID, an
     {
         char *nickname;
         ts3Functions.getClientVariableAsString(serverConnectionHandlerID, clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
-        std::cout << "KYNNAUGH PLUGIN: New sampledef for client #" << clientID << ", "
-                  << nickname << " with " << channels << " channels." << std::endl;
+        dbg::qStdOut() << "KYNNAUGH PLUGIN: New sampledef for client #" << clientID << ", " << nickname << " with " << channels << " channels.\n";
         ts3Functions.freeMemory(nickname);
         sampledef *def = new sampledef(0, serverConnectionHandlerID, clientID, channels);
         sampledefs.insert(key, def);

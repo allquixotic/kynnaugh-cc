@@ -17,6 +17,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 
 #include "sampledef.h"
 #include "kynnaugh.h"
+#include "dbg.h"
 
 speechrec sampledef::rec;
 
@@ -96,29 +97,29 @@ void sampledef::check()
 
     if((this->lastUpdated.isValid() && this->lastUpdated.msecsTo(curr) >= 1250) || spoonTooBig)
     {
-        printf("Expired: %d\n", this->clientID);
+        dbg::qStdOut() << "Expired: " << this->clientID << "\n";
 
         //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
         QBuffer buf(&this->samples);
         buf.open(QIODevice::ReadOnly);
         if(this->samples.size() == 0)
         {
-            qDebug() << "Zero-length samples yet expired?";
+            dbg::qStdOut() << "Zero-length samples yet expired?\n";
         }
         else
         {
             convert conv;
-            QByteArray flac = conv.convertRawToFlac(&buf, this->channels);
-            if(flac.size() == 0)
+            QBuffer *flac = conv.convertRawToFlac(&buf, this->channels);
+            if(flac->size() == 0)
             {
-                qDebug() << "No FLAC samples returned, yet number of samples was greater than 0!";
+                dbg::qStdOut() << "No FLAC samples returned, yet number of samples was greater than 0!\n";
             }
             else
             {
-                qDebug() << "FLAC contains" << flac.size() << "bytes";
-                QString chatline = rec.recognize(flac.data(), flac.size());
-                qDebug() << "Returned from rec.recognize()!";
-                qDebug() << "Saying" << chatline;
+                dbg::qStdOut() << "FLAC contains " << flac->size() << " bytes\n";
+                QByteArray qba = flac->data();
+                QString chatline = rec.recognize(qba.data(), flac->size());
+                dbg::qStdOut() << "Returned from rec.recognize()!\n";
                 if(chatline != QString("0BLANK0"))
                 {
                     char *nickname = nullptr;
@@ -132,16 +133,22 @@ void sampledef::check()
                     {
                         chatline = QString("Speech Recognition! [UNKNOWN USER]: ") + chatline;
                     }
-                    qDebug() << "Revised chatline=" << chatline;
+
                     const std::string stidstring = chatline.toStdString();
                     char *seestir = new char [stidstring.length() + 1];
                     std::strcpy(seestir, stidstring.c_str());
+
+                    dbg::qStdOut() << "Revised chatline=" << chatline << "\n";
 
                     ff->printMessageToCurrentTab(seestir);
                     ff->requestSendChannelTextMsg(this->schid, seestir, 1, nullptr);
                     ff->freeMemory(nickname);
                     delete[] seestir;
                 }
+            }
+            if(flac != nullptr)
+            {
+                delete flac;
             }
         }
 

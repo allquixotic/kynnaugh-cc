@@ -24,13 +24,14 @@ DEFINES += KYNNAUGH_LIBRARY
 
 
 win32 {
+    CONFIG += dll
     DEFINES += "_WIN32_WINNT=0x0600"
     DEFINES += "WINVER=0x0600"
     #Put your grpc, grpc++, OpenSSL/BoringSSL, zlib, GStreamer, GLib, and QtGStreamer libraries in this path
     #Or modify the paths below to where you put them
-    LIBS += -LC:\gstreamer\1.0\x86_64\lib -LC:\gstreamer\1.0\x86_64\bin
+    LIBS += -LC:\Users\Sean\dev\kynnaugh-cc\win64_bin\bin
 
-    INCLUDEPATH += C:\gstreamer\1.0\x86_64\include
+    INCLUDEPATH += C:\Users\Sean\dev\kynnaugh-cc\win64_bin\include
 
     #gRPC / gRPC++ linkage
     LIBS += -lgrpc++ -lgrpc -lgpr -lz
@@ -39,12 +40,15 @@ win32 {
     LIBS += -llibprotobuf
 
     #SSL linkage
-    LIBS += -llibeay32 -lssleay32
+    #LIBS += -llibssl -llibcrypto
+    #LIBS += -llegacy_stdio_definitions
+    #LIBS += -lcapi -ldasync -lossltest -lpadlock
+    LIBS += -lssleay32 -llibeay32
     #Required by OpenSSL
-    LIBS += -lws2_32
+    LIBS += -lws2_32 -ladvapi32 -luser32 -lcrypt32 -lkernel32 -lgdi32
 
     #libsndfile
-    LIBS += -lsndfile
+    LIBS += -llibsndfile-1
 }
 
 #Look for the generated headers in the base repo directory
@@ -87,7 +91,9 @@ SOURCES += kynnaugh.cpp \
     google/api/httpbody.pb.cc \
     libresample/filterkit.c \
     libresample/resample.c \
-    libresample/resamplesubs.c
+    libresample/resamplesubs.c \
+    gfdi.cpp \
+    dbg.cpp
 
 HEADERS += kynnaugh.h\
         kynnaugh_global.h \
@@ -105,7 +111,8 @@ HEADERS += kynnaugh.h\
     libresample/filterkit.h \
     libresample/libresample.h \
     libresample/resample_defs.h \
-    sndfile/sndfile.h
+    sndfile/sndfile.h \
+    dbg.h
 
 unix {
     target.path = /usr/lib
