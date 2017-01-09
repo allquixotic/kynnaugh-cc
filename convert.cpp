@@ -33,8 +33,6 @@ static sf_count_t vio_seek(sf_count_t offset, int whence, void *userdata);
 static sf_count_t vio_tell(void *userdata);
 static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval);
 static void logErrors(SNDFILE *hnd);
-static void dbgWriteToFile(QBuffer *buf, QString ext);
-static void dbgWriteToFile(char *c, qint64 len, QString ext);
 
 class lazydata
 {
@@ -56,13 +54,13 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
 
     dbg::qStdOut() << "convert::convertRawToFlac got a " << channes << " channel PCM QBuffer with " << dat->size() << " bytes\n";
 
-    dbgWriteToFile(dat, "-s16le-48k-orig.raw");
+    dbg::writeToFile(dat, "-s16le-48k-orig.raw");
 
     //short to float and (possibly) stereo to mono conversion step
     float *monoSamples;
     int numMonoSamples = toFloatMono(dat, channes, &monoSamples);
 
-    dbgWriteToFile((char*)monoSamples, numMonoSamples*4, "-float-48k.raw");
+    dbg::writeToFile((char*)monoSamples, numMonoSamples*4, "-float-48k.raw");
 
     dbg::qStdOut() << "convert::convertRawToFlac: done toFloatMono and we got " << numMonoSamples << " samples.\n";
 
@@ -72,7 +70,7 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     float *outBuffer = new float[numMonoSamples * 4]; //Waste lots of memory for fun and profit; why not?
     int outBufferUsed = resample_process(resampler, 1.0 / 3.0, monoSamples, numMonoSamples, true, &inBufferUsed, outBuffer, numMonoSamples * 4);
 
-    dbgWriteToFile((char*)outBuffer, outBufferUsed*4, "-float-16k.raw");
+    dbg::writeToFile((char*)outBuffer, outBufferUsed*4, "-float-16k.raw");
 
     dbg::qStdOut() << "convert::convertRawToFlac: done libresample part and it generated " << outBufferUsed << " samples in the outbuffer\n";
     dbg::qStdOut() << "convert::convertRawToFlac: numMonoSamples/outBufferUsed=" << ((double)((double)numMonoSamples)/((double)outBufferUsed)) << "\n";
@@ -120,34 +118,9 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
 
     dbg::qStdOut() << "convert::convertRawToFlac: returning outbuf with size " << QString::number(outbuf->size()) << " bytes." << "\n";
 
-    dbgWriteToFile(outbuf, ".flac");
+    dbg::writeToFile(outbuf, ".flac");
 
     return outbuf;
-}
-
-static void dbgWriteToFile(QBuffer *buf, QString ext = ".flac")
-{
-#if 0
-    QString tmpfilepath = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + QDir::separator() + "kynnaugh-" + QString::number(QDateTime::currentMSecsSinceEpoch()) + ext;
-    QFile tmpfile(tmpfilepath);
-    dbg::qStdOut() << "convert::dbgWriteToFile: writing outbuf to " << tmpfilepath << "\n";
-    tmpfile.open(QIODevice::WriteOnly);
-    qint64 nbytes = tmpfile.write(buf->data());
-    tmpfile.flush();
-    tmpfile.close();
-    dbg::qStdOut() << "convert::dbgWriteToFile: wrote " << QString::number(nbytes) << " bytes to " << tmpfilepath << ".\n";
-#endif
-}
-
-static void dbgWriteToFile(char *c, qint64 len, QString ext = ".raw")
-{
-#if 0
-    QBuffer *buf = new QBuffer();
-    buf->open(QIODevice::WriteOnly);
-    buf->write(c, len);
-    dbgWriteToFile(buf, ext);
-    delete buf;
-#endif
 }
 
 static void logErrors(SNDFILE *hnd)
@@ -286,5 +259,4 @@ static sf_count_t vio_tell(void *userdata)
 {
     lazydata *p = static_cast<lazydata*>(userdata);
     return (sf_count_t) p->dat->pos();
-    //return (sf_count_t) ((p->dat->pos() / p->samplesize) / p->channels);
 }

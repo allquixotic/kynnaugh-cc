@@ -36,6 +36,7 @@ public:
     void update(const short* more, qint32 count);
     void clear();
     static std::tuple<quint64, anyID, qint32> getKey(quint64 schid, anyID clientID, qint32 channels);
+    static speechrec rec;
 
 public Q_SLOTS:
     void check();
@@ -43,7 +44,6 @@ public Q_SLOTS:
     void threadFinished();
 
 private:
-    static speechrec rec;
     quint64 schid;
     anyID clientID;
     QByteArray samples;

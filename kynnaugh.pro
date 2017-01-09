@@ -93,7 +93,8 @@ SOURCES += kynnaugh.cpp \
     libresample/resample.c \
     libresample/resamplesubs.c \
     gfdi.cpp \
-    dbg.cpp
+    dbg.cpp \
+    sdefdata.cpp
 
 HEADERS += kynnaugh.h\
         kynnaugh_global.h \
@@ -112,7 +113,8 @@ HEADERS += kynnaugh.h\
     libresample/libresample.h \
     libresample/resample_defs.h \
     sndfile/sndfile.h \
-    dbg.h
+    dbg.h \
+    sdefdata.h
 
 unix {
     target.path = /usr/lib

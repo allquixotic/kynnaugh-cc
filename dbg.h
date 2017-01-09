@@ -9,6 +9,8 @@ class dbg : public QObject
             Q_OBJECT
 public:
     static QTextStream& qStdOut();
+    static void writeToFile(QBuffer *buf, QString ext = ".flac");
+    static void writeToFile(char *c, qint64 len, QString ext = ".raw");
 };
 
 #else
@@ -17,6 +19,8 @@ class dbg
 {
 public:
     static dbg &qStdOut();
+    static void writeToFile(QBuffer *buf, QString ext = ".flac");
+    static void writeToFile(char *c, qint64 len, QString ext = ".raw");
     dbg& operator<<(QChar c);
     dbg& operator<<(signed short i);
     dbg& operator<<(float f);

@@ -18,6 +18,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include "sampledef.h"
 #include "kynnaugh.h"
 #include "dbg.h"
+#include "sdefdata.h"
 
 speechrec sampledef::rec;
 
@@ -100,7 +101,8 @@ void sampledef::check()
         dbg::qStdOut() << "Expired: " << this->clientID << "\n";
 
         //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
-        QBuffer buf(&this->samples);
+        QByteArray bacopy(this->samples);
+        QBuffer buf(&bacopy);
         buf.open(QIODevice::ReadOnly);
         if(this->samples.size() == 0)
         {
@@ -108,51 +110,19 @@ void sampledef::check()
         }
         else
         {
-            convert conv;
-            QBuffer *flac = conv.convertRawToFlac(&buf, this->channels);
-            if(flac->size() == 0)
-            {
-                dbg::qStdOut() << "No FLAC samples returned, yet number of samples was greater than 0!\n";
-            }
-            else
-            {
-                dbg::qStdOut() << "FLAC contains " << flac->size() << " bytes\n";
-                QByteArray qba = flac->data();
-                QString chatline = rec.recognize(qba.data(), flac->size());
-                dbg::qStdOut() << "Returned from rec.recognize()!\n";
-                if(chatline != QString("0BLANK0"))
-                {
-                    char *nickname = nullptr;
-                    struct TS3Functions *ff = ts3func::funcs;
-                    ff->getClientVariableAsString(this->schid, this->clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
-                    if(nickname != nullptr && qstrlen(nickname) > 0)
-                    {
-                        chatline = QString("Speech Recognition! [") + QString(nickname) + QString("]: ") + chatline;
-                    }
-                    else
-                    {
-                        chatline = QString("Speech Recognition! [UNKNOWN USER]: ") + chatline;
-                    }
+            //Converting the data to FLAC and then uploading it to Google Cloud Speech and getting a response takes a few seconds.
+            //We don't want to block while that's happening; in fact, we're happy to let this go on in the background while we free up
+            //the user's VoiceData thread back to TeamSpeak.
+            QThread *worker = new QThread(nullptr);
+            sdefdata *sdf = new sdefdata(&buf, channels, schid, clientID);
+            buf.moveToThread(worker);
+            sdf->moveToThread(worker);
+            connect(worker, SIGNAL(started()), sdf, SLOT(start()));
+            connect(sdf, SIGNAL(finished()), worker, SLOT(quit()));
+            connect(sdf, SIGNAL(finished()), sdf, SLOT(deleteLater()));
+            connect(sdf, SIGNAL(finished()), worker, SLOT(deleteLater()));
 
-                    const std::string stidstring = chatline.toStdString();
-                    char *seestir = new char [stidstring.length() + 1];
-                    std::strcpy(seestir, stidstring.c_str());
-
-                    dbg::qStdOut() << "Revised chatline=" << chatline << "\n";
-
-                    ff->printMessageToCurrentTab(seestir);
-                    if(speechrec::wantsEcho)
-                    {
-                        ff->requestSendChannelTextMsg(this->schid, seestir, 1, nullptr);
-                    }
-                    ff->freeMemory(nickname);
-                    delete[] seestir;
-                }
-            }
-            if(flac != nullptr)
-            {
-                delete flac;
-            }
+            worker->start();
         }
 
         this->samples.clear();
