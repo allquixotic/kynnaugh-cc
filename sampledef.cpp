@@ -67,7 +67,7 @@ QDateTime sampledef::getLastUpdated()
 void sampledef::update(const short* more, qint32 count)
 {
     QWriteLocker locker(&lock);
-    this->samples.append((const char*) more, count);
+    this->samples.append((const char*) more, count * (sizeof(short) / sizeof(char)));
     this->lastUpdated = QDateTime::currentDateTimeUtc();
     if(!this->checker.isRunning())
     {
@@ -141,7 +141,10 @@ void sampledef::check()
                     dbg::qStdOut() << "Revised chatline=" << chatline << "\n";
 
                     ff->printMessageToCurrentTab(seestir);
-                    ff->requestSendChannelTextMsg(this->schid, seestir, 1, nullptr);
+                    if(speechrec::wantsEcho)
+                    {
+                        ff->requestSendChannelTextMsg(this->schid, seestir, 1, nullptr);
+                    }
                     ff->freeMemory(nickname);
                     delete[] seestir;
                 }

@@ -29,9 +29,9 @@ win32 {
     DEFINES += "WINVER=0x0600"
     #Put your grpc, grpc++, OpenSSL/BoringSSL, zlib, GStreamer, GLib, and QtGStreamer libraries in this path
     #Or modify the paths below to where you put them
-    LIBS += -LC:\Users\Sean\dev\kynnaugh-cc\win64_bin\bin
+    LIBS += -L$${PWD}\win64_bin\bin
 
-    INCLUDEPATH += C:\Users\Sean\dev\kynnaugh-cc\win64_bin\include
+    INCLUDEPATH += $${PWD}\win64_bin\include
 
     #gRPC / gRPC++ linkage
     LIBS += -lgrpc++ -lgrpc -lgpr -lz

@@ -20,6 +20,7 @@ This file is a derivative work of the example in the Plugin SDK.
 #include <QtCore>
 #include <tuple>
 #include "dbg.h"
+#include "speechrec.h"
 
 #define PLUGIN_API_VERSION 21
 #define PATH_BUFSIZE 512
@@ -91,6 +92,26 @@ int ts3plugin_init() {
     ts3Functions.getResourcesPath(resourcesPath, PATH_BUFSIZE);
     ts3Functions.getConfigPath(configPath, PATH_BUFSIZE);
     ts3Functions.getPluginPath(pluginPath, PATH_BUFSIZE);
+
+#ifdef _WIN32
+    //Redirect stdout and stderr to a log file because TS handles them weirdly/badly on Windows
+    QString stdoutlogfile = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + QDir::separator() + "kynnaugh-cc-stdout-log.txt";
+    QString stderrlogfile = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + QDir::separator() + "kynnaugh-cc-stderr-log.txt";
+    freopen(qPrintable(stdoutlogfile),"w",stdout);
+    freopen(qPrintable(stderrlogfile),"w",stderr);
+#endif
+
+    //For now, just set them.
+    speechrec::wantsConfidence = true;
+    speechrec::wantsEcho = true;
+
+    //This is a terrible hack; we should really use the officially supported Qt config system instead of basing it on env vars.
+    /*
+    QProcessEnvironment qpe = QProcessEnvironment::systemEnvironment();
+    QString echo(qpe.value("KYNNAUGH_ECHO"));
+    QString confidence(qpe.value("KYNNAUGH_CONFIDENCE"));
+    */
+
 
     return 0;  /* 0 = success, 1 = failure, -2 = failure but client will not show a "failed to load" warning */
     /* -2 is a very special case and should only be used if a plugin displays a dialog (e.g. overlay) asking the user to disable

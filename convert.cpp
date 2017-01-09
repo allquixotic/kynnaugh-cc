@@ -32,6 +32,9 @@ static sf_count_t vio_write(const void *ptr, sf_count_t count, void *userdata);
 static sf_count_t vio_seek(sf_count_t offset, int whence, void *userdata);
 static sf_count_t vio_tell(void *userdata);
 static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval);
+static void logErrors(SNDFILE *hnd);
+static void dbgWriteToFile(QBuffer *buf, QString ext);
+static void dbgWriteToFile(char *c, qint64 len, QString ext);
 
 class lazydata
 {
@@ -51,11 +54,15 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
         return nullptr;
     }
 
-        dbg::qStdOut() << "convert::convertRawToFlac got a " << channes << " channel PCM QBuffer with " << dat->size() << " bytes\n";
+    dbg::qStdOut() << "convert::convertRawToFlac got a " << channes << " channel PCM QBuffer with " << dat->size() << " bytes\n";
+
+    dbgWriteToFile(dat, "-s16le-48k-orig.raw");
 
     //short to float and (possibly) stereo to mono conversion step
     float *monoSamples;
     int numMonoSamples = toFloatMono(dat, channes, &monoSamples);
+
+    dbgWriteToFile((char*)monoSamples, numMonoSamples*4, "-float-48k.raw");
 
     dbg::qStdOut() << "convert::convertRawToFlac: done toFloatMono and we got " << numMonoSamples << " samples.\n";
 
@@ -65,8 +72,11 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     float *outBuffer = new float[numMonoSamples * 4]; //Waste lots of memory for fun and profit; why not?
     int outBufferUsed = resample_process(resampler, 1.0 / 3.0, monoSamples, numMonoSamples, true, &inBufferUsed, outBuffer, numMonoSamples * 4);
 
+    dbgWriteToFile((char*)outBuffer, outBufferUsed*4, "-float-16k.raw");
+
     dbg::qStdOut() << "convert::convertRawToFlac: done libresample part and it generated " << outBufferUsed << " samples in the outbuffer\n";
     dbg::qStdOut() << "convert::convertRawToFlac: numMonoSamples/outBufferUsed=" << ((double)((double)numMonoSamples)/((double)outBufferUsed)) << "\n";
+
 
     //Encode in FLAC!
     QBuffer *outbuf = new QBuffer();
@@ -81,6 +91,13 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     sfi.channels = 1;
     sfi.format = SF_FORMAT_FLAC | SF_FORMAT_PCM_16;
     sfi.samplerate = 16000;
+    sfi.frames = 0;
+    sfi.sections = 1;
+    sfi.seekable = 1;
+    if(!sf_format_check(&sfi))
+    {
+        dbg::qStdOut() << "sf_format_check() failed!\n";
+    }
 
     SF_VIRTUAL_IO virt;
     virt.get_filelen = &vio_get_filelen;
@@ -90,15 +107,56 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     virt.tell = &vio_tell;
 
     SNDFILE *hnd = sf_open_virtual(&virt, SFM_WRITE, &sfi, static_cast<void*>(&laz));
+    logErrors(hnd);
     sf_count_t writsize = sf_write_float(hnd, outBuffer, outBufferUsed);
-    dbg::qStdOut() << "Wrote " << writsize << " samples into the FLAC encoder.\n";
+    logErrors(hnd);
+    dbg::qStdOut() << "sf_write_float() returned\n";
     sf_close(hnd);
+    hnd = nullptr;
+    dbg::qStdOut() << "sf_close() of the SFM_WRITE handle completed! Wrote " << QString::number(writsize) << " samples into the FLAC encoder.\n";
+    logErrors(hnd);
 
     delete[] outBuffer;
 
-    dbg::qStdOut() << "convert::convertRawToFlac: returning outbuf with size " << outbuf->size() << " bytes." << "\n";
+    dbg::qStdOut() << "convert::convertRawToFlac: returning outbuf with size " << QString::number(outbuf->size()) << " bytes." << "\n";
+
+    dbgWriteToFile(outbuf, ".flac");
 
     return outbuf;
+}
+
+static void dbgWriteToFile(QBuffer *buf, QString ext = ".flac")
+{
+#if 0
+    QString tmpfilepath = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + QDir::separator() + "kynnaugh-" + QString::number(QDateTime::currentMSecsSinceEpoch()) + ext;
+    QFile tmpfile(tmpfilepath);
+    dbg::qStdOut() << "convert::dbgWriteToFile: writing outbuf to " << tmpfilepath << "\n";
+    tmpfile.open(QIODevice::WriteOnly);
+    qint64 nbytes = tmpfile.write(buf->data());
+    tmpfile.flush();
+    tmpfile.close();
+    dbg::qStdOut() << "convert::dbgWriteToFile: wrote " << QString::number(nbytes) << " bytes to " << tmpfilepath << ".\n";
+#endif
+}
+
+static void dbgWriteToFile(char *c, qint64 len, QString ext = ".raw")
+{
+#if 0
+    QBuffer *buf = new QBuffer();
+    buf->open(QIODevice::WriteOnly);
+    buf->write(c, len);
+    dbgWriteToFile(buf, ext);
+    delete buf;
+#endif
+}
+
+static void logErrors(SNDFILE *hnd)
+{
+    int errnumber = sf_error(hnd);
+    if(errnumber != SF_ERR_NO_ERROR)
+    {
+        dbg::qStdOut() << "libsndfile Error #" << errnumber << ": " << sf_strerror(hnd) << "\n";
+    }
 }
 
 static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval)
@@ -113,6 +171,9 @@ static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval)
     origInfo.channels = channes;
     origInfo.format = SF_FORMAT_RAW | SF_FORMAT_PCM_16 | SF_ENDIAN_LITTLE;
     origInfo.samplerate = 48000;
+    origInfo.frames = 0;
+    origInfo.sections = 1;
+    origInfo.seekable = 1;
 
     SF_VIRTUAL_IO virt;
     virt.get_filelen = &vio_get_filelen;
@@ -128,10 +189,14 @@ static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval)
 
     //Open a virtual I/O device passing our function pointers.
     SNDFILE *orighandle = sf_open_virtual(&virt, SFM_READ, &origInfo, static_cast<void*>(&olazydat));
+    logErrors(orighandle);
+
+    dbg::qStdOut() << "convert::toFloatMono(): SNDFILE sees " << origInfo.frames << " frames from original QBuffer.\n";
 
     //Create a buffer to store the original data in float format, and read it out from sndfile.
     float *audioIn = new float[origInfo.channels * origInfo.frames];
-    sf_read_float(orighandle, audioIn, origInfo.channels * origInfo.frames);
+    sf_count_t numReadSamples = sf_readf_float(orighandle, audioIn, origInfo.frames);
+    logErrors(orighandle);
 
     //If we're already mono, don't copy; otherwise, allocate the output buffer for downmixing
     float *audioOut = (channes > 1 ? new float[origInfo.frames] : audioIn);
@@ -148,6 +213,8 @@ static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval)
         }
     }
     sf_close(orighandle);
+    orighandle = nullptr;
+    logErrors(orighandle);
 
     //If the orig was stereo, audioOut is a different buffer, we can discard the original input
     if(channes > 1)
@@ -157,7 +224,7 @@ static sf_count_t toFloatMono(QBuffer *dat, qint32 channes, float **retval)
 
     *retval = audioOut;
 
-    return origInfo.frames;
+    return numReadSamples;
 }
 
 //-------------------- SF_VIRTUAL_IO functions that deal with BYTES
@@ -173,6 +240,7 @@ static sf_count_t vio_get_filelen(void *userdata)
 //count and retval is BYTES
 static sf_count_t vio_read(void *ptr, sf_count_t count, void *userdata)
 {
+    //dbg::qStdOut() << "vio_read! count (bytes)=" << count << "\n";
     lazydata *p = static_cast<lazydata*>(userdata);
     return (sf_count_t) p->dat->read(static_cast<char*>(ptr), count);
 }
@@ -180,9 +248,11 @@ static sf_count_t vio_read(void *ptr, sf_count_t count, void *userdata)
 //count and retval is BYTES
 static sf_count_t vio_write(const void *ptr, sf_count_t count, void *userdata)
 {
-    dbg::qStdOut() << "vio_write() asked to write " << count << " samples.\n";
+    dbg::qStdOut() << "vio_write() asked to write " << count << " bytes.\n";
     lazydata *p = static_cast<lazydata*>(userdata);
-    return (sf_count_t) p->dat->write(static_cast<const char*>(ptr), count);
+    sf_count_t retval = (sf_count_t) p->dat->write(static_cast<const char*>(ptr), count);
+    dbg::qStdOut() << "vio_write wrote " << retval << " bytes.\n";
+    return retval;
 }
 
 //-------------------- SF_VIRTUAL_IO functions that deal with FRAMES
@@ -190,25 +260,31 @@ static sf_count_t vio_write(const void *ptr, sf_count_t count, void *userdata)
 //offset is FRAMES and whence is one of SEEK_SET, SEEK_CUR or SEEK_END
 static sf_count_t vio_seek(sf_count_t offset, int whence, void *userdata)
 {
+    dbg::qStdOut() << "vio_seek! offset=" << QString::number(offset) << ", whence=" << QString::number(whence) << "\n";
     lazydata *p = static_cast<lazydata*>(userdata);
+    bool seekSucceeded = false;
     switch(whence)
     {
     case SEEK_SET:
-        p->dat->seek(0);
+        seekSucceeded = p->dat->seek(offset);
+        break;
+    case SEEK_CUR:
+        seekSucceeded = p->dat->seek(vio_tell(userdata) + offset);
         break;
     case SEEK_END:
-        p->dat->seek(p->dat->size());
+        seekSucceeded = p->dat->seek(p->dat->size() + offset);
         break;
     }
 
-    p->dat->seek(offset * p->samplesize * p->channels);
-
-    return vio_tell(userdata);
+    sf_count_t retval = vio_tell(userdata);
+    dbg::qStdOut() << "vio_seek " << (seekSucceeded ? "SUCCEEDED" : "FAILED") << ", returning " << QString::number(retval) << "\n";
+    return retval;
 }
 
 //retval is FRAMES (1 frame is 1 sample ("item") per channel)
 static sf_count_t vio_tell(void *userdata)
 {
     lazydata *p = static_cast<lazydata*>(userdata);
-    return (sf_count_t) ((p->dat->pos() / p->samplesize) / p->channels);
+    return (sf_count_t) p->dat->pos();
+    //return (sf_count_t) ((p->dat->pos() / p->samplesize) / p->channels);
 }

@@ -20,6 +20,10 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 using namespace ::grpc;
 using namespace ::google::cloud::speech::v1beta1;
 
+
+bool speechrec::wantsConfidence;
+bool speechrec::wantsEcho;
+
 speechrec::speechrec()
 {
 
@@ -28,6 +32,7 @@ speechrec::speechrec()
 QString speechrec::recognize(char *buf, size_t length)
 {
     dbg::qStdOut() << "Recognize buffer is of length " << length << "\n";
+    ::grpc::ClientContext ctx;
     std::shared_ptr<ChannelCredentials> creds = GoogleDefaultCredentials();
     std::shared_ptr<Channel> channel = CreateChannel("speech.googleapis.com", creds);
     grpc_connectivity_state connstate = channel->GetState(true);
@@ -44,7 +49,6 @@ QString speechrec::recognize(char *buf, size_t length)
         dbg::qStdOut() << "It's " << connstate << " connection state\n";
     }
     std::unique_ptr<google::cloud::speech::v1beta1::Speech::Stub> stub(Speech::NewStub(channel));
-    ::grpc::ClientContext ctx;
     RecognitionConfig *conf = new RecognitionConfig();
     RecognitionAudio *audio = new RecognitionAudio();
     SyncRecognizeRequest req;
@@ -54,7 +58,6 @@ QString speechrec::recognize(char *buf, size_t length)
     conf->set_profanity_filter(false);
     conf->set_encoding(RecognitionConfig_AudioEncoding_FLAC);
     conf->set_sample_rate(16000);                             //TODO: Consider making dynamic or just passing in the source sample rate (48 kHz by default)
-    //conf->set_sample_rate(48000);                             //TODO: Consider making dynamic or just passing in the source sample rate (48 kHz by default)
     conf->set_language_code("en-US");                         //TODO: Recognize another language
     conf->set_max_alternatives(1);
 
@@ -79,9 +82,13 @@ QString speechrec::recognize(char *buf, size_t length)
                 auto alternative = result.alternatives(0);
                 dbg::qStdOut() << "KYNNAUGH PLUGIN: Got alternative 0!";
                 std::string transcript = alternative.transcript();
-                dbg::qStdOut() << "Got transcript";
-                dbg::qStdOut() << "transcript=" << transcript.c_str();
+                QString confid = QString::number(alternative.confidence());
+                dbg::qStdOut() << "Got transcript = " << transcript.c_str() << "\n";
                 retval = QString::fromStdString(transcript);
+                if(speechrec::wantsConfidence)
+                {
+                    retval += "(confidence: " + confid + ")";
+                }
                 dbg::qStdOut() << "retval=" << retval;
             }
             else
