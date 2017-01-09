@@ -82,12 +82,12 @@ QString speechrec::recognize(char *buf, size_t length)
                 auto alternative = result.alternatives(0);
                 dbg::qStdOut() << "KYNNAUGH PLUGIN: Got alternative 0!\n";
                 std::string transcript = alternative.transcript();
-                QString confid = QString::number(alternative.confidence());
+                QString confid = QString::number((alternative.confidence() * 100.0), 'f', 2);
                 dbg::qStdOut() << "Got transcript = " << transcript.c_str() << "\n";
                 retval = QString::fromStdString(transcript);
                 if(speechrec::wantsConfidence)
                 {
-                    retval += "(confidence: " + confid + ")";
+                    retval += " (Confidence: " + confid + "%)";
                 }
                 dbg::qStdOut() << "retval=" << retval << "\n";
             }
