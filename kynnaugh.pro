@@ -57,11 +57,8 @@ win32 {
 INCLUDEPATH += $$PWD
 
 #pkg-config is disabled by default on OS X!
-macx {
-    QT_CONFIG -= no-pkg-config
-}
-
 unix {
+    QT_CONFIG -= no-pkg-config
     CONFIG += link_pkgconfig
     PKGCONFIG += grpc++
     PKGCONFIG += protobuf
@@ -116,7 +113,8 @@ HEADERS += kynnaugh.h\
     libresample/resample_defs.h \
     sndfile/sndfile.h \
     dbg.h \
-    sdefdata.h
+    sdefdata.h \
+    constants.h
 
 unix {
     target.path = /usr/lib

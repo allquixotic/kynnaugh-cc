@@ -2,6 +2,7 @@
 #include "dbg.h"
 #include "ts3_functions.h"
 #include "kynnaugh.h"
+#include "constants.h"
 
 sdefdata::sdefdata(QByteArray *b, qint32 chan, quint64 sch, anyID cli) :
     QObject(nullptr), byt(b), channels(chan), schid(sch), clientID(cli), buf(b, nullptr)
@@ -42,7 +43,8 @@ void sdefdata::start()
             dbg::qStdOut() << "Revised chatline=" << chatline << "\n";
 
             ff->printMessageToCurrentTab(seestir);
-            if(speechrec::wantsEcho)
+            QSettings settings;
+            if(settings.value(ECHO_FLAG, true).toBool())
             {
                 ff->requestSendChannelTextMsg(this->schid, seestir, 1, nullptr);
             }

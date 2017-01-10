@@ -17,12 +17,9 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 
 #include "speechrec.h"
 #include "dbg.h"
+#include "constants.h"
 using namespace ::grpc;
 using namespace ::google::cloud::speech::v1beta1;
-
-
-bool speechrec::wantsConfidence;
-bool speechrec::wantsEcho;
 
 speechrec::speechrec()
 {
@@ -53,6 +50,20 @@ QString speechrec::recognize(char *buf, size_t length)
     RecognitionAudio *audio = new RecognitionAudio();
     SyncRecognizeRequest req;
     SyncRecognizeResponse res;
+    SpeechContext *ctxt = new SpeechContext();
+    QSettings settings;
+    QStringList hints = settings.value(HINTS_SETTING).toStringList();
+
+    if(hints.size() > 0)
+    {
+        int i = 0;
+        foreach(const QString &hint, hints)
+        {
+            ctxt->set_phrases(i++, hint.toStdString());
+        }
+
+        conf->set_allocated_speech_context(ctxt);
+    }
 
     //Set up configuration parameters
     conf->set_profanity_filter(false);
@@ -85,9 +96,12 @@ QString speechrec::recognize(char *buf, size_t length)
                 QString confid = QString::number((alternative.confidence() * 100.0), 'f', 2);
                 dbg::qStdOut() << "Got transcript = " << transcript.c_str() << "\n";
                 retval = QString::fromStdString(transcript);
-                if(speechrec::wantsConfidence)
+
+                QSettings settings;
+
+                if(settings.value(CONFIDENCE_FLAG, true).toBool())
                 {
-                    retval += " (Confidence: " + confid + "%)";
+                    retval += " | Confidence: " + confid + "%";
                 }
                 dbg::qStdOut() << "retval=" << retval << "\n";
             }

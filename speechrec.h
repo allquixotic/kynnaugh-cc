@@ -32,8 +32,6 @@ class speechrec
 public:
     explicit speechrec();
     QString recognize(char* buf, size_t length);
-    static bool wantsConfidence;
-    static bool wantsEcho;
 
 private:
 };

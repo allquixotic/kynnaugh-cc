@@ -93,25 +93,30 @@ int ts3plugin_init() {
     ts3Functions.getConfigPath(configPath, PATH_BUFSIZE);
     ts3Functions.getPluginPath(pluginPath, PATH_BUFSIZE);
 
-#ifdef _WIN32
+    //This code hacks around situations (only possible on OS X and Windows) where two versions of Qt are loaded in the same address space.
+    //Teamspeak's own Qt creates its own QApplication, but we have to make *another* if "our" Qt isn't TeamSpeak's Qt.
+    //This *never* occurs on Linux because of the lack of a "Side-by-side" library compatibility subsystem.
+    int argc = 1;
+    char *first = "a";
+    char **argv = &first;
+    QCoreApplication *app = QCoreApplication::instance();
+    if(app == nullptr)
+    {
+        app = new QCoreApplication(argc, argv);
+    }
+
+    //Here's where we initialize QSettings. Can't use it before now!
+    QCoreApplication::setOrganizationName("rootaccessorg");
+    QCoreApplication::setApplicationName("kynnaugh-cc");
+
+
+#if defined(_WIN32) && defined(KYNNAUGH_DEBUG)
     //Redirect stdout and stderr to a log file because TS handles them weirdly/badly on Windows
     QString stdoutlogfile = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + QDir::separator() + "kynnaugh-cc-stdout-log.txt";
     QString stderrlogfile = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + QDir::separator() + "kynnaugh-cc-stderr-log.txt";
     freopen(qPrintable(stdoutlogfile),"w",stdout);
     freopen(qPrintable(stderrlogfile),"w",stderr);
 #endif
-
-    //For now, just set them.
-    speechrec::wantsConfidence = true;
-    speechrec::wantsEcho = true;
-
-    //This is a terrible hack; we should really use the officially supported Qt config system instead of basing it on env vars.
-    /*
-    QProcessEnvironment qpe = QProcessEnvironment::systemEnvironment();
-    QString echo(qpe.value("KYNNAUGH_ECHO"));
-    QString confidence(qpe.value("KYNNAUGH_CONFIDENCE"));
-    */
-
 
     return 0;  /* 0 = success, 1 = failure, -2 = failure but client will not show a "failed to load" warning */
     /* -2 is a very special case and should only be used if a plugin displays a dialog (e.g. overlay) asking the user to disable
