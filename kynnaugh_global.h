@@ -47,6 +47,8 @@ ts3plugin_onEditPlaybackVoiceDataEvent(uint64 serverConnectionHandlerID, anyID c
 KYNNAUGHSHARED_EXPORT void ts3plugin_freeMemory(void* data);
 KYNNAUGHSHARED_EXPORT int ts3plugin_requestAutoload();
 KYNNAUGHSHARED_EXPORT void ts3plugin_registerPluginID(const char* id);
+KYNNAUGHSHARED_EXPORT int ts3plugin_offersConfigure();
+KYNNAUGHSHARED_EXPORT void ts3plugin_configure(void* handle, void* qParentWidget);
 
 }
 

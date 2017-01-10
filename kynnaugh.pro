@@ -13,7 +13,8 @@
 #You should have received a copy of the Apache License, version 2.0
 #along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.0>.
 
-QT       -= gui
+QT       += gui
+QT       += widgets
 
 TARGET = kynnaugh
 TEMPLATE = lib
@@ -93,7 +94,8 @@ SOURCES += kynnaugh.cpp \
     libresample/resamplesubs.c \
     gfdi.cpp \
     dbg.cpp \
-    sdefdata.cpp
+    sdefdata.cpp \
+    kynnconfigdlg.cpp
 
 HEADERS += kynnaugh.h\
         kynnaugh_global.h \
@@ -114,7 +116,8 @@ HEADERS += kynnaugh.h\
     sndfile/sndfile.h \
     dbg.h \
     sdefdata.h \
-    constants.h
+    constants.h \
+    kynnconfigdlg.h
 
 unix {
     target.path = /usr/lib
@@ -125,3 +128,6 @@ DISTFILES += \
     generated/google/google/logging/README.md \
     generated/google/google/rpc/README.md \
     generated/google/type/README.md
+
+FORMS += \
+    kynnconfigdlg.ui

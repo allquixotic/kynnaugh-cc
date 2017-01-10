@@ -18,6 +18,7 @@ This file is a derivative work of the example in the Plugin SDK.
 #include <kynnaugh.h>
 #include <sampledef.h>
 #include <QtCore>
+#include <QtWidgets>
 #include <tuple>
 #include "dbg.h"
 #include "speechrec.h"
@@ -31,6 +32,7 @@ This file is a derivative work of the example in the Plugin SDK.
 #define RETURNCODE_BUFSIZE 128
 
 struct TS3Functions *ts3func::funcs = nullptr;
+bool ts3func::useTeamspeaksQt = true;
 static struct TS3Functions ts3Functions;
 static QString *pluginID = NULL;
 static QHash<std::tuple<quint64, anyID, qint32>, sampledef*> sampledefs = QHash<std::tuple<quint64, anyID, qint32>, sampledef*>();
@@ -99,15 +101,16 @@ int ts3plugin_init() {
     int argc = 1;
     char *first = "a";
     char **argv = &first;
-    QCoreApplication *app = QCoreApplication::instance();
+    QApplication *app = QApplication::instance();
     if(app == nullptr)
     {
-        app = new QCoreApplication(argc, argv);
+        ts3func::useTeamspeaksQt = false;
+        app = new QApplication(argc, argv);
     }
 
     //Here's where we initialize QSettings. Can't use it before now!
-    QCoreApplication::setOrganizationName("rootaccessorg");
-    QCoreApplication::setApplicationName("kynnaugh-cc");
+    QApplication::setOrganizationName("rootaccessorg");
+    QApplication::setApplicationName("kynnaugh-cc");
 
 
 #if defined(_WIN32) && defined(KYNNAUGH_DEBUG)
@@ -187,6 +190,40 @@ void ts3plugin_onEditPlaybackVoiceDataEvent(uint64 serverConnectionHandlerID, an
         sampledef *def = new sampledef(0, serverConnectionHandlerID, clientID, channels);
         sampledefs.insert(key, def);
         def->update(samples, sampleCount);
+    }
+}
+
+/* Tell client if plugin offers a configuration window.
+ * If this function is not implemented, it's an assumed "does not offer" (PLUGIN_OFFERS_NO_CONFIGURE). */
+int ts3plugin_offersConfigure() {
+    printf("KYNNAUGH: offersConfigure\n");
+    /*
+     * Return values:
+     * PLUGIN_OFFERS_NO_CONFIGURE         - Plugin does not implement ts3plugin_configure
+     * PLUGIN_OFFERS_CONFIGURE_NEW_THREAD - Plugin does implement ts3plugin_configure and requests to run this function in an own thread
+     * PLUGIN_OFFERS_CONFIGURE_QT_THREAD  - Plugin does implement ts3plugin_configure and requests to run this function in the Qt GUI thread
+     */
+    if(ts3func::useTeamspeaksQt)
+    {
+        return PLUGIN_OFFERS_CONFIGURE_QT_THREAD;
+    }
+    else
+    {
+        return PLUGIN_OFFERS_CONFIGURE_NEW_THREAD;
+    }
+}
+
+/* Plugin might offer a configuration window. If ts3plugin_offersConfigure returns 0, this function does not need to be implemented. */
+void ts3plugin_configure(void* handle, void* qParentWidget) {
+    printf("KYNNAUGH: configure\n");
+
+    if(ts3func::useTeamspeaksQt)
+    {
+        //Use qParentWidget, which is a QDialog*
+    }
+    else
+    {
+        //Use handle, which is an opaque handle to a parent window
     }
 }
 

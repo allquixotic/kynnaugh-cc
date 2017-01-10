@@ -25,6 +25,7 @@ class ts3func
 {
 public:
     static struct TS3Functions *funcs;
+    static bool useTeamspeaksQt;
 };
 
 #endif // KYNNAUGH_H
