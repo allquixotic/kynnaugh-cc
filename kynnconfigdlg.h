@@ -10,6 +10,7 @@ namespace Ui {
 class KynnConfigDlg;
 }
 
+class configsnapshot;
 class filt;
 
 class KynnConfigDlg : public QDialog
@@ -24,17 +25,42 @@ public:
     void removeStringAt(int i);
     void removeStringsAt(QList<int> i);
     void updateString(QString orig, QString replacement);
+    configsnapshot *takeSnapshot();
+    void restoreSnapshot(configsnapshot *conf);
 
 public slots:
     //Override from QDialog
     virtual void accept();
     virtual void reject();
+    void addBtnClicked();
 
 private:
     Ui::KynnConfigDlg *ui;
     QStringListModel stringlistmodel;
     QStringList stringlist;
     filt *fo;
+};
+
+class filt : public QObject
+{
+    Q_OBJECT
+public:
+    filt(QListView *qlv, const KynnConfigDlg *dlg);
+
+protected:
+    bool eventFilter(QObject *obj, QEvent *event);
+
+private:
+    QListView *qlv;
+    KynnConfigDlg *dlg;
+};
+
+class configsnapshot
+{
+public:
+    QStringList list;
+    bool echoChecked;
+    bool confChecked;
 };
 
 #endif // KYNNCONFIGDLG_H

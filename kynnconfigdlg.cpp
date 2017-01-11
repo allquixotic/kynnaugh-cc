@@ -1,44 +1,36 @@
+#include <algorithm>
 #include "kynnconfigdlg.h"
 #include "ui_kynnconfigdlg.h"
-#include <algorithm>
+#include "dbg.h"
 
 //This filter class intercepts "Delete"/"Backspace" key events on the list and removes selected item(s).
-class filt : public QObject
+filt::filt(QListView *qlv, const KynnConfigDlg *dlg)
+    : qlv(qlv), dlg(const_cast<KynnConfigDlg*>(dlg))
+{}
+
+bool filt::eventFilter(QObject *obj, QEvent *event)
 {
-    Q_OBJECT
-public:
-    filt(QListView *qlv, const KynnConfigDlg *dlg)
-        : qlv(qlv), dlg(dlg)
-    {}
-
-protected:
-    bool eventFilter(QObject *obj, QEvent *event)
+    if(event->type() == QEvent::KeyPress)
     {
-        if(event->type() == QEvent::KeyPress)
+        QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+        if(keyEvent->key() == Qt::Key_Backspace || keyEvent->key() == Qt::Key_Delete)
         {
-            QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
-            if(keyEvent->key() == Qt::Key_Backspace || keyEvent->key() == Qt::Key_Delete)
+            const QModelIndexList qmil = this->qlv->selectionModel()->selectedIndexes();
+            QModelIndex qmi;
+            QList<int> intlist;
+            foreach(qmi, qmil)
             {
-                QModelIndexList qmil = this->qlv->selectedIndexes();
-                QModelIndex qmi;
-                QList<int> intlist;
-                foreach(qmi, qmil)
-                {
-                    //Build a list of indices to delete from the model
-                    intlist.append(qmi.row());
-                }
-                //Actually remove them without iterating
-                dlg->removeStringsAt(intlist);
-                return true;
+                //Build a list of indices to delete from the model
+                intlist.append(qmi.row());
             }
+            //Actually remove them without iterating
+            dlg->removeStringsAt(intlist);
+            return true;
         }
-
-        return QObject::eventFilter(obj, event);
     }
-private:
-    QListView *qlv;
-    const KynnConfigDlg *dlg;
-};
+
+    return QObject::eventFilter(obj, event);
+}
 
 KynnConfigDlg::KynnConfigDlg(QWidget *parent) :
     QDialog(parent),
@@ -48,6 +40,18 @@ KynnConfigDlg::KynnConfigDlg(QWidget *parent) :
     ui->listHints->setModel(&this->stringlistmodel);
     this->fo = new filt(ui->listHints, this);
     ui->listHints->installEventFilter(fo);
+
+    connect(ui->btnAdd, &QPushButton::clicked, this, &KynnConfigDlg::addBtnClicked);
+}
+
+void KynnConfigDlg::addBtnClicked()
+{
+    //Add the text in the `txtAdd` to the end of the `listHints`.
+    QString txtAddText = ui->txtAdd->text().trimmed();
+    if(txtAddText.length() > 0)
+    {
+        addString(txtAddText);
+    }
 }
 
 void KynnConfigDlg::accept()
@@ -65,12 +69,32 @@ KynnConfigDlg::~KynnConfigDlg()
     delete ui;
 }
 
+configsnapshot *KynnConfigDlg::takeSnapshot()
+{
+    configsnapshot *retval = new configsnapshot();
+    retval->confChecked = this->ui->checkConfidence->isChecked();
+    retval->echoChecked = this->ui->checkEcho->isChecked();
+    retval->list = this->stringlist;
+    return retval;
+}
+
+void KynnConfigDlg::restoreSnapshot(configsnapshot *conf)
+{
+    if(conf != nullptr)
+    {
+        ui->checkConfidence->setChecked(conf->confChecked);
+        ui->checkEcho->setChecked(conf->echoChecked);
+        stringlist = conf->list;
+        stringlistmodel.setStringList(stringlist);
+    }
+}
+
 void KynnConfigDlg::addString(QString s)
 {
     stringlist.append(s);
-    QSet set = stringlist.toSet();
+    QSet<QString> fset = stringlist.toSet();
     stringlist.clear();
-    stringlist.append(set.toList());
+    stringlist.append(fset.toList());
     stringlistmodel.setStringList(stringlist);
 }
 
@@ -97,8 +121,9 @@ void KynnConfigDlg::removeStringsAt(QList<int> i)
     //Sort with the reverse iterators to list them in descending order
     //Convert back to a QList so we can access elements by index
     QSet<int> mySet = i.toSet();
-    std::sort(mySet.rbegin(), mySet.rend());
+    //std::sort(mySet.rbegin(), mySet.rend());
     QList<int> backToList = mySet.toList();
+    qSort(backToList.rbegin(), backToList.rend());
     for(int i = 0; i < backToList.size(); i++)
     {
         stringlist.removeAt(backToList.at(i));
