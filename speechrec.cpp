@@ -59,7 +59,10 @@ QString speechrec::recognize(char *buf, size_t length)
         int i = 0;
         foreach(const QString &hint, hints)
         {
-            ctxt->set_phrases(i++, hint.toStdString());
+            dbg::qStdOut() << "Before set_phrases with i=" << i << " and hint=" << hint << "\n";
+            char *prnt = strdup(qPrintable(hint));
+            ctxt->add_phrases(prnt);
+            dbg::qStdOut() << "After set_phrases\n";
         }
 
         conf->set_allocated_speech_context(ctxt);

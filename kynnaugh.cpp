@@ -100,7 +100,7 @@ int ts3plugin_init() {
     //Teamspeak's own Qt creates its own QApplication, but we have to make *another* if "our" Qt isn't TeamSpeak's Qt.
     //This *never* occurs on Linux because of the lack of a "Side-by-side" library compatibility subsystem.
     int argc = 1;
-    char *first = "a";
+    char *first = const_cast<char*>("a");
     char **argv = &first;
     QCoreApplication *app = QApplication::instance();
     if(app == nullptr)
