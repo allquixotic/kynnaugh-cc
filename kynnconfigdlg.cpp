@@ -78,6 +78,7 @@ void KynnConfigDlg::accept()
         delete snapshot;
         snapshot = nullptr;
     }
+    QDialog::accept();
 }
 
 void KynnConfigDlg::reject()
@@ -85,6 +86,7 @@ void KynnConfigDlg::reject()
     //Here we need to roll back the settings to the state they were in when the dialog was last displayed.
     restoreSnapshot(snapshot);
     snapshot = nullptr;
+    QDialog::reject();
 }
 
 void KynnConfigDlg::updateSettings()
