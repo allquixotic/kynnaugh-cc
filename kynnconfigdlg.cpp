@@ -1,14 +1,122 @@
 #include "kynnconfigdlg.h"
 #include "ui_kynnconfigdlg.h"
+#include <algorithm>
+
+//This filter class intercepts "Delete"/"Backspace" key events on the list and removes selected item(s).
+class filt : public QObject
+{
+    Q_OBJECT
+public:
+    filt(QListView *qlv, const KynnConfigDlg *dlg)
+        : qlv(qlv), dlg(dlg)
+    {}
+
+protected:
+    bool eventFilter(QObject *obj, QEvent *event)
+    {
+        if(event->type() == QEvent::KeyPress)
+        {
+            QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+            if(keyEvent->key() == Qt::Key_Backspace || keyEvent->key() == Qt::Key_Delete)
+            {
+                QModelIndexList qmil = this->qlv->selectedIndexes();
+                QModelIndex qmi;
+                QList<int> intlist;
+                foreach(qmi, qmil)
+                {
+                    //Build a list of indices to delete from the model
+                    intlist.append(qmi.row());
+                }
+                //Actually remove them without iterating
+                dlg->removeStringsAt(intlist);
+                return true;
+            }
+        }
+
+        return QObject::eventFilter(obj, event);
+    }
+private:
+    QListView *qlv;
+    const KynnConfigDlg *dlg;
+};
 
 KynnConfigDlg::KynnConfigDlg(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::KynnConfigDlg)
 {
     ui->setupUi(this);
+    ui->listHints->setModel(&this->stringlistmodel);
+    this->fo = new filt(ui->listHints, this);
+    ui->listHints->installEventFilter(fo);
+}
+
+void KynnConfigDlg::accept()
+{
+    //Here we shouldn't have to "do" anything, if we optimistically update our model on the fly and only revert if we hit cancel.
+}
+
+void KynnConfigDlg::reject()
+{
+    //Here we need to roll back the settings to the state they were in when the dialog was last displayed.
 }
 
 KynnConfigDlg::~KynnConfigDlg()
 {
     delete ui;
+}
+
+void KynnConfigDlg::addString(QString s)
+{
+    stringlist.append(s);
+    QSet set = stringlist.toSet();
+    stringlist.clear();
+    stringlist.append(set.toList());
+    stringlistmodel.setStringList(stringlist);
+}
+
+void KynnConfigDlg::removeString(QString s)
+{
+    stringlist.removeOne(s);
+    stringlistmodel.setStringList(stringlist);
+}
+
+void KynnConfigDlg::removeStringAt(int i)
+{
+    if(i >= 0 && stringlist.size() > 0)
+    {
+        stringlist.removeAt(i);
+        stringlistmodel.setStringList(stringlist);
+    }
+}
+
+void KynnConfigDlg::removeStringsAt(QList<int> i)
+{
+    //We have to remove the highest indices first, and we don't want dupes, but we need to be able to access elements by indices
+    //So we have to go:
+    //Convert to QSet to eliminate duplicates
+    //Sort with the reverse iterators to list them in descending order
+    //Convert back to a QList so we can access elements by index
+    QSet<int> mySet = i.toSet();
+    std::sort(mySet.rbegin(), mySet.rend());
+    QList<int> backToList = mySet.toList();
+    for(int i = 0; i < backToList.size(); i++)
+    {
+        stringlist.removeAt(backToList.at(i));
+    }
+    stringlistmodel.setStringList(stringlist);
+}
+
+void KynnConfigDlg::updateString(QString orig, QString replacement)
+{
+    QRegExp qre(QRegExp::escape(orig));
+    int idx = stringlist.indexOf(qre);
+    if(idx < 0)
+    {
+        dbg::qStdOut() << "KynnConfigDgl::updateString(): WARNING: Tried to update non-existent string " << orig << "!\n";
+    }
+    else
+    {
+        stringlist.replace(idx, replacement);
+    }
+    stringlistmodel.setStringList(stringlist);
 }

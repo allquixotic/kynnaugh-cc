@@ -101,7 +101,7 @@ int ts3plugin_init() {
     int argc = 1;
     char *first = "a";
     char **argv = &first;
-    QApplication *app = QApplication::instance();
+    QCoreApplication *app = QApplication::instance();
     if(app == nullptr)
     {
         ts3func::useTeamspeaksQt = false;
