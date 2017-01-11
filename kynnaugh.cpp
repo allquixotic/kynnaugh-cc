@@ -109,6 +109,7 @@ int ts3plugin_init() {
         app = new QApplication(argc, argv);
     }
 
+    QSettings::setDefaultFormat(QSettings::IniFormat);
     //Here's where we initialize QSettings. Can't use it before now!
     QApplication::setOrganizationName("rootaccessorg");
     QApplication::setApplicationName("kynnaugh-cc");
