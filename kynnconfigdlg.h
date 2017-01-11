@@ -34,11 +34,16 @@ public slots:
     virtual void reject();
     void addBtnClicked();
 
+protected:
+    virtual void showEvent(QShowEvent* event);
+
 private:
     Ui::KynnConfigDlg *ui;
     QStringListModel stringlistmodel;
     QStringList stringlist;
     filt *fo;
+    configsnapshot *snapshot;
+    void updateSettings();
 };
 
 class filt : public QObject

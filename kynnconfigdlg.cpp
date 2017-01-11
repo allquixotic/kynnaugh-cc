@@ -2,6 +2,7 @@
 #include "kynnconfigdlg.h"
 #include "ui_kynnconfigdlg.h"
 #include "dbg.h"
+#include "constants.h"
 
 //This filter class intercepts "Delete"/"Backspace" key events on the list and removes selected item(s).
 filt::filt(QListView *qlv, const KynnConfigDlg *dlg)
@@ -34,7 +35,7 @@ bool filt::eventFilter(QObject *obj, QEvent *event)
 
 KynnConfigDlg::KynnConfigDlg(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::KynnConfigDlg)
+    ui(new Ui::KynnConfigDlg), snapshot(nullptr)
 {
     ui->setupUi(this);
     ui->listHints->setModel(&this->stringlistmodel);
@@ -42,6 +43,19 @@ KynnConfigDlg::KynnConfigDlg(QWidget *parent) :
     ui->listHints->installEventFilter(fo);
 
     connect(ui->btnAdd, &QPushButton::clicked, this, &KynnConfigDlg::addBtnClicked);
+
+    QSettings sett;
+    ui->checkConfidence->setChecked(sett.value(CONFIDENCE_FLAG, true).toBool());
+    ui->checkEcho->setChecked(sett.value(ECHO_FLAG, true).toBool());
+    QStringList origHints = sett.value(HINTS_SETTING).toStringList();
+    stringlist = origHints;
+    stringlistmodel.setStringList(stringlist);
+}
+
+void KynnConfigDlg::showEvent(QShowEvent* event)
+{
+    QDialog::showEvent(event);
+    snapshot = takeSnapshot();
 }
 
 void KynnConfigDlg::addBtnClicked()
@@ -56,12 +70,29 @@ void KynnConfigDlg::addBtnClicked()
 
 void KynnConfigDlg::accept()
 {
-    //Here we shouldn't have to "do" anything, if we optimistically update our model on the fly and only revert if we hit cancel.
+    //Here we don't rollback, since we optimistically update our model on the fly and only revert if we hit cancel.
+    //We still have to update QSettings though.
+    updateSettings();
+    if(snapshot != nullptr)
+    {
+        delete snapshot;
+        snapshot = nullptr;
+    }
 }
 
 void KynnConfigDlg::reject()
 {
     //Here we need to roll back the settings to the state they were in when the dialog was last displayed.
+    restoreSnapshot(snapshot);
+    snapshot = nullptr;
+}
+
+void KynnConfigDlg::updateSettings()
+{
+    QSettings sett;
+    sett.setValue(CONFIDENCE_FLAG, ui->checkConfidence->isChecked());
+    sett.setValue(ECHO_FLAG, ui->checkEcho->isChecked());
+    sett.setValue(HINTS_SETTING, stringlist);
 }
 
 KynnConfigDlg::~KynnConfigDlg()
@@ -86,6 +117,7 @@ void KynnConfigDlg::restoreSnapshot(configsnapshot *conf)
         ui->checkEcho->setChecked(conf->echoChecked);
         stringlist = conf->list;
         stringlistmodel.setStringList(stringlist);
+        delete conf;
     }
 }
 
