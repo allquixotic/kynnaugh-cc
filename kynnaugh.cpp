@@ -22,6 +22,7 @@ This file is a derivative work of the example in the Plugin SDK.
 #include <tuple>
 #include "dbg.h"
 #include "speechrec.h"
+#include "kynnconfigdlg.h"
 
 #define PLUGIN_API_VERSION 21
 #define PATH_BUFSIZE 512
@@ -216,14 +217,17 @@ int ts3plugin_offersConfigure() {
 /* Plugin might offer a configuration window. If ts3plugin_offersConfigure returns 0, this function does not need to be implemented. */
 void ts3plugin_configure(void* handle, void* qParentWidget) {
     printf("KYNNAUGH: configure\n");
-
     if(ts3func::useTeamspeaksQt)
     {
         //Use qParentWidget, which is a QDialog*
+        static KynnConfigDlg *confdlg_tsqt = new KynnConfigDlg(static_cast<QWidget*>(qParentWidget));
+        confdlg_tsqt->exec();
     }
     else
     {
         //Use handle, which is an opaque handle to a parent window
+        static KynnConfigDlg *confdlg_opaque = new KynnConfigDlg(nullptr);
+        confdlg_opaque->exec();
     }
 }
 
