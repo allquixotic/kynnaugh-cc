@@ -3,6 +3,7 @@
 #include "ui_kynnconfigdlg.h"
 #include "dbg.h"
 #include "constants.h"
+#include "settings.h"
 
 //This filter class intercepts "Delete"/"Backspace" key events on the list and removes selected item(s).
 filt::filt(QListView *qlv, const KynnConfigDlg *dlg)
@@ -44,10 +45,10 @@ KynnConfigDlg::KynnConfigDlg(QWidget *parent) :
 
     connect(ui->btnAdd, &QPushButton::clicked, this, &KynnConfigDlg::addBtnClicked);
 
-    QSettings sett;
-    ui->checkConfidence->setChecked(sett.value(CONFIDENCE_FLAG, true).toBool());
-    ui->checkEcho->setChecked(sett.value(ECHO_FLAG, true).toBool());
-    QStringList origHints = sett.value(HINTS_SETTING).toStringList();
+    auto sett = settings::getSettings();
+    ui->checkConfidence->setChecked(sett->value(CONFIDENCE_FLAG, true).toBool());
+    ui->checkEcho->setChecked(sett->value(ECHO_FLAG, true).toBool());
+    QStringList origHints = sett->value(HINTS_SETTING).toStringList();
     stringlist = origHints;
     stringlistmodel.setStringList(stringlist);
 }
@@ -91,15 +92,19 @@ void KynnConfigDlg::reject()
 
 void KynnConfigDlg::updateSettings()
 {
-    QSettings sett;
-    sett.setValue(CONFIDENCE_FLAG, ui->checkConfidence->isChecked());
-    sett.setValue(ECHO_FLAG, ui->checkEcho->isChecked());
-    sett.setValue(HINTS_SETTING, stringlist);
+    auto sett = settings::getSettings();
+    sett->setValue(CONFIDENCE_FLAG, ui->checkConfidence->isChecked());
+    sett->setValue(ECHO_FLAG, ui->checkEcho->isChecked());
+    sett->setValue(HINTS_SETTING, stringlist);
 }
 
 KynnConfigDlg::~KynnConfigDlg()
 {
     delete ui;
+    if(fo)
+    {
+        delete fo;
+    }
 }
 
 configsnapshot *KynnConfigDlg::takeSnapshot()

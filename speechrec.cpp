@@ -18,6 +18,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include "speechrec.h"
 #include "dbg.h"
 #include "constants.h"
+#include "settings.h"
 using namespace ::grpc;
 using namespace ::google::cloud::speech::v1beta1;
 
@@ -51,8 +52,8 @@ QString speechrec::recognize(char *buf, size_t length)
     SyncRecognizeRequest req;
     SyncRecognizeResponse res;
     SpeechContext *ctxt = new SpeechContext();
-    QSettings settings;
-    QStringList hints = settings.value(HINTS_SETTING).toStringList();
+    auto settings = settings::getSettings();
+    QStringList hints = settings->value(HINTS_SETTING).toStringList();
 
     if(hints.size() > 0)
     {
@@ -100,9 +101,7 @@ QString speechrec::recognize(char *buf, size_t length)
                 dbg::qStdOut() << "Got transcript = " << transcript.c_str() << "\n";
                 retval = QString::fromStdString(transcript);
 
-                QSettings settings;
-
-                if(settings.value(CONFIDENCE_FLAG, true).toBool())
+                if(settings->value(CONFIDENCE_FLAG, true).toBool())
                 {
                     retval += " | Confidence: " + confid + "%";
                 }

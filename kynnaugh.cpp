@@ -23,6 +23,7 @@ This file is a derivative work of the example in the Plugin SDK.
 #include "dbg.h"
 #include "speechrec.h"
 #include "kynnconfigdlg.h"
+#include "settings.h"
 
 #define PLUGIN_API_VERSION 21
 #define PATH_BUFSIZE 512
@@ -108,12 +109,6 @@ int ts3plugin_init() {
         ts3func::useTeamspeaksQt = false;
         app = new QApplication(argc, argv);
     }
-
-    QSettings::setDefaultFormat(QSettings::IniFormat);
-    //Here's where we initialize QSettings. Can't use it before now!
-    QApplication::setOrganizationName("rootaccessorg");
-    QApplication::setApplicationName("kynnaugh-cc");
-
 
 #if defined(_WIN32) && defined(KYNNAUGH_DEBUG)
     //Redirect stdout and stderr to a log file because TS handles them weirdly/badly on Windows
@@ -221,14 +216,24 @@ void ts3plugin_configure(void* handle, void* qParentWidget) {
     if(ts3func::useTeamspeaksQt)
     {
         //Use qParentWidget, which is a QDialog*
-        static KynnConfigDlg *confdlg_tsqt = new KynnConfigDlg(static_cast<QWidget*>(qParentWidget));
+        KynnConfigDlg *confdlg_tsqt = new KynnConfigDlg(static_cast<QWidget*>(qParentWidget));
+        if(confdlg_tsqt->thread() != QThread::currentThread())
+        {
+            confdlg_tsqt->moveToThread(QThread::currentThread());
+        }
         confdlg_tsqt->exec();
+        delete confdlg_tsqt;
     }
     else
     {
         //Use handle, which is an opaque handle to a parent window
-        static KynnConfigDlg *confdlg_opaque = new KynnConfigDlg(nullptr);
+        KynnConfigDlg *confdlg_opaque = new KynnConfigDlg(nullptr);
+        if(confdlg_opaque->thread() != QThread::currentThread())
+        {
+            confdlg_opaque->moveToThread(QThread::currentThread());
+        }
         confdlg_opaque->exec();
+        delete confdlg_opaque;
     }
 }
 

@@ -20,8 +20,8 @@ TARGET = kynnaugh
 TEMPLATE = lib
 
 CONFIG += warn_off c++11
-
 DEFINES += KYNNAUGH_LIBRARY
+
 
 #Define this if you want the debugging stuff. Otherwise don't. Could be a significant performance hit / disk space wastage so be careful!
 #DEFINES += KYNNAUGH_DEBUG
@@ -95,7 +95,8 @@ SOURCES += kynnaugh.cpp \
     gfdi.cpp \
     dbg.cpp \
     sdefdata.cpp \
-    kynnconfigdlg.cpp
+    kynnconfigdlg.cpp \
+    settings.cpp
 
 HEADERS += kynnaugh.h\
         kynnaugh_global.h \
@@ -117,7 +118,8 @@ HEADERS += kynnaugh.h\
     dbg.h \
     sdefdata.h \
     constants.h \
-    kynnconfigdlg.h
+    kynnconfigdlg.h \
+    settings.h
 
 unix {
     target.path = /usr/lib
