@@ -40,7 +40,7 @@ dbg& dbg::operator<<(const void * ptr) { return dbg::instance; }
 
 void dbg::writeToFile(QBuffer *buf, QString ext)
 {
-#ifdef KYNNAUGH_DEBUG
+#ifdef KYNNAUGH_DEBUG_AUDIO
     QString tmpfilepath = QStandardPaths::writableLocation(QStandardPaths::TempLocation) + QDir::separator() + "kynnaugh-" + QString::number(QDateTime::currentMSecsSinceEpoch()) + ext;
     QFile tmpfile(tmpfilepath);
     dbg::qStdOut() << "convert::dbgWriteToFile: writing outbuf to " << tmpfilepath << "\n";
@@ -54,7 +54,7 @@ void dbg::writeToFile(QBuffer *buf, QString ext)
 
 void dbg::writeToFile(char *c, qint64 len, QString ext)
 {
-#ifdef KYNNAUGH_DEBUG
+#ifdef KYNNAUGH_DEBUG_AUDIO
     QBuffer *buf = new QBuffer();
     buf->open(QIODevice::WriteOnly);
     buf->write(c, len);

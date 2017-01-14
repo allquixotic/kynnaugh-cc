@@ -1,5 +1,5 @@
 /*
-/*TeamSpeak 3 plugin development kit
+TeamSpeak 3 plugin development kit
 Copyright (c) 2008-2016 TeamSpeak Systems GmbH
 Copyright (c) 2016 Sean McNamara <smcnam@gmail.com>
 

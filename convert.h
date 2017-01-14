@@ -26,8 +26,6 @@ class convert : public QObject
 public:
     explicit convert();
     QBuffer *convertRawToFlac(QBuffer *dat, qint32 channes);
-private:
-    void *resampler;
 };
 
 #endif // CONVERT_H

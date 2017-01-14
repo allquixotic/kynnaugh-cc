@@ -73,7 +73,6 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     dbg::writeToFile((char*)outBuffer, outBufferUsed*4, "-float-16k.raw");
 
     dbg::qStdOut() << "convert::convertRawToFlac: done libresample part and it generated " << outBufferUsed << " samples in the outbuffer\n";
-    dbg::qStdOut() << "convert::convertRawToFlac: numMonoSamples/outBufferUsed=" << ((double)((double)numMonoSamples)/((double)outBufferUsed)) << "\n";
 
 
     //Encode in FLAC!
@@ -114,11 +113,13 @@ QBuffer *convert::convertRawToFlac(QBuffer *dat, qint32 channes)
     dbg::qStdOut() << "sf_close() of the SFM_WRITE handle completed! Wrote " << QString::number(writsize) << " samples into the FLAC encoder.\n";
     logErrors(hnd);
 
-    delete[] outBuffer;
-
     dbg::qStdOut() << "convert::convertRawToFlac: returning outbuf with size " << QString::number(outbuf->size()) << " bytes." << "\n";
 
     dbg::writeToFile(outbuf, ".flac");
+
+    delete[] monoSamples;
+    delete[] outBuffer;
+    delete resampler;
 
     return outbuf;
 }

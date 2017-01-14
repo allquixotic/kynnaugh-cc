@@ -24,7 +24,9 @@ DEFINES += KYNNAUGH_LIBRARY
 
 
 #Define this if you want the debugging stuff. Otherwise don't. Could be a significant performance hit / disk space wastage so be careful!
-#DEFINES += KYNNAUGH_DEBUG
+CONFIG += debug
+DEFINES += KYNNAUGH_DEBUG
+#DEFINES += KYNNAUGH_DEBUG_AUDIO
 
 win32 {
     CONFIG += dll

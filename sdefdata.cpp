@@ -5,6 +5,8 @@
 #include "constants.h"
 #include "settings.h"
 
+QMutex sdefdata::lck;
+
 sdefdata::sdefdata(QByteArray *b, qint32 chan, quint64 sch, anyID cli) :
     QObject(nullptr), byt(b), channels(chan), schid(sch), clientID(cli), buf(b, nullptr)
 {}
@@ -13,7 +15,7 @@ void sdefdata::start()
 {
     convert conv;
     QBuffer *flac = conv.convertRawToFlac(&this->buf, this->channels);
-    if(flac->size() == 0)
+    if(flac == nullptr || flac->size() == 0)
     {
         dbg::qStdOut() << "No FLAC samples returned, yet number of samples was greater than 0!\n";
     }
@@ -25,6 +27,7 @@ void sdefdata::start()
         dbg::qStdOut() << "Returned from rec.recognize()!\n";
         if(chatline != QString("0BLANK0"))
         {
+            lck.lock();
             char *nickname = nullptr;
             struct TS3Functions *ff = ts3func::funcs;
             ff->getClientVariableAsString(this->schid, this->clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
@@ -43,19 +46,19 @@ void sdefdata::start()
 
             dbg::qStdOut() << "Revised chatline=" << chatline << "\n";
 
-            ff->printMessageToCurrentTab(seestir);
             auto settings = settings::getSettings();
             if(settings->value(ECHO_FLAG, true).toBool())
             {
                 ff->requestSendChannelTextMsg(this->schid, seestir, 1, nullptr);
             }
+            else
+            {
+                ff->printMessageToCurrentTab(seestir);
+            }
             ff->freeMemory(nickname);
             delete[] seestir;
+            lck.unlock();
         }
-    }
-    if(flac != nullptr)
-    {
-        delete flac;
     }
     emit finished();
 }

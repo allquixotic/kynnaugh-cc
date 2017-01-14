@@ -100,6 +100,8 @@ void sampledef::check()
     {
         dbg::qStdOut() << "Expired: " << this->clientID << "\n";
 
+        QThread *worker = nullptr;
+
         //The broad brush strokes glue: pull it all together; FLAC encoding and speech recognition in a few lines!
         if(this->samples.size() == 0)
         {
@@ -111,14 +113,13 @@ void sampledef::check()
             //We don't want to block while that's happening; in fact, we're happy to let this go on in the background while we free up
             //the user's VoiceData thread back to TeamSpeak.
             QByteArray *bacopy = new QByteArray(this->samples);
-            QThread *worker = new QThread(nullptr);
+            worker = new QThread(nullptr);
             sdefdata *sdf = new sdefdata(bacopy, channels, schid, clientID);
             sdf->moveToThread(worker);
             connect(worker, SIGNAL(started()), sdf, SLOT(start()));
             connect(sdf, SIGNAL(finished()), worker, SLOT(quit()));
             connect(sdf, SIGNAL(finished()), sdf, SLOT(deleteLater()));
             connect(sdf, SIGNAL(finished()), worker, SLOT(deleteLater()));
-            worker->start();
         }
 
         this->samples.clear();
@@ -126,6 +127,11 @@ void sampledef::check()
         QDateTime nul;
         this->lastUpdated = nul;
         this->checker.exit(0);
+
+        if(worker)
+        {
+            worker->start();
+        }
     }
 }
 

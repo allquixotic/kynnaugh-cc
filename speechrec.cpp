@@ -54,17 +54,22 @@ QString speechrec::recognize(char *buf, size_t length)
     SpeechContext *ctxt = new SpeechContext();
     auto settings = settings::getSettings();
     QStringList hints = settings->value(HINTS_SETTING).toStringList();
+    QList<char*> prnts;
 
     if(hints.size() > 0)
     {
         int i = 0;
         foreach(const QString &hint, hints)
         {
-            dbg::qStdOut() << "Before set_phrases with i=" << i << " and hint=" << hint << "\n";
             char *prnt = strdup(qPrintable(hint));
-            ctxt->add_phrases(prnt);
-            dbg::qStdOut() << "After set_phrases\n";
+            if(prnt != nullptr)
+            {
+                prnts.append(prnt);
+                ctxt->add_phrases(prnt);
+            }
         }
+
+        dbg::qStdOut() << "Done building phrases\n";
 
         conf->set_allocated_speech_context(ctxt);
     }
@@ -89,11 +94,11 @@ QString speechrec::recognize(char *buf, size_t length)
     {
         if(res.results().size() > 0)
         {
-            dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << res.results().size() << "results!\n";
+            dbg::qStdOut() << "KYNNAUGH PLUGIN: Got " << res.results().size() << " results!\n";
             auto result = res.results(0);
             if(result.alternatives().size() > 0)
             {
-                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got" << result.alternatives().size() << "alternatives!\n";
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got " << result.alternatives().size() << " alternatives!\n";
                 auto alternative = result.alternatives(0);
                 dbg::qStdOut() << "KYNNAUGH PLUGIN: Got alternative 0!\n";
                 std::string transcript = alternative.transcript();
@@ -122,6 +127,12 @@ QString speechrec::recognize(char *buf, size_t length)
         retval = "KYNNAUGH PLUGIN ERROR: Can't transcribe audio due to technical issues.";
         dbg::qStdOut() << "KYNNAUGH PLUGIN: SyncRecognizeRequest RecognitionAudio error: code="
                   << rw.error_code() << " message=" << rw.error_message().c_str() << "\n";
+    }
+
+    char *dummy;
+    foreach(dummy, prnts)
+    {
+        delete(dummy);
     }
 
     return retval;

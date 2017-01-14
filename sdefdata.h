@@ -16,6 +16,7 @@ private:
     quint64 schid;
     anyID clientID;
     QBuffer buf;
+    static QMutex lck;
 public Q_SLOTS:
     void start();
 
