@@ -20,8 +20,6 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include "dbg.h"
 #include "sdefdata.h"
 
-speechrec sampledef::rec;
-
 sampledef::sampledef(QObject *parent, quint64 s, anyID c, qint32 chan)
     : QObject(parent), schid(s), clientID(c), channels(chan), key(s, c, chan), lock(QReadWriteLock::Recursive),
       lastUpdated(), checker(this), timer(0), spoonTooBig(false)

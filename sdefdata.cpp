@@ -23,7 +23,8 @@ void sdefdata::start()
     {
         dbg::qStdOut() << "FLAC contains " << flac->size() << " bytes\n";
         QByteArray qba = flac->data();
-        QString chatline = sampledef::rec.recognize(qba.data(), flac->size());
+        speechrec rec;
+        QString chatline = rec.recognize(qba.data(), flac->size());
         dbg::qStdOut() << "Returned from rec.recognize()!\n";
         if(chatline != QString("0BLANK0"))
         {
