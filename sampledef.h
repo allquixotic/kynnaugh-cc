@@ -35,6 +35,7 @@ public:
     std::tuple<quint64, anyID, qint32> getKey();
     void update(const short* more, qint32 count);
     void clear();
+    bool isCleared();
     static std::tuple<quint64, anyID, qint32> getKey(quint64 schid, anyID clientID, qint32 channels);
 
 public Q_SLOTS:
@@ -53,6 +54,7 @@ private:
     QThread checker;
     QTimer timer;
     bool spoonTooBig;
+    bool cleared;
 };
 
 #endif // SAMPLEDEF_H

@@ -61,6 +61,7 @@ void sdefdata::start()
             lck.unlock();
         }
     }
+    delete flac;
     emit finished();
 }
 

@@ -22,7 +22,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 
 sampledef::sampledef(QObject *parent, quint64 s, anyID c, qint32 chan)
     : QObject(parent), schid(s), clientID(c), channels(chan), key(s, c, chan), lock(QReadWriteLock::Recursive),
-      lastUpdated(), checker(this), timer(0), spoonTooBig(false)
+      lastUpdated(), checker(this), timer(0), spoonTooBig(false), cleared(false)
 {
     this->timer.setInterval(500);
     this->timer.setSingleShot(false);
@@ -32,6 +32,12 @@ sampledef::sampledef(QObject *parent, quint64 s, anyID c, qint32 chan)
     connect(&checker, &QThread::started, this, &sampledef::threadStarted, Qt::DirectConnection);
     connect(&checker, &QThread::finished, this, &sampledef::threadFinished, Qt::DirectConnection);
     this->checker.start(QThread::NormalPriority);
+}
+
+bool sampledef::isCleared()
+{
+    QReadLocker locker(&lock);
+    return cleared;
 }
 
 qint32 sampledef::getChannels()
@@ -65,6 +71,7 @@ QDateTime sampledef::getLastUpdated()
 
 void sampledef::update(const short* more, qint32 count)
 {
+    dbg::qStdOut() << "sampledef::update begin\n";
     QWriteLocker locker(&lock);
     this->samples.append((const char*) more, count * (sizeof(short) / sizeof(char)));
     this->lastUpdated = QDateTime::currentDateTimeUtc();
@@ -77,6 +84,7 @@ void sampledef::update(const short* more, qint32 count)
     {
         spoonTooBig = true;
     }
+    dbg::qStdOut() << "sampledef::update end\n";
 }
 
 void sampledef::clear()
@@ -87,6 +95,7 @@ void sampledef::clear()
     QDateTime nul;
     this->lastUpdated = nul;
     this->checker.exit(0);
+    this->cleared = true;
 }
 
 void sampledef::check()
@@ -125,6 +134,7 @@ void sampledef::check()
         QDateTime nul;
         this->lastUpdated = nul;
         this->checker.exit(0);
+        this->cleared = true;
 
         if(worker)
         {

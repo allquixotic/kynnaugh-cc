@@ -173,21 +173,37 @@ void ts3plugin_onEditPlaybackVoiceDataEvent(uint64 serverConnectionHandlerID, an
     //The below logging message is printed _very_ frequently; only use if you're not sure if this callback is being called at all.
     //ts3Functions.printMessageToCurrentTab("ts3plugin_onEditPlaybackVoiceDataEvent");
 
+    dbg::qStdOut() << "ts3plugin_onEditPlaybackVoiceData!\n";
+
     std::tuple<quint64, anyID, qint32> key = sampledef::getKey(serverConnectionHandlerID, clientID, channels);
     if(sampledefs.contains(key))
     {
-        sampledefs[key]->update(samples, sampleCount);
+        dbg::qStdOut() << "Already got sampledef\n";
+        sampledef *itm = sampledefs[key];
+        if(itm != nullptr && !itm->isCleared())
+        {
+            dbg::qStdOut() << "Valid sampledef not cleared; updating\n";
+            sampledefs[key]->update(samples, sampleCount);
+        }
+        else
+        {
+            dbg::qStdOut() << "Cleared sampledef being removed and deleted\n";
+            sampledefs.remove(key);
+            delete itm;
+            dbg::qStdOut() << "Done removing/deleting\n";
+        }
+        return;
     }
-    else
-    {
-        char *nickname;
-        ts3Functions.getClientVariableAsString(serverConnectionHandlerID, clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
-        dbg::qStdOut() << "KYNNAUGH PLUGIN: New sampledef for client #" << clientID << ", " << nickname << " with " << channels << " channels.\n";
-        ts3Functions.freeMemory(nickname);
-        sampledef *def = new sampledef(0, serverConnectionHandlerID, clientID, channels);
-        sampledefs.insert(key, def);
-        def->update(samples, sampleCount);
-    }
+
+    //char *nickname;
+    //ts3Functions.getClientVariableAsString(serverConnectionHandlerID, clientID, ClientProperties::CLIENT_NICKNAME, &nickname);
+    //dbg::qStdOut() << "KYNNAUGH PLUGIN: New sampledef for client #" << clientID << ", " << nickname << " with " << channels << " channels.\n";
+    //ts3Functions.freeMemory(nickname);
+    dbg::qStdOut() << "ok, we need a new sampledef\n";
+    sampledef *def = new sampledef(0, serverConnectionHandlerID, clientID, channels);
+    sampledefs.insert(key, def);
+    dbg::qStdOut() << "Updating brand new sampledef\n";
+    def->update(samples, sampleCount);
 }
 
 /* Tell client if plugin offers a configuration window.

@@ -21,6 +21,7 @@ along with kynnaugh-cc.  If not, see <https://www.apache.org/licenses/LICENSE-2.
 #include "settings.h"
 using namespace ::grpc;
 using namespace ::google::cloud::speech::v1beta1;
+using namespace std;
 
 speechrec::speechrec()
 {
@@ -30,9 +31,9 @@ speechrec::speechrec()
 QString speechrec::recognize(char *buf, size_t length)
 {
     dbg::qStdOut() << "Recognize buffer is of length " << length << "\n";
-    ::grpc::ClientContext ctx;
-    std::shared_ptr<ChannelCredentials> creds = GoogleDefaultCredentials();
-    std::shared_ptr<Channel> channel = CreateChannel("speech.googleapis.com", creds);
+    ::grpc::ClientContext *ctx = new ::grpc::ClientContext();
+    shared_ptr<ChannelCredentials> creds = GoogleDefaultCredentials();
+    shared_ptr<Channel> channel = CreateChannel("speech.googleapis.com", creds);
     grpc_connectivity_state connstate = channel->GetState(true);
     if(connstate == GRPC_CHANNEL_SHUTDOWN)
     {
@@ -46,15 +47,14 @@ QString speechrec::recognize(char *buf, size_t length)
     {
         dbg::qStdOut() << "It's " << connstate << " connection state\n";
     }
-    std::unique_ptr<google::cloud::speech::v1beta1::Speech::Stub> stub(Speech::NewStub(channel));
+    unique_ptr<google::cloud::speech::v1beta1::Speech::Stub> stub(Speech::NewStub(channel));
     RecognitionConfig *conf = new RecognitionConfig();
-    RecognitionAudio *audio = new RecognitionAudio();
-    SyncRecognizeRequest req;
+    RecognitionAudio  *audio = new RecognitionAudio();
+    SyncRecognizeRequest *req = new SyncRecognizeRequest();
     SyncRecognizeResponse res;
     SpeechContext *ctxt = new SpeechContext();
     auto settings = settings::getSettings();
     QStringList hints = settings->value(HINTS_SETTING).toStringList();
-    QList<char*> prnts;
 
     if(hints.size() > 0)
     {
@@ -64,7 +64,6 @@ QString speechrec::recognize(char *buf, size_t length)
             char *prnt = strdup(qPrintable(hint));
             if(prnt != nullptr)
             {
-                prnts.append(prnt);
                 ctxt->add_phrases(prnt);
             }
         }
@@ -81,25 +80,26 @@ QString speechrec::recognize(char *buf, size_t length)
     conf->set_language_code("en-US");                         //TODO: Recognize another language
     conf->set_max_alternatives(1);
 
-    audio->set_content(buf, length);
+    std::string *sbuf = new std::string(buf, length);
+    audio->set_allocated_content(sbuf);
 
     //IMPORTANT: The SyncRecognizeRequest calls free() on conf and audio in its destructor
     //Therefore we have to allocate them but NOT free them
-    req.set_allocated_config(conf);
-    req.set_allocated_audio(audio);
+    req->set_allocated_config(conf);
+    req->set_allocated_audio(audio);
 
-    Status rw = stub->SyncRecognize(&ctx, req, &res);
+    Status rw = stub->SyncRecognize(ctx, *req, &res);
     QString retval = "0BLANK0";
     if(rw.ok())
     {
         if(res.results().size() > 0)
         {
             dbg::qStdOut() << "KYNNAUGH PLUGIN: Got " << res.results().size() << " results!\n";
-            auto result = res.results(0);
-            if(result.alternatives().size() > 0)
+            const SpeechRecognitionResult &rezult = res.results(0);
+            if(rezult.alternatives_size() > 0)
             {
-                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got " << result.alternatives().size() << " alternatives!\n";
-                auto alternative = result.alternatives(0);
+                dbg::qStdOut() << "KYNNAUGH PLUGIN: Got " << rezult.alternatives().size() << " alternatives!\n";
+                auto alternative = rezult.alternatives(0);
                 dbg::qStdOut() << "KYNNAUGH PLUGIN: Got alternative 0!\n";
                 std::string transcript = alternative.transcript();
                 QString confid = QString::number((alternative.confidence() * 100.0), 'f', 2);
@@ -129,11 +129,7 @@ QString speechrec::recognize(char *buf, size_t length)
                   << rw.error_code() << " message=" << rw.error_message().c_str() << "\n";
     }
 
-    char *dummy;
-    foreach(dummy, prnts)
-    {
-        delete(dummy);
-    }
+    delete req;
 
     return retval;
 }
